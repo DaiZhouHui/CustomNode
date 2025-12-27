@@ -2,45 +2,13 @@
 
 ## 🚀 快速开始
 
-### 快速访问链接（一键复制）
-以下是三个核心订阅链接，点击即可快速复制：
-
-<div class="quick-links">
-  <div class="link-item">
-    <label>📍 LocationNode 本地节点：</label>
-    <div class="link-box">
-      <input type="text" readonly value="https://daizhouhui.github.io/CustomNode/LocationNode">
-      <button class="copy-btn" onclick="copyLink('https://daizhouhui.github.io/CustomNode/LocationNode')">📋 复制</button>
-      <button class="open-btn" onclick="window.open('https://daizhouhui.github.io/CustomNode/LocationNode', '_blank')">🌐 打开</button>
-    </div>
-  </div>
-  
-  <div class="link-item">
-    <label>🔗 MainNode 合并节点：</label>
-    <div class="link-box">
-      <input type="text" readonly value="https://daizhouhui.github.io/CustomNode/MainNode">
-      <button class="copy-btn" onclick="copyLink('https://daizhouhui.github.io/CustomNode/MainNode')">📋 复制</button>
-      <button class="open-btn" onclick="window.open('https://daizhouhui.github.io/CustomNode/MainNode', '_blank')">🌐 打开</button>
-    </div>
-  </div>
-  
-  <div class="link-item">
-    <label>📄 PlainNode 明文节点：</label>
-    <div class="link-box">
-      <input type="text" readonly value="https://daizhouhui.github.io/CustomNode/PlainNode">
-      <button class="copy-btn" onclick="copyLink('https://daizhouhui.github.io/CustomNode/PlainNode')">📋 复制</button>
-      <button class="open-btn" onclick="window.open('https://daizhouhui.github.io/CustomNode/PlainNode', '_blank')">🌐 打开</button>
-    </div>
-  </div>
-</div>
-
 ## 📱 核心订阅链接
 
 | 文件类型 | 订阅链接 | 用途 | 一键操作 |
 |---------|---------|------|---------|
-| **LocationNode** | `https://daizhouhui.github.io/CustomNode/LocationNode` | 本地生成的节点Base64订阅 | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/LocationNode')) \| [打开](https://daizhouhui.github.io/CustomNode/LocationNode) |
-| **MainNode** | `https://daizhouhui.github.io/CustomNode/MainNode` | 合并后的Base64订阅（推荐） | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/MainNode')) \| [打开](https://daizhouhui.github.io/CustomNode/MainNode) |
-| **PlainNode** | `https://daizhouhui.github.io/CustomNode/PlainNode` | 合并后的明文节点 | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/PlainNode')) \| [打开](https://daizhouhui.github.io/CustomNode/PlainNode) |
+| **LocationNode** | `https://daizhouhui.github.io/CustomNode/LocationNode` | 本地生成的节点Base64订阅 | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/LocationNode')) | [下载](https://daizhouhui.github.io/CustomNode/LocationNode) |
+| **MainNode** | `https://daizhouhui.github.io/CustomNode/MainNode` | 合并后的Base64订阅（推荐） | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/MainNode')) | [下载](https://daizhouhui.github.io/CustomNode/MainNode) |
+| **PlainNode** | `https://daizhouhui.github.io/CustomNode/PlainNode` | 合并后的明文节点 | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/PlainNode')) | [下载](https://daizhouhui.github.io/CustomNode/PlainNode) |
 
 ## 🔧 工具界面快速导航
 
@@ -225,106 +193,3 @@ graph TD
 - **更新日志**: 查看最新功能和修复
 
 ---
-
-<style>
-.quick-links {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  border: 2px solid #dee2e6;
-}
-
-.link-item {
-  margin: 15px 0;
-  padding: 10px;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid #ced4da;
-}
-
-.link-item label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #495057;
-}
-
-.link-box {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.link-box input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #adb5bd;
-  border-radius: 6px;
-  background: #f8f9fa;
-  font-family: 'Consolas', monospace;
-  font-size: 14px;
-}
-
-.copy-btn, .open-btn {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.copy-btn {
-  background: #4361ee;
-  color: white;
-}
-
-.copy-btn:hover {
-  background: #3a56d4;
-  transform: translateY(-2px);
-}
-
-.open-btn {
-  background: #4cc9f0;
-  color: white;
-}
-
-.open-btn:hover {
-  background: #38b2e0;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-  .link-box {
-    flex-direction: column;
-  }
-  
-  .link-box input {
-    width: 100%;
-  }
-  
-  .copy-btn, .open-btn {
-    width: 100%;
-  }
-}
-</style>
-
-<script>
-function copyLink(link) {
-  navigator.clipboard.writeText(link).then(() => {
-    alert('✅ 链接已复制到剪贴板！\n\n' + link);
-  }).catch(err => {
-    // 备用方法
-    const textArea = document.createElement('textarea');
-    textArea.value = link;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-    alert('✅ 链接已复制到剪贴板！\n\n' + link);
-  });
-}
-</script>
-
-**一键复制提示**：点击上方蓝色"复制"按钮可直接复制订阅链接到剪贴板，红色"打开"按钮可在新窗口查看订阅内容。
