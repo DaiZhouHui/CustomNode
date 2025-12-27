@@ -4,11 +4,11 @@
 
 ## 📱 核心订阅链接
 
-| 文件类型 | 订阅链接 | 用途 | 一键操作 |
-|---------|---------|------|---------|
-| **LocationNode** | `https://daizhouhui.github.io/CustomNode/LocationNode` | 本地生成的节点Base64订阅 | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/LocationNode')) | [下载](https://daizhouhui.github.io/CustomNode/LocationNode) |
-| **MainNode** | `https://daizhouhui.github.io/CustomNode/MainNode` | 合并后的Base64订阅（推荐） | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/MainNode')) | [下载](https://daizhouhui.github.io/CustomNode/MainNode) |
-| **PlainNode** | `https://daizhouhui.github.io/CustomNode/PlainNode` | 合并后的明文节点 | [复制](javascript:copyLink('https://daizhouhui.github.io/CustomNode/PlainNode')) | [下载](https://daizhouhui.github.io/CustomNode/PlainNode) |
+| 文件类型 | 订阅链接 | 用途 |
+|---------|---------|------|
+| **LocationNode** | `https://daizhouhui.github.io/CustomNode/LocationNode` | 本地生成的节点Base64订阅 |
+| **MainNode** | `https://daizhouhui.github.io/CustomNode/MainNode` | 合并后的Base64订阅（推荐） |
+| **PlainNode** | `https://daizhouhui.github.io/CustomNode/PlainNode` | 合并后的明文节点 | 
 
 ## 🔧 工具界面快速导航
 
