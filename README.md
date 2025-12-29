@@ -6,8 +6,8 @@
 
 | 文件类型 | 订阅链接 | 用途 |
 |---------|---------|------|
-| **LocationNode** | `https://daizhouhui.github.io/CustomNode/LocationNode` | 本地生成的节点Base64订阅 |
-| **MainNode** | `https://daizhouhui.github.io/CustomNode/MainNode` | 合并后的Base64订阅（推荐） |
+| **OptimalNode** | `https://daizhouhui.github.io/CustomNode/OptimalNode` | 从MainNode中优选的订阅 |
+| **MainNode** | `https://daizhouhui.github.io/CustomNode/MainNode` | 主要订阅（推荐） |
 | **PlainNode** | `https://daizhouhui.github.io/CustomNode/PlainNode` | 合并后的明文节点 | 
 
 ## 🔧 工具界面快速导航
