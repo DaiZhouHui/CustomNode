@@ -1,24 +1,7 @@
 proxies:
-  - name: "香港01-4.46MB/s-443-43.161.218.148"
+  - name: "新加坡01-4.72MB/s-443-124.243.138.124"
     type: vless
-    server: 43.161.218.148
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "香港02-3.22MB/s-443-101.32.179.58"
-    type: vless
-    server: 101.32.179.58
+    server: 124.243.138.124
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -37,22 +20,19 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "香港01-4.46MB/s-443-43.161.218.148"
-      - "香港02-3.22MB/s-443-101.32.179.58"
+      - "新加坡01-4.72MB/s-443-124.243.138.124"
 
   - name: "♻️ 自动选择"
     type: url-test
     proxies:
-      - "香港01-4.46MB/s-443-43.161.218.148"
-      - "香港02-3.22MB/s-443-101.32.179.58"
+      - "新加坡01-4.72MB/s-443-124.243.138.124"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
 
   - name: "🔥 故障转移"
     type: fallback
     proxies:
-      - "香港01-4.46MB/s-443-43.161.218.148"
-      - "香港02-3.22MB/s-443-101.32.179.58"
+      - "新加坡01-4.72MB/s-443-124.243.138.124"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
 
