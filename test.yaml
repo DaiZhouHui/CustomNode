@@ -1,177 +1,7 @@
 proxies:
-  - name: "伦敦01-3.96MB/s-443-154.194.0.248"
+  - name: "新加坡01-4.72MB/s-443-124.243.138.124"
     type: vless
-    server: 154.194.0.248
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦02-3.67MB/s-443-154.194.0.241"
-    type: vless
-    server: 154.194.0.241
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦03-3.50MB/s-443-154.194.0.204"
-    type: vless
-    server: 154.194.0.204
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦04-3.42MB/s-443-154.194.0.2"
-    type: vless
-    server: 154.194.0.2
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦05-3.20MB/s-443-154.194.0.252"
-    type: vless
-    server: 154.194.0.252
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦06-3.16MB/s-443-154.194.0.234"
-    type: vless
-    server: 154.194.0.234
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦07-3.16MB/s-443-154.194.0.77"
-    type: vless
-    server: 154.194.0.77
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦08-3.13MB/s-443-154.194.0.182"
-    type: vless
-    server: 154.194.0.182
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "伦敦09-3.04MB/s-443-154.194.0.37"
-    type: vless
-    server: 154.194.0.37
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "香港01-3.80MB/s-443-43.161.254.121"
-    type: vless
-    server: 43.161.254.121
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    sni: "knny.dpdns.org"
-    alpn:
-      - "h2%2Chttp%2F1.1"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "knny.dpdns.org"
-
-  - name: "香港02-3.48MB/s-443-43.248.11.183"
-    type: vless
-    server: 43.248.11.183
+    server: 124.243.138.124
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -190,49 +20,19 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "伦敦01-3.96MB/s-443-154.194.0.248"
-      - "伦敦02-3.67MB/s-443-154.194.0.241"
-      - "伦敦03-3.50MB/s-443-154.194.0.204"
-      - "伦敦04-3.42MB/s-443-154.194.0.2"
-      - "伦敦05-3.20MB/s-443-154.194.0.252"
-      - "伦敦06-3.16MB/s-443-154.194.0.234"
-      - "伦敦07-3.16MB/s-443-154.194.0.77"
-      - "伦敦08-3.13MB/s-443-154.194.0.182"
-      - "伦敦09-3.04MB/s-443-154.194.0.37"
-      - "香港01-3.80MB/s-443-43.161.254.121"
-      - "香港02-3.48MB/s-443-43.248.11.183"
+      - "新加坡01-4.72MB/s-443-124.243.138.124"
 
   - name: "♻️ 自动选择"
     type: url-test
     proxies:
-      - "伦敦01-3.96MB/s-443-154.194.0.248"
-      - "伦敦02-3.67MB/s-443-154.194.0.241"
-      - "伦敦03-3.50MB/s-443-154.194.0.204"
-      - "伦敦04-3.42MB/s-443-154.194.0.2"
-      - "伦敦05-3.20MB/s-443-154.194.0.252"
-      - "伦敦06-3.16MB/s-443-154.194.0.234"
-      - "伦敦07-3.16MB/s-443-154.194.0.77"
-      - "伦敦08-3.13MB/s-443-154.194.0.182"
-      - "伦敦09-3.04MB/s-443-154.194.0.37"
-      - "香港01-3.80MB/s-443-43.161.254.121"
-      - "香港02-3.48MB/s-443-43.248.11.183"
+      - "新加坡01-4.72MB/s-443-124.243.138.124"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
 
   - name: "🔥 故障转移"
     type: fallback
     proxies:
-      - "伦敦01-3.96MB/s-443-154.194.0.248"
-      - "伦敦02-3.67MB/s-443-154.194.0.241"
-      - "伦敦03-3.50MB/s-443-154.194.0.204"
-      - "伦敦04-3.42MB/s-443-154.194.0.2"
-      - "伦敦05-3.20MB/s-443-154.194.0.252"
-      - "伦敦06-3.16MB/s-443-154.194.0.234"
-      - "伦敦07-3.16MB/s-443-154.194.0.77"
-      - "伦敦08-3.13MB/s-443-154.194.0.182"
-      - "伦敦09-3.04MB/s-443-154.194.0.37"
-      - "香港01-3.80MB/s-443-43.161.254.121"
-      - "香港02-3.48MB/s-443-43.248.11.183"
+      - "新加坡01-4.72MB/s-443-124.243.138.124"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
 
