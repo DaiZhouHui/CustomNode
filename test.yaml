@@ -1,8 +1,331 @@
 proxies:
-  - name: "新加坡01-4.72MB/s-443-124.243.138.124"
+  - name: "洛杉矶01-3.74MB/s-2087-27.50.48.171"
     type: vless
-    server: 124.243.138.124
-    port: 443
+    server: 27.50.48.171
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶02-3.39MB/s-2087-27.50.48.128"
+    type: vless
+    server: 27.50.48.128
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶03-3.14MB/s-2087-27.50.48.3"
+    type: vless
+    server: 27.50.48.3
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶04-3.13MB/s-2087-27.50.49.49"
+    type: vless
+    server: 27.50.49.49
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶05-3.13MB/s-2087-27.50.48.141"
+    type: vless
+    server: 27.50.48.141
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶06-3.11MB/s-2087-27.50.48.1"
+    type: vless
+    server: 27.50.48.1
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶07-3.09MB/s-2087-27.50.48.150"
+    type: vless
+    server: 27.50.48.150
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶08-3.07MB/s-2087-27.50.49.146"
+    type: vless
+    server: 27.50.49.146
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶09-3.05MB/s-2087-27.50.48.49"
+    type: vless
+    server: 27.50.48.49
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶10-2.92MB/s-2087-27.50.48.9"
+    type: vless
+    server: 27.50.48.9
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶11-2.87MB/s-2087-27.50.48.94"
+    type: vless
+    server: 27.50.48.94
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶12-2.85MB/s-2087-27.50.49.195"
+    type: vless
+    server: 27.50.49.195
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶13-2.71MB/s-2087-27.50.49.124"
+    type: vless
+    server: 27.50.49.124
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶14-2.71MB/s-2087-27.50.48.245"
+    type: vless
+    server: 27.50.48.245
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶15-2.68MB/s-2087-27.50.48.31"
+    type: vless
+    server: 27.50.48.31
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶16-2.50MB/s-2087-27.50.48.145"
+    type: vless
+    server: 27.50.48.145
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶17-2.49MB/s-2087-27.50.48.189"
+    type: vless
+    server: 27.50.48.189
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶18-2.45MB/s-2087-27.50.49.37"
+    type: vless
+    server: 27.50.49.37
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶19-2.35MB/s-2087-27.50.48.124"
+    type: vless
+    server: 27.50.48.124
+    port: 2087
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶20-2.13MB/s-2087-27.50.48.231"
+    type: vless
+    server: 27.50.48.231
+    port: 2087
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -20,19 +343,76 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "新加坡01-4.72MB/s-443-124.243.138.124"
+      - "洛杉矶01-3.74MB/s-2087-27.50.48.171"
+      - "洛杉矶02-3.39MB/s-2087-27.50.48.128"
+      - "洛杉矶03-3.14MB/s-2087-27.50.48.3"
+      - "洛杉矶04-3.13MB/s-2087-27.50.49.49"
+      - "洛杉矶05-3.13MB/s-2087-27.50.48.141"
+      - "洛杉矶06-3.11MB/s-2087-27.50.48.1"
+      - "洛杉矶07-3.09MB/s-2087-27.50.48.150"
+      - "洛杉矶08-3.07MB/s-2087-27.50.49.146"
+      - "洛杉矶09-3.05MB/s-2087-27.50.48.49"
+      - "洛杉矶10-2.92MB/s-2087-27.50.48.9"
+      - "洛杉矶11-2.87MB/s-2087-27.50.48.94"
+      - "洛杉矶12-2.85MB/s-2087-27.50.49.195"
+      - "洛杉矶13-2.71MB/s-2087-27.50.49.124"
+      - "洛杉矶14-2.71MB/s-2087-27.50.48.245"
+      - "洛杉矶15-2.68MB/s-2087-27.50.48.31"
+      - "洛杉矶16-2.50MB/s-2087-27.50.48.145"
+      - "洛杉矶17-2.49MB/s-2087-27.50.48.189"
+      - "洛杉矶18-2.45MB/s-2087-27.50.49.37"
+      - "洛杉矶19-2.35MB/s-2087-27.50.48.124"
+      - "洛杉矶20-2.13MB/s-2087-27.50.48.231"
 
   - name: "♻️ 自动选择"
     type: url-test
     proxies:
-      - "新加坡01-4.72MB/s-443-124.243.138.124"
+      - "洛杉矶01-3.74MB/s-2087-27.50.48.171"
+      - "洛杉矶02-3.39MB/s-2087-27.50.48.128"
+      - "洛杉矶03-3.14MB/s-2087-27.50.48.3"
+      - "洛杉矶04-3.13MB/s-2087-27.50.49.49"
+      - "洛杉矶05-3.13MB/s-2087-27.50.48.141"
+      - "洛杉矶06-3.11MB/s-2087-27.50.48.1"
+      - "洛杉矶07-3.09MB/s-2087-27.50.48.150"
+      - "洛杉矶08-3.07MB/s-2087-27.50.49.146"
+      - "洛杉矶09-3.05MB/s-2087-27.50.48.49"
+      - "洛杉矶10-2.92MB/s-2087-27.50.48.9"
+      - "洛杉矶11-2.87MB/s-2087-27.50.48.94"
+      - "洛杉矶12-2.85MB/s-2087-27.50.49.195"
+      - "洛杉矶13-2.71MB/s-2087-27.50.49.124"
+      - "洛杉矶14-2.71MB/s-2087-27.50.48.245"
+      - "洛杉矶15-2.68MB/s-2087-27.50.48.31"
+      - "洛杉矶16-2.50MB/s-2087-27.50.48.145"
+      - "洛杉矶17-2.49MB/s-2087-27.50.48.189"
+      - "洛杉矶18-2.45MB/s-2087-27.50.49.37"
+      - "洛杉矶19-2.35MB/s-2087-27.50.48.124"
+      - "洛杉矶20-2.13MB/s-2087-27.50.48.231"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
 
   - name: "🔥 故障转移"
     type: fallback
     proxies:
-      - "新加坡01-4.72MB/s-443-124.243.138.124"
+      - "洛杉矶01-3.74MB/s-2087-27.50.48.171"
+      - "洛杉矶02-3.39MB/s-2087-27.50.48.128"
+      - "洛杉矶03-3.14MB/s-2087-27.50.48.3"
+      - "洛杉矶04-3.13MB/s-2087-27.50.49.49"
+      - "洛杉矶05-3.13MB/s-2087-27.50.48.141"
+      - "洛杉矶06-3.11MB/s-2087-27.50.48.1"
+      - "洛杉矶07-3.09MB/s-2087-27.50.48.150"
+      - "洛杉矶08-3.07MB/s-2087-27.50.49.146"
+      - "洛杉矶09-3.05MB/s-2087-27.50.48.49"
+      - "洛杉矶10-2.92MB/s-2087-27.50.48.9"
+      - "洛杉矶11-2.87MB/s-2087-27.50.48.94"
+      - "洛杉矶12-2.85MB/s-2087-27.50.49.195"
+      - "洛杉矶13-2.71MB/s-2087-27.50.49.124"
+      - "洛杉矶14-2.71MB/s-2087-27.50.48.245"
+      - "洛杉矶15-2.68MB/s-2087-27.50.48.31"
+      - "洛杉矶16-2.50MB/s-2087-27.50.48.145"
+      - "洛杉矶17-2.49MB/s-2087-27.50.48.189"
+      - "洛杉矶18-2.45MB/s-2087-27.50.49.37"
+      - "洛杉矶19-2.35MB/s-2087-27.50.48.124"
+      - "洛杉矶20-2.13MB/s-2087-27.50.48.231"
     url: "http://www.gstatic.com/generate_204"
     interval: 300
 
