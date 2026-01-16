@@ -16,6 +16,13 @@
 - 优选订阅（Pages）: https://daizhouhui.github.io/CustomNode/OptimalNode
 - 明文订阅（Pages）: https://daizhouhui.github.io/CustomNode/PlainNode
 
+
+默认三个节点订阅文件（Raw 版本示例）：
+
+- 主要订阅（Raw）: https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/MainNode
+- 优选订阅（Raw）: https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode
+- 明文订阅（Raw）: https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/PlainNode
+
 ## 🌟 功能特点
 
 ### 📊 CSV数据解析
