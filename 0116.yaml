@@ -1,0 +1,181 @@
+proxies:
+  - name: "洛杉矶01-3.77MB/s-443-45.194.53.52"
+    type: vless
+    server: 45.194.53.52
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "洛杉矶02-3.67MB/s-443-45.194.53.52"
+    type: vless
+    server: 45.194.53.52
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞01-3.71MB/s-2083-192.0.54.63"
+    type: vless
+    server: 192.0.54.63
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞02-3.69MB/s-2083-77.74.228.238"
+    type: vless
+    server: 77.74.228.238
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞03-3.63MB/s-2083-77.74.228.249"
+    type: vless
+    server: 77.74.228.249
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞04-3.59MB/s-2083-77.74.228.221"
+    type: vless
+    server: 77.74.228.221
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞05-3.50MB/s-2053-45.40.147.61"
+    type: vless
+    server: 45.40.147.61
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "洛杉矶01-3.77MB/s-443-45.194.53.52"
+      - "洛杉矶02-3.67MB/s-443-45.194.53.52"
+      - "圣何塞01-3.71MB/s-2083-192.0.54.63"
+      - "圣何塞02-3.69MB/s-2083-77.74.228.238"
+      - "圣何塞03-3.63MB/s-2083-77.74.228.249"
+      - "圣何塞04-3.59MB/s-2083-77.74.228.221"
+      - "圣何塞05-3.50MB/s-2053-45.40.147.61"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "洛杉矶01-3.77MB/s-443-45.194.53.52"
+      - "洛杉矶02-3.67MB/s-443-45.194.53.52"
+      - "圣何塞01-3.71MB/s-2083-192.0.54.63"
+      - "圣何塞02-3.69MB/s-2083-77.74.228.238"
+      - "圣何塞03-3.63MB/s-2083-77.74.228.249"
+      - "圣何塞04-3.59MB/s-2083-77.74.228.221"
+      - "圣何塞05-3.50MB/s-2053-45.40.147.61"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "洛杉矶01-3.77MB/s-443-45.194.53.52"
+      - "洛杉矶02-3.67MB/s-443-45.194.53.52"
+      - "圣何塞01-3.71MB/s-2083-192.0.54.63"
+      - "圣何塞02-3.69MB/s-2083-77.74.228.238"
+      - "圣何塞03-3.63MB/s-2083-77.74.228.249"
+      - "圣何塞04-3.59MB/s-2083-77.74.228.221"
+      - "圣何塞05-3.50MB/s-2053-45.40.147.61"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+  - DOMAIN-SUFFIX,github.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,netflix.com,🚀 节点选择
+  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
