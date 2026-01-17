@@ -1,0 +1,1881 @@
+proxies:
+  - name: "法兰克福01-4.28MB/s-8082-62.60.228.207"
+    type: vless
+    server: 62.60.228.207
+    port: 8082
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "法兰克福02-3.58MB/s-2053-62.60.247.69"
+    type: vless
+    server: 62.60.247.69
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "法兰克福03-3.51MB/s-2078-62.60.228.206"
+    type: vless
+    server: 62.60.228.206
+    port: 2078
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "法兰克福04-3.19MB/s-8443-103.228.168.80"
+    type: vless
+    server: 103.228.168.80
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞01-3.89MB/s-2053-103.160.204.37"
+    type: vless
+    server: 103.160.204.37
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞02-3.84MB/s-8443-154.194.0.217"
+    type: vless
+    server: 154.194.0.217
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞03-3.80MB/s-8443-154.194.0.161"
+    type: vless
+    server: 154.194.0.161
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞04-3.77MB/s-2053-103.160.204.7"
+    type: vless
+    server: 103.160.204.7
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞05-3.72MB/s-2083-103.160.204.176"
+    type: vless
+    server: 103.160.204.176
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞06-3.69MB/s-2083-154.194.0.234"
+    type: vless
+    server: 154.194.0.234
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞07-3.68MB/s-8443-103.160.204.25"
+    type: vless
+    server: 103.160.204.25
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞08-3.67MB/s-8443-154.194.0.185"
+    type: vless
+    server: 154.194.0.185
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞09-3.58MB/s-2083-154.194.0.235"
+    type: vless
+    server: 154.194.0.235
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞10-3.57MB/s-2083-103.160.204.151"
+    type: vless
+    server: 103.160.204.151
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞11-3.53MB/s-2053-154.194.0.214"
+    type: vless
+    server: 154.194.0.214
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞12-3.53MB/s-2053-103.160.204.22"
+    type: vless
+    server: 103.160.204.22
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞13-3.50MB/s-2053-154.194.0.218"
+    type: vless
+    server: 154.194.0.218
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞14-3.45MB/s-2053-103.160.204.17"
+    type: vless
+    server: 103.160.204.17
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞15-3.45MB/s-2083-103.160.204.95"
+    type: vless
+    server: 103.160.204.95
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞16-3.45MB/s-2083-154.194.0.224"
+    type: vless
+    server: 154.194.0.224
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞17-3.44MB/s-2083-103.160.204.112"
+    type: vless
+    server: 103.160.204.112
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞18-3.44MB/s-2083-154.194.0.159"
+    type: vless
+    server: 154.194.0.159
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞19-3.43MB/s-8443-154.194.0.119"
+    type: vless
+    server: 154.194.0.119
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞20-3.43MB/s-2083-154.194.0.248"
+    type: vless
+    server: 154.194.0.248
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞21-3.43MB/s-2053-103.160.204.19"
+    type: vless
+    server: 103.160.204.19
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞22-3.42MB/s-2083-154.194.0.209"
+    type: vless
+    server: 154.194.0.209
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞23-3.41MB/s-2083-103.160.204.140"
+    type: vless
+    server: 103.160.204.140
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞24-3.41MB/s-8443-154.194.0.106"
+    type: vless
+    server: 154.194.0.106
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞25-3.39MB/s-2053-154.194.0.218"
+    type: vless
+    server: 154.194.0.218
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞26-3.39MB/s-8443-154.194.0.178"
+    type: vless
+    server: 154.194.0.178
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞27-3.39MB/s-2083-103.160.204.96"
+    type: vless
+    server: 103.160.204.96
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞28-3.39MB/s-2083-154.194.0.152"
+    type: vless
+    server: 154.194.0.152
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞29-3.39MB/s-2083-103.160.204.245"
+    type: vless
+    server: 103.160.204.245
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞30-3.37MB/s-2053-103.160.204.26"
+    type: vless
+    server: 103.160.204.26
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞31-3.37MB/s-2083-154.194.0.196"
+    type: vless
+    server: 154.194.0.196
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞32-3.36MB/s-2053-103.160.204.30"
+    type: vless
+    server: 103.160.204.30
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞33-3.35MB/s-8443-154.194.0.180"
+    type: vless
+    server: 154.194.0.180
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞34-3.34MB/s-8443-154.194.0.124"
+    type: vless
+    server: 154.194.0.124
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞35-3.33MB/s-8443-154.194.0.167"
+    type: vless
+    server: 154.194.0.167
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞36-3.33MB/s-8443-103.160.204.247"
+    type: vless
+    server: 103.160.204.247
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞37-3.32MB/s-8443-154.194.0.165"
+    type: vless
+    server: 154.194.0.165
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞38-3.32MB/s-2083-154.194.0.215"
+    type: vless
+    server: 154.194.0.215
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞39-3.31MB/s-2083-103.160.204.102"
+    type: vless
+    server: 103.160.204.102
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞40-3.30MB/s-8443-154.194.0.184"
+    type: vless
+    server: 154.194.0.184
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞41-3.29MB/s-2083-154.194.0.204"
+    type: vless
+    server: 154.194.0.204
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞42-3.29MB/s-8443-154.194.0.112"
+    type: vless
+    server: 154.194.0.112
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞43-3.28MB/s-8443-154.194.0.219"
+    type: vless
+    server: 154.194.0.219
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞44-3.28MB/s-2083-103.160.204.148"
+    type: vless
+    server: 103.160.204.148
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞45-3.27MB/s-8443-154.194.0.242"
+    type: vless
+    server: 154.194.0.242
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞46-3.26MB/s-8443-154.194.0.179"
+    type: vless
+    server: 154.194.0.179
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞47-3.25MB/s-8443-154.194.0.184"
+    type: vless
+    server: 154.194.0.184
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞48-3.24MB/s-2083-154.194.0.245"
+    type: vless
+    server: 154.194.0.245
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞49-3.24MB/s-8443-154.194.0.164"
+    type: vless
+    server: 154.194.0.164
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞50-3.23MB/s-8443-154.194.0.187"
+    type: vless
+    server: 154.194.0.187
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞51-3.23MB/s-2083-154.194.0.236"
+    type: vless
+    server: 154.194.0.236
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞52-3.17MB/s-8443-154.194.0.139"
+    type: vless
+    server: 154.194.0.139
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞53-3.17MB/s-2053-103.160.204.10"
+    type: vless
+    server: 103.160.204.10
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞54-3.17MB/s-8443-154.194.0.68"
+    type: vless
+    server: 154.194.0.68
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞55-3.17MB/s-2053-103.160.204.49"
+    type: vless
+    server: 103.160.204.49
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞56-3.16MB/s-2053-103.160.204.42"
+    type: vless
+    server: 103.160.204.42
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞57-3.16MB/s-2083-103.160.204.237"
+    type: vless
+    server: 103.160.204.237
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞58-3.16MB/s-8443-154.194.0.175"
+    type: vless
+    server: 154.194.0.175
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞59-3.16MB/s-8443-154.194.0.151"
+    type: vless
+    server: 154.194.0.151
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞60-3.15MB/s-2083-103.160.204.209"
+    type: vless
+    server: 103.160.204.209
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞61-3.15MB/s-8443-154.194.0.230"
+    type: vless
+    server: 154.194.0.230
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞62-3.14MB/s-2083-154.194.0.238"
+    type: vless
+    server: 154.194.0.238
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞63-3.14MB/s-8443-154.194.0.247"
+    type: vless
+    server: 154.194.0.247
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞64-3.12MB/s-8443-154.194.0.170"
+    type: vless
+    server: 154.194.0.170
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞65-3.12MB/s-8443-154.194.0.183"
+    type: vless
+    server: 154.194.0.183
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞66-3.11MB/s-2083-103.160.204.104"
+    type: vless
+    server: 103.160.204.104
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞67-3.10MB/s-2053-103.160.204.44"
+    type: vless
+    server: 103.160.204.44
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞68-3.10MB/s-8443-154.194.0.183"
+    type: vless
+    server: 154.194.0.183
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞69-3.10MB/s-2083-103.160.204.124"
+    type: vless
+    server: 103.160.204.124
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞70-3.10MB/s-2053-154.194.0.218"
+    type: vless
+    server: 154.194.0.218
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞71-3.09MB/s-8443-154.194.0.164"
+    type: vless
+    server: 154.194.0.164
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞72-3.08MB/s-8443-154.194.0.206"
+    type: vless
+    server: 154.194.0.206
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞73-3.06MB/s-2083-154.194.0.193"
+    type: vless
+    server: 154.194.0.193
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞74-3.06MB/s-2083-103.160.204.153"
+    type: vless
+    server: 103.160.204.153
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞75-3.04MB/s-2083-103.160.204.234"
+    type: vless
+    server: 103.160.204.234
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞76-3.03MB/s-2083-154.194.0.160"
+    type: vless
+    server: 154.194.0.160
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞77-3.02MB/s-2053-154.194.0.207"
+    type: vless
+    server: 154.194.0.207
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞78-3.02MB/s-2053-103.160.204.38"
+    type: vless
+    server: 103.160.204.38
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞79-3.01MB/s-2053-103.160.204.27"
+    type: vless
+    server: 103.160.204.27
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞80-3.01MB/s-8443-154.194.0.213"
+    type: vless
+    server: 154.194.0.213
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞81-3.01MB/s-2083-103.160.204.141"
+    type: vless
+    server: 103.160.204.141
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞82-3.01MB/s-2083-103.160.204.175"
+    type: vless
+    server: 103.160.204.175
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞83-3.00MB/s-2053-103.160.204.43"
+    type: vless
+    server: 103.160.204.43
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞84-3.00MB/s-2083-154.194.0.163"
+    type: vless
+    server: 154.194.0.163
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞85-3.00MB/s-2083-103.160.204.179"
+    type: vless
+    server: 103.160.204.179
+    port: 2083
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港01-3.75MB/s-7548-47.76.60.217"
+    type: vless
+    server: 47.76.60.217
+    port: 7548
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港02-3.14MB/s-2053-2.56.91.89"
+    type: vless
+    server: 2.56.91.89
+    port: 2053
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "菲尼克斯01-3.32MB/s-8443-85.121.240.224"
+    type: vless
+    server: 85.121.240.224
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "法兰克福01-4.28MB/s-8082-62.60.228.207"
+      - "法兰克福02-3.58MB/s-2053-62.60.247.69"
+      - "法兰克福03-3.51MB/s-2078-62.60.228.206"
+      - "法兰克福04-3.19MB/s-8443-103.228.168.80"
+      - "圣何塞01-3.89MB/s-2053-103.160.204.37"
+      - "圣何塞02-3.84MB/s-8443-154.194.0.217"
+      - "圣何塞03-3.80MB/s-8443-154.194.0.161"
+      - "圣何塞04-3.77MB/s-2053-103.160.204.7"
+      - "圣何塞05-3.72MB/s-2083-103.160.204.176"
+      - "圣何塞06-3.69MB/s-2083-154.194.0.234"
+      - "圣何塞07-3.68MB/s-8443-103.160.204.25"
+      - "圣何塞08-3.67MB/s-8443-154.194.0.185"
+      - "圣何塞09-3.58MB/s-2083-154.194.0.235"
+      - "圣何塞10-3.57MB/s-2083-103.160.204.151"
+      - "圣何塞11-3.53MB/s-2053-154.194.0.214"
+      - "圣何塞12-3.53MB/s-2053-103.160.204.22"
+      - "圣何塞13-3.50MB/s-2053-154.194.0.218"
+      - "圣何塞14-3.45MB/s-2053-103.160.204.17"
+      - "圣何塞15-3.45MB/s-2083-103.160.204.95"
+      - "圣何塞16-3.45MB/s-2083-154.194.0.224"
+      - "圣何塞17-3.44MB/s-2083-103.160.204.112"
+      - "圣何塞18-3.44MB/s-2083-154.194.0.159"
+      - "圣何塞19-3.43MB/s-8443-154.194.0.119"
+      - "圣何塞20-3.43MB/s-2083-154.194.0.248"
+      - "圣何塞21-3.43MB/s-2053-103.160.204.19"
+      - "圣何塞22-3.42MB/s-2083-154.194.0.209"
+      - "圣何塞23-3.41MB/s-2083-103.160.204.140"
+      - "圣何塞24-3.41MB/s-8443-154.194.0.106"
+      - "圣何塞25-3.39MB/s-2053-154.194.0.218"
+      - "圣何塞26-3.39MB/s-8443-154.194.0.178"
+      - "圣何塞27-3.39MB/s-2083-103.160.204.96"
+      - "圣何塞28-3.39MB/s-2083-154.194.0.152"
+      - "圣何塞29-3.39MB/s-2083-103.160.204.245"
+      - "圣何塞30-3.37MB/s-2053-103.160.204.26"
+      - "圣何塞31-3.37MB/s-2083-154.194.0.196"
+      - "圣何塞32-3.36MB/s-2053-103.160.204.30"
+      - "圣何塞33-3.35MB/s-8443-154.194.0.180"
+      - "圣何塞34-3.34MB/s-8443-154.194.0.124"
+      - "圣何塞35-3.33MB/s-8443-154.194.0.167"
+      - "圣何塞36-3.33MB/s-8443-103.160.204.247"
+      - "圣何塞37-3.32MB/s-8443-154.194.0.165"
+      - "圣何塞38-3.32MB/s-2083-154.194.0.215"
+      - "圣何塞39-3.31MB/s-2083-103.160.204.102"
+      - "圣何塞40-3.30MB/s-8443-154.194.0.184"
+      - "圣何塞41-3.29MB/s-2083-154.194.0.204"
+      - "圣何塞42-3.29MB/s-8443-154.194.0.112"
+      - "圣何塞43-3.28MB/s-8443-154.194.0.219"
+      - "圣何塞44-3.28MB/s-2083-103.160.204.148"
+      - "圣何塞45-3.27MB/s-8443-154.194.0.242"
+      - "圣何塞46-3.26MB/s-8443-154.194.0.179"
+      - "圣何塞47-3.25MB/s-8443-154.194.0.184"
+      - "圣何塞48-3.24MB/s-2083-154.194.0.245"
+      - "圣何塞49-3.24MB/s-8443-154.194.0.164"
+      - "圣何塞50-3.23MB/s-8443-154.194.0.187"
+      - "圣何塞51-3.23MB/s-2083-154.194.0.236"
+      - "圣何塞52-3.17MB/s-8443-154.194.0.139"
+      - "圣何塞53-3.17MB/s-2053-103.160.204.10"
+      - "圣何塞54-3.17MB/s-8443-154.194.0.68"
+      - "圣何塞55-3.17MB/s-2053-103.160.204.49"
+      - "圣何塞56-3.16MB/s-2053-103.160.204.42"
+      - "圣何塞57-3.16MB/s-2083-103.160.204.237"
+      - "圣何塞58-3.16MB/s-8443-154.194.0.175"
+      - "圣何塞59-3.16MB/s-8443-154.194.0.151"
+      - "圣何塞60-3.15MB/s-2083-103.160.204.209"
+      - "圣何塞61-3.15MB/s-8443-154.194.0.230"
+      - "圣何塞62-3.14MB/s-2083-154.194.0.238"
+      - "圣何塞63-3.14MB/s-8443-154.194.0.247"
+      - "圣何塞64-3.12MB/s-8443-154.194.0.170"
+      - "圣何塞65-3.12MB/s-8443-154.194.0.183"
+      - "圣何塞66-3.11MB/s-2083-103.160.204.104"
+      - "圣何塞67-3.10MB/s-2053-103.160.204.44"
+      - "圣何塞68-3.10MB/s-8443-154.194.0.183"
+      - "圣何塞69-3.10MB/s-2083-103.160.204.124"
+      - "圣何塞70-3.10MB/s-2053-154.194.0.218"
+      - "圣何塞71-3.09MB/s-8443-154.194.0.164"
+      - "圣何塞72-3.08MB/s-8443-154.194.0.206"
+      - "圣何塞73-3.06MB/s-2083-154.194.0.193"
+      - "圣何塞74-3.06MB/s-2083-103.160.204.153"
+      - "圣何塞75-3.04MB/s-2083-103.160.204.234"
+      - "圣何塞76-3.03MB/s-2083-154.194.0.160"
+      - "圣何塞77-3.02MB/s-2053-154.194.0.207"
+      - "圣何塞78-3.02MB/s-2053-103.160.204.38"
+      - "圣何塞79-3.01MB/s-2053-103.160.204.27"
+      - "圣何塞80-3.01MB/s-8443-154.194.0.213"
+      - "圣何塞81-3.01MB/s-2083-103.160.204.141"
+      - "圣何塞82-3.01MB/s-2083-103.160.204.175"
+      - "圣何塞83-3.00MB/s-2053-103.160.204.43"
+      - "圣何塞84-3.00MB/s-2083-154.194.0.163"
+      - "圣何塞85-3.00MB/s-2083-103.160.204.179"
+      - "香港01-3.75MB/s-7548-47.76.60.217"
+      - "香港02-3.14MB/s-2053-2.56.91.89"
+      - "菲尼克斯01-3.32MB/s-8443-85.121.240.224"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "法兰克福01-4.28MB/s-8082-62.60.228.207"
+      - "法兰克福02-3.58MB/s-2053-62.60.247.69"
+      - "法兰克福03-3.51MB/s-2078-62.60.228.206"
+      - "法兰克福04-3.19MB/s-8443-103.228.168.80"
+      - "圣何塞01-3.89MB/s-2053-103.160.204.37"
+      - "圣何塞02-3.84MB/s-8443-154.194.0.217"
+      - "圣何塞03-3.80MB/s-8443-154.194.0.161"
+      - "圣何塞04-3.77MB/s-2053-103.160.204.7"
+      - "圣何塞05-3.72MB/s-2083-103.160.204.176"
+      - "圣何塞06-3.69MB/s-2083-154.194.0.234"
+      - "圣何塞07-3.68MB/s-8443-103.160.204.25"
+      - "圣何塞08-3.67MB/s-8443-154.194.0.185"
+      - "圣何塞09-3.58MB/s-2083-154.194.0.235"
+      - "圣何塞10-3.57MB/s-2083-103.160.204.151"
+      - "圣何塞11-3.53MB/s-2053-154.194.0.214"
+      - "圣何塞12-3.53MB/s-2053-103.160.204.22"
+      - "圣何塞13-3.50MB/s-2053-154.194.0.218"
+      - "圣何塞14-3.45MB/s-2053-103.160.204.17"
+      - "圣何塞15-3.45MB/s-2083-103.160.204.95"
+      - "圣何塞16-3.45MB/s-2083-154.194.0.224"
+      - "圣何塞17-3.44MB/s-2083-103.160.204.112"
+      - "圣何塞18-3.44MB/s-2083-154.194.0.159"
+      - "圣何塞19-3.43MB/s-8443-154.194.0.119"
+      - "圣何塞20-3.43MB/s-2083-154.194.0.248"
+      - "圣何塞21-3.43MB/s-2053-103.160.204.19"
+      - "圣何塞22-3.42MB/s-2083-154.194.0.209"
+      - "圣何塞23-3.41MB/s-2083-103.160.204.140"
+      - "圣何塞24-3.41MB/s-8443-154.194.0.106"
+      - "圣何塞25-3.39MB/s-2053-154.194.0.218"
+      - "圣何塞26-3.39MB/s-8443-154.194.0.178"
+      - "圣何塞27-3.39MB/s-2083-103.160.204.96"
+      - "圣何塞28-3.39MB/s-2083-154.194.0.152"
+      - "圣何塞29-3.39MB/s-2083-103.160.204.245"
+      - "圣何塞30-3.37MB/s-2053-103.160.204.26"
+      - "圣何塞31-3.37MB/s-2083-154.194.0.196"
+      - "圣何塞32-3.36MB/s-2053-103.160.204.30"
+      - "圣何塞33-3.35MB/s-8443-154.194.0.180"
+      - "圣何塞34-3.34MB/s-8443-154.194.0.124"
+      - "圣何塞35-3.33MB/s-8443-154.194.0.167"
+      - "圣何塞36-3.33MB/s-8443-103.160.204.247"
+      - "圣何塞37-3.32MB/s-8443-154.194.0.165"
+      - "圣何塞38-3.32MB/s-2083-154.194.0.215"
+      - "圣何塞39-3.31MB/s-2083-103.160.204.102"
+      - "圣何塞40-3.30MB/s-8443-154.194.0.184"
+      - "圣何塞41-3.29MB/s-2083-154.194.0.204"
+      - "圣何塞42-3.29MB/s-8443-154.194.0.112"
+      - "圣何塞43-3.28MB/s-8443-154.194.0.219"
+      - "圣何塞44-3.28MB/s-2083-103.160.204.148"
+      - "圣何塞45-3.27MB/s-8443-154.194.0.242"
+      - "圣何塞46-3.26MB/s-8443-154.194.0.179"
+      - "圣何塞47-3.25MB/s-8443-154.194.0.184"
+      - "圣何塞48-3.24MB/s-2083-154.194.0.245"
+      - "圣何塞49-3.24MB/s-8443-154.194.0.164"
+      - "圣何塞50-3.23MB/s-8443-154.194.0.187"
+      - "圣何塞51-3.23MB/s-2083-154.194.0.236"
+      - "圣何塞52-3.17MB/s-8443-154.194.0.139"
+      - "圣何塞53-3.17MB/s-2053-103.160.204.10"
+      - "圣何塞54-3.17MB/s-8443-154.194.0.68"
+      - "圣何塞55-3.17MB/s-2053-103.160.204.49"
+      - "圣何塞56-3.16MB/s-2053-103.160.204.42"
+      - "圣何塞57-3.16MB/s-2083-103.160.204.237"
+      - "圣何塞58-3.16MB/s-8443-154.194.0.175"
+      - "圣何塞59-3.16MB/s-8443-154.194.0.151"
+      - "圣何塞60-3.15MB/s-2083-103.160.204.209"
+      - "圣何塞61-3.15MB/s-8443-154.194.0.230"
+      - "圣何塞62-3.14MB/s-2083-154.194.0.238"
+      - "圣何塞63-3.14MB/s-8443-154.194.0.247"
+      - "圣何塞64-3.12MB/s-8443-154.194.0.170"
+      - "圣何塞65-3.12MB/s-8443-154.194.0.183"
+      - "圣何塞66-3.11MB/s-2083-103.160.204.104"
+      - "圣何塞67-3.10MB/s-2053-103.160.204.44"
+      - "圣何塞68-3.10MB/s-8443-154.194.0.183"
+      - "圣何塞69-3.10MB/s-2083-103.160.204.124"
+      - "圣何塞70-3.10MB/s-2053-154.194.0.218"
+      - "圣何塞71-3.09MB/s-8443-154.194.0.164"
+      - "圣何塞72-3.08MB/s-8443-154.194.0.206"
+      - "圣何塞73-3.06MB/s-2083-154.194.0.193"
+      - "圣何塞74-3.06MB/s-2083-103.160.204.153"
+      - "圣何塞75-3.04MB/s-2083-103.160.204.234"
+      - "圣何塞76-3.03MB/s-2083-154.194.0.160"
+      - "圣何塞77-3.02MB/s-2053-154.194.0.207"
+      - "圣何塞78-3.02MB/s-2053-103.160.204.38"
+      - "圣何塞79-3.01MB/s-2053-103.160.204.27"
+      - "圣何塞80-3.01MB/s-8443-154.194.0.213"
+      - "圣何塞81-3.01MB/s-2083-103.160.204.141"
+      - "圣何塞82-3.01MB/s-2083-103.160.204.175"
+      - "圣何塞83-3.00MB/s-2053-103.160.204.43"
+      - "圣何塞84-3.00MB/s-2083-154.194.0.163"
+      - "圣何塞85-3.00MB/s-2083-103.160.204.179"
+      - "香港01-3.75MB/s-7548-47.76.60.217"
+      - "香港02-3.14MB/s-2053-2.56.91.89"
+      - "菲尼克斯01-3.32MB/s-8443-85.121.240.224"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "法兰克福01-4.28MB/s-8082-62.60.228.207"
+      - "法兰克福02-3.58MB/s-2053-62.60.247.69"
+      - "法兰克福03-3.51MB/s-2078-62.60.228.206"
+      - "法兰克福04-3.19MB/s-8443-103.228.168.80"
+      - "圣何塞01-3.89MB/s-2053-103.160.204.37"
+      - "圣何塞02-3.84MB/s-8443-154.194.0.217"
+      - "圣何塞03-3.80MB/s-8443-154.194.0.161"
+      - "圣何塞04-3.77MB/s-2053-103.160.204.7"
+      - "圣何塞05-3.72MB/s-2083-103.160.204.176"
+      - "圣何塞06-3.69MB/s-2083-154.194.0.234"
+      - "圣何塞07-3.68MB/s-8443-103.160.204.25"
+      - "圣何塞08-3.67MB/s-8443-154.194.0.185"
+      - "圣何塞09-3.58MB/s-2083-154.194.0.235"
+      - "圣何塞10-3.57MB/s-2083-103.160.204.151"
+      - "圣何塞11-3.53MB/s-2053-154.194.0.214"
+      - "圣何塞12-3.53MB/s-2053-103.160.204.22"
+      - "圣何塞13-3.50MB/s-2053-154.194.0.218"
+      - "圣何塞14-3.45MB/s-2053-103.160.204.17"
+      - "圣何塞15-3.45MB/s-2083-103.160.204.95"
+      - "圣何塞16-3.45MB/s-2083-154.194.0.224"
+      - "圣何塞17-3.44MB/s-2083-103.160.204.112"
+      - "圣何塞18-3.44MB/s-2083-154.194.0.159"
+      - "圣何塞19-3.43MB/s-8443-154.194.0.119"
+      - "圣何塞20-3.43MB/s-2083-154.194.0.248"
+      - "圣何塞21-3.43MB/s-2053-103.160.204.19"
+      - "圣何塞22-3.42MB/s-2083-154.194.0.209"
+      - "圣何塞23-3.41MB/s-2083-103.160.204.140"
+      - "圣何塞24-3.41MB/s-8443-154.194.0.106"
+      - "圣何塞25-3.39MB/s-2053-154.194.0.218"
+      - "圣何塞26-3.39MB/s-8443-154.194.0.178"
+      - "圣何塞27-3.39MB/s-2083-103.160.204.96"
+      - "圣何塞28-3.39MB/s-2083-154.194.0.152"
+      - "圣何塞29-3.39MB/s-2083-103.160.204.245"
+      - "圣何塞30-3.37MB/s-2053-103.160.204.26"
+      - "圣何塞31-3.37MB/s-2083-154.194.0.196"
+      - "圣何塞32-3.36MB/s-2053-103.160.204.30"
+      - "圣何塞33-3.35MB/s-8443-154.194.0.180"
+      - "圣何塞34-3.34MB/s-8443-154.194.0.124"
+      - "圣何塞35-3.33MB/s-8443-154.194.0.167"
+      - "圣何塞36-3.33MB/s-8443-103.160.204.247"
+      - "圣何塞37-3.32MB/s-8443-154.194.0.165"
+      - "圣何塞38-3.32MB/s-2083-154.194.0.215"
+      - "圣何塞39-3.31MB/s-2083-103.160.204.102"
+      - "圣何塞40-3.30MB/s-8443-154.194.0.184"
+      - "圣何塞41-3.29MB/s-2083-154.194.0.204"
+      - "圣何塞42-3.29MB/s-8443-154.194.0.112"
+      - "圣何塞43-3.28MB/s-8443-154.194.0.219"
+      - "圣何塞44-3.28MB/s-2083-103.160.204.148"
+      - "圣何塞45-3.27MB/s-8443-154.194.0.242"
+      - "圣何塞46-3.26MB/s-8443-154.194.0.179"
+      - "圣何塞47-3.25MB/s-8443-154.194.0.184"
+      - "圣何塞48-3.24MB/s-2083-154.194.0.245"
+      - "圣何塞49-3.24MB/s-8443-154.194.0.164"
+      - "圣何塞50-3.23MB/s-8443-154.194.0.187"
+      - "圣何塞51-3.23MB/s-2083-154.194.0.236"
+      - "圣何塞52-3.17MB/s-8443-154.194.0.139"
+      - "圣何塞53-3.17MB/s-2053-103.160.204.10"
+      - "圣何塞54-3.17MB/s-8443-154.194.0.68"
+      - "圣何塞55-3.17MB/s-2053-103.160.204.49"
+      - "圣何塞56-3.16MB/s-2053-103.160.204.42"
+      - "圣何塞57-3.16MB/s-2083-103.160.204.237"
+      - "圣何塞58-3.16MB/s-8443-154.194.0.175"
+      - "圣何塞59-3.16MB/s-8443-154.194.0.151"
+      - "圣何塞60-3.15MB/s-2083-103.160.204.209"
+      - "圣何塞61-3.15MB/s-8443-154.194.0.230"
+      - "圣何塞62-3.14MB/s-2083-154.194.0.238"
+      - "圣何塞63-3.14MB/s-8443-154.194.0.247"
+      - "圣何塞64-3.12MB/s-8443-154.194.0.170"
+      - "圣何塞65-3.12MB/s-8443-154.194.0.183"
+      - "圣何塞66-3.11MB/s-2083-103.160.204.104"
+      - "圣何塞67-3.10MB/s-2053-103.160.204.44"
+      - "圣何塞68-3.10MB/s-8443-154.194.0.183"
+      - "圣何塞69-3.10MB/s-2083-103.160.204.124"
+      - "圣何塞70-3.10MB/s-2053-154.194.0.218"
+      - "圣何塞71-3.09MB/s-8443-154.194.0.164"
+      - "圣何塞72-3.08MB/s-8443-154.194.0.206"
+      - "圣何塞73-3.06MB/s-2083-154.194.0.193"
+      - "圣何塞74-3.06MB/s-2083-103.160.204.153"
+      - "圣何塞75-3.04MB/s-2083-103.160.204.234"
+      - "圣何塞76-3.03MB/s-2083-154.194.0.160"
+      - "圣何塞77-3.02MB/s-2053-154.194.0.207"
+      - "圣何塞78-3.02MB/s-2053-103.160.204.38"
+      - "圣何塞79-3.01MB/s-2053-103.160.204.27"
+      - "圣何塞80-3.01MB/s-8443-154.194.0.213"
+      - "圣何塞81-3.01MB/s-2083-103.160.204.141"
+      - "圣何塞82-3.01MB/s-2083-103.160.204.175"
+      - "圣何塞83-3.00MB/s-2053-103.160.204.43"
+      - "圣何塞84-3.00MB/s-2083-154.194.0.163"
+      - "圣何塞85-3.00MB/s-2083-103.160.204.179"
+      - "香港01-3.75MB/s-7548-47.76.60.217"
+      - "香港02-3.14MB/s-2053-2.56.91.89"
+      - "菲尼克斯01-3.32MB/s-8443-85.121.240.224"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+  - DOMAIN-SUFFIX,github.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,netflix.com,🚀 节点选择
+  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
