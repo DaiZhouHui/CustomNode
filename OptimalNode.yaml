@@ -1,4 +1,72 @@
 proxies:
+  - name: "洛杉矶01-4MB/s-443-27.8.3.213"
+    type: vless
+    server: 27.8.3.213
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "成田01-4MB/s-443-119.4.52.68"
+    type: vless
+    server: 119.4.52.68
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "成田02-4MB/s-443-101.37.171.208"
+    type: vless
+    server: 101.37.171.208
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "阿姆斯特丹01-4MB/s-443-106.14.80.120"
+    type: vless
+    server: 106.14.80.120
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
   - name: "法兰克福01-4.28MB/s-8082-62.60.228.207"
     type: vless
     server: 62.60.228.207
@@ -1754,6 +1822,10 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
+      - "洛杉矶01-4MB/s-443-27.8.3.213"
+      - "成田01-4MB/s-443-119.4.52.68"
+      - "成田02-4MB/s-443-101.37.171.208"
+      - "阿姆斯特丹01-4MB/s-443-106.14.80.120"
       - "法兰克福01-4.28MB/s-8082-62.60.228.207"
       - "法兰克福02-3.58MB/s-2053-62.60.247.69"
       - "法兰克福03-3.51MB/s-2078-62.60.228.206"
@@ -1861,6 +1933,10 @@ proxy-groups:
   - name: "♻️ 自动选择"
     type: url-test
     proxies:
+      - "洛杉矶01-4MB/s-443-27.8.3.213"
+      - "成田01-4MB/s-443-119.4.52.68"
+      - "成田02-4MB/s-443-101.37.171.208"
+      - "阿姆斯特丹01-4MB/s-443-106.14.80.120"
       - "法兰克福01-4.28MB/s-8082-62.60.228.207"
       - "法兰克福02-3.58MB/s-2053-62.60.247.69"
       - "法兰克福03-3.51MB/s-2078-62.60.228.206"
@@ -1970,6 +2046,10 @@ proxy-groups:
   - name: "🔥 故障转移"
     type: fallback
     proxies:
+      - "洛杉矶01-4MB/s-443-27.8.3.213"
+      - "成田01-4MB/s-443-119.4.52.68"
+      - "成田02-4MB/s-443-101.37.171.208"
+      - "阿姆斯特丹01-4MB/s-443-106.14.80.120"
       - "法兰克福01-4.28MB/s-8082-62.60.228.207"
       - "法兰克福02-3.58MB/s-2053-62.60.247.69"
       - "法兰克福03-3.51MB/s-2078-62.60.228.206"
