@@ -1,0 +1,361 @@
+proxies:
+  - name: "首尔仁川01-4.34MB/s-10162-121.157.52.181"
+    type: vless
+    server: 121.157.52.181
+    port: 10162
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川02-3.93MB/s-10005-114.204.117.186"
+    type: vless
+    server: 114.204.117.186
+    port: 10005
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川03-3.84MB/s-29999-59.10.72.49"
+    type: vless
+    server: 59.10.72.49
+    port: 29999
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川04-3.76MB/s-10443-59.19.252.218"
+    type: vless
+    server: 59.19.252.218
+    port: 10443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川05-3.75MB/s-37215-211.229.115.25"
+    type: vless
+    server: 211.229.115.25
+    port: 37215
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川06-3.57MB/s-10909-211.230.13.243"
+    type: vless
+    server: 211.230.13.243
+    port: 10909
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川07-3.57MB/s-11434-211.185.55.229"
+    type: vless
+    server: 211.185.55.229
+    port: 11434
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川08-3.30MB/s-10035-175.215.62.88"
+    type: vless
+    server: 175.215.62.88
+    port: 10035
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川09-3.11MB/s-27017-119.77.125.123"
+    type: vless
+    server: 119.77.125.123
+    port: 27017
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "首尔仁川10-3.07MB/s-14534-59.13.181.130"
+    type: vless
+    server: 59.13.181.130
+    port: 14534
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "成田01-3.73MB/s-2080-156.231.141.9"
+    type: vless
+    server: 156.231.141.9
+    port: 2080
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "成田02-3.61MB/s-2080-156.231.141.37"
+    type: vless
+    server: 156.231.141.37
+    port: 2080
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "成田03-3.59MB/s-8443-160.16.73.139"
+    type: vless
+    server: 160.16.73.139
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "成田04-3.17MB/s-443-45.77.176.87"
+    type: vless
+    server: 45.77.176.87
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "关西01-3.48MB/s-8443-167.88.186.107"
+    type: vless
+    server: 167.88.186.107
+    port: 8443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "圣何塞01-3.14MB/s-443-154.92.9.1"
+    type: vless
+    server: 154.92.9.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "首尔仁川01-4.34MB/s-10162-121.157.52.181"
+      - "首尔仁川02-3.93MB/s-10005-114.204.117.186"
+      - "首尔仁川03-3.84MB/s-29999-59.10.72.49"
+      - "首尔仁川04-3.76MB/s-10443-59.19.252.218"
+      - "首尔仁川05-3.75MB/s-37215-211.229.115.25"
+      - "首尔仁川06-3.57MB/s-10909-211.230.13.243"
+      - "首尔仁川07-3.57MB/s-11434-211.185.55.229"
+      - "首尔仁川08-3.30MB/s-10035-175.215.62.88"
+      - "首尔仁川09-3.11MB/s-27017-119.77.125.123"
+      - "首尔仁川10-3.07MB/s-14534-59.13.181.130"
+      - "成田01-3.73MB/s-2080-156.231.141.9"
+      - "成田02-3.61MB/s-2080-156.231.141.37"
+      - "成田03-3.59MB/s-8443-160.16.73.139"
+      - "成田04-3.17MB/s-443-45.77.176.87"
+      - "关西01-3.48MB/s-8443-167.88.186.107"
+      - "圣何塞01-3.14MB/s-443-154.92.9.1"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "首尔仁川01-4.34MB/s-10162-121.157.52.181"
+      - "首尔仁川02-3.93MB/s-10005-114.204.117.186"
+      - "首尔仁川03-3.84MB/s-29999-59.10.72.49"
+      - "首尔仁川04-3.76MB/s-10443-59.19.252.218"
+      - "首尔仁川05-3.75MB/s-37215-211.229.115.25"
+      - "首尔仁川06-3.57MB/s-10909-211.230.13.243"
+      - "首尔仁川07-3.57MB/s-11434-211.185.55.229"
+      - "首尔仁川08-3.30MB/s-10035-175.215.62.88"
+      - "首尔仁川09-3.11MB/s-27017-119.77.125.123"
+      - "首尔仁川10-3.07MB/s-14534-59.13.181.130"
+      - "成田01-3.73MB/s-2080-156.231.141.9"
+      - "成田02-3.61MB/s-2080-156.231.141.37"
+      - "成田03-3.59MB/s-8443-160.16.73.139"
+      - "成田04-3.17MB/s-443-45.77.176.87"
+      - "关西01-3.48MB/s-8443-167.88.186.107"
+      - "圣何塞01-3.14MB/s-443-154.92.9.1"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "首尔仁川01-4.34MB/s-10162-121.157.52.181"
+      - "首尔仁川02-3.93MB/s-10005-114.204.117.186"
+      - "首尔仁川03-3.84MB/s-29999-59.10.72.49"
+      - "首尔仁川04-3.76MB/s-10443-59.19.252.218"
+      - "首尔仁川05-3.75MB/s-37215-211.229.115.25"
+      - "首尔仁川06-3.57MB/s-10909-211.230.13.243"
+      - "首尔仁川07-3.57MB/s-11434-211.185.55.229"
+      - "首尔仁川08-3.30MB/s-10035-175.215.62.88"
+      - "首尔仁川09-3.11MB/s-27017-119.77.125.123"
+      - "首尔仁川10-3.07MB/s-14534-59.13.181.130"
+      - "成田01-3.73MB/s-2080-156.231.141.9"
+      - "成田02-3.61MB/s-2080-156.231.141.37"
+      - "成田03-3.59MB/s-8443-160.16.73.139"
+      - "成田04-3.17MB/s-443-45.77.176.87"
+      - "关西01-3.48MB/s-8443-167.88.186.107"
+      - "圣何塞01-3.14MB/s-443-154.92.9.1"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+  - DOMAIN-SUFFIX,github.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,netflix.com,🚀 节点选择
+  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
