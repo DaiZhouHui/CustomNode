@@ -14,15 +14,16 @@ from typing import List, Dict
 # 加载 .env 文件中的环境变量
 try:
     from dotenv import load_dotenv
-    env_path = Path('.') / '.env'
+
+    env_path = Path(".") / ".env"
     load_dotenv(dotenv_path=env_path)
 except ImportError:
     pass
 
 # 配置信息
-REPO_OWNER = os.getenv('REPO_OWNER', 'DaiZhouHui')
-REPO_NAME = os.getenv('REPO_NAME', 'CustomNode')
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+REPO_OWNER = os.getenv("REPO_OWNER", "DaiZhouHui")
+REPO_NAME = os.getenv("REPO_NAME", "CustomNode")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 
 def get_local_files() -> List[Dict]:
@@ -31,12 +32,31 @@ def get_local_files() -> List[Dict]:
 
     # 忽略的文件列表
     ignore_files = {
-        ".gitignore", "README.md", "index.html", "update-index.html",
-        "style.css", "script.js", "files_info.json",
-        ".git", ".github", "scripts", "__pycache__", "generate-index-optimized.py",
-        "requirements.txt", ".env", ".env.example", "package.json",
-        "package-lock.json", "yarn.lock", "node_modules", "config.json",
-        "settings.json", "*.log", "*.tmp", "*.temp", "*.bak"
+        ".gitignore",
+        "README.md",
+        "index.html",
+        "update-index.html",
+        "style.css",
+        "script.js",
+        "files_info.json",
+        ".git",
+        ".github",
+        "scripts",
+        "__pycache__",
+        "generate-index-optimized.py",
+        "requirements.txt",
+        ".env",
+        ".env.example",
+        "package.json",
+        "package-lock.json",
+        "yarn.lock",
+        "node_modules",
+        "config.json",
+        "settings.json",
+        "*.log",
+        "*.tmp",
+        "*.temp",
+        "*.bak",
     }
 
     print("📂 扫描本地文件...")
@@ -56,14 +76,13 @@ def get_local_files() -> List[Dict]:
             continue
 
         # 检查文件扩展名
-        if any(item_name.endswith(ext) for ext in ['.log', '.tmp', '.temp', '.bak']):
+        if any(item_name.endswith(ext) for ext in [".log", ".tmp", ".temp", ".bak"]):
             continue
 
         try:
             # 获取文件修改时间
             stat_info = item.stat()
-            update_time = datetime.fromtimestamp(
-                stat_info.st_mtime, tz=timezone.utc)
+            update_time = datetime.fromtimestamp(stat_info.st_mtime, tz=timezone.utc)
 
             # 判断文件类型
             file_type = "node"
@@ -72,12 +91,14 @@ def get_local_files() -> List[Dict]:
             elif item_name.isdigit():
                 file_type = "numeric"
 
-            all_files.append({
-                "name": item_name,
-                "type": file_type,
-                "update_time": update_time,
-                "size": stat_info.st_size
-            })
+            all_files.append(
+                {
+                    "name": item_name,
+                    "type": file_type,
+                    "update_time": update_time,
+                    "size": stat_info.st_size,
+                }
+            )
 
         except Exception as e:
             print(f"⚠️  处理文件 {item_name} 时出错: {e}")
@@ -105,29 +126,23 @@ def get_local_files() -> List[Dict]:
 
         if yaml_info:
             # 如果有.yaml文件，使用节点文件的时间
-            node_pairs.append({
-                "node": file_info,
-                "yaml": yaml_info,
-                "display_time": display_time
-            })
+            node_pairs.append(
+                {"node": file_info, "yaml": yaml_info, "display_time": display_time}
+            )
             # 从yaml_files中移除已使用的
             if yaml_name in yaml_files:
                 del yaml_files[yaml_name]
         else:
             # 没有对应的.yaml文件
-            node_pairs.append({
-                "node": file_info,
-                "yaml": None,
-                "display_time": display_time
-            })
+            node_pairs.append(
+                {"node": file_info, "yaml": None, "display_time": display_time}
+            )
 
     # 处理剩余的.yaml文件（没有对应节点文件的）
     for yaml_name, yaml_info in yaml_files.items():
-        node_pairs.append({
-            "node": None,
-            "yaml": yaml_info,
-            "display_time": yaml_info["update_time"]
-        })
+        node_pairs.append(
+            {"node": None, "yaml": yaml_info, "display_time": yaml_info["update_time"]}
+        )
 
     # 转换为显示格式
     for pair in node_pairs:
@@ -150,36 +165,42 @@ def get_local_files() -> List[Dict]:
 
         # 生成链接
         if node_info:
-            node_pages = f"https://{REPO_OWNER}.github.io/{REPO_NAME}/{node_info['name']}"
+            node_pages = (
+                f"https://{REPO_OWNER}.github.io/{REPO_NAME}/{node_info['name']}"
+            )
             node_raw = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/main/{node_info['name']}"
         else:
             node_pages = node_raw = None
 
         if yaml_info:
-            yaml_pages = f"https://{REPO_OWNER}.github.io/{REPO_NAME}/{yaml_info['name']}"
+            yaml_pages = (
+                f"https://{REPO_OWNER}.github.io/{REPO_NAME}/{yaml_info['name']}"
+            )
             yaml_raw = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/main/{yaml_info['name']}"
         else:
             yaml_pages = yaml_raw = None
 
-        files_info.append({
-            "display_name": display_name,
-            "file_type": file_type,
-            "node_name": node_info["name"] if node_info else None,
-            "yaml_name": yaml_info["name"] if yaml_info else None,
-            "node_pages": node_pages,
-            "node_raw": node_raw,
-            "yaml_pages": yaml_pages,
-            "yaml_raw": yaml_raw,
-            "update_time": update_time,
-            "update_date": update_date,
-            "full_time": full_time_str,
-            "update_time_only": update_time_only,
-            "node_size": node_info["size"] if node_info else 0,
-            "yaml_size": yaml_info["size"] if yaml_info else 0,
-            "has_node": node_info is not None,
-            "has_yaml": yaml_info is not None,
-            "is_pair": node_info is not None and yaml_info is not None
-        })
+        files_info.append(
+            {
+                "display_name": display_name,
+                "file_type": file_type,
+                "node_name": node_info["name"] if node_info else None,
+                "yaml_name": yaml_info["name"] if yaml_info else None,
+                "node_pages": node_pages,
+                "node_raw": node_raw,
+                "yaml_pages": yaml_pages,
+                "yaml_raw": yaml_raw,
+                "update_time": update_time,
+                "update_date": update_date,
+                "full_time": full_time_str,
+                "update_time_only": update_time_only,
+                "node_size": node_info["size"] if node_info else 0,
+                "yaml_size": yaml_info["size"] if yaml_info else 0,
+                "has_node": node_info is not None,
+                "has_yaml": yaml_info is not None,
+                "is_pair": node_info is not None and yaml_info is not None,
+            }
+        )
 
         # 打印信息
         if node_info and yaml_info:
@@ -190,8 +211,7 @@ def get_local_files() -> List[Dict]:
             print(f"⚙️  {display_name} - 仅配置 - {full_time_str}")
 
     # 按日期和时间排序（最新在前）
-    files_info.sort(key=lambda x: (
-        x["update_date"], x["update_time"]), reverse=True)
+    files_info.sort(key=lambda x: (x["update_date"], x["update_time"]), reverse=True)
 
     return files_info
 
@@ -211,8 +231,7 @@ def group_files_by_date(files_info: List[Dict]) -> Dict[str, List[Dict]]:
         grouped[date].sort(key=lambda x: x["update_time"], reverse=True)
 
     # 按日期排序（从新到旧）
-    sorted_groups = dict(
-        sorted(grouped.items(), key=lambda x: x[0], reverse=True))
+    sorted_groups = dict(sorted(grouped.items(), key=lambda x: x[0], reverse=True))
 
     return sorted_groups
 
@@ -1834,7 +1853,7 @@ def generate_table_row(file_info: Dict) -> str:
 
 def generate_update_page() -> str:
     """生成优化的更新页面 - 左右布局版本"""
-    return '''<!DOCTYPE html>
+    return """<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -2788,7 +2807,7 @@ def generate_update_page() -> str:
     </script>
 </body>
 </html>
-'''
+"""
 
 
 def main():
@@ -2829,11 +2848,16 @@ def main():
 
     # 保存JSON数据
     with open("files_info.json", "w", encoding="utf-8") as f:
-        json.dump({
-            "files": files_info,
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "repo": f"{REPO_OWNER}/{REPO_NAME}"
-        }, f, indent=2, default=str)
+        json.dump(
+            {
+                "files": files_info,
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "repo": f"{REPO_OWNER}/{REPO_NAME}",
+            },
+            f,
+            indent=2,
+            default=str,
+        )
     print("✅ 保存 files_info.json")
 
     print("\n🎉 生成完成！")
