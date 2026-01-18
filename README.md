@@ -1,7 +1,8 @@
-# Vless节点生成工具2026版
+# 🚀 CustomNode 仓库及节点索引生成器
 
-一个节点仓库,个人随机维护
+一个自动生成节点文件索引页面的工具，支持文件扫描、分组展示、复制链接和删除管理，内置GitHub Actions自动化更新。![Update Index](https://github.com/DaiZhouHui/CustomNode/actions/workflows/update-index.yml/badge.svg)
 
+---
 默认示例 GitHub Pages 发布页（基于默认仓库设置 `DaiZhouHui/CustomNode`）：
 
 - 网页首页：https://daizhouhui.github.io/CustomNode/
@@ -28,169 +29,158 @@
 - 优选订阅（Raw）: https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode
 - 明文订阅（Raw）: https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/PlainNode
 
-## 🌟 功能特点
 
-### 📊 CSV数据解析
-- 支持上传CSV/TXT文件或直接粘贴内容
-- 智能检测CSV列结构（IP、端口、城市、国家、地区码、速度等）
-- 支持多种分隔符（冒号、逗号、空格、分号）
-- 自动识别IP属性和地理信息
+## ✨ 核心功能
 
-### 🔗 节点生成
-- 自动生成Vless节点链接
-- 智能别名生成（支持地区+序号+端口+IP格式）
-- 批量生成Base64订阅
-- 支持自定义参数（UUID、Host、SNI、指纹等）
+- 📂 **智能文件扫描** - 自动配对节点文件与配置文件（.yaml）
+- 🎨 **现代美观界面** - 响应式设计，支持移动端，按日期分组展示
+- 📋 **一键复制链接** - 快速复制Pages/Raw链接，支持批量操作
+- 🗑️ **安全删除功能** - 通过GitHub API安全删除文件
+- 🔄 **自动更新系统** - 支持定时更新和手动触发
+- 📱 **移动端优化** - 完善的响应式布局
 
-### 🔄 GitHub同步
-- 从GitHub仓库下载远程节点
-- 本地与远程节点合并去重
-- 一键同步到GitHub（三个文件：主要订阅、优选订阅、明文订阅）
-- 支持SHA重试机制，避免冲突
-
-### 📱 用户界面
-- 现代化美观的UI设计
-- 响应式布局，支持移动端
-- 实时操作日志
-- 智能通知系统
-- 可隐藏标题栏
+---
 
 ## 🚀 快速开始
 
-### 1. CSV数据源
-- **上传文件**：拖放CSV文件或点击选择
-- **粘贴内容**：直接粘贴IP:端口格式数据
-- **智能检测**：自动识别CSV列结构
+### 环境要求
+- Python 3.8+
+- Git
 
-### 2. 生成节点
-1. 配置节点参数（端口、前缀等）
-2. 点击"生成Vless节点"按钮
-3. 查看生成的Vless链接和Base64订阅
+### 安装步骤
+1. 克隆仓库
+```bash
+git clone https://github.com/DaiZhouHui/CustomNode.git
+cd CustomNode
+```
 
-### 3. GitHub同步
-1. 输入GitHub Token（需要repo权限）
-2. 设置仓库信息（仓库名、分支）
-3. 下载远程节点或一键同步
+2. 安装依赖
+```bash
+pip install -r requirements.txt
+```
 
-说明：工具提供两种生成公开链接的方式——GitHub Pages 和 Raw（raw.githubusercontent.com）。默认使用 Pages（更适合通过浏览器或设备直接导入订阅）。在页面“高级”设置中可切换生成链接类型。
+3. 配置环境变量（可选）
+创建 `.env` 文件：
+```
+REPO_OWNER=your_username
+REPO_NAME=your_repo
+GITHUB_TOKEN=your_token_here
+```
 
-## ⚙️ 配置说明
+4. 生成索引
+```bash
+python generate-index.py
+```
 
-### CSV列配置
-- **IP地址列**：A列=0，B列=1，以此类推
-- **端口列**：-1表示无端口列，使用默认端口443
-- **其他列**：城市、国家、地区码、速度等可选列
-
-### 节点参数
-- **默认端口**：当CSV无端口列时使用
-- **别名前缀**：节点别名前缀
-- **强制443端口**：所有节点使用443端口
-- **自动识别IP属地**：根据IP自动生成地区信息
-
-### GitHub配置
-- **Token**：GitHub个人访问令牌（需repo权限）
-- **仓库**：格式为"用户名/仓库名"
-- **分支**：默认为main
-- **订阅文件**：主要订阅、优选订阅、明文订阅的文件名
-
-## 🔧 高级功能
-
-### 智能合并
-- 本地与远程节点自动去重
-- 智能重命名（保留已有格式，重命名IP:端口格式）
-- 按地区分组并添加序号
-
-### 多种上传选项
-- 上传本地订阅至指定路径
-- 上传合并的主要订阅
-- 上传合并的优选订阅
-- 上传合并的明文订阅
-- 上传合并订阅至自定义路径
-
-### 工具函数
-- 手动Vless转Base64
-- 手动提取IP:端口
-- 下载明文订阅文件
+---
 
 ## 📁 文件结构
 
-GitHub仓库中的三个主要文件：
-1. **MainNode**：主要Base64订阅（双重编码）
-2. **OptimalNode**：优选Base64订阅（双重编码）
-3. **PlainNode**：明文节点文件（单层编码）
+```
+CustomNode/
+├── generate-index.py          # 主生成脚本
+├── index.html                 # 主索引页面（自动生成）
+├── update-index.html          # 更新控制台（自动生成）
+├── update-index.yml           # GitHub Actions工作流
+├── requirements.txt           # Python依赖
+├── .github/workflows/         # 工作流配置
+│   └── update-index.yml
+└── 其他节点文件              # 你的节点和配置文件
+```
 
-## 🛠️ 技术特性
+---
 
-### 智能检测
-- 自动检测CSV是否有标题行
-- 智能识别IP地址、端口、速度等信息
-- 地区码自动转换为中文名称
+## ⚙️ 配置说明
 
-### 缓存机制
-- 本地存储GitHub Token
-- 远程节点缓存，减少API调用
-- 智能缓存更新检测
+### 环境变量
+- `REPO_OWNER`: GitHub用户名（默认：DaiZhouHui）
+- `REPO_NAME`: 仓库名称（默认：CustomNode）
+- `GITHUB_TOKEN`: GitHub个人访问令牌（用于删除功能）
 
-### 错误处理
-- 友好的错误提示
-- 网络请求重试机制
-- GitHub API速率限制处理
+### GitHub Token权限
+如需使用删除功能，Token需要以下权限：
+- `repo`（完整仓库权限）
+- 或至少 `public_repo`（公开仓库）
 
-## 🌍 地区识别
+---
 
-工具内置IP地区识别系统，支持：
-- 200+国家和地区
-- 1000+城市和地区代码
-- 中英文名称映射
+## 🔄 自动化更新
 
-## 📱 使用场景
+### GitHub Actions
+项目配置了自动化工作流：
+- **定时更新**: 每日UTC 02:00自动运行
+- **手动触发**: 通过GitHub Actions页面或更新控制台
+- **文件变更触发**: 非生成文件变化时自动更新
 
-1. **个人节点管理**：管理自己的Vless节点订阅
-2. **团队协作**：共享节点列表给团队成员
-3. **自动化部署**：自动更新节点到GitHub
-4. **节点筛选**：根据速度、地区筛选节点
+### 手动触发更新
+1. 访问 `update-index.html`
+2. 点击"快速更新"、"完整更新"或"强制更新"
+3. 查看实时日志
 
-## ⚠️ 注意事项
+---
 
-1. **GitHub Token**：需要具有repo权限的个人访问令牌
-2. **CSV格式**：建议使用标准CSV格式，确保正确分隔
-3. **IP合法性**：工具会验证IP地址的有效性
-4. **网络连接**：需要网络连接以访问GitHub API和获取IP地理信息
+## 📱 使用技巧
 
-## ✅ 建议的新增功能（基于当前项目，优先级由易到难）
+### 快速操作
+- **搜索**: 页面顶部搜索框，支持实时筛选
+- **复制全部**: 一键复制所有Pages或Raw链接
+- **删除文件**: 点击"操作"显示删除按钮，需要GitHub Token
+- **键盘快捷键**:
+  - `Ctrl/Cmd + F`: 聚焦搜索
+  - `Ctrl/Cmd + P`: 复制全部Pages
+  - `Ctrl/Cmd + R`: 复制全部Raw
+  - `Esc`: 清空搜索/关闭弹窗
 
-1. 定时同步（浏览器端提示）：允许用户设置一个简单的“每 N 小时自动检测并同步”的选项，配合本地通知提示。（实现：使用 setInterval + 本地存储开关）
-2. 本地预览订阅二维码：为生成的 Base64 / Pages 链接提供二维码，便于手机直接扫码导入订阅。 （实现难度低，使用现成二维码库或第三方API）
-3. 快速导入/导出配置：导出当前界面配置为 JSON 配置文件（包含 token 是否保存的标记），便于迁移到其他浏览器或恢复设置。
-4. 简易 Token 有效性检查：在输入 GitHub Token 后，点击验证按钮，可以快速检测 token 权限是否包含 repo 权限并给出友好提示。
-5. CI/CD 模板（可选）：提供一份 GitHub Actions workflow 模板示例，让用户在仓库中自动用提交触发 Pages 发布（便于自动化更新 Pages 内容）。
-6. 订阅文件版本历史与回滚提示：在上传成功后记录最近几次 SHA 与时间（仅在本地记录），并提供回滚到某次上传的简易说明。
+### 移动端适配
+- 平板：隐藏状态列
+- 手机：进一步隐藏时间列，垂直布局操作按钮
+- 触摸优化：增大点击区域
 
-这些建议侧重于增强用户体验和自动化程度，大多数为前端或轻量脚本实现，便于后续迭代。
+---
 
-## 🔒 隐私安全
+## 🔧 故障排除
 
-- 所有操作在浏览器本地完成
-- GitHub Token仅存储在浏览器本地
-- 不收集用户数据
-- 开源代码，透明可信
+### 常见问题
+1. **无法生成索引**
+   - 检查Python版本 ≥ 3.8
+   - 确保安装了所有依赖
+
+2. **删除功能失效**
+   - 确认GitHub Token有仓库写入权限
+   - 检查Token是否过期
+
+3. **页面显示异常**
+   - 清空浏览器缓存
+   - 检查网络连接，确保能加载Font Awesome
+
+### 日志查看
+- 更新过程日志在 `update-index.html`
+- 详细错误信息在浏览器控制台（F12）
+
+---
 
 ## 📄 许可证
 
-本项目开源，基于MIT许可证。
+MIT License
+
+---
 
 ## 🤝 贡献
 
-欢迎提交Issue和Pull Request来改进这个工具！
-
-## 📞 支持
-
-如有问题，请提交GitHub Issue或联系维护者。
-
----
+欢迎提交Issue和Pull Request！
+- 报告Bug
+- 提出新功能建议
+- 改进文档
+- 提交代码改进
 
 ---
 
-**版本**：26.01.15.16  (格式：YY.MM.DD.HH，示例)
-**最后更新**：2026-01-15 16:12  
-**兼容性**：现代浏览器（Chrome、Firefox、Edge等）
+## 🔗 相关链接
+
+- 📂 [GitHub仓库](https://github.com/DaiZhouHui/CustomNode)
+- 📖 [GitHub Pages页面](https://daizhouhui.github.io/CustomNode/)
+- ⚙️ [GitHub Actions状态](https://github.com/DaiZhouHui/CustomNode/actions)
+
+---
+
+**提示**: 首次使用建议先运行测试更新，确保所有功能正常。如遇问题，请查看控制台日志或提交Issue。
