@@ -622,7 +622,7 @@ body {{
 
 /* 显示操作按钮 */
 .btn-show-action {{
-    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    background: linear-gradient(135deg, #a499be, #ccb0fc);
     color: white;
     min-width: 90px;
     padding: 10px 12px;

@@ -2,36 +2,29 @@ name: Update Node Index
 
 on:
   push:
-    # 只有当非生成文件发生变化时才触发，防止死循环
+    # 只有当非生成的代码文件发生变化时才触发
     paths:
       - '**'
       - '!index.html'
       - '!update-index.html'
       - '!files_info.json'
-      - '!requirements.txt'
-      - '!.github/workflows/**'
     branches: [ main ]
   schedule:
     # 每天凌晨2点自动更新 (UTC)
     - cron: '0 2 * * *'
-  workflow_dispatch: # 允许手动点按钮触发
+  workflow_dispatch: # 允许手动按钮触发
 
-# 🔥 关键修复：赋予 GITHUB_TOKEN 写入权限
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: write # 必须赋予写权限，否则无法提交回 main
 
 jobs:
-  build-and-update:
+  update-index:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        ref: main
-        
+      
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -40,24 +33,25 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        # 假设 requirements.txt 在根目录
         pip install -r requirements.txt
         
     - name: Generate index files
       env:
-        # 使用内置的 TOKEN 即可，不需要你自己生成的 ghp_token
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO_OWNER: ${{ github.repository_owner }}
         REPO_NAME: ${{ github.event.repository.name }}
       run: |
-        python generate-index.py
+        # ✅ 修复点：指定正确的脚本路径
+        # 注意：我们在根目录运行这个命令，生成的文件也会出现在根目录
+        # 这样正好符合 GitHub Pages 的要求
+        python scripts/generate-index.py
         
-    # 🔥 优化方案：将生成的文件提交回 main 分支
-    # 这样你的仓库源码里也能看到最新的 index.html
-    - name: Commit and Push changes
+    - name: Commit and Push to Main
+      # ✅ 修复点：既然你只有 main 分支，我们直接把生成的文件提交回 main
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: "🤖 Auto-update index: ${{ github.sha }}"
+        commit_message: "🤖 Auto-update index html"
         file_pattern: 'index.html update-index.html files_info.json'
         branch: main
-        skip_dirty_check: false    
-        create_branch: false
+        skip_dirty_check: false
