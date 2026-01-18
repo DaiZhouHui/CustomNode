@@ -1,6 +1,25 @@
 {
   "files": [
     {
+      "display_name": "19hk",
+      "file_type": "node",
+      "node_name": "19hk",
+      "yaml_name": "19hk.yaml",
+      "node_pages": "https://DaiZhouHui.github.io/CustomNode/19hk",
+      "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/19hk",
+      "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/19hk.yaml",
+      "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/19hk.yaml",
+      "update_time": "2026-01-18 21:25:08+00:00",
+      "update_date": "2026-01-18",
+      "full_time": "2026-01-18 21:25:08",
+      "update_time_only": "21:25:08",
+      "node_size": 2391,
+      "yaml_size": 6027,
+      "has_node": true,
+      "has_yaml": true,
+      "is_pair": true
+    },
+    {
       "display_name": "OptimalNode",
       "file_type": "node",
       "node_name": "OptimalNode",
@@ -248,6 +267,6 @@
       "is_pair": false
     }
   ],
-  "generated_at": "2026-01-18T21:01:48.547095+00:00",
+  "generated_at": "2026-01-18T21:25:21.961258+00:00",
   "repo": "DaiZhouHui/CustomNode"
 }
