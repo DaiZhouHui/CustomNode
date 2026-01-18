@@ -7,6 +7,7 @@ CustomNode 仓库节点索引生成工具 - 优化版
 import os
 import sys
 import json
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Dict
@@ -24,6 +25,45 @@ except ImportError:
 REPO_OWNER = os.getenv("REPO_OWNER", "DaiZhouHui")
 REPO_NAME = os.getenv("REPO_NAME", "CustomNode")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+# 配置信息
+REPO_OWNER = os.getenv("REPO_OWNER", "DaiZhouHui")
+REPO_NAME = os.getenv("REPO_NAME", "CustomNode")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+
+
+def get_git_file_time(file_path: str) -> datetime:
+    """
+    从Git历史获取文件的最后修改时间（修复：使用git log时间而非文件系统时间）
+    """
+    try:
+        # 使用git log获取文件的最后提交时间
+        cmd = ["git", "log", "-1", "--format=%aI", "--", file_path]
+        result = subprocess.run(cmd, capture_output=True, text=True, cwd=".")
+
+        if result.returncode == 0 and result.stdout.strip():
+            # 解析ISO格式时间戳，如：2024-01-20T12:34:56+00:00
+            git_time_str = result.stdout.strip()
+            # 转换为datetime对象（处理带时区的时间）
+            git_time = datetime.fromisoformat(git_time_str)
+            # 确保时区为UTC
+            if git_time.tzinfo is None:
+                git_time = git_time.replace(tzinfo=timezone.utc)
+            else:
+                git_time = git_time.astimezone(timezone.utc)
+            return git_time
+
+        # 如果git历史中没有该文件（可能是新文件），则使用当前时间
+        return datetime.now(timezone.utc)
+
+    except Exception as e:
+        print(f"⚠️  获取git时间失败 {file_path}: {e}")
+        # 降级方案：使用文件系统时间
+        try:
+            stat_info = Path(file_path).stat()
+            return datetime.fromtimestamp(stat_info.st_mtime, tz=timezone.utc)
+        except:
+            return datetime.now(timezone.utc)
+
 
 
 def get_local_files() -> List[Dict]:
@@ -80,10 +120,9 @@ def get_local_files() -> List[Dict]:
             continue
 
         try:
-            # 获取文件修改时间
-            stat_info = item.stat()
-            update_time = datetime.fromtimestamp(stat_info.st_mtime, tz=timezone.utc)
-
+            # 修复：使用Git历史时间而非文件系统时间
+            update_time = get_git_file_time(item_name)
+            
             # 判断文件类型
             file_type = "node"
             if item_name.endswith(".yaml"):
@@ -91,6 +130,9 @@ def get_local_files() -> List[Dict]:
             elif item_name.isdigit():
                 file_type = "numeric"
 
+            # 获取文件大小
+            stat_info = item.stat()
+            
             all_files.append(
                 {
                     "name": item_name,
