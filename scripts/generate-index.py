@@ -1834,7 +1834,7 @@ def generate_table_row(file_info: Dict) -> str:
 
 def generate_update_page() -> str:
     """生成优化的更新页面 - 左右布局版本"""
-    return """<!DOCTYPE html>
+    return '''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -2788,7 +2788,7 @@ def generate_update_page() -> str:
     </script>
 </body>
 </html>
-"""
+'''
 
 
 def main():
