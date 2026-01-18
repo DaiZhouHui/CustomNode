@@ -1,14 +1,19 @@
 # Vless节点生成工具2026版
 
-一个功能强大的Web工具，用于将CSV数据转换为Vless节点链接，生成Base64订阅，并与GitHub仓库同步。
+一个节点仓库,个人随机维护
 
 默认示例 GitHub Pages 发布页（基于默认仓库设置 `DaiZhouHui/CustomNode`）：
 
-- 网页首页：https://daizhouhui.github.io/NodeWeb/
+- 网页首页：https://daizhouhui.github.io/CustomNode/
 
 节点仓库（基于默认仓库设置 `DaiZhouHui/CustomNode`）：
 
 - 仓库首页 ：https://github.com/DaiZhouHui/CustomNode
+
+节点生成页 一个Web工具，用于将CSV数据转换为Vless节点链接，生成Base64订阅，并与GitHub仓库同步。
+
+- 节点生成网站首页 ：https://daizhouhui.github.io/NodeWeb
+
 
 默认三个节点订阅文件（Pages 版本示例）：
 
