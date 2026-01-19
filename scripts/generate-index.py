@@ -881,26 +881,27 @@ body {{
 
 /* 底部信息 - 最小化 */
 .footer-info {{
-    padding: 12px 25px;
+    padding: 8px 20px;
     background: var(--light);
     border-top: 1px solid var(--border);
-    font-size: 14px;
+    font-size: 13px;
     color: var(--gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    min-height: 40px;
 }}
 
 .footer-left {{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }}
 
 .footer-right {{
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }}
 
 .footer-link {{
@@ -919,7 +920,7 @@ body {{
 }}
 
 .footer-link i {{
-    font-size: 16px;
+    font-size: 14px;
 }}
 
 /* 复制提示 */
@@ -996,7 +997,7 @@ body {{
     }}
 }}
 
-/* 平板响应 - 隐藏状态列 */
+/* 平板响应 - 隐藏操作列 */
 @media (max-width: 992px) {{
     body {{
         padding: 15px;
@@ -1052,9 +1053,9 @@ body {{
         font-size: 14px;
     }}
     
-    /* 隐藏状态列 */
-    .nodes-table th:nth-child(3),
-    .nodes-table td:nth-child(3) {{
+    /* 隐藏操作列（第6列） */
+    .nodes-table th:nth-child(6),
+    .nodes-table td:nth-child(6) {{
         display: none;
     }}
     
@@ -1073,13 +1074,13 @@ body {{
         font-size: 12px;
     }}
     
-    .quick-btn {{
-        width: 36px;
-        height: 36px;
+    /* 隐藏"全部Pages"和"全部Raw"按钮 */
+    .btn-primary, .btn-secondary {{
+        display: none;
     }}
 }}
 
-/* 中等屏幕响应 - 隐藏更新时间列 */
+/* 中等屏幕响应 - 隐藏状态列 */
 @media (max-width: 768px) {{
     body {{
         padding: 10px;
@@ -1113,9 +1114,9 @@ body {{
         font-size: 13px;
     }}
     
-    /* 隐藏更新时间列 */
-    .nodes-table th:nth-child(2),
-    .nodes-table td:nth-child(2) {{
+    /* 隐藏状态列（第3列） */
+    .nodes-table th:nth-child(3),
+    .nodes-table td:nth-child(3) {{
         display: none;
     }}
     
@@ -1134,15 +1135,21 @@ body {{
     }}
     
     .footer-info {{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 10px 15px;
+        padding: 6px 12px;
+        font-size: 12px;
+        min-height: 36px;
     }}
     
     .footer-left, .footer-right {{
-        flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+    }}
+    
+    .footer-link {{
+        font-size: 12px;
+    }}
+    
+    .footer-link i {{
+        font-size: 12px;
     }}
     
     .toast {{
@@ -1159,7 +1166,7 @@ body {{
     }}
 }}
 
-/* 小屏幕响应 - 进一步调整 */
+/* 小屏幕响应 - 隐藏更新时间列 */
 @media (max-width: 480px) {{
     body {{
         padding: 5px;
@@ -1167,12 +1174,11 @@ body {{
     }}
     
     .container {{
-        border-radius: 8px;
         height: calc(100vh - 10px);
     }}
     
     .control-bar {{
-        padding: 12px 15px;
+        padding: 10px 12px;
     }}
     
     .logo {{
@@ -1195,12 +1201,20 @@ body {{
     .btn {{
         width: 100%;
         justify-content: center;
+        font-size: 13px;
+        padding: 8px 12px;
     }}
     
     .nodes-table th,
     .nodes-table td {{
         padding: 8px 10px;
         font-size: 12px;
+    }}
+    
+    /* 隐藏更新时间列（第2列） */
+    .nodes-table th:nth-child(2),
+    .nodes-table td:nth-child(2) {{
+        display: none;
     }}
     
     .node-name {{
@@ -1220,7 +1234,27 @@ body {{
     
     .date-divider td {{
         font-size: 14px;
-        padding: 10px 15px;
+        padding: 10px 12px;
+    }}
+    
+    .footer-info {{
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 11px;
+        min-height: auto;
+    }}
+    
+    .footer-left, .footer-right {{
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }}
+    
+    .footer-link {{
+        justify-content: center;
+        width: 100%;
     }}
     
     .modal-content {{
@@ -1301,8 +1335,8 @@ body {{
                             <th width="20%">节点名称</th>
                             <th width="15%">更新时间</th>
                             <th width="10%">状态</th>
-                            <th width="20%">节点链接</th>
-                            <th width="20%">配置链接</th>
+                            <th width="20%">订阅链接</th>
+                            <th width="20%">yaml订阅</th>
                             <th width="15%">操作</th>
                         </tr>
                     </thead>
@@ -1866,14 +1900,14 @@ def generate_table_row(file_info: Dict) -> str:
         <td><span class="status-badge {status_class}">{status_text}</span></td>
         <td>
             <div class="link-buttons">
-                {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['node_pages']}', this)\" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>" if file_info['node_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无节点文件</span>"}
-                {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['node_raw']}', this)\" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>" if file_info['node_raw'] else ""}
+                {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['node_pages']}', this)\" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>" if file_info['node_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无节点文件</span>"}
+                {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['node_raw']}', this)\" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>" if file_info['node_raw'] else ""}
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['yaml_pages']}', this)\" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>" if file_info['yaml_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无配置文件</span>"}
-                {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['yaml_raw']}', this)\" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>" if file_info['yaml_raw'] else ""}
+                {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['yaml_pages']}', this)\" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>" if file_info['yaml_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无配置文件</span>"}
+                {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['yaml_raw']}', this)\" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>" if file_info['yaml_raw'] else ""}
             </div>
         </td>
         <td>
