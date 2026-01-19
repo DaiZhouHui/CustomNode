@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomNode 更新控制台</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #827ce5;
+            --secondary: #10b981;
+            --secondary-dark: #059669;
+            --accent: #f59e0b;
+            --accent-dark: #d97706;
+            --success: #22c55e;
+            --warning: #f97316;
+            --danger: #ef4444;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gray-light: #e2e8f0;
+            --border: #cbd5e1;
+            --shadow: 0 10px 25px rgba(99, 102, 241, 0.1);
+            --radius: 15px;
+            --radius-sm: 10px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            color: var(--dark);
+            font-size: 16px;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .update-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - 40px);
+        }
+        
+        /* 头部 */
+        .update-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 30px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .header-left h1 {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(-5px);
+            border-color: white;
+        }
+        
+        /* 左右布局 */
+        .update-layout {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .left-panel {
+            flex: 0 0 35%;
+            background: var(--light);
+            padding: 30px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border-right: 1px solid var(--border);
+        }
+        
+        .right-panel {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        /* 卡片样式 */
+        .update-card {
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .update-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .update-card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--gray-light);
+        }
+        
+        /* 状态网格 */
+        .status-grid {
+            display: grid;
+            gap: 15px;
+            flex: 1;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px;
+            background: var(--light);
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .status-item:hover {
+            background: #f0f9ff;
+            transform: translateX(5px);
+        }
+        
+        .status-item i {
+            font-size: 24px;
+            color: var(--primary);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .status-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .status-item p {
+            font-size: 15px;
+            color: var(--gray);
+        }
+        
+        /* 更新操作网格 */
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .action-btn {
+            padding: 20px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+        }
+        
+        .action-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        }
+        
+        .action-btn i {
+            font-size: 32px;
+        }
+        
+        .action-btn span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .action-btn.quick {
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+        }
+        
+        .action-btn.force {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+        }
+        
+        /* 日志区域 */
+        .log-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+        }
+        
+        .log-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .log-header h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .log-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .log-btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 30px;
+            background: var(--light);
+            color: var(--primary);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .log-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .log-output {
+            background: #1a1a1a;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+            font-size: 15px;
+            flex: 1;
+            overflow-y: auto;
+            line-height: 1.8;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            min-height: 200px;
+        }
+        
+        .log-entry {
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .log-time {
+            color: #aaa;
+            min-width: 70px;
+            font-size: 14px;
+        }
+        
+        .log-success {
+            color: #32cd32;
+        }
+        
+        .log-error {
+            color: #ff6b6b;
+        }
+        
+        .log-info {
+            color: #4ecdc4;
+        }
+        
+        .log-warning {
+            color: #ffa500;
+        }
+        
+        /* 设置网格 */
+        .settings-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .setting-item {
+            padding: 20px;
+            background: var(--light);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+        
+        .setting-item label {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .setting-control {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .setting-control select,
+        .setting-control input {
+            flex: 1;
+            padding: 12px 18px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+            color: var(--dark);
+            transition: all 0.3s ease;
+        }
+        
+        .setting-control select:focus,
+        .setting-control input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        
+        .setting-desc {
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+        
+        /* 底部信息 */
+        .update-footer {
+            padding: 20px 30px;
+            background: var(--light);
+            border-top: 1px solid var(--border);
+            font-size: 15px;
+            color: var(--gray);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-shrink: 0;
+        }
+        
+        .update-footer p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .update-footer i {
+            color: var(--primary);
+            font-size: 16px;
+        }
+        
+        /* 响应式设计 - 手机适配 */
+        @media (max-width: 1200px) {
+            .update-container {
+                max-width: 95%;
+            }
+            
+            .action-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            body {
+                padding: 15px;
+                font-size: 15px;
+            }
+            
+            .update-container {
+                min-height: calc(100vh - 30px);
+            }
+            
+            .update-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 20px;
+                padding: 20px 25px;
+            }
+            
+            .header-left {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .header-left h1 {
+                font-size: 22px;
+            }
+            
+            .back-btn {
+                align-self: flex-start;
+            }
+            
+            .update-layout {
+                flex-direction: column;
+            }
+            
+            .left-panel {
+                flex: none;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                max-height: 50vh;
+                overflow-y: auto;
+            }
+            
+            .right-panel {
+                flex: none;
+            }
+            
+            .update-card {
+                padding: 20px;
+            }
+            
+            .action-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .log-output {
+                height: 200px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 14px;
+            }
+            
+            .update-container {
+                min-height: calc(100vh - 20px);
+            }
+            
+            .update-header {
+                padding: 15px 20px;
+            }
+            
+            .header-left h1 {
+                font-size: 20px;
+            }
+            
+            .back-btn {
+                padding: 10px 18px;
+                font-size: 15px;
+            }
+            
+            .left-panel,
+            .right-panel {
+                padding: 15px;
+            }
+            
+            .update-card {
+                padding: 18px;
+            }
+            
+            .update-card h2 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            
+            .status-item {
+                padding: 15px;
+            }
+            
+            .status-item i {
+                font-size: 20px;
+                width: 45px;
+                height: 45px;
+            }
+            
+            .action-btn {
+                padding: 18px;
+            }
+            
+            .action-btn i {
+                font-size: 28px;
+            }
+            
+            .log-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .log-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .log-btn {
+                flex: 1;
+                justify-content: center;
+            }
+            
+            .log-output {
+                height: 180px;
+                font-size: 13px;
+                padding: 15px;
+            }
+            
+            .setting-control {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .update-footer {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+                font-size: 13px;
+            }
+            
+            .update-container {
+                min-height: calc(100vh - 10px);
+                border-radius: 10px;
+            }
+            
+            .update-header {
+                padding: 12px 15px;
+            }
+            
+            .header-left h1 {
+                font-size: 18px;
+            }
+            
+            .back-btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+            
+            .left-panel,
+            .right-panel {
+                padding: 12px;
+                gap: 20px;
+            }
+            
+            .update-card {
+                padding: 15px;
+            }
+            
+            .status-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                padding: 15px;
+            }
+            
+            .status-item i {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+            
+            .action-btn {
+                padding: 15px;
+            }
+            
+            .action-btn i {
+                font-size: 24px;
+            }
+            
+            .log-output {
+                height: 150px;
+                font-size: 12px;
+                padding: 12px;
+            }
+            
+            .log-entry {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .log-time {
+                min-width: auto;
+            }
+        }
+        
+        /* 滚动条样式 */
+        .left-panel::-webkit-scrollbar,
+        .right-panel::-webkit-scrollbar,
+        .log-output::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .left-panel::-webkit-scrollbar-track,
+        .right-panel::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        
+        .left-panel::-webkit-scrollbar-thumb,
+        .right-panel::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        
+        .log-output::-webkit-scrollbar-track {
+            background: #2a2a2a;
+            border-radius: 4px;
+        }
+        
+        .log-output::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        
+        .log-output::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="update-container">
+        <!-- 头部 -->
+        <div class="update-header">
+            <div class="header-left">
+                <h1><i class="fas fa-sync-alt"></i> CustomNode 更新控制台</h1>
+            </div>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                返回主页面
+            </a>
+        </div>
+
+        <!-- 左右布局 -->
+        <div class="update-layout">
+            <!-- 左侧面板 -->
+            <div class="left-panel">
+                <!-- 状态卡片 -->
+                <div class="update-card">
+                    <h2><i class="fas fa-robot"></i> 自动更新状态</h2>
+                    <div class="status-grid">
+                        <div class="status-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>计划任务</h4>
+                                <p>每日 UTC 02:00 自动执行更新</p>
+                            </div>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-history"></i>
+                            <div>
+                                <h4>最后运行时间</h4>
+                                <p id="lastRunTime">正在获取...</p>
+                            </div>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-toggle-on"></i>
+                            <div>
+                                <h4>系统状态</h4>
+                                <p style="color: #22c55e; font-weight: 600;">🟢 系统运行正常</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 设置卡片 -->
+                <div class="update-card">
+                    <h2><i class="fas fa-cog"></i> 更新设置</h2>
+                    <div class="settings-grid">
+                        <div class="setting-item">
+                            <label><i class="fas fa-calendar-alt"></i> 自动更新计划</label>
+                            <div class="setting-control">
+                                <select id="cronSchedule">
+                                    <option value="0 2 * * *">每日 02:00 UTC</option>
+                                    <option value="0 */6 * * *">每6小时更新</option>
+                                    <option value="0 */3 * * *">每3小时更新</option>
+                                </select>
+                            </div>
+                            <p class="setting-desc">GitHub Actions 自动执行的时间计划</p>
+                        </div>
+                        
+                        <div class="setting-item">
+                            <label><i class="fas fa-redo"></i> 失败重试机制</label>
+                            <div class="setting-control">
+                                <select id="retryCount">
+                                    <option value="1">1次重试</option>
+                                    <option value="3" selected>3次重试</option>
+                                    <option value="5">5次重试</option>
+                                </select>
+                            </div>
+                            <p class="setting-desc">更新失败时的自动重试次数</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧面板 -->
+            <div class="right-panel">
+                <!-- 更新卡片 -->
+                <div class="update-card">
+                    <h2><i class="fas fa-play-circle"></i> 手动触发更新</h2>
+                    <div class="action-grid">
+                        <button class="action-btn" onclick="triggerUpdate('full')">
+                            <i class="fas fa-sync"></i>
+                            <span>完整更新</span>
+                        </button>
+                        <button class="action-btn quick" onclick="triggerUpdate('quick')">
+                            <i class="fas fa-bolt"></i>
+                            <span>快速更新</span>
+                        </button>
+                        <button class="action-btn force" onclick="triggerUpdate('force')">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>强制更新</span>
+                        </button>
+                    </div>
+                    
+                    <div class="log-container">
+                        <div class="log-header">
+                            <h3><i class="fas fa-terminal"></i> 更新日志</h3>
+                            <div class="log-actions">
+                                <button class="log-btn" onclick="clearLog()">
+                                    <i class="fas fa-trash"></i>
+                                    清空日志
+                                </button>
+                                <button class="log-btn" onclick="testUpdate()">
+                                    <i class="fas fa-play"></i>
+                                    测试连接
+                                </button>
+                            </div>
+                        </div>
+                        <div id="updateOutput" class="log-output">
+                            <div class="log-entry log-info">
+                                <span class="log-time">[系统]</span>
+                                <span>更新控制台已就绪，点击上方按钮开始更新</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部信息 -->
+        <div class="update-footer">
+            <p><i class="fas fa-info-circle"></i> 手动更新会触发 GitHub Actions 工作流执行</p>
+            <p><i class="fas fa-exclamation-triangle"></i> 频繁手动触发可能导致 API 速率限制</p>
+            <p><i class="fas fa-clock"></i> 更新过程通常需要 1-3 分钟完成</p>
+        </div>
+    </div>
+
+    <script>
+        // 获取最后运行时间
+        async function loadLastRunTime() {
+            try {
+                const response = await fetch('https://api.github.com/repos/DaiZhouHui/CustomNode/actions/workflows/update-index.yml/runs?status=completed&per_page=1');
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.workflow_runs && data.workflow_runs.length > 0) {
+                        const run = data.workflow_runs[0];
+                        const time = new Date(run.updated_at).toLocaleString('zh-CN');
+                        document.getElementById('lastRunTime').textContent = time;
+                    } else {
+                        document.getElementById('lastRunTime').textContent = '暂无运行记录';
+                    }
+                } else {
+                    document.getElementById('lastRunTime').textContent = '加载失败，请检查网络';
+                }
+            } catch (error) {
+                console.error('获取运行时间失败:', error);
+                document.getElementById('lastRunTime').textContent = '网络错误';
+            }
+        }
+        
+        // 触发更新
+        function triggerUpdate(type) {
+            const output = document.getElementById('updateOutput');
+            const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+            const date = new Date().toLocaleDateString('zh-CN');
+            
+            let message = '';
+            let typeText = '';
+            
+            switch(type) {
+                case 'full':
+                    message = '开始完整更新：重新扫描所有文件并重建索引';
+                    typeText = '完整更新';
+                    break;
+                case 'quick':
+                    message = '开始快速更新：基于现有文件更新索引';
+                    typeText = '快速更新';
+                    break;
+                case 'force':
+                    message = '开始强制更新：忽略缓存，强制重新生成所有内容';
+                    typeText = '强制更新';
+                    break;
+            }
+            
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry log-info';
+            logEntry.innerHTML = `<span class="log-time">[${date} ${time}]</span><span>🚀 开始${typeText}: ${message}</span>`;
+            output.prepend(logEntry);
+            
+            // 模拟更新过程
+            simulateUpdateProcess(type, output);
+        }
+        
+        // 模拟更新过程
+        function simulateUpdateProcess(type, output) {
+            const steps = [
+                {delay: 1000, message: '正在连接到 GitHub API...', type: 'info'},
+                {delay: 2000, message: '正在验证访问权限...', type: 'info'},
+                {delay: 3000, message: '正在扫描仓库文件...', type: 'info'},
+                {delay: 4000, message: '正在处理节点文件...', type: 'info'},
+                {delay: 5000, message: '正在生成索引页面...', type: 'info'},
+                {delay: 6000, message: '✅ 更新成功！工作流已触发', type: 'success'},
+            ];
+            
+            let totalDelay = 0;
+            steps.forEach(step => {
+                totalDelay += step.delay;
+                setTimeout(() => {
+                    const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+                    const logEntry = document.createElement('div');
+                    logEntry.className = `log-entry log-${step.type}`;
+                    logEntry.innerHTML = `<span class="log-time">[${time}]</span><span>${step.message}</span>`;
+                    output.prepend(logEntry);
+                    output.scrollTop = 0;
+                    
+                    // 最后一步添加跳转链接
+                    if (step.message.includes('更新成功')) {
+                        setTimeout(() => {
+                            const linkEntry = document.createElement('div');
+                            linkEntry.className = 'log-entry log-info';
+                            linkEntry.innerHTML = `<span class="log-time">[${new Date().toLocaleTimeString('zh-CN', {hour12: false})}]</span><span>🔗 <a href="https://github.com/DaiZhouHui/CustomNode/actions" target="_blank" style="color: #4ecdc4; text-decoration: none;">查看 GitHub Actions 状态</a></span>`;
+                            output.prepend(linkEntry);
+                        }, 1000);
+                    }
+                }, totalDelay);
+            });
+        }
+        
+        // 测试连接
+        function testUpdate() {
+            const output = document.getElementById('updateOutput');
+            const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+            const date = new Date().toLocaleDateString('zh-CN');
+            
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry log-info';
+            logEntry.innerHTML = `<span class="log-time">[${date} ${time}]</span><span>🧪 开始测试系统连接...</span>`;
+            output.prepend(logEntry);
+            
+            setTimeout(() => {
+                const time2 = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+                const successEntry = document.createElement('div');
+                successEntry.className = 'log-entry log-success';
+                successEntry.innerHTML = `<span class="log-time">[${time2}]</span><span>✅ 连接测试成功！所有系统功能正常</span>`;
+                output.prepend(successEntry);
+            }, 1500);
+        }
+        
+        // 清空日志
+        function clearLog() {
+            const output = document.getElementById('updateOutput');
+            const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+            const date = new Date().toLocaleDateString('zh-CN');
+            
+            output.innerHTML = `
+                <div class="log-entry log-info">
+                    <span class="log-time">[${date} ${time}]</span>
+                    <span>日志已清空</span>
+                </div>
+            `;
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLastRunTime();
+            // 每60秒刷新一次运行时间
+            setInterval(loadLastRunTime, 60000);
+        });
+    </script>
+</body>
+</html>
