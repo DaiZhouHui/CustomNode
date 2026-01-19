@@ -614,7 +614,7 @@ body {{
     border: 1px solid rgba(245, 158, 11, 0.3);
 }}
 
-/* 链接按钮列 - 修复桌面端横向排版 */
+/* 链接按钮列 - 修复：桌面端横向排版，移动端纵向排版 */
 .link-buttons {{
     display: flex;
     flex-wrap: wrap;
@@ -1143,9 +1143,9 @@ body {{
         font-size: 14px;
     }}
     
-    /* 平板和手机端改为纵向排列 */
+    /* 平板和手机端将链接按钮改为纵向排列 */
     .link-buttons {{
-        flex-direction: column;
+        flex-direction: column !important;
         gap: 5px;
     }}
     
@@ -1298,7 +1298,7 @@ body {{
     }}
     
     .link-buttons {{
-        flex-direction: column;
+        flex-direction: column !important;
         gap: 4px;
     }}
     
