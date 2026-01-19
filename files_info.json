@@ -1,6 +1,25 @@
 {
   "files": [
     {
+      "display_name": "0120",
+      "file_type": "node",
+      "node_name": "0120",
+      "yaml_name": "0120.yaml",
+      "node_pages": "https://DaiZhouHui.github.io/CustomNode/0120",
+      "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0120",
+      "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/0120.yaml",
+      "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0120.yaml",
+      "update_time": "2026-01-19 20:45:21+00:00",
+      "update_date": "2026-01-19",
+      "full_time": "2026-01-19 20:45:21",
+      "update_time_only": "20:45:21",
+      "node_size": 9452,
+      "yaml_size": 20769,
+      "has_node": true,
+      "has_yaml": true,
+      "is_pair": true
+    },
+    {
       "display_name": "test",
       "file_type": "node",
       "node_name": "test",
@@ -286,6 +305,6 @@
       "is_pair": false
     }
   ],
-  "generated_at": "2026-01-19T17:04:58.657675+00:00",
+  "generated_at": "2026-01-19T20:45:38.331352+00:00",
   "repo": "DaiZhouHui/CustomNode"
 }
