@@ -477,6 +477,7 @@ body {{
     display: flex;
     flex-direction: column;
     padding: 0 10px;
+    min-height: 0; /* 新增：解决flex布局中的高度计算问题 */
 }}
 
 .table-container {{
@@ -487,6 +488,7 @@ body {{
     border-radius: 8px;
     background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: 0; /* 新增：设置为0以启用flex:1的正确高度计算 */
 }}
 
 /* 节点表格 */
@@ -1560,21 +1562,24 @@ body {{
         
         // 显示/隐藏操作列
         function toggleActionButtons(btn) {{
-            const row = btn.closest('tr');
-            const deleteBtn = row.querySelector('.btn-delete');
-            const showActionBtn = row.querySelector('.btn-show-action');
-            
-            if (deleteBtn.style.display === 'none' || deleteBtn.style.display === '') {{
-                // 显示删除按钮
-                deleteBtn.style.display = 'flex';
-                showActionBtn.innerHTML = '<i class="fas fa-eye-slash"></i> 隐藏';
-                showActionBtn.style.background = 'linear-gradient(135deg, #6b7280, #4b5563)';
-            }} else {{
-                // 隐藏删除按钮
-                deleteBtn.style.display = 'none';
-                showActionBtn.innerHTML = '<i class="fas fa-eye"></i> 操作';
-                showActionBtn.style.background = 'linear-gradient(135deg, #8b5cf6, #7c3aed)';
-            }}
+        const row = btn.closest('tr');
+        const deleteBtn = row.querySelector('.btn-delete');
+        const showActionBtn = row.querySelector('.btn-show-action');
+
+        if (deleteBtn.style.display === 'none' || deleteBtn.style.display === '') {{
+            // 显示删除按钮
+            deleteBtn.style.display = 'flex';
+            showActionBtn.innerHTML = '<i class="fas fa-eye-slash"></i> 隐藏';
+            showActionBtn.style.background = 'linear-gradient(135deg, #6b7280, #4b5563)';
+        }} else {{
+            // 隐藏删除按钮
+            deleteBtn.style.display = 'none';
+            showActionBtn.innerHTML = '<i class="fas fa-eye"></i> 操作';
+            // 恢复初始颜色样式
+            showActionBtn.style.background = 'linear-gradient(135deg, #a499be, #ccb0fc)';
+            // 确保移除可能存在的内联样式覆盖
+            showActionBtn.style.removeProperty('background');
+        }}
         }}
         
         // 打开删除模态框
@@ -1818,6 +1823,7 @@ body {{
         document.addEventListener('DOMContentLoaded', function() {{
             filterTable();
             
+            
             // 自动调整表格容器高度
             function adjustTableHeight() {{
                 const container = document.querySelector('.container');
@@ -1825,13 +1831,19 @@ body {{
                 const footerInfo = document.querySelector('.footer-info');
                 
                 if (container && controlBar && footerInfo) {{
-                    const availableHeight = window.innerHeight - 40; // 减去body的padding
-                    const usedHeight = controlBar.offsetHeight + footerInfo.offsetHeight;
-                    const tableHeight = availableHeight - usedHeight - 40; // 减去一些间距
+                    // 获取窗口高度，减去body的padding
+                    const availableHeight = window.innerHeight - 40;
+                    // 计算已使用的空间：控制栏高度 + 底部信息栏高度 + 一些额外间距
+                    const usedHeight = controlBar.offsetHeight + footerInfo.offsetHeight + 20;
+                    // 计算表格容器的可用高度
+                    const tableHeight = Math.max(availableHeight - usedHeight, 400); // 最小高度400px
                     
                     const tableContainer = document.querySelector('.table-container');
                     if (tableContainer) {{
-                        tableContainer.style.maxHeight = Math.max(tableHeight, 300) + 'px';
+                        // 使用高度而不是最大高度，这样能更好地自适应
+                        tableContainer.style.height = tableHeight + 'px';
+                        // 同时移除可能存在的max-height限制
+                        tableContainer.style.maxHeight = '';
                     }}
                 }}
             }}
