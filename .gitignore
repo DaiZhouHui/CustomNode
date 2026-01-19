@@ -25,6 +25,3 @@ Thumbs.db
 *.swo
 
 # 生成的文件（由脚本管理）
-files_info.json
-
-
