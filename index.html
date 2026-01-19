@@ -590,26 +590,27 @@ body {
 
 /* 底部信息 - 最小化 */
 .footer-info {
-    padding: 12px 25px;
+    padding: 8px 20px;
     background: var(--light);
     border-top: 1px solid var(--border);
-    font-size: 14px;
+    font-size: 13px;
     color: var(--gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    min-height: 40px;
 }
 
 .footer-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .footer-right {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .footer-link {
@@ -628,7 +629,7 @@ body {
 }
 
 .footer-link i {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* 复制提示 */
@@ -705,7 +706,7 @@ body {
     }
 }
 
-/* 平板响应 - 隐藏状态列 */
+/* 平板响应 - 隐藏操作列 */
 @media (max-width: 992px) {
     body {
         padding: 15px;
@@ -761,9 +762,9 @@ body {
         font-size: 14px;
     }
     
-    /* 隐藏状态列 */
-    .nodes-table th:nth-child(3),
-    .nodes-table td:nth-child(3) {
+    /* 隐藏操作列（第6列） */
+    .nodes-table th:nth-child(6),
+    .nodes-table td:nth-child(6) {
         display: none;
     }
     
@@ -782,13 +783,13 @@ body {
         font-size: 12px;
     }
     
-    .quick-btn {
-        width: 36px;
-        height: 36px;
+    /* 隐藏"全部Pages"和"全部Raw"按钮 */
+    .btn-primary, .btn-secondary {
+        display: none;
     }
 }
 
-/* 中等屏幕响应 - 隐藏更新时间列 */
+/* 中等屏幕响应 - 隐藏状态列 */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -822,9 +823,9 @@ body {
         font-size: 13px;
     }
     
-    /* 隐藏更新时间列 */
-    .nodes-table th:nth-child(2),
-    .nodes-table td:nth-child(2) {
+    /* 隐藏状态列（第3列） */
+    .nodes-table th:nth-child(3),
+    .nodes-table td:nth-child(3) {
         display: none;
     }
     
@@ -843,15 +844,21 @@ body {
     }
     
     .footer-info {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 10px 15px;
+        padding: 6px 12px;
+        font-size: 12px;
+        min-height: 36px;
     }
     
     .footer-left, .footer-right {
-        flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+    }
+    
+    .footer-link {
+        font-size: 12px;
+    }
+    
+    .footer-link i {
+        font-size: 12px;
     }
     
     .toast {
@@ -868,7 +875,7 @@ body {
     }
 }
 
-/* 小屏幕响应 - 进一步调整 */
+/* 小屏幕响应 - 隐藏更新时间列 */
 @media (max-width: 480px) {
     body {
         padding: 5px;
@@ -876,12 +883,11 @@ body {
     }
     
     .container {
-        border-radius: 8px;
         height: calc(100vh - 10px);
     }
     
     .control-bar {
-        padding: 12px 15px;
+        padding: 10px 12px;
     }
     
     .logo {
@@ -904,12 +910,20 @@ body {
     .btn {
         width: 100%;
         justify-content: center;
+        font-size: 13px;
+        padding: 8px 12px;
     }
     
     .nodes-table th,
     .nodes-table td {
         padding: 8px 10px;
         font-size: 12px;
+    }
+    
+    /* 隐藏更新时间列（第2列） */
+    .nodes-table th:nth-child(2),
+    .nodes-table td:nth-child(2) {
+        display: none;
     }
     
     .node-name {
@@ -929,7 +943,27 @@ body {
     
     .date-divider td {
         font-size: 14px;
-        padding: 10px 15px;
+        padding: 10px 12px;
+    }
+    
+    .footer-info {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 11px;
+        min-height: auto;
+    }
+    
+    .footer-left, .footer-right {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+    
+    .footer-link {
+        justify-content: center;
+        width: 100%;
     }
     
     .modal-content {
@@ -1010,8 +1044,8 @@ body {
                             <th width="20%">节点名称</th>
                             <th width="15%">更新时间</th>
                             <th width="10%">状态</th>
-                            <th width="20%">节点链接</th>
-                            <th width="20%">配置链接</th>
+                            <th width="20%">订阅链接</th>
+                            <th width="20%">yaml订阅</th>
                             <th width="15%">操作</th>
                         </tr>
                     </thead>
@@ -1038,14 +1072,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0119', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0119', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0119', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0119', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0119.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0119.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0119.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0119.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1073,14 +1107,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/19hk', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/19hk', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/19hk', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/19hk', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/19hk.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/19hk.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/19hk.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/19hk.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1118,14 +1152,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/OptimalNode', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/OptimalNode', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/OptimalNode.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/OptimalNode.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1153,14 +1187,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17hk', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17hk', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17hk', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17hk', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17hk.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17hk.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17hk.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17hk.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1188,14 +1222,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17kr', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17kr', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17kr', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17kr', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17kr.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17kr.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/17kr.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/17kr.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1233,14 +1267,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0116', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0116', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0116', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0116', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0116.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0116.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0116.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0116.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1278,14 +1312,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0115', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0115', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0115', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0115', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0115.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0115.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0115.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0115.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1323,14 +1357,14 @@ body {
         <td><span class="status-badge status-paired">已配对</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0112', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0112', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0112', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0112', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0112.yaml', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0112.yaml', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/0112.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/0112.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
             </div>
         </td>
         <td>
@@ -1368,8 +1402,8 @@ body {
         <td><span class="status-badge status-node">仅节点</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YDSG500UP5', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YDSG500UP5', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YDSG500UP5', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YDSG500UP5', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
@@ -1403,8 +1437,8 @@ body {
         <td><span class="status-badge status-node">仅节点</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/LTSG500UP38', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/LTSG500UP38', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/LTSG500UP38', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/LTSG500UP38', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
@@ -1448,8 +1482,8 @@ body {
         <td><span class="status-badge status-node">仅节点</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YdOptimal', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YdOptimal', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YdOptimal', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YdOptimal', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
@@ -1483,8 +1517,8 @@ body {
         <td><span class="status-badge status-node">仅节点</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/NewOptimal', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/NewOptimal', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/NewOptimal', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/NewOptimal', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
@@ -1518,8 +1552,8 @@ body {
         <td><span class="status-badge status-node">仅节点</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/MainNode', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/MainNode', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/MainNode', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/MainNode', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
@@ -1553,8 +1587,8 @@ body {
         <td><span class="status-badge status-node">仅节点</span></td>
         <td>
             <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/PlainNode', this)" title='复制Pages链接'><i class='fas fa-globe'></i> Pages</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/PlainNode', this)" title='复制Raw链接'><i class='fas fa-code'></i> Raw</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/PlainNode', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/PlainNode', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
             </div>
         </td>
         <td>
@@ -1588,7 +1622,7 @@ body {
         <div class="footer-info">
             <div class="footer-left">
                 <span>共 14 个节点模组</span>
-                <span>最后更新: 2026-01-19 09:14:56</span>
+                <span>最后更新: 2026-01-19 09:58:07</span>
             </div>
             <div class="footer-right">
                 <a href="https://github.com/DaiZhouHui/CustomNode" target="_blank" class="footer-link">
