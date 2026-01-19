@@ -321,11 +321,17 @@ body {
     border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-/* 链接按钮列 */
+/* 链接按钮列 - 修复桌面端横向排版 */
 .link-buttons {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+/* 桌面端默认横向排版 */
+.link-buttons {
+    flex-direction: row;
 }
 
 .link-btn {
@@ -844,6 +850,7 @@ body {
         font-size: 14px;
     }
     
+    /* 平板和手机端改为纵向排列 */
     .link-buttons {
         flex-direction: column;
         gap: 5px;
@@ -1755,7 +1762,7 @@ body {
         <div class="footer-info">
             <div class="footer-left">
                 <span>共 15 个节点模组</span>
-                <span>最后更新: 2026-01-19 17:04:58</span>
+                <span>最后更新: 2026-01-19 19:49:42</span>
             </div>
             <div class="footer-right">
                 <a href="https://github.com/DaiZhouHui/CustomNode" target="_blank" class="footer-link">
