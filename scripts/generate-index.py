@@ -65,7 +65,6 @@ def get_git_file_time(file_path: str) -> datetime:
             return datetime.now(timezone.utc)
 
 
-
 def get_local_files() -> List[Dict]:
     """获取本地文件信息，并将节点与.yaml文件配对"""
     files_info = []
@@ -122,7 +121,7 @@ def get_local_files() -> List[Dict]:
         try:
             # 修复：使用Git历史时间而非文件系统时间
             update_time = get_git_file_time(item_name)
-            
+
             # 判断文件类型
             file_type = "node"
             if item_name.endswith(".yaml"):
@@ -132,7 +131,7 @@ def get_local_files() -> List[Dict]:
 
             # 获取文件大小
             stat_info = item.stat()
-            
+
             all_files.append(
                 {
                     "name": item_name,
@@ -1285,7 +1284,7 @@ body {{
                         <i class="fas fa-copy"></i>
                         <span>全部Raw</span>
                     </button>
-                    <button class="btn btn-outline" onclick="window.open('update-index.html', '_blank')">
+                    <button class="btn btn-outline" onclick="window.location.href = 'update-index.html'">
                         <i class="fas fa-sync-alt"></i>
                         <span>更新</span>
                     </button>
@@ -1327,7 +1326,7 @@ body {{
                     <i class="fab fa-github"></i>
                     <span>GitHub仓库</span>
                 </a>
-                <a href="update-index.html" target="_blank" class="footer-link">
+                <a href="update-index.html"  class="footer-link">
                     <i class="fas fa-sync-alt"></i>
                     <span>手动更新</span>
                 </a>
