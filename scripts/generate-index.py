@@ -614,11 +614,17 @@ body {{
     border: 1px solid rgba(245, 158, 11, 0.3);
 }}
 
-/* 链接按钮列 */
+/* 链接按钮列 - 修复桌面端横向排版 */
 .link-buttons {{
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}}
+
+/* 桌面端默认横向排版 */
+.link-buttons {{
+    flex-direction: row;
 }}
 
 .link-btn {{
@@ -1137,6 +1143,7 @@ body {{
         font-size: 14px;
     }}
     
+    /* 平板和手机端改为纵向排列 */
     .link-buttons {{
         flex-direction: column;
         gap: 5px;
@@ -1947,6 +1954,7 @@ body {{
 </body>
 </html>'''
     return html_content
+
 def generate_table_rows(grouped_files: Dict[str, List[Dict]]) -> str:
     """生成表格行，按日期分组并添加分隔行"""
     rows_html = ""
@@ -2024,6 +2032,7 @@ def generate_table_row(file_info: Dict) -> str:
         </td>
     </tr>
     """
+
 def generate_update_page() -> str:
     """生成简洁实用的更新页面 - 左右布局版本"""
     return '''<!DOCTYPE html>
@@ -2814,6 +2823,7 @@ def generate_update_page() -> str:
     </script>
 </body>
 </html>'''
+
 def main():
     """主函数"""
     print("🚀 CustomNode 优化版索引生成工具")

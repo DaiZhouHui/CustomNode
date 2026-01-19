@@ -25,3 +25,5 @@ Thumbs.db
 *.swo
 
 # 生成的文件（由脚本管理）
+scripts/generate-index修改版.py
+scripts/generate-index copy原版.py
