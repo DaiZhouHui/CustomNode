@@ -25,35 +25,37 @@ except ImportError:
 REPO_OWNER = os.getenv("REPO_OWNER", "DaiZhouHui")
 REPO_NAME = os.getenv("REPO_NAME", "CustomNode")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-# 配置信息
-REPO_OWNER = os.getenv("REPO_OWNER", "DaiZhouHui")
-REPO_NAME = os.getenv("REPO_NAME", "CustomNode")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 
 def get_git_file_time(file_path: str) -> datetime:
     """
     从Git历史获取文件的最后修改时间（修复：使用git log时间而非文件系统时间）
+    修复时间获取异常问题：优先使用git log，失败时使用文件状态时间
     """
     try:
         # 使用git log获取文件的最后提交时间
-        cmd = ["git", "log", "-1", "--format=%aI", "--", file_path]
-        result = subprocess.run(cmd, capture_output=True, text=True, cwd=".")
+        cmd = ["git", "log", "-1", "--format=%at", "--", file_path]
+        result = subprocess.run(cmd, capture_output=True, text=True, cwd=".", timeout=5)
 
         if result.returncode == 0 and result.stdout.strip():
-            # 解析ISO格式时间戳，如：2024-01-20T12:34:56+00:00
-            git_time_str = result.stdout.strip()
-            # 转换为datetime对象（处理带时区的时间）
-            git_time = datetime.fromisoformat(git_time_str)
-            # 确保时区为UTC
-            if git_time.tzinfo is None:
-                git_time = git_time.replace(tzinfo=timezone.utc)
-            else:
-                git_time = git_time.astimezone(timezone.utc)
+            # 解析Unix时间戳
+            timestamp = int(result.stdout.strip())
+            # 转换为datetime对象
+            git_time = datetime.fromtimestamp(timestamp, tz=timezone.utc)
             return git_time
 
-        # 如果git历史中没有该文件（可能是新文件），则使用当前时间
-        return datetime.now(timezone.utc)
+        # 如果git历史中没有该文件，尝试使用文件状态时间
+        cmd = ["git", "status", "--porcelain", "--", file_path]
+        result = subprocess.run(cmd, capture_output=True, text=True, cwd=".", timeout=5)
+        
+        if result.returncode == 0 and result.stdout.strip():
+            # 文件在git状态中，使用当前时间
+            return datetime.now(timezone.utc)
+            
+        # 如果以上都失败，使用文件系统时间
+        stat_info = Path(file_path).stat()
+        file_time = datetime.fromtimestamp(stat_info.st_mtime, tz=timezone.utc)
+        return file_time
 
     except Exception as e:
         print(f"⚠️  获取git时间失败 {file_path}: {e}")
@@ -289,7 +291,7 @@ def generate_html_index(files_info: List[Dict]) -> str:
     total_nodes = sum(1 for f in files_info if f["has_node"])
     total_yamls = sum(1 for f in files_info if f["has_yaml"])
 
-    html_content = f"""<!DOCTYPE html>
+    html_content = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -925,10 +927,10 @@ body {{
     font-size: 14px;
 }}
 
-/* 复制提示 */
+/* 复制提示 - 修复位置 */
 .toast {{
     position: fixed;
-    bottom: 30px;
+    top: 30px;
     right: 30px;
     background: linear-gradient(135deg, var(--success), #16a34a);
     color: white;
@@ -942,7 +944,7 @@ body {{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-20px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }}
 
@@ -1080,17 +1082,26 @@ body {{
     .btn-primary, .btn-secondary {{
         display: none;
     }}
+    
+    .toast {{
+        top: 20px;
+        right: 20px;
+        left: 20px;
+        max-width: calc(100% - 40px);
+        text-align: center;
+    }}
 }}
 
 /* 中等屏幕响应 - 隐藏状态列 */
 @media (max-width: 768px) {{
     body {{
-        padding: 10px;
+        padding: 10px 5px;
         font-size: 14px;
     }}
     
     .container {{
         height: calc(100vh - 20px);
+        border-radius: 8px;
     }}
     
     .logo {{
@@ -1155,11 +1166,13 @@ body {{
     }}
     
     .toast {{
-        bottom: 20px;
-        right: 20px;
-        left: 20px;
-        max-width: calc(100% - 40px);
+        top: 15px;
+        right: 15px;
+        left: 15px;
+        max-width: calc(100% - 30px);
         text-align: center;
+        padding: 12px 20px;
+        font-size: 14px;
     }}
     
     .modal-content {{
@@ -1168,19 +1181,31 @@ body {{
     }}
 }}
 
-/* 小屏幕响应 - 隐藏更新时间列 */
+/* 小屏幕响应 - 只显示节点名称、订阅链接、yaml订阅三列 */
 @media (max-width: 480px) {{
     body {{
-        padding: 5px;
+        padding: 0;
         font-size: 13px;
     }}
     
     .container {{
-        height: calc(100vh - 10px);
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        max-width: 100%;
     }}
     
     .control-bar {{
-        padding: 10px 12px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }}
+    
+    .header-left {{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }}
     
     .logo {{
@@ -1195,16 +1220,35 @@ body {{
         font-size: 11px;
     }}
     
+    .header-right {{
+        width: 100%;
+    }}
+    
+    .search-box {{
+        min-width: auto;
+        width: 100%;
+    }}
+    
     .action-buttons {{
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }}
     
     .btn {{
-        width: 100%;
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 12px;
         justify-content: center;
-        font-size: 13px;
-        padding: 8px 12px;
+    }}
+    
+    .table-wrapper {{
+        padding: 0;
+    }}
+    
+    .table-container {{
+        margin: 0;
+        border-radius: 0;
     }}
     
     .nodes-table th,
@@ -1213,23 +1257,46 @@ body {{
         font-size: 12px;
     }}
     
-    /* 隐藏更新时间列（第2列） */
+    /* 手机端只显示节点名称、订阅链接、yaml订阅三列 */
+    .nodes-table th:nth-child(1),
+    .nodes-table td:nth-child(1) {{
+        width: 25%; /* 节点名称列 */
+    }}
+    
     .nodes-table th:nth-child(2),
-    .nodes-table td:nth-child(2) {{
+    .nodes-table td:nth-child(2),
+    .nodes-table th:nth-child(3),
+    .nodes-table td:nth-child(3),
+    .nodes-table th:nth-child(6),
+    .nodes-table td:nth-child(6) {{
         display: none;
     }}
     
+    .nodes-table th:nth-child(4),
+    .nodes-table td:nth-child(4) {{
+        width: 37.5%; /* 订阅链接列 */
+    }}
+    
+    .nodes-table th:nth-child(5),
+    .nodes-table td:nth-child(5) {{
+        width: 37.5%; /* yaml订阅列 */
+    }}
+    
     .node-name {{
-        font-size: 13px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90px;
     }}
     
-    .status-badge {{
-        padding: 4px 8px;
-        font-size: 11px;
-        min-width: 60px;
+    .link-buttons {{
+        flex-direction: column;
+        gap: 4px;
     }}
     
-    .link-btn, .btn-show-action, .btn-delete {{
+    .link-btn {{
+        min-width: auto;
         padding: 6px 8px;
         font-size: 11px;
     }}
@@ -1240,23 +1307,44 @@ body {{
     }}
     
     .footer-info {{
-        flex-direction: column;
-        gap: 6px;
-        text-align: center;
-        padding: 5px 10px;
+        padding: 8px 10px;
         font-size: 11px;
         min-height: auto;
+        flex-direction: column;
+        gap: 8px;
     }}
     
-    .footer-left, .footer-right {{
+    .footer-left {{
         flex-direction: column;
         gap: 5px;
-        width: 100%;
+        align-items: center;
+        text-align: center;
+    }}
+    
+    .footer-right {{
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
     }}
     
     .footer-link {{
-        justify-content: center;
-        width: 100%;
+        font-size: 11px;
+        padding: 3px 5px;
+    }}
+    
+    .footer-link i {{
+        font-size: 11px;
+    }}
+    
+    .toast {{
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: calc(100% - 20px);
+        padding: 10px 15px;
+        font-size: 12px;
+        border-radius: 25px;
     }}
     
     .modal-content {{
@@ -1268,8 +1356,8 @@ body {{
     }}
     
     .modal-btn {{
-        padding: 10px 18px;
-        font-size: 14px;
+        padding: 10px 15px;
+        font-size: 13px;
     }}
 }}
 
@@ -1362,7 +1450,11 @@ body {{
                     <i class="fab fa-github"></i>
                     <span>GitHub仓库</span>
                 </a>
-                <a href="update-index.html"  class="footer-link">
+                <a href="https://daizhouhui.github.io/NodeWeb/" target="_blank" class="footer-link">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>节点生成</span>
+                </a>
+                <a href="update-index.html" class="footer-link">
                     <i class="fas fa-sync-alt"></i>
                     <span>手动更新</span>
                 </a>
@@ -1406,7 +1498,7 @@ body {{
         </div>
     </div>
 
-    <!-- 复制提示 -->
+    <!-- 复制提示 - 修改位置到顶部 -->
     <div id="toast" class="toast">
         <i class="fas fa-check-circle"></i>
         <span class="toast-message">链接已复制到剪贴板</span>
@@ -1853,12 +1945,8 @@ body {{
         }});
     </script>
 </body>
-</html>
-"""
-
+</html>'''
     return html_content
-
-
 def generate_table_rows(grouped_files: Dict[str, List[Dict]]) -> str:
     """生成表格行，按日期分组并添加分隔行"""
     rows_html = ""
@@ -1936,11 +2024,9 @@ def generate_table_row(file_info: Dict) -> str:
         </td>
     </tr>
     """
-
-
 def generate_update_page() -> str:
-    """生成优化的更新页面 - 左右布局版本"""
-    return """<!DOCTYPE html>
+    """生成简洁实用的更新页面 - 左右布局版本"""
+    return '''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -1954,17 +2040,11 @@ def generate_update_page() -> str:
             --secondary-dark: #059669;
             --accent: #f59e0b;
             --accent-dark: #d97706;
-            --success: #22c55e;
-            --warning: #f97316;
-            --danger: #ef4444;
             --dark: #1e293b;
             --light: #f8fafc;
             --gray: #64748b;
-            --gray-light: #e2e8f0;
             --border: #cbd5e1;
-            --shadow: 0 10px 25px rgba(99, 102, 241, 0.1);
-            --radius: 15px;
-            --radius-sm: 10px;
+            --radius: 12px;
         }
         
         * {
@@ -1974,13 +2054,25 @@ def generate_update_page() -> str:
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
             background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
             color: var(--dark);
-            font-size: 16px;
             line-height: 1.6;
             min-height: 100vh;
             padding: 20px;
+        }
+        
+        /* 手机端减少padding */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 5px 0;
+            }
         }
         
         .update-container {
@@ -1988,167 +2080,159 @@ def generate_update_page() -> str:
             margin: 0 auto;
             background: white;
             border-radius: var(--radius);
-            box-shadow: var(--shadow);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.1);
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            min-height: calc(100vh - 40px);
+            height: calc(100vh - 40px);
         }
         
         /* 头部 */
         .update-header {
+            padding: 20px 30px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px 30px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
             flex-shrink: 0;
         }
         
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .header-left h1 {
-            font-size: 24px;
+        .update-header h1 {
+            font-size: 22px;
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
         }
         
         .back-btn {
             color: white;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 12px 24px;
+            padding: 10px 20px;
             background: rgba(255, 255, 255, 0.15);
             border-radius: 30px;
-            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
             border: 2px solid rgba(255, 255, 255, 0.3);
         }
         
         .back-btn:hover {
             background: rgba(255, 255, 255, 0.25);
-            transform: translateX(-5px);
             border-color: white;
+            transform: translateX(-5px);
         }
         
-        /* 左右布局 */
-        .update-layout {
+        /* 主要内容区域 */
+        .update-main {
             display: flex;
             flex: 1;
             overflow: hidden;
         }
         
-        .left-panel {
-            flex: 0 0 35%;
+        /* 左侧状态面板 */
+        .status-panel {
+            width: 280px;
             background: var(--light);
-            padding: 30px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            border-right: 1px solid var(--border);
-        }
-        
-        .right-panel {
-            flex: 1;
-            padding: 30px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
-        /* 卡片样式 */
-        .update-card {
-            background: white;
-            border-radius: var(--radius-sm);
             padding: 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            border: 1px solid var(--border);
+            border-right: 1px solid var(--border);
             display: flex;
             flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
         }
         
-        .update-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        .status-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
         }
         
-        .update-card h2 {
-            font-size: 20px;
+        .status-section h3 {
+            font-size: 16px;
             font-weight: 700;
+            margin-bottom: 15px;
             color: var(--dark);
-            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 12px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid var(--gray-light);
-        }
-        
-        /* 状态网格 */
-        .status-grid {
-            display: grid;
-            gap: 15px;
-            flex: 1;
+            gap: 8px;
         }
         
         .status-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--light);
+        }
+        
+        .status-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .status-label {
+            font-size: 13px;
+            color: var(--gray);
+            margin-bottom: 4px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            padding: 18px;
-            background: var(--light);
-            border-radius: 10px;
-            border-left: 5px solid var(--primary);
-            transition: all 0.3s ease;
+            gap: 6px;
         }
         
-        .status-item:hover {
-            background: #f0f9ff;
-            transform: translateX(5px);
-        }
-        
-        .status-item i {
-            font-size: 24px;
-            color: var(--primary);
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .status-item h4 {
-            font-size: 16px;
+        .status-value {
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 5px;
             color: var(--dark);
         }
         
-        .status-item p {
-            font-size: 15px;
-            color: var(--gray);
+        .status-success {
+            color: #10b981;
         }
         
-        /* 更新操作网格 */
+        .status-warning {
+            color: #f59e0b;
+        }
+        
+        .status-error {
+            color: #ef4444;
+        }
+        
+        /* 右侧操作面板 */
+        .action-panel {
+            flex: 1;
+            padding: 25px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .action-section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--light);
+        }
+        
+        .action-section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* 操作按钮网格 */
         .action-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             margin-bottom: 25px;
         }
@@ -2156,39 +2240,41 @@ def generate_update_page() -> str:
         .action-btn {
             padding: 20px;
             border: none;
-            border-radius: 12px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 12px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
         .action-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
         
         .action-btn i {
-            font-size: 32px;
+            font-size: 28px;
         }
         
-        .action-btn span {
-            font-size: 16px;
-            font-weight: 600;
+        .btn-full {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
         }
         
-        .action-btn.quick {
+        .btn-quick {
             background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+            color: white;
         }
         
-        .action-btn.force {
+        .btn-force {
             background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: white;
         }
         
         /* 日志区域 */
@@ -2206,57 +2292,46 @@ def generate_update_page() -> str:
             margin-bottom: 15px;
         }
         
-        .log-header h3 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--dark);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
         .log-actions {
             display: flex;
             gap: 10px;
         }
         
         .log-btn {
-            padding: 10px 18px;
+            padding: 8px 16px;
             border: none;
-            border-radius: 30px;
+            border-radius: 6px;
             background: var(--light);
             color: var(--primary);
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
+            gap: 6px;
+            transition: all 0.3s;
         }
         
         .log-btn:hover {
             background: var(--primary);
             color: white;
-            transform: translateY(-3px);
         }
         
         .log-output {
             background: #1a1a1a;
             color: #00ff00;
             padding: 20px;
-            border-radius: 10px;
-            font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
-            font-size: 15px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 14px;
             flex: 1;
             overflow-y: auto;
-            line-height: 1.8;
+            line-height: 1.6;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-            min-height: 200px;
         }
         
         .log-entry {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             gap: 10px;
         }
@@ -2264,7 +2339,7 @@ def generate_update_page() -> str:
         .log-time {
             color: #aaa;
             min-width: 70px;
-            font-size: 14px;
+            font-size: 13px;
         }
         
         .log-success {
@@ -2283,89 +2358,26 @@ def generate_update_page() -> str:
             color: #ffa500;
         }
         
-        /* 设置网格 */
-        .settings-grid {
-            display: grid;
-            gap: 20px;
-        }
-        
-        .setting-item {
-            padding: 20px;
-            background: var(--light);
-            border-radius: 10px;
-            border: 1px solid var(--border);
-        }
-        
-        .setting-item label {
-            display: block;
-            margin-bottom: 12px;
-            font-weight: 700;
-            color: var(--dark);
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .setting-control {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-        
-        .setting-control select,
-        .setting-control input {
-            flex: 1;
-            padding: 12px 18px;
-            border: 2px solid var(--border);
-            border-radius: 8px;
-            font-size: 16px;
-            background: white;
-            color: var(--dark);
-            transition: all 0.3s ease;
-        }
-        
-        .setting-control select:focus,
-        .setting-control input:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-        }
-        
-        .setting-desc {
-            margin-top: 10px;
-            font-size: 14px;
-            color: var(--gray);
-            line-height: 1.6;
-        }
-        
         /* 底部信息 */
         .update-footer {
-            padding: 20px 30px;
+            padding: 15px 30px;
             background: var(--light);
             border-top: 1px solid var(--border);
-            font-size: 15px;
+            font-size: 14px;
             color: var(--gray);
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
             flex-shrink: 0;
         }
         
         .update-footer p {
+            margin: 5px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
         }
         
-        .update-footer i {
-            color: var(--primary);
-            font-size: 16px;
-        }
-        
-        /* 响应式设计 - 手机适配 */
+        /* 响应式设计 */
         @media (max-width: 1200px) {
             .update-container {
                 max-width: 95%;
@@ -2379,128 +2391,132 @@ def generate_update_page() -> str:
         @media (max-width: 992px) {
             body {
                 padding: 15px;
-                font-size: 15px;
             }
             
             .update-container {
-                min-height: calc(100vh - 30px);
+                height: calc(100vh - 30px);
             }
             
-            .update-header {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 20px;
-                padding: 20px 25px;
-            }
-            
-            .header-left {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 15px;
-            }
-            
-            .header-left h1 {
-                font-size: 22px;
-            }
-            
-            .back-btn {
-                align-self: flex-start;
-            }
-            
-            .update-layout {
+            .update-main {
                 flex-direction: column;
             }
             
-            .left-panel {
-                flex: none;
+            .status-panel {
+                width: 100%;
                 border-right: none;
                 border-bottom: 1px solid var(--border);
-                max-height: 50vh;
+                max-height: 250px;
                 overflow-y: auto;
             }
             
-            .right-panel {
-                flex: none;
-            }
-            
-            .update-card {
+            .action-panel {
                 padding: 20px;
-            }
-            
-            .action-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .log-output {
-                height: 200px;
-                font-size: 14px;
             }
         }
         
         @media (max-width: 768px) {
             body {
-                padding: 10px;
-                font-size: 14px;
+                padding: 10px 5px;
             }
             
             .update-container {
-                min-height: calc(100vh - 20px);
+                height: calc(100vh - 20px);
+                border-radius: 8px;
             }
             
             .update-header {
                 padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+                align-items: stretch;
             }
             
-            .header-left h1 {
+            .update-header h1 {
                 font-size: 20px;
+                justify-content: center;
             }
             
             .back-btn {
-                padding: 10px 18px;
-                font-size: 15px;
+                align-self: center;
+                padding: 8px 16px;
+                font-size: 14px;
             }
             
-            .left-panel,
-            .right-panel {
+            .status-panel,
+            .action-panel {
                 padding: 15px;
             }
             
-            .update-card {
-                padding: 18px;
+            .action-section {
+                padding: 20px;
             }
             
-            .update-card h2 {
-                font-size: 18px;
-                margin-bottom: 15px;
-            }
-            
-            .status-item {
-                padding: 15px;
-            }
-            
-            .status-item i {
-                font-size: 20px;
-                width: 45px;
-                height: 45px;
+            .action-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
             }
             
             .action-btn {
                 padding: 18px;
+                font-size: 15px;
+            }
+            
+            .log-output {
+                padding: 15px;
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 5px 0;
+            }
+            
+            .update-container {
+                height: 100vh;
+                margin: 0;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            
+            .update-header {
+                padding: 12px 15px;
+            }
+            
+            .update-header h1 {
+                font-size: 18px;
+            }
+            
+            .status-panel {
+                padding: 12px;
+                max-height: 200px;
+            }
+            
+            .action-panel {
+                padding: 12px;
+            }
+            
+            .action-section {
+                padding: 15px;
+            }
+            
+            .action-btn {
+                padding: 15px;
+                font-size: 14px;
             }
             
             .action-btn i {
-                font-size: 28px;
+                font-size: 24px;
             }
             
             .log-header {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
                 gap: 10px;
             }
             
             .log-actions {
-                width: 100%;
-                justify-content: space-between;
+                justify-content: center;
             }
             
             .log-btn {
@@ -2509,124 +2525,44 @@ def generate_update_page() -> str:
             }
             
             .log-output {
-                height: 180px;
-                font-size: 13px;
-                padding: 15px;
-            }
-            
-            .setting-control {
-                flex-direction: column;
-                align-items: stretch;
+                padding: 12px;
+                font-size: 12px;
+                height: 200px;
             }
             
             .update-footer {
-                padding: 15px 20px;
-                font-size: 14px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            body {
-                padding: 5px;
-                font-size: 13px;
-            }
-            
-            .update-container {
-                min-height: calc(100vh - 10px);
-                border-radius: 10px;
-            }
-            
-            .update-header {
-                padding: 12px 15px;
-            }
-            
-            .header-left h1 {
-                font-size: 18px;
-            }
-            
-            .back-btn {
-                padding: 8px 15px;
-                font-size: 14px;
-            }
-            
-            .left-panel,
-            .right-panel {
-                padding: 12px;
-                gap: 20px;
-            }
-            
-            .update-card {
-                padding: 15px;
-            }
-            
-            .status-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
-                padding: 15px;
-            }
-            
-            .status-item i {
-                width: 40px;
-                height: 40px;
-                font-size: 18px;
-            }
-            
-            .action-btn {
-                padding: 15px;
-            }
-            
-            .action-btn i {
-                font-size: 24px;
-            }
-            
-            .log-output {
-                height: 150px;
+                padding: 10px 15px;
                 font-size: 12px;
-                padding: 12px;
-            }
-            
-            .log-entry {
-                flex-direction: column;
-                gap: 5px;
-            }
-            
-            .log-time {
-                min-width: auto;
             }
         }
         
         /* 滚动条样式 */
-        .left-panel::-webkit-scrollbar,
-        .right-panel::-webkit-scrollbar,
+        .status-panel::-webkit-scrollbar,
+        .action-panel::-webkit-scrollbar,
         .log-output::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
         }
         
-        .left-panel::-webkit-scrollbar-track,
-        .right-panel::-webkit-scrollbar-track {
+        .status-panel::-webkit-scrollbar-track,
+        .action-panel::-webkit-scrollbar-track {
             background: #f1f1f1;
-            border-radius: 4px;
+            border-radius: 3px;
         }
         
-        .left-panel::-webkit-scrollbar-thumb,
-        .right-panel::-webkit-scrollbar-thumb {
+        .status-panel::-webkit-scrollbar-thumb,
+        .action-panel::-webkit-scrollbar-thumb {
             background: var(--primary);
-            border-radius: 4px;
+            border-radius: 3px;
         }
         
         .log-output::-webkit-scrollbar-track {
             background: #2a2a2a;
-            border-radius: 4px;
+            border-radius: 3px;
         }
         
         .log-output::-webkit-scrollbar-thumb {
             background: var(--primary);
-            border-radius: 4px;
-        }
-        
-        .log-output::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-dark);
+            border-radius: 3px;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -2635,93 +2571,78 @@ def generate_update_page() -> str:
     <div class="update-container">
         <!-- 头部 -->
         <div class="update-header">
-            <div class="header-left">
-                <h1><i class="fas fa-sync-alt"></i> CustomNode 更新控制台</h1>
-            </div>
+            <h1><i class="fas fa-sync-alt"></i> CustomNode 更新控制台</h1>
             <a href="index.html" class="back-btn">
                 <i class="fas fa-arrow-left"></i>
                 返回主页面
             </a>
         </div>
 
-        <!-- 左右布局 -->
-        <div class="update-layout">
-            <!-- 左侧面板 -->
-            <div class="left-panel">
-                <!-- 状态卡片 -->
-                <div class="update-card">
-                    <h2><i class="fas fa-robot"></i> 自动更新状态</h2>
-                    <div class="status-grid">
-                        <div class="status-item">
+        <!-- 主要内容区域 -->
+        <div class="update-main">
+            <!-- 左侧状态面板 -->
+            <div class="status-panel">
+                <!-- 状态信息 -->
+                <div class="status-section">
+                    <h3><i class="fas fa-robot"></i> 自动更新状态</h3>
+                    <div class="status-item">
+                        <div class="status-label">
                             <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>计划任务</h4>
-                                <p>每日 UTC 02:00 自动执行更新</p>
-                            </div>
+                            计划任务
                         </div>
-                        <div class="status-item">
+                        <div class="status-value">每日 02:00 UTC</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-label">
                             <i class="fas fa-history"></i>
-                            <div>
-                                <h4>最后运行时间</h4>
-                                <p id="lastRunTime">正在获取...</p>
-                            </div>
+                            最后运行时间
                         </div>
-                        <div class="status-item">
-                            <i class="fas fa-toggle-on"></i>
-                            <div>
-                                <h4>系统状态</h4>
-                                <p style="color: #22c55e; font-weight: 600;">🟢 系统运行正常</p>
-                            </div>
+                        <div class="status-value" id="lastRunTime">正在获取...</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-label">
+                            <i class="fas fa-check-circle"></i>
+                            系统状态
                         </div>
+                        <div class="status-value status-success">🟢 运行正常</div>
                     </div>
                 </div>
-
-                <!-- 设置卡片 -->
-                <div class="update-card">
-                    <h2><i class="fas fa-cog"></i> 更新设置</h2>
-                    <div class="settings-grid">
-                        <div class="setting-item">
-                            <label><i class="fas fa-calendar-alt"></i> 自动更新计划</label>
-                            <div class="setting-control">
-                                <select id="cronSchedule">
-                                    <option value="0 2 * * *">每日 02:00 UTC</option>
-                                    <option value="0 */6 * * *">每6小时更新</option>
-                                    <option value="0 */3 * * *">每3小时更新</option>
-                                </select>
-                            </div>
-                            <p class="setting-desc">GitHub Actions 自动执行的时间计划</p>
+                
+                <!-- 系统信息 -->
+                <div class="status-section">
+                    <h3><i class="fas fa-info-circle"></i> 系统信息</h3>
+                    <div class="status-item">
+                        <div class="status-label">
+                            <i class="fas fa-server"></i>
+                            运行环境
                         </div>
-                        
-                        <div class="setting-item">
-                            <label><i class="fas fa-redo"></i> 失败重试机制</label>
-                            <div class="setting-control">
-                                <select id="retryCount">
-                                    <option value="1">1次重试</option>
-                                    <option value="3" selected>3次重试</option>
-                                    <option value="5">5次重试</option>
-                                </select>
-                            </div>
-                            <p class="setting-desc">更新失败时的自动重试次数</p>
+                        <div class="status-value">GitHub Actions</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-label">
+                            <i class="fas fa-code"></i>
+                            脚本版本
                         </div>
+                        <div class="status-value">优化版 v1.0</div>
                     </div>
                 </div>
             </div>
 
-            <!-- 右侧面板 -->
-            <div class="right-panel">
-                <!-- 更新卡片 -->
-                <div class="update-card">
+            <!-- 右侧操作面板 -->
+            <div class="action-panel">
+                <!-- 更新操作 -->
+                <div class="action-section">
                     <h2><i class="fas fa-play-circle"></i> 手动触发更新</h2>
                     <div class="action-grid">
-                        <button class="action-btn" onclick="triggerUpdate('full')">
+                        <button class="action-btn btn-full" onclick="triggerUpdate('full')">
                             <i class="fas fa-sync"></i>
                             <span>完整更新</span>
                         </button>
-                        <button class="action-btn quick" onclick="triggerUpdate('quick')">
+                        <button class="action-btn btn-quick" onclick="triggerUpdate('quick')">
                             <i class="fas fa-bolt"></i>
                             <span>快速更新</span>
                         </button>
-                        <button class="action-btn force" onclick="triggerUpdate('force')">
+                        <button class="action-btn btn-force" onclick="triggerUpdate('force')">
                             <i class="fas fa-exclamation-triangle"></i>
                             <span>强制更新</span>
                         </button>
@@ -2755,8 +2676,7 @@ def generate_update_page() -> str:
         <!-- 底部信息 -->
         <div class="update-footer">
             <p><i class="fas fa-info-circle"></i> 手动更新会触发 GitHub Actions 工作流执行</p>
-            <p><i class="fas fa-exclamation-triangle"></i> 频繁手动触发可能导致 API 速率限制</p>
-            <p><i class="fas fa-clock"></i> 更新过程通常需要 1-3 分钟完成</p>
+            <p><i class="fas fa-exclamation-triangle"></i> 更新过程通常需要 1-3 分钟完成</p>
         </div>
     </div>
 
@@ -2775,7 +2695,7 @@ def generate_update_page() -> str:
                         document.getElementById('lastRunTime').textContent = '暂无运行记录';
                     }
                 } else {
-                    document.getElementById('lastRunTime').textContent = '加载失败，请检查网络';
+                    document.getElementById('lastRunTime').textContent = '加载失败';
                 }
             } catch (error) {
                 console.error('获取运行时间失败:', error);
@@ -2893,10 +2813,7 @@ def generate_update_page() -> str:
         });
     </script>
 </body>
-</html>
-"""
-
-
+</html>'''
 def main():
     """主函数"""
     print("🚀 CustomNode 优化版索引生成工具")
