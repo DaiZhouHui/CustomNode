@@ -44,7 +44,7 @@
 ## 🚀 快速开始
 
 ### 环境要求
-- Python 3.8+
+- Python 3.11+
 - Git
 
 ### 安装步骤
@@ -79,12 +79,11 @@ python generate-index.py
 ```
 CustomNode/
 ├── generate-index.py          # 主生成脚本
-├── index.html                 # 主索引页面（自动生成）
-├── update-index.html          # 更新控制台（自动生成）
-├── update-index.yml           # GitHub Actions工作流
+├── index.html                 # 主索引页面（由generate-index.py自动生成）
+├── update-index.html          # 更新控制台（由generate-index.py自动生成）
 ├── requirements.txt           # Python依赖
 ├── .github/workflows/         # 工作流配置
-│   └── update-index.yml
+│   └── update-index.yml       # GitHub Actions工作流
 └── 其他节点文件              # 你的节点和配置文件
 ```
 
@@ -142,7 +141,7 @@ CustomNode/
 
 ### 常见问题
 1. **无法生成索引**
-   - 检查Python版本 ≥ 3.8
+   - 检查Python版本 ≥ 3.11
    - 确保安装了所有依赖
 
 2. **删除功能失效**
