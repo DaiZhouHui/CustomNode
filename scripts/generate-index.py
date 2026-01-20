@@ -8,7 +8,7 @@ import os
 import sys
 import json
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import List, Dict
 
@@ -200,11 +200,17 @@ def get_local_files() -> List[Dict]:
             display_name = yaml_info["name"].replace(".yaml", "")
             file_type = "yaml"
 
-        # 格式化完整时间（年月日时分秒）
+        # 获取UTC时间
         update_time = pair["display_time"]
-        full_time_str = update_time.strftime("%Y-%m-%d %H:%M:%S")
-        update_date = update_time.strftime("%Y-%m-%d")
-        update_time_only = update_time.strftime("%H:%M:%S")
+        
+        # 转换为UTC+8时间
+        utc_plus_8 = timezone(timedelta(hours=8))
+        update_time_utc8 = update_time.astimezone(utc_plus_8)
+        
+        # 格式化完整时间（年月日时分秒）
+        full_time_str = update_time_utc8.strftime("%Y-%m-%d %H:%M:%S")
+        update_date = update_time_utc8.strftime("%Y-%m-%d")
+        update_time_only = update_time_utc8.strftime("%H:%M:%S")
 
         # 生成链接
         if node_info:
@@ -233,7 +239,7 @@ def get_local_files() -> List[Dict]:
                 "node_raw": node_raw,
                 "yaml_pages": yaml_pages,
                 "yaml_raw": yaml_raw,
-                "update_time": update_time,
+                "update_time": update_time_utc8,
                 "update_date": update_date,
                 "full_time": full_time_str,
                 "update_time_only": update_time_only,
@@ -247,11 +253,11 @@ def get_local_files() -> List[Dict]:
 
         # 打印信息
         if node_info and yaml_info:
-            print(f"✅ {display_name} - 节点+配置 - {full_time_str}")
+            print(f"✅ {display_name} - 节点+配置 - {full_time_str} (UTC+8)")
         elif node_info:
-            print(f"📄 {display_name} - 仅节点 - {full_time_str}")
+            print(f"📄 {display_name} - 仅节点 - {full_time_str} (UTC+8)")
         else:
-            print(f"⚙️  {display_name} - 仅配置 - {full_time_str}")
+            print(f"⚙️  {display_name} - 仅配置 - {full_time_str} (UTC+8)")
 
     # 按日期和时间排序（最新在前）
     files_info.sort(key=lambda x: (x["update_date"], x["update_time"]), reverse=True)
@@ -291,6 +297,10 @@ def generate_html_index(files_info: List[Dict]) -> str:
     total_nodes = sum(1 for f in files_info if f["has_node"])
     total_yamls = sum(1 for f in files_info if f["has_yaml"])
 
+    # 获取当前时间（UTC+8）
+    utc_plus_8 = timezone(timedelta(hours=8))
+    current_time_utc8 = datetime.now(timezone.utc).astimezone(utc_plus_8)
+    
     html_content = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -480,6 +490,7 @@ body {{
     flex-direction: column;
     padding: 0 10px;
     min-height: 0; /* 新增：解决flex布局中的高度计算问题 */
+    margin-top: 1px;
 }}
 
 .table-container {{
@@ -493,7 +504,7 @@ body {{
     height: 0; /* 新增：设置为0以启用flex:1的正确高度计算 */
 }}
 
-/* 节点表格 */
+/* 节点表格 - 修复表格列对齐 */
 .nodes-table {{
     width: 100%;
     border-collapse: collapse;
@@ -506,7 +517,7 @@ body {{
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: white;
     padding: 6px 20px; /* 修改padding */
-    text-align: left;
+    text-align: left; /* 所有表头左对齐 */
     font-weight: 600;
     font-size: 16px;
     border-bottom: 3px solid var(--primary-dark);
@@ -527,6 +538,19 @@ body {{
     border-bottom: 1px solid var(--border);
     vertical-align: middle;
     background: white;
+}}
+
+/* 修复：除了第一列左对齐，其他列居中 */
+.nodes-table td:first-child {{
+    text-align: left;
+}}
+
+.nodes-table td:nth-child(2),
+.nodes-table td:nth-child(3),
+.nodes-table td:nth-child(4),
+.nodes-table td:nth-child(5),
+.nodes-table td:nth-child(6) {{
+    text-align: center;
 }}
 
 .nodes-table tr:nth-child(even) td {{
@@ -551,6 +575,7 @@ body {{
     color: var(--primary-dark);
     font-size: 16px;
     background: transparent !important;
+    text-align: left !important; /* 日期行左对齐 */
 }}
 
 .date-divider i {{
@@ -566,6 +591,7 @@ body {{
     display: flex;
     align-items: center;
     gap: 12px;
+    justify-content: flex-start; /* 左对齐 */
 }}
 
 .node-name i {{
@@ -576,13 +602,46 @@ body {{
     border-radius: 50%;
 }}
 
-/* 时间列 - 完整时间显示 */
+/* 时间列 - 只显示年月日，悬浮显示完整时间 */
 .node-time {{
     color: var(--gray);
     font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
     font-size: 14px;
     white-space: nowrap;
-    min-width: 180px;
+    min-width: 100px;
+    cursor: help; /* 显示提示光标 */
+    position: relative;
+}}
+
+.node-time:hover::after {{
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}}
+
+.node-time:hover::before {{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--dark);
+    margin-bottom: -5px;
+    z-index: 1001;
+    pointer-events: none;
 }}
 
 /* 状态列 */
@@ -617,14 +676,11 @@ body {{
 /* 链接按钮列 - 修复：桌面端横向排列（左右排列），移动端纵向排列 */
 .link-buttons {{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* 确保按钮不换行 */
     gap: 8px;
     align-items: center;
-}}
-
-/* 桌面端默认横向排列（左右排列） */
-.link-buttons {{
-    flex-direction: row;
+    justify-content: center; /* 居中 */
+    flex-direction: row; /* 默认横向排列 */
 }}
 
 .link-btn {{
@@ -642,6 +698,7 @@ body {{
     transition: all 0.3s ease;
     white-space: nowrap;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* 防止按钮缩小 */
 }}
 
 .link-btn:hover {{
@@ -730,6 +787,7 @@ body {{
     gap: 8px;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center; /* 居中 */
 }}
 
 /* 模态框样式 */
@@ -1075,7 +1133,7 @@ body {{
     
     .node-time {{
         font-size: 13px;
-        min-width: 160px;
+        min-width: 100px;
     }}
     
     .link-btn, .btn-show-action, .btn-delete {{
@@ -1143,7 +1201,7 @@ body {{
         font-size: 14px;
     }}
     
-    /* 仅在手机端将链接按钮改为纵向排列 */
+    /* 手机端将链接按钮改为纵向排列 */
     .link-buttons {{
         flex-direction: column;
         gap: 5px;
@@ -1200,6 +1258,15 @@ body {{
         margin: 0;
         border-radius: 0;
         max-width: 100%;
+    }}
+    
+    /* 手机端取消表头边框圆角 */
+    .nodes-table th:first-child {{
+        border-top-left-radius: 0 !important;
+    }}
+    
+    .nodes-table th:last-child {{
+        border-top-right-radius: 0 !important;
     }}
     
     .control-bar {{
@@ -1397,7 +1464,7 @@ body {{
             <div class="header-left">
                 <div class="logo">
                     <i class="fas fa-server"></i>
-                    <span>CustomNode 节点仓库 <span class="stat-info">({total_nodes} 节点)</span></span>
+                    <span>CustomNode 节点仓库 <span class="stat-info">({total_nodes} 节点模组)</span></span>
                 </div>
             </div>
             
@@ -1450,7 +1517,7 @@ body {{
         <div class="footer-info">
             <div class="footer-left">
                 <span>共 {total_files} 个节点模组</span>
-                <span>最后更新: {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")}</span>
+                <span>最后更新: {current_time_utc8.strftime("%Y-%m-%d %H:%M:%S")} (UTC+8)</span>
             </div>
             <div class="footer-right">
                 <a href="https://github.com/{REPO_OWNER}/{REPO_NAME}" target="_blank" class="footer-link">
@@ -2004,7 +2071,7 @@ def generate_table_row(file_info: Dict) -> str:
                 {file_info['display_name']}
             </div>
         </td>
-        <td class="node-time">{file_info['full_time']}</td>
+        <td class="node-time" title="{file_info['full_time']}">{file_info['update_date']}</td>
         <td><span class="status-badge {status_class}">{status_text}</span></td>
         <td>
             <div class="link-buttons">
