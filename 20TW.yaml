@@ -1,0 +1,301 @@
+proxies:
+  - name: "中国01-10443-114.34.106.124"
+    type: vless
+    server: 114.34.106.124
+    port: 10443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国02-443-220.130.58.230"
+    type: vless
+    server: 220.130.58.230
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国03-14265-219.85.180.134"
+    type: vless
+    server: 219.85.180.134
+    port: 14265
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国04-10332-220.141.17.20"
+    type: vless
+    server: 220.141.17.20
+    port: 10332
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国05-443-202.148.220.183"
+    type: vless
+    server: 202.148.220.183
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国06-443-125.228.236.138"
+    type: vless
+    server: 125.228.236.138
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国07-10443-203.69.248.40"
+    type: vless
+    server: 203.69.248.40
+    port: 10443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国08-444-180.214.180.226"
+    type: vless
+    server: 180.214.180.226
+    port: 444
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "澳大利亚01-10443-36.225.9.10"
+    type: vless
+    server: 36.225.9.10
+    port: 10443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "澳大利亚02-1024-1.163.183.69"
+    type: vless
+    server: 1.163.183.69
+    port: 1024
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国01-10443-45.81.35.88"
+    type: vless
+    server: 45.81.35.88
+    port: 10443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国02-443-45.81.35.107"
+    type: vless
+    server: 45.81.35.107
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国03-11211-150.116.138.187"
+    type: vless
+    server: 150.116.138.187
+    port: 11211
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "中国01-10443-114.34.106.124"
+      - "中国02-443-220.130.58.230"
+      - "中国03-14265-219.85.180.134"
+      - "中国04-10332-220.141.17.20"
+      - "中国05-443-202.148.220.183"
+      - "中国06-443-125.228.236.138"
+      - "中国07-10443-203.69.248.40"
+      - "中国08-444-180.214.180.226"
+      - "澳大利亚01-10443-36.225.9.10"
+      - "澳大利亚02-1024-1.163.183.69"
+      - "美国01-10443-45.81.35.88"
+      - "美国02-443-45.81.35.107"
+      - "美国03-11211-150.116.138.187"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "中国01-10443-114.34.106.124"
+      - "中国02-443-220.130.58.230"
+      - "中国03-14265-219.85.180.134"
+      - "中国04-10332-220.141.17.20"
+      - "中国05-443-202.148.220.183"
+      - "中国06-443-125.228.236.138"
+      - "中国07-10443-203.69.248.40"
+      - "中国08-444-180.214.180.226"
+      - "澳大利亚01-10443-36.225.9.10"
+      - "澳大利亚02-1024-1.163.183.69"
+      - "美国01-10443-45.81.35.88"
+      - "美国02-443-45.81.35.107"
+      - "美国03-11211-150.116.138.187"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "中国01-10443-114.34.106.124"
+      - "中国02-443-220.130.58.230"
+      - "中国03-14265-219.85.180.134"
+      - "中国04-10332-220.141.17.20"
+      - "中国05-443-202.148.220.183"
+      - "中国06-443-125.228.236.138"
+      - "中国07-10443-203.69.248.40"
+      - "中国08-444-180.214.180.226"
+      - "澳大利亚01-10443-36.225.9.10"
+      - "澳大利亚02-1024-1.163.183.69"
+      - "美国01-10443-45.81.35.88"
+      - "美国02-443-45.81.35.107"
+      - "美国03-11211-150.116.138.187"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+  - DOMAIN-SUFFIX,github.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,netflix.com,🚀 节点选择
+  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
