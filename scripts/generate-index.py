@@ -1467,10 +1467,11 @@ body {{
     /* 订阅按钮 - 确保宽度统一且不被拉长 */
     .link-btn {{
         min-width: auto;
-        width: 100%;
-        padding: 5px 4px;
+        width: 98%;
+       /* padding: 5px 4px; */
         font-size: 10px;
-        flex: 0 1 auto; /* 不要扩展超过内容 */
+        /* flex: 0 1 auto; */
+        /* 不要扩展超过内容 */
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
