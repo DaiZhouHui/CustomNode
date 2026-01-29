@@ -1400,11 +1400,20 @@ body {{
     
     .table-wrapper {{
         padding: 0;
+        width: 100%;
+        overflow-x: hidden;
     }}
     
     .table-container {{
         margin: 0;
         border-radius: 0;
+        width: 100%;
+        overflow-x: visible;
+    }}
+    
+    .nodes-table {{
+        table-layout: fixed; /* 确保列宽按百分比固定 */
+        width: 100% !important; /* 强制占满容器宽度 */
     }}
     
     .nodes-table th,
@@ -1430,12 +1439,12 @@ body {{
     
     .nodes-table th:nth-child(4),
     .nodes-table td:nth-child(4) {{
-        width: 30.0%; /* 订阅链接列 */
+        width: 30%; /* 订阅链接列 */
     }}
     
     .nodes-table th:nth-child(5),
     .nodes-table td:nth-child(5) {{
-        width: 30.0%; /* yaml订阅列 */
+        width: 30%; /* yaml订阅列 */
     }}
     
     .node-name {{
