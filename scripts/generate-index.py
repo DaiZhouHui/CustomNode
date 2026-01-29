@@ -306,6 +306,7 @@ def generate_html_index(files_info: List[Dict]) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./style/ico.png" type="image/png">
     <title>CustomNode 节点管理</title>
     <style>
 /* CustomNode 优化版样式 - 年轻化配色 */
