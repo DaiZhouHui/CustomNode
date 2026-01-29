@@ -316,6 +316,14 @@ def generate_html_index(files_info: List[Dict]) -> str:
     --secondary-dark: #059669;
     --accent: #f59e0b;
     --accent-dark: #d97706;
+    --btn-blue: #3b82f6;
+    --btn-blue-dark: #2563eb;
+    --btn-cyan: #06b6d4;
+    --btn-cyan-dark: #0891b2;
+    --btn-slate: #64748b;
+    --btn-slate-dark: #475569;
+    --btn-indigo: #5b21b6;
+    --btn-indigo-dark: #4c1d95;
     --success: #22c55e;
     --warning: #f97316;
     --danger: #ef4444;
@@ -457,14 +465,27 @@ body {{
 }}
 
 .btn-primary {{
-    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    /* 全部Pages按钮 - 改为橙色 */
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
     color: white;
 }}
 
 .btn-secondary {{
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    background: linear-gradient(135deg, var(--btn-cyan), var(--btn-cyan-dark));
     color: white;
 }}
+
+/* 生成节点按钮样式（新按钮） */
+.btn-generate {{
+    /* 互换为蓝色 */
+    background: linear-gradient(135deg, var(--btn-blue), var(--btn-blue-dark));
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+}}
+
 
 .btn-danger {{
     background: linear-gradient(135deg, var(--danger), var(--danger-dark));
@@ -727,6 +748,7 @@ body {{
 .btn-raw:hover {{
     background: linear-gradient(135deg, var(--secondary-dark), #047857);
 }}
+
 
 /* 显示操作按钮 */
 .btn-show-action {{
@@ -1157,6 +1179,13 @@ body {{
 }}
 
 /* 中等屏幕响应 - 隐藏状态列 */
+@media (max-width: 1024px) {{
+    /* 平板及以下隐藏“更新”按钮 */
+    .action-buttons .btn-outline {{
+        display: none !important;
+    }}
+}}
+
 @media (max-width: 768px) {{
     body {{
         padding: 10px 5px;
@@ -1170,6 +1199,34 @@ body {{
     
     .logo {{
         font-size: 18px;
+    }}
+    
+    /* 节点名称尽量完整显示，允许换行 */
+    .node-name {{
+        font-size: 14px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }}
+    
+    /* 订阅按钮统一为纵向排列且宽度一致 */
+    .link-buttons {{
+        flex-direction: column;
+        gap: 6px;
+        align-items: stretch;
+    }}
+    .link-btn {{
+        width: 100%;
+        max-width: none;
+    }}
+    
+    /* 日期分隔行压缩高度 */
+    .date-divider td {{
+        font-size: 12px;
+        padding: 6px 8px;
+    }}
+    .date-divider i {{
+        font-size: 14px;
+        margin-right: 8px;
     }}
     
     .logo i {{
@@ -1269,20 +1326,44 @@ body {{
         border-top-right-radius: 0 !important;
     }}
     
+    /* 手机端：优先显示节点名称，其他列固定较小宽度以避免随意拉长 */
+    .nodes-table {{
+        table-layout: fixed;
+    }}
+    .nodes-table th:nth-child(1), .nodes-table td:nth-child(1) {{
+        width: auto; /* 占用剩余空间 */
+    }}
+    .nodes-table th:nth-child(2), .nodes-table td:nth-child(2) {{
+        width: 70px;
+    }}
+    .nodes-table th:nth-child(3), .nodes-table td:nth-child(3) {{
+        width: 70px;
+    }}
+    .nodes-table th:nth-child(4), .nodes-table td:nth-child(4),
+    .nodes-table th:nth-child(5), .nodes-table td:nth-child(5) {{
+        width: 120px;
+    }}
+    .nodes-table th:nth-child(6), .nodes-table td:nth-child(6) {{
+        width: 80px;
+    }}
+
     .control-bar {{
         padding: 10px;
         flex-direction: column;
         align-items: stretch;
         gap: 10px;
     }}
-    
-    .header-left {{
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
+
+    /* 压缩日期分隔样式 */
+    .date-divider td {{
+        font-size: 11px;
+        padding: 4px 6px;
+        color: #5b6b7b;
+        background: rgba(99,102,241,0.03);
     }}
-    
-    .logo {{
+    .date-divider i {{
+        font-size: 13px;
+        margin-right: 6px;
         font-size: 16px;
     }}
     
@@ -1334,7 +1415,7 @@ body {{
     /* 手机端只显示节点名称、订阅链接、yaml订阅三列 */
     .nodes-table th:nth-child(1),
     .nodes-table td:nth-child(1) {{
-        width: 25%; /* 节点名称列 */
+        width: 40%; /* 节点名称列 - 增加宽度以完整显示 */
     }}
     
     .nodes-table th:nth-child(2),
@@ -1348,36 +1429,54 @@ body {{
     
     .nodes-table th:nth-child(4),
     .nodes-table td:nth-child(4) {{
-        width: 37.5%; /* 订阅链接列 */
+        width: 30.0%; /* 订阅链接列 */
     }}
     
     .nodes-table th:nth-child(5),
     .nodes-table td:nth-child(5) {{
-        width: 37.5%; /* yaml订阅列 */
+        width: 30.0%; /* yaml订阅列 */
     }}
     
     .node-name {{
         font-size: 12px;
+        white-space: normal; /* 允许换行 */
+        overflow-wrap: break-word;
+        word-break: break-word;
+        overflow: visible; /* 允许内容溢出容器 */
+        text-overflow: clip; /* 不使用省略号 */
+    }}
+    
+    /* 订阅按钮容器 - 确保按钮在空间不足时上下排列 */
+    .link-buttons {{
+        flex-direction: column;
+        gap: 3px;
+        align-items: stretch;
+        min-width: 0; /* 确保flex容器尊重内容 */
+    }}
+    
+    /* 订阅按钮 - 确保宽度统一且不被拉长 */
+    .link-btn {{
+        min-width: auto;
+        width: 100%;
+        padding: 5px 4px;
+        font-size: 10px;
+        flex: 0 1 auto; /* 不要扩展超过内容 */
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 90px;
-    }}
-    
-    .link-buttons {{
-        flex-direction: column;
-        gap: 4px;
-    }}
-    
-    .link-btn {{
-        min-width: auto;
-        padding: 6px 8px;
-        font-size: 11px;
     }}
     
     .date-divider td {{
-        font-size: 14px;
-        padding: 10px 12px;
+        font-size: 10px;
+        padding: 3px 6px;
+        color: #7c8ba8;
+        font-weight: 600;
+        line-height: 1.2;
+    }}
+    
+    .date-divider i {{
+        font-size: 10px;
+        margin-right: 4px;
     }}
     
     .footer-info {{
@@ -1482,10 +1581,14 @@ body {{
                         <i class="fas fa-copy"></i>
                         <span>全部Raw</span>
                     </button>
+                    <button class="btn btn-generate" onclick="window.open('https://daizhouhui.github.io/NodeWeb/')" title="生成节点">
+                        <i class="fas fa-cubes"></i>
+                        <span>生成节点</span>
+                    </button>
                     <button class="btn btn-outline" onclick="window.location.href = 'update-index.html'">
                         <i class="fas fa-sync-alt"></i>
                         <span>更新</span>
-                    </button>
+                    </button> 
                 </div>
             </div>
         </div>
@@ -1524,7 +1627,7 @@ body {{
                     <i class="fab fa-github"></i>
                     <span>GitHub仓库</span>
                 </a>
-                <a href="https://daizhouhui.github.io/NodeWeb/" target="_blank" class="footer-link">
+                <a href="https://daizhouhui.github.io/NodeWeb/" class="footer-link">
                     <i class="fas fa-plus-circle"></i>
                     <span>节点生成</span>
                 </a>
@@ -1852,8 +1955,10 @@ body {{
         
         // 删除GitHub文件
         async function deleteGitHubFile(fileName, token) {{
+            // 对文件名进行 URL 编码以处理空格或特殊字符
+            const encodedName = encodeURIComponent(fileName);
             // 获取文件的SHA值（GitHub删除文件需要SHA）
-            const getUrl = `https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/${{fileName}}`;
+            const getUrl = `https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/${{encodedName}}`;
             
             const getResponse = await fetch(getUrl, {{
                 headers: {{
@@ -1879,11 +1984,12 @@ body {{
             const deleteData = {{
                 message: `Delete ${{fileName}} via CustomNode Manager`,
                 sha: sha,
+                branch: 'main',
                 committer: {{
                     name: 'CustomNode Manager',
                     email: 'noreply@github.com'
                 }}
-            }};
+            }}; 
             
             const deleteResponse = await fetch(deleteUrl, {{
                 method: 'DELETE',
@@ -2033,8 +2139,8 @@ def generate_table_rows(grouped_files: Dict[str, List[Dict]]) -> str:
             <td colspan="6">
                 <i class="fas fa-calendar-day"></i>
                 {date}
-                <span style="font-size: 12px; margin-left: 10px; color: #64748b;">
-                    ({len(files)} 个模组)
+                <span style="font-size: 10px; margin-left: 10px; color: #7c8ba8;">
+                    ({len(files)} 个节点模组)
                 </span>
             </td>
         </tr>
