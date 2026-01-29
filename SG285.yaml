@@ -1,0 +1,5741 @@
+proxies:
+  - name: "Singapore01-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore02-443-新加坡-114.129.43.66"
+    type: vless
+    server: 114.129.43.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore03-443-新加坡-114.129.43.56"
+    type: vless
+    server: 114.129.43.56
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore04-443-新加坡-114.129.43.121"
+    type: vless
+    server: 114.129.43.121
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore05-443-新加坡-114.129.43.75"
+    type: vless
+    server: 114.129.43.75
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore06-443-新加坡-114.129.43.94"
+    type: vless
+    server: 114.129.43.94
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore07-443-新加坡-114.129.43.98"
+    type: vless
+    server: 114.129.43.98
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore08-443-新加坡-114.129.43.82"
+    type: vless
+    server: 114.129.43.82
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore09-443-新加坡-114.129.43.57"
+    type: vless
+    server: 114.129.43.57
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore10-443-新加坡-114.129.43.125"
+    type: vless
+    server: 114.129.43.125
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore11-443-新加坡-114.129.43.145"
+    type: vless
+    server: 114.129.43.145
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore12-443-新加坡-114.129.43.168"
+    type: vless
+    server: 114.129.43.168
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore13-443-新加坡-114.129.43.99"
+    type: vless
+    server: 114.129.43.99
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore14-443-新加坡-114.129.43.138"
+    type: vless
+    server: 114.129.43.138
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore15-443-新加坡-114.129.43.192"
+    type: vless
+    server: 114.129.43.192
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore16-443-新加坡-114.129.43.142"
+    type: vless
+    server: 114.129.43.142
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore17-443-新加坡-114.129.43.151"
+    type: vless
+    server: 114.129.43.151
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore18-443-新加坡-114.129.43.107"
+    type: vless
+    server: 114.129.43.107
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore19-443-新加坡-114.129.43.97"
+    type: vless
+    server: 114.129.43.97
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore20-443-新加坡-114.129.43.101"
+    type: vless
+    server: 114.129.43.101
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore21-443-新加坡-114.129.43.48"
+    type: vless
+    server: 114.129.43.48
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore22-443-新加坡-114.129.43.73"
+    type: vless
+    server: 114.129.43.73
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore23-443-新加坡-114.129.43.78"
+    type: vless
+    server: 114.129.43.78
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore24-443-新加坡-114.129.43.46"
+    type: vless
+    server: 114.129.43.46
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore25-443-新加坡-114.129.43.0"
+    type: vless
+    server: 114.129.43.0
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore26-443-新加坡-114.129.43.102"
+    type: vless
+    server: 114.129.43.102
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore27-443-新加坡-114.129.43.108"
+    type: vless
+    server: 114.129.43.108
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore28-443-新加坡-114.129.43.39"
+    type: vless
+    server: 114.129.43.39
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore29-443-新加坡-114.129.43.130"
+    type: vless
+    server: 114.129.43.130
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore30-443-新加坡-114.129.43.33"
+    type: vless
+    server: 114.129.43.33
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore31-443-新加坡-114.129.43.95"
+    type: vless
+    server: 114.129.43.95
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore32-443-新加坡-114.129.43.4"
+    type: vless
+    server: 114.129.43.4
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore33-443-新加坡-114.129.43.122"
+    type: vless
+    server: 114.129.43.122
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore34-443-新加坡-114.129.43.36"
+    type: vless
+    server: 114.129.43.36
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore35-443-新加坡-114.129.43.55"
+    type: vless
+    server: 114.129.43.55
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore36-443-新加坡-114.129.43.106"
+    type: vless
+    server: 114.129.43.106
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore37-443-新加坡-114.129.43.62"
+    type: vless
+    server: 114.129.43.62
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore38-443-新加坡-114.129.43.156"
+    type: vless
+    server: 114.129.43.156
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore39-443-新加坡-114.129.43.28"
+    type: vless
+    server: 114.129.43.28
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore40-443-新加坡-114.129.43.248"
+    type: vless
+    server: 114.129.43.248
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore41-443-新加坡-114.129.43.69"
+    type: vless
+    server: 114.129.43.69
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore42-443-新加坡-114.129.43.31"
+    type: vless
+    server: 114.129.43.31
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore43-443-新加坡-114.129.43.180"
+    type: vless
+    server: 114.129.43.180
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore44-443-新加坡-114.129.43.120"
+    type: vless
+    server: 114.129.43.120
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore45-443-新加坡-114.129.43.123"
+    type: vless
+    server: 114.129.43.123
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore46-443-新加坡-114.129.43.251"
+    type: vless
+    server: 114.129.43.251
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore47-443-新加坡-114.129.43.199"
+    type: vless
+    server: 114.129.43.199
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore48-443-新加坡-114.129.43.178"
+    type: vless
+    server: 114.129.43.178
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore49-443-新加坡-114.129.43.198"
+    type: vless
+    server: 114.129.43.198
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore50-443-新加坡-114.129.43.100"
+    type: vless
+    server: 114.129.43.100
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore51-443-新加坡-114.129.43.154"
+    type: vless
+    server: 114.129.43.154
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore52-443-新加坡-114.129.43.232"
+    type: vless
+    server: 114.129.43.232
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore53-443-新加坡-114.129.43.144"
+    type: vless
+    server: 114.129.43.144
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore54-443-新加坡-114.129.43.215"
+    type: vless
+    server: 114.129.43.215
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore55-443-新加坡-114.129.43.32"
+    type: vless
+    server: 114.129.43.32
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore56-443-新加坡-114.129.43.17"
+    type: vless
+    server: 114.129.43.17
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore57-443-新加坡-114.129.43.116"
+    type: vless
+    server: 114.129.43.116
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore58-443-新加坡-114.129.43.49"
+    type: vless
+    server: 114.129.43.49
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore59-443-新加坡-114.129.43.40"
+    type: vless
+    server: 114.129.43.40
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore60-443-新加坡-114.129.43.135"
+    type: vless
+    server: 114.129.43.135
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore61-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore62-443-新加坡-114.129.43.53"
+    type: vless
+    server: 114.129.43.53
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore63-443-新加坡-114.129.43.76"
+    type: vless
+    server: 114.129.43.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore64-443-新加坡-114.129.43.13"
+    type: vless
+    server: 114.129.43.13
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore65-443-新加坡-114.129.43.10"
+    type: vless
+    server: 114.129.43.10
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore66-443-新加坡-114.129.43.84"
+    type: vless
+    server: 114.129.43.84
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore67-443-新加坡-114.129.43.197"
+    type: vless
+    server: 114.129.43.197
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore68-443-新加坡-114.129.43.160"
+    type: vless
+    server: 114.129.43.160
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore69-443-新加坡-114.129.43.169"
+    type: vless
+    server: 114.129.43.169
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore70-443-新加坡-114.129.43.238"
+    type: vless
+    server: 114.129.43.238
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore71-443-新加坡-114.129.43.119"
+    type: vless
+    server: 114.129.43.119
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore72-443-新加坡-114.129.43.50"
+    type: vless
+    server: 114.129.43.50
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore73-443-新加坡-114.129.43.52"
+    type: vless
+    server: 114.129.43.52
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore74-443-新加坡-114.129.43.45"
+    type: vless
+    server: 114.129.43.45
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore75-443-新加坡-114.129.43.51"
+    type: vless
+    server: 114.129.43.51
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore76-443-新加坡-114.129.43.14"
+    type: vless
+    server: 114.129.43.14
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore77-443-新加坡-114.129.43.77"
+    type: vless
+    server: 114.129.43.77
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore78-443-新加坡-114.129.43.70"
+    type: vless
+    server: 114.129.43.70
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore79-443-新加坡-114.129.43.129"
+    type: vless
+    server: 114.129.43.129
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore80-443-新加坡-114.129.43.80"
+    type: vless
+    server: 114.129.43.80
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore81-443-新加坡-114.129.43.60"
+    type: vless
+    server: 114.129.43.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore82-443-新加坡-114.129.43.29"
+    type: vless
+    server: 114.129.43.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore83-443-新加坡-114.129.43.26"
+    type: vless
+    server: 114.129.43.26
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore84-443-新加坡-114.129.43.88"
+    type: vless
+    server: 114.129.43.88
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore85-443-新加坡-114.129.43.90"
+    type: vless
+    server: 114.129.43.90
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore86-443-新加坡-114.129.43.115"
+    type: vless
+    server: 114.129.43.115
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore87-443-新加坡-114.129.43.21"
+    type: vless
+    server: 114.129.43.21
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore88-443-新加坡-114.129.43.5"
+    type: vless
+    server: 114.129.43.5
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore89-443-新加坡-114.129.43.86"
+    type: vless
+    server: 114.129.43.86
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore90-443-新加坡-114.129.43.54"
+    type: vless
+    server: 114.129.43.54
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore91-443-新加坡-114.129.43.87"
+    type: vless
+    server: 114.129.43.87
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore92-443-新加坡-114.129.43.71"
+    type: vless
+    server: 114.129.43.71
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore93-443-新加坡-114.129.43.83"
+    type: vless
+    server: 114.129.43.83
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore94-443-新加坡-114.129.43.41"
+    type: vless
+    server: 114.129.43.41
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore95-443-新加坡-114.129.43.23"
+    type: vless
+    server: 114.129.43.23
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore96-443-新加坡-114.129.43.161"
+    type: vless
+    server: 114.129.43.161
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore97-443-新加坡-114.129.43.155"
+    type: vless
+    server: 114.129.43.155
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore98-443-新加坡-114.129.43.205"
+    type: vless
+    server: 114.129.43.205
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore99-443-新加坡-114.129.43.226"
+    type: vless
+    server: 114.129.43.226
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore100-443-新加坡-114.129.43.228"
+    type: vless
+    server: 114.129.43.228
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore101-443-新加坡-114.129.43.237"
+    type: vless
+    server: 114.129.43.237
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore102-443-新加坡-114.129.43.177"
+    type: vless
+    server: 114.129.43.177
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore103-443-新加坡-114.129.43.227"
+    type: vless
+    server: 114.129.43.227
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore104-443-新加坡-114.129.43.210"
+    type: vless
+    server: 114.129.43.210
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore105-443-新加坡-114.129.43.146"
+    type: vless
+    server: 114.129.43.146
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore106-443-新加坡-114.129.43.193"
+    type: vless
+    server: 114.129.43.193
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore107-443-新加坡-114.129.43.149"
+    type: vless
+    server: 114.129.43.149
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore108-443-新加坡-114.129.43.239"
+    type: vless
+    server: 114.129.43.239
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore109-443-新加坡-114.129.43.216"
+    type: vless
+    server: 114.129.43.216
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore110-443-新加坡-114.129.43.184"
+    type: vless
+    server: 114.129.43.184
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore111-443-新加坡-114.129.43.157"
+    type: vless
+    server: 114.129.43.157
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore112-443-新加坡-114.129.43.200"
+    type: vless
+    server: 114.129.43.200
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore113-443-新加坡-114.129.43.171"
+    type: vless
+    server: 114.129.43.171
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore114-443-新加坡-114.129.43.8"
+    type: vless
+    server: 114.129.43.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore115-443-新加坡-114.129.43.20"
+    type: vless
+    server: 114.129.43.20
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore116-443-新加坡-114.129.43.79"
+    type: vless
+    server: 114.129.43.79
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore117-443-新加坡-114.129.43.93"
+    type: vless
+    server: 114.129.43.93
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore118-443-新加坡-114.129.43.16"
+    type: vless
+    server: 114.129.43.16
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore119-443-新加坡-114.129.43.64"
+    type: vless
+    server: 114.129.43.64
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore120-443-新加坡-114.129.43.22"
+    type: vless
+    server: 114.129.43.22
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore121-443-新加坡-114.129.43.37"
+    type: vless
+    server: 114.129.43.37
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore122-443-新加坡-114.129.43.109"
+    type: vless
+    server: 114.129.43.109
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore123-443-新加坡-114.129.43.112"
+    type: vless
+    server: 114.129.43.112
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore124-443-新加坡-114.129.43.15"
+    type: vless
+    server: 114.129.43.15
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore125-443-新加坡-114.129.43.85"
+    type: vless
+    server: 114.129.43.85
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore126-443-新加坡-114.129.43.24"
+    type: vless
+    server: 114.129.43.24
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore127-443-新加坡-114.129.43.34"
+    type: vless
+    server: 114.129.43.34
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore128-443-新加坡-114.129.43.47"
+    type: vless
+    server: 114.129.43.47
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore129-443-新加坡-114.129.43.139"
+    type: vless
+    server: 114.129.43.139
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore130-443-新加坡-114.129.43.126"
+    type: vless
+    server: 114.129.43.126
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore131-443-新加坡-114.129.43.9"
+    type: vless
+    server: 114.129.43.9
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore132-443-新加坡-114.129.43.61"
+    type: vless
+    server: 114.129.43.61
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore133-443-新加坡-114.129.43.58"
+    type: vless
+    server: 114.129.43.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore134-443-新加坡-114.129.43.117"
+    type: vless
+    server: 114.129.43.117
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore135-443-新加坡-114.129.43.59"
+    type: vless
+    server: 114.129.43.59
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore136-443-新加坡-114.129.43.104"
+    type: vless
+    server: 114.129.43.104
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore137-443-新加坡-114.129.43.19"
+    type: vless
+    server: 114.129.43.19
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore138-443-新加坡-114.129.43.12"
+    type: vless
+    server: 114.129.43.12
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore139-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore140-443-新加坡-114.129.43.67"
+    type: vless
+    server: 114.129.43.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore141-443-新加坡-114.129.43.18"
+    type: vless
+    server: 114.129.43.18
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore142-443-新加坡-114.129.43.3"
+    type: vless
+    server: 114.129.43.3
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore143-443-新加坡-114.129.43.43"
+    type: vless
+    server: 114.129.43.43
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore144-443-新加坡-114.129.43.254"
+    type: vless
+    server: 114.129.43.254
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore145-443-新加坡-114.129.43.150"
+    type: vless
+    server: 114.129.43.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore146-443-新加坡-114.129.43.212"
+    type: vless
+    server: 114.129.43.212
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore147-443-新加坡-114.129.43.202"
+    type: vless
+    server: 114.129.43.202
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore148-443-新加坡-114.129.43.175"
+    type: vless
+    server: 114.129.43.175
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore149-443-新加坡-114.129.43.148"
+    type: vless
+    server: 114.129.43.148
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore150-443-新加坡-114.129.43.203"
+    type: vless
+    server: 114.129.43.203
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore151-443-新加坡-114.129.43.163"
+    type: vless
+    server: 114.129.43.163
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore152-443-新加坡-114.129.43.222"
+    type: vless
+    server: 114.129.43.222
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore153-443-新加坡-114.129.43.176"
+    type: vless
+    server: 114.129.43.176
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore154-443-新加坡-114.129.43.147"
+    type: vless
+    server: 114.129.43.147
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore155-443-新加坡-114.129.43.191"
+    type: vless
+    server: 114.129.43.191
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore156-443-新加坡-114.129.43.243"
+    type: vless
+    server: 114.129.43.243
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore157-443-新加坡-114.129.43.183"
+    type: vless
+    server: 114.129.43.183
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore158-443-新加坡-114.129.43.188"
+    type: vless
+    server: 114.129.43.188
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore159-443-新加坡-114.129.43.220"
+    type: vless
+    server: 114.129.43.220
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore160-443-新加坡-114.129.43.140"
+    type: vless
+    server: 114.129.43.140
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore161-443-新加坡-114.129.43.195"
+    type: vless
+    server: 114.129.43.195
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore162-443-新加坡-114.129.43.218"
+    type: vless
+    server: 114.129.43.218
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore163-443-新加坡-114.129.43.217"
+    type: vless
+    server: 114.129.43.217
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore164-443-新加坡-114.129.43.240"
+    type: vless
+    server: 114.129.43.240
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore165-443-新加坡-114.129.43.141"
+    type: vless
+    server: 114.129.43.141
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore166-443-新加坡-114.129.43.152"
+    type: vless
+    server: 114.129.43.152
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore167-443-新加坡-114.129.43.166"
+    type: vless
+    server: 114.129.43.166
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore168-443-新加坡-114.129.43.189"
+    type: vless
+    server: 114.129.43.189
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore169-443-新加坡-114.129.43.250"
+    type: vless
+    server: 114.129.43.250
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore170-443-新加坡-114.129.43.249"
+    type: vless
+    server: 114.129.43.249
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore171-443-新加坡-114.129.43.209"
+    type: vless
+    server: 114.129.43.209
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore172-443-新加坡-114.129.43.233"
+    type: vless
+    server: 114.129.43.233
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore173-443-新加坡-114.129.43.224"
+    type: vless
+    server: 114.129.43.224
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore174-443-新加坡-114.129.43.174"
+    type: vless
+    server: 114.129.43.174
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore175-443-新加坡-114.129.43.229"
+    type: vless
+    server: 114.129.43.229
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore176-443-新加坡-114.129.43.235"
+    type: vless
+    server: 114.129.43.235
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore177-443-新加坡-114.129.43.89"
+    type: vless
+    server: 114.129.43.89
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore178-443-新加坡-114.129.43.68"
+    type: vless
+    server: 114.129.43.68
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore179-443-新加坡-114.129.43.185"
+    type: vless
+    server: 114.129.43.185
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore180-443-新加坡-114.129.43.162"
+    type: vless
+    server: 114.129.43.162
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore181-443-新加坡-114.129.43.172"
+    type: vless
+    server: 114.129.43.172
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore182-443-新加坡-114.129.43.158"
+    type: vless
+    server: 114.129.43.158
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore183-443-新加坡-114.129.43.136"
+    type: vless
+    server: 114.129.43.136
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore184-443-新加坡-114.129.43.63"
+    type: vless
+    server: 114.129.43.63
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore185-443-新加坡-114.129.43.133"
+    type: vless
+    server: 114.129.43.133
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore186-443-新加坡-114.129.43.25"
+    type: vless
+    server: 114.129.43.25
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore187-443-新加坡-114.129.43.207"
+    type: vless
+    server: 114.129.43.207
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore188-443-新加坡-114.129.43.127"
+    type: vless
+    server: 114.129.43.127
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore189-443-新加坡-114.129.43.81"
+    type: vless
+    server: 114.129.43.81
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore190-443-新加坡-114.129.43.167"
+    type: vless
+    server: 114.129.43.167
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore191-443-新加坡-114.129.43.242"
+    type: vless
+    server: 114.129.43.242
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore192-443-新加坡-114.129.43.231"
+    type: vless
+    server: 114.129.43.231
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore193-443-新加坡-114.129.43.165"
+    type: vless
+    server: 114.129.43.165
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore194-443-新加坡-114.129.43.252"
+    type: vless
+    server: 114.129.43.252
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore195-443-新加坡-114.129.43.187"
+    type: vless
+    server: 114.129.43.187
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore196-443-新加坡-114.129.43.186"
+    type: vless
+    server: 114.129.43.186
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore197-443-新加坡-114.129.43.234"
+    type: vless
+    server: 114.129.43.234
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore198-443-新加坡-114.129.43.111"
+    type: vless
+    server: 114.129.43.111
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore199-443-新加坡-114.129.43.96"
+    type: vless
+    server: 114.129.43.96
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore200-443-新加坡-114.129.43.132"
+    type: vless
+    server: 114.129.43.132
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore201-443-新加坡-114.129.43.113"
+    type: vless
+    server: 114.129.43.113
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore202-443-新加坡-114.129.43.253"
+    type: vless
+    server: 114.129.43.253
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore203-443-新加坡-114.129.43.201"
+    type: vless
+    server: 114.129.43.201
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore204-443-新加坡-114.129.43.219"
+    type: vless
+    server: 114.129.43.219
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore205-443-新加坡-114.129.43.244"
+    type: vless
+    server: 114.129.43.244
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore206-443-新加坡-114.129.43.223"
+    type: vless
+    server: 114.129.43.223
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore207-443-新加坡-114.129.43.245"
+    type: vless
+    server: 114.129.43.245
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore208-443-新加坡-114.129.43.173"
+    type: vless
+    server: 114.129.43.173
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore209-443-新加坡-114.129.43.182"
+    type: vless
+    server: 114.129.43.182
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore210-443-新加坡-114.129.43.6"
+    type: vless
+    server: 114.129.43.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore211-443-新加坡-114.129.43.30"
+    type: vless
+    server: 114.129.43.30
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore212-443-新加坡-114.129.43.7"
+    type: vless
+    server: 114.129.43.7
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore213-443-新加坡-114.129.43.74"
+    type: vless
+    server: 114.129.43.74
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore214-443-新加坡-114.129.43.128"
+    type: vless
+    server: 114.129.43.128
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore215-443-新加坡-114.129.43.11"
+    type: vless
+    server: 114.129.43.11
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore216-443-新加坡-114.129.43.27"
+    type: vless
+    server: 114.129.43.27
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore217-443-新加坡-114.129.43.103"
+    type: vless
+    server: 114.129.43.103
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore218-443-新加坡-114.129.43.72"
+    type: vless
+    server: 114.129.43.72
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore219-443-新加坡-114.129.43.118"
+    type: vless
+    server: 114.129.43.118
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore220-443-新加坡-114.129.43.65"
+    type: vless
+    server: 114.129.43.65
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore221-443-新加坡-114.129.43.35"
+    type: vless
+    server: 114.129.43.35
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore222-443-新加坡-114.129.43.131"
+    type: vless
+    server: 114.129.43.131
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore223-443-新加坡-114.129.43.91"
+    type: vless
+    server: 114.129.43.91
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore224-443-新加坡-114.129.43.110"
+    type: vless
+    server: 114.129.43.110
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore225-443-新加坡-114.129.43.44"
+    type: vless
+    server: 114.129.43.44
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore226-443-新加坡-114.129.43.92"
+    type: vless
+    server: 114.129.43.92
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore227-443-新加坡-114.129.43.181"
+    type: vless
+    server: 114.129.43.181
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore228-443-新加坡-114.129.43.214"
+    type: vless
+    server: 114.129.43.214
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore229-443-新加坡-114.129.43.204"
+    type: vless
+    server: 114.129.43.204
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore230-443-新加坡-114.129.43.159"
+    type: vless
+    server: 114.129.43.159
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore231-443-新加坡-114.129.43.230"
+    type: vless
+    server: 114.129.43.230
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore232-443-新加坡-114.129.43.225"
+    type: vless
+    server: 114.129.43.225
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore233-443-新加坡-114.129.43.241"
+    type: vless
+    server: 114.129.43.241
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore234-443-新加坡-114.129.43.190"
+    type: vless
+    server: 114.129.43.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore235-443-新加坡-114.129.43.208"
+    type: vless
+    server: 114.129.43.208
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore236-443-新加坡-114.129.43.196"
+    type: vless
+    server: 114.129.43.196
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore237-443-新加坡-114.129.43.246"
+    type: vless
+    server: 114.129.43.246
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore238-443-新加坡-114.129.43.143"
+    type: vless
+    server: 114.129.43.143
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore239-443-新加坡-114.129.43.164"
+    type: vless
+    server: 114.129.43.164
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore240-443-新加坡-114.129.43.134"
+    type: vless
+    server: 114.129.43.134
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore241-443-新加坡-114.129.43.105"
+    type: vless
+    server: 114.129.43.105
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore242-443-新加坡-114.129.43.247"
+    type: vless
+    server: 114.129.43.247
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore243-443-新加坡-114.129.43.170"
+    type: vless
+    server: 114.129.43.170
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore244-443-新加坡-114.129.43.236"
+    type: vless
+    server: 114.129.43.236
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore245-443-新加坡-114.129.43.42"
+    type: vless
+    server: 114.129.43.42
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore246-443-新加坡-114.129.43.255"
+    type: vless
+    server: 114.129.43.255
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore247-443-新加坡-114.129.43.124"
+    type: vless
+    server: 114.129.43.124
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore248-443-新加坡-114.129.43.213"
+    type: vless
+    server: 114.129.43.213
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore249-443-新加坡-114.129.43.179"
+    type: vless
+    server: 114.129.43.179
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore250-443-新加坡-114.129.43.38"
+    type: vless
+    server: 114.129.43.38
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore251-443-新加坡-114.129.43.153"
+    type: vless
+    server: 114.129.43.153
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore252-443-新加坡-114.129.43.211"
+    type: vless
+    server: 114.129.43.211
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore253-443-新加坡-114.129.43.137"
+    type: vless
+    server: 114.129.43.137
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore254-443-新加坡-114.129.43.221"
+    type: vless
+    server: 114.129.43.221
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore255-443-新加坡-114.129.43.206"
+    type: vless
+    server: 114.129.43.206
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore256-443-新加坡-114.129.43.194"
+    type: vless
+    server: 114.129.43.194
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore257-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore258-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore259-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore260-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore261-443-新加坡-114.129.43.29"
+    type: vless
+    server: 114.129.43.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore262-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore263-443-新加坡-114.129.43.111"
+    type: vless
+    server: 114.129.43.111
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore264-443-新加坡-114.129.43.13"
+    type: vless
+    server: 114.129.43.13
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore265-443-新加坡-114.129.43.150"
+    type: vless
+    server: 114.129.43.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore266-443-新加坡-114.129.43.165"
+    type: vless
+    server: 114.129.43.165
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore267-443-新加坡-114.129.43.246"
+    type: vless
+    server: 114.129.43.246
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore268-443-新加坡-114.129.43.194"
+    type: vless
+    server: 114.129.43.194
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore269-443-新加坡-114.129.43.63"
+    type: vless
+    server: 114.129.43.63
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore270-443-新加坡-114.129.43.47"
+    type: vless
+    server: 114.129.43.47
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore271-443-新加坡-114.129.43.154"
+    type: vless
+    server: 114.129.43.154
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore272-443-新加坡-114.129.43.203"
+    type: vless
+    server: 114.129.43.203
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore273-443-新加坡-114.129.43.89"
+    type: vless
+    server: 114.129.43.89
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore274-443-新加坡-114.129.43.29"
+    type: vless
+    server: 114.129.43.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore275-443-新加坡-114.129.43.96"
+    type: vless
+    server: 114.129.43.96
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore276-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore277-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore278-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore279-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore280-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore281-443-新加坡-114.129.43.2"
+    type: vless
+    server: 114.129.43.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Singapore282-443-新加坡-114.129.43.1"
+    type: vless
+    server: 114.129.43.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Dhaka01-443-孟加拉国-114.129.9.98"
+    type: vless
+    server: 114.129.9.98
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Dhaka02-443-孟加拉国-114.129.8.67"
+    type: vless
+    server: 114.129.8.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Dhaka03-443-孟加拉国-114.129.8.67"
+    type: vless
+    server: 114.129.8.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "Singapore01-443-新加坡-114.129.43.1"
+      - "Singapore02-443-新加坡-114.129.43.66"
+      - "Singapore03-443-新加坡-114.129.43.56"
+      - "Singapore04-443-新加坡-114.129.43.121"
+      - "Singapore05-443-新加坡-114.129.43.75"
+      - "Singapore06-443-新加坡-114.129.43.94"
+      - "Singapore07-443-新加坡-114.129.43.98"
+      - "Singapore08-443-新加坡-114.129.43.82"
+      - "Singapore09-443-新加坡-114.129.43.57"
+      - "Singapore10-443-新加坡-114.129.43.125"
+      - "Singapore11-443-新加坡-114.129.43.145"
+      - "Singapore12-443-新加坡-114.129.43.168"
+      - "Singapore13-443-新加坡-114.129.43.99"
+      - "Singapore14-443-新加坡-114.129.43.138"
+      - "Singapore15-443-新加坡-114.129.43.192"
+      - "Singapore16-443-新加坡-114.129.43.142"
+      - "Singapore17-443-新加坡-114.129.43.151"
+      - "Singapore18-443-新加坡-114.129.43.107"
+      - "Singapore19-443-新加坡-114.129.43.97"
+      - "Singapore20-443-新加坡-114.129.43.101"
+      - "Singapore21-443-新加坡-114.129.43.48"
+      - "Singapore22-443-新加坡-114.129.43.73"
+      - "Singapore23-443-新加坡-114.129.43.78"
+      - "Singapore24-443-新加坡-114.129.43.46"
+      - "Singapore25-443-新加坡-114.129.43.0"
+      - "Singapore26-443-新加坡-114.129.43.102"
+      - "Singapore27-443-新加坡-114.129.43.108"
+      - "Singapore28-443-新加坡-114.129.43.39"
+      - "Singapore29-443-新加坡-114.129.43.130"
+      - "Singapore30-443-新加坡-114.129.43.33"
+      - "Singapore31-443-新加坡-114.129.43.95"
+      - "Singapore32-443-新加坡-114.129.43.4"
+      - "Singapore33-443-新加坡-114.129.43.122"
+      - "Singapore34-443-新加坡-114.129.43.36"
+      - "Singapore35-443-新加坡-114.129.43.55"
+      - "Singapore36-443-新加坡-114.129.43.106"
+      - "Singapore37-443-新加坡-114.129.43.62"
+      - "Singapore38-443-新加坡-114.129.43.156"
+      - "Singapore39-443-新加坡-114.129.43.28"
+      - "Singapore40-443-新加坡-114.129.43.248"
+      - "Singapore41-443-新加坡-114.129.43.69"
+      - "Singapore42-443-新加坡-114.129.43.31"
+      - "Singapore43-443-新加坡-114.129.43.180"
+      - "Singapore44-443-新加坡-114.129.43.120"
+      - "Singapore45-443-新加坡-114.129.43.123"
+      - "Singapore46-443-新加坡-114.129.43.251"
+      - "Singapore47-443-新加坡-114.129.43.199"
+      - "Singapore48-443-新加坡-114.129.43.178"
+      - "Singapore49-443-新加坡-114.129.43.198"
+      - "Singapore50-443-新加坡-114.129.43.100"
+      - "Singapore51-443-新加坡-114.129.43.154"
+      - "Singapore52-443-新加坡-114.129.43.232"
+      - "Singapore53-443-新加坡-114.129.43.144"
+      - "Singapore54-443-新加坡-114.129.43.215"
+      - "Singapore55-443-新加坡-114.129.43.32"
+      - "Singapore56-443-新加坡-114.129.43.17"
+      - "Singapore57-443-新加坡-114.129.43.116"
+      - "Singapore58-443-新加坡-114.129.43.49"
+      - "Singapore59-443-新加坡-114.129.43.40"
+      - "Singapore60-443-新加坡-114.129.43.135"
+      - "Singapore61-443-新加坡-114.129.43.2"
+      - "Singapore62-443-新加坡-114.129.43.53"
+      - "Singapore63-443-新加坡-114.129.43.76"
+      - "Singapore64-443-新加坡-114.129.43.13"
+      - "Singapore65-443-新加坡-114.129.43.10"
+      - "Singapore66-443-新加坡-114.129.43.84"
+      - "Singapore67-443-新加坡-114.129.43.197"
+      - "Singapore68-443-新加坡-114.129.43.160"
+      - "Singapore69-443-新加坡-114.129.43.169"
+      - "Singapore70-443-新加坡-114.129.43.238"
+      - "Singapore71-443-新加坡-114.129.43.119"
+      - "Singapore72-443-新加坡-114.129.43.50"
+      - "Singapore73-443-新加坡-114.129.43.52"
+      - "Singapore74-443-新加坡-114.129.43.45"
+      - "Singapore75-443-新加坡-114.129.43.51"
+      - "Singapore76-443-新加坡-114.129.43.14"
+      - "Singapore77-443-新加坡-114.129.43.77"
+      - "Singapore78-443-新加坡-114.129.43.70"
+      - "Singapore79-443-新加坡-114.129.43.129"
+      - "Singapore80-443-新加坡-114.129.43.80"
+      - "Singapore81-443-新加坡-114.129.43.60"
+      - "Singapore82-443-新加坡-114.129.43.29"
+      - "Singapore83-443-新加坡-114.129.43.26"
+      - "Singapore84-443-新加坡-114.129.43.88"
+      - "Singapore85-443-新加坡-114.129.43.90"
+      - "Singapore86-443-新加坡-114.129.43.115"
+      - "Singapore87-443-新加坡-114.129.43.21"
+      - "Singapore88-443-新加坡-114.129.43.5"
+      - "Singapore89-443-新加坡-114.129.43.86"
+      - "Singapore90-443-新加坡-114.129.43.54"
+      - "Singapore91-443-新加坡-114.129.43.87"
+      - "Singapore92-443-新加坡-114.129.43.71"
+      - "Singapore93-443-新加坡-114.129.43.83"
+      - "Singapore94-443-新加坡-114.129.43.41"
+      - "Singapore95-443-新加坡-114.129.43.23"
+      - "Singapore96-443-新加坡-114.129.43.161"
+      - "Singapore97-443-新加坡-114.129.43.155"
+      - "Singapore98-443-新加坡-114.129.43.205"
+      - "Singapore99-443-新加坡-114.129.43.226"
+      - "Singapore100-443-新加坡-114.129.43.228"
+      - "Singapore101-443-新加坡-114.129.43.237"
+      - "Singapore102-443-新加坡-114.129.43.177"
+      - "Singapore103-443-新加坡-114.129.43.227"
+      - "Singapore104-443-新加坡-114.129.43.210"
+      - "Singapore105-443-新加坡-114.129.43.146"
+      - "Singapore106-443-新加坡-114.129.43.193"
+      - "Singapore107-443-新加坡-114.129.43.149"
+      - "Singapore108-443-新加坡-114.129.43.239"
+      - "Singapore109-443-新加坡-114.129.43.216"
+      - "Singapore110-443-新加坡-114.129.43.184"
+      - "Singapore111-443-新加坡-114.129.43.157"
+      - "Singapore112-443-新加坡-114.129.43.200"
+      - "Singapore113-443-新加坡-114.129.43.171"
+      - "Singapore114-443-新加坡-114.129.43.8"
+      - "Singapore115-443-新加坡-114.129.43.20"
+      - "Singapore116-443-新加坡-114.129.43.79"
+      - "Singapore117-443-新加坡-114.129.43.93"
+      - "Singapore118-443-新加坡-114.129.43.16"
+      - "Singapore119-443-新加坡-114.129.43.64"
+      - "Singapore120-443-新加坡-114.129.43.22"
+      - "Singapore121-443-新加坡-114.129.43.37"
+      - "Singapore122-443-新加坡-114.129.43.109"
+      - "Singapore123-443-新加坡-114.129.43.112"
+      - "Singapore124-443-新加坡-114.129.43.15"
+      - "Singapore125-443-新加坡-114.129.43.85"
+      - "Singapore126-443-新加坡-114.129.43.24"
+      - "Singapore127-443-新加坡-114.129.43.34"
+      - "Singapore128-443-新加坡-114.129.43.47"
+      - "Singapore129-443-新加坡-114.129.43.139"
+      - "Singapore130-443-新加坡-114.129.43.126"
+      - "Singapore131-443-新加坡-114.129.43.9"
+      - "Singapore132-443-新加坡-114.129.43.61"
+      - "Singapore133-443-新加坡-114.129.43.58"
+      - "Singapore134-443-新加坡-114.129.43.117"
+      - "Singapore135-443-新加坡-114.129.43.59"
+      - "Singapore136-443-新加坡-114.129.43.104"
+      - "Singapore137-443-新加坡-114.129.43.19"
+      - "Singapore138-443-新加坡-114.129.43.12"
+      - "Singapore139-443-新加坡-114.129.43.1"
+      - "Singapore140-443-新加坡-114.129.43.67"
+      - "Singapore141-443-新加坡-114.129.43.18"
+      - "Singapore142-443-新加坡-114.129.43.3"
+      - "Singapore143-443-新加坡-114.129.43.43"
+      - "Singapore144-443-新加坡-114.129.43.254"
+      - "Singapore145-443-新加坡-114.129.43.150"
+      - "Singapore146-443-新加坡-114.129.43.212"
+      - "Singapore147-443-新加坡-114.129.43.202"
+      - "Singapore148-443-新加坡-114.129.43.175"
+      - "Singapore149-443-新加坡-114.129.43.148"
+      - "Singapore150-443-新加坡-114.129.43.203"
+      - "Singapore151-443-新加坡-114.129.43.163"
+      - "Singapore152-443-新加坡-114.129.43.222"
+      - "Singapore153-443-新加坡-114.129.43.176"
+      - "Singapore154-443-新加坡-114.129.43.147"
+      - "Singapore155-443-新加坡-114.129.43.191"
+      - "Singapore156-443-新加坡-114.129.43.243"
+      - "Singapore157-443-新加坡-114.129.43.183"
+      - "Singapore158-443-新加坡-114.129.43.188"
+      - "Singapore159-443-新加坡-114.129.43.220"
+      - "Singapore160-443-新加坡-114.129.43.140"
+      - "Singapore161-443-新加坡-114.129.43.195"
+      - "Singapore162-443-新加坡-114.129.43.218"
+      - "Singapore163-443-新加坡-114.129.43.217"
+      - "Singapore164-443-新加坡-114.129.43.240"
+      - "Singapore165-443-新加坡-114.129.43.141"
+      - "Singapore166-443-新加坡-114.129.43.152"
+      - "Singapore167-443-新加坡-114.129.43.166"
+      - "Singapore168-443-新加坡-114.129.43.189"
+      - "Singapore169-443-新加坡-114.129.43.250"
+      - "Singapore170-443-新加坡-114.129.43.249"
+      - "Singapore171-443-新加坡-114.129.43.209"
+      - "Singapore172-443-新加坡-114.129.43.233"
+      - "Singapore173-443-新加坡-114.129.43.224"
+      - "Singapore174-443-新加坡-114.129.43.174"
+      - "Singapore175-443-新加坡-114.129.43.229"
+      - "Singapore176-443-新加坡-114.129.43.235"
+      - "Singapore177-443-新加坡-114.129.43.89"
+      - "Singapore178-443-新加坡-114.129.43.68"
+      - "Singapore179-443-新加坡-114.129.43.185"
+      - "Singapore180-443-新加坡-114.129.43.162"
+      - "Singapore181-443-新加坡-114.129.43.172"
+      - "Singapore182-443-新加坡-114.129.43.158"
+      - "Singapore183-443-新加坡-114.129.43.136"
+      - "Singapore184-443-新加坡-114.129.43.63"
+      - "Singapore185-443-新加坡-114.129.43.133"
+      - "Singapore186-443-新加坡-114.129.43.25"
+      - "Singapore187-443-新加坡-114.129.43.207"
+      - "Singapore188-443-新加坡-114.129.43.127"
+      - "Singapore189-443-新加坡-114.129.43.81"
+      - "Singapore190-443-新加坡-114.129.43.167"
+      - "Singapore191-443-新加坡-114.129.43.242"
+      - "Singapore192-443-新加坡-114.129.43.231"
+      - "Singapore193-443-新加坡-114.129.43.165"
+      - "Singapore194-443-新加坡-114.129.43.252"
+      - "Singapore195-443-新加坡-114.129.43.187"
+      - "Singapore196-443-新加坡-114.129.43.186"
+      - "Singapore197-443-新加坡-114.129.43.234"
+      - "Singapore198-443-新加坡-114.129.43.111"
+      - "Singapore199-443-新加坡-114.129.43.96"
+      - "Singapore200-443-新加坡-114.129.43.132"
+      - "Singapore201-443-新加坡-114.129.43.113"
+      - "Singapore202-443-新加坡-114.129.43.253"
+      - "Singapore203-443-新加坡-114.129.43.201"
+      - "Singapore204-443-新加坡-114.129.43.219"
+      - "Singapore205-443-新加坡-114.129.43.244"
+      - "Singapore206-443-新加坡-114.129.43.223"
+      - "Singapore207-443-新加坡-114.129.43.245"
+      - "Singapore208-443-新加坡-114.129.43.173"
+      - "Singapore209-443-新加坡-114.129.43.182"
+      - "Singapore210-443-新加坡-114.129.43.6"
+      - "Singapore211-443-新加坡-114.129.43.30"
+      - "Singapore212-443-新加坡-114.129.43.7"
+      - "Singapore213-443-新加坡-114.129.43.74"
+      - "Singapore214-443-新加坡-114.129.43.128"
+      - "Singapore215-443-新加坡-114.129.43.11"
+      - "Singapore216-443-新加坡-114.129.43.27"
+      - "Singapore217-443-新加坡-114.129.43.103"
+      - "Singapore218-443-新加坡-114.129.43.72"
+      - "Singapore219-443-新加坡-114.129.43.118"
+      - "Singapore220-443-新加坡-114.129.43.65"
+      - "Singapore221-443-新加坡-114.129.43.35"
+      - "Singapore222-443-新加坡-114.129.43.131"
+      - "Singapore223-443-新加坡-114.129.43.91"
+      - "Singapore224-443-新加坡-114.129.43.110"
+      - "Singapore225-443-新加坡-114.129.43.44"
+      - "Singapore226-443-新加坡-114.129.43.92"
+      - "Singapore227-443-新加坡-114.129.43.181"
+      - "Singapore228-443-新加坡-114.129.43.214"
+      - "Singapore229-443-新加坡-114.129.43.204"
+      - "Singapore230-443-新加坡-114.129.43.159"
+      - "Singapore231-443-新加坡-114.129.43.230"
+      - "Singapore232-443-新加坡-114.129.43.225"
+      - "Singapore233-443-新加坡-114.129.43.241"
+      - "Singapore234-443-新加坡-114.129.43.190"
+      - "Singapore235-443-新加坡-114.129.43.208"
+      - "Singapore236-443-新加坡-114.129.43.196"
+      - "Singapore237-443-新加坡-114.129.43.246"
+      - "Singapore238-443-新加坡-114.129.43.143"
+      - "Singapore239-443-新加坡-114.129.43.164"
+      - "Singapore240-443-新加坡-114.129.43.134"
+      - "Singapore241-443-新加坡-114.129.43.105"
+      - "Singapore242-443-新加坡-114.129.43.247"
+      - "Singapore243-443-新加坡-114.129.43.170"
+      - "Singapore244-443-新加坡-114.129.43.236"
+      - "Singapore245-443-新加坡-114.129.43.42"
+      - "Singapore246-443-新加坡-114.129.43.255"
+      - "Singapore247-443-新加坡-114.129.43.124"
+      - "Singapore248-443-新加坡-114.129.43.213"
+      - "Singapore249-443-新加坡-114.129.43.179"
+      - "Singapore250-443-新加坡-114.129.43.38"
+      - "Singapore251-443-新加坡-114.129.43.153"
+      - "Singapore252-443-新加坡-114.129.43.211"
+      - "Singapore253-443-新加坡-114.129.43.137"
+      - "Singapore254-443-新加坡-114.129.43.221"
+      - "Singapore255-443-新加坡-114.129.43.206"
+      - "Singapore256-443-新加坡-114.129.43.194"
+      - "Singapore257-443-新加坡-114.129.43.2"
+      - "Singapore258-443-新加坡-114.129.43.2"
+      - "Singapore259-443-新加坡-114.129.43.2"
+      - "Singapore260-443-新加坡-114.129.43.1"
+      - "Singapore261-443-新加坡-114.129.43.29"
+      - "Singapore262-443-新加坡-114.129.43.1"
+      - "Singapore263-443-新加坡-114.129.43.111"
+      - "Singapore264-443-新加坡-114.129.43.13"
+      - "Singapore265-443-新加坡-114.129.43.150"
+      - "Singapore266-443-新加坡-114.129.43.165"
+      - "Singapore267-443-新加坡-114.129.43.246"
+      - "Singapore268-443-新加坡-114.129.43.194"
+      - "Singapore269-443-新加坡-114.129.43.63"
+      - "Singapore270-443-新加坡-114.129.43.47"
+      - "Singapore271-443-新加坡-114.129.43.154"
+      - "Singapore272-443-新加坡-114.129.43.203"
+      - "Singapore273-443-新加坡-114.129.43.89"
+      - "Singapore274-443-新加坡-114.129.43.29"
+      - "Singapore275-443-新加坡-114.129.43.96"
+      - "Singapore276-443-新加坡-114.129.43.2"
+      - "Singapore277-443-新加坡-114.129.43.1"
+      - "Singapore278-443-新加坡-114.129.43.2"
+      - "Singapore279-443-新加坡-114.129.43.1"
+      - "Singapore280-443-新加坡-114.129.43.2"
+      - "Singapore281-443-新加坡-114.129.43.2"
+      - "Singapore282-443-新加坡-114.129.43.1"
+      - "Dhaka01-443-孟加拉国-114.129.9.98"
+      - "Dhaka02-443-孟加拉国-114.129.8.67"
+      - "Dhaka03-443-孟加拉国-114.129.8.67"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "Singapore01-443-新加坡-114.129.43.1"
+      - "Singapore02-443-新加坡-114.129.43.66"
+      - "Singapore03-443-新加坡-114.129.43.56"
+      - "Singapore04-443-新加坡-114.129.43.121"
+      - "Singapore05-443-新加坡-114.129.43.75"
+      - "Singapore06-443-新加坡-114.129.43.94"
+      - "Singapore07-443-新加坡-114.129.43.98"
+      - "Singapore08-443-新加坡-114.129.43.82"
+      - "Singapore09-443-新加坡-114.129.43.57"
+      - "Singapore10-443-新加坡-114.129.43.125"
+      - "Singapore11-443-新加坡-114.129.43.145"
+      - "Singapore12-443-新加坡-114.129.43.168"
+      - "Singapore13-443-新加坡-114.129.43.99"
+      - "Singapore14-443-新加坡-114.129.43.138"
+      - "Singapore15-443-新加坡-114.129.43.192"
+      - "Singapore16-443-新加坡-114.129.43.142"
+      - "Singapore17-443-新加坡-114.129.43.151"
+      - "Singapore18-443-新加坡-114.129.43.107"
+      - "Singapore19-443-新加坡-114.129.43.97"
+      - "Singapore20-443-新加坡-114.129.43.101"
+      - "Singapore21-443-新加坡-114.129.43.48"
+      - "Singapore22-443-新加坡-114.129.43.73"
+      - "Singapore23-443-新加坡-114.129.43.78"
+      - "Singapore24-443-新加坡-114.129.43.46"
+      - "Singapore25-443-新加坡-114.129.43.0"
+      - "Singapore26-443-新加坡-114.129.43.102"
+      - "Singapore27-443-新加坡-114.129.43.108"
+      - "Singapore28-443-新加坡-114.129.43.39"
+      - "Singapore29-443-新加坡-114.129.43.130"
+      - "Singapore30-443-新加坡-114.129.43.33"
+      - "Singapore31-443-新加坡-114.129.43.95"
+      - "Singapore32-443-新加坡-114.129.43.4"
+      - "Singapore33-443-新加坡-114.129.43.122"
+      - "Singapore34-443-新加坡-114.129.43.36"
+      - "Singapore35-443-新加坡-114.129.43.55"
+      - "Singapore36-443-新加坡-114.129.43.106"
+      - "Singapore37-443-新加坡-114.129.43.62"
+      - "Singapore38-443-新加坡-114.129.43.156"
+      - "Singapore39-443-新加坡-114.129.43.28"
+      - "Singapore40-443-新加坡-114.129.43.248"
+      - "Singapore41-443-新加坡-114.129.43.69"
+      - "Singapore42-443-新加坡-114.129.43.31"
+      - "Singapore43-443-新加坡-114.129.43.180"
+      - "Singapore44-443-新加坡-114.129.43.120"
+      - "Singapore45-443-新加坡-114.129.43.123"
+      - "Singapore46-443-新加坡-114.129.43.251"
+      - "Singapore47-443-新加坡-114.129.43.199"
+      - "Singapore48-443-新加坡-114.129.43.178"
+      - "Singapore49-443-新加坡-114.129.43.198"
+      - "Singapore50-443-新加坡-114.129.43.100"
+      - "Singapore51-443-新加坡-114.129.43.154"
+      - "Singapore52-443-新加坡-114.129.43.232"
+      - "Singapore53-443-新加坡-114.129.43.144"
+      - "Singapore54-443-新加坡-114.129.43.215"
+      - "Singapore55-443-新加坡-114.129.43.32"
+      - "Singapore56-443-新加坡-114.129.43.17"
+      - "Singapore57-443-新加坡-114.129.43.116"
+      - "Singapore58-443-新加坡-114.129.43.49"
+      - "Singapore59-443-新加坡-114.129.43.40"
+      - "Singapore60-443-新加坡-114.129.43.135"
+      - "Singapore61-443-新加坡-114.129.43.2"
+      - "Singapore62-443-新加坡-114.129.43.53"
+      - "Singapore63-443-新加坡-114.129.43.76"
+      - "Singapore64-443-新加坡-114.129.43.13"
+      - "Singapore65-443-新加坡-114.129.43.10"
+      - "Singapore66-443-新加坡-114.129.43.84"
+      - "Singapore67-443-新加坡-114.129.43.197"
+      - "Singapore68-443-新加坡-114.129.43.160"
+      - "Singapore69-443-新加坡-114.129.43.169"
+      - "Singapore70-443-新加坡-114.129.43.238"
+      - "Singapore71-443-新加坡-114.129.43.119"
+      - "Singapore72-443-新加坡-114.129.43.50"
+      - "Singapore73-443-新加坡-114.129.43.52"
+      - "Singapore74-443-新加坡-114.129.43.45"
+      - "Singapore75-443-新加坡-114.129.43.51"
+      - "Singapore76-443-新加坡-114.129.43.14"
+      - "Singapore77-443-新加坡-114.129.43.77"
+      - "Singapore78-443-新加坡-114.129.43.70"
+      - "Singapore79-443-新加坡-114.129.43.129"
+      - "Singapore80-443-新加坡-114.129.43.80"
+      - "Singapore81-443-新加坡-114.129.43.60"
+      - "Singapore82-443-新加坡-114.129.43.29"
+      - "Singapore83-443-新加坡-114.129.43.26"
+      - "Singapore84-443-新加坡-114.129.43.88"
+      - "Singapore85-443-新加坡-114.129.43.90"
+      - "Singapore86-443-新加坡-114.129.43.115"
+      - "Singapore87-443-新加坡-114.129.43.21"
+      - "Singapore88-443-新加坡-114.129.43.5"
+      - "Singapore89-443-新加坡-114.129.43.86"
+      - "Singapore90-443-新加坡-114.129.43.54"
+      - "Singapore91-443-新加坡-114.129.43.87"
+      - "Singapore92-443-新加坡-114.129.43.71"
+      - "Singapore93-443-新加坡-114.129.43.83"
+      - "Singapore94-443-新加坡-114.129.43.41"
+      - "Singapore95-443-新加坡-114.129.43.23"
+      - "Singapore96-443-新加坡-114.129.43.161"
+      - "Singapore97-443-新加坡-114.129.43.155"
+      - "Singapore98-443-新加坡-114.129.43.205"
+      - "Singapore99-443-新加坡-114.129.43.226"
+      - "Singapore100-443-新加坡-114.129.43.228"
+      - "Singapore101-443-新加坡-114.129.43.237"
+      - "Singapore102-443-新加坡-114.129.43.177"
+      - "Singapore103-443-新加坡-114.129.43.227"
+      - "Singapore104-443-新加坡-114.129.43.210"
+      - "Singapore105-443-新加坡-114.129.43.146"
+      - "Singapore106-443-新加坡-114.129.43.193"
+      - "Singapore107-443-新加坡-114.129.43.149"
+      - "Singapore108-443-新加坡-114.129.43.239"
+      - "Singapore109-443-新加坡-114.129.43.216"
+      - "Singapore110-443-新加坡-114.129.43.184"
+      - "Singapore111-443-新加坡-114.129.43.157"
+      - "Singapore112-443-新加坡-114.129.43.200"
+      - "Singapore113-443-新加坡-114.129.43.171"
+      - "Singapore114-443-新加坡-114.129.43.8"
+      - "Singapore115-443-新加坡-114.129.43.20"
+      - "Singapore116-443-新加坡-114.129.43.79"
+      - "Singapore117-443-新加坡-114.129.43.93"
+      - "Singapore118-443-新加坡-114.129.43.16"
+      - "Singapore119-443-新加坡-114.129.43.64"
+      - "Singapore120-443-新加坡-114.129.43.22"
+      - "Singapore121-443-新加坡-114.129.43.37"
+      - "Singapore122-443-新加坡-114.129.43.109"
+      - "Singapore123-443-新加坡-114.129.43.112"
+      - "Singapore124-443-新加坡-114.129.43.15"
+      - "Singapore125-443-新加坡-114.129.43.85"
+      - "Singapore126-443-新加坡-114.129.43.24"
+      - "Singapore127-443-新加坡-114.129.43.34"
+      - "Singapore128-443-新加坡-114.129.43.47"
+      - "Singapore129-443-新加坡-114.129.43.139"
+      - "Singapore130-443-新加坡-114.129.43.126"
+      - "Singapore131-443-新加坡-114.129.43.9"
+      - "Singapore132-443-新加坡-114.129.43.61"
+      - "Singapore133-443-新加坡-114.129.43.58"
+      - "Singapore134-443-新加坡-114.129.43.117"
+      - "Singapore135-443-新加坡-114.129.43.59"
+      - "Singapore136-443-新加坡-114.129.43.104"
+      - "Singapore137-443-新加坡-114.129.43.19"
+      - "Singapore138-443-新加坡-114.129.43.12"
+      - "Singapore139-443-新加坡-114.129.43.1"
+      - "Singapore140-443-新加坡-114.129.43.67"
+      - "Singapore141-443-新加坡-114.129.43.18"
+      - "Singapore142-443-新加坡-114.129.43.3"
+      - "Singapore143-443-新加坡-114.129.43.43"
+      - "Singapore144-443-新加坡-114.129.43.254"
+      - "Singapore145-443-新加坡-114.129.43.150"
+      - "Singapore146-443-新加坡-114.129.43.212"
+      - "Singapore147-443-新加坡-114.129.43.202"
+      - "Singapore148-443-新加坡-114.129.43.175"
+      - "Singapore149-443-新加坡-114.129.43.148"
+      - "Singapore150-443-新加坡-114.129.43.203"
+      - "Singapore151-443-新加坡-114.129.43.163"
+      - "Singapore152-443-新加坡-114.129.43.222"
+      - "Singapore153-443-新加坡-114.129.43.176"
+      - "Singapore154-443-新加坡-114.129.43.147"
+      - "Singapore155-443-新加坡-114.129.43.191"
+      - "Singapore156-443-新加坡-114.129.43.243"
+      - "Singapore157-443-新加坡-114.129.43.183"
+      - "Singapore158-443-新加坡-114.129.43.188"
+      - "Singapore159-443-新加坡-114.129.43.220"
+      - "Singapore160-443-新加坡-114.129.43.140"
+      - "Singapore161-443-新加坡-114.129.43.195"
+      - "Singapore162-443-新加坡-114.129.43.218"
+      - "Singapore163-443-新加坡-114.129.43.217"
+      - "Singapore164-443-新加坡-114.129.43.240"
+      - "Singapore165-443-新加坡-114.129.43.141"
+      - "Singapore166-443-新加坡-114.129.43.152"
+      - "Singapore167-443-新加坡-114.129.43.166"
+      - "Singapore168-443-新加坡-114.129.43.189"
+      - "Singapore169-443-新加坡-114.129.43.250"
+      - "Singapore170-443-新加坡-114.129.43.249"
+      - "Singapore171-443-新加坡-114.129.43.209"
+      - "Singapore172-443-新加坡-114.129.43.233"
+      - "Singapore173-443-新加坡-114.129.43.224"
+      - "Singapore174-443-新加坡-114.129.43.174"
+      - "Singapore175-443-新加坡-114.129.43.229"
+      - "Singapore176-443-新加坡-114.129.43.235"
+      - "Singapore177-443-新加坡-114.129.43.89"
+      - "Singapore178-443-新加坡-114.129.43.68"
+      - "Singapore179-443-新加坡-114.129.43.185"
+      - "Singapore180-443-新加坡-114.129.43.162"
+      - "Singapore181-443-新加坡-114.129.43.172"
+      - "Singapore182-443-新加坡-114.129.43.158"
+      - "Singapore183-443-新加坡-114.129.43.136"
+      - "Singapore184-443-新加坡-114.129.43.63"
+      - "Singapore185-443-新加坡-114.129.43.133"
+      - "Singapore186-443-新加坡-114.129.43.25"
+      - "Singapore187-443-新加坡-114.129.43.207"
+      - "Singapore188-443-新加坡-114.129.43.127"
+      - "Singapore189-443-新加坡-114.129.43.81"
+      - "Singapore190-443-新加坡-114.129.43.167"
+      - "Singapore191-443-新加坡-114.129.43.242"
+      - "Singapore192-443-新加坡-114.129.43.231"
+      - "Singapore193-443-新加坡-114.129.43.165"
+      - "Singapore194-443-新加坡-114.129.43.252"
+      - "Singapore195-443-新加坡-114.129.43.187"
+      - "Singapore196-443-新加坡-114.129.43.186"
+      - "Singapore197-443-新加坡-114.129.43.234"
+      - "Singapore198-443-新加坡-114.129.43.111"
+      - "Singapore199-443-新加坡-114.129.43.96"
+      - "Singapore200-443-新加坡-114.129.43.132"
+      - "Singapore201-443-新加坡-114.129.43.113"
+      - "Singapore202-443-新加坡-114.129.43.253"
+      - "Singapore203-443-新加坡-114.129.43.201"
+      - "Singapore204-443-新加坡-114.129.43.219"
+      - "Singapore205-443-新加坡-114.129.43.244"
+      - "Singapore206-443-新加坡-114.129.43.223"
+      - "Singapore207-443-新加坡-114.129.43.245"
+      - "Singapore208-443-新加坡-114.129.43.173"
+      - "Singapore209-443-新加坡-114.129.43.182"
+      - "Singapore210-443-新加坡-114.129.43.6"
+      - "Singapore211-443-新加坡-114.129.43.30"
+      - "Singapore212-443-新加坡-114.129.43.7"
+      - "Singapore213-443-新加坡-114.129.43.74"
+      - "Singapore214-443-新加坡-114.129.43.128"
+      - "Singapore215-443-新加坡-114.129.43.11"
+      - "Singapore216-443-新加坡-114.129.43.27"
+      - "Singapore217-443-新加坡-114.129.43.103"
+      - "Singapore218-443-新加坡-114.129.43.72"
+      - "Singapore219-443-新加坡-114.129.43.118"
+      - "Singapore220-443-新加坡-114.129.43.65"
+      - "Singapore221-443-新加坡-114.129.43.35"
+      - "Singapore222-443-新加坡-114.129.43.131"
+      - "Singapore223-443-新加坡-114.129.43.91"
+      - "Singapore224-443-新加坡-114.129.43.110"
+      - "Singapore225-443-新加坡-114.129.43.44"
+      - "Singapore226-443-新加坡-114.129.43.92"
+      - "Singapore227-443-新加坡-114.129.43.181"
+      - "Singapore228-443-新加坡-114.129.43.214"
+      - "Singapore229-443-新加坡-114.129.43.204"
+      - "Singapore230-443-新加坡-114.129.43.159"
+      - "Singapore231-443-新加坡-114.129.43.230"
+      - "Singapore232-443-新加坡-114.129.43.225"
+      - "Singapore233-443-新加坡-114.129.43.241"
+      - "Singapore234-443-新加坡-114.129.43.190"
+      - "Singapore235-443-新加坡-114.129.43.208"
+      - "Singapore236-443-新加坡-114.129.43.196"
+      - "Singapore237-443-新加坡-114.129.43.246"
+      - "Singapore238-443-新加坡-114.129.43.143"
+      - "Singapore239-443-新加坡-114.129.43.164"
+      - "Singapore240-443-新加坡-114.129.43.134"
+      - "Singapore241-443-新加坡-114.129.43.105"
+      - "Singapore242-443-新加坡-114.129.43.247"
+      - "Singapore243-443-新加坡-114.129.43.170"
+      - "Singapore244-443-新加坡-114.129.43.236"
+      - "Singapore245-443-新加坡-114.129.43.42"
+      - "Singapore246-443-新加坡-114.129.43.255"
+      - "Singapore247-443-新加坡-114.129.43.124"
+      - "Singapore248-443-新加坡-114.129.43.213"
+      - "Singapore249-443-新加坡-114.129.43.179"
+      - "Singapore250-443-新加坡-114.129.43.38"
+      - "Singapore251-443-新加坡-114.129.43.153"
+      - "Singapore252-443-新加坡-114.129.43.211"
+      - "Singapore253-443-新加坡-114.129.43.137"
+      - "Singapore254-443-新加坡-114.129.43.221"
+      - "Singapore255-443-新加坡-114.129.43.206"
+      - "Singapore256-443-新加坡-114.129.43.194"
+      - "Singapore257-443-新加坡-114.129.43.2"
+      - "Singapore258-443-新加坡-114.129.43.2"
+      - "Singapore259-443-新加坡-114.129.43.2"
+      - "Singapore260-443-新加坡-114.129.43.1"
+      - "Singapore261-443-新加坡-114.129.43.29"
+      - "Singapore262-443-新加坡-114.129.43.1"
+      - "Singapore263-443-新加坡-114.129.43.111"
+      - "Singapore264-443-新加坡-114.129.43.13"
+      - "Singapore265-443-新加坡-114.129.43.150"
+      - "Singapore266-443-新加坡-114.129.43.165"
+      - "Singapore267-443-新加坡-114.129.43.246"
+      - "Singapore268-443-新加坡-114.129.43.194"
+      - "Singapore269-443-新加坡-114.129.43.63"
+      - "Singapore270-443-新加坡-114.129.43.47"
+      - "Singapore271-443-新加坡-114.129.43.154"
+      - "Singapore272-443-新加坡-114.129.43.203"
+      - "Singapore273-443-新加坡-114.129.43.89"
+      - "Singapore274-443-新加坡-114.129.43.29"
+      - "Singapore275-443-新加坡-114.129.43.96"
+      - "Singapore276-443-新加坡-114.129.43.2"
+      - "Singapore277-443-新加坡-114.129.43.1"
+      - "Singapore278-443-新加坡-114.129.43.2"
+      - "Singapore279-443-新加坡-114.129.43.1"
+      - "Singapore280-443-新加坡-114.129.43.2"
+      - "Singapore281-443-新加坡-114.129.43.2"
+      - "Singapore282-443-新加坡-114.129.43.1"
+      - "Dhaka01-443-孟加拉国-114.129.9.98"
+      - "Dhaka02-443-孟加拉国-114.129.8.67"
+      - "Dhaka03-443-孟加拉国-114.129.8.67"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "Singapore01-443-新加坡-114.129.43.1"
+      - "Singapore02-443-新加坡-114.129.43.66"
+      - "Singapore03-443-新加坡-114.129.43.56"
+      - "Singapore04-443-新加坡-114.129.43.121"
+      - "Singapore05-443-新加坡-114.129.43.75"
+      - "Singapore06-443-新加坡-114.129.43.94"
+      - "Singapore07-443-新加坡-114.129.43.98"
+      - "Singapore08-443-新加坡-114.129.43.82"
+      - "Singapore09-443-新加坡-114.129.43.57"
+      - "Singapore10-443-新加坡-114.129.43.125"
+      - "Singapore11-443-新加坡-114.129.43.145"
+      - "Singapore12-443-新加坡-114.129.43.168"
+      - "Singapore13-443-新加坡-114.129.43.99"
+      - "Singapore14-443-新加坡-114.129.43.138"
+      - "Singapore15-443-新加坡-114.129.43.192"
+      - "Singapore16-443-新加坡-114.129.43.142"
+      - "Singapore17-443-新加坡-114.129.43.151"
+      - "Singapore18-443-新加坡-114.129.43.107"
+      - "Singapore19-443-新加坡-114.129.43.97"
+      - "Singapore20-443-新加坡-114.129.43.101"
+      - "Singapore21-443-新加坡-114.129.43.48"
+      - "Singapore22-443-新加坡-114.129.43.73"
+      - "Singapore23-443-新加坡-114.129.43.78"
+      - "Singapore24-443-新加坡-114.129.43.46"
+      - "Singapore25-443-新加坡-114.129.43.0"
+      - "Singapore26-443-新加坡-114.129.43.102"
+      - "Singapore27-443-新加坡-114.129.43.108"
+      - "Singapore28-443-新加坡-114.129.43.39"
+      - "Singapore29-443-新加坡-114.129.43.130"
+      - "Singapore30-443-新加坡-114.129.43.33"
+      - "Singapore31-443-新加坡-114.129.43.95"
+      - "Singapore32-443-新加坡-114.129.43.4"
+      - "Singapore33-443-新加坡-114.129.43.122"
+      - "Singapore34-443-新加坡-114.129.43.36"
+      - "Singapore35-443-新加坡-114.129.43.55"
+      - "Singapore36-443-新加坡-114.129.43.106"
+      - "Singapore37-443-新加坡-114.129.43.62"
+      - "Singapore38-443-新加坡-114.129.43.156"
+      - "Singapore39-443-新加坡-114.129.43.28"
+      - "Singapore40-443-新加坡-114.129.43.248"
+      - "Singapore41-443-新加坡-114.129.43.69"
+      - "Singapore42-443-新加坡-114.129.43.31"
+      - "Singapore43-443-新加坡-114.129.43.180"
+      - "Singapore44-443-新加坡-114.129.43.120"
+      - "Singapore45-443-新加坡-114.129.43.123"
+      - "Singapore46-443-新加坡-114.129.43.251"
+      - "Singapore47-443-新加坡-114.129.43.199"
+      - "Singapore48-443-新加坡-114.129.43.178"
+      - "Singapore49-443-新加坡-114.129.43.198"
+      - "Singapore50-443-新加坡-114.129.43.100"
+      - "Singapore51-443-新加坡-114.129.43.154"
+      - "Singapore52-443-新加坡-114.129.43.232"
+      - "Singapore53-443-新加坡-114.129.43.144"
+      - "Singapore54-443-新加坡-114.129.43.215"
+      - "Singapore55-443-新加坡-114.129.43.32"
+      - "Singapore56-443-新加坡-114.129.43.17"
+      - "Singapore57-443-新加坡-114.129.43.116"
+      - "Singapore58-443-新加坡-114.129.43.49"
+      - "Singapore59-443-新加坡-114.129.43.40"
+      - "Singapore60-443-新加坡-114.129.43.135"
+      - "Singapore61-443-新加坡-114.129.43.2"
+      - "Singapore62-443-新加坡-114.129.43.53"
+      - "Singapore63-443-新加坡-114.129.43.76"
+      - "Singapore64-443-新加坡-114.129.43.13"
+      - "Singapore65-443-新加坡-114.129.43.10"
+      - "Singapore66-443-新加坡-114.129.43.84"
+      - "Singapore67-443-新加坡-114.129.43.197"
+      - "Singapore68-443-新加坡-114.129.43.160"
+      - "Singapore69-443-新加坡-114.129.43.169"
+      - "Singapore70-443-新加坡-114.129.43.238"
+      - "Singapore71-443-新加坡-114.129.43.119"
+      - "Singapore72-443-新加坡-114.129.43.50"
+      - "Singapore73-443-新加坡-114.129.43.52"
+      - "Singapore74-443-新加坡-114.129.43.45"
+      - "Singapore75-443-新加坡-114.129.43.51"
+      - "Singapore76-443-新加坡-114.129.43.14"
+      - "Singapore77-443-新加坡-114.129.43.77"
+      - "Singapore78-443-新加坡-114.129.43.70"
+      - "Singapore79-443-新加坡-114.129.43.129"
+      - "Singapore80-443-新加坡-114.129.43.80"
+      - "Singapore81-443-新加坡-114.129.43.60"
+      - "Singapore82-443-新加坡-114.129.43.29"
+      - "Singapore83-443-新加坡-114.129.43.26"
+      - "Singapore84-443-新加坡-114.129.43.88"
+      - "Singapore85-443-新加坡-114.129.43.90"
+      - "Singapore86-443-新加坡-114.129.43.115"
+      - "Singapore87-443-新加坡-114.129.43.21"
+      - "Singapore88-443-新加坡-114.129.43.5"
+      - "Singapore89-443-新加坡-114.129.43.86"
+      - "Singapore90-443-新加坡-114.129.43.54"
+      - "Singapore91-443-新加坡-114.129.43.87"
+      - "Singapore92-443-新加坡-114.129.43.71"
+      - "Singapore93-443-新加坡-114.129.43.83"
+      - "Singapore94-443-新加坡-114.129.43.41"
+      - "Singapore95-443-新加坡-114.129.43.23"
+      - "Singapore96-443-新加坡-114.129.43.161"
+      - "Singapore97-443-新加坡-114.129.43.155"
+      - "Singapore98-443-新加坡-114.129.43.205"
+      - "Singapore99-443-新加坡-114.129.43.226"
+      - "Singapore100-443-新加坡-114.129.43.228"
+      - "Singapore101-443-新加坡-114.129.43.237"
+      - "Singapore102-443-新加坡-114.129.43.177"
+      - "Singapore103-443-新加坡-114.129.43.227"
+      - "Singapore104-443-新加坡-114.129.43.210"
+      - "Singapore105-443-新加坡-114.129.43.146"
+      - "Singapore106-443-新加坡-114.129.43.193"
+      - "Singapore107-443-新加坡-114.129.43.149"
+      - "Singapore108-443-新加坡-114.129.43.239"
+      - "Singapore109-443-新加坡-114.129.43.216"
+      - "Singapore110-443-新加坡-114.129.43.184"
+      - "Singapore111-443-新加坡-114.129.43.157"
+      - "Singapore112-443-新加坡-114.129.43.200"
+      - "Singapore113-443-新加坡-114.129.43.171"
+      - "Singapore114-443-新加坡-114.129.43.8"
+      - "Singapore115-443-新加坡-114.129.43.20"
+      - "Singapore116-443-新加坡-114.129.43.79"
+      - "Singapore117-443-新加坡-114.129.43.93"
+      - "Singapore118-443-新加坡-114.129.43.16"
+      - "Singapore119-443-新加坡-114.129.43.64"
+      - "Singapore120-443-新加坡-114.129.43.22"
+      - "Singapore121-443-新加坡-114.129.43.37"
+      - "Singapore122-443-新加坡-114.129.43.109"
+      - "Singapore123-443-新加坡-114.129.43.112"
+      - "Singapore124-443-新加坡-114.129.43.15"
+      - "Singapore125-443-新加坡-114.129.43.85"
+      - "Singapore126-443-新加坡-114.129.43.24"
+      - "Singapore127-443-新加坡-114.129.43.34"
+      - "Singapore128-443-新加坡-114.129.43.47"
+      - "Singapore129-443-新加坡-114.129.43.139"
+      - "Singapore130-443-新加坡-114.129.43.126"
+      - "Singapore131-443-新加坡-114.129.43.9"
+      - "Singapore132-443-新加坡-114.129.43.61"
+      - "Singapore133-443-新加坡-114.129.43.58"
+      - "Singapore134-443-新加坡-114.129.43.117"
+      - "Singapore135-443-新加坡-114.129.43.59"
+      - "Singapore136-443-新加坡-114.129.43.104"
+      - "Singapore137-443-新加坡-114.129.43.19"
+      - "Singapore138-443-新加坡-114.129.43.12"
+      - "Singapore139-443-新加坡-114.129.43.1"
+      - "Singapore140-443-新加坡-114.129.43.67"
+      - "Singapore141-443-新加坡-114.129.43.18"
+      - "Singapore142-443-新加坡-114.129.43.3"
+      - "Singapore143-443-新加坡-114.129.43.43"
+      - "Singapore144-443-新加坡-114.129.43.254"
+      - "Singapore145-443-新加坡-114.129.43.150"
+      - "Singapore146-443-新加坡-114.129.43.212"
+      - "Singapore147-443-新加坡-114.129.43.202"
+      - "Singapore148-443-新加坡-114.129.43.175"
+      - "Singapore149-443-新加坡-114.129.43.148"
+      - "Singapore150-443-新加坡-114.129.43.203"
+      - "Singapore151-443-新加坡-114.129.43.163"
+      - "Singapore152-443-新加坡-114.129.43.222"
+      - "Singapore153-443-新加坡-114.129.43.176"
+      - "Singapore154-443-新加坡-114.129.43.147"
+      - "Singapore155-443-新加坡-114.129.43.191"
+      - "Singapore156-443-新加坡-114.129.43.243"
+      - "Singapore157-443-新加坡-114.129.43.183"
+      - "Singapore158-443-新加坡-114.129.43.188"
+      - "Singapore159-443-新加坡-114.129.43.220"
+      - "Singapore160-443-新加坡-114.129.43.140"
+      - "Singapore161-443-新加坡-114.129.43.195"
+      - "Singapore162-443-新加坡-114.129.43.218"
+      - "Singapore163-443-新加坡-114.129.43.217"
+      - "Singapore164-443-新加坡-114.129.43.240"
+      - "Singapore165-443-新加坡-114.129.43.141"
+      - "Singapore166-443-新加坡-114.129.43.152"
+      - "Singapore167-443-新加坡-114.129.43.166"
+      - "Singapore168-443-新加坡-114.129.43.189"
+      - "Singapore169-443-新加坡-114.129.43.250"
+      - "Singapore170-443-新加坡-114.129.43.249"
+      - "Singapore171-443-新加坡-114.129.43.209"
+      - "Singapore172-443-新加坡-114.129.43.233"
+      - "Singapore173-443-新加坡-114.129.43.224"
+      - "Singapore174-443-新加坡-114.129.43.174"
+      - "Singapore175-443-新加坡-114.129.43.229"
+      - "Singapore176-443-新加坡-114.129.43.235"
+      - "Singapore177-443-新加坡-114.129.43.89"
+      - "Singapore178-443-新加坡-114.129.43.68"
+      - "Singapore179-443-新加坡-114.129.43.185"
+      - "Singapore180-443-新加坡-114.129.43.162"
+      - "Singapore181-443-新加坡-114.129.43.172"
+      - "Singapore182-443-新加坡-114.129.43.158"
+      - "Singapore183-443-新加坡-114.129.43.136"
+      - "Singapore184-443-新加坡-114.129.43.63"
+      - "Singapore185-443-新加坡-114.129.43.133"
+      - "Singapore186-443-新加坡-114.129.43.25"
+      - "Singapore187-443-新加坡-114.129.43.207"
+      - "Singapore188-443-新加坡-114.129.43.127"
+      - "Singapore189-443-新加坡-114.129.43.81"
+      - "Singapore190-443-新加坡-114.129.43.167"
+      - "Singapore191-443-新加坡-114.129.43.242"
+      - "Singapore192-443-新加坡-114.129.43.231"
+      - "Singapore193-443-新加坡-114.129.43.165"
+      - "Singapore194-443-新加坡-114.129.43.252"
+      - "Singapore195-443-新加坡-114.129.43.187"
+      - "Singapore196-443-新加坡-114.129.43.186"
+      - "Singapore197-443-新加坡-114.129.43.234"
+      - "Singapore198-443-新加坡-114.129.43.111"
+      - "Singapore199-443-新加坡-114.129.43.96"
+      - "Singapore200-443-新加坡-114.129.43.132"
+      - "Singapore201-443-新加坡-114.129.43.113"
+      - "Singapore202-443-新加坡-114.129.43.253"
+      - "Singapore203-443-新加坡-114.129.43.201"
+      - "Singapore204-443-新加坡-114.129.43.219"
+      - "Singapore205-443-新加坡-114.129.43.244"
+      - "Singapore206-443-新加坡-114.129.43.223"
+      - "Singapore207-443-新加坡-114.129.43.245"
+      - "Singapore208-443-新加坡-114.129.43.173"
+      - "Singapore209-443-新加坡-114.129.43.182"
+      - "Singapore210-443-新加坡-114.129.43.6"
+      - "Singapore211-443-新加坡-114.129.43.30"
+      - "Singapore212-443-新加坡-114.129.43.7"
+      - "Singapore213-443-新加坡-114.129.43.74"
+      - "Singapore214-443-新加坡-114.129.43.128"
+      - "Singapore215-443-新加坡-114.129.43.11"
+      - "Singapore216-443-新加坡-114.129.43.27"
+      - "Singapore217-443-新加坡-114.129.43.103"
+      - "Singapore218-443-新加坡-114.129.43.72"
+      - "Singapore219-443-新加坡-114.129.43.118"
+      - "Singapore220-443-新加坡-114.129.43.65"
+      - "Singapore221-443-新加坡-114.129.43.35"
+      - "Singapore222-443-新加坡-114.129.43.131"
+      - "Singapore223-443-新加坡-114.129.43.91"
+      - "Singapore224-443-新加坡-114.129.43.110"
+      - "Singapore225-443-新加坡-114.129.43.44"
+      - "Singapore226-443-新加坡-114.129.43.92"
+      - "Singapore227-443-新加坡-114.129.43.181"
+      - "Singapore228-443-新加坡-114.129.43.214"
+      - "Singapore229-443-新加坡-114.129.43.204"
+      - "Singapore230-443-新加坡-114.129.43.159"
+      - "Singapore231-443-新加坡-114.129.43.230"
+      - "Singapore232-443-新加坡-114.129.43.225"
+      - "Singapore233-443-新加坡-114.129.43.241"
+      - "Singapore234-443-新加坡-114.129.43.190"
+      - "Singapore235-443-新加坡-114.129.43.208"
+      - "Singapore236-443-新加坡-114.129.43.196"
+      - "Singapore237-443-新加坡-114.129.43.246"
+      - "Singapore238-443-新加坡-114.129.43.143"
+      - "Singapore239-443-新加坡-114.129.43.164"
+      - "Singapore240-443-新加坡-114.129.43.134"
+      - "Singapore241-443-新加坡-114.129.43.105"
+      - "Singapore242-443-新加坡-114.129.43.247"
+      - "Singapore243-443-新加坡-114.129.43.170"
+      - "Singapore244-443-新加坡-114.129.43.236"
+      - "Singapore245-443-新加坡-114.129.43.42"
+      - "Singapore246-443-新加坡-114.129.43.255"
+      - "Singapore247-443-新加坡-114.129.43.124"
+      - "Singapore248-443-新加坡-114.129.43.213"
+      - "Singapore249-443-新加坡-114.129.43.179"
+      - "Singapore250-443-新加坡-114.129.43.38"
+      - "Singapore251-443-新加坡-114.129.43.153"
+      - "Singapore252-443-新加坡-114.129.43.211"
+      - "Singapore253-443-新加坡-114.129.43.137"
+      - "Singapore254-443-新加坡-114.129.43.221"
+      - "Singapore255-443-新加坡-114.129.43.206"
+      - "Singapore256-443-新加坡-114.129.43.194"
+      - "Singapore257-443-新加坡-114.129.43.2"
+      - "Singapore258-443-新加坡-114.129.43.2"
+      - "Singapore259-443-新加坡-114.129.43.2"
+      - "Singapore260-443-新加坡-114.129.43.1"
+      - "Singapore261-443-新加坡-114.129.43.29"
+      - "Singapore262-443-新加坡-114.129.43.1"
+      - "Singapore263-443-新加坡-114.129.43.111"
+      - "Singapore264-443-新加坡-114.129.43.13"
+      - "Singapore265-443-新加坡-114.129.43.150"
+      - "Singapore266-443-新加坡-114.129.43.165"
+      - "Singapore267-443-新加坡-114.129.43.246"
+      - "Singapore268-443-新加坡-114.129.43.194"
+      - "Singapore269-443-新加坡-114.129.43.63"
+      - "Singapore270-443-新加坡-114.129.43.47"
+      - "Singapore271-443-新加坡-114.129.43.154"
+      - "Singapore272-443-新加坡-114.129.43.203"
+      - "Singapore273-443-新加坡-114.129.43.89"
+      - "Singapore274-443-新加坡-114.129.43.29"
+      - "Singapore275-443-新加坡-114.129.43.96"
+      - "Singapore276-443-新加坡-114.129.43.2"
+      - "Singapore277-443-新加坡-114.129.43.1"
+      - "Singapore278-443-新加坡-114.129.43.2"
+      - "Singapore279-443-新加坡-114.129.43.1"
+      - "Singapore280-443-新加坡-114.129.43.2"
+      - "Singapore281-443-新加坡-114.129.43.2"
+      - "Singapore282-443-新加坡-114.129.43.1"
+      - "Dhaka01-443-孟加拉国-114.129.9.98"
+      - "Dhaka02-443-孟加拉国-114.129.8.67"
+      - "Dhaka03-443-孟加拉国-114.129.8.67"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+  - DOMAIN-SUFFIX,github.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+  - DOMAIN-SUFFIX,netflix.com,🚀 节点选择
+  - DOMAIN-SUFFIX,spotify.com,🚀 节点选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
