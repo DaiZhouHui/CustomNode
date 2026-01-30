@@ -14,7 +14,7 @@ from typing import List, Dict
 
 # 加载 .env 文件中的环境变量
 try:
-    from dotenv import load_dotenv
+    from dotenv import load_dotenv  # type: ignore[import-untyped]
 
     env_path = Path(".") / ".env"
     load_dotenv(dotenv_path=env_path)

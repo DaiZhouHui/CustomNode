@@ -24,9 +24,18 @@ Thumbs.db
 *.swp
 *.swo
 
+
+# Python相关
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py.class
+
 # 生成的文件（由脚本管理）
 scripts/generate-index修改版.py
 scripts/generate-index copy原版.py
 scripts/generate-index待修改时间原版.py
 index_copy.html
 scripts/generate-index copy20260129.py
+f_node/verify_config.py

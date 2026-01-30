@@ -1,0 +1,174 @@
+name: FOFA Crawler
+
+on:
+  schedule:
+    # 每天凌晨2点自动运行
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 允许手动触发
+    inputs:
+      query:
+        description: 'FOFA查询语句'
+        required: true
+        default: 'server=="nginx" && country=="CN"'
+      max_results:
+        description: '最大结果数量'
+        required: false
+        default: '100'
+      debug:
+        description: '启用调试模式'
+        required: false
+        default: 'false'
+        type: boolean
+
+env:
+  PYTHON_VERSION: '3.9'
+  RESULTS_FILE: 'f_node/results.csv'
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取所有历史以便能够推送
+      
+    - name: 设置Python环境
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 安装依赖
+      working-directory: ./f_node
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: 创建配置文件
+      working-directory: ./f_node
+      run: |
+        cat > config.json << EOF
+        {
+          "query_string": "${{ github.event.inputs.query || 'server=="nginx" && country=="CN"' }}",
+          "cookies": "${{ secrets.FOFA_COOKIE }}",
+          "settings": {
+            "timeout": 30,
+            "max_results": ${{ github.event.inputs.max_results || '100' }},
+            "filter_common_ips": true,
+            "debug_mode": ${{ github.event.inputs.debug || 'false' }}
+          }
+        }
+        EOF
+        echo "配置文件已创建"
+        # 安全地显示配置（隐藏Cookie）
+        cat config.json | sed 's/"cookies": ".*"/"cookies": "***隐藏***"/'
+        
+    - name: 运行FOFA爬虫
+      working-directory: ./f_node
+      run: |
+        if [ "${{ github.event.inputs.debug || 'false' }}" = "true" ]; then
+          python crawler.py --output results.csv --debug
+        else
+          python crawler.py --output results.csv
+        fi
+        
+    - name: 检查结果文件
+      working-directory: ./f_node
+      run: |
+        if [ -f results.csv ]; then
+          echo "✅ 结果文件已生成"
+          echo "=== 文件信息 ==="
+          ls -la results.csv
+          line_count=$(($(wc -l < results.csv) - 1))
+          echo "记录数量: $line_count"
+          echo "=== 前10条记录 ==="
+          head -11 results.csv
+        else
+          echo "❌ 未找到结果文件"
+          exit 1
+        fi
+        
+    - name: 提交结果到仓库
+      run: |
+        # 配置git用户
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # 添加结果文件
+        git add ${{ env.RESULTS_FILE }}
+        
+        # 检查是否有更改
+        if git diff --cached --quiet; then
+          echo "📁 结果文件无变化，跳过提交"
+        else
+          echo "📁 结果文件有更新，提交到仓库..."
+          
+          # 生成提交信息
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            commit_msg="📈 自动更新FOFA爬虫结果 - $(date +'%Y-%m-%d')"
+          else
+            commit_msg="📈 手动触发更新FOFA爬虫结果 - $(date +'%Y-%m-%d %H:%M:%S')"
+          fi
+          
+          git commit -m "$commit_msg"
+          
+          # 推送到仓库
+          git push origin HEAD:${GITHUB_REF#refs/heads/}
+          echo "✅ 结果文件已提交到仓库"
+        fi
+        
+    - name: 上传结果文件（作为Artifact）
+      uses: actions/upload-artifact@v4
+      with:
+        name: fofa-results-${{ github.run_id }}
+        path: ${{ env.RESULTS_FILE }}
+        if-no-files-found: warn
+        retention-days: 7
+        
+    - name: 上传调试文件（如果存在）
+      if: ${{ github.event.inputs.debug == 'true' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: debug-files-${{ github.run_id }}
+        path: f_node/debug/
+        if-no-files-found: ignore
+        retention-days: 3
+        
+    - name: 生成执行报告
+      run: |
+        echo "## FOFA爬虫执行结果" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -f ${{ env.RESULTS_FILE }} ]; then
+          count=$(($(wc -l < ${{ env.RESULTS_FILE }}) - 1))
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "✅ **定时任务完成 - 成功爬取 $count 条记录**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ **手动执行完成 - 成功爬取 $count 条记录**" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 查询语句：" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "${{ github.event.inputs.query || 'server=="nginx" && country=="CN"' }}" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "### 前5条记录：" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| IP地址 | 端口 |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|------|" >> $GITHUB_STEP_SUMMARY
+          # 提取前5条记录（跳过标题行）
+          tail -n +2 ${{ env.RESULTS_FILE }} | head -5 | while IFS=, read -r ip port; do
+            # 清理可能的引号
+            ip=$(echo $ip | sed 's/"//g')
+            port=$(echo $port | sed 's/"//g')
+            echo "| $ip | $port |" >> $GITHUB_STEP_SUMMARY
+          done
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "[查看完整结果](${{ github.server_url }}/${{ github.repository }}/blob/${{ github.sha }}/${{ env.RESULTS_FILE }})" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ **未生成结果文件**" >> $GITHUB_STEP_SUMMARY
+        fi
