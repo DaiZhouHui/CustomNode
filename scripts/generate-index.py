@@ -1586,7 +1586,7 @@ body {{
                         <i class="fas fa-copy"></i>
                         <span>全部Raw</span>
                     </button>
-                    <button class="btn btn-generate" onclick="window.open('https://daizhouhui.github.io/NodeWeb/')" title="生成节点">
+                    <button class="btn btn-generate" onclick="location.href='https://daizhouhui.github.io/NodeWeb/'" title="生成节点">
                         <i class="fas fa-cubes"></i>
                         <span>生成节点</span>
                     </button>
@@ -1634,7 +1634,7 @@ body {{
                 </a>
                 <a href="https://daizhouhui.github.io/NodeWeb/" class="footer-link">
                     <i class="fas fa-plus-circle"></i>
-                    <span>节点生成</span>
+                    <span>生成节点</span>
                 </a>
                 <a href="update-index.html" class="footer-link">
                     <i class="fas fa-sync-alt"></i>
