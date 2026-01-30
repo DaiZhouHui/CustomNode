@@ -9,11 +9,11 @@ on:
       query:
         description: 'FOFA查询语句'
         required: true
-        default: 'server=="nginx" && country=="CN"'
+        default: 'asn!="13335" && server=="cloudflare" && region="HK" && port="443"'
       max_results:
         description: '最大结果数量'
         required: false
-        default: '100'
+        default: '10'
       debug:
         description: '启用调试模式'
         required: false
@@ -21,7 +21,7 @@ on:
         type: boolean
 
 env:
-  PYTHON_VERSION: '3.9'
+  PYTHON_VERSION: '3.14'
   RESULTS_FILE: 'f_node/results.csv'
 
 jobs:
@@ -54,7 +54,7 @@ jobs:
           "cookies": "${{ secrets.FOFA_COOKIE }}",
           "settings": {
             "timeout": 30,
-            "max_results": ${{ github.event.inputs.max_results || '100' }},
+            "max_results": ${{ github.event.inputs.max_results || '10' }},
             "filter_common_ips": true,
             "debug_mode": ${{ github.event.inputs.debug || 'false' }}
           }
