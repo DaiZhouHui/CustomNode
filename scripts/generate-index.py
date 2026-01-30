@@ -1205,8 +1205,6 @@ body {{
     /* 节点名称尽量完整显示，允许换行 */
     .node-name {{
         font-size: 14px;
-        white-space: normal;
-        overflow-wrap: anywhere;
     }}
     
     /* 订阅按钮统一为纵向排列且宽度一致 */
@@ -1425,7 +1423,7 @@ body {{
     /* 手机端只显示节点名称、订阅链接、yaml订阅三列 */
     .nodes-table th:nth-child(1),
     .nodes-table td:nth-child(1) {{
-        width: 40%; /* 节点名称列 - 增加宽度以完整显示 */
+        width: 50%; /* 节点名称列 - 增加宽度以完整显示 */
     }}
     
     .nodes-table th:nth-child(2),
@@ -1449,10 +1447,6 @@ body {{
     
     .node-name {{
         font-size: 12px;
-        white-space: normal; /* 允许换行 */
-        overflow-wrap: break-word;
-        word-break: break-word;
-        overflow: visible; /* 允许内容溢出容器 */
         text-overflow: clip; /* 不使用省略号 */
     }}
     
@@ -1467,10 +1461,10 @@ body {{
     /* 订阅按钮 - 确保宽度统一且不被拉长 */
     .link-btn {{
         min-width: auto;
-        width: 98%;
-       /* padding: 5px 4px; */
+        width: 100%;
+        padding: 5px 4px; 
         font-size: 10px;
-        /* flex: 0 1 auto; */
+        flex: 0 1 auto;
         /* 不要扩展超过内容 */
         white-space: nowrap;
         overflow: hidden;
