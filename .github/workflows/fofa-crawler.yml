@@ -9,7 +9,7 @@ on:
       query:
         description: 'FOFA查询语句'
         required: true
-        default: 'server=="nginx" && country=="CN"'
+        default: '"asn!="13335" && server=="cloudflare" && region="HK" && port="443"'
       max_results:
         description: '最大结果数量'
         required: false
