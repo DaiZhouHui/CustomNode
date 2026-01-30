@@ -15,7 +15,6 @@ import time
 import argparse
 from datetime import datetime
 from urllib.parse import quote
-from pathlib import Path
 
 class FOFACrawler:
     def __init__(self, config_file=None):
@@ -25,8 +24,7 @@ class FOFACrawler:
             self.config_file = config_file
         else:
             # 尝试在当前目录查找config.json
-            current_dir = Path(__file__).parent
-            self.config_file = str(current_dir / "config.json")
+            self.config_file = "config.json"
             
         self.config = self.load_config()
         self.data_found = False
@@ -91,7 +89,7 @@ class FOFACrawler:
                 'cookies': cookies,
                 'settings': {
                     'timeout': 30,
-                    'max_results': 50,
+                    'max_results': 10,  # 修改为10
                     'filter_common_ips': True,
                     'debug_mode': os.getenv('FOFA_DEBUG', 'false').lower() == 'true'
                 }
@@ -209,14 +207,13 @@ class FOFACrawler:
     def save_debug_html(self, content, name):
         """保存调试HTML文件"""
         try:
-            current_dir = Path(__file__).parent
-            debug_dir = current_dir / "debug"
-            if not debug_dir.exists():
-                debug_dir.mkdir()
+            debug_dir = "debug"
+            if not os.path.exists(debug_dir):
+                os.makedirs(debug_dir)
             
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             safe_name = name.replace(" ", "_").replace("/", "_")[:30]
-            filename = debug_dir / f"{timestamp}_{safe_name}.html"
+            filename = f"{debug_dir}/{timestamp}_{safe_name}.html"
             
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write(content[:10000])  # 只保存前10000字符
@@ -402,7 +399,7 @@ class FOFACrawler:
             print(f"    找到 {len(all_ips)} 个IP，过滤后 {len(valid_ips)} 个有效IP")
             
             # 为每个IP分配端口
-            for ip in valid_ips[:self.config.get('settings', {}).get('max_results', 50)]:
+            for ip in valid_ips[:self.config.get('settings', {}).get('max_results', 10)]:
                 # 在IP附近查找端口
                 ip_index = html_content.find(ip)
                 if ip_index != -1:
@@ -458,19 +455,8 @@ class FOFACrawler:
             print("❌ 没有数据可保存")
             return False
         
-        current_dir = Path(__file__).parent
-        results_dir = current_dir / "results"
-        results_dir.mkdir(exist_ok=True)
-        
         if not output_file:
-            # 使用日期时间命名文件
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_file = results_dir / f"results_{timestamp}.csv"
-        elif isinstance(output_file, str):
-            # 如果是相对路径，转换为绝对路径
-            if not Path(output_file).is_absolute():
-                output_file = results_dir / output_file
-        
+            output_file = "results.csv"
         
         try:
             with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
@@ -566,7 +552,7 @@ def main():
     """主函数"""
     parser = argparse.ArgumentParser(description='FOFA爬虫工具')
     parser.add_argument('--config', default=None, help='配置文件路径')
-    parser.add_argument('--output', default=None, help='输出文件路径')
+    parser.add_argument('--output', default='results.csv', help='输出文件路径')
     parser.add_argument('--debug', action='store_true', help='启用调试模式')
     
     args = parser.parse_args()
