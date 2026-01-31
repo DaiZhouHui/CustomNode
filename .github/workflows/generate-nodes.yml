@@ -145,7 +145,7 @@ jobs:
             print(f"共生成 {len(unique_nodes)} 个节点")
             
             # 生成明文节点文件
-            with open("YXNode.txt", "w", encoding="utf-8") as f:
+            with open("YXNode", "w", encoding="utf-8") as f:
                 f.write(f"# Cloudflare优选IP节点\n")
                 f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
                 f.write(f"# 总数: {len(unique_nodes)} 个\n")
@@ -201,7 +201,7 @@ jobs:
         
     - name: Move files to root
       run: |
-        mv v_node/YXNode.txt ./
+        mv v_node/YXNode ./
         mv v_node/YXNode.yaml ./
         ls -la
         
@@ -210,7 +210,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        git add YXNode.txt YXNode.yaml
+        git add YXNode YXNode.yaml
         
         if git diff --staged --quiet; then
           echo "没有变化，无需提交"
