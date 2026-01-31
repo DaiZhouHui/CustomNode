@@ -1,0 +1,27 @@
+{
+    "vless_config": {
+        "uuid": "471a8e64-7b21-4703-b1d1-45a221098459",
+        "domain": "knny.dpdns.org",
+        "port": 443,
+        "path": "/?ed=2048",
+        "encryption": "none",
+        "security": "tls",
+        "sni": "knny.dpdns.org",
+        "fingerprint": "chrome",
+        "network": "ws"
+    },
+    "api_config": {
+        "top20_url": "https://vps789.com/openApi/cfIpTop20",
+        "isp_url": "https://vps789.com/openApi/cfIpApi",
+        "update_interval_hours": 6
+    },
+    "naming_rules": {
+        "top20_prefix": "综合优选",
+        "ct_prefix": "电信",
+        "cu_prefix": "联通",
+        "cm_prefix": "移动",
+        "include_latency": true,
+        "include_ip": true,
+        "max_chars": 50
+    }
+}
