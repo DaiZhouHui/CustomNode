@@ -7,12 +7,18 @@ name: 🚀 更新节点仓库主页index.html文件
 on:
   # 1. 推送事件触发条件
   push:
-    # 路径过滤器：只对特定文件变化进行响应
+    # 路径过滤器：只对根目录下的文件变化进行响应
     paths:
-      - '**'  # 监视所有文件
-      - '!index.html'  # 排除已生成的index.html文件
-      - '!update-index.html'  # 排除更新页面
-      - '!files_info.json'  # 排除文件信息JSON
+      # 只匹配根目录下的文件（不包含斜杠/的文件路径）
+      - '*'
+      - '.*'  # 包含以点开头的隐藏文件
+      # 排除已生成的特定文件
+      - '!index.html'
+      - '!update-index.html'
+      - '!files_info.json'
+      # 排除python依赖文件以及md文件
+      - '!requirements.txt'
+      - '!README.md'
     # 仅对主分支生效
     branches: [ main ]
   
