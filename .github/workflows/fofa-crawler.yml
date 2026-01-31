@@ -1,4 +1,4 @@
-name: FOFA Crawler
+name: FOFA 资源Crawler
 
 on:
   schedule:
@@ -24,34 +24,40 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
         
-    - name: Create f_node directory
+    - name: Verify files exist
       run: |
-        mkdir -p f_node
-        
-    - name: Copy crawler files to f_node
-      run: |
-        cp -f .github/workflows/crawler.py f_node/
-        cp -f .github/workflows/config.json f_node/
+        echo "验证文件是否存在..."
+        if [ ! -f "f_node/crawler.py" ]; then
+          echo "❌ 错误: f_node/crawler.py 不存在"
+          exit 1
+        fi
+        if [ ! -f "f_node/config.json" ]; then
+          echo "❌ 错误: f_node/config.json 不存在"
+          exit 1
+        fi
+        echo "✅ 所有必需文件都存在"
+        echo "文件列表:"
+        ls -la f_node/
         
     - name: Run FOFA crawler (first attempt)
       id: first_run
       run: |
         cd f_node
-        echo "Starting FOFA crawler at $(date)"
+        echo "第一次运行FOFA爬虫 - 开始时间: $(date)"
         python crawler.py
         EXIT_CODE=$?
         if [ $EXIT_CODE -eq 0 ]; then
           echo "success=true" >> $GITHUB_OUTPUT
-          echo "First attempt successful!"
+          echo "✅ 第一次运行成功!"
         else
           echo "success=false" >> $GITHUB_OUTPUT
-          echo "First attempt failed, exit code: $EXIT_CODE"
+          echo "❌ 第一次运行失败, 退出代码: $EXIT_CODE"
         fi
         
     - name: Wait 1 hour and retry if failed
       if: steps.first_run.outputs.success == 'false'
       run: |
-        echo "First attempt failed, waiting 1 hour before retry..."
+        echo "第一次运行失败，等待1小时后重试..."
         sleep 3600  # 等待1小时
         
     - name: Run FOFA crawler (second attempt)
@@ -59,16 +65,16 @@ jobs:
       id: second_run
       run: |
         cd f_node
-        echo "Retrying FOFA crawler at $(date)"
+        echo "第二次运行FOFA爬虫 - 开始时间: $(date)"
         python crawler.py
         EXIT_CODE=$?
         if [ $EXIT_CODE -eq 0 ]; then
           echo "success=true" >> $GITHUB_OUTPUT
-          echo "Retry successful!"
+          echo "✅ 重试成功!"
         else
           echo "success=false" >> $GITHUB_OUTPUT
-          echo "Retry failed, exit code: $EXIT_CODE"
-          echo "Skipping for today."
+          echo "❌ 重试失败, 退出代码: $EXIT_CODE"
+          echo "跳过今天的执行。"
         fi
         
     - name: Check if results.csv exists
@@ -76,13 +82,13 @@ jobs:
       run: |
         if [ -f "f_node/results.csv" ]; then
           echo "exists=true" >> $GITHUB_OUTPUT
-          echo "Results file found"
-          # 显示文件内容
-          echo "=== Results.csv content ==="
+          echo "✅ results.csv 文件存在"
+          echo "=== 文件内容 ==="
           cat f_node/results.csv
+          echo "=== 文件结束 ==="
         else
           echo "exists=false" >> $GITHUB_OUTPUT
-          echo "Results file not found"
+          echo "❌ results.csv 文件不存在"
         fi
         
     - name: Commit and push results
@@ -93,9 +99,9 @@ jobs:
         
         # 检查是否有更改
         if git diff --quiet -- f_node/results.csv; then
-          echo "No changes to results.csv"
+          echo "results.csv 没有变化"
         else
-          echo "Changes detected in results.csv"
+          echo "results.csv 有变化，提交更新"
           git add f_node/results.csv
           git commit -m "Update FOFA results - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
