@@ -1,9 +1,32 @@
 mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7895
 allow-lan: true
+bind-address: '*'
 mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
+external-ui: dashboard
+secret: ""
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - 8.8.8.8
+    - 114.114.114.114
+    - 223.5.5.5
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
 
 proxies:
 - name: 自选0131-01-443-154.211.8.59
@@ -126,20 +149,54 @@ proxies:
     skip-cert-verify: False
 
 proxy-groups:
-- name: 🚀 节点选择
+  - name: 🚀 节点选择
     type: select
     proxies:
-      - 自选0131-01-443-154.211.8.59
+- 自选0131-01-443-154.211.8.59
       - 自选0131-01-443-47.242.45.175
       - 自选0131-01-443-210.0.244.3
       - 自选0131-01-443-149.104.2.58
       - 自选0131-02-443-149.104.2.140
       - 自选0131-01-443-47.76.127.217
       - 自选0131-01-443-103.7.54.160
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+- 自选0131-01-443-154.211.8.59
+      - 自选0131-01-443-47.242.45.175
+      - 自选0131-01-443-210.0.244.3
+      - 自选0131-01-443-149.104.2.58
+      - 自选0131-02-443-149.104.2.140
+      - 自选0131-01-443-47.76.127.217
+      - 自选0131-01-443-103.7.54.160
+  - name: 📲 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - DIRECT
 
 rules:
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,github.com,🚀 节点选择
-  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,📲 国外媒体
+  - DOMAIN-SUFFIX,chatgpt.com,📲 国外媒体
+  - DOMAIN-SUFFIX,bing.com,📲 国外媒体
+  - DOMAIN-SUFFIX,github.com,📲 国外媒体
+  - DOMAIN-SUFFIX,gitlab.com,📲 国外媒体
+  - DOMAIN-SUFFIX,twitter.com,📲 国外媒体
+  - DOMAIN-SUFFIX,facebook.com,📲 国外媒体
+  - DOMAIN-SUFFIX,instagram.com,📲 国外媒体
+  - DOMAIN-SUFFIX,youtube.com,📲 国外媒体
+  - DOMAIN-SUFFIX,netflix.com,📲 国外媒体
+  - DOMAIN-SUFFIX,disneyplus.com,📲 国外媒体
+  - DOMAIN-SUFFIX,spotify.com,📲 国外媒体
+  - DOMAIN-SUFFIX,telegram.org,📲 国外媒体
+  - DOMAIN-SUFFIX,whatsapp.com,📲 国外媒体
+  - DOMAIN-SUFFIX,discord.com,📲 国外媒体
+  - DOMAIN-SUFFIX,google.com,📲 国外媒体
+  - DOMAIN-SUFFIX,gstatic.com,📲 国外媒体
   - GEOIP,CN,DIRECT
   - MATCH,🚀 节点选择
