@@ -10,10 +10,16 @@ jobs:
   crawl-fofa:
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write  # 添加写入权限
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -36,8 +42,6 @@ jobs:
           exit 1
         fi
         echo "✅ 所有必需文件都存在"
-        echo "文件列表:"
-        ls -la f_node/
         
     - name: Run FOFA crawler (first attempt)
       id: first_run
@@ -83,9 +87,9 @@ jobs:
         if [ -f "f_node/results.csv" ]; then
           echo "exists=true" >> $GITHUB_OUTPUT
           echo "✅ results.csv 文件存在"
-          echo "=== 文件内容 ==="
-          cat f_node/results.csv
-          echo "=== 文件结束 ==="
+          echo "=== 文件内容预览 ==="
+          head -20 f_node/results.csv
+          echo "=== 预览结束 ==="
         else
           echo "exists=false" >> $GITHUB_OUTPUT
           echo "❌ results.csv 文件不存在"
@@ -94,22 +98,27 @@ jobs:
     - name: Commit and push results
       if: steps.check_results.outputs.exists == 'true'
       run: |
+        # 设置Git配置
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
         
-        # 检查是否有更改
-        if git diff --quiet -- f_node/results.csv; then
-          echo "results.csv 没有变化"
-        else
-          echo "results.csv 有变化，提交更新"
-          git add f_node/results.csv
-          git commit -m "Update FOFA results - $(date '+%Y-%m-%d %H:%M:%S')"
+        # 添加results.csv文件
+        git add f_node/results.csv
+        
+        # 检查是否有更改（使用更兼容的方法）
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "检测到更改，提交到仓库..."
+          git commit -m "Update FOFA results - $(date '+%Y-%m-%d')"
           git push
+          echo "✅ results.csv 已成功提交到仓库"
+        else
+          echo "没有更改需要提交"
         fi
         
-    - name: Upload results as artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: fofa-results
-        path: f_node/results.csv
-        retention-days: 7
+    # 可选：移除artifact上传，如果你不需要的话
+    # - name: Upload results as artifact
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: fofa-results
+    #     path: f_node/results.csv
+    #     retention-days: 7

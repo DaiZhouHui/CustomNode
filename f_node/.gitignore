@@ -1,9 +1,6 @@
 # 调试文件
 debug/
 
-# 配置文件
-config.json  # 忽略实际配置文件，但保留 config-example.json
-
 # Python相关
 __pycache__/
 *.py[cod]
