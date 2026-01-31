@@ -2,187 +2,108 @@ name: FOFA Crawler
 
 on:
   schedule:
-    # 每天凌晨2点自动运行
-    - cron: '0 2 * * *'
-  workflow_dispatch:
-    inputs:
-      query:
-        description: 'FOFA查询语句'
-        required: true
-        default: '"asn!="13335" && server=="cloudflare" && region="HK" && port="443"'
-      max_results:
-        description: '最大结果数量'
-        required: false
-        default: '10'
-      debug:
-        description: '启用调试模式'
-        required: false
-        default: false
-        type: boolean
-
-env:
-  PYTHON_VERSION: '3.12'
+    # 每天UTC时间22点运行（北京时间6点）
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
-  crawl:
+  crawl-fofa:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
-        fetch-depth: 0
-    
-    - uses: actions/setup-python@v5
-      with:
-        python-version: ${{ env.PYTHON_VERSION }}
-    
-    - name: 显示Python版本
-      run: |
-        python --version
-        pip --version
-    
-    - name: 安装依赖
-      working-directory: ./f_node
+        python-version: '3.9'
+        
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install requests
-    
-    - name: 创建配置文件
-      working-directory: ./f_node
-      run: |
-        cat > create_config.py << 'EOF'
-import json
-import os
-
-# 获取参数（从环境变量或默认值）
-query = os.environ.get('INPUT_QUERY', 'server=="nginx" && country=="CN"')
-cookies = os.environ.get('FOFA_COOKIE', '')
-max_results = os.environ.get('INPUT_MAX_RESULTS', '10')
-debug_mode = os.environ.get('INPUT_DEBUG', 'false').lower() == 'true'
-
-# 创建配置字典
-config = {
-    'query_string': query,
-    'cookies': cookies,
-    'settings': {
-        'timeout': 30,
-        'max_results': int(max_results),
-        'filter_common_ips': True,
-        'debug_mode': debug_mode
-    }
-}
-
-# 写入文件
-with open('config.json', 'w', encoding='utf-8') as f:
-    json.dump(config, f, indent=2, ensure_ascii=False)
-
-print('✅ 配置文件已创建')
-print(f'查询语句: {query}')
-print(f'最大结果数: {max_results}')
-print(f'调试模式: {debug_mode}')
-
-# 安全地显示配置（隐藏Cookie）
-config_display = config.copy()
-config_display['cookies'] = '***隐藏***'
-print('\n配置文件内容:')
-print(json.dumps(config_display, indent=2, ensure_ascii=False))
-EOF
         
-        # 设置环境变量
-        export INPUT_QUERY="${{ inputs.query || 'server=="nginx" && country=="CN"' }}"
-        export INPUT_MAX_RESULTS="${{ inputs.max_results || '10' }}"
-        export INPUT_DEBUG="${{ inputs.debug || 'false' }}"
-        export FOFA_COOKIE="${{ secrets.FOFA_COOKIE }}"
-        
-        # 运行Python脚本创建配置
-        python create_config.py
-    
-    - name: 运行FOFA爬虫
-      working-directory: ./f_node
+    - name: Create f_node directory
       run: |
-        if [[ "${{ inputs.debug || 'false' }}" == "true" ]]; then
-          python crawler.py --output results.csv --debug
+        mkdir -p f_node
+        
+    - name: Copy crawler files to f_node
+      run: |
+        cp -f .github/workflows/crawler.py f_node/
+        cp -f .github/workflows/config.json f_node/
+        
+    - name: Run FOFA crawler (first attempt)
+      id: first_run
+      run: |
+        cd f_node
+        echo "Starting FOFA crawler at $(date)"
+        python crawler.py
+        EXIT_CODE=$?
+        if [ $EXIT_CODE -eq 0 ]; then
+          echo "success=true" >> $GITHUB_OUTPUT
+          echo "First attempt successful!"
         else
-          python crawler.py --output results.csv
+          echo "success=false" >> $GITHUB_OUTPUT
+          echo "First attempt failed, exit code: $EXIT_CODE"
         fi
-    
-    - name: 检查结果文件
-      working-directory: ./f_node
-      run: |
-        if [ -f results.csv ]; then
-          echo "✅ 结果文件已生成"
-          echo "=== 文件信息 ==="
-          ls -la results.csv
-          line_count=$(($(wc -l < results.csv) - 1))
-          echo "记录数量: $line_count 条"
-          if [ $line_count -gt 0 ]; then
-            echo "=== 前5条记录 ==="
-            head -6 results.csv
-          else
-            echo "无数据记录"
-          fi
-        else
-          echo "❌ 未找到结果文件"
-          exit 1
-        fi
-    
-    - name: 提交结果到仓库
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
         
-        git add f_node/results.csv
-        
-        if git diff --cached --quiet; then
-          echo "📁 结果文件无变化，跳过提交"
-        else
-          echo "📁 结果文件有更新，提交到仓库..."
-          
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            commit_msg="📈 自动更新FOFA爬虫结果 - $(date +'%Y-%m-%d')"
-          else
-            commit_msg="📈 手动触发更新FOFA爬虫结果 - $(date +'%Y-%m-%d %H:%M:%S')"
-          fi
-          
-          git commit -m "$commit_msg"
-          git push origin HEAD:${{ github.ref_name }}
-          echo "✅ 结果文件已提交到仓库"
-        fi
-    
-    - name: 生成执行报告
+    - name: Wait 1 hour and retry if failed
+      if: steps.first_run.outputs.success == 'false'
       run: |
-        echo "## FOFA爬虫执行结果" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "First attempt failed, waiting 1 hour before retry..."
+        sleep 3600  # 等待1小时
         
-        if [ -f f_node/results.csv ]; then
-          count=$(($(wc -l < f_node/results.csv) - 1))
-          
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            echo "✅ **定时任务完成 - 成功爬取 $count 条记录**" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "✅ **手动执行完成 - 成功爬取 $count 条记录**" >> $GITHUB_STEP_SUMMARY
-          fi
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          if [ $count -gt 0 ]; then
-            echo "### 前5条记录：" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "| IP地址 | 端口 |" >> $GITHUB_STEP_SUMMARY
-            echo "|--------|------|" >> $GITHUB_STEP_SUMMARY
-            
-            # 提取前5条记录
-            tail -n +2 f_node/results.csv | head -5 | while IFS=, read -r ip port; do
-              ip_clean=$(echo "$ip" | tr -d '"' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-              port_clean=$(echo "$port" | tr -d '"' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-              echo "| $ip_clean | $port_clean |" >> $GITHUB_STEP_SUMMARY
-            done
-            
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "[查看完整结果](${{ github.server_url }}/${{ github.repository }}/blob/${{ github.sha }}/f_node/results.csv)" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "⚠️ **无数据记录**" >> $GITHUB_STEP_SUMMARY
-          fi
+    - name: Run FOFA crawler (second attempt)
+      if: steps.first_run.outputs.success == 'false'
+      id: second_run
+      run: |
+        cd f_node
+        echo "Retrying FOFA crawler at $(date)"
+        python crawler.py
+        EXIT_CODE=$?
+        if [ $EXIT_CODE -eq 0 ]; then
+          echo "success=true" >> $GITHUB_OUTPUT
+          echo "Retry successful!"
         else
-          echo "❌ **未生成结果文件**" >> $GITHUB_STEP_SUMMARY
+          echo "success=false" >> $GITHUB_OUTPUT
+          echo "Retry failed, exit code: $EXIT_CODE"
+          echo "Skipping for today."
         fi
+        
+    - name: Check if results.csv exists
+      id: check_results
+      run: |
+        if [ -f "f_node/results.csv" ]; then
+          echo "exists=true" >> $GITHUB_OUTPUT
+          echo "Results file found"
+          # 显示文件内容
+          echo "=== Results.csv content ==="
+          cat f_node/results.csv
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+          echo "Results file not found"
+        fi
+        
+    - name: Commit and push results
+      if: steps.check_results.outputs.exists == 'true'
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        
+        # 检查是否有更改
+        if git diff --quiet -- f_node/results.csv; then
+          echo "No changes to results.csv"
+        else
+          echo "Changes detected in results.csv"
+          git add f_node/results.csv
+          git commit -m "Update FOFA results - $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
+        
+    - name: Upload results as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: fofa-results
+        path: f_node/results.csv
+        retention-days: 7
