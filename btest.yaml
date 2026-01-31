@@ -1,0 +1,241 @@
+proxies:
+  - name: "美国01-443-149.104.2.58"
+    type: vless
+    server: 149.104.2.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国02-443-149.104.2.140"
+    type: vless
+    server: 149.104.2.140
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国03-443-47.76.54.57"
+    type: vless
+    server: 47.76.54.57
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国04-443-162.159.36.1"
+    type: vless
+    server: 162.159.36.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国05-443-162.159.46.1"
+    type: vless
+    server: 162.159.46.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港01-443-45.125.33.202"
+    type: vless
+    server: 45.125.33.202
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "澳大利亚01-443-1.0.0.1"
+    type: vless
+    server: 1.0.0.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "澳大利亚02-443-1.1.1.1"
+    type: vless
+    server: 1.1.1.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡01-443-27.50.48.80"
+    type: vless
+    server: 27.50.48.80
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "北美01-443-62.60.244.43"
+    type: vless
+    server: 62.60.244.43
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "美国01-443-149.104.2.58"
+      - "美国02-443-149.104.2.140"
+      - "美国03-443-47.76.54.57"
+      - "美国04-443-162.159.36.1"
+      - "美国05-443-162.159.46.1"
+      - "香港01-443-45.125.33.202"
+      - "澳大利亚01-443-1.0.0.1"
+      - "澳大利亚02-443-1.1.1.1"
+      - "新加坡01-443-27.50.48.80"
+      - "北美01-443-62.60.244.43"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "美国01-443-149.104.2.58"
+      - "美国02-443-149.104.2.140"
+      - "美国03-443-47.76.54.57"
+      - "美国04-443-162.159.36.1"
+      - "美国05-443-162.159.46.1"
+      - "香港01-443-45.125.33.202"
+      - "澳大利亚01-443-1.0.0.1"
+      - "澳大利亚02-443-1.1.1.1"
+      - "新加坡01-443-27.50.48.80"
+      - "北美01-443-62.60.244.43"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "美国01-443-149.104.2.58"
+      - "美国02-443-149.104.2.140"
+      - "美国03-443-47.76.54.57"
+      - "美国04-443-162.159.36.1"
+      - "美国05-443-162.159.46.1"
+      - "香港01-443-45.125.33.202"
+      - "澳大利亚01-443-1.0.0.1"
+      - "澳大利亚02-443-1.1.1.1"
+      - "新加坡01-443-27.50.48.80"
+      - "北美01-443-62.60.244.43"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
