@@ -61,8 +61,8 @@ jobs:
     - name: Wait 1 hour and retry if failed
       if: steps.first_run.outputs.success == 'false'
       run: |
-        echo "第一次运行失败，等待1小时后重试..."
-        sleep 3600  # 等待1小时
+        echo "第一次运行失败，等待半小时后重试..."
+        sleep 1800  # 等待半小时
         
     - name: Run FOFA crawler (second attempt)
       if: steps.first_run.outputs.success == 'false'
