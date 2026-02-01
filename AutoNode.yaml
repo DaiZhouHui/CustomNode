@@ -29,9 +29,94 @@ dns:
       - 240.0.0.0/4
 
 proxies:
-- name: 香港节点-0131-01-443-154.211.8.59
+- name: 香港节点-0131-01-443-47.75.203.164
+    type: vless
+    server: 47.75.203.164
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0131-01-443-20.189.91.218
+    type: vless
+    server: 20.189.91.218
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0131-01-443-154.211.8.59
     type: vless
     server: 154.211.8.59
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0131-02-443-154.211.8.58
+    type: vless
+    server: 154.211.8.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0131-01-443-27.50.49.9
+    type: vless
+    server: 27.50.49.9
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0131-01-443-103.17.116.115
+    type: vless
+    server: 103.17.116.115
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -152,7 +237,12 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-- 香港节点-0131-01-443-154.211.8.59
+- 香港节点-0131-01-443-47.75.203.164
+      - 香港节点-0131-01-443-20.189.91.218
+      - 香港节点-0131-01-443-154.211.8.59
+      - 香港节点-0131-02-443-154.211.8.58
+      - 香港节点-0131-01-443-27.50.49.9
+      - 香港节点-0131-01-443-103.17.116.115
       - 香港节点-0131-01-443-47.242.45.175
       - 香港节点-0131-01-443-210.0.244.3
       - 香港节点-0131-01-443-149.104.2.58
@@ -166,7 +256,12 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-- 香港节点-0131-01-443-154.211.8.59
+- 香港节点-0131-01-443-47.75.203.164
+      - 香港节点-0131-01-443-20.189.91.218
+      - 香港节点-0131-01-443-154.211.8.59
+      - 香港节点-0131-02-443-154.211.8.58
+      - 香港节点-0131-01-443-27.50.49.9
+      - 香港节点-0131-01-443-103.17.116.115
       - 香港节点-0131-01-443-47.242.45.175
       - 香港节点-0131-01-443-210.0.244.3
       - 香港节点-0131-01-443-149.104.2.58
