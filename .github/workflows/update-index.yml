@@ -27,9 +27,9 @@ on:
     # 仅对主分支生效
     branches: [ main ]
   
-  # 2. 定时任务：每天北京时间凌晨3点自动运行（UTC时间晚上19点）
-  # schedule:
-  #   - cron: '0 19 * * *'
+  # 2. 定时任务：每天北京时间早上7点55自动运行（UTC时间晚上23:55）
+  schedule:
+    - cron: '55 23 * * *'
   
   # 3. 手动触发：允许在 GitHub Actions 界面手动点击运行
   workflow_dispatch:
