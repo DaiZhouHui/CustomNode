@@ -38,65 +38,134 @@
 - 🗑️ **安全删除功能** - 通过GitHub API安全删除文件
 - 🔄 **自动更新系统** - 支持定时更新和手动触发
 - 📱 **移动端优化** - 完善的响应式布局
+- 🕷️ **FOFA爬虫** - 自动从FOFA平台抓取可用节点信息
+- ⚡ **VLESS节点生成** - 自动生成V2Ray/VLESS协议节点配置
+- 📁 **双重节点系统** - 支持f_node和v_node两种节点生成方式
 
 ---
 
-## 🚀 快速开始
-
-### 环境要求
-- Python 3.11+
-- Git
-
-### 安装步骤
-1. 克隆仓库
-```bash
-git clone https://github.com/DaiZhouHui/CustomNode.git
-cd CustomNode
-```
-
-2. 安装依赖
-```bash
-pip install -r requirements.txt
-```
-
-3. 配置环境变量（可选）
-创建 `.env` 文件：
-```
-REPO_OWNER=your_username
-REPO_NAME=your_repo
-GITHUB_TOKEN=your_token_here
-```
-
-4. 生成索引
-```bash
-python generate-index.py
-```
-
----
-
-## 📁 文件结构
+## 📁 项目结构
 
 ```
 CustomNode/
-├── generate-index.py          # 主生成脚本
-├── index.html                 # 主索引页面（由generate-index.py自动生成）
-├── update-index.html          # 更新控制台（由generate-index.py自动生成）
-├── requirements.txt           # Python依赖
-├── .github/workflows/         # 工作流配置
-│   └── update-index.yml       # GitHub Actions工作流
-└── 其他节点文件              # 你的节点和配置文件
+├── f_node/                    # FOFA节点相关文件夹
+│   ├── config-example.json    # FOFA配置示例文件
+│   ├── config.json            # FOFA配置文件（需要自行创建）
+│   ├── crawler.py             # FOFA爬虫脚本，用于抓取节点
+│   └── tool.py                # FOFA配置工具，用于生成配置
+├── v_node/                    # VLESS节点相关文件夹
+│   ├── config.json            # VLESS节点配置文件
+│   ├── generate_nodes.py      # VLESS节点生成脚本
+│   └── v.md                   # VLESS节点说明文档
+├── scripts/                   # 系统脚本文件夹
+│   ├── generate-index.py      # 主索引页面生成脚本
+│   └── update-index.js        # 索引更新辅助脚本
+├── .github/
+│   └── workflows/
+│       └── generate-nodes.yml # GitHub Actions工作流配置（节点生成）
+│       └── update-index.yml   # GitHub Actions工作流配置（索引更新）
+├── *.yaml                     # 节点配置文件（Clash格式）
+├── files_info.json            # 文件信息JSON文件（自动生成）
+├── index.html                 # 主索引页面（自动生成）
+├── update-index.html          # 更新控制台（自动生成）
+└── README.md                  # 项目说明文档
 ```
 
 ---
 
-## ⚙️ 配置说明
+## 🛠️ 功能详解
 
-### 环境变量
+### FOFA节点系统 ([f_node](file:///c:/Users/KNNY/Desktop/Code/CustomNode/f_node))
+
+FOFA节点系统用于从FOFA平台获取可用的代理节点信息。
+
+#### 配置FOFA账户
+1. 在FOFA网站注册账户并获得查询权限
+2. 登录后获取浏览器请求中的Cookie信息
+3. 在[f_node](file:///c:/Users/KNNY/Desktop/Code/CustomNode/f_node)目录下创建[config.json](file:///c:/Users/KNNY/Desktop/Code/CustomNode/f_node/config.json)文件：
+
+```json
+{
+  "cookies": "your_fofa_cookies_here",
+  "query_string": "asn!=\\"13335\\" && server==\\"cloudflare\\" && region=\\"HK\\" && port=\\"443\\"",
+  "settings": {
+    "timeout": 30,
+    "max_results": 50,
+    "debug_mode": false,
+    "filter_common_ips": true
+  }
+}
+```
+
+#### 使用FOFA工具
+运行FOFA配置工具来管理配置：
+```bash
+python f_node/tool.py
+```
+
+#### 运行FOFA爬虫
+运行爬虫脚本来获取节点信息：
+```bash
+python f_node/crawler.py
+```
+
+### VLESS节点系统 ([v_node](file:///c:/Users/KNNY/Desktop/Code/CustomNode/v_node))
+
+VLESS节点系统用于生成V2Ray/VLESS协议的节点配置。
+
+#### 配置VLESS参数
+在[v_node](file:///c:/Users/KNNY/Desktop/Code/CustomNode/v_node)目录下配置[config.json](file:///c:/Users/KNNY/Desktop/Code/CustomNode/v_node/config.json)文件：
+
+```json
+{
+  "vless_config": {
+    "uuid": "your_uuid_here",
+    "domain": "your_domain_here",
+    "port": 443,
+    "path": "/?ed=2048",
+    "encryption": "none",
+    "security": "tls",
+    "sni": "your_sni_here",
+    "fingerprint": "chrome",
+    "network": "ws"
+  },
+  "api_config": {
+    "top20_url": "https://vps789.com/openApi/cfIpTop20",
+    "isp_url": "https://vps789.com/openApi/cfIpApi"
+  },
+  "naming_rules": {
+    "top20_prefix": "综合优选",
+    "ct_prefix": "电信优选",
+    "cu_prefix": "联通优选",
+    "cm_prefix": "移动优选",
+    "allavg_prefix": "全网优选"
+  }
+}
+```
+
+#### 生成VLESS节点
+运行VLESS节点生成脚本：
+```bash
+python v_node/generate_nodes.py
+```
+
+### 索引生成系统
+
+索引生成系统用于创建网页界面，方便管理和访问节点文件。
+
+#### 手动生成索引
+```bash
+python scripts/generate-index.py
+```
+
+#### 配置说明
+
+##### 环境变量
 - `REPO_OWNER`: GitHub用户名（默认：DaiZhouHui）
 - `REPO_NAME`: 仓库名称（默认：CustomNode）
 - `GITHUB_TOKEN`: GitHub个人访问令牌（用于删除功能）
 
-### GitHub Token权限
+##### GitHub Token权限
 如需使用删除功能，Token需要以下权限：
 - `repo`（完整仓库权限）
 - 或至少 `public_repo`（公开仓库）
@@ -106,10 +175,16 @@ CustomNode/
 ## 🔄 自动化更新
 
 ### GitHub Actions
-项目配置了自动化工作流：
-- **定时更新**: 每日UTC 02:00自动运行
+项目配置了多种自动化工作流：
+
+- **定时更新**: 每日UTC 02:00自动运行`update-index.yml`
+- **节点生成**: 定期运行`generate-nodes.yml`生成新节点
 - **手动触发**: 通过GitHub Actions页面或更新控制台
-- **文件变更触发**: 非生成文件变化时自动更新
+- **文件变更触发**: 非生成文件变化时自动更新索引
+
+### 工作流配置
+- `generate-nodes.yml`: 用于定期生成节点配置
+- `update-index.yml`: 用于更新索引页面
 
 ### 手动触发更新
 1. 访问 `update-index.html`
@@ -151,6 +226,19 @@ CustomNode/
 3. **页面显示异常**
    - 清空浏览器缓存
    - 检查网络连接，确保能加载Font Awesome
+
+4. **节点生成失败**
+   - 检查[f_node](file:///c:/Users/KNNY/Desktop/Code/CustomNode/f_node)和[v_node](file:///c:/Users/KNNY/Desktop/Code/CustomNode/v_node)文件夹中的配置文件
+   - 确保生成脚本具有正确的权限
+
+5. **FOFA爬虫无法运行**
+   - 确认FOFA账户有效并有足够的查询积分
+   - 检查[config.json](file:///c:/Users/KNNY/Desktop/Code/CustomNode/f_node/config.json)中的Cookie是否正确
+   - 确认查询语句语法正确
+
+6. **VLESS节点生成失败**
+   - 检查[v_node/config.json](file:///c:/Users/KNNY/Desktop/Code/CustomNode/v_node/config.json)配置是否正确
+   - 确认API接口可以正常访问
 
 ### 日志查看
 - 更新过程日志在 `update-index.html`
