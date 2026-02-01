@@ -104,6 +104,7 @@ def generate_vless_url(ip_data, provider, index):
     # 获取address（从API数据中提取的IP或域名）
     address = get_ip_or_host(ip_data)
     if not address:
+        print(f"警告: 无法从数据中提取地址: {ip_data}")
         return None
     
     # 运营商中文名称映射
@@ -129,16 +130,18 @@ def generate_vless_url(ip_data, provider, index):
     sni = vless_config.get('sni', host_domain)  # SNI: knny.dpdns.org
     
     # 构建VLESS链接
+    # address使用从API获取的IP或域名
+    # host和SNI使用固定的knny.dpdns.org
     vless_url = f"vless://{uuid}@{address}:{port}"
     params = [
         f"encryption={vless_config['encryption']}",
         f"security={vless_config['security']}",
-        f"sni={sni}",
+        f"sni={sni}",                     # SNI: knny.dpdns.org
         f"fp={vless_config['fingerprint']}",
         "insecure=1",
         "allowInsecure=1",
         f"type={vless_config['network']}",
-        f"host={host_domain}",
+        f"host={host_domain}",            # 伪装域名: knny.dpdns.org
         f"path={path}"
     ]
     
@@ -155,6 +158,7 @@ def get_unique_nodes(nodes):
             
         # 提取address部分用于去重
         try:
+            # 格式: vless://uuid@address:port?...#
             node_url = node.split('#')[0]
             node_base = node_url.split('@')[1].split('?')[0]
             address = node_base.split(':')[0]
@@ -162,195 +166,19 @@ def get_unique_nodes(nodes):
             if address not in seen:
                 seen.add(address)
                 unique_nodes.append(node)
-        except:
-            unique_nodes.append(node)
+            else:
+                print(f"跳过重复地址: {address}")
+        except Exception as e:
+            print(f"解析节点失败: {e}")
+            unique_nodes.append(node)  # 如果解析失败，保留节点
     
     return unique_nodes
 
-def generate_clash_config(unique_nodes, config):
-    """生成Clash配置文件"""
-    vless_config = config['vless_config']
-    
-    clash_config = f"""# Cloudflare优选IP Clash配置
-# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)
-# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org
-# 节点总数: {len(unique_nodes)} 个
-
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: 127.0.0.1:9090
-secret: ""
-ipv6: false
-
-proxies:
-"""
-    
-    # 添加所有节点
-    for node in unique_nodes:
-        try:
-            parts = node.split("#")
-            description = parts[1]
-            base_url = parts[0].replace("vless://", "")
-            
-            uuid_server = base_url.split("@")[0]
-            server_port = base_url.split("@")[1].split("?")[0]
-            server = server_port.split(":")[0]
-            
-            params_str = node.split("?")[1].split("#")[0]
-            params = dict(param.split("=") for param in params_str.split("&"))
-            
-            clash_config += f"""  - name: '{description}'
-    type: vless
-    server: {server}
-    port: {vless_config['port']}
-    uuid: {uuid_server}
-    cipher: none
-    tls: true
-    servername: {params.get('sni', vless_config.get('sni', 'knny.dpdns.org'))}
-    network: {params.get('type', 'ws')}
-    ws-opts:
-      path: "{params.get('path', vless_config['path'])}"
-      headers:
-        Host: {params.get('host', vless_config['domain'])}
-    udp: true
-"""
-        except Exception as e:
-            print(f"生成Clash节点时跳过: {e}")
-            continue
-    
-    # 按运营商分类统计
-    categories = ["综合优选", "电信优选", "联通优选", "移动优选", "全网优选"]
-    
-    # 添加代理组
-    clash_config += """
-proxy-groups:
-  - name: 🚀 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    lazy: true
-    proxies:
-"""
-    
-    # 自动选择组包含所有节点
-    for node in unique_nodes:
-        try:
-            description = node.split("#")[1]
-            clash_config += f"      - '{description}'\n"
-        except:
-            continue
-    
-    # 添加手动选择组（按分类）
-    clash_config += """
-  - name: 📡 手动选择
-    type: select
-    proxies:
-      - 🚀 自动选择
-      - DIRECT
-"""
-    
-    for category in categories:
-        # 检查是否有该分类的节点
-        has_nodes = False
-        for node in unique_nodes:
-            try:
-                description = node.split("#")[1]
-                if description.startswith(category):
-                    has_nodes = True
-                    break
-            except:
-                continue
-        
-        if has_nodes:
-            clash_config += f"      - '--- {category} ---'\n"
-            for node in unique_nodes:
-                try:
-                    description = node.split("#")[1]
-                    if description.startswith(category):
-                        clash_config += f"      - '{description}'\n"
-                except:
-                    continue
-    
-    # 添加规则组
-    clash_config += """
-  - name: 🌍 国外网站
-    type: select
-    proxies:
-      - 🚀 自动选择
-      - 📡 手动选择
-      - DIRECT
-
-  - name: 🎥 流媒体服务
-    type: select
-    proxies:
-      - 🚀 自动选择
-      - 📡 手动选择
-      - DIRECT
-
-  - name: 🎯 全局代理
-    type: select
-    proxies:
-      - 🚀 自动选择
-      - 📡 手动选择
-      - DIRECT
-
-rules:
-  # 直连规则
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-SUFFIX,qq.com,DIRECT
-  - DOMAIN-SUFFIX,baidu.com,DIRECT
-  - DOMAIN-SUFFIX,taobao.com,DIRECT
-  - DOMAIN-SUFFIX,jd.com,DIRECT
-  - DOMAIN-SUFFIX,weibo.com,DIRECT
-  - DOMAIN-SUFFIX,zhihu.com,DIRECT
-  - DOMAIN-SUFFIX,bilibili.com,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - GEOIP,CN,DIRECT
-  
-  # 流媒体规则
-  - DOMAIN-SUFFIX,netflix.com,🎥 流媒体服务
-  - DOMAIN-SUFFIX,netflix.net,🎥 流媒体服务
-  - DOMAIN-SUFFIX,nflxvideo.net,🎥 流媒体服务
-  - DOMAIN-SUFFIX,nflxext.com,🎥 流媒体服务
-  - DOMAIN-SUFFIX,disneyplus.com,🎥 流媒体服务
-  - DOMAIN-SUFFIX,disney-plus.net,🎥 流媒体服务
-  - DOMAIN-SUFFIX,hulu.com,🎥 流媒体服务
-  - DOMAIN-SUFFIX,huluim.com,🎥 流媒体服务
-  - DOMAIN-SUFFIX,hulustream.com,🎥 流媒体服务
-  
-  # 国外网站
-  - DOMAIN-SUFFIX,google.com,🌍 国外网站
-  - DOMAIN-SUFFIX,gstatic.com,🌍 国外网站
-  - DOMAIN-SUFFIX,youtube.com,🌍 国外网站
-  - DOMAIN-SUFFIX,ytimg.com,🌍 国外网站
-  - DOMAIN-SUFFIX,twitter.com,🌍 国外网站
-  - DOMAIN-SUFFIX,twimg.com,🌍 国外网站
-  - DOMAIN-SUFFIX,facebook.com,🌍 国外网站
-  - DOMAIN-SUFFIX,instagram.com,🌍 国外网站
-  - DOMAIN-SUFFIX,whatsapp.com,🌍 国外网站
-  - DOMAIN-SUFFIX,telegram.org,🌍 国外网站
-  - DOMAIN-SUFFIX,wikipedia.org,🌍 国外网站
-  - DOMAIN-SUFFIX,openai.com,🌍 国外网站
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外网站
-  
-  # 最终规则
-  - MATCH,🎯 全局代理
-"""
-    
-    return clash_config
-
 def main():
-    print("=" * 70)
+    print("=" * 60)
     print("Cloudflare优选IP节点生成器")
     print(f"生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)")
-    print("=" * 70)
+    print("=" * 60)
     
     config = load_config()
     api_config = config['api_config']
@@ -378,6 +206,9 @@ def main():
                 vless_url = generate_vless_url(ip_data, "top20", idx)
                 if vless_url:
                     nodes.append(vless_url)
+                    # 显示地址和描述
+                    address = get_ip_or_host(ip_data)
+                    print(f"     {idx+1:2d}. {address}")
     
     # 获取运营商优选IP
     print(f"\n2. 获取运营商优选IP...")
@@ -393,6 +224,8 @@ def main():
                 vless_url = generate_vless_url(ip_data, "CT", idx)
                 if vless_url:
                     nodes.append(vless_url)
+                    address = get_ip_or_host(ip_data)
+                    print(f"     {idx+1:2d}. {address}")
         
         # 联通线路
         cu_ips = isp_ips.get("CU", [])
@@ -402,6 +235,8 @@ def main():
                 vless_url = generate_vless_url(ip_data, "CU", idx)
                 if vless_url:
                     nodes.append(vless_url)
+                    address = get_ip_or_host(ip_data)
+                    print(f"     {idx+1:2d}. {address}")
         
         # 移动线路
         cm_ips = isp_ips.get("CM", [])
@@ -411,6 +246,8 @@ def main():
                 vless_url = generate_vless_url(ip_data, "CM", idx)
                 if vless_url:
                     nodes.append(vless_url)
+                    address = get_ip_or_host(ip_data)
+                    print(f"     {idx+1:2d}. {address}")
         
         # AllAvg线路
         all_avg_ips = isp_ips.get("AllAvg", [])
@@ -420,6 +257,8 @@ def main():
                 vless_url = generate_vless_url(ip_data, "AllAvg", idx)
                 if vless_url:
                     nodes.append(vless_url)
+                    address = get_ip_or_host(ip_data)
+                    print(f"     {idx+1:2d}. {address}")
     
     # 去重
     unique_nodes = get_unique_nodes(nodes)
@@ -427,7 +266,7 @@ def main():
     print(f"   原始节点数: {len(nodes)}")
     print(f"   去重后节点数: {len(unique_nodes)}")
     
-    # 按运营商分类统计
+    # 按运营商分类显示统计
     print(f"\n4. 节点分类统计:")
     category_count = {}
     for node in unique_nodes:
@@ -441,26 +280,140 @@ def main():
     for category, count in category_count.items():
         print(f"   {category}: {count} 个")
     
-    # 生成明文节点文件（无后缀）- 直接生成在根目录
-    print(f"\n5. 生成节点文件...")
-    print(f"   将在仓库根目录生成文件:")
-    print(f"   - YXNode (明文节点链接)")
-    print(f"   - YXNode.yaml (Clash配置文件)")
-    
     # 生成明文节点文件
+    print(f"\n5. 生成节点文件...")
     with open("YXNode", "w", encoding="utf-8") as f:
         f.write(f"# Cloudflare优选IP节点\n")
         f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
         f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
-        f.write(f"# 节点总数: {len(unique_nodes)} 个\n")
+        f.write(f"# 总数: {len(unique_nodes)} 个\n")
         f.write("#" * 70 + "\n\n")
         for node in unique_nodes:
             f.write(node + "\n")
     
     # 生成Clash配置文件
-    clash_config = generate_clash_config(unique_nodes, config)
     with open("YXNode.yaml", "w", encoding="utf-8") as f:
-        f.write(clash_config)
+        f.write(f"# Cloudflare优选IP Clash配置\n")
+        f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
+        f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
+        f.write(f"# 节点总数: {len(unique_nodes)} 个\n")
+        f.write("port: 7890\n")
+        f.write("socks-port: 7891\n")
+        f.write("allow-lan: true\n")
+        f.write("mode: Rule\n")
+        f.write("log-level: info\n")
+        f.write("external-controller: 127.0.0.1:9090\n")
+        f.write("proxies:\n")
+        
+        for node in unique_nodes:
+            try:
+                # 从VLESS链接中提取信息
+                parts = node.split("#")
+                description = parts[1]
+                base_url = parts[0].replace("vless://", "")
+                
+                uuid_server = base_url.split("@")[0]
+                server_port = base_url.split("@")[1].split("?")[0]
+                server = server_port.split(":")[0]
+                
+                # 解析参数
+                params_str = node.split("?")[1].split("#")[0]
+                params = dict(param.split("=") for param in params_str.split("&"))
+                
+                # 写入Clash配置
+                f.write(f"  - name: '{description}'\n")
+                f.write(f"    type: vless\n")
+                f.write(f"    server: {server}\n")
+                f.write(f"    port: {vless_config['port']}\n")
+                f.write(f"    uuid: {uuid_server}\n")
+                f.write(f"    cipher: none\n")
+                f.write(f"    tls: true\n")
+                f.write(f"    servername: {params.get('sni', vless_config.get('sni', 'knny.dpdns.org'))}\n")
+                f.write(f"    network: {params.get('type', 'ws')}\n")
+                f.write(f"    ws-opts:\n")
+                f.write(f"      path: \"{params.get('path', vless_config['path'])}\"\n")
+                f.write(f"      headers:\n")
+                f.write(f"        Host: {params.get('host', vless_config['domain'])}\n")
+                f.write(f"    udp: true\n\n")
+            except Exception as e:
+                print(f"生成Clash配置时跳过节点: {e}")
+                continue
+        
+        # 添加代理组
+        f.write("\nproxy-groups:\n")
+        f.write("  - name: 🚀 自动选择\n")
+        f.write("    type: url-test\n")
+        f.write("    url: http://www.gstatic.com/generate_204\n")
+        f.write("    interval: 300\n")
+        f.write("    tolerance: 50\n")
+        f.write("    lazy: true\n")
+        f.write("    proxies:\n")
+        
+        for node in unique_nodes:
+            try:
+                description = node.split("#")[1]
+                f.write(f"      - '{description}'\n")
+            except:
+                continue
+        
+        # 添加手动选择组
+        f.write("\n  - name: 📡 手动选择\n")
+        f.write("    type: select\n")
+        f.write("    proxies:\n")
+        f.write("      - 🚀 自动选择\n")
+        f.write("      - DIRECT\n")
+        
+        # 按分类添加节点
+        categories = ["综合优选", "电信优选", "联通优选", "移动优选", "全网优选"]
+        for category in categories:
+            # 检查是否有该分类的节点
+            has_nodes = False
+            for node in unique_nodes:
+                try:
+                    description = node.split("#")[1]
+                    if description.startswith(category):
+                        has_nodes = True
+                        break
+                except:
+                    continue
+            
+            if has_nodes:
+                f.write(f"      - '--- {category} ---'\n")
+                for node in unique_nodes:
+                    try:
+                        description = node.split("#")[1]
+                        if description.startswith(category):
+                            f.write(f"      - '{description}'\n")
+                    except:
+                        continue
+        
+        # 添加规则组
+        f.write("\n  - name: 🌍 国外网站\n")
+        f.write("    type: select\n")
+        f.write("    proxies:\n")
+        f.write("      - 🚀 自动选择\n")
+        f.write("      - 📡 手动选择\n")
+        f.write("      - DIRECT\n")
+        
+        f.write("\n  - name: 🎯 全局代理\n")
+        f.write("    type: select\n")
+        f.write("    proxies:\n")
+        f.write("      - 🚀 自动选择\n")
+        f.write("      - 📡 手动选择\n")
+        f.write("      - DIRECT\n")
+        
+        # 添加规则
+        f.write("\nrules:\n")
+        f.write("  - DOMAIN-SUFFIX,openai.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,google.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,youtube.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,github.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,twitter.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,facebook.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,instagram.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,telegram.org,🌍 国外网站\n")
+        f.write("  - GEOIP,CN,DIRECT\n")
+        f.write("  - MATCH,🎯 全局代理\n")
     
     print(f"\n6. 文件生成完成:")
     print(f"   ✅ YXNode - {len(unique_nodes)} 个明文节点链接")
@@ -473,15 +426,7 @@ def main():
     print(f"   • Path: {vless_config['path']}")
     print(f"\n节点名称格式: 运营商-序号-地址")
     print(f"示例: 综合优选-01-cf.130519.xyz")
-    print("=" * 70)
-    
-    # 检查文件是否生成成功
-    if os.path.exists("YXNode") and os.path.exists("YXNode.yaml"):
-        print(f"\n✅ 文件已成功生成在根目录")
-        print(f"   YXNode 文件大小: {os.path.getsize('YXNode')} 字节")
-        print(f"   YXNode.yaml 文件大小: {os.path.getsize('YXNode.yaml')} 字节")
-    else:
-        print(f"\n❌ 文件生成失败，请检查错误信息")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()
