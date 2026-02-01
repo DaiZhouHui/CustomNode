@@ -3,10 +3,11 @@ name: Generate V2Ray Nodes
 on:
   workflow_dispatch:  # 手动触发
   schedule:
-    - cron: '40 23 * * *'  # 北京时间早上7点40更新一次
+    - cron: '40 23 * * *'  # UTC时间23:40 = 北京时间07:40
   push:
     paths:
       - '.github/workflows/generate-nodes.yml'
+      - 'v_node/config.json'
     branches: [ main, master ]
 
 jobs:
@@ -30,186 +31,40 @@ jobs:
         
     - name: Generate nodes script
       run: |
+        # 将上面的Python脚本保存到文件中
         cat > v_node/generate_nodes.py << 'EOF'
-        import json
-        import urllib.request
-        import time
-        import os
-        from datetime import datetime
-        
-        # 配置参数
-        UUID = "471a8e64-7b21-4703-b1d1-45a221098459"  # 自定义UUID
-        DOMAIN = "knny.dpdns.org"  # 自定义域名
-        PORT = 443
-        PATH = "/?ed=2048"
-        SNI = DOMAIN
-        
-        # API地址
-        API_TOP20 = "https://vps789.com/openApi/cfIpTop20"
-        API_ISP = "https://vps789.com/openApi/cfIpApi"
-        
-        def fetch_api(url):
-            try:
-                with urllib.request.urlopen(url, timeout=10) as response:
-                    return json.loads(response.read())
-            except Exception as e:
-                print(f"获取API失败: {e}")
-                return None
-        
-        def generate_vless_url(ip, provider, index, network_type="ws"):
-            # 生成节点别名
-            latency_info = ""
-            if hasattr(ip, 'avgLatency'):
-                latency_info = f"延迟{ip.get('avgLatency', '')}ms"
-            
-            # 运营商中文名称映射
-            isp_names = {
-                "CT": "电信",
-                "CU": "联通",
-                "CM": "移动"
-            }
-            
-            # 网络类型映射
-            net_types = {
-                "ws": "WS",
-                "tcp": "TCP"
-            }
-            
-            # 生成中文描述
-            if provider == "top20":
-                description = f"综合优选-{index+1:02d}-{ip['ip'][:15]}-{latency_info}"
-            else:
-                isp_name = isp_names.get(provider, provider)
-                description = f"{isp_name}-优选-{index+1:02d}-{ip['ip'][:15]}-{latency_info}"
-            
-            # 构建VLESS链接
-            vless_url = f"vless://{UUID}@{ip['ip']}:{PORT}"
-            params = [
-                "encryption=none",
-                "security=tls",
-                f"sni={SNI}",
-                "fp=chrome",
-                "insecure=1",
-                "allowInsecure=1",
-                f"type={network_type}",
-                f"host={DOMAIN}",
-                f"path={PATH}"
-            ]
-            
-            return f"{vless_url}?{'&'.join(params)}#{description}"
-        
-        def main():
-            print("开始获取Cloudflare优选IP...")
-            nodes = []
-            
-            # 获取综合排名前20的IP
-            print("获取综合排名前20的IP...")
-            top20_data = fetch_api(API_TOP20)
-            if top20_data and top20_data.get("code") == 0:
-                good_ips = top20_data.get("data", {}).get("good", [])
-                for idx, ip_data in enumerate(good_ips[:20]):  # 限制20个
-                    if isinstance(ip_data, dict) and "ip" in ip_data:
-                        vless_url = generate_vless_url(ip_data, "top20", idx)
-                        nodes.append(vless_url)
-                        print(f"添加节点: 综合排名-{idx+1}")
-            
-            # 获取运营商优选IP
-            print("获取运营商优选IP...")
-            isp_data = fetch_api(API_ISP)
-            if isp_data and isp_data.get("code") == 0:
-                isp_ips = isp_data.get("data", {})
-                
-                # 电信线路
-                ct_ips = isp_ips.get("CT", [])
-                for idx, ip_data in enumerate(ct_ips[:5]):
-                    vless_url = generate_vless_url(ip_data, "CT", idx)
-                    nodes.append(vless_url)
-                    print(f"添加节点: 电信优选-{idx+1}")
-                
-                # 联通线路
-                cu_ips = isp_ips.get("CU", [])
-                for idx, ip_data in enumerate(cu_ips[:5]):
-                    vless_url = generate_vless_url(ip_data, "CU", idx)
-                    nodes.append(vless_url)
-                    print(f"添加节点: 联通优选-{idx+1}")
-                
-                # 移动线路
-                cm_ips = isp_ips.get("CM", [])
-                for idx, ip_data in enumerate(cm_ips[:5]):
-                    vless_url = generate_vless_url(ip_data, "CM", idx)
-                    nodes.append(vless_url)
-                    print(f"添加节点: 移动优选-{idx+1}")
-            
-            # 去重
-            unique_nodes = list(dict.fromkeys(nodes))
-            print(f"共生成 {len(unique_nodes)} 个节点")
-            
-            # 生成明文节点文件
-            with open("YXNode", "w", encoding="utf-8") as f:
-                f.write(f"# Cloudflare优选IP节点\n")
-                f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-                f.write(f"# 总数: {len(unique_nodes)} 个\n")
-                f.write("#" * 50 + "\n\n")
-                for node in unique_nodes:
-                    f.write(node + "\n")
-            
-            # 生成YAML订阅文件
-            with open("YXNode.yaml", "w", encoding="utf-8") as f:
-                f.write(f"# Cloudflare优选IP订阅\n")
-                f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-                f.write(f"# 总数: {len(unique_nodes)} 个\n")
-                f.write("proxies:\n")
-                
-                for node in unique_nodes:
-                    # 从VLESS链接中提取信息
-                    parts = node.split("#")
-                    base_url = parts[0].replace("vless://", "")
-                    uuid_server = base_url.split("@")[0]
-                    server_port = base_url.split("@")[1].split("?")[0]
-                    server = server_port.split(":")[0]
-                    
-                    # 解析参数
-                    params_str = node.split("?")[1].split("#")[0]
-                    params = dict(param.split("=") for param in params_str.split("&"))
-                    
-                    f.write(f"  - name: '{parts[1]}'\n")
-                    f.write(f"    type: vless\n")
-                    f.write(f"    server: {server}\n")
-                    f.write(f"    port: {PORT}\n")
-                    f.write(f"    uuid: {uuid_server}\n")
-                    f.write(f"    cipher: none\n")
-                    f.write(f"    tls: true\n")
-                    f.write(f"    servername: {params.get('sni', DOMAIN)}\n")
-                    f.write(f"    network: {params.get('type', 'ws')}\n")
-                    f.write(f"    ws-opts:\n")
-                    f.write(f"      path: '{params.get('path', PATH)}'\n")
-                    f.write(f"      headers:\n")
-                    f.write(f"        Host: {params.get('host', DOMAIN)}\n")
-                    f.write(f"    udp: true\n\n")
-            
-            print("节点文件生成完成！")
-        
-        if __name__ == "__main__":
-            main()
+        # [将上面的完整Python脚本内容粘贴到这里]
         EOF
         
     - name: Run Python script
       run: |
         cd v_node
         python generate_nodes.py
-        ls -la
         
     - name: Move files to root
       run: |
+        # 移动生成的文件到根目录
         mv v_node/YXNode ./
         mv v_node/YXNode.yaml ./
-        ls -la
+        
+        echo "生成的文件:"
+        echo "1. YXNode (无后缀) - 明文节点链接"
+        echo "2. YXNode.yaml - Clash配置文件"
+        echo ""
+        echo "文件大小:"
+        if [ -f YXNode ]; then
+          echo "- YXNode: $(wc -l < YXNode) 行"
+        fi
+        if [ -f YXNode.yaml ]; then
+          echo "- YXNode.yaml: $(wc -l < YXNode.yaml) 行"
+        fi
         
     - name: Commit and push if changed
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
+        # 添加生成的两个文件
         git add YXNode YXNode.yaml
         
         if git diff --staged --quiet; then
@@ -218,4 +73,4 @@ jobs:
           git commit -m "自动更新Cloudflare优选节点 [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push
           echo "节点文件已更新并推送"
-        fi
+        fi  

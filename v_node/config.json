@@ -12,16 +12,19 @@
     },
     "api_config": {
         "top20_url": "https://vps789.com/openApi/cfIpTop20",
-        "isp_url": "https://vps789.com/openApi/cfIpApi",
-        "update_interval_hours": 6
+        "isp_url": "https://vps789.com/openApi/cfIpApi"
     },
     "naming_rules": {
         "top20_prefix": "综合优选",
-        "ct_prefix": "电信",
-        "cu_prefix": "联通",
-        "cm_prefix": "移动",
-        "include_latency": true,
-        "include_ip": true,
-        "max_chars": 50
+        "ct_prefix": "电信优选",
+        "cu_prefix": "联通优选",
+        "cm_prefix": "移动优选",
+        "allavg_prefix": "全网优选"
+    },
+    "schedule": {
+        "cron": "40 23 * * *",
+        "timezone": "UTC",
+        "beijing_time": "07:40",
+        "description": "每天北京时间7:40自动更新"
     }
 }
