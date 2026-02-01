@@ -29,34 +29,73 @@ jobs:
       run: |
         mkdir -p v_node
         
+    - name: Create config file
+      run: |
+        # 创建默认配置文件（如果不存在）
+        if [ ! -f v_node/config.json ]; then
+          cat > v_node/config.json << 'EOF'
+          {
+            "vless_config": {
+              "uuid": "471a8e64-7b21-4703-b1d1-45a221098459",
+              "domain": "knny.dpdns.org",
+              "port": 443,
+              "path": "/?ed=2048",
+              "encryption": "none",
+              "security": "tls",
+              "sni": "knny.dpdns.org",
+              "fingerprint": "chrome",
+              "network": "ws"
+            },
+            "api_config": {
+              "top20_url": "https://vps789.com/openApi/cfIpTop20",
+              "isp_url": "https://vps789.com/openApi/cfIpApi"
+            },
+            "naming_rules": {
+              "top20_prefix": "综合优选",
+              "ct_prefix": "电信优选",
+              "cu_prefix": "联通优选",
+              "cm_prefix": "移动优选",
+              "allavg_prefix": "全网优选"
+            }
+          }
+          EOF
+          echo "创建了默认配置文件"
+        else
+          echo "配置文件已存在"
+        fi
+        
     - name: Generate nodes script
       run: |
-        # 将上面的Python脚本保存到文件中
+        # 将Python脚本保存到v_node目录
         cat > v_node/generate_nodes.py << 'EOF'
         # [将上面的完整Python脚本内容粘贴到这里]
         EOF
         
     - name: Run Python script
       run: |
-        cd v_node
-        python generate_nodes.py
+        # 直接在根目录运行脚本
+        python v_node/generate_nodes.py
         
-    - name: Move files to root
+    - name: Check generated files
       run: |
-        # 移动生成的文件到根目录
-        mv v_node/YXNode ./
-        mv v_node/YXNode.yaml ./
-        
-        echo "生成的文件:"
-        echo "1. YXNode (无后缀) - 明文节点链接"
-        echo "2. YXNode.yaml - Clash配置文件"
+        echo "检查生成的文件:"
+        echo "当前目录: $(pwd)"
         echo ""
-        echo "文件大小:"
+        echo "文件列表:"
+        ls -la *.yaml YXNode 2>/dev/null || echo "没有找到文件"
+        echo ""
+        echo "如果文件存在，显示内容预览:"
         if [ -f YXNode ]; then
-          echo "- YXNode: $(wc -l < YXNode) 行"
+          echo "YXNode 前5行:"
+          head -5 YXNode
+          echo ""
+          echo "YXNode 行数: $(wc -l < YXNode)"
         fi
         if [ -f YXNode.yaml ]; then
-          echo "- YXNode.yaml: $(wc -l < YXNode.yaml) 行"
+          echo "YXNode.yaml 前5行:"
+          head -5 YXNode.yaml
+          echo ""
+          echo "YXNode.yaml 行数: $(wc -l < YXNode.yaml)"
         fi
         
     - name: Commit and push if changed
@@ -64,7 +103,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        # 添加生成的两个文件
+        # 添加生成的文件
         git add YXNode YXNode.yaml
         
         if git diff --staged --quiet; then
@@ -73,4 +112,4 @@ jobs:
           git commit -m "自动更新Cloudflare优选节点 [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push
           echo "节点文件已更新并推送"
-        fi  
+        fi

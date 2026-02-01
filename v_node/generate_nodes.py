@@ -308,7 +308,6 @@ rules:
   - DOMAIN-SUFFIX,weibo.com,DIRECT
   - DOMAIN-SUFFIX,zhihu.com,DIRECT
   - DOMAIN-SUFFIX,bilibili.com,DIRECT
-  - DOMAIN-KEYWORD,github,DIRECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
@@ -442,8 +441,13 @@ def main():
     for category, count in category_count.items():
         print(f"   {category}: {count} 个")
     
-    # 生成明文节点文件（无后缀）
+    # 生成明文节点文件（无后缀）- 直接生成在根目录
     print(f"\n5. 生成节点文件...")
+    print(f"   将在仓库根目录生成文件:")
+    print(f"   - YXNode (明文节点链接)")
+    print(f"   - YXNode.yaml (Clash配置文件)")
+    
+    # 生成明文节点文件
     with open("YXNode", "w", encoding="utf-8") as f:
         f.write(f"# Cloudflare优选IP节点\n")
         f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
@@ -470,6 +474,14 @@ def main():
     print(f"\n节点名称格式: 运营商-序号-地址")
     print(f"示例: 综合优选-01-cf.130519.xyz")
     print("=" * 70)
+    
+    # 检查文件是否生成成功
+    if os.path.exists("YXNode") and os.path.exists("YXNode.yaml"):
+        print(f"\n✅ 文件已成功生成在根目录")
+        print(f"   YXNode 文件大小: {os.path.getsize('YXNode')} 字节")
+        print(f"   YXNode.yaml 文件大小: {os.path.getsize('YXNode.yaml')} 字节")
+    else:
+        print(f"\n❌ 文件生成失败，请检查错误信息")
 
 if __name__ == "__main__":
     main()
