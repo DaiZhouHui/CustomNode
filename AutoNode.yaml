@@ -29,7 +29,126 @@ dns:
       - 240.0.0.0/4
 
 proxies:
-- name: 香港节点-0131-01-443-47.75.203.164
+- name: 香港节点-0202-01-443-65.52.166.224
+    type: vless
+    server: 65.52.166.224
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0202-01-443-150.109.79.153
+    type: vless
+    server: 150.109.79.153
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0202-01-443-27.50.49.219
+    type: vless
+    server: 27.50.49.219
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0202-01-443-156.245.188.19
+    type: vless
+    server: 156.245.188.19
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0202-01-443-38.181.47.213
+    type: vless
+    server: 38.181.47.213
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0202-01-443-8.212.15.77
+    type: vless
+    server: 8.212.15.77
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0202-01-443-103.7.55.188
+    type: vless
+    server: 103.7.55.188
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: True
+    servername: knny.dpdns.org
+    fingerprint: chrome
+    alpn: ['h2', 'http/1.1']
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: True
+    skip-cert-verify: False
+
+  - name: 香港节点-0131-01-443-47.75.203.164
     type: vless
     server: 47.75.203.164
     port: 443
@@ -237,7 +356,14 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-- 香港节点-0131-01-443-47.75.203.164
+- 香港节点-0202-01-443-65.52.166.224
+      - 香港节点-0202-01-443-150.109.79.153
+      - 香港节点-0202-01-443-27.50.49.219
+      - 香港节点-0202-01-443-156.245.188.19
+      - 香港节点-0202-01-443-38.181.47.213
+      - 香港节点-0202-01-443-8.212.15.77
+      - 香港节点-0202-01-443-103.7.55.188
+      - 香港节点-0131-01-443-47.75.203.164
       - 香港节点-0131-01-443-20.189.91.218
       - 香港节点-0131-01-443-154.211.8.59
       - 香港节点-0131-02-443-154.211.8.58
@@ -256,7 +382,14 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-- 香港节点-0131-01-443-47.75.203.164
+- 香港节点-0202-01-443-65.52.166.224
+      - 香港节点-0202-01-443-150.109.79.153
+      - 香港节点-0202-01-443-27.50.49.219
+      - 香港节点-0202-01-443-156.245.188.19
+      - 香港节点-0202-01-443-38.181.47.213
+      - 香港节点-0202-01-443-8.212.15.77
+      - 香港节点-0202-01-443-103.7.55.188
+      - 香港节点-0131-01-443-47.75.203.164
       - 香港节点-0131-01-443-20.189.91.218
       - 香港节点-0131-01-443-154.211.8.59
       - 香港节点-0131-02-443-154.211.8.58
