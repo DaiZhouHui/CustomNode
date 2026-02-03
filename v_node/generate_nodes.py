@@ -283,20 +283,20 @@ def main():
     # 生成明文节点文件
     print(f"\n5. 生成节点文件...")
     with open("YXNode", "w", encoding="utf-8") as f:
-        f.write(f"# Cloudflare优选IP节点\n")
-        f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
-        f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
-        f.write(f"# 总数: {len(unique_nodes)} 个\n")
-        f.write("#" * 70 + "\n\n")
+        # f.write(f"# Cloudflare优选IP节点\n")
+        # f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
+        # f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
+        # f.write(f"# 总数: {len(unique_nodes)} 个\n")
+        # f.write("#" * 70 + "\n\n")
         for node in unique_nodes:
             f.write(node + "\n")
     
     # 生成Clash配置文件
     with open("YXNode.yaml", "w", encoding="utf-8") as f:
-        f.write(f"# Cloudflare优选IP Clash配置\n")
-        f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
-        f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
-        f.write(f"# 节点总数: {len(unique_nodes)} 个\n")
+        # f.write(f"# Cloudflare优选IP Clash配置\n")
+        # f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
+        # f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
+        # f.write(f"# 节点总数: {len(unique_nodes)} 个\n")
         f.write("port: 7890\n")
         f.write("socks-port: 7891\n")
         f.write("allow-lan: true\n")
