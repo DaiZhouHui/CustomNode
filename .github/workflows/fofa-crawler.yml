@@ -1,4 +1,4 @@
-name: FOFA节点 Nodes
+name: 抓取FOFA节点生成CSV文件
 
 on:
   schedule:
