@@ -1,5 +1,5 @@
 # Clash 配置
-# 生成时间: "2026-02-04 00:53:48"
+# 生成时间: "2026-02-04 01:57:08"
 # 节点数量: 19
 
 mixed-port: 7890
@@ -19,7 +19,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -36,7 +38,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -53,7 +57,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -70,7 +76,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -87,7 +95,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -104,7 +114,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -121,7 +133,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -138,7 +152,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -155,7 +171,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -172,7 +190,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -189,7 +209,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -206,7 +228,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -223,7 +247,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -240,7 +266,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -257,7 +285,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -274,7 +304,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -291,7 +323,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -308,7 +342,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
@@ -325,7 +361,9 @@ proxies:
     tls: true
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
-    alpn: "h2,http/1.1"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
