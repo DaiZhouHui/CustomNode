@@ -1,0 +1,2021 @@
+proxies:
+  - name: "中国01-443-103.85.227.245"
+    type: vless
+    server: 103.85.227.245
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国02-443-103.42.31.52"
+    type: vless
+    server: 103.42.31.52
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国03-443-103.66.216.42"
+    type: vless
+    server: 103.66.216.42
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国04-443-103.66.216.62"
+    type: vless
+    server: 103.66.216.62
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国05-443-103.66.216.67"
+    type: vless
+    server: 103.66.216.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "中国06-443-103.66.216.64"
+    type: vless
+    server: 103.66.216.64
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国01-443-18.166.212.133"
+    type: vless
+    server: 18.166.212.133
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国02-443-16.162.217.106"
+    type: vless
+    server: 16.162.217.106
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国03-443-190.102.109.54"
+    type: vless
+    server: 190.102.109.54
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国04-443-18.166.215.129"
+    type: vless
+    server: 18.166.215.129
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国05-443-156.234.109.150"
+    type: vless
+    server: 156.234.109.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国06-443-156.234.109.149"
+    type: vless
+    server: 156.234.109.149
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国07-443-156.234.109.148"
+    type: vless
+    server: 156.234.109.148
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国08-443-156.234.109.147"
+    type: vless
+    server: 156.234.109.147
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国09-443-156.234.109.146"
+    type: vless
+    server: 156.234.109.146
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国10-443-47.243.250.5"
+    type: vless
+    server: 47.243.250.5
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国11-443-47.82.87.47"
+    type: vless
+    server: 47.82.87.47
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国12-443-18.163.130.65"
+    type: vless
+    server: 18.163.130.65
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国13-443-95.40.62.235"
+    type: vless
+    server: 95.40.62.235
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国14-443-16.163.132.249"
+    type: vless
+    server: 16.163.132.249
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国15-443-149.88.72.8"
+    type: vless
+    server: 149.88.72.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国16-443-35.215.165.122"
+    type: vless
+    server: 35.215.165.122
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国17-443-43.199.105.206"
+    type: vless
+    server: 43.199.105.206
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国18-443-18.162.204.24"
+    type: vless
+    server: 18.162.204.24
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国19-443-47.242.2.185"
+    type: vless
+    server: 47.242.2.185
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国20-443-52.175.22.1"
+    type: vless
+    server: 52.175.22.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国21-443-47.242.2.150"
+    type: vless
+    server: 47.242.2.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国22-443-47.239.214.33"
+    type: vless
+    server: 47.239.214.33
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国23-443-38.207.133.246"
+    type: vless
+    server: 38.207.133.246
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国24-443-45.207.199.192"
+    type: vless
+    server: 45.207.199.192
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国25-443-47.239.214.87"
+    type: vless
+    server: 47.239.214.87
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国26-443-38.207.133.200"
+    type: vless
+    server: 38.207.133.200
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国27-443-38.207.133.213"
+    type: vless
+    server: 38.207.133.213
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国28-443-172.81.104.188"
+    type: vless
+    server: 172.81.104.188
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国29-443-34.92.125.59"
+    type: vless
+    server: 34.92.125.59
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国30-443-18.163.187.103"
+    type: vless
+    server: 18.163.187.103
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国31-443-47.86.51.222"
+    type: vless
+    server: 47.86.51.222
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国32-443-47.243.108.151"
+    type: vless
+    server: 47.243.108.151
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国33-443-20.187.148.37"
+    type: vless
+    server: 20.187.148.37
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国34-443-95.40.114.67"
+    type: vless
+    server: 95.40.114.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国35-443-47.57.139.154"
+    type: vless
+    server: 47.57.139.154
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国36-443-95.40.160.103"
+    type: vless
+    server: 95.40.160.103
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国37-443-38.22.90.234"
+    type: vless
+    server: 38.22.90.234
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国38-443-198.44.177.139"
+    type: vless
+    server: 198.44.177.139
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国39-443-154.9.253.165"
+    type: vless
+    server: 154.9.253.165
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国40-443-47.76.244.125"
+    type: vless
+    server: 47.76.244.125
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国41-443-216.250.96.146"
+    type: vless
+    server: 216.250.96.146
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国42-443-216.250.96.173"
+    type: vless
+    server: 216.250.96.173
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国43-443-216.250.96.138"
+    type: vless
+    server: 216.250.96.138
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国44-443-20.2.136.10"
+    type: vless
+    server: 20.2.136.10
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国45-443-154.18.168.36"
+    type: vless
+    server: 154.18.168.36
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国46-443-47.238.230.197"
+    type: vless
+    server: 47.238.230.197
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国47-443-18.162.150.67"
+    type: vless
+    server: 18.162.150.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国48-443-18.167.154.217"
+    type: vless
+    server: 18.167.154.217
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港01-443-43.255.159.29"
+    type: vless
+    server: 43.255.159.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港02-443-43.255.159.86"
+    type: vless
+    server: 43.255.159.86
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港03-443-103.87.9.8"
+    type: vless
+    server: 103.87.9.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港04-443-163.53.18.207"
+    type: vless
+    server: 163.53.18.207
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港05-443-103.161.225.6"
+    type: vless
+    server: 103.161.225.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港06-443-103.38.80.8"
+    type: vless
+    server: 103.38.80.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港07-443-103.194.186.194"
+    type: vless
+    server: 103.194.186.194
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港08-443-103.194.186.140"
+    type: vless
+    server: 103.194.186.140
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港09-443-185.106.176.73"
+    type: vless
+    server: 185.106.176.73
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港10-443-183.178.118.222"
+    type: vless
+    server: 183.178.118.222
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡01-443-43.135.97.228"
+    type: vless
+    server: 43.135.97.228
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡02-443-43.135.72.41"
+    type: vless
+    server: 43.135.72.41
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡03-443-43.135.32.50"
+    type: vless
+    server: 43.135.32.50
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡04-443-8.218.141.244"
+    type: vless
+    server: 8.218.141.244
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡05-443-43.155.81.234"
+    type: vless
+    server: 43.155.81.234
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡06-443-43.135.111.135"
+    type: vless
+    server: 43.135.111.135
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡07-443-8.210.130.20"
+    type: vless
+    server: 8.210.130.20
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "新加坡08-443-150.109.73.238"
+    type: vless
+    server: 150.109.73.238
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲01-443-154.215.71.124"
+    type: vless
+    server: 154.215.71.124
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲02-443-154.215.71.125"
+    type: vless
+    server: 154.215.71.125
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲03-443-154.215.71.126"
+    type: vless
+    server: 154.215.71.126
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲04-443-154.215.71.120"
+    type: vless
+    server: 154.215.71.120
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲05-443-154.215.71.121"
+    type: vless
+    server: 154.215.71.121
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲06-443-154.215.71.122"
+    type: vless
+    server: 154.215.71.122
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲07-443-154.215.71.123"
+    type: vless
+    server: 154.215.71.123
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲08-443-154.215.71.108"
+    type: vless
+    server: 154.215.71.108
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲09-443-154.215.71.109"
+    type: vless
+    server: 154.215.71.109
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲10-443-154.215.71.102"
+    type: vless
+    server: 154.215.71.102
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲11-443-154.215.71.103"
+    type: vless
+    server: 154.215.71.103
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲12-443-154.215.71.100"
+    type: vless
+    server: 154.215.71.100
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲13-443-154.215.71.101"
+    type: vless
+    server: 154.215.71.101
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲14-443-154.215.71.106"
+    type: vless
+    server: 154.215.71.106
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲15-443-154.215.71.107"
+    type: vless
+    server: 154.215.71.107
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲16-443-154.215.71.104"
+    type: vless
+    server: 154.215.71.104
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲17-443-154.215.71.105"
+    type: vless
+    server: 154.215.71.105
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲18-443-154.215.71.119"
+    type: vless
+    server: 154.215.71.119
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲19-443-154.215.71.118"
+    type: vless
+    server: 154.215.71.118
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲20-443-154.215.71.115"
+    type: vless
+    server: 154.215.71.115
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲21-443-154.215.71.114"
+    type: vless
+    server: 154.215.71.114
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲22-443-154.215.71.117"
+    type: vless
+    server: 154.215.71.117
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲23-443-154.215.71.116"
+    type: vless
+    server: 154.215.71.116
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲24-443-154.215.71.111"
+    type: vless
+    server: 154.215.71.111
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲25-443-154.215.71.110"
+    type: vless
+    server: 154.215.71.110
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲26-443-154.215.71.113"
+    type: vless
+    server: 154.215.71.113
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "欧洲27-443-154.215.71.112"
+    type: vless
+    server: 154.215.71.112
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "中国01-443-103.85.227.245"
+      - "中国02-443-103.42.31.52"
+      - "中国03-443-103.66.216.42"
+      - "中国04-443-103.66.216.62"
+      - "中国05-443-103.66.216.67"
+      - "中国06-443-103.66.216.64"
+      - "美国01-443-18.166.212.133"
+      - "美国02-443-16.162.217.106"
+      - "美国03-443-190.102.109.54"
+      - "美国04-443-18.166.215.129"
+      - "美国05-443-156.234.109.150"
+      - "美国06-443-156.234.109.149"
+      - "美国07-443-156.234.109.148"
+      - "美国08-443-156.234.109.147"
+      - "美国09-443-156.234.109.146"
+      - "美国10-443-47.243.250.5"
+      - "美国11-443-47.82.87.47"
+      - "美国12-443-18.163.130.65"
+      - "美国13-443-95.40.62.235"
+      - "美国14-443-16.163.132.249"
+      - "美国15-443-149.88.72.8"
+      - "美国16-443-35.215.165.122"
+      - "美国17-443-43.199.105.206"
+      - "美国18-443-18.162.204.24"
+      - "美国19-443-47.242.2.185"
+      - "美国20-443-52.175.22.1"
+      - "美国21-443-47.242.2.150"
+      - "美国22-443-47.239.214.33"
+      - "美国23-443-38.207.133.246"
+      - "美国24-443-45.207.199.192"
+      - "美国25-443-47.239.214.87"
+      - "美国26-443-38.207.133.200"
+      - "美国27-443-38.207.133.213"
+      - "美国28-443-172.81.104.188"
+      - "美国29-443-34.92.125.59"
+      - "美国30-443-18.163.187.103"
+      - "美国31-443-47.86.51.222"
+      - "美国32-443-47.243.108.151"
+      - "美国33-443-20.187.148.37"
+      - "美国34-443-95.40.114.67"
+      - "美国35-443-47.57.139.154"
+      - "美国36-443-95.40.160.103"
+      - "美国37-443-38.22.90.234"
+      - "美国38-443-198.44.177.139"
+      - "美国39-443-154.9.253.165"
+      - "美国40-443-47.76.244.125"
+      - "美国41-443-216.250.96.146"
+      - "美国42-443-216.250.96.173"
+      - "美国43-443-216.250.96.138"
+      - "美国44-443-20.2.136.10"
+      - "美国45-443-154.18.168.36"
+      - "美国46-443-47.238.230.197"
+      - "美国47-443-18.162.150.67"
+      - "美国48-443-18.167.154.217"
+      - "香港01-443-43.255.159.29"
+      - "香港02-443-43.255.159.86"
+      - "香港03-443-103.87.9.8"
+      - "香港04-443-163.53.18.207"
+      - "香港05-443-103.161.225.6"
+      - "香港06-443-103.38.80.8"
+      - "香港07-443-103.194.186.194"
+      - "香港08-443-103.194.186.140"
+      - "香港09-443-185.106.176.73"
+      - "香港10-443-183.178.118.222"
+      - "新加坡01-443-43.135.97.228"
+      - "新加坡02-443-43.135.72.41"
+      - "新加坡03-443-43.135.32.50"
+      - "新加坡04-443-8.218.141.244"
+      - "新加坡05-443-43.155.81.234"
+      - "新加坡06-443-43.135.111.135"
+      - "新加坡07-443-8.210.130.20"
+      - "新加坡08-443-150.109.73.238"
+      - "欧洲01-443-154.215.71.124"
+      - "欧洲02-443-154.215.71.125"
+      - "欧洲03-443-154.215.71.126"
+      - "欧洲04-443-154.215.71.120"
+      - "欧洲05-443-154.215.71.121"
+      - "欧洲06-443-154.215.71.122"
+      - "欧洲07-443-154.215.71.123"
+      - "欧洲08-443-154.215.71.108"
+      - "欧洲09-443-154.215.71.109"
+      - "欧洲10-443-154.215.71.102"
+      - "欧洲11-443-154.215.71.103"
+      - "欧洲12-443-154.215.71.100"
+      - "欧洲13-443-154.215.71.101"
+      - "欧洲14-443-154.215.71.106"
+      - "欧洲15-443-154.215.71.107"
+      - "欧洲16-443-154.215.71.104"
+      - "欧洲17-443-154.215.71.105"
+      - "欧洲18-443-154.215.71.119"
+      - "欧洲19-443-154.215.71.118"
+      - "欧洲20-443-154.215.71.115"
+      - "欧洲21-443-154.215.71.114"
+      - "欧洲22-443-154.215.71.117"
+      - "欧洲23-443-154.215.71.116"
+      - "欧洲24-443-154.215.71.111"
+      - "欧洲25-443-154.215.71.110"
+      - "欧洲26-443-154.215.71.113"
+      - "欧洲27-443-154.215.71.112"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "中国01-443-103.85.227.245"
+      - "中国02-443-103.42.31.52"
+      - "中国03-443-103.66.216.42"
+      - "中国04-443-103.66.216.62"
+      - "中国05-443-103.66.216.67"
+      - "中国06-443-103.66.216.64"
+      - "美国01-443-18.166.212.133"
+      - "美国02-443-16.162.217.106"
+      - "美国03-443-190.102.109.54"
+      - "美国04-443-18.166.215.129"
+      - "美国05-443-156.234.109.150"
+      - "美国06-443-156.234.109.149"
+      - "美国07-443-156.234.109.148"
+      - "美国08-443-156.234.109.147"
+      - "美国09-443-156.234.109.146"
+      - "美国10-443-47.243.250.5"
+      - "美国11-443-47.82.87.47"
+      - "美国12-443-18.163.130.65"
+      - "美国13-443-95.40.62.235"
+      - "美国14-443-16.163.132.249"
+      - "美国15-443-149.88.72.8"
+      - "美国16-443-35.215.165.122"
+      - "美国17-443-43.199.105.206"
+      - "美国18-443-18.162.204.24"
+      - "美国19-443-47.242.2.185"
+      - "美国20-443-52.175.22.1"
+      - "美国21-443-47.242.2.150"
+      - "美国22-443-47.239.214.33"
+      - "美国23-443-38.207.133.246"
+      - "美国24-443-45.207.199.192"
+      - "美国25-443-47.239.214.87"
+      - "美国26-443-38.207.133.200"
+      - "美国27-443-38.207.133.213"
+      - "美国28-443-172.81.104.188"
+      - "美国29-443-34.92.125.59"
+      - "美国30-443-18.163.187.103"
+      - "美国31-443-47.86.51.222"
+      - "美国32-443-47.243.108.151"
+      - "美国33-443-20.187.148.37"
+      - "美国34-443-95.40.114.67"
+      - "美国35-443-47.57.139.154"
+      - "美国36-443-95.40.160.103"
+      - "美国37-443-38.22.90.234"
+      - "美国38-443-198.44.177.139"
+      - "美国39-443-154.9.253.165"
+      - "美国40-443-47.76.244.125"
+      - "美国41-443-216.250.96.146"
+      - "美国42-443-216.250.96.173"
+      - "美国43-443-216.250.96.138"
+      - "美国44-443-20.2.136.10"
+      - "美国45-443-154.18.168.36"
+      - "美国46-443-47.238.230.197"
+      - "美国47-443-18.162.150.67"
+      - "美国48-443-18.167.154.217"
+      - "香港01-443-43.255.159.29"
+      - "香港02-443-43.255.159.86"
+      - "香港03-443-103.87.9.8"
+      - "香港04-443-163.53.18.207"
+      - "香港05-443-103.161.225.6"
+      - "香港06-443-103.38.80.8"
+      - "香港07-443-103.194.186.194"
+      - "香港08-443-103.194.186.140"
+      - "香港09-443-185.106.176.73"
+      - "香港10-443-183.178.118.222"
+      - "新加坡01-443-43.135.97.228"
+      - "新加坡02-443-43.135.72.41"
+      - "新加坡03-443-43.135.32.50"
+      - "新加坡04-443-8.218.141.244"
+      - "新加坡05-443-43.155.81.234"
+      - "新加坡06-443-43.135.111.135"
+      - "新加坡07-443-8.210.130.20"
+      - "新加坡08-443-150.109.73.238"
+      - "欧洲01-443-154.215.71.124"
+      - "欧洲02-443-154.215.71.125"
+      - "欧洲03-443-154.215.71.126"
+      - "欧洲04-443-154.215.71.120"
+      - "欧洲05-443-154.215.71.121"
+      - "欧洲06-443-154.215.71.122"
+      - "欧洲07-443-154.215.71.123"
+      - "欧洲08-443-154.215.71.108"
+      - "欧洲09-443-154.215.71.109"
+      - "欧洲10-443-154.215.71.102"
+      - "欧洲11-443-154.215.71.103"
+      - "欧洲12-443-154.215.71.100"
+      - "欧洲13-443-154.215.71.101"
+      - "欧洲14-443-154.215.71.106"
+      - "欧洲15-443-154.215.71.107"
+      - "欧洲16-443-154.215.71.104"
+      - "欧洲17-443-154.215.71.105"
+      - "欧洲18-443-154.215.71.119"
+      - "欧洲19-443-154.215.71.118"
+      - "欧洲20-443-154.215.71.115"
+      - "欧洲21-443-154.215.71.114"
+      - "欧洲22-443-154.215.71.117"
+      - "欧洲23-443-154.215.71.116"
+      - "欧洲24-443-154.215.71.111"
+      - "欧洲25-443-154.215.71.110"
+      - "欧洲26-443-154.215.71.113"
+      - "欧洲27-443-154.215.71.112"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "中国01-443-103.85.227.245"
+      - "中国02-443-103.42.31.52"
+      - "中国03-443-103.66.216.42"
+      - "中国04-443-103.66.216.62"
+      - "中国05-443-103.66.216.67"
+      - "中国06-443-103.66.216.64"
+      - "美国01-443-18.166.212.133"
+      - "美国02-443-16.162.217.106"
+      - "美国03-443-190.102.109.54"
+      - "美国04-443-18.166.215.129"
+      - "美国05-443-156.234.109.150"
+      - "美国06-443-156.234.109.149"
+      - "美国07-443-156.234.109.148"
+      - "美国08-443-156.234.109.147"
+      - "美国09-443-156.234.109.146"
+      - "美国10-443-47.243.250.5"
+      - "美国11-443-47.82.87.47"
+      - "美国12-443-18.163.130.65"
+      - "美国13-443-95.40.62.235"
+      - "美国14-443-16.163.132.249"
+      - "美国15-443-149.88.72.8"
+      - "美国16-443-35.215.165.122"
+      - "美国17-443-43.199.105.206"
+      - "美国18-443-18.162.204.24"
+      - "美国19-443-47.242.2.185"
+      - "美国20-443-52.175.22.1"
+      - "美国21-443-47.242.2.150"
+      - "美国22-443-47.239.214.33"
+      - "美国23-443-38.207.133.246"
+      - "美国24-443-45.207.199.192"
+      - "美国25-443-47.239.214.87"
+      - "美国26-443-38.207.133.200"
+      - "美国27-443-38.207.133.213"
+      - "美国28-443-172.81.104.188"
+      - "美国29-443-34.92.125.59"
+      - "美国30-443-18.163.187.103"
+      - "美国31-443-47.86.51.222"
+      - "美国32-443-47.243.108.151"
+      - "美国33-443-20.187.148.37"
+      - "美国34-443-95.40.114.67"
+      - "美国35-443-47.57.139.154"
+      - "美国36-443-95.40.160.103"
+      - "美国37-443-38.22.90.234"
+      - "美国38-443-198.44.177.139"
+      - "美国39-443-154.9.253.165"
+      - "美国40-443-47.76.244.125"
+      - "美国41-443-216.250.96.146"
+      - "美国42-443-216.250.96.173"
+      - "美国43-443-216.250.96.138"
+      - "美国44-443-20.2.136.10"
+      - "美国45-443-154.18.168.36"
+      - "美国46-443-47.238.230.197"
+      - "美国47-443-18.162.150.67"
+      - "美国48-443-18.167.154.217"
+      - "香港01-443-43.255.159.29"
+      - "香港02-443-43.255.159.86"
+      - "香港03-443-103.87.9.8"
+      - "香港04-443-163.53.18.207"
+      - "香港05-443-103.161.225.6"
+      - "香港06-443-103.38.80.8"
+      - "香港07-443-103.194.186.194"
+      - "香港08-443-103.194.186.140"
+      - "香港09-443-185.106.176.73"
+      - "香港10-443-183.178.118.222"
+      - "新加坡01-443-43.135.97.228"
+      - "新加坡02-443-43.135.72.41"
+      - "新加坡03-443-43.135.32.50"
+      - "新加坡04-443-8.218.141.244"
+      - "新加坡05-443-43.155.81.234"
+      - "新加坡06-443-43.135.111.135"
+      - "新加坡07-443-8.210.130.20"
+      - "新加坡08-443-150.109.73.238"
+      - "欧洲01-443-154.215.71.124"
+      - "欧洲02-443-154.215.71.125"
+      - "欧洲03-443-154.215.71.126"
+      - "欧洲04-443-154.215.71.120"
+      - "欧洲05-443-154.215.71.121"
+      - "欧洲06-443-154.215.71.122"
+      - "欧洲07-443-154.215.71.123"
+      - "欧洲08-443-154.215.71.108"
+      - "欧洲09-443-154.215.71.109"
+      - "欧洲10-443-154.215.71.102"
+      - "欧洲11-443-154.215.71.103"
+      - "欧洲12-443-154.215.71.100"
+      - "欧洲13-443-154.215.71.101"
+      - "欧洲14-443-154.215.71.106"
+      - "欧洲15-443-154.215.71.107"
+      - "欧洲16-443-154.215.71.104"
+      - "欧洲17-443-154.215.71.105"
+      - "欧洲18-443-154.215.71.119"
+      - "欧洲19-443-154.215.71.118"
+      - "欧洲20-443-154.215.71.115"
+      - "欧洲21-443-154.215.71.114"
+      - "欧洲22-443-154.215.71.117"
+      - "欧洲23-443-154.215.71.116"
+      - "欧洲24-443-154.215.71.111"
+      - "欧洲25-443-154.215.71.110"
+      - "欧洲26-443-154.215.71.113"
+      - "欧洲27-443-154.215.71.112"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
