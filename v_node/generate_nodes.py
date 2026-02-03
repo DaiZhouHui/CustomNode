@@ -290,7 +290,7 @@ def main():
         # f.write("#" * 70 + "\n\n")
         for node in unique_nodes:
             f.write(node + "\n")
-    
+            
     # 生成Clash配置文件
     with open("YXNode.yaml", "w", encoding="utf-8") as f:
         # f.write(f"# Cloudflare优选IP Clash配置\n")
@@ -300,7 +300,7 @@ def main():
         f.write("port: 7890\n")
         f.write("socks-port: 7891\n")
         f.write("allow-lan: true\n")
-        f.write("mode: Rule\n")
+        f.write("mode: rule\n")  # 修正：小写rule
         f.write("log-level: info\n")
         f.write("external-controller: 127.0.0.1:9090\n")
         f.write("proxies:\n")
@@ -339,7 +339,7 @@ def main():
                 print(f"生成Clash配置时跳过节点: {e}")
                 continue
         
-        # 添加代理组
+        # 添加代理组 - 保持不变
         f.write("\nproxy-groups:\n")
         f.write("  - name: 🚀 自动选择\n")
         f.write("    type: url-test\n")
@@ -356,14 +356,14 @@ def main():
             except:
                 continue
         
-        # 添加手动选择组
+        # 添加手动选择组 - 保持不变
         f.write("\n  - name: 📡 手动选择\n")
         f.write("    type: select\n")
         f.write("    proxies:\n")
         f.write("      - 🚀 自动选择\n")
         f.write("      - DIRECT\n")
         
-        # 按分类添加节点
+        # 按分类添加节点 - 保持不变
         categories = ["综合优选", "电信优选", "联通优选", "移动优选", "全网优选"]
         for category in categories:
             # 检查是否有该分类的节点
@@ -387,7 +387,7 @@ def main():
                     except:
                         continue
         
-        # 添加规则组
+        # 添加规则组 - 保持不变
         f.write("\n  - name: 🌍 国外网站\n")
         f.write("    type: select\n")
         f.write("    proxies:\n")
@@ -402,9 +402,11 @@ def main():
         f.write("      - 📡 手动选择\n")
         f.write("      - DIRECT\n")
         
-        # 添加规则
+        # 修复规则部分 - 使其兼容Clash Meta
         f.write("\nrules:\n")
+        # 常见的国外网站规则
         f.write("  - DOMAIN-SUFFIX,openai.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,chat.openai.com,🌍 国外网站\n")
         f.write("  - DOMAIN-SUFFIX,google.com,🌍 国外网站\n")
         f.write("  - DOMAIN-SUFFIX,youtube.com,🌍 国外网站\n")
         f.write("  - DOMAIN-SUFFIX,github.com,🌍 国外网站\n")
@@ -412,7 +414,36 @@ def main():
         f.write("  - DOMAIN-SUFFIX,facebook.com,🌍 国外网站\n")
         f.write("  - DOMAIN-SUFFIX,instagram.com,🌍 国外网站\n")
         f.write("  - DOMAIN-SUFFIX,telegram.org,🌍 国外网站\n")
+        
+        # 流媒体服务
+        f.write("  - DOMAIN-SUFFIX,netflix.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,hulu.com,🌍 国外网站\n")
+        f.write("  - DOMAIN-SUFFIX,hbo.com,🌍 国外网站\n")
+        
+        # 中国大陆直连规则
+        f.write("  - DOMAIN-SUFFIX,cn,DIRECT\n")
+        f.write("  - DOMAIN-KEYWORD,china,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,taobao.com,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,baidu.com,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,qq.com,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,163.com,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,sina.com.cn,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,weibo.com,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,zhihu.com,DIRECT\n")
+        f.write("  - DOMAIN-SUFFIX,bilibili.com,DIRECT\n")
+        
+        # IP规则
+        f.write("  - IP-CIDR,10.0.0.0/8,DIRECT\n")
+        f.write("  - IP-CIDR,172.16.0.0/12,DIRECT\n")
+        f.write("  - IP-CIDR,192.168.0.0/16,DIRECT\n")
+        f.write("  - IP-CIDR,127.0.0.0/8,DIRECT\n")
+        
+        # GEOIP规则放在较后位置
+        f.write("  - GEOIP,LAN,DIRECT\n")
         f.write("  - GEOIP,CN,DIRECT\n")
+        
+        # 最终规则
         f.write("  - MATCH,🎯 全局代理\n")
     
     print(f"\n6. 文件生成完成:")
