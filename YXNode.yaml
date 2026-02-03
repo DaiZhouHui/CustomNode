@@ -1,7 +1,7 @@
 port: 7890
 socks-port: 7891
 allow-lan: true
-mode: Rule
+mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
@@ -305,22 +305,7 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-01-104.18.33.45'
-    type: vless
-    server: 104.18.33.45
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '电信优选-03-104.18.39.150'
+  - name: '电信优选-01-104.18.39.150'
     type: vless
     server: 104.18.39.150
     port: 443
@@ -335,7 +320,37 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-04-162.159.41.1'
+  - name: '电信优选-02-172.64.53.1'
+    type: vless
+    server: 172.64.53.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-04-162.159.44.1'
+    type: vless
+    server: 162.159.44.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-05-162.159.41.1'
     type: vless
     server: 162.159.41.1
     port: 443
@@ -350,9 +365,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-01-104.17.7.219'
+  - name: '联通优选-01-104.17.87.149'
     type: vless
-    server: 104.17.7.219
+    server: 104.17.87.149
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -365,9 +380,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-02-104.16.233.185'
+  - name: '联通优选-02-104.16.4.14'
     type: vless
-    server: 104.16.233.185
+    server: 104.16.4.14
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -380,9 +395,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-03-104.17.78.155'
+  - name: '联通优选-03-104.16.235.193'
     type: vless
-    server: 104.17.78.155
+    server: 104.16.235.193
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -410,9 +425,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '联通优选-05-104.16.86.35'
+  - name: '联通优选-05-104.17.221.240'
     type: vless
-    server: 104.16.86.35
+    server: 104.17.221.240
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -425,9 +440,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '移动优选-01-162.159.46.123'
+  - name: '移动优选-01-172.64.41.110'
     type: vless
-    server: 162.159.46.123
+    server: 172.64.41.110
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -440,9 +455,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '移动优选-02-162.159.36.5'
+  - name: '移动优选-02-104.18.37.7'
     type: vless
-    server: 162.159.36.5
+    server: 104.18.37.7
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -455,24 +470,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '移动优选-03-172.64.52.1'
+  - name: '全网优选-01-104.18.33.45'
     type: vless
-    server: 172.64.52.1
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '移动优选-05-172.64.53.1'
-    type: vless
-    server: 172.64.53.1
+    server: 104.18.33.45
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -514,18 +514,18 @@ proxy-groups:
       - '综合优选-18-yg9.ygkkk.dpdns.org'
       - '综合优选-19-162.159.38.1'
       - '综合优选-20-162.159.45.1'
-      - '电信优选-01-104.18.33.45'
-      - '电信优选-03-104.18.39.150'
-      - '电信优选-04-162.159.41.1'
-      - '联通优选-01-104.17.7.219'
-      - '联通优选-02-104.16.233.185'
-      - '联通优选-03-104.17.78.155'
+      - '电信优选-01-104.18.39.150'
+      - '电信优选-02-172.64.53.1'
+      - '电信优选-04-162.159.44.1'
+      - '电信优选-05-162.159.41.1'
+      - '联通优选-01-104.17.87.149'
+      - '联通优选-02-104.16.4.14'
+      - '联通优选-03-104.16.235.193'
       - '联通优选-04-104.16.222.128'
-      - '联通优选-05-104.16.86.35'
-      - '移动优选-01-162.159.46.123'
-      - '移动优选-02-162.159.36.5'
-      - '移动优选-03-172.64.52.1'
-      - '移动优选-05-172.64.53.1'
+      - '联通优选-05-104.17.221.240'
+      - '移动优选-01-172.64.41.110'
+      - '移动优选-02-104.18.37.7'
+      - '全网优选-01-104.18.33.45'
 
   - name: 📡 手动选择
     type: select
@@ -554,20 +554,21 @@ proxy-groups:
       - '综合优选-19-162.159.38.1'
       - '综合优选-20-162.159.45.1'
       - '--- 电信优选 ---'
-      - '电信优选-01-104.18.33.45'
-      - '电信优选-03-104.18.39.150'
-      - '电信优选-04-162.159.41.1'
+      - '电信优选-01-104.18.39.150'
+      - '电信优选-02-172.64.53.1'
+      - '电信优选-04-162.159.44.1'
+      - '电信优选-05-162.159.41.1'
       - '--- 联通优选 ---'
-      - '联通优选-01-104.17.7.219'
-      - '联通优选-02-104.16.233.185'
-      - '联通优选-03-104.17.78.155'
+      - '联通优选-01-104.17.87.149'
+      - '联通优选-02-104.16.4.14'
+      - '联通优选-03-104.16.235.193'
       - '联通优选-04-104.16.222.128'
-      - '联通优选-05-104.16.86.35'
+      - '联通优选-05-104.17.221.240'
       - '--- 移动优选 ---'
-      - '移动优选-01-162.159.46.123'
-      - '移动优选-02-162.159.36.5'
-      - '移动优选-03-172.64.52.1'
-      - '移动优选-05-172.64.53.1'
+      - '移动优选-01-172.64.41.110'
+      - '移动优选-02-104.18.37.7'
+      - '--- 全网优选 ---'
+      - '全网优选-01-104.18.33.45'
 
   - name: 🌍 国外网站
     type: select
@@ -585,6 +586,7 @@ proxy-groups:
 
 rules:
   - DOMAIN-SUFFIX,openai.com,🌍 国外网站
+  - DOMAIN-SUFFIX,chat.openai.com,🌍 国外网站
   - DOMAIN-SUFFIX,google.com,🌍 国外网站
   - DOMAIN-SUFFIX,youtube.com,🌍 国外网站
   - DOMAIN-SUFFIX,github.com,🌍 国外网站
@@ -592,5 +594,24 @@ rules:
   - DOMAIN-SUFFIX,facebook.com,🌍 国外网站
   - DOMAIN-SUFFIX,instagram.com,🌍 国外网站
   - DOMAIN-SUFFIX,telegram.org,🌍 国外网站
+  - DOMAIN-SUFFIX,netflix.com,🌍 国外网站
+  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外网站
+  - DOMAIN-SUFFIX,hulu.com,🌍 国外网站
+  - DOMAIN-SUFFIX,hbo.com,🌍 国外网站
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,china,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,sina.com.cn,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🎯 全局代理
