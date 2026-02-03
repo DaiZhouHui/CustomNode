@@ -1,4 +1,4 @@
-name: 🚀 更新节点仓库主页index.html文件
+name:  更新节点仓库主页
 
 # 工作流描述：此工作流用于自动生成和更新节点仓库的文件目录索引页面
 # 当代码库中的文件发生变化时，自动生成 index.html、update-index.html 和 files_info.json 文件

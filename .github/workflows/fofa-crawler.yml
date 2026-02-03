@@ -1,4 +1,4 @@
-name: FOFA 资源Crawler
+name: FOFA节点 Nodes
 
 on:
   schedule:
