@@ -1,3 +1,7 @@
+# Clash 配置
+# 生成时间: 2026-02-04 00:50:06
+# 节点数量: 19
+
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -31,10 +35,10 @@ dns:
 proxies:
 - name: "自选0204-01-443-65.52.166.224"
     type: vless
-    server: 65.52.166.224
+    server: "65.52.166.224"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -50,10 +54,10 @@ proxies:
 
   - name: "自选0204-01-443-150.109.79.153"
     type: vless
-    server: 150.109.79.153
+    server: "150.109.79.153"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -69,10 +73,10 @@ proxies:
 
   - name: "自选0204-01-443-27.50.49.219"
     type: vless
-    server: 27.50.49.219
+    server: "27.50.49.219"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -88,10 +92,10 @@ proxies:
 
   - name: "自选0204-01-443-156.245.188.19"
     type: vless
-    server: 156.245.188.19
+    server: "156.245.188.19"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -107,10 +111,10 @@ proxies:
 
   - name: "自选0204-01-443-38.181.47.213"
     type: vless
-    server: 38.181.47.213
+    server: "38.181.47.213"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -126,10 +130,10 @@ proxies:
 
   - name: "自选0204-01-443-8.212.15.77"
     type: vless
-    server: 8.212.15.77
+    server: "8.212.15.77"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -145,10 +149,10 @@ proxies:
 
   - name: "自选0204-01-443-103.7.55.188"
     type: vless
-    server: 103.7.55.188
+    server: "103.7.55.188"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -164,10 +168,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-47.75.203.164"
     type: vless
-    server: 47.75.203.164
+    server: "47.75.203.164"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -183,10 +187,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-20.189.91.218"
     type: vless
-    server: 20.189.91.218
+    server: "20.189.91.218"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -202,10 +206,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-154.211.8.59"
     type: vless
-    server: 154.211.8.59
+    server: "154.211.8.59"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -221,10 +225,10 @@ proxies:
 
   - name: "香港节点-0131-02-443-154.211.8.58"
     type: vless
-    server: 154.211.8.58
+    server: "154.211.8.58"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -240,10 +244,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-27.50.49.9"
     type: vless
-    server: 27.50.49.9
+    server: "27.50.49.9"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -259,10 +263,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-103.17.116.115"
     type: vless
-    server: 103.17.116.115
+    server: "103.17.116.115"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -278,10 +282,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-47.242.45.175"
     type: vless
-    server: 47.242.45.175
+    server: "47.242.45.175"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -297,10 +301,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-210.0.244.3"
     type: vless
-    server: 210.0.244.3
+    server: "210.0.244.3"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -316,10 +320,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-149.104.2.58"
     type: vless
-    server: 149.104.2.58
+    server: "149.104.2.58"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -335,10 +339,10 @@ proxies:
 
   - name: "香港节点-0131-02-443-149.104.2.140"
     type: vless
-    server: 149.104.2.140
+    server: "149.104.2.140"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -354,10 +358,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-47.76.127.217"
     type: vless
-    server: 47.76.127.217
+    server: "47.76.127.217"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
@@ -373,10 +377,10 @@ proxies:
 
   - name: "香港节点-0131-01-443-103.7.54.160"
     type: vless
-    server: 103.7.54.160
+    server: "103.7.54.160"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
     tls: True
     servername: "knny.dpdns.org"
     fingerprint: "chrome"
