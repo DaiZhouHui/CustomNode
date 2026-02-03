@@ -174,6 +174,165 @@ def get_unique_nodes(nodes):
     
     return unique_nodes
 
+def generate_clash_config(unique_nodes, vless_config):
+    """生成Clash配置文件"""
+    
+    # 按分类组织节点
+    categories = ["综合优选", "电信优选", "联通优选", "移动优选", "全网优选"]
+    category_nodes = {}
+    
+    for node in unique_nodes:
+        try:
+            description = node.split("#")[1]
+            for category in categories:
+                if description.startswith(category):
+                    if category not in category_nodes:
+                        category_nodes[category] = []
+                    category_nodes[category].append(description)
+                    break
+        except:
+            continue
+    
+    with open("YXNode.yaml", "w", encoding="utf-8") as f:
+        f.write("port: 7890\n")
+        f.write("socks-port: 7891\n")
+        f.write("allow-lan: true\n")
+        f.write("mode: rule\n")
+        f.write("log-level: info\n")
+        f.write("external-controller: 127.0.0.1:9090\n")
+        f.write("proxies:\n")
+        
+        for node in unique_nodes:
+            try:
+                parts = node.split("#")
+                description = parts[1]
+                base_url = parts[0].replace("vless://", "")
+                
+                uuid_server = base_url.split("@")[0]
+                server_port = base_url.split("@")[1].split("?")[0]
+                server = server_port.split(":")[0]
+                
+                params_str = node.split("?")[1].split("#")[0]
+                params = dict(param.split("=") for param in params_str.split("&"))
+                
+                f.write(f"  - name: '{description}'\n")
+                f.write(f"    type: vless\n")
+                f.write(f"    server: {server}\n")
+                f.write(f"    port: {vless_config['port']}\n")
+                f.write(f"    uuid: {uuid_server}\n")
+                f.write(f"    cipher: none\n")
+                f.write(f"    tls: true\n")
+                f.write(f"    servername: {params.get('sni', vless_config.get('sni', 'knny.dpdns.org'))}\n")
+                f.write(f"    network: {params.get('type', 'ws')}\n")
+                f.write(f"    ws-opts:\n")
+                f.write(f"      path: \"{params.get('path', vless_config['path'])}\"\n")
+                f.write(f"      headers:\n")
+                f.write(f"        Host: {params.get('host', vless_config['domain'])}\n")
+                f.write(f"    udp: true\n\n")
+            except Exception as e:
+                print(f"生成Clash配置时跳过节点: {e}")
+                continue
+        
+        # 添加代理组
+        f.write("\nproxy-groups:\n")
+        
+        # 1. 自动选择组
+        f.write("  - name: 🚀 自动选择\n")
+        f.write("    type: url-test\n")
+        f.write("    url: http://www.gstatic.com/generate_204\n")
+        f.write("    interval: 300\n")
+        f.write("    tolerance: 50\n")
+        f.write("    lazy: true\n")
+        f.write("    proxies:\n")
+        for node in unique_nodes:
+            try:
+                description = node.split("#")[1]
+                f.write(f"      - '{description}'\n")
+            except:
+                continue
+        
+        # 2. 手动选择组
+        f.write("\n  - name: 📡 手动选择\n")
+        f.write("    type: select\n")
+        f.write("    proxies:\n")
+        f.write("      - 🚀 自动选择\n")
+        f.write("      - DIRECT\n")
+        
+        # 3. 为每个分类创建单独的代理组
+        for category in categories:
+            if category in category_nodes and category_nodes[category]:
+                f.write(f"\n  - name: {category}\n")
+                f.write("    type: select\n")
+                f.write("    proxies:\n")
+                for node_name in category_nodes[category]:
+                    f.write(f"      - '{node_name}'\n")
+        
+        # 4. 国外网站组
+        f.write("\n  - name: 🌍 国外网站\n")
+        f.write("    type: select\n")
+        f.write("    proxies:\n")
+        f.write("      - 🚀 自动选择\n")
+        f.write("      - 📡 手动选择\n")
+        for category in categories:
+            if category in category_nodes and category_nodes[category]:
+                f.write(f"      - {category}\n")
+        f.write("      - DIRECT\n")
+        
+        # 5. 全局代理组
+        f.write("\n  - name: 🎯 全局代理\n")
+        f.write("    type: select\n")
+        f.write("    proxies:\n")
+        f.write("      - 🚀 自动选择\n")
+        f.write("      - 📡 手动选择\n")
+        for category in categories:
+            if category in category_nodes and category_nodes[category]:
+                f.write(f"      - {category}\n")
+        f.write("      - DIRECT\n")
+        
+        # 添加规则
+        f.write("\nrules:\n")
+        # 读取rules.txt文件（如果存在）
+        try:
+            with open('rules.txt', 'r', encoding='utf-8') as rules_file:
+                for line in rules_file:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        f.write(f"{line}\n")
+                print("已从rules.txt加载自定义规则")
+        except FileNotFoundError:
+            print("rules.txt文件未找到，使用默认规则")
+            # 默认规则
+            f.write("  - DOMAIN-SUFFIX,openai.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,chat.openai.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,google.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,youtube.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,github.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,twitter.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,facebook.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,instagram.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,telegram.org,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,netflix.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,hulu.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,hbo.com,🌍 国外网站\n")
+            f.write("  - DOMAIN-SUFFIX,cn,DIRECT\n")
+            f.write("  - DOMAIN-KEYWORD,china,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,taobao.com,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,baidu.com,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,qq.com,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,163.com,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,sina.com.cn,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,weibo.com,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,zhihu.com,DIRECT\n")
+            f.write("  - DOMAIN-SUFFIX,bilibili.com,DIRECT\n")
+            f.write("  - IP-CIDR,10.0.0.0/8,DIRECT\n")
+            f.write("  - IP-CIDR,172.16.0.0/12,DIRECT\n")
+            f.write("  - IP-CIDR,192.168.0.0/16,DIRECT\n")
+            f.write("  - IP-CIDR,127.0.0.0/8,DIRECT\n")
+            f.write("  - GEOIP,LAN,DIRECT\n")
+            f.write("  - GEOIP,CN,DIRECT\n")
+            f.write("  - MATCH,🎯 全局代理\n")
+
 def main():
     print("=" * 60)
     print("Cloudflare优选IP节点生成器")
@@ -283,295 +442,14 @@ def main():
     # 生成明文节点文件
     print(f"\n5. 生成节点文件...")
     with open("YXNode", "w", encoding="utf-8") as f:
-        # f.write(f"# Cloudflare优选IP节点\n")
-        # f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
-        # f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
-        # f.write(f"# 总数: {len(unique_nodes)} 个\n")
-        # f.write("#" * 70 + "\n\n")
         for node in unique_nodes:
             f.write(node + "\n")
-            
+    
     # 生成Clash配置文件
-    with open("YXNode.yaml", "w", encoding="utf-8") as f:
-        # f.write(f"# Cloudflare优选IP Clash配置\n")
-        # f.write(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
-        # f.write(f"# 配置说明: address=API获取IP, host=knny.dpdns.org, sni=knny.dpdns.org\n")
-        # f.write(f"# 节点总数: {len(unique_nodes)} 个\n")
-        f.write("port: 7890\n")
-        f.write("socks-port: 7891\n")
-        f.write("allow-lan: true\n")
-        f.write("mode: rule\n")
-        f.write("log-level: info\n")
-        f.write("external-controller: 127.0.0.1:9090\n")
-        f.write("proxies:\n")
-        
-        for node in unique_nodes:
-            try:
-                # 从VLESS链接中提取信息
-                parts = node.split("#")
-                description = parts[1]
-                base_url = parts[0].replace("vless://", "")
-                
-                uuid_server = base_url.split("@")[0]
-                server_port = base_url.split("@")[1].split("?")[0]
-                server = server_port.split(":")[0]
-                
-                # 解析参数
-                params_str = node.split("?")[1].split("#")[0]
-                params = dict(param.split("=") for param in params_str.split("&"))
-                
-                # 写入Clash配置
-                f.write(f"  - name: '{description}'\n")
-                f.write(f"    type: vless\n")
-                f.write(f"    server: {server}\n")
-                f.write(f"    port: {vless_config['port']}\n")
-                f.write(f"    uuid: {uuid_server}\n")
-                f.write(f"    cipher: none\n")
-                f.write(f"    tls: true\n")
-                f.write(f"    servername: {params.get('sni', vless_config.get('sni', 'knny.dpdns.org'))}\n")
-                f.write(f"    network: {params.get('type', 'ws')}\n")
-                f.write(f"    ws-opts:\n")
-                f.write(f"      path: \"{params.get('path', vless_config['path'])}\"\n")
-                f.write(f"      headers:\n")
-                f.write(f"        Host: {params.get('host', vless_config['domain'])}\n")
-                f.write(f"    udp: true\n\n")
-            except Exception as e:
-                print(f"生成Clash配置时跳过节点: {e}")
-                continue
-        
-        # 添加代理组
-        f.write("\nproxy-groups:\n")
-        f.write("  - name: 🚀 自动选择\n")
-        f.write("    type: url-test\n")
-        f.write("    url: http://www.gstatic.com/generate_204\n")
-        f.write("    interval: 300\n")
-        f.write("    tolerance: 50\n")
-        f.write("    lazy: true\n")
-        f.write("    proxies:\n")
-        
-        for node in unique_nodes:
-            try:
-                description = node.split("#")[1]
-                f.write(f"      - '{description}'\n")
-            except:
-                continue
-        
-        # 添加手动选择组 - 移除分隔线
-        f.write("\n  - name: 📡 手动选择\n")
-        f.write("    type: select\n")
-        f.write("    proxies:\n")
-        f.write("      - 🚀 自动选择\n")
-        f.write("      - DIRECT\n")
-        
-        # 按分类添加节点 - 不要添加分隔线
-        categories = ["综合优选", "电信优选", "联通优选", "移动优选", "全网优选"]
-        
-        # 先统计每个分类有哪些节点
-        category_nodes = {}
-        for node in unique_nodes:
-            try:
-                description = node.split("#")[1]
-                for category in categories:
-                    if description.startswith(category):
-                        if category not in category_nodes:
-                            category_nodes[category] = []
-                        category_nodes[category].append(description)
-                        break
-            except:
-                continue
-        
-        # 为每个有节点的分类添加代理组
-        for category in categories:
-            if category in category_nodes and category_nodes[category]:
-                # 为该分类创建一个专门的代理组
-                f.write(f"\n  - name: {category}\n")
-                f.write("    type: select\n")
-                f.write("    proxies:\n")
-                # 添加该分类下的所有节点
-                for node_name in category_nodes[category]:
-                    f.write(f"      - '{node_name}'\n")
-                
-                # 在手动手动选择组中添加这个分类组
-                f.seek(0, 2)  # 移动到文件末尾
-                pos = f.tell()
-                # 我们需要重新定位到手动选择组的位置添加这个分类组
-                # 更简单的方法：我们可以在后面再添加
-                # 先写到这里，稍后我们再调整
-        
-        # 重新定位到手动选择组添加分类组引用
-        # 由于文件已经写入，我们需要重新组织生成逻辑
-        # 这里提供修复方案：先生成所有代理组，再生成手动选择组
-        
-    # 由于上面的代码已经写到文件，我们需要重新组织
-    # 下面是完整的修复方案
-
-# 更好的解决方案：重新设计生成逻辑
-def generate_clash_config(unique_nodes, vless_config):
-    """生成Clash配置文件"""
-    
-    # 按分类组织节点
-    categories = ["综合优选", "电信优选", "联通优选", "移动优选", "全网优选"]
-    category_nodes = {}
-    
-    for node in unique_nodes:
-        try:
-            description = node.split("#")[1]
-            for category in categories:
-                if description.startswith(category):
-                    if category not in category_nodes:
-                        category_nodes[category] = []
-                    category_nodes[category].append(description)
-                    break
-        except:
-            continue
-    
-    with open("YXNode.yaml", "w", encoding="utf-8") as f:
-        f.write("port: 7890\n")
-        f.write("socks-port: 7891\n")
-        f.write("allow-lan: true\n")
-        f.write("mode: rule\n")
-        f.write("log-level: info\n")
-        f.write("external-controller: 127.0.0.1:9090\n")
-        f.write("proxies:\n")
-        
-        for node in unique_nodes:
-            try:
-                parts = node.split("#")
-                description = parts[1]
-                base_url = parts[0].replace("vless://", "")
-                
-                uuid_server = base_url.split("@")[0]
-                server_port = base_url.split("@")[1].split("?")[0]
-                server = server_port.split(":")[0]
-                
-                params_str = node.split("?")[1].split("#")[0]
-                params = dict(param.split("=") for param in params_str.split("&"))
-                
-                f.write(f"  - name: '{description}'\n")
-                f.write(f"    type: vless\n")
-                f.write(f"    server: {server}\n")
-                f.write(f"    port: {vless_config['port']}\n")
-                f.write(f"    uuid: {uuid_server}\n")
-                f.write(f"    cipher: none\n")
-                f.write(f"    tls: true\n")
-                f.write(f"    servername: {params.get('sni', vless_config.get('sni', 'knny.dpdns.org'))}\n")
-                f.write(f"    network: {params.get('type', 'ws')}\n")
-                f.write(f"    ws-opts:\n")
-                f.write(f"      path: \"{params.get('path', vless_config['path'])}\"\n")
-                f.write(f"      headers:\n")
-                f.write(f"        Host: {params.get('host', vless_config['domain'])}\n")
-                f.write(f"    udp: true\n\n")
-            except Exception as e:
-                print(f"生成Clash配置时跳过节点: {e}")
-                continue
-        
-        # 添加代理组
-        f.write("\nproxy-groups:\n")
-        
-        # 1. 自动选择组
-        f.write("  - name: 🚀 自动选择\n")
-        f.write("    type: url-test\n")
-        f.write("    url: http://www.gstatic.com/generate_204\n")
-        f.write("    interval: 300\n")
-        f.write("    tolerance: 50\n")
-        f.write("    lazy: true\n")
-        f.write("    proxies:\n")
-        for node in unique_nodes:
-            try:
-                description = node.split("#")[1]
-                f.write(f"      - '{description}'\n")
-            except:
-                continue
-        
-        # 2. 手动选择组 - 只包含自动选择和直连
-        f.write("\n  - name: 📡 手动选择\n")
-        f.write("    type: select\n")
-        f.write("    proxies:\n")
-        f.write("      - 🚀 自动选择\n")
-        f.write("      - DIRECT\n")
-        
-        # 3. 为每个分类创建单独的代理组
-        for category in categories:
-            if category in category_nodes and category_nodes[category]:
-                f.write(f"\n  - name: {category}\n")
-                f.write("    type: select\n")
-                f.write("    proxies:\n")
-                for node_name in category_nodes[category]:
-                    f.write(f"      - '{node_name}'\n")
-                
-                # 把这个分类组添加到手动选择组中
-                # 我们需要重新定位到手动选择组的位置
-                # 更简单的方法：我们先创建分类组，然后在手动选择组中引用
-        
-        # 4. 国外网站组
-        f.write("\n  - name: 🌍 国外网站\n")
-        f.write("    type: select\n")
-        f.write("    proxies:\n")
-        f.write("      - 🚀 自动选择\n")
-        f.write("      - 📡 手动选择\n")
-        for category in categories:
-            if category in category_nodes and category_nodes[category]:
-                f.write(f"      - {category}\n")
-        f.write("      - DIRECT\n")
-        
-        # 5. 全局代理组
-        f.write("\n  - name: 🎯 全局代理\n")
-        f.write("    type: select\n")
-        f.write("    proxies:\n")
-        f.write("      - 🚀 自动选择\n")
-        f.write("      - 📡 手动选择\n")
-        for category in categories:
-            if category in category_nodes and category_nodes[category]:
-                f.write(f"      - {category}\n")
-        f.write("      - DIRECT\n")
-        
-        # 添加规则
-        f.write("\nrules:\n")
-        f.write("  - DOMAIN-SUFFIX,openai.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,chat.openai.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,google.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,youtube.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,github.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,twitter.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,facebook.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,instagram.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,telegram.org,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,netflix.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,hulu.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,hbo.com,🌍 国外网站\n")
-        f.write("  - DOMAIN-SUFFIX,cn,DIRECT\n")
-        f.write("  - DOMAIN-KEYWORD,china,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,taobao.com,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,baidu.com,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,qq.com,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,163.com,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,sina.com.cn,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,weibo.com,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,zhihu.com,DIRECT\n")
-        f.write("  - DOMAIN-SUFFIX,bilibili.com,DIRECT\n")
-        f.write("  - IP-CIDR,10.0.0.0/8,DIRECT\n")
-        f.write("  - IP-CIDR,172.16.0.0/12,DIRECT\n")
-        f.write("  - IP-CIDR,192.168.0.0/16,DIRECT\n")
-        f.write("  - IP-CIDR,127.0.0.0/8,DIRECT\n")
-        f.write("  - GEOIP,LAN,DIRECT\n")
-        f.write("  - GEOIP,CN,DIRECT\n")
-        f.write("  - MATCH,🎯 全局代理\n")
-
-# 然后在 main 函数中调用这个函数
-def main():
-    # ... 前面的代码保持不变，直到生成节点文件 ...
-    
-    # 生成明文节点文件
-    print(f"\n5. 生成节点文件...")
-    with open("YXNode", "w", encoding="utf-8") as f:
-        for node in unique_nodes:
-            f.write(node + "\n")
-    
-    # 使用新的函数生成Clash配置
+    print(f"\n6. 生成Clash配置文件...")
     generate_clash_config(unique_nodes, vless_config)
     
-    print(f"\n6. 文件生成完成:")
+    print(f"\n7. 文件生成完成:")
     print(f"   ✅ YXNode - {len(unique_nodes)} 个明文节点链接")
     print(f"   ✅ YXNode.yaml - Clash配置文件")
     print(f"\n节点配置说明:")
@@ -582,6 +460,10 @@ def main():
     print(f"   • Path: {vless_config['path']}")
     print(f"\n节点名称格式: 运营商-序号-地址")
     print(f"示例: 综合优选-01-cf.130519.xyz")
+    print("\n使用说明:")
+    print(f"   1. 将 YXNode 中的链接导入支持VLESS的客户端")
+    print(f"   2. 将 YXNode.yaml 导入Clash客户端")
+    print(f"   3. 如需自定义规则，在同目录创建rules.txt文件")
     print("=" * 60)
 
 if __name__ == "__main__":
