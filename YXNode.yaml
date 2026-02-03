@@ -305,142 +305,7 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '电信优选-02-172.64.53.1'
-    type: vless
-    server: 172.64.53.1
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '电信优选-04-162.159.36.5'
-    type: vless
-    server: 162.159.36.5
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '联通优选-01-104.17.6.103'
-    type: vless
-    server: 104.17.6.103
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '联通优选-02-104.16.186.7'
-    type: vless
-    server: 104.16.186.7
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '联通优选-03-104.16.235.193'
-    type: vless
-    server: 104.16.235.193
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '联通优选-04-104.17.87.149'
-    type: vless
-    server: 104.17.87.149
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '联通优选-05-104.16.166.43'
-    type: vless
-    server: 104.16.166.43
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '移动优选-04-162.159.41.1'
-    type: vless
-    server: 162.159.41.1
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '移动优选-05-104.18.46.111'
-    type: vless
-    server: 104.18.46.111
-    port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    cipher: none
-    tls: true
-    servername: knny.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: knny.dpdns.org
-    udp: true
-
-  - name: '全网优选-01-162.159.44.1'
+  - name: '电信优选-02-162.159.44.1'
     type: vless
     server: 162.159.44.1
     port: 443
@@ -455,9 +320,9 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '全网优选-02-104.18.37.7'
+  - name: '电信优选-03-162.159.41.1'
     type: vless
-    server: 104.18.37.7
+    server: 162.159.41.1
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -470,9 +335,144 @@ proxies:
         Host: knny.dpdns.org
     udp: true
 
-  - name: '全网优选-04-172.64.52.1'
+  - name: '电信优选-04-104.18.35.200'
     type: vless
-    server: 172.64.52.1
+    server: 104.18.35.200
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '电信优选-05-104.18.44.64'
+    type: vless
+    server: 104.18.44.64
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '联通优选-01-104.17.107.72'
+    type: vless
+    server: 104.17.107.72
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '联通优选-02-104.19.234.24'
+    type: vless
+    server: 104.19.234.24
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '联通优选-03-104.17.74.17'
+    type: vless
+    server: 104.17.74.17
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '联通优选-04-104.17.6.103'
+    type: vless
+    server: 104.17.6.103
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '联通优选-05-104.16.222.128'
+    type: vless
+    server: 104.16.222.128
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '移动优选-02-162.159.36.5'
+    type: vless
+    server: 162.159.36.5
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '移动优选-03-104.18.40.189'
+    type: vless
+    server: 104.18.40.189
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    cipher: none
+    tls: true
+    servername: knny.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: knny.dpdns.org
+    udp: true
+
+  - name: '全网优选-05-162.159.46.123'
+    type: vless
+    server: 162.159.46.123
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     cipher: none
@@ -514,18 +514,18 @@ proxy-groups:
       - '综合优选-18-yg9.ygkkk.dpdns.org'
       - '综合优选-19-162.159.38.1'
       - '综合优选-20-162.159.45.1'
-      - '电信优选-02-172.64.53.1'
-      - '电信优选-04-162.159.36.5'
-      - '联通优选-01-104.17.6.103'
-      - '联通优选-02-104.16.186.7'
-      - '联通优选-03-104.16.235.193'
-      - '联通优选-04-104.17.87.149'
-      - '联通优选-05-104.16.166.43'
-      - '移动优选-04-162.159.41.1'
-      - '移动优选-05-104.18.46.111'
-      - '全网优选-01-162.159.44.1'
-      - '全网优选-02-104.18.37.7'
-      - '全网优选-04-172.64.52.1'
+      - '电信优选-02-162.159.44.1'
+      - '电信优选-03-162.159.41.1'
+      - '电信优选-04-104.18.35.200'
+      - '电信优选-05-104.18.44.64'
+      - '联通优选-01-104.17.107.72'
+      - '联通优选-02-104.19.234.24'
+      - '联通优选-03-104.17.74.17'
+      - '联通优选-04-104.17.6.103'
+      - '联通优选-05-104.16.222.128'
+      - '移动优选-02-162.159.36.5'
+      - '移动优选-03-104.18.40.189'
+      - '全网优选-05-162.159.46.123'
 
   - name: 📡 手动选择
     type: select
@@ -554,21 +554,21 @@ proxy-groups:
       - '综合优选-19-162.159.38.1'
       - '综合优选-20-162.159.45.1'
       - '--- 电信优选 ---'
-      - '电信优选-02-172.64.53.1'
-      - '电信优选-04-162.159.36.5'
+      - '电信优选-02-162.159.44.1'
+      - '电信优选-03-162.159.41.1'
+      - '电信优选-04-104.18.35.200'
+      - '电信优选-05-104.18.44.64'
       - '--- 联通优选 ---'
-      - '联通优选-01-104.17.6.103'
-      - '联通优选-02-104.16.186.7'
-      - '联通优选-03-104.16.235.193'
-      - '联通优选-04-104.17.87.149'
-      - '联通优选-05-104.16.166.43'
+      - '联通优选-01-104.17.107.72'
+      - '联通优选-02-104.19.234.24'
+      - '联通优选-03-104.17.74.17'
+      - '联通优选-04-104.17.6.103'
+      - '联通优选-05-104.16.222.128'
       - '--- 移动优选 ---'
-      - '移动优选-04-162.159.41.1'
-      - '移动优选-05-104.18.46.111'
+      - '移动优选-02-162.159.36.5'
+      - '移动优选-03-104.18.40.189'
       - '--- 全网优选 ---'
-      - '全网优选-01-162.159.44.1'
-      - '全网优选-02-104.18.37.7'
-      - '全网优选-04-172.64.52.1'
+      - '全网优选-05-162.159.46.123'
 
   - name: 🌍 国外网站
     type: select
