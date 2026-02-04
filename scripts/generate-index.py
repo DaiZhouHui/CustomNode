@@ -2186,14 +2186,14 @@ def generate_table_row(file_info: Dict) -> str:
         <td><span class="status-badge {status_class}">{status_text}</span></td>
         <td>
             <div class="link-buttons">
-                {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['node_pages']}', this)\" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>" if file_info['node_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无节点文件</span>"}
+                {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['node_pages']}', this)\" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>" if file_info['node_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无节点文件</span>"}
                 {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['node_raw']}', this)\" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>" if file_info['node_raw'] else ""}
             </div>
         </td>
         <td>
             <div class="link-buttons">
                 {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['yaml_pages']}', this)\" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>" if file_info['yaml_pages'] else "<span style='color:#94a3b8;font-size:13px;'>无配置文件</span>"}
-                {f"<button class='link-btn btn-raw' onclick=\"copyToClipboard('{file_info['yaml_raw']}', this)\" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>" if file_info['yaml_raw'] else ""}
+                {f"<button class='link-btn btn-pages' onclick=\"copyToClipboard('{file_info['yaml_raw']}', this)\" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>" if file_info['yaml_raw'] else ""}
             </div>
         </td>
         <td>
@@ -2210,7 +2210,6 @@ def generate_table_row(file_info: Dict) -> str:
         </td>
     </tr>
     """
-
 def generate_update_page() -> str:
     """生成简洁实用的更新页面 - 左右布局版本"""
     return '''<!DOCTYPE html>
