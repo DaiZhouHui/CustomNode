@@ -1,406 +1,613 @@
+# Clash 配置
+# 生成时间: "2026-02-03 23:00:13"
+# 节点数量: 28
+
 mixed-port: 7890
 socks-port: 7891
-redir-port: 7892
-tproxy-port: 7895
 allow-lan: true
-bind-address: '*'
 mode: rule
 log-level: info
-ipv6: false
-external-controller: 127.0.0.1:9090
-external-ui: dashboard
-secret: ""
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  nameserver:
-    - 8.8.8.8
-    - 114.114.114.114
-    - 223.5.5.5
-  fallback:
-    - 1.1.1.1
-    - 8.8.4.4
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
+external-controller: "127.0.0.1:9090"
 
 proxies:
-- name: 香港节点-0202-01-443-65.52.166.224
+  - name: "香港节点-0203-01-443-52.184.103.79"
     type: vless
-    server: 65.52.166.224
+    server: "52.184.103.79"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0202-01-443-150.109.79.153
+  - name: "香港节点-0203-01-443-16.162.24.239"
     type: vless
-    server: 150.109.79.153
+    server: "16.162.24.239"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0202-01-443-27.50.49.219
+  - name: "香港节点-0203-01-443-14.128.47.57"
     type: vless
-    server: 27.50.49.219
+    server: "14.128.47.57"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0202-01-443-156.245.188.19
+  - name: "香港节点-0203-01-443-14.199.231.236"
     type: vless
-    server: 156.245.188.19
+    server: "14.199.231.236"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0202-01-443-38.181.47.213
+  - name: "香港节点-0203-01-443-16.163.147.103"
     type: vless
-    server: 38.181.47.213
+    server: "16.163.147.103"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0202-01-443-8.212.15.77
+  - name: "香港节点-0203-01-443-20.24.68.59"
     type: vless
-    server: 8.212.15.77
+    server: "20.24.68.59"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0202-01-443-103.7.55.188
+  - name: "香港节点-0203-02-443-16.162.189.54"
     type: vless
-    server: 103.7.55.188
+    server: "16.162.189.54"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-47.75.203.164
+  - name: "香港节点-0203-01-443-18.167.62.181"
     type: vless
-    server: 47.75.203.164
+    server: "18.167.62.181"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-20.189.91.218
+  - name: "香港节点-0203-01-443-18.163.244.153"
     type: vless
-    server: 20.189.91.218
+    server: "18.163.244.153"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-154.211.8.59
+  - name: "自选0204-01-443-65.52.166.224"
     type: vless
-    server: 154.211.8.59
+    server: "65.52.166.224"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-02-443-154.211.8.58
+  - name: "自选0204-01-443-150.109.79.153"
     type: vless
-    server: 154.211.8.58
+    server: "150.109.79.153"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-27.50.49.9
+  - name: "自选0204-01-443-27.50.49.219"
     type: vless
-    server: 27.50.49.9
+    server: "27.50.49.219"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-103.17.116.115
+  - name: "自选0204-01-443-156.245.188.19"
     type: vless
-    server: 103.17.116.115
+    server: "156.245.188.19"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-47.242.45.175
+  - name: "自选0204-01-443-38.181.47.213"
     type: vless
-    server: 47.242.45.175
+    server: "38.181.47.213"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-210.0.244.3
+  - name: "自选0204-01-443-8.212.15.77"
     type: vless
-    server: 210.0.244.3
+    server: "8.212.15.77"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-149.104.2.58
+  - name: "自选0204-01-443-103.7.55.188"
     type: vless
-    server: 149.104.2.58
+    server: "103.7.55.188"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-02-443-149.104.2.140
+  - name: "香港节点-0131-01-443-47.75.203.164"
     type: vless
-    server: 149.104.2.140
+    server: "47.75.203.164"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-47.76.127.217
+  - name: "香港节点-0131-01-443-20.189.91.218"
     type: vless
-    server: 47.76.127.217
+    server: "20.189.91.218"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
 
-  - name: 香港节点-0131-01-443-103.7.54.160
+  - name: "香港节点-0131-01-443-154.211.8.59"
     type: vless
-    server: 103.7.54.160
+    server: "154.211.8.59"
     port: 443
-    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
-    network: ws
-    tls: True
-    servername: knny.dpdns.org
-    fingerprint: chrome
-    alpn: ['h2', 'http/1.1']
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
     ws-opts:
       path: "/?ed=2048"
       headers:
         Host: "knny.dpdns.org"
-    udp: True
-    skip-cert-verify: False
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-02-443-154.211.8.58"
+    type: vless
+    server: "154.211.8.58"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-27.50.49.9"
+    type: vless
+    server: "27.50.49.9"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-103.17.116.115"
+    type: vless
+    server: "103.17.116.115"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-47.242.45.175"
+    type: vless
+    server: "47.242.45.175"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-210.0.244.3"
+    type: vless
+    server: "210.0.244.3"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-149.104.2.58"
+    type: vless
+    server: "149.104.2.58"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-02-443-149.104.2.140"
+    type: vless
+    server: "149.104.2.140"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-47.76.127.217"
+    type: vless
+    server: "47.76.127.217"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
+  - name: "香港节点-0131-01-443-103.7.54.160"
+    type: vless
+    server: "103.7.54.160"
+    port: 443
+    uuid: "471a8e64-7b21-4703-b1d1-45a221098459"
+    network: "ws"
+    tls: true
+    servername: "knny.dpdns.org"
+    fingerprint: "chrome"
+    alpn:
+      - "h2"
+      - "http/1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+    udp: true
+    skip-cert-verify: false
+
 
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-- 香港节点-0202-01-443-65.52.166.224
-      - 香港节点-0202-01-443-150.109.79.153
-      - 香港节点-0202-01-443-27.50.49.219
-      - 香港节点-0202-01-443-156.245.188.19
-      - 香港节点-0202-01-443-38.181.47.213
-      - 香港节点-0202-01-443-8.212.15.77
-      - 香港节点-0202-01-443-103.7.55.188
-      - 香港节点-0131-01-443-47.75.203.164
-      - 香港节点-0131-01-443-20.189.91.218
-      - 香港节点-0131-01-443-154.211.8.59
-      - 香港节点-0131-02-443-154.211.8.58
-      - 香港节点-0131-01-443-27.50.49.9
-      - 香港节点-0131-01-443-103.17.116.115
-      - 香港节点-0131-01-443-47.242.45.175
-      - 香港节点-0131-01-443-210.0.244.3
-      - 香港节点-0131-01-443-149.104.2.58
-      - 香港节点-0131-02-443-149.104.2.140
-      - 香港节点-0131-01-443-47.76.127.217
-      - 香港节点-0131-01-443-103.7.54.160
+      - "香港节点-0203-01-443-52.184.103.79"
+      - "香港节点-0203-01-443-16.162.24.239"
+      - "香港节点-0203-01-443-14.128.47.57"
+      - "香港节点-0203-01-443-14.199.231.236"
+      - "香港节点-0203-01-443-16.163.147.103"
+      - "香港节点-0203-01-443-20.24.68.59"
+      - "香港节点-0203-02-443-16.162.189.54"
+      - "香港节点-0203-01-443-18.167.62.181"
+      - "香港节点-0203-01-443-18.163.244.153"
+      - "自选0204-01-443-65.52.166.224"
+      - "自选0204-01-443-150.109.79.153"
+      - "自选0204-01-443-27.50.49.219"
+      - "自选0204-01-443-156.245.188.19"
+      - "自选0204-01-443-38.181.47.213"
+      - "自选0204-01-443-8.212.15.77"
+      - "自选0204-01-443-103.7.55.188"
+      - "香港节点-0131-01-443-47.75.203.164"
+      - "香港节点-0131-01-443-20.189.91.218"
+      - "香港节点-0131-01-443-154.211.8.59"
+      - "香港节点-0131-02-443-154.211.8.58"
+      - "香港节点-0131-01-443-27.50.49.9"
+      - "香港节点-0131-01-443-103.17.116.115"
+      - "香港节点-0131-01-443-47.242.45.175"
+      - "香港节点-0131-01-443-210.0.244.3"
+      - "香港节点-0131-01-443-149.104.2.58"
+      - "香港节点-0131-02-443-149.104.2.140"
+      - "香港节点-0131-01-443-47.76.127.217"
+      - "香港节点-0131-01-443-103.7.54.160"
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: "http://www.gstatic.com/generate_204"
     interval: 300
-    tolerance: 50
-    lazy: true
     proxies:
-- 香港节点-0202-01-443-65.52.166.224
-      - 香港节点-0202-01-443-150.109.79.153
-      - 香港节点-0202-01-443-27.50.49.219
-      - 香港节点-0202-01-443-156.245.188.19
-      - 香港节点-0202-01-443-38.181.47.213
-      - 香港节点-0202-01-443-8.212.15.77
-      - 香港节点-0202-01-443-103.7.55.188
-      - 香港节点-0131-01-443-47.75.203.164
-      - 香港节点-0131-01-443-20.189.91.218
-      - 香港节点-0131-01-443-154.211.8.59
-      - 香港节点-0131-02-443-154.211.8.58
-      - 香港节点-0131-01-443-27.50.49.9
-      - 香港节点-0131-01-443-103.17.116.115
-      - 香港节点-0131-01-443-47.242.45.175
-      - 香港节点-0131-01-443-210.0.244.3
-      - 香港节点-0131-01-443-149.104.2.58
-      - 香港节点-0131-02-443-149.104.2.140
-      - 香港节点-0131-01-443-47.76.127.217
-      - 香港节点-0131-01-443-103.7.54.160
+      - "香港节点-0203-01-443-52.184.103.79"
+      - "香港节点-0203-01-443-16.162.24.239"
+      - "香港节点-0203-01-443-14.128.47.57"
+      - "香港节点-0203-01-443-14.199.231.236"
+      - "香港节点-0203-01-443-16.163.147.103"
+      - "香港节点-0203-01-443-20.24.68.59"
+      - "香港节点-0203-02-443-16.162.189.54"
+      - "香港节点-0203-01-443-18.167.62.181"
+      - "香港节点-0203-01-443-18.163.244.153"
+      - "自选0204-01-443-65.52.166.224"
+      - "自选0204-01-443-150.109.79.153"
+      - "自选0204-01-443-27.50.49.219"
+      - "自选0204-01-443-156.245.188.19"
+      - "自选0204-01-443-38.181.47.213"
+      - "自选0204-01-443-8.212.15.77"
+      - "自选0204-01-443-103.7.55.188"
+      - "香港节点-0131-01-443-47.75.203.164"
+      - "香港节点-0131-01-443-20.189.91.218"
+      - "香港节点-0131-01-443-154.211.8.59"
+      - "香港节点-0131-02-443-154.211.8.58"
+      - "香港节点-0131-01-443-27.50.49.9"
+      - "香港节点-0131-01-443-103.17.116.115"
+      - "香港节点-0131-01-443-47.242.45.175"
+      - "香港节点-0131-01-443-210.0.244.3"
+      - "香港节点-0131-01-443-149.104.2.58"
+      - "香港节点-0131-02-443-149.104.2.140"
+      - "香港节点-0131-01-443-47.76.127.217"
+      - "香港节点-0131-01-443-103.7.54.160"
   - name: 📲 国外媒体
     type: select
     proxies:

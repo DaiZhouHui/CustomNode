@@ -1,8 +1,8 @@
 proxies:
-  - name: "中国01-443-103.85.227.245"
+  - name: "美国01-80-173.62.174.115"
     type: vless
-    server: 103.85.227.245
-    port: 443
+    server: 173.62.174.115
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -16,10 +16,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "中国02-443-103.42.31.52"
+  - name: "美国02-80-137.184.98.107"
     type: vless
-    server: 103.42.31.52
-    port: 443
+    server: 137.184.98.107
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -33,10 +33,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "中国03-443-103.66.216.42"
+  - name: "美国03-22-45.76.57.192"
     type: vless
-    server: 103.66.216.42
-    port: 443
+    server: 45.76.57.192
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -50,10 +50,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "中国04-443-103.66.216.62"
+  - name: "美国04-22-100.51.185.145"
     type: vless
-    server: 103.66.216.62
-    port: 443
+    server: 100.51.185.145
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -67,10 +67,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "中国05-443-103.66.216.67"
+  - name: "美国05-22-164.92.103.114"
     type: vless
-    server: 103.66.216.67
-    port: 443
+    server: 164.92.103.114
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -84,10 +84,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "中国06-443-103.66.216.64"
+  - name: "美国06-22-158.101.13.67"
     type: vless
-    server: 103.66.216.64
-    port: 443
+    server: 158.101.13.67
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -101,10 +101,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国01-443-18.166.212.133"
+  - name: "美国07-80-34.111.206.101"
     type: vless
-    server: 18.166.212.133
-    port: 443
+    server: 34.111.206.101
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -118,9 +118,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国02-443-16.162.217.106"
+  - name: "美国08-443-154.29.152.77"
     type: vless
-    server: 16.162.217.106
+    server: 154.29.152.77
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -135,10 +135,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国03-443-190.102.109.54"
+  - name: "美国09-80-34.149.149.80"
     type: vless
-    server: 190.102.109.54
-    port: 443
+    server: 34.149.149.80
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -152,9 +152,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国04-443-18.166.215.129"
+  - name: "美国10-443-34.8.197.183"
     type: vless
-    server: 18.166.215.129
+    server: 34.8.197.183
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -169,9 +169,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国05-443-156.234.109.150"
+  - name: "美国11-443-50.28.8.163"
     type: vless
-    server: 156.234.109.150
+    server: 50.28.8.163
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -186,9 +186,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国06-443-156.234.109.149"
+  - name: "美国12-443-50.28.8.162"
     type: vless
-    server: 156.234.109.149
+    server: 50.28.8.162
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -203,10 +203,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国07-443-156.234.109.148"
+  - name: "美国13-22-162.243.27.157"
     type: vless
-    server: 156.234.109.148
-    port: 443
+    server: 162.243.27.157
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -220,10 +220,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国08-443-156.234.109.147"
+  - name: "美国14-80-44.208.12.188"
     type: vless
-    server: 156.234.109.147
-    port: 443
+    server: 44.208.12.188
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -237,10 +237,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国09-443-156.234.109.146"
+  - name: "美国15-80-75.2.100.68"
     type: vless
-    server: 156.234.109.146
-    port: 443
+    server: 75.2.100.68
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -254,10 +254,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国10-443-47.243.250.5"
+  - name: "美国16-22-15.204.64.64"
     type: vless
-    server: 47.243.250.5
-    port: 443
+    server: 15.204.64.64
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -271,10 +271,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国11-443-47.82.87.47"
+  - name: "美国17-22-64.225.59.112"
     type: vless
-    server: 47.82.87.47
-    port: 443
+    server: 64.225.59.112
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -288,9 +288,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国12-443-18.163.130.65"
+  - name: "美国18-443-34.117.61.48"
     type: vless
-    server: 18.163.130.65
+    server: 34.117.61.48
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -305,10 +305,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国13-443-95.40.62.235"
+  - name: "美国19-80-54.175.61.161"
     type: vless
-    server: 95.40.62.235
-    port: 443
+    server: 54.175.61.161
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -322,10 +322,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国14-443-16.163.132.249"
+  - name: "美国20-22-167.99.12.110"
     type: vless
-    server: 16.163.132.249
-    port: 443
+    server: 167.99.12.110
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -339,10 +339,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国15-443-149.88.72.8"
+  - name: "美国21-80-34.117.146.115"
     type: vless
-    server: 149.88.72.8
-    port: 443
+    server: 34.117.146.115
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -356,9 +356,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国16-443-35.215.165.122"
+  - name: "美国22-443-34.54.231.63"
     type: vless
-    server: 35.215.165.122
+    server: 34.54.231.63
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -373,9 +373,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国17-443-43.199.105.206"
+  - name: "美国23-443-54.145.181.155"
     type: vless
-    server: 43.199.105.206
+    server: 54.145.181.155
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -390,9 +390,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国18-443-18.162.204.24"
+  - name: "美国24-443-34.149.149.47"
     type: vless
-    server: 18.162.204.24
+    server: 34.149.149.47
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -407,10 +407,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国19-443-47.242.2.185"
+  - name: "美国25-80-107.20.150.76"
     type: vless
-    server: 47.242.2.185
-    port: 443
+    server: 107.20.150.76
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -424,10 +424,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国20-443-52.175.22.1"
+  - name: "美国26-22-45.76.57.173"
     type: vless
-    server: 52.175.22.1
-    port: 443
+    server: 45.76.57.173
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -441,10 +441,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国21-443-47.242.2.150"
+  - name: "美国27-80-146.235.212.250"
     type: vless
-    server: 47.242.2.150
-    port: 443
+    server: 146.235.212.250
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -458,9 +458,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国22-443-47.239.214.33"
+  - name: "美国28-443-34.117.146.105"
     type: vless
-    server: 47.239.214.33
+    server: 34.117.146.105
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -475,10 +475,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国23-443-38.207.133.246"
+  - name: "美国29-80-52.89.136.235"
     type: vless
-    server: 38.207.133.246
-    port: 443
+    server: 52.89.136.235
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -492,10 +492,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国24-443-45.207.199.192"
+  - name: "美国30-80-199.85.210.60"
     type: vless
-    server: 45.207.199.192
-    port: 443
+    server: 199.85.210.60
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -509,10 +509,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国25-443-47.239.214.87"
+  - name: "美国31-80-199.85.210.61"
     type: vless
-    server: 47.239.214.87
-    port: 443
+    server: 199.85.210.61
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -526,10 +526,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国26-443-38.207.133.200"
+  - name: "美国32-80-34.49.241.226"
     type: vless
-    server: 38.207.133.200
-    port: 443
+    server: 34.49.241.226
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -543,9 +543,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国27-443-38.207.133.213"
+  - name: "美国33-443-34.49.241.224"
     type: vless
-    server: 38.207.133.213
+    server: 34.49.241.224
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -560,10 +560,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国28-443-172.81.104.188"
+  - name: "美国34-22-45.150.164.131"
     type: vless
-    server: 172.81.104.188
-    port: 443
+    server: 45.150.164.131
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -577,9 +577,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国29-443-34.92.125.59"
+  - name: "美国35-443-74.217.150.191"
     type: vless
-    server: 34.92.125.59
+    server: 74.217.150.191
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -594,10 +594,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国30-443-18.163.187.103"
+  - name: "美国36-22-64.225.59.159"
     type: vless
-    server: 18.163.187.103
-    port: 443
+    server: 64.225.59.159
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -611,10 +611,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国31-443-47.86.51.222"
+  - name: "美国37-80-35.227.204.15"
     type: vless
-    server: 47.86.51.222
-    port: 443
+    server: 35.227.204.15
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -628,10 +628,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国32-443-47.243.108.151"
+  - name: "美国38-80-45.150.164.149"
     type: vless
-    server: 47.243.108.151
-    port: 443
+    server: 45.150.164.149
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -645,10 +645,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国33-443-20.187.148.37"
+  - name: "美国39-80-34.49.241.235"
     type: vless
-    server: 20.187.148.37
-    port: 443
+    server: 34.49.241.235
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -662,10 +662,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国34-443-95.40.114.67"
+  - name: "美国40-80-207.192.136.150"
     type: vless
-    server: 95.40.114.67
-    port: 443
+    server: 207.192.136.150
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -679,10 +679,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国35-443-47.57.139.154"
+  - name: "美国41-80-207.192.136.151"
     type: vless
-    server: 47.57.139.154
-    port: 443
+    server: 207.192.136.151
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -696,9 +696,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国36-443-95.40.160.103"
+  - name: "美国42-443-44.208.14.75"
     type: vless
-    server: 95.40.160.103
+    server: 44.208.14.75
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -713,9 +713,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国37-443-38.22.90.234"
+  - name: "美国43-443-54.197.140.98"
     type: vless
-    server: 38.22.90.234
+    server: 54.197.140.98
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -730,10 +730,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国38-443-198.44.177.139"
+  - name: "美国44-80-34.149.149.71"
     type: vless
-    server: 198.44.177.139
-    port: 443
+    server: 34.149.149.71
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -747,10 +747,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国39-443-154.9.253.165"
+  - name: "美国45-80-3.224.88.139"
     type: vless
-    server: 154.9.253.165
-    port: 443
+    server: 3.224.88.139
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -764,10 +764,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国40-443-47.76.244.125"
+  - name: "美国46-22-34.207.252.90"
     type: vless
-    server: 47.76.244.125
-    port: 443
+    server: 34.207.252.90
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -781,10 +781,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国41-443-216.250.96.146"
+  - name: "美国47-80-104.201.28.78"
     type: vless
-    server: 216.250.96.146
-    port: 443
+    server: 104.201.28.78
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -798,10 +798,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国42-443-216.250.96.173"
+  - name: "美国48-80-104.201.28.79"
     type: vless
-    server: 216.250.96.173
-    port: 443
+    server: 104.201.28.79
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -815,10 +815,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国43-443-216.250.96.138"
+  - name: "美国49-80-104.201.28.72"
     type: vless
-    server: 216.250.96.138
-    port: 443
+    server: 104.201.28.72
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -832,10 +832,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国44-443-20.2.136.10"
+  - name: "美国50-80-104.201.28.73"
     type: vless
-    server: 20.2.136.10
-    port: 443
+    server: 104.201.28.73
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -849,10 +849,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国45-443-154.18.168.36"
+  - name: "美国51-80-104.201.28.70"
     type: vless
-    server: 154.18.168.36
-    port: 443
+    server: 104.201.28.70
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -866,10 +866,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国46-443-47.238.230.197"
+  - name: "美国52-80-104.201.28.71"
     type: vless
-    server: 47.238.230.197
-    port: 443
+    server: 104.201.28.71
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -883,10 +883,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国47-443-18.162.150.67"
+  - name: "美国53-80-104.201.28.76"
     type: vless
-    server: 18.162.150.67
-    port: 443
+    server: 104.201.28.76
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -900,10 +900,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "美国48-443-18.167.154.217"
+  - name: "美国54-80-104.201.28.77"
     type: vless
-    server: 18.167.154.217
-    port: 443
+    server: 104.201.28.77
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -917,10 +917,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港01-443-43.255.159.29"
+  - name: "美国55-80-104.201.28.74"
     type: vless
-    server: 43.255.159.29
-    port: 443
+    server: 104.201.28.74
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -934,10 +934,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港02-443-43.255.159.86"
+  - name: "美国56-80-104.201.28.75"
     type: vless
-    server: 43.255.159.86
-    port: 443
+    server: 104.201.28.75
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -951,10 +951,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港03-443-103.87.9.8"
+  - name: "美国57-80-52.86.243.216"
     type: vless
-    server: 103.87.9.8
-    port: 443
+    server: 52.86.243.216
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -968,9 +968,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港04-443-163.53.18.207"
+  - name: "美国58-443-34.49.254.116"
     type: vless
-    server: 163.53.18.207
+    server: 34.49.254.116
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -985,9 +985,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港05-443-103.161.225.6"
+  - name: "美国59-443-47.90.177.215"
     type: vless
-    server: 103.161.225.6
+    server: 47.90.177.215
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1002,10 +1002,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港06-443-103.38.80.8"
+  - name: "美国60-22-3.224.88.123"
     type: vless
-    server: 103.38.80.8
-    port: 443
+    server: 3.224.88.123
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1019,10 +1019,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港07-443-103.194.186.194"
+  - name: "美国61-80-104.201.28.69"
     type: vless
-    server: 103.194.186.194
-    port: 443
+    server: 104.201.28.69
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1036,10 +1036,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港08-443-103.194.186.140"
+  - name: "美国62-80-104.201.28.68"
     type: vless
-    server: 103.194.186.140
-    port: 443
+    server: 104.201.28.68
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1053,10 +1053,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港09-443-185.106.176.73"
+  - name: "美国63-80-104.201.28.67"
     type: vless
-    server: 185.106.176.73
-    port: 443
+    server: 104.201.28.67
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1070,10 +1070,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "香港10-443-183.178.118.222"
+  - name: "美国64-80-104.201.28.66"
     type: vless
-    server: 183.178.118.222
-    port: 443
+    server: 104.201.28.66
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1087,10 +1087,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡01-443-43.135.97.228"
+  - name: "美国65-80-45.150.164.178"
     type: vless
-    server: 43.135.97.228
-    port: 443
+    server: 45.150.164.178
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1104,10 +1104,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡02-443-43.135.72.41"
+  - name: "美国66-22-107.174.90.70"
     type: vless
-    server: 43.135.72.41
-    port: 443
+    server: 107.174.90.70
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1121,9 +1121,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡03-443-43.135.32.50"
+  - name: "美国67-443-34.117.146.171"
     type: vless
-    server: 43.135.32.50
+    server: 34.117.146.171
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1138,10 +1138,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡04-443-8.218.141.244"
+  - name: "美国68-80-34.117.146.176"
     type: vless
-    server: 8.218.141.244
-    port: 443
+    server: 34.117.146.176
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1155,10 +1155,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡05-443-43.155.81.234"
+  - name: "美国69-80-35.227.204.56"
     type: vless
-    server: 43.155.81.234
-    port: 443
+    server: 35.227.204.56
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1172,9 +1172,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡06-443-43.135.111.135"
+  - name: "美国70-443-34.149.149.26"
     type: vless
-    server: 43.135.111.135
+    server: 34.149.149.26
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1189,10 +1189,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡07-443-8.210.130.20"
+  - name: "美国71-80-107.174.35.149"
     type: vless
-    server: 8.210.130.20
-    port: 443
+    server: 107.174.35.149
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1206,10 +1206,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "新加坡08-443-150.109.73.238"
+  - name: "美国72-22-72.61.74.193"
     type: vless
-    server: 150.109.73.238
-    port: 443
+    server: 72.61.74.193
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1223,10 +1223,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲01-443-154.215.71.124"
+  - name: "美国73-80-35.227.204.61"
     type: vless
-    server: 154.215.71.124
-    port: 443
+    server: 35.227.204.61
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1240,10 +1240,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲02-443-154.215.71.125"
+  - name: "美国74-22-35.175.98.159"
     type: vless
-    server: 154.215.71.125
-    port: 443
+    server: 35.175.98.159
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1257,9 +1257,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲03-443-154.215.71.126"
+  - name: "美国75-443-104.177.185.235"
     type: vless
-    server: 154.215.71.126
+    server: 104.177.185.235
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1274,10 +1274,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲04-443-154.215.71.120"
+  - name: "美国76-22-34.203.79.135"
     type: vless
-    server: 154.215.71.120
-    port: 443
+    server: 34.203.79.135
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1291,10 +1291,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲05-443-154.215.71.121"
+  - name: "美国77-22-35.239.252.181"
     type: vless
-    server: 154.215.71.121
-    port: 443
+    server: 35.239.252.181
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1308,10 +1308,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲06-443-154.215.71.122"
+  - name: "美国78-80-44.221.183.132"
     type: vless
-    server: 154.215.71.122
-    port: 443
+    server: 44.221.183.132
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1325,10 +1325,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲07-443-154.215.71.123"
+  - name: "美国79-22-209.38.75.251"
     type: vless
-    server: 154.215.71.123
-    port: 443
+    server: 209.38.75.251
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1342,9 +1342,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲08-443-154.215.71.108"
+  - name: "美国80-443-34.49.254.159"
     type: vless
-    server: 154.215.71.108
+    server: 34.49.254.159
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1359,10 +1359,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲09-443-154.215.71.109"
+  - name: "美国81-22-137.184.235.1"
     type: vless
-    server: 154.215.71.109
-    port: 443
+    server: 137.184.235.1
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1376,10 +1376,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲10-443-154.215.71.102"
+  - name: "美国82-80-216.167.17.4"
     type: vless
-    server: 154.215.71.102
-    port: 443
+    server: 216.167.17.4
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1393,10 +1393,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲11-443-154.215.71.103"
+  - name: "美国83-80-198.211.106.179"
     type: vless
-    server: 154.215.71.103
-    port: 443
+    server: 198.211.106.179
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1410,9 +1410,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲12-443-154.215.71.100"
+  - name: "美国84-443-34.49.254.141"
     type: vless
-    server: 154.215.71.100
+    server: 34.49.254.141
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1427,10 +1427,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲13-443-154.215.71.101"
+  - name: "美国85-22-3.135.180.92"
     type: vless
-    server: 154.215.71.101
-    port: 443
+    server: 3.135.180.92
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1444,10 +1444,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲14-443-154.215.71.106"
+  - name: "美国86-22-45.32.7.3"
     type: vless
-    server: 154.215.71.106
-    port: 443
+    server: 45.32.7.3
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1461,9 +1461,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲15-443-154.215.71.107"
+  - name: "美国87-443-34.203.79.116"
     type: vless
-    server: 154.215.71.107
+    server: 34.203.79.116
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1478,10 +1478,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲16-443-154.215.71.104"
+  - name: "美国88-22-198.211.106.161"
     type: vless
-    server: 154.215.71.104
-    port: 443
+    server: 198.211.106.161
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1495,10 +1495,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲17-443-154.215.71.105"
+  - name: "美国89-22-34.83.152.111"
     type: vless
-    server: 154.215.71.105
-    port: 443
+    server: 34.83.152.111
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1512,9 +1512,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲18-443-154.215.71.119"
+  - name: "美国90-443-161.178.8.42"
     type: vless
-    server: 154.215.71.119
+    server: 161.178.8.42
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1529,10 +1529,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲19-443-154.215.71.118"
+  - name: "美国91-22-174.136.26.132"
     type: vless
-    server: 154.215.71.118
-    port: 443
+    server: 174.136.26.132
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1546,10 +1546,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲20-443-154.215.71.115"
+  - name: "美国92-22-52.3.210.72"
     type: vless
-    server: 154.215.71.115
-    port: 443
+    server: 52.3.210.72
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1563,9 +1563,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲21-443-154.215.71.114"
+  - name: "N/A01-443-34.107.160.1"
     type: vless
-    server: 154.215.71.114
+    server: 34.107.160.1
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1580,9 +1580,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲22-443-154.215.71.117"
+  - name: "N/A02-443-13.248.165.111"
     type: vless
-    server: 154.215.71.117
+    server: 13.248.165.111
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1597,9 +1597,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲23-443-154.215.71.116"
+  - name: "N/A03-443-54.175.61.165"
     type: vless
-    server: 154.215.71.116
+    server: 54.175.61.165
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1614,10 +1614,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲24-443-154.215.71.111"
+  - name: "澳大利亚01-22-144.24.59.223"
     type: vless
-    server: 154.215.71.111
-    port: 443
+    server: 144.24.59.223
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1631,10 +1631,10 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲25-443-154.215.71.110"
+  - name: "中国01-80-216.157.38.28"
     type: vless
-    server: 154.215.71.110
-    port: 443
+    server: 216.157.38.28
+    port: 80
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1648,10 +1648,27 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲26-443-154.215.71.113"
+  - name: "香港01-22-165.154.182.17"
     type: vless
-    server: 154.215.71.113
-    port: 443
+    server: 165.154.182.17
+    port: 22
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港02-22-165.154.182.37"
+    type: vless
+    server: 165.154.182.37
+    port: 22
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
     tls: true
@@ -1665,9 +1682,9 @@ proxies:
       headers:
         Host: "knny.dpdns.org"
 
-  - name: "欧洲27-443-154.215.71.112"
+  - name: "加拿大01-443-144.34.236.155"
     type: vless
-    server: 154.215.71.112
+    server: 144.34.236.155
     port: 443
     uuid: 471a8e64-7b21-4703-b1d1-45a221098459
     network: ws
@@ -1686,313 +1703,316 @@ proxy-groups:
   - name: "🚀 节点选择"
     type: select
     proxies:
-      - "中国01-443-103.85.227.245"
-      - "中国02-443-103.42.31.52"
-      - "中国03-443-103.66.216.42"
-      - "中国04-443-103.66.216.62"
-      - "中国05-443-103.66.216.67"
-      - "中国06-443-103.66.216.64"
-      - "美国01-443-18.166.212.133"
-      - "美国02-443-16.162.217.106"
-      - "美国03-443-190.102.109.54"
-      - "美国04-443-18.166.215.129"
-      - "美国05-443-156.234.109.150"
-      - "美国06-443-156.234.109.149"
-      - "美国07-443-156.234.109.148"
-      - "美国08-443-156.234.109.147"
-      - "美国09-443-156.234.109.146"
-      - "美国10-443-47.243.250.5"
-      - "美国11-443-47.82.87.47"
-      - "美国12-443-18.163.130.65"
-      - "美国13-443-95.40.62.235"
-      - "美国14-443-16.163.132.249"
-      - "美国15-443-149.88.72.8"
-      - "美国16-443-35.215.165.122"
-      - "美国17-443-43.199.105.206"
-      - "美国18-443-18.162.204.24"
-      - "美国19-443-47.242.2.185"
-      - "美国20-443-52.175.22.1"
-      - "美国21-443-47.242.2.150"
-      - "美国22-443-47.239.214.33"
-      - "美国23-443-38.207.133.246"
-      - "美国24-443-45.207.199.192"
-      - "美国25-443-47.239.214.87"
-      - "美国26-443-38.207.133.200"
-      - "美国27-443-38.207.133.213"
-      - "美国28-443-172.81.104.188"
-      - "美国29-443-34.92.125.59"
-      - "美国30-443-18.163.187.103"
-      - "美国31-443-47.86.51.222"
-      - "美国32-443-47.243.108.151"
-      - "美国33-443-20.187.148.37"
-      - "美国34-443-95.40.114.67"
-      - "美国35-443-47.57.139.154"
-      - "美国36-443-95.40.160.103"
-      - "美国37-443-38.22.90.234"
-      - "美国38-443-198.44.177.139"
-      - "美国39-443-154.9.253.165"
-      - "美国40-443-47.76.244.125"
-      - "美国41-443-216.250.96.146"
-      - "美国42-443-216.250.96.173"
-      - "美国43-443-216.250.96.138"
-      - "美国44-443-20.2.136.10"
-      - "美国45-443-154.18.168.36"
-      - "美国46-443-47.238.230.197"
-      - "美国47-443-18.162.150.67"
-      - "美国48-443-18.167.154.217"
-      - "香港01-443-43.255.159.29"
-      - "香港02-443-43.255.159.86"
-      - "香港03-443-103.87.9.8"
-      - "香港04-443-163.53.18.207"
-      - "香港05-443-103.161.225.6"
-      - "香港06-443-103.38.80.8"
-      - "香港07-443-103.194.186.194"
-      - "香港08-443-103.194.186.140"
-      - "香港09-443-185.106.176.73"
-      - "香港10-443-183.178.118.222"
-      - "新加坡01-443-43.135.97.228"
-      - "新加坡02-443-43.135.72.41"
-      - "新加坡03-443-43.135.32.50"
-      - "新加坡04-443-8.218.141.244"
-      - "新加坡05-443-43.155.81.234"
-      - "新加坡06-443-43.135.111.135"
-      - "新加坡07-443-8.210.130.20"
-      - "新加坡08-443-150.109.73.238"
-      - "欧洲01-443-154.215.71.124"
-      - "欧洲02-443-154.215.71.125"
-      - "欧洲03-443-154.215.71.126"
-      - "欧洲04-443-154.215.71.120"
-      - "欧洲05-443-154.215.71.121"
-      - "欧洲06-443-154.215.71.122"
-      - "欧洲07-443-154.215.71.123"
-      - "欧洲08-443-154.215.71.108"
-      - "欧洲09-443-154.215.71.109"
-      - "欧洲10-443-154.215.71.102"
-      - "欧洲11-443-154.215.71.103"
-      - "欧洲12-443-154.215.71.100"
-      - "欧洲13-443-154.215.71.101"
-      - "欧洲14-443-154.215.71.106"
-      - "欧洲15-443-154.215.71.107"
-      - "欧洲16-443-154.215.71.104"
-      - "欧洲17-443-154.215.71.105"
-      - "欧洲18-443-154.215.71.119"
-      - "欧洲19-443-154.215.71.118"
-      - "欧洲20-443-154.215.71.115"
-      - "欧洲21-443-154.215.71.114"
-      - "欧洲22-443-154.215.71.117"
-      - "欧洲23-443-154.215.71.116"
-      - "欧洲24-443-154.215.71.111"
-      - "欧洲25-443-154.215.71.110"
-      - "欧洲26-443-154.215.71.113"
-      - "欧洲27-443-154.215.71.112"
+      - "美国01-80-173.62.174.115"
+      - "美国02-80-137.184.98.107"
+      - "美国03-22-45.76.57.192"
+      - "美国04-22-100.51.185.145"
+      - "美国05-22-164.92.103.114"
+      - "美国06-22-158.101.13.67"
+      - "美国07-80-34.111.206.101"
+      - "美国08-443-154.29.152.77"
+      - "美国09-80-34.149.149.80"
+      - "美国10-443-34.8.197.183"
+      - "美国11-443-50.28.8.163"
+      - "美国12-443-50.28.8.162"
+      - "美国13-22-162.243.27.157"
+      - "美国14-80-44.208.12.188"
+      - "美国15-80-75.2.100.68"
+      - "美国16-22-15.204.64.64"
+      - "美国17-22-64.225.59.112"
+      - "美国18-443-34.117.61.48"
+      - "美国19-80-54.175.61.161"
+      - "美国20-22-167.99.12.110"
+      - "美国21-80-34.117.146.115"
+      - "美国22-443-34.54.231.63"
+      - "美国23-443-54.145.181.155"
+      - "美国24-443-34.149.149.47"
+      - "美国25-80-107.20.150.76"
+      - "美国26-22-45.76.57.173"
+      - "美国27-80-146.235.212.250"
+      - "美国28-443-34.117.146.105"
+      - "美国29-80-52.89.136.235"
+      - "美国30-80-199.85.210.60"
+      - "美国31-80-199.85.210.61"
+      - "美国32-80-34.49.241.226"
+      - "美国33-443-34.49.241.224"
+      - "美国34-22-45.150.164.131"
+      - "美国35-443-74.217.150.191"
+      - "美国36-22-64.225.59.159"
+      - "美国37-80-35.227.204.15"
+      - "美国38-80-45.150.164.149"
+      - "美国39-80-34.49.241.235"
+      - "美国40-80-207.192.136.150"
+      - "美国41-80-207.192.136.151"
+      - "美国42-443-44.208.14.75"
+      - "美国43-443-54.197.140.98"
+      - "美国44-80-34.149.149.71"
+      - "美国45-80-3.224.88.139"
+      - "美国46-22-34.207.252.90"
+      - "美国47-80-104.201.28.78"
+      - "美国48-80-104.201.28.79"
+      - "美国49-80-104.201.28.72"
+      - "美国50-80-104.201.28.73"
+      - "美国51-80-104.201.28.70"
+      - "美国52-80-104.201.28.71"
+      - "美国53-80-104.201.28.76"
+      - "美国54-80-104.201.28.77"
+      - "美国55-80-104.201.28.74"
+      - "美国56-80-104.201.28.75"
+      - "美国57-80-52.86.243.216"
+      - "美国58-443-34.49.254.116"
+      - "美国59-443-47.90.177.215"
+      - "美国60-22-3.224.88.123"
+      - "美国61-80-104.201.28.69"
+      - "美国62-80-104.201.28.68"
+      - "美国63-80-104.201.28.67"
+      - "美国64-80-104.201.28.66"
+      - "美国65-80-45.150.164.178"
+      - "美国66-22-107.174.90.70"
+      - "美国67-443-34.117.146.171"
+      - "美国68-80-34.117.146.176"
+      - "美国69-80-35.227.204.56"
+      - "美国70-443-34.149.149.26"
+      - "美国71-80-107.174.35.149"
+      - "美国72-22-72.61.74.193"
+      - "美国73-80-35.227.204.61"
+      - "美国74-22-35.175.98.159"
+      - "美国75-443-104.177.185.235"
+      - "美国76-22-34.203.79.135"
+      - "美国77-22-35.239.252.181"
+      - "美国78-80-44.221.183.132"
+      - "美国79-22-209.38.75.251"
+      - "美国80-443-34.49.254.159"
+      - "美国81-22-137.184.235.1"
+      - "美国82-80-216.167.17.4"
+      - "美国83-80-198.211.106.179"
+      - "美国84-443-34.49.254.141"
+      - "美国85-22-3.135.180.92"
+      - "美国86-22-45.32.7.3"
+      - "美国87-443-34.203.79.116"
+      - "美国88-22-198.211.106.161"
+      - "美国89-22-34.83.152.111"
+      - "美国90-443-161.178.8.42"
+      - "美国91-22-174.136.26.132"
+      - "美国92-22-52.3.210.72"
+      - "N/A01-443-34.107.160.1"
+      - "N/A02-443-13.248.165.111"
+      - "N/A03-443-54.175.61.165"
+      - "澳大利亚01-22-144.24.59.223"
+      - "中国01-80-216.157.38.28"
+      - "香港01-22-165.154.182.17"
+      - "香港02-22-165.154.182.37"
+      - "加拿大01-443-144.34.236.155"
 
   - name: "♻️ 自动选择"
     type: url-test
     proxies:
-      - "中国01-443-103.85.227.245"
-      - "中国02-443-103.42.31.52"
-      - "中国03-443-103.66.216.42"
-      - "中国04-443-103.66.216.62"
-      - "中国05-443-103.66.216.67"
-      - "中国06-443-103.66.216.64"
-      - "美国01-443-18.166.212.133"
-      - "美国02-443-16.162.217.106"
-      - "美国03-443-190.102.109.54"
-      - "美国04-443-18.166.215.129"
-      - "美国05-443-156.234.109.150"
-      - "美国06-443-156.234.109.149"
-      - "美国07-443-156.234.109.148"
-      - "美国08-443-156.234.109.147"
-      - "美国09-443-156.234.109.146"
-      - "美国10-443-47.243.250.5"
-      - "美国11-443-47.82.87.47"
-      - "美国12-443-18.163.130.65"
-      - "美国13-443-95.40.62.235"
-      - "美国14-443-16.163.132.249"
-      - "美国15-443-149.88.72.8"
-      - "美国16-443-35.215.165.122"
-      - "美国17-443-43.199.105.206"
-      - "美国18-443-18.162.204.24"
-      - "美国19-443-47.242.2.185"
-      - "美国20-443-52.175.22.1"
-      - "美国21-443-47.242.2.150"
-      - "美国22-443-47.239.214.33"
-      - "美国23-443-38.207.133.246"
-      - "美国24-443-45.207.199.192"
-      - "美国25-443-47.239.214.87"
-      - "美国26-443-38.207.133.200"
-      - "美国27-443-38.207.133.213"
-      - "美国28-443-172.81.104.188"
-      - "美国29-443-34.92.125.59"
-      - "美国30-443-18.163.187.103"
-      - "美国31-443-47.86.51.222"
-      - "美国32-443-47.243.108.151"
-      - "美国33-443-20.187.148.37"
-      - "美国34-443-95.40.114.67"
-      - "美国35-443-47.57.139.154"
-      - "美国36-443-95.40.160.103"
-      - "美国37-443-38.22.90.234"
-      - "美国38-443-198.44.177.139"
-      - "美国39-443-154.9.253.165"
-      - "美国40-443-47.76.244.125"
-      - "美国41-443-216.250.96.146"
-      - "美国42-443-216.250.96.173"
-      - "美国43-443-216.250.96.138"
-      - "美国44-443-20.2.136.10"
-      - "美国45-443-154.18.168.36"
-      - "美国46-443-47.238.230.197"
-      - "美国47-443-18.162.150.67"
-      - "美国48-443-18.167.154.217"
-      - "香港01-443-43.255.159.29"
-      - "香港02-443-43.255.159.86"
-      - "香港03-443-103.87.9.8"
-      - "香港04-443-163.53.18.207"
-      - "香港05-443-103.161.225.6"
-      - "香港06-443-103.38.80.8"
-      - "香港07-443-103.194.186.194"
-      - "香港08-443-103.194.186.140"
-      - "香港09-443-185.106.176.73"
-      - "香港10-443-183.178.118.222"
-      - "新加坡01-443-43.135.97.228"
-      - "新加坡02-443-43.135.72.41"
-      - "新加坡03-443-43.135.32.50"
-      - "新加坡04-443-8.218.141.244"
-      - "新加坡05-443-43.155.81.234"
-      - "新加坡06-443-43.135.111.135"
-      - "新加坡07-443-8.210.130.20"
-      - "新加坡08-443-150.109.73.238"
-      - "欧洲01-443-154.215.71.124"
-      - "欧洲02-443-154.215.71.125"
-      - "欧洲03-443-154.215.71.126"
-      - "欧洲04-443-154.215.71.120"
-      - "欧洲05-443-154.215.71.121"
-      - "欧洲06-443-154.215.71.122"
-      - "欧洲07-443-154.215.71.123"
-      - "欧洲08-443-154.215.71.108"
-      - "欧洲09-443-154.215.71.109"
-      - "欧洲10-443-154.215.71.102"
-      - "欧洲11-443-154.215.71.103"
-      - "欧洲12-443-154.215.71.100"
-      - "欧洲13-443-154.215.71.101"
-      - "欧洲14-443-154.215.71.106"
-      - "欧洲15-443-154.215.71.107"
-      - "欧洲16-443-154.215.71.104"
-      - "欧洲17-443-154.215.71.105"
-      - "欧洲18-443-154.215.71.119"
-      - "欧洲19-443-154.215.71.118"
-      - "欧洲20-443-154.215.71.115"
-      - "欧洲21-443-154.215.71.114"
-      - "欧洲22-443-154.215.71.117"
-      - "欧洲23-443-154.215.71.116"
-      - "欧洲24-443-154.215.71.111"
-      - "欧洲25-443-154.215.71.110"
-      - "欧洲26-443-154.215.71.113"
-      - "欧洲27-443-154.215.71.112"
+      - "美国01-80-173.62.174.115"
+      - "美国02-80-137.184.98.107"
+      - "美国03-22-45.76.57.192"
+      - "美国04-22-100.51.185.145"
+      - "美国05-22-164.92.103.114"
+      - "美国06-22-158.101.13.67"
+      - "美国07-80-34.111.206.101"
+      - "美国08-443-154.29.152.77"
+      - "美国09-80-34.149.149.80"
+      - "美国10-443-34.8.197.183"
+      - "美国11-443-50.28.8.163"
+      - "美国12-443-50.28.8.162"
+      - "美国13-22-162.243.27.157"
+      - "美国14-80-44.208.12.188"
+      - "美国15-80-75.2.100.68"
+      - "美国16-22-15.204.64.64"
+      - "美国17-22-64.225.59.112"
+      - "美国18-443-34.117.61.48"
+      - "美国19-80-54.175.61.161"
+      - "美国20-22-167.99.12.110"
+      - "美国21-80-34.117.146.115"
+      - "美国22-443-34.54.231.63"
+      - "美国23-443-54.145.181.155"
+      - "美国24-443-34.149.149.47"
+      - "美国25-80-107.20.150.76"
+      - "美国26-22-45.76.57.173"
+      - "美国27-80-146.235.212.250"
+      - "美国28-443-34.117.146.105"
+      - "美国29-80-52.89.136.235"
+      - "美国30-80-199.85.210.60"
+      - "美国31-80-199.85.210.61"
+      - "美国32-80-34.49.241.226"
+      - "美国33-443-34.49.241.224"
+      - "美国34-22-45.150.164.131"
+      - "美国35-443-74.217.150.191"
+      - "美国36-22-64.225.59.159"
+      - "美国37-80-35.227.204.15"
+      - "美国38-80-45.150.164.149"
+      - "美国39-80-34.49.241.235"
+      - "美国40-80-207.192.136.150"
+      - "美国41-80-207.192.136.151"
+      - "美国42-443-44.208.14.75"
+      - "美国43-443-54.197.140.98"
+      - "美国44-80-34.149.149.71"
+      - "美国45-80-3.224.88.139"
+      - "美国46-22-34.207.252.90"
+      - "美国47-80-104.201.28.78"
+      - "美国48-80-104.201.28.79"
+      - "美国49-80-104.201.28.72"
+      - "美国50-80-104.201.28.73"
+      - "美国51-80-104.201.28.70"
+      - "美国52-80-104.201.28.71"
+      - "美国53-80-104.201.28.76"
+      - "美国54-80-104.201.28.77"
+      - "美国55-80-104.201.28.74"
+      - "美国56-80-104.201.28.75"
+      - "美国57-80-52.86.243.216"
+      - "美国58-443-34.49.254.116"
+      - "美国59-443-47.90.177.215"
+      - "美国60-22-3.224.88.123"
+      - "美国61-80-104.201.28.69"
+      - "美国62-80-104.201.28.68"
+      - "美国63-80-104.201.28.67"
+      - "美国64-80-104.201.28.66"
+      - "美国65-80-45.150.164.178"
+      - "美国66-22-107.174.90.70"
+      - "美国67-443-34.117.146.171"
+      - "美国68-80-34.117.146.176"
+      - "美国69-80-35.227.204.56"
+      - "美国70-443-34.149.149.26"
+      - "美国71-80-107.174.35.149"
+      - "美国72-22-72.61.74.193"
+      - "美国73-80-35.227.204.61"
+      - "美国74-22-35.175.98.159"
+      - "美国75-443-104.177.185.235"
+      - "美国76-22-34.203.79.135"
+      - "美国77-22-35.239.252.181"
+      - "美国78-80-44.221.183.132"
+      - "美国79-22-209.38.75.251"
+      - "美国80-443-34.49.254.159"
+      - "美国81-22-137.184.235.1"
+      - "美国82-80-216.167.17.4"
+      - "美国83-80-198.211.106.179"
+      - "美国84-443-34.49.254.141"
+      - "美国85-22-3.135.180.92"
+      - "美国86-22-45.32.7.3"
+      - "美国87-443-34.203.79.116"
+      - "美国88-22-198.211.106.161"
+      - "美国89-22-34.83.152.111"
+      - "美国90-443-161.178.8.42"
+      - "美国91-22-174.136.26.132"
+      - "美国92-22-52.3.210.72"
+      - "N/A01-443-34.107.160.1"
+      - "N/A02-443-13.248.165.111"
+      - "N/A03-443-54.175.61.165"
+      - "澳大利亚01-22-144.24.59.223"
+      - "中国01-80-216.157.38.28"
+      - "香港01-22-165.154.182.17"
+      - "香港02-22-165.154.182.37"
+      - "加拿大01-443-144.34.236.155"
     url: "https://www.cloudflare.com/cdn-cgi/trace"
     interval: 300
 
   - name: "🔥 故障转移"
     type: fallback
     proxies:
-      - "中国01-443-103.85.227.245"
-      - "中国02-443-103.42.31.52"
-      - "中国03-443-103.66.216.42"
-      - "中国04-443-103.66.216.62"
-      - "中国05-443-103.66.216.67"
-      - "中国06-443-103.66.216.64"
-      - "美国01-443-18.166.212.133"
-      - "美国02-443-16.162.217.106"
-      - "美国03-443-190.102.109.54"
-      - "美国04-443-18.166.215.129"
-      - "美国05-443-156.234.109.150"
-      - "美国06-443-156.234.109.149"
-      - "美国07-443-156.234.109.148"
-      - "美国08-443-156.234.109.147"
-      - "美国09-443-156.234.109.146"
-      - "美国10-443-47.243.250.5"
-      - "美国11-443-47.82.87.47"
-      - "美国12-443-18.163.130.65"
-      - "美国13-443-95.40.62.235"
-      - "美国14-443-16.163.132.249"
-      - "美国15-443-149.88.72.8"
-      - "美国16-443-35.215.165.122"
-      - "美国17-443-43.199.105.206"
-      - "美国18-443-18.162.204.24"
-      - "美国19-443-47.242.2.185"
-      - "美国20-443-52.175.22.1"
-      - "美国21-443-47.242.2.150"
-      - "美国22-443-47.239.214.33"
-      - "美国23-443-38.207.133.246"
-      - "美国24-443-45.207.199.192"
-      - "美国25-443-47.239.214.87"
-      - "美国26-443-38.207.133.200"
-      - "美国27-443-38.207.133.213"
-      - "美国28-443-172.81.104.188"
-      - "美国29-443-34.92.125.59"
-      - "美国30-443-18.163.187.103"
-      - "美国31-443-47.86.51.222"
-      - "美国32-443-47.243.108.151"
-      - "美国33-443-20.187.148.37"
-      - "美国34-443-95.40.114.67"
-      - "美国35-443-47.57.139.154"
-      - "美国36-443-95.40.160.103"
-      - "美国37-443-38.22.90.234"
-      - "美国38-443-198.44.177.139"
-      - "美国39-443-154.9.253.165"
-      - "美国40-443-47.76.244.125"
-      - "美国41-443-216.250.96.146"
-      - "美国42-443-216.250.96.173"
-      - "美国43-443-216.250.96.138"
-      - "美国44-443-20.2.136.10"
-      - "美国45-443-154.18.168.36"
-      - "美国46-443-47.238.230.197"
-      - "美国47-443-18.162.150.67"
-      - "美国48-443-18.167.154.217"
-      - "香港01-443-43.255.159.29"
-      - "香港02-443-43.255.159.86"
-      - "香港03-443-103.87.9.8"
-      - "香港04-443-163.53.18.207"
-      - "香港05-443-103.161.225.6"
-      - "香港06-443-103.38.80.8"
-      - "香港07-443-103.194.186.194"
-      - "香港08-443-103.194.186.140"
-      - "香港09-443-185.106.176.73"
-      - "香港10-443-183.178.118.222"
-      - "新加坡01-443-43.135.97.228"
-      - "新加坡02-443-43.135.72.41"
-      - "新加坡03-443-43.135.32.50"
-      - "新加坡04-443-8.218.141.244"
-      - "新加坡05-443-43.155.81.234"
-      - "新加坡06-443-43.135.111.135"
-      - "新加坡07-443-8.210.130.20"
-      - "新加坡08-443-150.109.73.238"
-      - "欧洲01-443-154.215.71.124"
-      - "欧洲02-443-154.215.71.125"
-      - "欧洲03-443-154.215.71.126"
-      - "欧洲04-443-154.215.71.120"
-      - "欧洲05-443-154.215.71.121"
-      - "欧洲06-443-154.215.71.122"
-      - "欧洲07-443-154.215.71.123"
-      - "欧洲08-443-154.215.71.108"
-      - "欧洲09-443-154.215.71.109"
-      - "欧洲10-443-154.215.71.102"
-      - "欧洲11-443-154.215.71.103"
-      - "欧洲12-443-154.215.71.100"
-      - "欧洲13-443-154.215.71.101"
-      - "欧洲14-443-154.215.71.106"
-      - "欧洲15-443-154.215.71.107"
-      - "欧洲16-443-154.215.71.104"
-      - "欧洲17-443-154.215.71.105"
-      - "欧洲18-443-154.215.71.119"
-      - "欧洲19-443-154.215.71.118"
-      - "欧洲20-443-154.215.71.115"
-      - "欧洲21-443-154.215.71.114"
-      - "欧洲22-443-154.215.71.117"
-      - "欧洲23-443-154.215.71.116"
-      - "欧洲24-443-154.215.71.111"
-      - "欧洲25-443-154.215.71.110"
-      - "欧洲26-443-154.215.71.113"
-      - "欧洲27-443-154.215.71.112"
+      - "美国01-80-173.62.174.115"
+      - "美国02-80-137.184.98.107"
+      - "美国03-22-45.76.57.192"
+      - "美国04-22-100.51.185.145"
+      - "美国05-22-164.92.103.114"
+      - "美国06-22-158.101.13.67"
+      - "美国07-80-34.111.206.101"
+      - "美国08-443-154.29.152.77"
+      - "美国09-80-34.149.149.80"
+      - "美国10-443-34.8.197.183"
+      - "美国11-443-50.28.8.163"
+      - "美国12-443-50.28.8.162"
+      - "美国13-22-162.243.27.157"
+      - "美国14-80-44.208.12.188"
+      - "美国15-80-75.2.100.68"
+      - "美国16-22-15.204.64.64"
+      - "美国17-22-64.225.59.112"
+      - "美国18-443-34.117.61.48"
+      - "美国19-80-54.175.61.161"
+      - "美国20-22-167.99.12.110"
+      - "美国21-80-34.117.146.115"
+      - "美国22-443-34.54.231.63"
+      - "美国23-443-54.145.181.155"
+      - "美国24-443-34.149.149.47"
+      - "美国25-80-107.20.150.76"
+      - "美国26-22-45.76.57.173"
+      - "美国27-80-146.235.212.250"
+      - "美国28-443-34.117.146.105"
+      - "美国29-80-52.89.136.235"
+      - "美国30-80-199.85.210.60"
+      - "美国31-80-199.85.210.61"
+      - "美国32-80-34.49.241.226"
+      - "美国33-443-34.49.241.224"
+      - "美国34-22-45.150.164.131"
+      - "美国35-443-74.217.150.191"
+      - "美国36-22-64.225.59.159"
+      - "美国37-80-35.227.204.15"
+      - "美国38-80-45.150.164.149"
+      - "美国39-80-34.49.241.235"
+      - "美国40-80-207.192.136.150"
+      - "美国41-80-207.192.136.151"
+      - "美国42-443-44.208.14.75"
+      - "美国43-443-54.197.140.98"
+      - "美国44-80-34.149.149.71"
+      - "美国45-80-3.224.88.139"
+      - "美国46-22-34.207.252.90"
+      - "美国47-80-104.201.28.78"
+      - "美国48-80-104.201.28.79"
+      - "美国49-80-104.201.28.72"
+      - "美国50-80-104.201.28.73"
+      - "美国51-80-104.201.28.70"
+      - "美国52-80-104.201.28.71"
+      - "美国53-80-104.201.28.76"
+      - "美国54-80-104.201.28.77"
+      - "美国55-80-104.201.28.74"
+      - "美国56-80-104.201.28.75"
+      - "美国57-80-52.86.243.216"
+      - "美国58-443-34.49.254.116"
+      - "美国59-443-47.90.177.215"
+      - "美国60-22-3.224.88.123"
+      - "美国61-80-104.201.28.69"
+      - "美国62-80-104.201.28.68"
+      - "美国63-80-104.201.28.67"
+      - "美国64-80-104.201.28.66"
+      - "美国65-80-45.150.164.178"
+      - "美国66-22-107.174.90.70"
+      - "美国67-443-34.117.146.171"
+      - "美国68-80-34.117.146.176"
+      - "美国69-80-35.227.204.56"
+      - "美国70-443-34.149.149.26"
+      - "美国71-80-107.174.35.149"
+      - "美国72-22-72.61.74.193"
+      - "美国73-80-35.227.204.61"
+      - "美国74-22-35.175.98.159"
+      - "美国75-443-104.177.185.235"
+      - "美国76-22-34.203.79.135"
+      - "美国77-22-35.239.252.181"
+      - "美国78-80-44.221.183.132"
+      - "美国79-22-209.38.75.251"
+      - "美国80-443-34.49.254.159"
+      - "美国81-22-137.184.235.1"
+      - "美国82-80-216.167.17.4"
+      - "美国83-80-198.211.106.179"
+      - "美国84-443-34.49.254.141"
+      - "美国85-22-3.135.180.92"
+      - "美国86-22-45.32.7.3"
+      - "美国87-443-34.203.79.116"
+      - "美国88-22-198.211.106.161"
+      - "美国89-22-34.83.152.111"
+      - "美国90-443-161.178.8.42"
+      - "美国91-22-174.136.26.132"
+      - "美国92-22-52.3.210.72"
+      - "N/A01-443-34.107.160.1"
+      - "N/A02-443-13.248.165.111"
+      - "N/A03-443-54.175.61.165"
+      - "澳大利亚01-22-144.24.59.223"
+      - "中国01-80-216.157.38.28"
+      - "香港01-22-165.154.182.17"
+      - "香港02-22-165.154.182.37"
+      - "加拿大01-443-144.34.236.155"
     url: "https://www.cloudflare.com/cdn-cgi/trace"
     interval: 300
 
