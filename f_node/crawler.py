@@ -155,14 +155,70 @@ class FOFACrawler:
         except Exception as e:
             return False, f"请求异常: {type(e).__name__}: {str(e)}"
     
-    def extract_table_data(self, html_content):
-        """从表格中提取IP和端口数据"""
-        print("  正在解析表格数据...")
+    def extract_data_from_new_structure(self, html_content):
+        """从新的HTML结构中提取数据"""
+        print("    使用新结构解析...")
         
         ip_port_pairs = []
         
-        # 方法1: 提取数据条目
-        print("    方法1: 提取数据条目...")
+        # 方法1: 直接查找所有 hsxa-host 中的链接
+        host_pattern = r'<span class="hsxa-host"[^>]*>\s*<a[^>]*href="[^"]*"[^>]*>([^<]+)</a>'
+        host_matches = re.findall(host_pattern, html_content)
+        
+        print(f"      从hsxa-host找到 {len(host_matches)} 个匹配")
+        
+        for host_text in host_matches:
+            host_text = host_text.strip()
+            if ':' in host_text:
+                ip, port = host_text.split(':', 1)
+                if self.is_valid_ip(ip):
+                    ip_port_pairs.append([ip, port])
+        
+        # 方法2: 从clipboard数据提取
+        if not ip_port_pairs:
+            print("      从clipboard数据提取...")
+            copy_pattern = r'data-clipboard-text="([^"]+:\d+)"'
+            copy_matches = re.findall(copy_pattern, html_content)
+            
+            for copy_text in copy_matches:
+                if ':' in copy_text:
+                    ip, port = copy_text.split(':', 1)
+                    if self.is_valid_ip(ip):
+                        ip_port_pairs.append([ip, port])
+        
+        # 方法3: 分别提取IP和端口
+        if not ip_port_pairs:
+            print("      分别提取IP和端口...")
+            
+            # 提取IP
+            ip_pattern = r'<a[^>]*class="hsxa-jump-a"[^>]*href="[^"]*qbase64=aXA=[^"]*"[^>]*>([^<]+)</a>'
+            ip_matches = re.findall(ip_pattern, html_content)
+            
+            # 提取端口
+            port_pattern = r'<a[^>]*class="hsxa-port"[^>]*href="[^"]*qbase64=cG9ydD=[^"]*"[^>]*>([^<]+)</a>'
+            port_matches = re.findall(port_pattern, html_content)
+            
+            # 假设IP和端口是按顺序对应的
+            min_count = min(len(ip_matches), len(port_matches))
+            for i in range(min_count):
+                ip = ip_matches[i].strip()
+                port = port_matches[i].strip()
+                
+                if self.is_valid_ip(ip):
+                    # 确保端口是有效的数字
+                    if not port.isdigit():
+                        port_match = re.search(r'(\d{1,5})', port)
+                        port = port_match.group(1) if port_match else "443"
+                    
+                    ip_port_pairs.append([ip, port])
+        
+        return ip_port_pairs
+    
+    def extract_data_from_old_structure(self, html_content):
+        """从旧的HTML结构中提取数据"""
+        print("    使用旧结构解析...")
+        
+        ip_port_pairs = []
         
         # 查找所有的数据条目容器
         item_pattern = r'<div class="hsxa-meta-data-item">(.*?)</div>\s*</div>\s*</div>\s*</div>'
@@ -204,28 +260,18 @@ class FOFACrawler:
                 
                 ip_port_pairs.append([ip, port])
         
-        # 方法2: 如果方法1没找到数据，尝试通用提取
+        return ip_port_pairs
+    
+    def extract_table_data(self, html_content):
+        """从表格中提取IP和端口数据"""
+        print("  正在解析表格数据...")
+        
+        # 首先尝试新结构
+        ip_port_pairs = self.extract_data_from_new_structure(html_content)
+        
+        # 如果没找到，尝试旧的解析方法
         if not ip_port_pairs:
-            print("    方法2: 尝试通用提取...")
-            
-            # 查找所有包含IP的链接
-            all_ip_links = re.findall(r'<a[^>]*href="[^"]*qbase64=aXA=[^"]*"[^>]*>([^<]+)</a>', html_content)
-            all_port_links = re.findall(r'<a[^>]*href="[^"]*qbase64=cG9ydD=[^"]*"[^>]*>([^<]+)</a>', html_content)
-            
-            print(f"      找到 {len(all_ip_links)} 个IP链接, {len(all_port_links)} 个端口链接")
-            
-            # 假设IP和端口是按顺序对应的
-            min_count = min(len(all_ip_links), len(all_port_links))
-            for i in range(min_count):
-                ip = all_ip_links[i].strip()
-                port = all_port_links[i].strip()
-                
-                if self.is_valid_ip(ip):
-                    if not port.isdigit():
-                        port_match = re.search(r'(\d{1,5})', port)
-                        port = port_match.group(1) if port_match else "443"
-                    
-                    ip_port_pairs.append([ip, port])
+            ip_port_pairs = self.extract_data_from_old_structure(html_content)
         
         return ip_port_pairs
     
