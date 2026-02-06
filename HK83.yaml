@@ -1,0 +1,1701 @@
+proxies:
+  - name: "香港01-443-154.211.8.58"
+    type: vless
+    server: 154.211.8.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港04-443-154.211.8.59"
+    type: vless
+    server: 154.211.8.59
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港05-443-45.125.12.38"
+    type: vless
+    server: 45.125.12.38
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港06-443-154.92.16.97"
+    type: vless
+    server: 154.92.16.97
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港07-443-149.104.2.140"
+    type: vless
+    server: 149.104.2.140
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港08-443-104.208.106.177"
+    type: vless
+    server: 104.208.106.177
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港09-443-8.218.22.224"
+    type: vless
+    server: 8.218.22.224
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港10-443-16.162.24.239"
+    type: vless
+    server: 16.162.24.239
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港16-443-154.218.15.101"
+    type: vless
+    server: 154.218.15.101
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港17-443-103.118.41.116"
+    type: vless
+    server: 103.118.41.116
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港23-443-154.214.92.189"
+    type: vless
+    server: 154.214.92.189
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港24-443-13.70.19.37"
+    type: vless
+    server: 13.70.19.37
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港30-443-149.104.2.58"
+    type: vless
+    server: 149.104.2.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港84-443-18.166.225.50"
+    type: vless
+    server: 18.166.225.50
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港104-443-47.76.60.128"
+    type: vless
+    server: 47.76.60.128
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港127-443-18.166.146.6"
+    type: vless
+    server: 18.166.146.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港129-443-156.245.188.19"
+    type: vless
+    server: 156.245.188.19
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港130-443-23.100.89.211"
+    type: vless
+    server: 23.100.89.211
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港131-443-128.14.67.35"
+    type: vless
+    server: 128.14.67.35
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港132-443-218.250.145.136"
+    type: vless
+    server: 218.250.145.136
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港133-443-103.160.204.50"
+    type: vless
+    server: 103.160.204.50
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港136-443-154.219.104.186"
+    type: vless
+    server: 154.219.104.186
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港164-443-27.50.49.189"
+    type: vless
+    server: 27.50.49.189
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港177-443-27.50.49.198"
+    type: vless
+    server: 27.50.49.198
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港207-443-103.231.15.209"
+    type: vless
+    server: 103.231.15.209
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港233-443-23.35.148.23"
+    type: vless
+    server: 23.35.148.23
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港234-443-52.184.103.79"
+    type: vless
+    server: 52.184.103.79
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港235-443-20.24.218.123"
+    type: vless
+    server: 20.24.218.123
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港236-443-101.32.183.218"
+    type: vless
+    server: 101.32.183.218
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港242-443-8.212.76.139"
+    type: vless
+    server: 8.212.76.139
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港243-443-156.59.90.107"
+    type: vless
+    server: 156.59.90.107
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港244-443-128.1.31.210"
+    type: vless
+    server: 128.1.31.210
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港245-443-156.59.91.226"
+    type: vless
+    server: 156.59.91.226
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港250-443-156.59.153.73"
+    type: vless
+    server: 156.59.153.73
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港270-443-103.160.204.248"
+    type: vless
+    server: 103.160.204.248
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港273-443-218.103.187.83"
+    type: vless
+    server: 218.103.187.83
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港278-443-65.52.162.89"
+    type: vless
+    server: 65.52.162.89
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港281-443-156.234.43.114"
+    type: vless
+    server: 156.234.43.114
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港283-443-103.160.204.8"
+    type: vless
+    server: 103.160.204.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港286-443-20.24.68.59"
+    type: vless
+    server: 20.24.68.59
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港288-443-18.162.47.255"
+    type: vless
+    server: 18.162.47.255
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港289-443-18.163.244.153"
+    type: vless
+    server: 18.163.244.153
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港291-443-18.167.8.44"
+    type: vless
+    server: 18.167.8.44
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港296-443-14.128.47.57"
+    type: vless
+    server: 14.128.47.57
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港307-443-14.199.231.236"
+    type: vless
+    server: 14.199.231.236
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港308-443-154.194.0.145"
+    type: vless
+    server: 154.194.0.145
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港310-443-16.162.189.54"
+    type: vless
+    server: 16.162.189.54
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港311-443-16.163.147.103"
+    type: vless
+    server: 16.163.147.103
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港312-443-18.167.62.181"
+    type: vless
+    server: 18.167.62.181
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港313-443-45.40.59.66"
+    type: vless
+    server: 45.40.59.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港314-443-18.166.171.73"
+    type: vless
+    server: 18.166.171.73
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港315-443-18.163.232.185"
+    type: vless
+    server: 18.163.232.185
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港322-443-20.187.255.142"
+    type: vless
+    server: 20.187.255.142
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港328-443-27.50.49.57"
+    type: vless
+    server: 27.50.49.57
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港329-443-27.50.49.53"
+    type: vless
+    server: 27.50.49.53
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港330-443-27.50.49.79"
+    type: vless
+    server: 27.50.49.79
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港331-443-27.50.49.133"
+    type: vless
+    server: 27.50.49.133
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港332-443-27.50.49.128"
+    type: vless
+    server: 27.50.49.128
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港333-443-27.50.49.131"
+    type: vless
+    server: 27.50.49.131
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港334-443-104.208.97.3"
+    type: vless
+    server: 104.208.97.3
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港337-443-115.42.60.88"
+    type: vless
+    server: 115.42.60.88
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港338-443-27.50.49.77"
+    type: vless
+    server: 27.50.49.77
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港339-443-27.50.49.110"
+    type: vless
+    server: 27.50.49.110
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港340-443-27.50.49.122"
+    type: vless
+    server: 27.50.49.122
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港341-443-27.50.49.221"
+    type: vless
+    server: 27.50.49.221
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港342-443-43.240.12.176"
+    type: vless
+    server: 43.240.12.176
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港343-443-43.240.12.150"
+    type: vless
+    server: 43.240.12.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港344-443-103.30.76.70"
+    type: vless
+    server: 103.30.76.70
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港345-443-124.156.137.34"
+    type: vless
+    server: 124.156.137.34
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港346-443-27.50.49.150"
+    type: vless
+    server: 27.50.49.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港347-443-45.125.12.215"
+    type: vless
+    server: 45.125.12.215
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港348-443-210.0.244.166"
+    type: vless
+    server: 210.0.244.166
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港349-443-27.50.48.202"
+    type: vless
+    server: 27.50.48.202
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港350-443-27.50.48.218"
+    type: vless
+    server: 27.50.48.218
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港351-443-27.50.48.24"
+    type: vless
+    server: 27.50.48.24
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港352-443-27.50.48.84"
+    type: vless
+    server: 27.50.48.84
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港353-443-103.192.179.132"
+    type: vless
+    server: 103.192.179.132
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港354-443-35.220.227.215"
+    type: vless
+    server: 35.220.227.215
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港355-443-103.234.53.51"
+    type: vless
+    server: 103.234.53.51
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港358-443-27.50.49.229"
+    type: vless
+    server: 27.50.49.229
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港359-443-27.50.49.222"
+    type: vless
+    server: 27.50.49.222
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港360-443-27.50.49.181"
+    type: vless
+    server: 27.50.49.181
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港361-443-43.155.4.55"
+    type: vless
+    server: 43.155.4.55
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "香港01-443-154.211.8.58"
+      - "香港04-443-154.211.8.59"
+      - "香港05-443-45.125.12.38"
+      - "香港06-443-154.92.16.97"
+      - "香港07-443-149.104.2.140"
+      - "香港08-443-104.208.106.177"
+      - "香港09-443-8.218.22.224"
+      - "香港10-443-16.162.24.239"
+      - "香港16-443-154.218.15.101"
+      - "香港17-443-103.118.41.116"
+      - "香港23-443-154.214.92.189"
+      - "香港24-443-13.70.19.37"
+      - "香港30-443-149.104.2.58"
+      - "香港84-443-18.166.225.50"
+      - "香港104-443-47.76.60.128"
+      - "香港127-443-18.166.146.6"
+      - "香港129-443-156.245.188.19"
+      - "香港130-443-23.100.89.211"
+      - "香港131-443-128.14.67.35"
+      - "香港132-443-218.250.145.136"
+      - "香港133-443-103.160.204.50"
+      - "香港136-443-154.219.104.186"
+      - "香港164-443-27.50.49.189"
+      - "香港177-443-27.50.49.198"
+      - "香港207-443-103.231.15.209"
+      - "香港233-443-23.35.148.23"
+      - "香港234-443-52.184.103.79"
+      - "香港235-443-20.24.218.123"
+      - "香港236-443-101.32.183.218"
+      - "香港242-443-8.212.76.139"
+      - "香港243-443-156.59.90.107"
+      - "香港244-443-128.1.31.210"
+      - "香港245-443-156.59.91.226"
+      - "香港250-443-156.59.153.73"
+      - "香港270-443-103.160.204.248"
+      - "香港273-443-218.103.187.83"
+      - "香港278-443-65.52.162.89"
+      - "香港281-443-156.234.43.114"
+      - "香港283-443-103.160.204.8"
+      - "香港286-443-20.24.68.59"
+      - "香港288-443-18.162.47.255"
+      - "香港289-443-18.163.244.153"
+      - "香港291-443-18.167.8.44"
+      - "香港296-443-14.128.47.57"
+      - "香港307-443-14.199.231.236"
+      - "香港308-443-154.194.0.145"
+      - "香港310-443-16.162.189.54"
+      - "香港311-443-16.163.147.103"
+      - "香港312-443-18.167.62.181"
+      - "香港313-443-45.40.59.66"
+      - "香港314-443-18.166.171.73"
+      - "香港315-443-18.163.232.185"
+      - "香港322-443-20.187.255.142"
+      - "香港328-443-27.50.49.57"
+      - "香港329-443-27.50.49.53"
+      - "香港330-443-27.50.49.79"
+      - "香港331-443-27.50.49.133"
+      - "香港332-443-27.50.49.128"
+      - "香港333-443-27.50.49.131"
+      - "香港334-443-104.208.97.3"
+      - "香港337-443-115.42.60.88"
+      - "香港338-443-27.50.49.77"
+      - "香港339-443-27.50.49.110"
+      - "香港340-443-27.50.49.122"
+      - "香港341-443-27.50.49.221"
+      - "香港342-443-43.240.12.176"
+      - "香港343-443-43.240.12.150"
+      - "香港344-443-103.30.76.70"
+      - "香港345-443-124.156.137.34"
+      - "香港346-443-27.50.49.150"
+      - "香港347-443-45.125.12.215"
+      - "香港348-443-210.0.244.166"
+      - "香港349-443-27.50.48.202"
+      - "香港350-443-27.50.48.218"
+      - "香港351-443-27.50.48.24"
+      - "香港352-443-27.50.48.84"
+      - "香港353-443-103.192.179.132"
+      - "香港354-443-35.220.227.215"
+      - "香港355-443-103.234.53.51"
+      - "香港358-443-27.50.49.229"
+      - "香港359-443-27.50.49.222"
+      - "香港360-443-27.50.49.181"
+      - "香港361-443-43.155.4.55"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "香港01-443-154.211.8.58"
+      - "香港04-443-154.211.8.59"
+      - "香港05-443-45.125.12.38"
+      - "香港06-443-154.92.16.97"
+      - "香港07-443-149.104.2.140"
+      - "香港08-443-104.208.106.177"
+      - "香港09-443-8.218.22.224"
+      - "香港10-443-16.162.24.239"
+      - "香港16-443-154.218.15.101"
+      - "香港17-443-103.118.41.116"
+      - "香港23-443-154.214.92.189"
+      - "香港24-443-13.70.19.37"
+      - "香港30-443-149.104.2.58"
+      - "香港84-443-18.166.225.50"
+      - "香港104-443-47.76.60.128"
+      - "香港127-443-18.166.146.6"
+      - "香港129-443-156.245.188.19"
+      - "香港130-443-23.100.89.211"
+      - "香港131-443-128.14.67.35"
+      - "香港132-443-218.250.145.136"
+      - "香港133-443-103.160.204.50"
+      - "香港136-443-154.219.104.186"
+      - "香港164-443-27.50.49.189"
+      - "香港177-443-27.50.49.198"
+      - "香港207-443-103.231.15.209"
+      - "香港233-443-23.35.148.23"
+      - "香港234-443-52.184.103.79"
+      - "香港235-443-20.24.218.123"
+      - "香港236-443-101.32.183.218"
+      - "香港242-443-8.212.76.139"
+      - "香港243-443-156.59.90.107"
+      - "香港244-443-128.1.31.210"
+      - "香港245-443-156.59.91.226"
+      - "香港250-443-156.59.153.73"
+      - "香港270-443-103.160.204.248"
+      - "香港273-443-218.103.187.83"
+      - "香港278-443-65.52.162.89"
+      - "香港281-443-156.234.43.114"
+      - "香港283-443-103.160.204.8"
+      - "香港286-443-20.24.68.59"
+      - "香港288-443-18.162.47.255"
+      - "香港289-443-18.163.244.153"
+      - "香港291-443-18.167.8.44"
+      - "香港296-443-14.128.47.57"
+      - "香港307-443-14.199.231.236"
+      - "香港308-443-154.194.0.145"
+      - "香港310-443-16.162.189.54"
+      - "香港311-443-16.163.147.103"
+      - "香港312-443-18.167.62.181"
+      - "香港313-443-45.40.59.66"
+      - "香港314-443-18.166.171.73"
+      - "香港315-443-18.163.232.185"
+      - "香港322-443-20.187.255.142"
+      - "香港328-443-27.50.49.57"
+      - "香港329-443-27.50.49.53"
+      - "香港330-443-27.50.49.79"
+      - "香港331-443-27.50.49.133"
+      - "香港332-443-27.50.49.128"
+      - "香港333-443-27.50.49.131"
+      - "香港334-443-104.208.97.3"
+      - "香港337-443-115.42.60.88"
+      - "香港338-443-27.50.49.77"
+      - "香港339-443-27.50.49.110"
+      - "香港340-443-27.50.49.122"
+      - "香港341-443-27.50.49.221"
+      - "香港342-443-43.240.12.176"
+      - "香港343-443-43.240.12.150"
+      - "香港344-443-103.30.76.70"
+      - "香港345-443-124.156.137.34"
+      - "香港346-443-27.50.49.150"
+      - "香港347-443-45.125.12.215"
+      - "香港348-443-210.0.244.166"
+      - "香港349-443-27.50.48.202"
+      - "香港350-443-27.50.48.218"
+      - "香港351-443-27.50.48.24"
+      - "香港352-443-27.50.48.84"
+      - "香港353-443-103.192.179.132"
+      - "香港354-443-35.220.227.215"
+      - "香港355-443-103.234.53.51"
+      - "香港358-443-27.50.49.229"
+      - "香港359-443-27.50.49.222"
+      - "香港360-443-27.50.49.181"
+      - "香港361-443-43.155.4.55"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "香港01-443-154.211.8.58"
+      - "香港04-443-154.211.8.59"
+      - "香港05-443-45.125.12.38"
+      - "香港06-443-154.92.16.97"
+      - "香港07-443-149.104.2.140"
+      - "香港08-443-104.208.106.177"
+      - "香港09-443-8.218.22.224"
+      - "香港10-443-16.162.24.239"
+      - "香港16-443-154.218.15.101"
+      - "香港17-443-103.118.41.116"
+      - "香港23-443-154.214.92.189"
+      - "香港24-443-13.70.19.37"
+      - "香港30-443-149.104.2.58"
+      - "香港84-443-18.166.225.50"
+      - "香港104-443-47.76.60.128"
+      - "香港127-443-18.166.146.6"
+      - "香港129-443-156.245.188.19"
+      - "香港130-443-23.100.89.211"
+      - "香港131-443-128.14.67.35"
+      - "香港132-443-218.250.145.136"
+      - "香港133-443-103.160.204.50"
+      - "香港136-443-154.219.104.186"
+      - "香港164-443-27.50.49.189"
+      - "香港177-443-27.50.49.198"
+      - "香港207-443-103.231.15.209"
+      - "香港233-443-23.35.148.23"
+      - "香港234-443-52.184.103.79"
+      - "香港235-443-20.24.218.123"
+      - "香港236-443-101.32.183.218"
+      - "香港242-443-8.212.76.139"
+      - "香港243-443-156.59.90.107"
+      - "香港244-443-128.1.31.210"
+      - "香港245-443-156.59.91.226"
+      - "香港250-443-156.59.153.73"
+      - "香港270-443-103.160.204.248"
+      - "香港273-443-218.103.187.83"
+      - "香港278-443-65.52.162.89"
+      - "香港281-443-156.234.43.114"
+      - "香港283-443-103.160.204.8"
+      - "香港286-443-20.24.68.59"
+      - "香港288-443-18.162.47.255"
+      - "香港289-443-18.163.244.153"
+      - "香港291-443-18.167.8.44"
+      - "香港296-443-14.128.47.57"
+      - "香港307-443-14.199.231.236"
+      - "香港308-443-154.194.0.145"
+      - "香港310-443-16.162.189.54"
+      - "香港311-443-16.163.147.103"
+      - "香港312-443-18.167.62.181"
+      - "香港313-443-45.40.59.66"
+      - "香港314-443-18.166.171.73"
+      - "香港315-443-18.163.232.185"
+      - "香港322-443-20.187.255.142"
+      - "香港328-443-27.50.49.57"
+      - "香港329-443-27.50.49.53"
+      - "香港330-443-27.50.49.79"
+      - "香港331-443-27.50.49.133"
+      - "香港332-443-27.50.49.128"
+      - "香港333-443-27.50.49.131"
+      - "香港334-443-104.208.97.3"
+      - "香港337-443-115.42.60.88"
+      - "香港338-443-27.50.49.77"
+      - "香港339-443-27.50.49.110"
+      - "香港340-443-27.50.49.122"
+      - "香港341-443-27.50.49.221"
+      - "香港342-443-43.240.12.176"
+      - "香港343-443-43.240.12.150"
+      - "香港344-443-103.30.76.70"
+      - "香港345-443-124.156.137.34"
+      - "香港346-443-27.50.49.150"
+      - "香港347-443-45.125.12.215"
+      - "香港348-443-210.0.244.166"
+      - "香港349-443-27.50.48.202"
+      - "香港350-443-27.50.48.218"
+      - "香港351-443-27.50.48.24"
+      - "香港352-443-27.50.48.84"
+      - "香港353-443-103.192.179.132"
+      - "香港354-443-35.220.227.215"
+      - "香港355-443-103.234.53.51"
+      - "香港358-443-27.50.49.229"
+      - "香港359-443-27.50.49.222"
+      - "香港360-443-27.50.49.181"
+      - "香港361-443-43.155.4.55"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090

@@ -1,0 +1,2641 @@
+proxies:
+  - name: "diamondtrust.co.tz01-80-104.22.53.109"
+    type: vless
+    server: 104.22.53.109
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "bbs.bayfamily.us01-80-104.27.186.158"
+    type: vless
+    server: 104.27.186.158
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "autoip.lookingfor.top01-80-104.20.255.53"
+    type: vless
+    server: 104.20.255.53
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "subforprimusprimal.optimprime.ir01-80-104.22.51.162"
+    type: vless
+    server: 104.22.51.162
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "freejishu.com01-80-104.31.83.121"
+    type: vless
+    server: 104.31.83.121
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "coolink.pub01-80-104.24.107.185"
+    type: vless
+    server: 104.24.107.185
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "hqixsanj2.dns.molinks.xyz01-80-104.20.255.5"
+    type: vless
+    server: 104.20.255.5
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "chinaalb.com01-80-104.22.18.102"
+    type: vless
+    server: 104.22.18.102
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "git.hidns.co01-80-104.23.96.192"
+    type: vless
+    server: 104.23.96.192
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.f-xm.net01-80-104.22.56.182"
+    type: vless
+    server: 104.22.56.182
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "dieka.cc01-80-104.22.17.175"
+    type: vless
+    server: 104.22.17.175
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "image.fzxx.xyz01-80-104.20.119.255"
+    type: vless
+    server: 104.20.119.255
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "b.hkg.ddns-ip.net01-80-104.22.26.61"
+    type: vless
+    server: 104.22.26.61
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.tellwer.kozow.com01-80-104.21.134.67"
+    type: vless
+    server: 104.21.134.67
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "a.promocaobioextratus.com.br01-80-104.24.113.210"
+    type: vless
+    server: 104.24.113.210
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "vanmoody.org01-80-104.22.61.249"
+    type: vless
+    server: 104.22.61.249
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "dyt.rhyuunet.biz.id01-80-104.20.75.141"
+    type: vless
+    server: 104.20.75.141
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "policefcu.com01-80-104.22.20.245"
+    type: vless
+    server: 104.22.20.245
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "slucas.catholic.edu.au01-80-104.22.53.90"
+    type: vless
+    server: 104.22.53.90
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "4x.gs01-80-104.20.227.188"
+    type: vless
+    server: 104.20.227.188
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "romeyer.bucket.loliloli.net01-80-104.22.78.251"
+    type: vless
+    server: 104.22.78.251
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "status.loliloli.net01-80-104.22.70.210"
+    type: vless
+    server: 104.22.70.210
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "nhherbfarm.com01-80-104.24.116.210"
+    type: vless
+    server: 104.24.116.210
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "meijubo.com01-80-104.20.100.103"
+    type: vless
+    server: 104.20.100.103
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.nhherbfarm.com01-80-104.24.117.210"
+    type: vless
+    server: 104.24.117.210
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "mc.xn--9kq921dcfa.eu.org01-80-104.20.96.162"
+    type: vless
+    server: 104.20.96.162
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "bfeyy.cloudns.biz01-80-104.23.99.115"
+    type: vless
+    server: 104.23.99.115
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "a.winclick.io01-80-104.27.152.215"
+    type: vless
+    server: 104.27.152.215
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "fghemisdc.snsu.edu.ph01-80-104.20.31.118"
+    type: vless
+    server: 104.20.31.118
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "l.neonmag.fr01-80-104.20.25.247"
+    type: vless
+    server: 104.20.25.247
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "mara-issue-1.backerkit.com01-80-104.20.36.187"
+    type: vless
+    server: 104.20.36.187
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.tzizi.com01-80-104.20.34.73"
+    type: vless
+    server: 104.20.34.73
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "glleiloes.com.br01-80-104.20.47.246"
+    type: vless
+    server: 104.20.47.246
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "4069.upsell.is01-80-104.20.37.58"
+    type: vless
+    server: 104.20.37.58
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "test-superselect.flarehr.com01-80-104.20.44.142"
+    type: vless
+    server: 104.20.44.142
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.hlokiw.com01-80-104.20.23.105"
+    type: vless
+    server: 104.20.23.105
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "main.visualinspection.nissan-dev.suite.maximo.com01-80-104.20.31.117"
+    type: vless
+    server: 104.20.31.117
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "wgalil.ac.il01-80-104.20.39.48"
+    type: vless
+    server: 104.20.39.48
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "a.wefestival.com01-80-104.20.47.13"
+    type: vless
+    server: 104.20.47.13
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "academy.jagoanhosting.com01-80-104.20.39.17"
+    type: vless
+    server: 104.20.39.17
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "s-notify.prismray.io01-80-104.20.32.74"
+    type: vless
+    server: 104.20.32.74
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "kiosk-demo.aigens.com01-80-104.20.45.231"
+    type: vless
+    server: 104.20.45.231
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国01-80-104.20.19.27"
+    type: vless
+    server: 104.20.19.27
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国03-80-104.20.16.252"
+    type: vless
+    server: 104.20.16.252
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国04-80-104.20.41.140"
+    type: vless
+    server: 104.20.41.140
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "investor.fb.com.web.bmkg.xyz01-80-104.20.47.217"
+    type: vless
+    server: 104.20.47.217
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "adherent.mamutuellecomplementaire.fr01-80-104.20.24.240"
+    type: vless
+    server: 104.20.24.240
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "leaves-test.caes.ucdavis.edu01-80-104.20.34.191"
+    type: vless
+    server: 104.20.34.191
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "api.gengkapak.my.id01-80-104.20.31.27"
+    type: vless
+    server: 104.20.31.27
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "load.sst.heckentotal.ch01-80-104.20.25.86"
+    type: vless
+    server: 104.20.25.86
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "jmpzoauth.dupe.com01-80-104.20.24.50"
+    type: vless
+    server: 104.20.24.50
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "preview-tracking.staging.jgwentworth.com01-80-104.20.29.209"
+    type: vless
+    server: 104.20.29.209
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "tururu.gulas.sme.sk01-80-104.20.28.227"
+    type: vless
+    server: 104.20.28.227
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "admissions.42lehavre.fr01-80-104.20.33.152"
+    type: vless
+    server: 104.20.33.152
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "a.int-8.jex.nl01-80-104.20.26.244"
+    type: vless
+    server: 104.20.26.244
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "biohaven-prediction-app.n-side.com01-80-104.20.44.10"
+    type: vless
+    server: 104.20.44.10
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "data-platform.test-roh.vitvio.com01-80-104.20.29.96"
+    type: vless
+    server: 104.20.29.96
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "id6.bestvpn.biz.id01-80-104.20.30.82"
+    type: vless
+    server: 104.20.30.82
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "newsletter.slansolas.com01-80-104.20.33.17"
+    type: vless
+    server: 104.20.33.17
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "donate.casualrust.de01-80-104.20.22.112"
+    type: vless
+    server: 104.20.22.112
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "photos-api.switchboard.lgbt01-80-104.20.26.113"
+    type: vless
+    server: 104.20.26.113
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "main.optimizer.fxg-fleet-release.suite.maximo.com01-80-104.20.17.3"
+    type: vless
+    server: 104.20.17.3
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "graphxr.cyberpeace.services01-80-104.20.17.139"
+    type: vless
+    server: 104.20.17.139
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "api.security.ideonapi.com01-80-104.20.41.98"
+    type: vless
+    server: 104.20.41.98
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "support.zoom.us.free-dewa.vip-latunv.biz.id01-80-104.20.46.79"
+    type: vless
+    server: 104.20.46.79
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "24th-annual-main-street-golf-tournament.perfectgolfevent.com01-80-104.20.20.135"
+    type: vless
+    server: 104.20.20.135
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "wheel-balloon-pinco-kg.pu707ev.com01-80-104.20.45.115"
+    type: vless
+    server: 104.20.45.115
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "pay.tricolorpaulista.shop01-80-104.20.41.97"
+    type: vless
+    server: 104.20.41.97
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "ava.game.naver.com.bakoel.serverpremium.web.id01-80-104.20.27.68"
+    type: vless
+    server: 104.20.27.68
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "dalai-playground.anyline.com01-80-104.20.19.43"
+    type: vless
+    server: 104.20.19.43
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "workspace.pgrtassociates.com01-80-104.20.17.89"
+    type: vless
+    server: 104.20.17.89
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "r-kuhn-0704.dev-login.revers.io01-80-104.20.34.145"
+    type: vless
+    server: 104.20.34.145
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "dev-download.avastbrowser.com01-80-104.20.37.116"
+    type: vless
+    server: 104.20.37.116
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "dev-download.avgbrowser.com01-80-104.20.22.186"
+    type: vless
+    server: 104.20.22.186
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "poc-so99-api-almarai-aggr.toolsgroup.com01-80-104.20.34.173"
+    type: vless
+    server: 104.20.34.173
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "paymentapi.papi.bet.br01-80-104.20.44.198"
+    type: vless
+    server: 104.20.44.198
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "quorumcybersecurity.com01-80-104.20.23.160"
+    type: vless
+    server: 104.20.23.160
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "akademia.bonsainiwaki.com01-80-104.20.36.127"
+    type: vless
+    server: 104.20.36.127
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "primanota.webclient.it.altitud.network01-80-104.20.20.120"
+    type: vless
+    server: 104.20.20.120
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.spedalesenzafrontiere.it01-80-104.20.25.11"
+    type: vless
+    server: 104.20.25.11
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "senseationalkidsgym.aluvii.com01-80-104.20.20.26"
+    type: vless
+    server: 104.20.20.26
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "fastdoctor.jp01-80-104.20.19.39"
+    type: vless
+    server: 104.20.19.39
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "myportal.agencyeightyseven.com01-80-104.20.44.97"
+    type: vless
+    server: 104.20.44.97
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "techniek.fh-accept.xyz01-80-104.20.39.15"
+    type: vless
+    server: 104.20.39.15
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "smartiq-gpt-gateway-development.smartiq.io01-80-104.20.47.218"
+    type: vless
+    server: 104.20.47.218
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "uk.stage.mer.eco01-80-104.20.20.66"
+    type: vless
+    server: 104.20.20.66
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "docs.vidanovavle.com01-80-104.20.22.94"
+    type: vless
+    server: 104.20.22.94
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "main.home.mcspkvn5.suite.maximo.com01-80-104.20.24.224"
+    type: vless
+    server: 104.20.24.224
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "steve.beraterportal.dev.gcp.questico.de01-80-104.20.43.126"
+    type: vless
+    server: 104.20.43.126
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "biz2020pxyuat.hamilton.ca01-80-104.20.39.248"
+    type: vless
+    server: 104.20.39.248
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "re-5361.recyda.com01-80-104.20.33.159"
+    type: vless
+    server: 104.20.33.159
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "developer.world.org01-80-104.20.36.171"
+    type: vless
+    server: 104.20.36.171
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "kind-en-jeugd.adelantegroep.nl01-80-104.20.42.235"
+    type: vless
+    server: 104.20.42.235
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "kfk.strefazajec.pl01-80-104.20.47.201"
+    type: vless
+    server: 104.20.47.201
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "sbapi.keysix.com01-80-104.20.21.249"
+    type: vless
+    server: 104.20.21.249
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "staging-ussd-pmbetke.energaming.services01-80-104.20.21.182"
+    type: vless
+    server: 104.20.21.182
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "uk-sandbox-router.prizeout.com01-80-104.20.40.174"
+    type: vless
+    server: 104.20.40.174
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.arab-platform.com01-80-104.20.25.47"
+    type: vless
+    server: 104.20.25.47
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "kudjang.fisip.unpad.ac.id01-80-104.20.38.165"
+    type: vless
+    server: 104.20.38.165
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "demo-sanitas-search-app.getvim.com01-80-104.20.37.163"
+    type: vless
+    server: 104.20.37.163
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "analytics.nelson.com01-80-104.20.18.23"
+    type: vless
+    server: 104.20.18.23
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "zoomgov.socifiles.com.bedes.denkavpn.xyz01-80-104.20.38.159"
+    type: vless
+    server: 104.20.38.159
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "initiatives.eflow.sa01-80-104.20.45.209"
+    type: vless
+    server: 104.20.45.209
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "internal-gh-core-mega-production.gridhub.cloud01-80-104.20.29.30"
+    type: vless
+    server: 104.20.29.30
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.micropia.nl01-80-104.20.31.237"
+    type: vless
+    server: 104.20.31.237
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "sairaanhoitajapaivat.messukeskus.com01-80-104.20.26.133"
+    type: vless
+    server: 104.20.26.133
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "auth-sandbox.luminpdf.com01-80-104.20.20.204"
+    type: vless
+    server: 104.20.20.204
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "tracking.rahala.com.sa01-80-104.20.46.158"
+    type: vless
+    server: 104.20.46.158
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "uptime.celfapps.com01-80-104.20.24.136"
+    type: vless
+    server: 104.20.24.136
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "main-rpt.manage.homecenter-dev1.suite.maximo.com01-80-104.20.42.154"
+    type: vless
+    server: 104.20.42.154
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "naver.com.justin2.bumiayu.biz.id01-80-104.20.21.237"
+    type: vless
+    server: 104.20.21.237
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "status.selly.io01-80-104.20.25.249"
+    type: vless
+    server: 104.20.25.249
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "domainsfrontend-chatbot-integration.frontend.nbx.com01-80-104.20.31.122"
+    type: vless
+    server: 104.20.31.122
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "instalar.anota.ai01-80-104.20.42.78"
+    type: vless
+    server: 104.20.42.78
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "spotify.com.azkiya.vpn-premium.online01-80-104.20.29.171"
+    type: vless
+    server: 104.20.29.171
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "monitor.s811.net01-80-104.20.21.173"
+    type: vless
+    server: 104.20.21.173
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "monitor.sequitur.suite.maximo.com01-80-104.20.33.49"
+    type: vless
+    server: 104.20.33.49
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "portal.lakelinetax.com01-80-104.20.33.156"
+    type: vless
+    server: 104.20.33.156
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.travaillerchezhema.be01-80-104.20.42.202"
+    type: vless
+    server: 104.20.42.202
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "link-hello.digitalwellness.com01-80-104.20.22.225"
+    type: vless
+    server: 104.20.22.225
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "corpfiledrop.glasswall.com01-80-104.20.36.215"
+    type: vless
+    server: 104.20.36.215
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "productsdev.gecurrent.com01-80-104.20.23.113"
+    type: vless
+    server: 104.20.23.113
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "dl.cvs.freefiremobile.com.atha-1.vpnpremium.id01-80-104.20.18.140"
+    type: vless
+    server: 104.20.18.140
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "www.ealouis.com01-80-104.20.19.167"
+    type: vless
+    server: 104.20.19.167
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "ruangguru.com.falsasep.bandarvpn.cloud01-80-104.20.43.116"
+    type: vless
+    server: 104.20.43.116
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "test-be2-options.pi42.com01-80-104.20.19.213"
+    type: vless
+    server: 104.20.19.213
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "ouauzknn0.sssrr.org01-80-104.20.42.88"
+    type: vless
+    server: 104.20.42.88
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "heatable.com01-80-104.20.36.254"
+    type: vless
+    server: 104.20.36.254
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "tradingshenzhen.com01-80-104.20.33.225"
+    type: vless
+    server: 104.20.33.225
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "staticnew.aetoscg.com01-80-104.20.21.114"
+    type: vless
+    server: 104.20.21.114
+    port: 80
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    alpn:
+      - "h2%2Chttp%2F1.1"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "diamondtrust.co.tz01-80-104.22.53.109"
+      - "bbs.bayfamily.us01-80-104.27.186.158"
+      - "autoip.lookingfor.top01-80-104.20.255.53"
+      - "subforprimusprimal.optimprime.ir01-80-104.22.51.162"
+      - "freejishu.com01-80-104.31.83.121"
+      - "coolink.pub01-80-104.24.107.185"
+      - "hqixsanj2.dns.molinks.xyz01-80-104.20.255.5"
+      - "chinaalb.com01-80-104.22.18.102"
+      - "git.hidns.co01-80-104.23.96.192"
+      - "www.f-xm.net01-80-104.22.56.182"
+      - "dieka.cc01-80-104.22.17.175"
+      - "image.fzxx.xyz01-80-104.20.119.255"
+      - "b.hkg.ddns-ip.net01-80-104.22.26.61"
+      - "www.tellwer.kozow.com01-80-104.21.134.67"
+      - "a.promocaobioextratus.com.br01-80-104.24.113.210"
+      - "vanmoody.org01-80-104.22.61.249"
+      - "dyt.rhyuunet.biz.id01-80-104.20.75.141"
+      - "policefcu.com01-80-104.22.20.245"
+      - "slucas.catholic.edu.au01-80-104.22.53.90"
+      - "4x.gs01-80-104.20.227.188"
+      - "romeyer.bucket.loliloli.net01-80-104.22.78.251"
+      - "status.loliloli.net01-80-104.22.70.210"
+      - "nhherbfarm.com01-80-104.24.116.210"
+      - "meijubo.com01-80-104.20.100.103"
+      - "www.nhherbfarm.com01-80-104.24.117.210"
+      - "mc.xn--9kq921dcfa.eu.org01-80-104.20.96.162"
+      - "bfeyy.cloudns.biz01-80-104.23.99.115"
+      - "a.winclick.io01-80-104.27.152.215"
+      - "fghemisdc.snsu.edu.ph01-80-104.20.31.118"
+      - "l.neonmag.fr01-80-104.20.25.247"
+      - "mara-issue-1.backerkit.com01-80-104.20.36.187"
+      - "www.tzizi.com01-80-104.20.34.73"
+      - "glleiloes.com.br01-80-104.20.47.246"
+      - "4069.upsell.is01-80-104.20.37.58"
+      - "test-superselect.flarehr.com01-80-104.20.44.142"
+      - "www.hlokiw.com01-80-104.20.23.105"
+      - "main.visualinspection.nissan-dev.suite.maximo.com01-80-104.20.31.117"
+      - "wgalil.ac.il01-80-104.20.39.48"
+      - "a.wefestival.com01-80-104.20.47.13"
+      - "academy.jagoanhosting.com01-80-104.20.39.17"
+      - "s-notify.prismray.io01-80-104.20.32.74"
+      - "kiosk-demo.aigens.com01-80-104.20.45.231"
+      - "美国01-80-104.20.19.27"
+      - "美国03-80-104.20.16.252"
+      - "美国04-80-104.20.41.140"
+      - "investor.fb.com.web.bmkg.xyz01-80-104.20.47.217"
+      - "adherent.mamutuellecomplementaire.fr01-80-104.20.24.240"
+      - "leaves-test.caes.ucdavis.edu01-80-104.20.34.191"
+      - "api.gengkapak.my.id01-80-104.20.31.27"
+      - "load.sst.heckentotal.ch01-80-104.20.25.86"
+      - "jmpzoauth.dupe.com01-80-104.20.24.50"
+      - "preview-tracking.staging.jgwentworth.com01-80-104.20.29.209"
+      - "tururu.gulas.sme.sk01-80-104.20.28.227"
+      - "admissions.42lehavre.fr01-80-104.20.33.152"
+      - "a.int-8.jex.nl01-80-104.20.26.244"
+      - "biohaven-prediction-app.n-side.com01-80-104.20.44.10"
+      - "data-platform.test-roh.vitvio.com01-80-104.20.29.96"
+      - "id6.bestvpn.biz.id01-80-104.20.30.82"
+      - "newsletter.slansolas.com01-80-104.20.33.17"
+      - "donate.casualrust.de01-80-104.20.22.112"
+      - "photos-api.switchboard.lgbt01-80-104.20.26.113"
+      - "main.optimizer.fxg-fleet-release.suite.maximo.com01-80-104.20.17.3"
+      - "graphxr.cyberpeace.services01-80-104.20.17.139"
+      - "api.security.ideonapi.com01-80-104.20.41.98"
+      - "support.zoom.us.free-dewa.vip-latunv.biz.id01-80-104.20.46.79"
+      - "24th-annual-main-street-golf-tournament.perfectgolfevent.com01-80-104.20.20.135"
+      - "wheel-balloon-pinco-kg.pu707ev.com01-80-104.20.45.115"
+      - "pay.tricolorpaulista.shop01-80-104.20.41.97"
+      - "ava.game.naver.com.bakoel.serverpremium.web.id01-80-104.20.27.68"
+      - "dalai-playground.anyline.com01-80-104.20.19.43"
+      - "workspace.pgrtassociates.com01-80-104.20.17.89"
+      - "r-kuhn-0704.dev-login.revers.io01-80-104.20.34.145"
+      - "dev-download.avastbrowser.com01-80-104.20.37.116"
+      - "dev-download.avgbrowser.com01-80-104.20.22.186"
+      - "poc-so99-api-almarai-aggr.toolsgroup.com01-80-104.20.34.173"
+      - "paymentapi.papi.bet.br01-80-104.20.44.198"
+      - "quorumcybersecurity.com01-80-104.20.23.160"
+      - "akademia.bonsainiwaki.com01-80-104.20.36.127"
+      - "primanota.webclient.it.altitud.network01-80-104.20.20.120"
+      - "www.spedalesenzafrontiere.it01-80-104.20.25.11"
+      - "senseationalkidsgym.aluvii.com01-80-104.20.20.26"
+      - "fastdoctor.jp01-80-104.20.19.39"
+      - "myportal.agencyeightyseven.com01-80-104.20.44.97"
+      - "techniek.fh-accept.xyz01-80-104.20.39.15"
+      - "smartiq-gpt-gateway-development.smartiq.io01-80-104.20.47.218"
+      - "uk.stage.mer.eco01-80-104.20.20.66"
+      - "docs.vidanovavle.com01-80-104.20.22.94"
+      - "main.home.mcspkvn5.suite.maximo.com01-80-104.20.24.224"
+      - "steve.beraterportal.dev.gcp.questico.de01-80-104.20.43.126"
+      - "biz2020pxyuat.hamilton.ca01-80-104.20.39.248"
+      - "re-5361.recyda.com01-80-104.20.33.159"
+      - "developer.world.org01-80-104.20.36.171"
+      - "kind-en-jeugd.adelantegroep.nl01-80-104.20.42.235"
+      - "kfk.strefazajec.pl01-80-104.20.47.201"
+      - "sbapi.keysix.com01-80-104.20.21.249"
+      - "staging-ussd-pmbetke.energaming.services01-80-104.20.21.182"
+      - "uk-sandbox-router.prizeout.com01-80-104.20.40.174"
+      - "www.arab-platform.com01-80-104.20.25.47"
+      - "kudjang.fisip.unpad.ac.id01-80-104.20.38.165"
+      - "demo-sanitas-search-app.getvim.com01-80-104.20.37.163"
+      - "analytics.nelson.com01-80-104.20.18.23"
+      - "zoomgov.socifiles.com.bedes.denkavpn.xyz01-80-104.20.38.159"
+      - "initiatives.eflow.sa01-80-104.20.45.209"
+      - "internal-gh-core-mega-production.gridhub.cloud01-80-104.20.29.30"
+      - "www.micropia.nl01-80-104.20.31.237"
+      - "sairaanhoitajapaivat.messukeskus.com01-80-104.20.26.133"
+      - "auth-sandbox.luminpdf.com01-80-104.20.20.204"
+      - "tracking.rahala.com.sa01-80-104.20.46.158"
+      - "uptime.celfapps.com01-80-104.20.24.136"
+      - "main-rpt.manage.homecenter-dev1.suite.maximo.com01-80-104.20.42.154"
+      - "naver.com.justin2.bumiayu.biz.id01-80-104.20.21.237"
+      - "status.selly.io01-80-104.20.25.249"
+      - "domainsfrontend-chatbot-integration.frontend.nbx.com01-80-104.20.31.122"
+      - "instalar.anota.ai01-80-104.20.42.78"
+      - "spotify.com.azkiya.vpn-premium.online01-80-104.20.29.171"
+      - "monitor.s811.net01-80-104.20.21.173"
+      - "monitor.sequitur.suite.maximo.com01-80-104.20.33.49"
+      - "portal.lakelinetax.com01-80-104.20.33.156"
+      - "www.travaillerchezhema.be01-80-104.20.42.202"
+      - "link-hello.digitalwellness.com01-80-104.20.22.225"
+      - "corpfiledrop.glasswall.com01-80-104.20.36.215"
+      - "productsdev.gecurrent.com01-80-104.20.23.113"
+      - "dl.cvs.freefiremobile.com.atha-1.vpnpremium.id01-80-104.20.18.140"
+      - "www.ealouis.com01-80-104.20.19.167"
+      - "ruangguru.com.falsasep.bandarvpn.cloud01-80-104.20.43.116"
+      - "test-be2-options.pi42.com01-80-104.20.19.213"
+      - "ouauzknn0.sssrr.org01-80-104.20.42.88"
+      - "heatable.com01-80-104.20.36.254"
+      - "tradingshenzhen.com01-80-104.20.33.225"
+      - "staticnew.aetoscg.com01-80-104.20.21.114"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "diamondtrust.co.tz01-80-104.22.53.109"
+      - "bbs.bayfamily.us01-80-104.27.186.158"
+      - "autoip.lookingfor.top01-80-104.20.255.53"
+      - "subforprimusprimal.optimprime.ir01-80-104.22.51.162"
+      - "freejishu.com01-80-104.31.83.121"
+      - "coolink.pub01-80-104.24.107.185"
+      - "hqixsanj2.dns.molinks.xyz01-80-104.20.255.5"
+      - "chinaalb.com01-80-104.22.18.102"
+      - "git.hidns.co01-80-104.23.96.192"
+      - "www.f-xm.net01-80-104.22.56.182"
+      - "dieka.cc01-80-104.22.17.175"
+      - "image.fzxx.xyz01-80-104.20.119.255"
+      - "b.hkg.ddns-ip.net01-80-104.22.26.61"
+      - "www.tellwer.kozow.com01-80-104.21.134.67"
+      - "a.promocaobioextratus.com.br01-80-104.24.113.210"
+      - "vanmoody.org01-80-104.22.61.249"
+      - "dyt.rhyuunet.biz.id01-80-104.20.75.141"
+      - "policefcu.com01-80-104.22.20.245"
+      - "slucas.catholic.edu.au01-80-104.22.53.90"
+      - "4x.gs01-80-104.20.227.188"
+      - "romeyer.bucket.loliloli.net01-80-104.22.78.251"
+      - "status.loliloli.net01-80-104.22.70.210"
+      - "nhherbfarm.com01-80-104.24.116.210"
+      - "meijubo.com01-80-104.20.100.103"
+      - "www.nhherbfarm.com01-80-104.24.117.210"
+      - "mc.xn--9kq921dcfa.eu.org01-80-104.20.96.162"
+      - "bfeyy.cloudns.biz01-80-104.23.99.115"
+      - "a.winclick.io01-80-104.27.152.215"
+      - "fghemisdc.snsu.edu.ph01-80-104.20.31.118"
+      - "l.neonmag.fr01-80-104.20.25.247"
+      - "mara-issue-1.backerkit.com01-80-104.20.36.187"
+      - "www.tzizi.com01-80-104.20.34.73"
+      - "glleiloes.com.br01-80-104.20.47.246"
+      - "4069.upsell.is01-80-104.20.37.58"
+      - "test-superselect.flarehr.com01-80-104.20.44.142"
+      - "www.hlokiw.com01-80-104.20.23.105"
+      - "main.visualinspection.nissan-dev.suite.maximo.com01-80-104.20.31.117"
+      - "wgalil.ac.il01-80-104.20.39.48"
+      - "a.wefestival.com01-80-104.20.47.13"
+      - "academy.jagoanhosting.com01-80-104.20.39.17"
+      - "s-notify.prismray.io01-80-104.20.32.74"
+      - "kiosk-demo.aigens.com01-80-104.20.45.231"
+      - "美国01-80-104.20.19.27"
+      - "美国03-80-104.20.16.252"
+      - "美国04-80-104.20.41.140"
+      - "investor.fb.com.web.bmkg.xyz01-80-104.20.47.217"
+      - "adherent.mamutuellecomplementaire.fr01-80-104.20.24.240"
+      - "leaves-test.caes.ucdavis.edu01-80-104.20.34.191"
+      - "api.gengkapak.my.id01-80-104.20.31.27"
+      - "load.sst.heckentotal.ch01-80-104.20.25.86"
+      - "jmpzoauth.dupe.com01-80-104.20.24.50"
+      - "preview-tracking.staging.jgwentworth.com01-80-104.20.29.209"
+      - "tururu.gulas.sme.sk01-80-104.20.28.227"
+      - "admissions.42lehavre.fr01-80-104.20.33.152"
+      - "a.int-8.jex.nl01-80-104.20.26.244"
+      - "biohaven-prediction-app.n-side.com01-80-104.20.44.10"
+      - "data-platform.test-roh.vitvio.com01-80-104.20.29.96"
+      - "id6.bestvpn.biz.id01-80-104.20.30.82"
+      - "newsletter.slansolas.com01-80-104.20.33.17"
+      - "donate.casualrust.de01-80-104.20.22.112"
+      - "photos-api.switchboard.lgbt01-80-104.20.26.113"
+      - "main.optimizer.fxg-fleet-release.suite.maximo.com01-80-104.20.17.3"
+      - "graphxr.cyberpeace.services01-80-104.20.17.139"
+      - "api.security.ideonapi.com01-80-104.20.41.98"
+      - "support.zoom.us.free-dewa.vip-latunv.biz.id01-80-104.20.46.79"
+      - "24th-annual-main-street-golf-tournament.perfectgolfevent.com01-80-104.20.20.135"
+      - "wheel-balloon-pinco-kg.pu707ev.com01-80-104.20.45.115"
+      - "pay.tricolorpaulista.shop01-80-104.20.41.97"
+      - "ava.game.naver.com.bakoel.serverpremium.web.id01-80-104.20.27.68"
+      - "dalai-playground.anyline.com01-80-104.20.19.43"
+      - "workspace.pgrtassociates.com01-80-104.20.17.89"
+      - "r-kuhn-0704.dev-login.revers.io01-80-104.20.34.145"
+      - "dev-download.avastbrowser.com01-80-104.20.37.116"
+      - "dev-download.avgbrowser.com01-80-104.20.22.186"
+      - "poc-so99-api-almarai-aggr.toolsgroup.com01-80-104.20.34.173"
+      - "paymentapi.papi.bet.br01-80-104.20.44.198"
+      - "quorumcybersecurity.com01-80-104.20.23.160"
+      - "akademia.bonsainiwaki.com01-80-104.20.36.127"
+      - "primanota.webclient.it.altitud.network01-80-104.20.20.120"
+      - "www.spedalesenzafrontiere.it01-80-104.20.25.11"
+      - "senseationalkidsgym.aluvii.com01-80-104.20.20.26"
+      - "fastdoctor.jp01-80-104.20.19.39"
+      - "myportal.agencyeightyseven.com01-80-104.20.44.97"
+      - "techniek.fh-accept.xyz01-80-104.20.39.15"
+      - "smartiq-gpt-gateway-development.smartiq.io01-80-104.20.47.218"
+      - "uk.stage.mer.eco01-80-104.20.20.66"
+      - "docs.vidanovavle.com01-80-104.20.22.94"
+      - "main.home.mcspkvn5.suite.maximo.com01-80-104.20.24.224"
+      - "steve.beraterportal.dev.gcp.questico.de01-80-104.20.43.126"
+      - "biz2020pxyuat.hamilton.ca01-80-104.20.39.248"
+      - "re-5361.recyda.com01-80-104.20.33.159"
+      - "developer.world.org01-80-104.20.36.171"
+      - "kind-en-jeugd.adelantegroep.nl01-80-104.20.42.235"
+      - "kfk.strefazajec.pl01-80-104.20.47.201"
+      - "sbapi.keysix.com01-80-104.20.21.249"
+      - "staging-ussd-pmbetke.energaming.services01-80-104.20.21.182"
+      - "uk-sandbox-router.prizeout.com01-80-104.20.40.174"
+      - "www.arab-platform.com01-80-104.20.25.47"
+      - "kudjang.fisip.unpad.ac.id01-80-104.20.38.165"
+      - "demo-sanitas-search-app.getvim.com01-80-104.20.37.163"
+      - "analytics.nelson.com01-80-104.20.18.23"
+      - "zoomgov.socifiles.com.bedes.denkavpn.xyz01-80-104.20.38.159"
+      - "initiatives.eflow.sa01-80-104.20.45.209"
+      - "internal-gh-core-mega-production.gridhub.cloud01-80-104.20.29.30"
+      - "www.micropia.nl01-80-104.20.31.237"
+      - "sairaanhoitajapaivat.messukeskus.com01-80-104.20.26.133"
+      - "auth-sandbox.luminpdf.com01-80-104.20.20.204"
+      - "tracking.rahala.com.sa01-80-104.20.46.158"
+      - "uptime.celfapps.com01-80-104.20.24.136"
+      - "main-rpt.manage.homecenter-dev1.suite.maximo.com01-80-104.20.42.154"
+      - "naver.com.justin2.bumiayu.biz.id01-80-104.20.21.237"
+      - "status.selly.io01-80-104.20.25.249"
+      - "domainsfrontend-chatbot-integration.frontend.nbx.com01-80-104.20.31.122"
+      - "instalar.anota.ai01-80-104.20.42.78"
+      - "spotify.com.azkiya.vpn-premium.online01-80-104.20.29.171"
+      - "monitor.s811.net01-80-104.20.21.173"
+      - "monitor.sequitur.suite.maximo.com01-80-104.20.33.49"
+      - "portal.lakelinetax.com01-80-104.20.33.156"
+      - "www.travaillerchezhema.be01-80-104.20.42.202"
+      - "link-hello.digitalwellness.com01-80-104.20.22.225"
+      - "corpfiledrop.glasswall.com01-80-104.20.36.215"
+      - "productsdev.gecurrent.com01-80-104.20.23.113"
+      - "dl.cvs.freefiremobile.com.atha-1.vpnpremium.id01-80-104.20.18.140"
+      - "www.ealouis.com01-80-104.20.19.167"
+      - "ruangguru.com.falsasep.bandarvpn.cloud01-80-104.20.43.116"
+      - "test-be2-options.pi42.com01-80-104.20.19.213"
+      - "ouauzknn0.sssrr.org01-80-104.20.42.88"
+      - "heatable.com01-80-104.20.36.254"
+      - "tradingshenzhen.com01-80-104.20.33.225"
+      - "staticnew.aetoscg.com01-80-104.20.21.114"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "diamondtrust.co.tz01-80-104.22.53.109"
+      - "bbs.bayfamily.us01-80-104.27.186.158"
+      - "autoip.lookingfor.top01-80-104.20.255.53"
+      - "subforprimusprimal.optimprime.ir01-80-104.22.51.162"
+      - "freejishu.com01-80-104.31.83.121"
+      - "coolink.pub01-80-104.24.107.185"
+      - "hqixsanj2.dns.molinks.xyz01-80-104.20.255.5"
+      - "chinaalb.com01-80-104.22.18.102"
+      - "git.hidns.co01-80-104.23.96.192"
+      - "www.f-xm.net01-80-104.22.56.182"
+      - "dieka.cc01-80-104.22.17.175"
+      - "image.fzxx.xyz01-80-104.20.119.255"
+      - "b.hkg.ddns-ip.net01-80-104.22.26.61"
+      - "www.tellwer.kozow.com01-80-104.21.134.67"
+      - "a.promocaobioextratus.com.br01-80-104.24.113.210"
+      - "vanmoody.org01-80-104.22.61.249"
+      - "dyt.rhyuunet.biz.id01-80-104.20.75.141"
+      - "policefcu.com01-80-104.22.20.245"
+      - "slucas.catholic.edu.au01-80-104.22.53.90"
+      - "4x.gs01-80-104.20.227.188"
+      - "romeyer.bucket.loliloli.net01-80-104.22.78.251"
+      - "status.loliloli.net01-80-104.22.70.210"
+      - "nhherbfarm.com01-80-104.24.116.210"
+      - "meijubo.com01-80-104.20.100.103"
+      - "www.nhherbfarm.com01-80-104.24.117.210"
+      - "mc.xn--9kq921dcfa.eu.org01-80-104.20.96.162"
+      - "bfeyy.cloudns.biz01-80-104.23.99.115"
+      - "a.winclick.io01-80-104.27.152.215"
+      - "fghemisdc.snsu.edu.ph01-80-104.20.31.118"
+      - "l.neonmag.fr01-80-104.20.25.247"
+      - "mara-issue-1.backerkit.com01-80-104.20.36.187"
+      - "www.tzizi.com01-80-104.20.34.73"
+      - "glleiloes.com.br01-80-104.20.47.246"
+      - "4069.upsell.is01-80-104.20.37.58"
+      - "test-superselect.flarehr.com01-80-104.20.44.142"
+      - "www.hlokiw.com01-80-104.20.23.105"
+      - "main.visualinspection.nissan-dev.suite.maximo.com01-80-104.20.31.117"
+      - "wgalil.ac.il01-80-104.20.39.48"
+      - "a.wefestival.com01-80-104.20.47.13"
+      - "academy.jagoanhosting.com01-80-104.20.39.17"
+      - "s-notify.prismray.io01-80-104.20.32.74"
+      - "kiosk-demo.aigens.com01-80-104.20.45.231"
+      - "美国01-80-104.20.19.27"
+      - "美国03-80-104.20.16.252"
+      - "美国04-80-104.20.41.140"
+      - "investor.fb.com.web.bmkg.xyz01-80-104.20.47.217"
+      - "adherent.mamutuellecomplementaire.fr01-80-104.20.24.240"
+      - "leaves-test.caes.ucdavis.edu01-80-104.20.34.191"
+      - "api.gengkapak.my.id01-80-104.20.31.27"
+      - "load.sst.heckentotal.ch01-80-104.20.25.86"
+      - "jmpzoauth.dupe.com01-80-104.20.24.50"
+      - "preview-tracking.staging.jgwentworth.com01-80-104.20.29.209"
+      - "tururu.gulas.sme.sk01-80-104.20.28.227"
+      - "admissions.42lehavre.fr01-80-104.20.33.152"
+      - "a.int-8.jex.nl01-80-104.20.26.244"
+      - "biohaven-prediction-app.n-side.com01-80-104.20.44.10"
+      - "data-platform.test-roh.vitvio.com01-80-104.20.29.96"
+      - "id6.bestvpn.biz.id01-80-104.20.30.82"
+      - "newsletter.slansolas.com01-80-104.20.33.17"
+      - "donate.casualrust.de01-80-104.20.22.112"
+      - "photos-api.switchboard.lgbt01-80-104.20.26.113"
+      - "main.optimizer.fxg-fleet-release.suite.maximo.com01-80-104.20.17.3"
+      - "graphxr.cyberpeace.services01-80-104.20.17.139"
+      - "api.security.ideonapi.com01-80-104.20.41.98"
+      - "support.zoom.us.free-dewa.vip-latunv.biz.id01-80-104.20.46.79"
+      - "24th-annual-main-street-golf-tournament.perfectgolfevent.com01-80-104.20.20.135"
+      - "wheel-balloon-pinco-kg.pu707ev.com01-80-104.20.45.115"
+      - "pay.tricolorpaulista.shop01-80-104.20.41.97"
+      - "ava.game.naver.com.bakoel.serverpremium.web.id01-80-104.20.27.68"
+      - "dalai-playground.anyline.com01-80-104.20.19.43"
+      - "workspace.pgrtassociates.com01-80-104.20.17.89"
+      - "r-kuhn-0704.dev-login.revers.io01-80-104.20.34.145"
+      - "dev-download.avastbrowser.com01-80-104.20.37.116"
+      - "dev-download.avgbrowser.com01-80-104.20.22.186"
+      - "poc-so99-api-almarai-aggr.toolsgroup.com01-80-104.20.34.173"
+      - "paymentapi.papi.bet.br01-80-104.20.44.198"
+      - "quorumcybersecurity.com01-80-104.20.23.160"
+      - "akademia.bonsainiwaki.com01-80-104.20.36.127"
+      - "primanota.webclient.it.altitud.network01-80-104.20.20.120"
+      - "www.spedalesenzafrontiere.it01-80-104.20.25.11"
+      - "senseationalkidsgym.aluvii.com01-80-104.20.20.26"
+      - "fastdoctor.jp01-80-104.20.19.39"
+      - "myportal.agencyeightyseven.com01-80-104.20.44.97"
+      - "techniek.fh-accept.xyz01-80-104.20.39.15"
+      - "smartiq-gpt-gateway-development.smartiq.io01-80-104.20.47.218"
+      - "uk.stage.mer.eco01-80-104.20.20.66"
+      - "docs.vidanovavle.com01-80-104.20.22.94"
+      - "main.home.mcspkvn5.suite.maximo.com01-80-104.20.24.224"
+      - "steve.beraterportal.dev.gcp.questico.de01-80-104.20.43.126"
+      - "biz2020pxyuat.hamilton.ca01-80-104.20.39.248"
+      - "re-5361.recyda.com01-80-104.20.33.159"
+      - "developer.world.org01-80-104.20.36.171"
+      - "kind-en-jeugd.adelantegroep.nl01-80-104.20.42.235"
+      - "kfk.strefazajec.pl01-80-104.20.47.201"
+      - "sbapi.keysix.com01-80-104.20.21.249"
+      - "staging-ussd-pmbetke.energaming.services01-80-104.20.21.182"
+      - "uk-sandbox-router.prizeout.com01-80-104.20.40.174"
+      - "www.arab-platform.com01-80-104.20.25.47"
+      - "kudjang.fisip.unpad.ac.id01-80-104.20.38.165"
+      - "demo-sanitas-search-app.getvim.com01-80-104.20.37.163"
+      - "analytics.nelson.com01-80-104.20.18.23"
+      - "zoomgov.socifiles.com.bedes.denkavpn.xyz01-80-104.20.38.159"
+      - "initiatives.eflow.sa01-80-104.20.45.209"
+      - "internal-gh-core-mega-production.gridhub.cloud01-80-104.20.29.30"
+      - "www.micropia.nl01-80-104.20.31.237"
+      - "sairaanhoitajapaivat.messukeskus.com01-80-104.20.26.133"
+      - "auth-sandbox.luminpdf.com01-80-104.20.20.204"
+      - "tracking.rahala.com.sa01-80-104.20.46.158"
+      - "uptime.celfapps.com01-80-104.20.24.136"
+      - "main-rpt.manage.homecenter-dev1.suite.maximo.com01-80-104.20.42.154"
+      - "naver.com.justin2.bumiayu.biz.id01-80-104.20.21.237"
+      - "status.selly.io01-80-104.20.25.249"
+      - "domainsfrontend-chatbot-integration.frontend.nbx.com01-80-104.20.31.122"
+      - "instalar.anota.ai01-80-104.20.42.78"
+      - "spotify.com.azkiya.vpn-premium.online01-80-104.20.29.171"
+      - "monitor.s811.net01-80-104.20.21.173"
+      - "monitor.sequitur.suite.maximo.com01-80-104.20.33.49"
+      - "portal.lakelinetax.com01-80-104.20.33.156"
+      - "www.travaillerchezhema.be01-80-104.20.42.202"
+      - "link-hello.digitalwellness.com01-80-104.20.22.225"
+      - "corpfiledrop.glasswall.com01-80-104.20.36.215"
+      - "productsdev.gecurrent.com01-80-104.20.23.113"
+      - "dl.cvs.freefiremobile.com.atha-1.vpnpremium.id01-80-104.20.18.140"
+      - "www.ealouis.com01-80-104.20.19.167"
+      - "ruangguru.com.falsasep.bandarvpn.cloud01-80-104.20.43.116"
+      - "test-be2-options.pi42.com01-80-104.20.19.213"
+      - "ouauzknn0.sssrr.org01-80-104.20.42.88"
+      - "heatable.com01-80-104.20.36.254"
+      - "tradingshenzhen.com01-80-104.20.33.225"
+      - "staticnew.aetoscg.com01-80-104.20.21.114"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
