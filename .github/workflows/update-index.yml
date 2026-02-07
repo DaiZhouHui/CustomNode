@@ -12,14 +12,12 @@ on:
       # 匹配根目录下所有文件，不包括子目录中的文件
       - '*'              # 匹配根目录下所有非隐藏文件
       - '.*'             # 匹配根目录下所有隐藏文件
+      # 匹配所有yaml文件
+      - '*.yaml'
       # 匹配style目录下的文件
       - 'style/**'
       # 匹配scripts目录下的文件
       - 'scripts/**'
-      - 'YXNode'
-      - 'YXNode.yaml'
-      - 'AutoNode'
-      - 'AutoNode.yaml'
       # 排除已生成的特定文件
       - '!index.html'
       - '!update-index.html'
