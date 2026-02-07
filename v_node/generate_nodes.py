@@ -38,21 +38,34 @@ def load_config():
             }
         }
 
-def fetch_api(url):
-    """获取API数据"""
-    try:
-        req = urllib.request.Request(
-            url,
-            headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-                'Accept': 'application/json'
-            }
-        )
-        with urllib.request.urlopen(req, timeout=15) as response:
-            return json.loads(response.read())
-    except Exception as e:
-        print(f"获取API失败 {url}: {e}")
-        return None
+def fetch_api_with_retry(url, max_retries=2, retry_delay=180):
+    """获取API数据，失败后重试"""
+    for attempt in range(max_retries):
+        try:
+            print(f"  尝试 {attempt + 1}/{max_retries}: 请求 {url}")
+            req = urllib.request.Request(
+                url,
+                headers={
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                    'Accept': 'application/json'
+                }
+            )
+            with urllib.request.urlopen(req, timeout=15) as response:
+                data = json.loads(response.read())
+                print(f"  请求成功")
+                return data
+        except urllib.error.URLError as e:
+            print(f"  请求失败: {e}")
+            if attempt < max_retries - 1:
+                print(f"  {retry_delay}秒后重试...")
+                time.sleep(retry_delay)
+            else:
+                print(f"  达到最大重试次数，放弃请求")
+                return None
+        except Exception as e:
+            print(f"  其他错误: {e}")
+            return None
+    return None
 
 def is_ip_address(host):
     """检查是否是IP地址"""
@@ -333,6 +346,22 @@ def generate_clash_config(unique_nodes, vless_config):
             f.write("  - GEOIP,CN,DIRECT\n")
             f.write("  - MATCH,🎯 全局代理\n")
 
+def check_files_exist():
+    """检查输出文件是否存在且非空"""
+    files_to_check = ["YXNode", "YXNode.yaml"]
+    
+    for file_name in files_to_check:
+        if os.path.exists(file_name):
+            file_size = os.path.getsize(file_name)
+            if file_size == 0:
+                print(f"警告: {file_name} 文件为空")
+                return False
+            return True
+        else:
+            print(f"警告: {file_name} 文件不存在")
+            return False
+    return False
+
 def main():
     print("=" * 60)
     print("Cloudflare优选IP节点生成器")
@@ -355,23 +384,28 @@ def main():
     
     # 获取综合排名前20的IP
     print(f"\n1. 获取综合排名前20的IP...")
-    top20_data = fetch_api(api_config['top20_url'])
+    top20_data = fetch_api_with_retry(api_config['top20_url'])
     if top20_data and top20_data.get("code") == 0:
         good_ips = top20_data.get("data", {}).get("good", [])
-        print(f"   找到 {len(good_ips)} 个综合优选IP")
-        
-        for idx, ip_data in enumerate(good_ips[:20]):
-            if isinstance(ip_data, dict) and "ip" in ip_data:
-                vless_url = generate_vless_url(ip_data, "top20", idx)
-                if vless_url:
-                    nodes.append(vless_url)
-                    # 显示地址和描述
-                    address = get_ip_or_host(ip_data)
-                    print(f"     {idx+1:2d}. {address}")
+        if good_ips:
+            print(f"   找到 {len(good_ips)} 个综合优选IP")
+            
+            for idx, ip_data in enumerate(good_ips[:20]):
+                if isinstance(ip_data, dict) and "ip" in ip_data:
+                    vless_url = generate_vless_url(ip_data, "top20", idx)
+                    if vless_url:
+                        nodes.append(vless_url)
+                        # 显示地址和描述
+                        address = get_ip_or_host(ip_data)
+                        print(f"     {idx+1:2d}. {address}")
+        else:
+            print(f"   警告: 未找到综合优选IP")
+    else:
+        print(f"   错误: 获取综合优选IP失败")
     
     # 获取运营商优选IP
     print(f"\n2. 获取运营商优选IP...")
-    isp_data = fetch_api(api_config['isp_url'])
+    isp_data = fetch_api_with_retry(api_config['isp_url'])
     if isp_data and isp_data.get("code") == 0:
         isp_ips = isp_data.get("data", {})
         
@@ -385,6 +419,8 @@ def main():
                     nodes.append(vless_url)
                     address = get_ip_or_host(ip_data)
                     print(f"     {idx+1:2d}. {address}")
+        else:
+            print(f"   电信线路: 未找到IP")
         
         # 联通线路
         cu_ips = isp_ips.get("CU", [])
@@ -396,6 +432,8 @@ def main():
                     nodes.append(vless_url)
                     address = get_ip_or_host(ip_data)
                     print(f"     {idx+1:2d}. {address}")
+        else:
+            print(f"   联通线路: 未找到IP")
         
         # 移动线路
         cm_ips = isp_ips.get("CM", [])
@@ -407,6 +445,8 @@ def main():
                     nodes.append(vless_url)
                     address = get_ip_or_host(ip_data)
                     print(f"     {idx+1:2d}. {address}")
+        else:
+            print(f"   移动线路: 未找到IP")
         
         # AllAvg线路
         all_avg_ips = isp_ips.get("AllAvg", [])
@@ -418,12 +458,28 @@ def main():
                     nodes.append(vless_url)
                     address = get_ip_or_host(ip_data)
                     print(f"     {idx+1:2d}. {address}")
+        else:
+            print(f"   全网优选: 未找到IP")
+    else:
+        print(f"   错误: 获取运营商优选IP失败")
+    
+    # 检查是否获取到节点
+    if not nodes:
+        print(f"\n❌ 错误: 未能获取到任何节点")
+        print(f"   跳过文件生成，保留现有文件")
+        return False  # 返回False表示失败
     
     # 去重
     unique_nodes = get_unique_nodes(nodes)
     print(f"\n3. 节点去重:")
     print(f"   原始节点数: {len(nodes)}")
     print(f"   去重后节点数: {len(unique_nodes)}")
+    
+    # 再次检查节点数
+    if not unique_nodes:
+        print(f"\n❌ 错误: 去重后节点数为0")
+        print(f"   跳过文件生成，保留现有文件")
+        return False
     
     # 按运营商分类显示统计
     print(f"\n4. 节点分类统计:")
@@ -441,17 +497,28 @@ def main():
     
     # 生成明文节点文件
     print(f"\n5. 生成节点文件...")
-    with open("YXNode", "w", encoding="utf-8") as f:
-        for node in unique_nodes:
-            f.write(node + "\n")
+    try:
+        with open("YXNode", "w", encoding="utf-8") as f:
+            for node in unique_nodes:
+                f.write(node + "\n")
+    except Exception as e:
+        print(f"❌ 生成YXNode文件失败: {e}")
+        return False
     
     # 生成Clash配置文件
     print(f"\n6. 生成Clash配置文件...")
-    generate_clash_config(unique_nodes, vless_config)
+    try:
+        generate_clash_config(unique_nodes, vless_config)
+    except Exception as e:
+        print(f"❌ 生成YXNode.yaml文件失败: {e}")
+        # 如果Clash配置失败，删除已生成的YXNode文件
+        if os.path.exists("YXNode"):
+            os.remove("YXNode")
+        return False
     
-    print(f"\n7. 文件生成完成:")
-    print(f"   ✅ YXNode - {len(unique_nodes)} 个明文节点链接")
-    print(f"   ✅ YXNode.yaml - Clash配置文件")
+    print(f"\n✅ 文件生成成功:")
+    print(f"   YXNode - {len(unique_nodes)} 个明文节点链接")
+    print(f"   YXNode.yaml - Clash配置文件")
     print(f"\n节点配置说明:")
     print(f"   • Address: 使用API获取的实际IP或域名")
     print(f"   • Host: {vless_config['domain']}")
@@ -465,6 +532,10 @@ def main():
     print(f"   2. 将 YXNode.yaml 导入Clash客户端")
     print(f"   3. 如需自定义规则，在同目录创建rules.txt文件")
     print("=" * 60)
+    
+    return True  # 返回True表示成功
 
 if __name__ == "__main__":
-    main()
+    success = main()
+    # 根据结果返回适当的退出码
+    exit(0 if success else 1)

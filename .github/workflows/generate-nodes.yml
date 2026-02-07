@@ -30,16 +30,73 @@ jobs:
       run: |
         mkdir -p v_node
         
+    - name: Check if old files exist
+      id: check_files
+      run: |
+        if [ -f "YXNode" ] && [ -s "YXNode" ]; then
+          echo "existing_nodes=true" >> $GITHUB_OUTPUT
+          echo "发现现有的节点文件"
+        else
+          echo "existing_nodes=false" >> $GITHUB_OUTPUT
+          echo "没有现有的节点文件"
+        fi
+        
     - name: Run Python script
+      id: generate_nodes
+      continue-on-error: true  # 即使失败也继续执行，以便处理回滚
       run: |
         python v_node/generate_nodes.py
+        exit_code=$?
+        if [ $exit_code -eq 0 ]; then
+          echo "result=success" >> $GITHUB_OUTPUT
+          echo "节点生成成功"
+        else
+          echo "result=failed" >> $GITHUB_OUTPUT
+          echo "节点生成失败，退出码: $exit_code"
+        fi
         
     - name: Display generated files
+      if: steps.generate_nodes.outputs.result == 'success'
       run: |
         echo "生成的文件列表:"
         ls -la YXNode YXNode.yaml 2>/dev/null || echo "文件未找到"
+        echo ""
+        echo "文件内容预览:"
+        echo "YXNode 前5行:"
+        head -5 YXNode 2>/dev/null || echo "文件不存在或为空"
+        echo ""
+        echo "YXNode.yaml 节点数统计:"
+        grep -c "type: vless" YXNode.yaml 2>/dev/null || echo "文件不存在"
+        
+    - name: 回滚 - 删除新生成的文件
+      if: steps.generate_nodes.outputs.result == 'failed' && steps.check_files.outputs.existing_nodes == 'true'
+      run: |
+        echo "生成失败，删除可能已生成的不完整文件..."
+        rm -f YXNode YXNode.yaml 2>/dev/null || true
+        echo "保留现有文件"
+        
+    - name: 回滚 - 恢复备份文件（如果有）
+      if: steps.generate_nodes.outputs.result == 'failed' && steps.check_files.outputs.existing_nodes == 'true'
+      run: |
+        # 如果原始文件在生成过程中被覆盖，但我们有备份
+        if [ ! -f "YXNode" ]; then
+          echo "原始文件丢失，尝试从git历史恢复..."
+          git checkout HEAD -- YXNode 2>/dev/null || true
+        fi
+        if [ ! -f "YXNode.yaml" ]; then
+          git checkout HEAD -- YXNode.yaml 2>/dev/null || true
+        fi
+        
+    - name: 更新失败通知
+      if: steps.generate_nodes.outputs.result == 'failed'
+      run: |
+        echo "❌ 节点生成失败"
+        echo "原因: 可能API服务不可用或未获取到有效节点"
+        echo "处理: 保留现有节点文件，不进行更新"
         
     - name: Commit and push if changed
+      id: commit_check
+      if: steps.generate_nodes.outputs.result == 'success'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -49,8 +106,38 @@ jobs:
         
         if git diff --staged --quiet; then
           echo "没有变化，无需提交"
+          echo "has_changes=false" >> $GITHUB_OUTPUT
         else
+          # 检查文件是否有效
+          if [ ! -s "YXNode" ]; then
+            echo "错误: YXNode 文件为空，撤销更改"
+            git reset HEAD YXNode YXNode.yaml 2>/dev/null || true
+            git checkout -- YXNode YXNode.yaml 2>/dev/null || true
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          if [ ! -s "YXNode.yaml" ]; then
+            echo "错误: YXNode.yaml 文件为空，撤销更改"
+            git reset HEAD YXNode YXNode.yaml 2>/dev/null || true
+            git checkout -- YXNode YXNode.yaml 2>/dev/null || true
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # 提交更改
           git commit -m "自动更新Cloudflare优选节点 [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push
-          echo "节点文件已更新并推送"
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "✅ 节点文件已更新并推送"
+        fi
+        
+    - name: 更新成功总结
+      if: steps.generate_nodes.outputs.result == 'success'
+      run: |
+        echo "✅ 节点更新流程完成"
+        if [ "${{ steps.commit_check.outputs.has_changes }}" = "true" ]; then
+          echo "📤 已推送更新到仓库"
+        else
+          echo "📊 节点文件无变化，无需推送"
         fi
