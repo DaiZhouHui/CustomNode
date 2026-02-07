@@ -126,7 +126,7 @@ jobs:
           fi
           
           # 提交更改
-          git commit -m "自动更新Cloudflare优选节点 [$(date +'%Y-%m-%d %H:%M:%S')]"
+          git commit -m "自动更新CF优选域名及节点 [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push
           echo "has_changes=true" >> $GITHUB_OUTPUT
           echo "✅ 节点文件已更新并推送"
