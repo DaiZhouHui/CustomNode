@@ -1,0 +1,3263 @@
+proxies:
+  - name: "域名节点01-443-saas.sin.fan"
+    type: vless
+    server: saas.sin.fan
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点02-443-cf.553314.xyz"
+    type: vless
+    server: cf.553314.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点03-443-cdn.204910.best"
+    type: vless
+    server: cdn.204910.best
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点04-443-cfsaas.080112.xyz"
+    type: vless
+    server: cfsaas.080112.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点05-443-cfip-avg.stoeaves.us.ci"
+    type: vless
+    server: cfip-avg.stoeaves.us.ci
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点06-443-cfip-ct.stoeaves.us.ci"
+    type: vless
+    server: cfip-ct.stoeaves.us.ci
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点07-443-cf1s.cf.3666888.xyz"
+    type: vless
+    server: cf1s.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点08-443-uac.cf.3666888.xyz"
+    type: vless
+    server: uac.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点09-443-3.cf.3666888.xyz"
+    type: vless
+    server: 3.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点10-443-play.mc.js.cool"
+    type: vless
+    server: play.mc.js.cool
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点11-443-www.shopify.com"
+    type: vless
+    server: www.shopify.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点12-443-cf.mubaiovo.top"
+    type: vless
+    server: cf.mubaiovo.top
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点13-443-vip.cf.3666888.xyz"
+    type: vless
+    server: vip.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点14-443-4.cf.3666888.xyz"
+    type: vless
+    server: 4.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点15-443-cnllm.com"
+    type: vless
+    server: cnllm.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点16-443-www.giannidelprete.it"
+    type: vless
+    server: www.giannidelprete.it
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点17-443-yxip.xxxxxxxx.tk"
+    type: vless
+    server: yxip.xxxxxxxx.tk
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点18-443-eteaf.cf.3666888.xyz"
+    type: vless
+    server: eteaf.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点19-443-cf-cname.xingpingcn.top"
+    type: vless
+    server: cf-cname.xingpingcn.top
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点20-443-cf.3666888.xyz"
+    type: vless
+    server: cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点21-443-snipaste5.speedip.eu.org"
+    type: vless
+    server: snipaste5.speedip.eu.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点22-443-cloudflare.idc.rocks"
+    type: vless
+    server: cloudflare.idc.rocks
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点23-443-youxuan.cf.3666888.xyz"
+    type: vless
+    server: youxuan.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点24-443-cf.92555.xyz"
+    type: vless
+    server: cf.92555.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点25-443-9.cf.3666888.xyz"
+    type: vless
+    server: 9.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点26-443-jp.cf.3666888.xyz"
+    type: vless
+    server: jp.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点27-443-markmonitor.com"
+    type: vless
+    server: markmonitor.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点28-443-staticdelivery.nexusmods.com"
+    type: vless
+    server: staticdelivery.nexusmods.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点29-443-www.swowd.com"
+    type: vless
+    server: www.swowd.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点30-443-cdn.262832.xyz"
+    type: vless
+    server: cdn.262832.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点31-443-nexusmods.com"
+    type: vless
+    server: nexusmods.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点32-443-www.galgamex.net"
+    type: vless
+    server: www.galgamex.net
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点33-443-eii.at"
+    type: vless
+    server: eii.at
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点34-443-www.akasantech.com"
+    type: vless
+    server: www.akasantech.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点35-443-cf-ip-node.vov.moe"
+    type: vless
+    server: cf-ip-node.vov.moe
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点36-443-zeas.top"
+    type: vless
+    server: zeas.top
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点37-443-cloudflare.182682.xyz"
+    type: vless
+    server: cloudflare.182682.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点38-443-www.fastsoso.cn"
+    type: vless
+    server: www.fastsoso.cn
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点39-443-keji.cf.3666888.xyz"
+    type: vless
+    server: keji.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点40-443-qocu.cf.3666888.xyz"
+    type: vless
+    server: qocu.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点41-443-5.cf.3666888.xyz"
+    type: vless
+    server: 5.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点42-443-10.cf.3666888.xyz"
+    type: vless
+    server: 10.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点43-443-11.cf.3666888.xyz"
+    type: vless
+    server: 11.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点44-443-yg9.ygkkk.dpdns.org"
+    type: vless
+    server: yg9.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点45-443-store.ubi.com"
+    type: vless
+    server: store.ubi.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点46-443-hk.cf.3666888.xyz"
+    type: vless
+    server: hk.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点47-443-cu.877774.xyz"
+    type: vless
+    server: cu.877774.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点48-443-gh-proxy.com"
+    type: vless
+    server: gh-proxy.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点49-443-sg.cf.3666888.xyz"
+    type: vless
+    server: sg.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点50-443-hfqek.cf.3666888.xyz"
+    type: vless
+    server: hfqek.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点51-443-yg7.ygkkk.dpdns.org"
+    type: vless
+    server: yg7.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点52-443-yg11.ygkkk.dpdns.org"
+    type: vless
+    server: yg11.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点53-443-baka.fun"
+    type: vless
+    server: baka.fun
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点54-443-www.xiaoshuofen.com"
+    type: vless
+    server: www.xiaoshuofen.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点55-443-www.mlkj888.com"
+    type: vless
+    server: www.mlkj888.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点56-443-prompt.gzcrtw.com"
+    type: vless
+    server: prompt.gzcrtw.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点57-443-cfvip.cf.3666888.xyz"
+    type: vless
+    server: cfvip.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点58-443-freeyx.cloudflare88.eu.org"
+    type: vless
+    server: freeyx.cloudflare88.eu.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点59-443-bbs.alipansou.com"
+    type: vless
+    server: bbs.alipansou.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点60-443-dnew.cc"
+    type: vless
+    server: dnew.cc
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点61-443-sanwang.cf.3666888.xyz"
+    type: vless
+    server: sanwang.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点62-443-cf.cf.3666888.xyz"
+    type: vless
+    server: cf.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点63-443-cloudflare.rainyfall.com"
+    type: vless
+    server: cloudflare.rainyfall.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点64-443-1.cf.3666888.xyz"
+    type: vless
+    server: 1.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点65-443-6.cf.3666888.xyz"
+    type: vless
+    server: 6.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点66-443-www.cdzxdz.com"
+    type: vless
+    server: www.cdzxdz.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点67-443-cdn.091224.xyz"
+    type: vless
+    server: cdn.091224.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点68-443-cfgo.timelate.com"
+    type: vless
+    server: cfgo.timelate.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点69-443-01-qq.com"
+    type: vless
+    server: 01-qq.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点70-443-api.gzcrtw.com"
+    type: vless
+    server: api.gzcrtw.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点71-443-edgeone.gh-proxy.org"
+    type: vless
+    server: edgeone.gh-proxy.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点72-443-cdn.2158.cc"
+    type: vless
+    server: cdn.2158.cc
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点73-443-cloudflare-ip.mofashi.ltd"
+    type: vless
+    server: cloudflare-ip.mofashi.ltd
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点74-443-cdns.doon.eu.org"
+    type: vless
+    server: cdns.doon.eu.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点75-443-cdn.cf.3666888.xyz"
+    type: vless
+    server: cdn.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点76-443-123.cf.3666888.xyz"
+    type: vless
+    server: 123.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点77-443-fw8je9.cf.3666888.xyz"
+    type: vless
+    server: fw8je9.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点78-443-www.nexusmods.com"
+    type: vless
+    server: www.nexusmods.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点79-443-kniu.cc"
+    type: vless
+    server: kniu.cc
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点80-443-www.vastnovel.com"
+    type: vless
+    server: www.vastnovel.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点81-443-auto.dolby.dpdns.org"
+    type: vless
+    server: auto.dolby.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点82-443-coke.cf.3666888.xyz"
+    type: vless
+    server: coke.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点83-443-01-cctv.com"
+    type: vless
+    server: 01-cctv.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点84-443-www.mc.js.cool"
+    type: vless
+    server: www.mc.js.cool
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点85-443-f.lma.de5.net"
+    type: vless
+    server: f.lma.de5.net
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点86-443-cfyx.qdqqd.com"
+    type: vless
+    server: cfyx.qdqqd.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点87-443-adnjv.cf.3666888.xyz"
+    type: vless
+    server: adnjv.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点88-443-yg1.ygkkk.dpdns.org"
+    type: vless
+    server: yg1.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点89-443-yg5.ygkkk.dpdns.org"
+    type: vless
+    server: yg5.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点90-443-dongbanghong.com"
+    type: vless
+    server: dongbanghong.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点91-443-cmcc.vvvv.ee"
+    type: vless
+    server: cmcc.vvvv.ee
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点92-443-www.sage.com"
+    type: vless
+    server: www.sage.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点93-443-8.cf.3666888.xyz"
+    type: vless
+    server: 8.cf.3666888.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点94-443-test.509666.xyz"
+    type: vless
+    server: test.509666.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点95-443-www.sofi.com"
+    type: vless
+    server: www.sofi.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点96-443-cmcc.cc.cd"
+    type: vless
+    server: cmcc.cc.cd
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点97-443-cf.nyanya.moe"
+    type: vless
+    server: cf.nyanya.moe
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点98-443-cf.godns.cc"
+    type: vless
+    server: cf.godns.cc
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点99-443-da.mfa.gov.ua"
+    type: vless
+    server: da.mfa.gov.ua
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点100-443-cfyx.aliyun.20237737.xyz"
+    type: vless
+    server: cfyx.aliyun.20237737.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点101-443-www.xflash.vip"
+    type: vless
+    server: www.xflash.vip
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点102-443-cf.130519.xyz"
+    type: vless
+    server: cf.130519.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点103-443-p.etime.vip"
+    type: vless
+    server: p.etime.vip
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点104-443-animal.nuaa.tech"
+    type: vless
+    server: animal.nuaa.tech
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点105-443-jobsdb.com"
+    type: vless
+    server: jobsdb.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点106-443-yg4.ygkkk.dpdns.org"
+    type: vless
+    server: yg4.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点107-443-so.360832.xyz"
+    type: vless
+    server: so.360832.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点108-443-www.ntu.edu.sg"
+    type: vless
+    server: www.ntu.edu.sg
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点109-443-www.5199dy.com"
+    type: vless
+    server: www.5199dy.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点110-443-seo.07yue.com"
+    type: vless
+    server: seo.07yue.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点111-443-www.5h.com"
+    type: vless
+    server: www.5h.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点112-443-fk.hshwk.org"
+    type: vless
+    server: fk.hshwk.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点113-443-yg6.ygkkk.dpdns.org"
+    type: vless
+    server: yg6.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点114-443-336688.chinwa.eu.cc"
+    type: vless
+    server: 336688.chinwa.eu.cc
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点115-443-c.lma.de5.net"
+    type: vless
+    server: c.lma.de5.net
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点116-443-pubs.acs.org"
+    type: vless
+    server: pubs.acs.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点117-443-idc.urkeji.com"
+    type: vless
+    server: idc.urkeji.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点118-443-cf.duun.eu.cc"
+    type: vless
+    server: cf.duun.eu.cc
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点119-443-yg3.ygkkk.dpdns.org"
+    type: vless
+    server: yg3.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点120-443-1749991941.bilibiliapp.cn"
+    type: vless
+    server: 1749991941.bilibiliapp.cn
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点121-443-doro.lol"
+    type: vless
+    server: doro.lol
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点122-443-dianomi.com"
+    type: vless
+    server: dianomi.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点123-443-china.mfa.gov.ua"
+    type: vless
+    server: china.mfa.gov.ua
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点124-443-yg2.ygkkk.dpdns.org"
+    type: vless
+    server: yg2.ygkkk.dpdns.org
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点125-443-mming.ggff.net"
+    type: vless
+    server: mming.ggff.net
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点126-443-mfa.gov.ua"
+    type: vless
+    server: mfa.gov.ua
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点127-443-fn.130519.xyz"
+    type: vless
+    server: fn.130519.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点128-443-cf.tencentapp.cn"
+    type: vless
+    server: cf.tencentapp.cn
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点129-443-b3.cfyx.20237737.xyz"
+    type: vless
+    server: b3.cfyx.20237737.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点130-443-1757760858.tencentapp.cn"
+    type: vless
+    server: 1757760858.tencentapp.cn
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点131-443-tajikistan.mfa.gov.ua"
+    type: vless
+    server: tajikistan.mfa.gov.ua
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点132-443-cfyx.dnspod.20237737.xyz"
+    type: vless
+    server: cfyx.dnspod.20237737.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点133-443-www.adbcardpay.xyz"
+    type: vless
+    server: www.adbcardpay.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点134-443-serviceshub.samsclub.com"
+    type: vless
+    server: serviceshub.samsclub.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点135-443-blog.646474.xyz"
+    type: vless
+    server: blog.646474.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点136-443-d.lma.de5.net"
+    type: vless
+    server: d.lma.de5.net
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点137-443-cf.727672.xyz"
+    type: vless
+    server: cf.727672.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点138-443-www.4429.com.cn"
+    type: vless
+    server: www.4429.com.cn
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点139-443-imooo.de"
+    type: vless
+    server: imooo.de
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点140-443-ctlmt.info"
+    type: vless
+    server: ctlmt.info
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点141-443-ctsg.cfyx.aliyun.20237737.xyz"
+    type: vless
+    server: ctsg.cfyx.aliyun.20237737.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点142-443-baota.us.kg"
+    type: vless
+    server: baota.us.kg
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点143-443-ct.721660.xyz"
+    type: vless
+    server: ct.721660.xyz
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点144-443-cf.cooteep.com"
+    type: vless
+    server: cf.cooteep.com
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "域名节点145-443-cf.xycf.asia"
+    type: vless
+    server: cf.xycf.asia
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国01-443-172.64.147.127"
+    type: vless
+    server: 172.64.147.127
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国02-443-172.64.154.204"
+    type: vless
+    server: 172.64.154.204
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国03-443-104.18.45.223"
+    type: vless
+    server: 104.18.45.223
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国04-443-172.64.144.170"
+    type: vless
+    server: 172.64.144.170
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国05-443-172.64.156.112"
+    type: vless
+    server: 172.64.156.112
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国06-443-104.18.37.7"
+    type: vless
+    server: 104.18.37.7
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国07-443-104.18.39.150"
+    type: vless
+    server: 104.18.39.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国08-443-172.64.159.67"
+    type: vless
+    server: 172.64.159.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国09-443-104.18.43.246"
+    type: vless
+    server: 104.18.43.246
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国10-443-104.18.37.133"
+    type: vless
+    server: 104.18.37.133
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国11-443-104.18.33.225"
+    type: vless
+    server: 104.18.33.225
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国12-443-172.64.159.7"
+    type: vless
+    server: 172.64.159.7
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国13-443-104.18.40.189"
+    type: vless
+    server: 104.18.40.189
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国14-443-104.18.33.198"
+    type: vless
+    server: 104.18.33.198
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国15-443-108.162.198.127"
+    type: vless
+    server: 108.162.198.127
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国16-443-172.64.159.151"
+    type: vless
+    server: 172.64.159.151
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国17-443-172.64.157.2"
+    type: vless
+    server: 172.64.157.2
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国18-443-104.18.45.68"
+    type: vless
+    server: 104.18.45.68
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国19-443-104.18.46.111"
+    type: vless
+    server: 104.18.46.111
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国20-443-104.18.44.151"
+    type: vless
+    server: 104.18.44.151
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国21-443-172.64.147.88"
+    type: vless
+    server: 172.64.147.88
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国22-443-172.64.147.110"
+    type: vless
+    server: 172.64.147.110
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国23-443-172.64.155.250"
+    type: vless
+    server: 172.64.155.250
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国24-443-172.64.158.29"
+    type: vless
+    server: 172.64.158.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国25-443-104.18.40.163"
+    type: vless
+    server: 104.18.40.163
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国26-443-172.64.144.177"
+    type: vless
+    server: 172.64.144.177
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国27-443-172.64.145.42"
+    type: vless
+    server: 172.64.145.42
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国28-443-172.64.144.222"
+    type: vless
+    server: 172.64.144.222
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国29-443-162.159.35.245"
+    type: vless
+    server: 162.159.35.245
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国30-443-172.64.157.39"
+    type: vless
+    server: 172.64.157.39
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国31-443-172.64.145.202"
+    type: vless
+    server: 172.64.145.202
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国32-443-108.162.198.201"
+    type: vless
+    server: 108.162.198.201
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国33-443-172.64.52.189"
+    type: vless
+    server: 172.64.52.189
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "美国34-443-108.162.198.84"
+    type: vless
+    server: 108.162.198.84
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "域名节点01-443-saas.sin.fan"
+      - "域名节点02-443-cf.553314.xyz"
+      - "域名节点03-443-cdn.204910.best"
+      - "域名节点04-443-cfsaas.080112.xyz"
+      - "域名节点05-443-cfip-avg.stoeaves.us.ci"
+      - "域名节点06-443-cfip-ct.stoeaves.us.ci"
+      - "域名节点07-443-cf1s.cf.3666888.xyz"
+      - "域名节点08-443-uac.cf.3666888.xyz"
+      - "域名节点09-443-3.cf.3666888.xyz"
+      - "域名节点10-443-play.mc.js.cool"
+      - "域名节点11-443-www.shopify.com"
+      - "域名节点12-443-cf.mubaiovo.top"
+      - "域名节点13-443-vip.cf.3666888.xyz"
+      - "域名节点14-443-4.cf.3666888.xyz"
+      - "域名节点15-443-cnllm.com"
+      - "域名节点16-443-www.giannidelprete.it"
+      - "域名节点17-443-yxip.xxxxxxxx.tk"
+      - "域名节点18-443-eteaf.cf.3666888.xyz"
+      - "域名节点19-443-cf-cname.xingpingcn.top"
+      - "域名节点20-443-cf.3666888.xyz"
+      - "域名节点21-443-snipaste5.speedip.eu.org"
+      - "域名节点22-443-cloudflare.idc.rocks"
+      - "域名节点23-443-youxuan.cf.3666888.xyz"
+      - "域名节点24-443-cf.92555.xyz"
+      - "域名节点25-443-9.cf.3666888.xyz"
+      - "域名节点26-443-jp.cf.3666888.xyz"
+      - "域名节点27-443-markmonitor.com"
+      - "域名节点28-443-staticdelivery.nexusmods.com"
+      - "域名节点29-443-www.swowd.com"
+      - "域名节点30-443-cdn.262832.xyz"
+      - "域名节点31-443-nexusmods.com"
+      - "域名节点32-443-www.galgamex.net"
+      - "域名节点33-443-eii.at"
+      - "域名节点34-443-www.akasantech.com"
+      - "域名节点35-443-cf-ip-node.vov.moe"
+      - "域名节点36-443-zeas.top"
+      - "域名节点37-443-cloudflare.182682.xyz"
+      - "域名节点38-443-www.fastsoso.cn"
+      - "域名节点39-443-keji.cf.3666888.xyz"
+      - "域名节点40-443-qocu.cf.3666888.xyz"
+      - "域名节点41-443-5.cf.3666888.xyz"
+      - "域名节点42-443-10.cf.3666888.xyz"
+      - "域名节点43-443-11.cf.3666888.xyz"
+      - "域名节点44-443-yg9.ygkkk.dpdns.org"
+      - "域名节点45-443-store.ubi.com"
+      - "域名节点46-443-hk.cf.3666888.xyz"
+      - "域名节点47-443-cu.877774.xyz"
+      - "域名节点48-443-gh-proxy.com"
+      - "域名节点49-443-sg.cf.3666888.xyz"
+      - "域名节点50-443-hfqek.cf.3666888.xyz"
+      - "域名节点51-443-yg7.ygkkk.dpdns.org"
+      - "域名节点52-443-yg11.ygkkk.dpdns.org"
+      - "域名节点53-443-baka.fun"
+      - "域名节点54-443-www.xiaoshuofen.com"
+      - "域名节点55-443-www.mlkj888.com"
+      - "域名节点56-443-prompt.gzcrtw.com"
+      - "域名节点57-443-cfvip.cf.3666888.xyz"
+      - "域名节点58-443-freeyx.cloudflare88.eu.org"
+      - "域名节点59-443-bbs.alipansou.com"
+      - "域名节点60-443-dnew.cc"
+      - "域名节点61-443-sanwang.cf.3666888.xyz"
+      - "域名节点62-443-cf.cf.3666888.xyz"
+      - "域名节点63-443-cloudflare.rainyfall.com"
+      - "域名节点64-443-1.cf.3666888.xyz"
+      - "域名节点65-443-6.cf.3666888.xyz"
+      - "域名节点66-443-www.cdzxdz.com"
+      - "域名节点67-443-cdn.091224.xyz"
+      - "域名节点68-443-cfgo.timelate.com"
+      - "域名节点69-443-01-qq.com"
+      - "域名节点70-443-api.gzcrtw.com"
+      - "域名节点71-443-edgeone.gh-proxy.org"
+      - "域名节点72-443-cdn.2158.cc"
+      - "域名节点73-443-cloudflare-ip.mofashi.ltd"
+      - "域名节点74-443-cdns.doon.eu.org"
+      - "域名节点75-443-cdn.cf.3666888.xyz"
+      - "域名节点76-443-123.cf.3666888.xyz"
+      - "域名节点77-443-fw8je9.cf.3666888.xyz"
+      - "域名节点78-443-www.nexusmods.com"
+      - "域名节点79-443-kniu.cc"
+      - "域名节点80-443-www.vastnovel.com"
+      - "域名节点81-443-auto.dolby.dpdns.org"
+      - "域名节点82-443-coke.cf.3666888.xyz"
+      - "域名节点83-443-01-cctv.com"
+      - "域名节点84-443-www.mc.js.cool"
+      - "域名节点85-443-f.lma.de5.net"
+      - "域名节点86-443-cfyx.qdqqd.com"
+      - "域名节点87-443-adnjv.cf.3666888.xyz"
+      - "域名节点88-443-yg1.ygkkk.dpdns.org"
+      - "域名节点89-443-yg5.ygkkk.dpdns.org"
+      - "域名节点90-443-dongbanghong.com"
+      - "域名节点91-443-cmcc.vvvv.ee"
+      - "域名节点92-443-www.sage.com"
+      - "域名节点93-443-8.cf.3666888.xyz"
+      - "域名节点94-443-test.509666.xyz"
+      - "域名节点95-443-www.sofi.com"
+      - "域名节点96-443-cmcc.cc.cd"
+      - "域名节点97-443-cf.nyanya.moe"
+      - "域名节点98-443-cf.godns.cc"
+      - "域名节点99-443-da.mfa.gov.ua"
+      - "域名节点100-443-cfyx.aliyun.20237737.xyz"
+      - "域名节点101-443-www.xflash.vip"
+      - "域名节点102-443-cf.130519.xyz"
+      - "域名节点103-443-p.etime.vip"
+      - "域名节点104-443-animal.nuaa.tech"
+      - "域名节点105-443-jobsdb.com"
+      - "域名节点106-443-yg4.ygkkk.dpdns.org"
+      - "域名节点107-443-so.360832.xyz"
+      - "域名节点108-443-www.ntu.edu.sg"
+      - "域名节点109-443-www.5199dy.com"
+      - "域名节点110-443-seo.07yue.com"
+      - "域名节点111-443-www.5h.com"
+      - "域名节点112-443-fk.hshwk.org"
+      - "域名节点113-443-yg6.ygkkk.dpdns.org"
+      - "域名节点114-443-336688.chinwa.eu.cc"
+      - "域名节点115-443-c.lma.de5.net"
+      - "域名节点116-443-pubs.acs.org"
+      - "域名节点117-443-idc.urkeji.com"
+      - "域名节点118-443-cf.duun.eu.cc"
+      - "域名节点119-443-yg3.ygkkk.dpdns.org"
+      - "域名节点120-443-1749991941.bilibiliapp.cn"
+      - "域名节点121-443-doro.lol"
+      - "域名节点122-443-dianomi.com"
+      - "域名节点123-443-china.mfa.gov.ua"
+      - "域名节点124-443-yg2.ygkkk.dpdns.org"
+      - "域名节点125-443-mming.ggff.net"
+      - "域名节点126-443-mfa.gov.ua"
+      - "域名节点127-443-fn.130519.xyz"
+      - "域名节点128-443-cf.tencentapp.cn"
+      - "域名节点129-443-b3.cfyx.20237737.xyz"
+      - "域名节点130-443-1757760858.tencentapp.cn"
+      - "域名节点131-443-tajikistan.mfa.gov.ua"
+      - "域名节点132-443-cfyx.dnspod.20237737.xyz"
+      - "域名节点133-443-www.adbcardpay.xyz"
+      - "域名节点134-443-serviceshub.samsclub.com"
+      - "域名节点135-443-blog.646474.xyz"
+      - "域名节点136-443-d.lma.de5.net"
+      - "域名节点137-443-cf.727672.xyz"
+      - "域名节点138-443-www.4429.com.cn"
+      - "域名节点139-443-imooo.de"
+      - "域名节点140-443-ctlmt.info"
+      - "域名节点141-443-ctsg.cfyx.aliyun.20237737.xyz"
+      - "域名节点142-443-baota.us.kg"
+      - "域名节点143-443-ct.721660.xyz"
+      - "域名节点144-443-cf.cooteep.com"
+      - "域名节点145-443-cf.xycf.asia"
+      - "美国01-443-172.64.147.127"
+      - "美国02-443-172.64.154.204"
+      - "美国03-443-104.18.45.223"
+      - "美国04-443-172.64.144.170"
+      - "美国05-443-172.64.156.112"
+      - "美国06-443-104.18.37.7"
+      - "美国07-443-104.18.39.150"
+      - "美国08-443-172.64.159.67"
+      - "美国09-443-104.18.43.246"
+      - "美国10-443-104.18.37.133"
+      - "美国11-443-104.18.33.225"
+      - "美国12-443-172.64.159.7"
+      - "美国13-443-104.18.40.189"
+      - "美国14-443-104.18.33.198"
+      - "美国15-443-108.162.198.127"
+      - "美国16-443-172.64.159.151"
+      - "美国17-443-172.64.157.2"
+      - "美国18-443-104.18.45.68"
+      - "美国19-443-104.18.46.111"
+      - "美国20-443-104.18.44.151"
+      - "美国21-443-172.64.147.88"
+      - "美国22-443-172.64.147.110"
+      - "美国23-443-172.64.155.250"
+      - "美国24-443-172.64.158.29"
+      - "美国25-443-104.18.40.163"
+      - "美国26-443-172.64.144.177"
+      - "美国27-443-172.64.145.42"
+      - "美国28-443-172.64.144.222"
+      - "美国29-443-162.159.35.245"
+      - "美国30-443-172.64.157.39"
+      - "美国31-443-172.64.145.202"
+      - "美国32-443-108.162.198.201"
+      - "美国33-443-172.64.52.189"
+      - "美国34-443-108.162.198.84"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "域名节点01-443-saas.sin.fan"
+      - "域名节点02-443-cf.553314.xyz"
+      - "域名节点03-443-cdn.204910.best"
+      - "域名节点04-443-cfsaas.080112.xyz"
+      - "域名节点05-443-cfip-avg.stoeaves.us.ci"
+      - "域名节点06-443-cfip-ct.stoeaves.us.ci"
+      - "域名节点07-443-cf1s.cf.3666888.xyz"
+      - "域名节点08-443-uac.cf.3666888.xyz"
+      - "域名节点09-443-3.cf.3666888.xyz"
+      - "域名节点10-443-play.mc.js.cool"
+      - "域名节点11-443-www.shopify.com"
+      - "域名节点12-443-cf.mubaiovo.top"
+      - "域名节点13-443-vip.cf.3666888.xyz"
+      - "域名节点14-443-4.cf.3666888.xyz"
+      - "域名节点15-443-cnllm.com"
+      - "域名节点16-443-www.giannidelprete.it"
+      - "域名节点17-443-yxip.xxxxxxxx.tk"
+      - "域名节点18-443-eteaf.cf.3666888.xyz"
+      - "域名节点19-443-cf-cname.xingpingcn.top"
+      - "域名节点20-443-cf.3666888.xyz"
+      - "域名节点21-443-snipaste5.speedip.eu.org"
+      - "域名节点22-443-cloudflare.idc.rocks"
+      - "域名节点23-443-youxuan.cf.3666888.xyz"
+      - "域名节点24-443-cf.92555.xyz"
+      - "域名节点25-443-9.cf.3666888.xyz"
+      - "域名节点26-443-jp.cf.3666888.xyz"
+      - "域名节点27-443-markmonitor.com"
+      - "域名节点28-443-staticdelivery.nexusmods.com"
+      - "域名节点29-443-www.swowd.com"
+      - "域名节点30-443-cdn.262832.xyz"
+      - "域名节点31-443-nexusmods.com"
+      - "域名节点32-443-www.galgamex.net"
+      - "域名节点33-443-eii.at"
+      - "域名节点34-443-www.akasantech.com"
+      - "域名节点35-443-cf-ip-node.vov.moe"
+      - "域名节点36-443-zeas.top"
+      - "域名节点37-443-cloudflare.182682.xyz"
+      - "域名节点38-443-www.fastsoso.cn"
+      - "域名节点39-443-keji.cf.3666888.xyz"
+      - "域名节点40-443-qocu.cf.3666888.xyz"
+      - "域名节点41-443-5.cf.3666888.xyz"
+      - "域名节点42-443-10.cf.3666888.xyz"
+      - "域名节点43-443-11.cf.3666888.xyz"
+      - "域名节点44-443-yg9.ygkkk.dpdns.org"
+      - "域名节点45-443-store.ubi.com"
+      - "域名节点46-443-hk.cf.3666888.xyz"
+      - "域名节点47-443-cu.877774.xyz"
+      - "域名节点48-443-gh-proxy.com"
+      - "域名节点49-443-sg.cf.3666888.xyz"
+      - "域名节点50-443-hfqek.cf.3666888.xyz"
+      - "域名节点51-443-yg7.ygkkk.dpdns.org"
+      - "域名节点52-443-yg11.ygkkk.dpdns.org"
+      - "域名节点53-443-baka.fun"
+      - "域名节点54-443-www.xiaoshuofen.com"
+      - "域名节点55-443-www.mlkj888.com"
+      - "域名节点56-443-prompt.gzcrtw.com"
+      - "域名节点57-443-cfvip.cf.3666888.xyz"
+      - "域名节点58-443-freeyx.cloudflare88.eu.org"
+      - "域名节点59-443-bbs.alipansou.com"
+      - "域名节点60-443-dnew.cc"
+      - "域名节点61-443-sanwang.cf.3666888.xyz"
+      - "域名节点62-443-cf.cf.3666888.xyz"
+      - "域名节点63-443-cloudflare.rainyfall.com"
+      - "域名节点64-443-1.cf.3666888.xyz"
+      - "域名节点65-443-6.cf.3666888.xyz"
+      - "域名节点66-443-www.cdzxdz.com"
+      - "域名节点67-443-cdn.091224.xyz"
+      - "域名节点68-443-cfgo.timelate.com"
+      - "域名节点69-443-01-qq.com"
+      - "域名节点70-443-api.gzcrtw.com"
+      - "域名节点71-443-edgeone.gh-proxy.org"
+      - "域名节点72-443-cdn.2158.cc"
+      - "域名节点73-443-cloudflare-ip.mofashi.ltd"
+      - "域名节点74-443-cdns.doon.eu.org"
+      - "域名节点75-443-cdn.cf.3666888.xyz"
+      - "域名节点76-443-123.cf.3666888.xyz"
+      - "域名节点77-443-fw8je9.cf.3666888.xyz"
+      - "域名节点78-443-www.nexusmods.com"
+      - "域名节点79-443-kniu.cc"
+      - "域名节点80-443-www.vastnovel.com"
+      - "域名节点81-443-auto.dolby.dpdns.org"
+      - "域名节点82-443-coke.cf.3666888.xyz"
+      - "域名节点83-443-01-cctv.com"
+      - "域名节点84-443-www.mc.js.cool"
+      - "域名节点85-443-f.lma.de5.net"
+      - "域名节点86-443-cfyx.qdqqd.com"
+      - "域名节点87-443-adnjv.cf.3666888.xyz"
+      - "域名节点88-443-yg1.ygkkk.dpdns.org"
+      - "域名节点89-443-yg5.ygkkk.dpdns.org"
+      - "域名节点90-443-dongbanghong.com"
+      - "域名节点91-443-cmcc.vvvv.ee"
+      - "域名节点92-443-www.sage.com"
+      - "域名节点93-443-8.cf.3666888.xyz"
+      - "域名节点94-443-test.509666.xyz"
+      - "域名节点95-443-www.sofi.com"
+      - "域名节点96-443-cmcc.cc.cd"
+      - "域名节点97-443-cf.nyanya.moe"
+      - "域名节点98-443-cf.godns.cc"
+      - "域名节点99-443-da.mfa.gov.ua"
+      - "域名节点100-443-cfyx.aliyun.20237737.xyz"
+      - "域名节点101-443-www.xflash.vip"
+      - "域名节点102-443-cf.130519.xyz"
+      - "域名节点103-443-p.etime.vip"
+      - "域名节点104-443-animal.nuaa.tech"
+      - "域名节点105-443-jobsdb.com"
+      - "域名节点106-443-yg4.ygkkk.dpdns.org"
+      - "域名节点107-443-so.360832.xyz"
+      - "域名节点108-443-www.ntu.edu.sg"
+      - "域名节点109-443-www.5199dy.com"
+      - "域名节点110-443-seo.07yue.com"
+      - "域名节点111-443-www.5h.com"
+      - "域名节点112-443-fk.hshwk.org"
+      - "域名节点113-443-yg6.ygkkk.dpdns.org"
+      - "域名节点114-443-336688.chinwa.eu.cc"
+      - "域名节点115-443-c.lma.de5.net"
+      - "域名节点116-443-pubs.acs.org"
+      - "域名节点117-443-idc.urkeji.com"
+      - "域名节点118-443-cf.duun.eu.cc"
+      - "域名节点119-443-yg3.ygkkk.dpdns.org"
+      - "域名节点120-443-1749991941.bilibiliapp.cn"
+      - "域名节点121-443-doro.lol"
+      - "域名节点122-443-dianomi.com"
+      - "域名节点123-443-china.mfa.gov.ua"
+      - "域名节点124-443-yg2.ygkkk.dpdns.org"
+      - "域名节点125-443-mming.ggff.net"
+      - "域名节点126-443-mfa.gov.ua"
+      - "域名节点127-443-fn.130519.xyz"
+      - "域名节点128-443-cf.tencentapp.cn"
+      - "域名节点129-443-b3.cfyx.20237737.xyz"
+      - "域名节点130-443-1757760858.tencentapp.cn"
+      - "域名节点131-443-tajikistan.mfa.gov.ua"
+      - "域名节点132-443-cfyx.dnspod.20237737.xyz"
+      - "域名节点133-443-www.adbcardpay.xyz"
+      - "域名节点134-443-serviceshub.samsclub.com"
+      - "域名节点135-443-blog.646474.xyz"
+      - "域名节点136-443-d.lma.de5.net"
+      - "域名节点137-443-cf.727672.xyz"
+      - "域名节点138-443-www.4429.com.cn"
+      - "域名节点139-443-imooo.de"
+      - "域名节点140-443-ctlmt.info"
+      - "域名节点141-443-ctsg.cfyx.aliyun.20237737.xyz"
+      - "域名节点142-443-baota.us.kg"
+      - "域名节点143-443-ct.721660.xyz"
+      - "域名节点144-443-cf.cooteep.com"
+      - "域名节点145-443-cf.xycf.asia"
+      - "美国01-443-172.64.147.127"
+      - "美国02-443-172.64.154.204"
+      - "美国03-443-104.18.45.223"
+      - "美国04-443-172.64.144.170"
+      - "美国05-443-172.64.156.112"
+      - "美国06-443-104.18.37.7"
+      - "美国07-443-104.18.39.150"
+      - "美国08-443-172.64.159.67"
+      - "美国09-443-104.18.43.246"
+      - "美国10-443-104.18.37.133"
+      - "美国11-443-104.18.33.225"
+      - "美国12-443-172.64.159.7"
+      - "美国13-443-104.18.40.189"
+      - "美国14-443-104.18.33.198"
+      - "美国15-443-108.162.198.127"
+      - "美国16-443-172.64.159.151"
+      - "美国17-443-172.64.157.2"
+      - "美国18-443-104.18.45.68"
+      - "美国19-443-104.18.46.111"
+      - "美国20-443-104.18.44.151"
+      - "美国21-443-172.64.147.88"
+      - "美国22-443-172.64.147.110"
+      - "美国23-443-172.64.155.250"
+      - "美国24-443-172.64.158.29"
+      - "美国25-443-104.18.40.163"
+      - "美国26-443-172.64.144.177"
+      - "美国27-443-172.64.145.42"
+      - "美国28-443-172.64.144.222"
+      - "美国29-443-162.159.35.245"
+      - "美国30-443-172.64.157.39"
+      - "美国31-443-172.64.145.202"
+      - "美国32-443-108.162.198.201"
+      - "美国33-443-172.64.52.189"
+      - "美国34-443-108.162.198.84"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "域名节点01-443-saas.sin.fan"
+      - "域名节点02-443-cf.553314.xyz"
+      - "域名节点03-443-cdn.204910.best"
+      - "域名节点04-443-cfsaas.080112.xyz"
+      - "域名节点05-443-cfip-avg.stoeaves.us.ci"
+      - "域名节点06-443-cfip-ct.stoeaves.us.ci"
+      - "域名节点07-443-cf1s.cf.3666888.xyz"
+      - "域名节点08-443-uac.cf.3666888.xyz"
+      - "域名节点09-443-3.cf.3666888.xyz"
+      - "域名节点10-443-play.mc.js.cool"
+      - "域名节点11-443-www.shopify.com"
+      - "域名节点12-443-cf.mubaiovo.top"
+      - "域名节点13-443-vip.cf.3666888.xyz"
+      - "域名节点14-443-4.cf.3666888.xyz"
+      - "域名节点15-443-cnllm.com"
+      - "域名节点16-443-www.giannidelprete.it"
+      - "域名节点17-443-yxip.xxxxxxxx.tk"
+      - "域名节点18-443-eteaf.cf.3666888.xyz"
+      - "域名节点19-443-cf-cname.xingpingcn.top"
+      - "域名节点20-443-cf.3666888.xyz"
+      - "域名节点21-443-snipaste5.speedip.eu.org"
+      - "域名节点22-443-cloudflare.idc.rocks"
+      - "域名节点23-443-youxuan.cf.3666888.xyz"
+      - "域名节点24-443-cf.92555.xyz"
+      - "域名节点25-443-9.cf.3666888.xyz"
+      - "域名节点26-443-jp.cf.3666888.xyz"
+      - "域名节点27-443-markmonitor.com"
+      - "域名节点28-443-staticdelivery.nexusmods.com"
+      - "域名节点29-443-www.swowd.com"
+      - "域名节点30-443-cdn.262832.xyz"
+      - "域名节点31-443-nexusmods.com"
+      - "域名节点32-443-www.galgamex.net"
+      - "域名节点33-443-eii.at"
+      - "域名节点34-443-www.akasantech.com"
+      - "域名节点35-443-cf-ip-node.vov.moe"
+      - "域名节点36-443-zeas.top"
+      - "域名节点37-443-cloudflare.182682.xyz"
+      - "域名节点38-443-www.fastsoso.cn"
+      - "域名节点39-443-keji.cf.3666888.xyz"
+      - "域名节点40-443-qocu.cf.3666888.xyz"
+      - "域名节点41-443-5.cf.3666888.xyz"
+      - "域名节点42-443-10.cf.3666888.xyz"
+      - "域名节点43-443-11.cf.3666888.xyz"
+      - "域名节点44-443-yg9.ygkkk.dpdns.org"
+      - "域名节点45-443-store.ubi.com"
+      - "域名节点46-443-hk.cf.3666888.xyz"
+      - "域名节点47-443-cu.877774.xyz"
+      - "域名节点48-443-gh-proxy.com"
+      - "域名节点49-443-sg.cf.3666888.xyz"
+      - "域名节点50-443-hfqek.cf.3666888.xyz"
+      - "域名节点51-443-yg7.ygkkk.dpdns.org"
+      - "域名节点52-443-yg11.ygkkk.dpdns.org"
+      - "域名节点53-443-baka.fun"
+      - "域名节点54-443-www.xiaoshuofen.com"
+      - "域名节点55-443-www.mlkj888.com"
+      - "域名节点56-443-prompt.gzcrtw.com"
+      - "域名节点57-443-cfvip.cf.3666888.xyz"
+      - "域名节点58-443-freeyx.cloudflare88.eu.org"
+      - "域名节点59-443-bbs.alipansou.com"
+      - "域名节点60-443-dnew.cc"
+      - "域名节点61-443-sanwang.cf.3666888.xyz"
+      - "域名节点62-443-cf.cf.3666888.xyz"
+      - "域名节点63-443-cloudflare.rainyfall.com"
+      - "域名节点64-443-1.cf.3666888.xyz"
+      - "域名节点65-443-6.cf.3666888.xyz"
+      - "域名节点66-443-www.cdzxdz.com"
+      - "域名节点67-443-cdn.091224.xyz"
+      - "域名节点68-443-cfgo.timelate.com"
+      - "域名节点69-443-01-qq.com"
+      - "域名节点70-443-api.gzcrtw.com"
+      - "域名节点71-443-edgeone.gh-proxy.org"
+      - "域名节点72-443-cdn.2158.cc"
+      - "域名节点73-443-cloudflare-ip.mofashi.ltd"
+      - "域名节点74-443-cdns.doon.eu.org"
+      - "域名节点75-443-cdn.cf.3666888.xyz"
+      - "域名节点76-443-123.cf.3666888.xyz"
+      - "域名节点77-443-fw8je9.cf.3666888.xyz"
+      - "域名节点78-443-www.nexusmods.com"
+      - "域名节点79-443-kniu.cc"
+      - "域名节点80-443-www.vastnovel.com"
+      - "域名节点81-443-auto.dolby.dpdns.org"
+      - "域名节点82-443-coke.cf.3666888.xyz"
+      - "域名节点83-443-01-cctv.com"
+      - "域名节点84-443-www.mc.js.cool"
+      - "域名节点85-443-f.lma.de5.net"
+      - "域名节点86-443-cfyx.qdqqd.com"
+      - "域名节点87-443-adnjv.cf.3666888.xyz"
+      - "域名节点88-443-yg1.ygkkk.dpdns.org"
+      - "域名节点89-443-yg5.ygkkk.dpdns.org"
+      - "域名节点90-443-dongbanghong.com"
+      - "域名节点91-443-cmcc.vvvv.ee"
+      - "域名节点92-443-www.sage.com"
+      - "域名节点93-443-8.cf.3666888.xyz"
+      - "域名节点94-443-test.509666.xyz"
+      - "域名节点95-443-www.sofi.com"
+      - "域名节点96-443-cmcc.cc.cd"
+      - "域名节点97-443-cf.nyanya.moe"
+      - "域名节点98-443-cf.godns.cc"
+      - "域名节点99-443-da.mfa.gov.ua"
+      - "域名节点100-443-cfyx.aliyun.20237737.xyz"
+      - "域名节点101-443-www.xflash.vip"
+      - "域名节点102-443-cf.130519.xyz"
+      - "域名节点103-443-p.etime.vip"
+      - "域名节点104-443-animal.nuaa.tech"
+      - "域名节点105-443-jobsdb.com"
+      - "域名节点106-443-yg4.ygkkk.dpdns.org"
+      - "域名节点107-443-so.360832.xyz"
+      - "域名节点108-443-www.ntu.edu.sg"
+      - "域名节点109-443-www.5199dy.com"
+      - "域名节点110-443-seo.07yue.com"
+      - "域名节点111-443-www.5h.com"
+      - "域名节点112-443-fk.hshwk.org"
+      - "域名节点113-443-yg6.ygkkk.dpdns.org"
+      - "域名节点114-443-336688.chinwa.eu.cc"
+      - "域名节点115-443-c.lma.de5.net"
+      - "域名节点116-443-pubs.acs.org"
+      - "域名节点117-443-idc.urkeji.com"
+      - "域名节点118-443-cf.duun.eu.cc"
+      - "域名节点119-443-yg3.ygkkk.dpdns.org"
+      - "域名节点120-443-1749991941.bilibiliapp.cn"
+      - "域名节点121-443-doro.lol"
+      - "域名节点122-443-dianomi.com"
+      - "域名节点123-443-china.mfa.gov.ua"
+      - "域名节点124-443-yg2.ygkkk.dpdns.org"
+      - "域名节点125-443-mming.ggff.net"
+      - "域名节点126-443-mfa.gov.ua"
+      - "域名节点127-443-fn.130519.xyz"
+      - "域名节点128-443-cf.tencentapp.cn"
+      - "域名节点129-443-b3.cfyx.20237737.xyz"
+      - "域名节点130-443-1757760858.tencentapp.cn"
+      - "域名节点131-443-tajikistan.mfa.gov.ua"
+      - "域名节点132-443-cfyx.dnspod.20237737.xyz"
+      - "域名节点133-443-www.adbcardpay.xyz"
+      - "域名节点134-443-serviceshub.samsclub.com"
+      - "域名节点135-443-blog.646474.xyz"
+      - "域名节点136-443-d.lma.de5.net"
+      - "域名节点137-443-cf.727672.xyz"
+      - "域名节点138-443-www.4429.com.cn"
+      - "域名节点139-443-imooo.de"
+      - "域名节点140-443-ctlmt.info"
+      - "域名节点141-443-ctsg.cfyx.aliyun.20237737.xyz"
+      - "域名节点142-443-baota.us.kg"
+      - "域名节点143-443-ct.721660.xyz"
+      - "域名节点144-443-cf.cooteep.com"
+      - "域名节点145-443-cf.xycf.asia"
+      - "美国01-443-172.64.147.127"
+      - "美国02-443-172.64.154.204"
+      - "美国03-443-104.18.45.223"
+      - "美国04-443-172.64.144.170"
+      - "美国05-443-172.64.156.112"
+      - "美国06-443-104.18.37.7"
+      - "美国07-443-104.18.39.150"
+      - "美国08-443-172.64.159.67"
+      - "美国09-443-104.18.43.246"
+      - "美国10-443-104.18.37.133"
+      - "美国11-443-104.18.33.225"
+      - "美国12-443-172.64.159.7"
+      - "美国13-443-104.18.40.189"
+      - "美国14-443-104.18.33.198"
+      - "美国15-443-108.162.198.127"
+      - "美国16-443-172.64.159.151"
+      - "美国17-443-172.64.157.2"
+      - "美国18-443-104.18.45.68"
+      - "美国19-443-104.18.46.111"
+      - "美国20-443-104.18.44.151"
+      - "美国21-443-172.64.147.88"
+      - "美国22-443-172.64.147.110"
+      - "美国23-443-172.64.155.250"
+      - "美国24-443-172.64.158.29"
+      - "美国25-443-104.18.40.163"
+      - "美国26-443-172.64.144.177"
+      - "美国27-443-172.64.145.42"
+      - "美国28-443-172.64.144.222"
+      - "美国29-443-162.159.35.245"
+      - "美国30-443-172.64.157.39"
+      - "美国31-443-172.64.145.202"
+      - "美国32-443-108.162.198.201"
+      - "美国33-443-172.64.52.189"
+      - "美国34-443-108.162.198.84"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
