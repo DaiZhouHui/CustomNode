@@ -1,4 +1,4 @@
-name: 更新节点仓库主页
+name:  更新节点仓库主页
 
 # 工作流描述：此工作流用于自动生成和更新节点仓库的文件目录索引页面
 # 当代码库中的文件发生变化时，自动生成 index.html、update-index.html 和 files_info.json 文件
@@ -7,22 +7,35 @@ name: 更新节点仓库主页
 on:
   # 1. 推送事件触发条件
   push:
-    # 路径过滤器：触发所有文件变更，但排除生成文件和 .github 目录（防止无限循环触发）
+    # 路径过滤器：只对根目录下的文件变化进行响应
     paths:
+      # 匹配根目录下所有文件，不包括子目录中的文件
       - '**'
+      - '*'              # 匹配根目录下所有非隐藏文件
+      - '.*'
+      - '*.*'             # 匹配根目录下所有隐藏文件（除了 .gitignore）
+      # 匹配所有yaml文件
+      - '*.yaml'
+      # 匹配style目录下的文件
+      - 'style/**'
+      # 匹配scripts目录下的文件
+      - 'scripts/**'
+      # 排除已生成的特定文件
       - '!index.html'
       - '!update-index.html'
       - '!files_info.json'
+      # 排除python依赖文件以及md文件
       - '!requirements.txt'
       - '!README.md'
+      # 排除 .github 目录（防止无限循环触发）
       - '!.github/**'
     # 仅对 main 分支生效
     branches: [ main ]
-
+  
   # 2. 定时任务：每天北京时间早上7点00自动运行（UTC时间晚上23:00）
   schedule:
     - cron: '00 23 * * *'
-
+  
   # 3. 手动触发：允许在 GitHub Actions 界面手动点击运行
   workflow_dispatch:
 
@@ -30,106 +43,124 @@ on:
 permissions:
   contents: write
 
-# 并发控制：同一时间只允许一个工作流实例运行，防止竞争条件
-concurrency:
-  group: update-index
-  cancel-in-progress: false
-
 jobs:
   update-index:
     runs-on: ubuntu-latest
-
+    
     steps:
-      # 步骤1：获取代码库内容
-      - name: 📥 检出代码库（完整历史）
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # 获取完整提交历史，确保脚本能访问所有文件版本
-          token: ${{ secrets.GITHUB_TOKEN }}  # 使用GitHub令牌进行认证
-
-      # 步骤2：设置Python运行环境
-      - name: 🐍 配置Python 3.13环境
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'  # 指定Python版本，确保与脚本兼容
-
-      # 步骤3：安装Python依赖包
-      - name: 📦 安装Python依赖
-        run: |
-          echo "开始安装Python依赖..."
-          python -m pip install --upgrade pip  # 升级pip到最新版本
-
-          # 检查并安装requirements.txt中的依赖
-          if [ -f "requirements.txt" ]; then
-            echo "找到requirements.txt，正在安装依赖..."
-            pip install -r requirements.txt
-          else
-            echo "未找到requirements.txt，跳过依赖安装"
-          fi
-
-          # 显示已安装的包
-          pip list
-
-      # 步骤4：运行Python脚本生成index.html文件
-      - name: 🔧 执行index.html生成脚本
-        env:
-          # 环境变量传递
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub认证令牌
-          REPO_OWNER: ${{ github.repository_owner }}  # 仓库所有者
-          # github.event.repository.name 在 schedule 事件中不可用，回退到默认值
-          REPO_NAME: ${{ github.event.repository.name || 'CustomNode' }}
-          BRANCH: main  # 目标分支
-        run: |
-          echo "开始生成index.html文件..."
-          echo "仓库: $REPO_OWNER/$REPO_NAME"
-          echo "分支: $BRANCH"
-
-          # 检查生成脚本是否存在
-          if [ ! -f "scripts/generate-index.py" ]; then
-            echo "错误：未找到 scripts/generate-index.py 文件！"
-            exit 1
-          fi
-
-          # 运行生成脚本
-          python scripts/generate-index.py
-
-          # 检查生成的文件
-          echo "生成的文件列表:"
-          ls -la index.html update-index.html files_info.json 2>/dev/null || echo "部分文件未生成"
-
-      # 步骤5：提交生成的文件回主分支
-      - name: 📤 提交并推送更新
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config user.name 'GitHub Actions Bot'
-          git config user.email 'actions@github.com'
-          git add index.html update-index.html files_info.json
-          if git diff --cached --quiet; then
-            echo "没有需要提交的更改"
-          else
-            git commit -m $'🤖 自动更新index.html文件\n\n由GitHub Actions工作流自动生成:\n- index.html: 主页节点仓库页面\n- update-index.html: 更新日志页面\n- files_info.json: 文件元数据\n\n触发方式: ${{ github.event_name }}\n触发提交: ${{ github.sha }}\n运行ID: ${{ github.run_id }}'
-            git push origin main
-          fi
-
-      # 步骤6（可选）：验证提交结果
-      - name: ✅ 验证更新结果
-        if: always()  # 无论之前步骤是否成功都执行
-        run: |
-          echo "=== 工作流执行完成 ==="
-          echo "工作流名称: ${{ github.workflow }}"
-          echo "运行编号: ${{ github.run_number }}"
-          echo "运行ID: ${{ github.run_id }}"
-          echo "触发事件: ${{ github.event_name }}"
-          echo "触发提交: ${{ github.sha }}"
-          echo "执行时间: $(date)"
-          echo ""
-          echo "已生成的文件:"
-          echo "- index.html: 主页节点仓库页面"
-          echo "- update-index.html: 更新日志页面"
-          echo "- files_info.json: 文件信息JSON数据"
-          echo ""
-          echo "这些文件已自动提交到 main 分支"
+    # 步骤1：获取代码库内容
+    - name: 📥 检出代码库（完整历史）
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取完整提交历史，确保脚本能访问所有文件版本
+        token: ${{ secrets.GITHUB_TOKEN }}  # 使用GitHub令牌进行认证
+        
+    # 步骤2：设置Python运行环境
+    - name: 🐍 配置Python 3.14环境
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.14'  # 指定Python版本，确保与脚本兼容
+        
+    # 步骤3：安装Python依赖包
+    - name: 📦 安装Python依赖
+      run: |
+        echo "开始安装Python依赖..."
+        python -m pip install --upgrade pip  # 升级pip到最新版本
+        
+        # 检查并安装requirements.txt中的依赖
+        if [ -f "requirements.txt" ]; then
+          echo "找到requirements.txt，正在安装依赖..."
+          pip install -r requirements.txt
+        else
+          echo "未找到requirements.txt，跳过依赖安装"
+        fi
+        
+        # 显示已安装的包
+        pip list
+        
+    # 步骤4：运行Python脚本生成index.html文件
+    - name: 🔧 执行index.html生成脚本
+      env:
+        # 环境变量传递
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub认证令牌
+        REPO_OWNER: ${{ github.repository_owner }}  # 仓库所有者
+        REPO_NAME: ${{ github.event.repository.name }}  # 仓库名称
+        BRANCH: main  # 目标分支
+      run: |
+        echo "开始生成index.html文件..."
+        echo "仓库: $REPO_OWNER/$REPO_NAME"
+        echo "分支: $BRANCH"
+        
+        # 检查生成脚本是否存在
+        if [ ! -f "scripts/generate-index.py" ]; then
+          echo "错误：未找到 scripts/generate-index.py 文件！"
+          exit 1
+        fi
+        
+        # 运行生成脚本
+        python scripts/generate-index.py
+        
+        # 检查生成的文件
+        echo "生成的文件列表:"
+        ls -la index.html update-index.html files_info.json 2>/dev/null || echo "部分文件未生成"
+        
+    # 步骤5：提交生成的文件回主分支
+    - name: 📤 提交并推送更新
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        # 提交信息
+        commit_message: |
+          🤖 自动更新index.html文件
+          
+          由GitHub Actions工作流自动生成:
+          - index.html: 主页节点仓库页面
+          - update-index.html: 更新日志页面
+          - files_info.json: 文件元数据
+          
+          触发方式: ${{ github.event_name }}
+          触发提交: ${{ github.sha }}
+          运行ID: ${{ github.run_id }}
+        
+        # 提交的文件模式
+        file_pattern: |
+          index.html
+          update-index.html
+          files_info.json
+        
+        # 目标分支
+        branch: main
+        
+        # 提交选项
+        commit_user_name: 'GitHub Actions Bot'
+        commit_user_email: 'actions@github.com'
+        commit_author: 'GitHub Actions Bot <actions@github.com>'
+        
+        # 检查设置
+        skip_dirty_check: false  # 检查工作区是否有更改
+        skip_fetch: false  # 执行git fetch
+        push_options: '--force'  # 强制推送（如果需要）
+        
+        # 仅当文件实际更改时才提交
+        create_branch: false
+        
+    # 步骤6（可选）：验证提交结果
+    - name: ✅ 验证更新结果
+      if: always()  # 无论之前步骤是否成功都执行
+      run: |
+        echo "=== 工作流执行完成 ==="
+        echo "工作流名称: ${{ github.workflow }}"
+        echo "运行编号: ${{ github.run_number }}"
+        echo "运行ID: ${{ github.run_id }}"
+        echo "触发事件: ${{ github.event_name }}"
+        echo "触发提交: ${{ github.sha }}"
+        echo "执行时间: $(date)"
+        echo ""
+        echo "已生成的文件:"
+        echo "- index.html: 主页节点仓库页面"
+        echo "- update-index.html: 更新日志页面"
+        echo "- files_info.json: 文件信息JSON数据"
+        echo ""
+        echo "这些文件已自动提交到 main 分支"
 
 # 工作流后续处理
 # 注意：此工作流运行后，如果仓库启用了 GitHub Pages，
