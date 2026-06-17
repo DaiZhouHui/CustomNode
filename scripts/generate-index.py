@@ -2231,11 +2231,15 @@ def generate_table_row(file_info: Dict) -> str:
         </td>
     </tr>
     """
-def generate_update_page() -> str:
+def generate_update_page(repo_owner: str, repo_name: str) -> str:
     """生成简洁实用的更新页面 - 左右布局版本"""
-    return '''<!DOCTYPE html>
+    html = '''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<script>
+const REPO_OWNER = "{{REPO_OWNER}}";
+const REPO_NAME = "{{REPO_NAME}}";
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CustomNode 更新控制台</title>
@@ -2854,6 +2858,17 @@ def generate_update_page() -> str:
                             <span>强制更新</span>
                         </button>
                     </div>
+
+                    <div class="status-section" style="margin-top: 10px;">
+                        <h3><i class="fas fa-key"></i> GitHub 令牌</h3>
+                        <div class="status-item" style="padding: 0; border: none;">
+                            <div class="status-label">用于触发 workflow_dispatch 的 Personal Access Token</div>
+                            <input id="githubToken" type="password" class="form-control" placeholder="输入 GitHub Token (repo 权限)" autocomplete="off" style="width:100%; margin-top:10px;">
+                            <p style="font-size: 12px; color: #64748b; margin-top: 8px;">
+                                令牌仅在本页使用，浏览器不会保存。可使用带有 <strong>repo</strong> 权限的令牌。
+                            </p>
+                        </div>
+                    </div>
                     
                     <div class="log-container">
                         <div class="log-header">
@@ -2891,7 +2906,7 @@ def generate_update_page() -> str:
         // 获取最后运行时间
         async function loadLastRunTime() {
             try {
-                const response = await fetch('https://api.github.com/repos/DaiZhouHui/CustomNode/actions/workflows/update-index.yml/runs?status=completed&per_page=1');
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/update-index.yml/runs?status=completed&per_page=1`);
                 if (response.ok) {
                     const data = await response.json();
                     if (data.workflow_runs && data.workflow_runs.length > 0) {
@@ -2939,47 +2954,69 @@ def generate_update_page() -> str:
             logEntry.innerHTML = `<span class="log-time">[${date} ${time}]</span><span>🚀 开始${typeText}: ${message}</span>`;
             output.prepend(logEntry);
             
-            // 模拟更新过程
+            // 触发更新过程
             simulateUpdateProcess(type, output);
         }
         
-        // 模拟更新过程
-        function simulateUpdateProcess(type, output) {
-            const steps = [
-                {delay: 1000, message: '正在连接到 GitHub API...', type: 'info'},
-                {delay: 2000, message: '正在验证访问权限...', type: 'info'},
-                {delay: 3000, message: '正在扫描仓库文件...', type: 'info'},
-                {delay: 4000, message: '正在处理节点文件...', type: 'info'},
-                {delay: 5000, message: '正在生成索引页面...', type: 'info'},
-                {delay: 6000, message: '✅ 更新成功！工作流已触发', type: 'success'},
-            ];
-            
-            let totalDelay = 0;
-            steps.forEach(step => {
-                totalDelay += step.delay;
-                setTimeout(() => {
-                    const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
-                    const logEntry = document.createElement('div');
-                    logEntry.className = `log-entry log-${step.type}`;
-                    logEntry.innerHTML = `<span class="log-time">[${time}]</span><span>${step.message}</span>`;
-                    output.prepend(logEntry);
-                    output.scrollTop = 0;
-                    
-                    // 最后一步添加跳转链接
-                    if (step.message.includes('更新成功')) {
-                        setTimeout(() => {
-                            const linkEntry = document.createElement('div');
-                            linkEntry.className = 'log-entry log-info';
-                            linkEntry.innerHTML = `<span class="log-time">[${new Date().toLocaleTimeString('zh-CN', {hour12: false})}]</span><span>🔗 <a href="https://github.com/DaiZhouHui/CustomNode/actions" target="_blank" style="color: #4ecdc4; text-decoration: none;">查看 GitHub Actions 状态</a></span>`;
-                            output.prepend(linkEntry);
-                        }, 1000);
-                    }
-                }, totalDelay);
-            });
+        async function simulateUpdateProcess(type, output) {
+            const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry log-info';
+            logEntry.innerHTML = `<span class="log-time">[${time}]</span><span>正在触发 GitHub Actions workflow_dispatch...</span>`;
+            output.prepend(logEntry);
+            output.scrollTop = 0;
+
+            const token = document.getElementById('githubToken').value.trim();
+            const workflowUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/update-index.yml/dispatches`;
+            const payload = {
+                ref: 'main',
+                inputs: {
+                    update_type: type,
+                },
+            };
+
+            try {
+                const response = await fetch(workflowUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+
+                const now = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+                const resultEntry = document.createElement('div');
+
+                if (response.ok || response.status === 204) {
+                    resultEntry.className = 'log-entry log-success';
+                    resultEntry.innerHTML = `<span class="log-time">[${now}]</span><span>✅ 已成功触发 GitHub Actions 更新。请稍后在 Actions 页面查看执行结果。</span>`;
+                } else {
+                    const errorData = await response.json().catch(() => ({}));
+                    const message = errorData.message || '未知错误，请检查令牌权限及仓库访问设置';
+                    resultEntry.className = 'log-entry log-error';
+                    resultEntry.innerHTML = `<span class="log-time">[${now}]</span><span>❌ 触发失败：${message}</span>`;
+                }
+
+                output.prepend(resultEntry);
+                output.scrollTop = 0;
+
+                const linkEntry = document.createElement('div');
+                linkEntry.className = 'log-entry log-info';
+                linkEntry.innerHTML = `<span class="log-time">[${new Date().toLocaleTimeString('zh-CN', {hour12: false})}]</span><span>🔗 <a href="https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/workflows/update-index.yml" target="_blank" style="color: #4ecdc4; text-decoration: none;">查看 GitHub Actions 状态</a></span>`;
+                output.prepend(linkEntry);
+            } catch (error) {
+                const now = new Date().toLocaleTimeString('zh-CN', {hour12: false});
+                const errorEntry = document.createElement('div');
+                errorEntry.className = 'log-entry log-error';
+                errorEntry.innerHTML = `<span class="log-time">[${now}]</span><span>❌ 网络请求失败：${error.message}</span>`;
+                output.prepend(errorEntry);
+                output.scrollTop = 0;
+            }
         }
         
         // 测试连接
-        function testUpdate() {
             const output = document.getElementById('updateOutput');
             const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
             const date = new Date().toLocaleDateString('zh-CN');
@@ -3021,6 +3058,7 @@ def generate_update_page() -> str:
     </script>
 </body>
 </html>'''
+    return html.replace("{{REPO_OWNER}}", repo_owner).replace("{{REPO_NAME}}", repo_name)
 
 def main():
     """主函数"""
@@ -3053,7 +3091,7 @@ def main():
     print("✅ 生成 index.html")
 
     # 生成更新页面
-    update_content = generate_update_page()
+    update_content = generate_update_page(REPO_OWNER, REPO_NAME)
     with open("update-index.html", "w", encoding="utf-8") as f:
         f.write(update_content)
     print("✅ 生成 update-index.html")

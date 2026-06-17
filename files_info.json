@@ -210,25 +210,6 @@
       "is_pair": true
     },
     {
-      "display_name": "HK500",
-      "file_type": "yaml",
-      "node_name": null,
-      "yaml_name": "HK500.yaml",
-      "node_pages": null,
-      "node_raw": null,
-      "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/HK500.yaml",
-      "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/HK500.yaml",
-      "update_time": "2026-01-30 04:05:50+08:00",
-      "update_date": "2026-01-30",
-      "full_time": "2026-01-30 04:05:50",
-      "update_time_only": "04:05:50",
-      "node_size": 0,
-      "yaml_size": 253988,
-      "has_node": false,
-      "has_yaml": true,
-      "is_pair": false
-    },
-    {
       "display_name": "OptimalNode",
       "file_type": "node",
       "node_name": "OptimalNode",
@@ -267,6 +248,6 @@
       "is_pair": false
     }
   ],
-  "generated_at": "2026-06-17T16:44:48.044733+00:00",
+  "generated_at": "2026-06-17T17:05:00.519233+00:00",
   "repo": "DaiZhouHui/CustomNode"
 }
