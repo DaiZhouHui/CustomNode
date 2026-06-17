@@ -46,6 +46,8 @@ permissions:
 jobs:
   update-index:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
     
     steps:
     # 步骤1：获取代码库内容
@@ -106,42 +108,28 @@ jobs:
         
     # 步骤5：提交生成的文件回主分支
     - name: 📤 提交并推送更新
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        # 提交信息
-        commit_message: |
-          🤖 自动更新index.html文件
-          
-          由GitHub Actions工作流自动生成:
-          - index.html: 主页节点仓库页面
-          - update-index.html: 更新日志页面
-          - files_info.json: 文件元数据
-          
-          触发方式: ${{ github.event_name }}
-          触发提交: ${{ github.sha }}
-          运行ID: ${{ github.run_id }}
-        
-        # 提交的文件模式
-        file_pattern: |
-          index.html
-          update-index.html
-          files_info.json
-        
-        # 目标分支
-        branch: main
-        
-        # 提交选项
-        commit_user_name: 'GitHub Actions Bot'
-        commit_user_email: 'actions@github.com'
-        commit_author: 'GitHub Actions Bot <actions@github.com>'
-        
-        # 检查设置
-        skip_dirty_check: false  # 检查工作区是否有更改
-        skip_fetch: false  # 执行git fetch
-        push_options: '--force'  # 强制推送（如果需要）
-        
-        # 仅当文件实际更改时才提交
-        create_branch: false
+      run: |
+        git config user.name 'GitHub Actions Bot'
+        git config user.email 'actions@github.com'
+        git add index.html update-index.html files_info.json
+        if git diff --cached --quiet; then
+          echo "没有需要提交的更改"
+        else
+          git commit -m "🤖 自动更新index.html文件
+
+由GitHub Actions工作流自动生成:
+- index.html: 主页节点仓库页面
+- update-index.html: 更新日志页面
+- files_info.json: 文件元数据
+
+触发方式: ${{ github.event_name }}
+触发提交: ${{ github.sha }}
+运行ID: ${{ github.run_id }}"
+          git push origin main
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         
     # 步骤6（可选）：验证提交结果
     - name: ✅ 验证更新结果
