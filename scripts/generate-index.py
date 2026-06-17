@@ -71,7 +71,7 @@ def get_local_files() -> List[Dict]:
     """获取本地文件信息，并将节点与.yaml文件配对"""
     files_info = []
 
-    # 忽略的文件列表
+    # 忽略的根目录文件名（仅列出特殊非节点文件）
     ignore_files = {
         ".gitignore",
         "README.md",
@@ -80,24 +80,16 @@ def get_local_files() -> List[Dict]:
         "style.css",
         "script.js",
         "files_info.json",
-        ".git",
-        ".github",
-        "scripts",
-        "__pycache__",
-        "generate-index-optimized.py",
-        "requirements.txt",
+        "index_copy.html",
+        "update-index_copy.html",
         ".env",
         ".env.example",
+        "requirements.txt",
         "package.json",
         "package-lock.json",
         "yarn.lock",
-        "node_modules",
         "config.json",
         "settings.json",
-        "*.log",
-        "*.tmp",
-        "*.temp",
-        "*.bak",
     }
 
     print("📂 扫描本地文件...")
@@ -116,20 +108,16 @@ def get_local_files() -> List[Dict]:
         if item_name in ignore_files:
             continue
 
-        # 检查文件扩展名
-        if any(item_name.endswith(ext) for ext in [".log", ".tmp", ".temp", ".bak"]):
+        # 只处理无扩展名的节点文件和 .yaml 文件
+        ext = item.suffix.lower()
+        if ext and ext != ".yaml":
             continue
 
         try:
             # 修复：使用Git历史时间而非文件系统时间
             update_time = get_git_file_time(item_name)
 
-            # 判断文件类型
-            file_type = "node"
-            if item_name.endswith(".yaml"):
-                file_type = "yaml"
-            elif item_name.isdigit():
-                file_type = "numeric"
+            file_type = "yaml" if ext == ".yaml" else "node"
 
             # 获取文件大小
             stat_info = item.stat()
@@ -290,6 +278,7 @@ def generate_html_index(files_info: List[Dict]) -> str:
 
     # 按日期分组
     grouped_files = group_files_by_date(files_info)
+    rows_html = generate_table_rows(grouped_files)
 
     # 统计信息
     total_files = len(files_info)
@@ -1578,13 +1567,9 @@ body {{
                     <input type="text" id="searchInput" class="search-input" placeholder="搜索节点名称..." onkeyup="filterTable()">
                 </div>
                 <div class="action-buttons">
-                    <button class="btn btn-primary" onclick="copyAll('pages')">
-                        <i class="fas fa-copy"></i>
-                        <span>全部Pages</span>
-                    </button>
-                    <button class="btn btn-secondary" onclick="copyAll('raw')">
-                        <i class="fas fa-copy"></i>
-                        <span>全部Raw</span>
+                    <button class="btn btn-danger" id="batchDeleteBtn" onclick="batchDeleteSelected()" disabled>
+                        <i class="fas fa-trash-alt"></i>
+                        <span>删除选中</span>
                     </button>
                     <button class="btn btn-generate" onclick="location.href='https://daizhouhui.github.io/NodeWeb/'" title="生成节点">
                         <i class="fas fa-cubes"></i>
@@ -1593,7 +1578,7 @@ body {{
                     <button class="btn btn-outline" onclick="window.location.href = 'update-index.html'">
                         <i class="fas fa-sync-alt"></i>
                         <span>更新</span>
-                    </button> 
+                    </button>
                 </div>
             </div>
         </div>
@@ -1604,20 +1589,21 @@ body {{
                 <table class="nodes-table">
                     <thead>
                         <tr>
-                            <th width="20%">节点名称</th>
-                            <th width="15%">更新时间</th>
-                            <th width="10%">状态</th>
-                            <th width="20%">订阅链接</th>
-                            <th width="20%">yaml订阅</th>
-                            <th width="15%">操作</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        {generate_table_rows(grouped_files)}
-                    </tbody>
+                                        <th width="5%"><input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)"></th>
+                                        <th width="20%">节点名称</th>
+                                        <th width="15%">更新时间</th>
+                                        <th width="10%">状态</th>
+                                        <th width="20%">订阅链接</th>
+                                        <th width="20%">yaml订阅</th>
+                                        <th width="10%">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                {rows_html}
+                            </tbody>
                 </table>
                 
-                {"<div class='empty-state' id='emptyState'><i class='fas fa-inbox'></i><h3>没有找到匹配的节点</h3><p>尝试不同的搜索关键词</p></div>" if files_info else ""}
+                <div class='empty-state' id='emptyState' style='display:none;'><i class='fas fa-inbox'></i><h3>没有找到匹配的节点</h3><p>尝试不同的搜索关键词</p></div>
             </div>
         </div>
 
@@ -1652,8 +1638,10 @@ body {{
                 <h3>删除节点模组</h3>
             </div>
             <div class="modal-body">
-                <p>您即将删除节点模组: <strong id="deleteNodeName"></strong></p>
-                <p>此操作将永久删除节点文件及对应的配置文件，且无法恢复！</p>
+                <p>您即将删除以下节点模组：</p>
+                <p style="font-weight: 700; margin: 10px 0;" id="deleteNodeName">待删除项目</p>
+                <div id="deleteListPreview" style="margin: 12px 0; padding: 12px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; max-height: 180px; overflow-y: auto; font-size: 14px; color: #1f2937;"></div>
+                <p>此操作将永久删除这些节点文件及对应的配置文件，且无法恢复！</p>
                 <div class="form-group">
                     <label for="githubToken">
                         <i class="fas fa-key"></i>
@@ -1691,8 +1679,7 @@ body {{
         const allFiles = {json.dumps(files_info, default=str)};
         
         // 删除相关变量
-        let currentDeleteNode = null;
-        let currentDeleteYaml = null;
+        let currentDeleteItems = [];
         let currentDeleteDisplayName = null;
         
         // 显示提示
@@ -1812,28 +1799,52 @@ body {{
             }}
         }}
         
-        // 复制全部链接
-        function copyAll(type) {{
-            const links = [];
-            
-            allFiles.forEach(file => {{
-                if (type === 'pages') {{
-                    if (file.node_pages) links.push(file.node_pages);
-                    if (file.yaml_pages) links.push(file.yaml_pages);
-                }} else {{
-                    if (file.node_raw) links.push(file.node_raw);
-                    if (file.yaml_raw) links.push(file.yaml_raw);
-                }}
+        function getSelectedFiles() {{
+            const checkboxes = document.querySelectorAll('.row-checkbox:checked');
+            const selected = [];
+            checkboxes.forEach(cb => {{
+                const displayName = cb.dataset.displayName;
+                const file = allFiles.find(f => f.display_name === displayName);
+                if (file) selected.push(file);
             }});
-            
-            if (links.length > 0) {{
-                copyToClipboard(links.join('\\n'));
-                showToast(`已复制${{links.length}}个${{type === 'pages' ? 'Pages' : 'Raw'}}链接`);
-            }} else {{
-                showToast('没有可复制的链接', 'warning');
+            return selected;
+        }}
+
+        function updateBatchDeleteState() {{
+            const selected = getSelectedFiles();
+            const batchBtn = document.getElementById('batchDeleteBtn');
+            if (batchBtn) {{
+                batchBtn.disabled = selected.length === 0;
             }}
         }}
-        
+
+        function toggleSelectAll(source) {{
+            const checkboxes = document.querySelectorAll('.row-checkbox');
+            checkboxes.forEach(cb => {{
+                cb.checked = source.checked;
+            }});
+            updateBatchDeleteState();
+        }}
+
+        function batchDeleteSelected() {{
+            const selected = getSelectedFiles();
+            if (selected.length === 0) {{
+                showToast('请先选择要删除的节点', 'warning');
+                return;
+            }}
+
+            currentDeleteItems = selected;
+            currentDeleteDisplayName = `${{selected.length}} 个节点模组`;
+            document.getElementById('deleteNodeName').textContent = currentDeleteDisplayName;
+            const preview = document.getElementById('deleteListPreview');
+            preview.innerHTML = selected.map(item => `<div>• ${{item.display_name}}</div>`).join('');
+            document.getElementById('githubToken').value = '';
+            document.getElementById('confirmDeleteBtn').disabled = false;
+            const modal = document.getElementById('deleteModal');
+            modal.classList.add('show');
+            setTimeout(() => {{ document.getElementById('githubToken').focus(); }}, 300);
+        }}
+
         // 显示/隐藏操作列
         function toggleActionButtons(btn) {{
         const row = btn.closest('tr');
@@ -1861,11 +1872,12 @@ body {{
             const file = allFiles.find(f => f.display_name === nodeName);
             if (!file) return;
             
-            currentDeleteNode = file.node_name;
-            currentDeleteYaml = file.yaml_name;
+            currentDeleteItems = [file];
             currentDeleteDisplayName = file.display_name;
             
             document.getElementById('deleteNodeName').textContent = file.display_name;
+            const preview = document.getElementById('deleteListPreview');
+            preview.innerHTML = `<div>• ${{file.display_name}}</div>`;
             document.getElementById('githubToken').value = '';
             document.getElementById('confirmDeleteBtn').disabled = false;
             
@@ -1882,8 +1894,7 @@ body {{
         function closeDeleteModal() {{
             const modal = document.getElementById('deleteModal');
             modal.classList.remove('show');
-            currentDeleteNode = null;
-            currentDeleteYaml = null;
+            currentDeleteItems = [];
             currentDeleteDisplayName = null;
         }}
         
@@ -1903,53 +1914,67 @@ body {{
             deleteBtn.disabled = true;
             
             try {{
-                showToast('正在删除节点文件...', 'info');
-                
-                // 删除节点文件（如果存在）
-                if (currentDeleteNode) {{
-                    const nodeResult = await deleteGitHubFile(currentDeleteNode, token);
-                    if (!nodeResult.success) {{
-                        throw new Error(`删除节点文件失败: ${{nodeResult.error}}`);
+                showToast('正在删除选中的节点文件...', 'info');
+                const results = [];
+                for (const item of currentDeleteItems) {{
+                    const result = {{ display_name: item.display_name, success: true, details: [] }};
+                    if (item.node_name) {{
+                        const nodeResult = await deleteGitHubFile(item.node_name, token);
+                        if (!nodeResult.success) {{
+                            result.success = false;
+                            result.details.push(`节点文件失败: ${{nodeResult.error}}`);
+                        }} else {{
+                            result.details.push('节点文件已删除');
+                        }}
                     }}
-                }}
-                
-                // 删除配置文件（如果存在）
-                if (currentDeleteYaml) {{
-                    const yamlResult = await deleteGitHubFile(currentDeleteYaml, token);
-                    if (!yamlResult.success) {{
-                        throw new Error(`删除配置文件失败: ${{yamlResult.error}}`);
+                    if (item.yaml_name) {{
+                        const yamlResult = await deleteGitHubFile(item.yaml_name, token);
+                        if (!yamlResult.success) {{
+                            result.success = false;
+                            result.details.push(`配置文件失败: ${{yamlResult.error}}`);
+                        }} else {{
+                            result.details.push('配置文件已删除');
+                        }}
                     }}
+                    results.push(result);
                 }}
-                
-                showToast(`节点模组 "${{currentDeleteDisplayName}}" 删除成功！`, 'success');
-                
-                // 从表格中移除该行
+
+                const failed = results.filter(r => !r.success);
+                if (failed.length > 0) {{
+                    const messages = failed.map(r => `【${{r.display_name}}】${{r.details.join('; ')}}`).join(' | ');
+                    showToast(`部分删除失败，请检查: ${{messages}}`, 'error');
+                }} else {{
+                    showToast(`已删除 ${{currentDeleteItems.length}} 个节点模组`, 'success');
+                }}
+
+                // 从表格中移除已删除行
                 const rows = document.querySelectorAll('#tableBody tr');
-                for (let row of rows) {{
-                    if (row.classList.contains('date-divider')) continue;
-                    
-                    const nameCell = row.querySelector('.node-name');
-                    if (nameCell && nameCell.textContent.trim().includes(currentDeleteDisplayName)) {{
-                        row.remove();
-                        break;
+                currentDeleteItems.forEach(item => {{
+                    for (const row of rows) {{
+                        if (row.classList.contains('date-divider')) continue;
+                        const nameCell = row.querySelector('.node-name');
+                        const checkbox = row.querySelector('.row-checkbox');
+                        if (nameCell && checkbox && checkbox.dataset.displayName === item.display_name) {{
+                            row.remove();
+                            break;
+                        }}
                     }}
-                }}
+                }});
+
+                // 更新 allFiles
+                currentDeleteItems.forEach(item => {{
+                    const idx = allFiles.findIndex(f => f.display_name === item.display_name);
+                    if (idx !== -1) {{
+                        allFiles.splice(idx, 1);
+                    }}
+                }});
                 
-                // 从allFiles中移除
-                const index = allFiles.findIndex(f => f.display_name === currentDeleteDisplayName);
-                if (index !== -1) {{
-                    allFiles.splice(index, 1);
-                }}
-                
-                // 更新统计信息
                 updateStats();
                 
-                // 关闭模态框
                 setTimeout(() => {{
                     closeDeleteModal();
-                    showToast('删除完成，建议手动更新索引', 'info');
+                    showToast('删除操作完成，建议手动更新索引', 'info');
                 }}, 1000);
-                
             }} catch (error) {{
                 console.error('删除失败:', error);
                 showToast(`删除失败: ${{error.message}}`, 'error');
@@ -1960,9 +1985,7 @@ body {{
         
         // 删除GitHub文件
         async function deleteGitHubFile(fileName, token) {{
-            // 对文件名进行 URL 编码以处理空格或特殊字符
             const encodedName = encodeURIComponent(fileName);
-            // 获取文件的SHA值（GitHub删除文件需要SHA）
             const getUrl = `https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/${{encodedName}}`;
             
             const getResponse = await fetch(getUrl, {{
@@ -1973,19 +1996,21 @@ body {{
             }});
             
             if (!getResponse.ok) {{
-                // 如果文件不存在，也算删除成功
                 if (getResponse.status === 404) {{
                     return {{ success: true, message: '文件不存在或已被删除' }};
                 }}
-                const errorData = await getResponse.json();
-                return {{ success: false, error: errorData.message || '获取文件SHA失败' }};
+                try {{
+                    const errorData = await getResponse.json();
+                    return {{ success: false, error: errorData.message || '获取文件SHA失败' }};
+                }} catch {{
+                    return {{ success: false, error: '获取文件SHA失败' }};
+                }}
             }}
             
             const fileData = await getResponse.json();
             const sha = fileData.sha;
             
-            // 删除文件
-            const deleteUrl = `https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/${{fileName}}`;
+            const deleteUrl = `https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/${{encodedName}}`;
             const deleteData = {{
                 message: `Delete ${{fileName}} via CustomNode Manager`,
                 sha: sha,
@@ -1994,7 +2019,7 @@ body {{
                     name: 'CustomNode Manager',
                     email: 'noreply@github.com'
                 }}
-            }}; 
+            }};
             
             const deleteResponse = await fetch(deleteUrl, {{
                 method: 'DELETE',
@@ -2007,8 +2032,12 @@ body {{
             }});
             
             if (!deleteResponse.ok) {{
-                const errorData = await deleteResponse.json();
-                return {{ success: false, error: errorData.message || '删除文件失败' }};
+                try {{
+                    const errorData = await deleteResponse.json();
+                    return {{ success: false, error: errorData.message || '删除文件失败' }};
+                }} catch {{
+                    return {{ success: false, error: '删除文件失败' }};
+                }}
             }}
             
             return {{ success: true, message: '文件删除成功' }};
@@ -2083,17 +2112,6 @@ body {{
                 closeDeleteModal();
             }}
             
-            // Ctrl/Cmd + P 复制全部Pages
-            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {{
-                e.preventDefault();
-                copyAll('pages');
-            }}
-            
-            // Ctrl/Cmd + R 复制全部Raw
-            if ((e.ctrlKey || e.metaKey) && e.key === 'r') {{
-                e.preventDefault();
-                copyAll('raw');
-            }}
         }});
         
         // 页面加载完成后初始化
@@ -2141,7 +2159,7 @@ def generate_table_rows(grouped_files: Dict[str, List[Dict]]) -> str:
         # 添加日期分隔行
         rows_html += f"""
         <tr class="date-divider">
-            <td colspan="6">
+            <td colspan="7">
                 <i class="fas fa-calendar-day"></i>
                 {date}
                 <span style="font-size: 10px; margin-left: 10px; color: #7c8ba8;">
@@ -2176,6 +2194,9 @@ def generate_table_row(file_info: Dict) -> str:
 
     return f"""
     <tr>
+        <td>
+            <input type="checkbox" class="row-checkbox" data-display-name="{file_info['display_name']}" onchange="updateBatchDeleteState()">
+        </td>
         <td>
             <div class="node-name">
                 <i class="{icon}"></i>
