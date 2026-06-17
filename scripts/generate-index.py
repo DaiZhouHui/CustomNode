@@ -1352,7 +1352,6 @@ body {{
     .date-divider i {{
         font-size: 13px;
         margin-right: 6px;
-        font-size: 16px;
     }}
     
     .logo i {{
@@ -1409,14 +1408,22 @@ body {{
         font-size: 12px;
     }}
     
-    /* 手机端只显示节点名称、订阅链接、yaml订阅三列 */
-    .nodes-table th:nth-child(1),
-    .nodes-table td:nth-child(1) {{
-        width: 50%; /* 节点名称列 - 增加宽度以完整显示 */
+    /* 手机端：隐藏多选复选框列和批量删除按钮，节省空间 */
+    .nodes-table th:first-child,
+    .nodes-table td:first-child {{
+        display: none !important;
     }}
-    
+
+    #batchDeleteBtn {{
+        display: none !important;
+    }}
+
+    /* 手机端只显示节点名称、订阅链接、yaml订阅三列 */
     .nodes-table th:nth-child(2),
-    .nodes-table td:nth-child(2),
+    .nodes-table td:nth-child(2) {{
+        width: 50%; /* 节点名称列 - 复选框隐藏后变成第一列 */
+    }}
+
     .nodes-table th:nth-child(3),
     .nodes-table td:nth-child(3),
     .nodes-table th:nth-child(6),
@@ -1862,8 +1869,6 @@ body {{
             showActionBtn.innerHTML = '<i class="fas fa-eye"></i> 操作';
             // 恢复初始颜色样式
             showActionBtn.style.background = 'linear-gradient(135deg, #a499be, #ccb0fc)';
-            // 确保移除可能存在的内联样式覆盖
-            showActionBtn.style.removeProperty('background');
         }}
         }}
         
@@ -1970,7 +1975,10 @@ body {{
                 }});
                 
                 updateStats();
-                
+
+                // 清理可能孤立的日期分隔行
+                updateDateDividerVisibility();
+
                 setTimeout(() => {{
                     closeDeleteModal();
                     showToast('删除操作完成，建议手动更新索引', 'info');
@@ -2079,7 +2087,6 @@ body {{
             rows.forEach(row => {{
                 // 跳过日期分隔行
                 if (row.classList.contains('date-divider')) {{
-                    row.style.display = '';
                     return;
                 }}
                 
@@ -2089,12 +2096,31 @@ body {{
                 if (display === '') visibleCount++;
             }});
             
+            // 更新日期分隔行的可见性
+            updateDateDividerVisibility();
+
             // 显示/隐藏空状态
             if (emptyState) {{
                 emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
             }}
         }}
-        
+
+        // 更新日期分隔行可见性（隐藏没有任何数据行的日期分隔行）
+        function updateDateDividerVisibility() {{
+            const rows = document.querySelectorAll('#tableBody tr');
+            let hasVisibleAfter = false;
+
+            for (let i = rows.length - 1; i >= 0; i--) {{
+                const row = rows[i];
+                if (row.classList.contains('date-divider')) {{
+                    row.style.display = hasVisibleAfter ? '' : 'none';
+                    hasVisibleAfter = false;
+                }} else if (row.style.display !== 'none') {{
+                    hasVisibleAfter = true;
+                }}
+            }}
+        }}
+
         // 键盘快捷键
         document.addEventListener('keydown', function(e) {{
             // Ctrl/Cmd + F 聚焦搜索框
@@ -2236,12 +2262,12 @@ def generate_update_page(repo_owner: str, repo_name: str) -> str:
     html = '''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 const REPO_OWNER = "{{REPO_OWNER}}";
 const REPO_NAME = "{{REPO_NAME}}";
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CustomNode 更新控制台</title>
     <style>
         :root {
@@ -3017,6 +3043,7 @@ const REPO_NAME = "{{REPO_NAME}}";
         }
         
         // 测试连接
+        function testUpdate() {{
             const output = document.getElementById('updateOutput');
             const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
             const date = new Date().toLocaleDateString('zh-CN');

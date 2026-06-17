@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 const REPO_OWNER = "DaiZhouHui";
 const REPO_NAME = "CustomNode";
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CustomNode 更新控制台</title>
     <style>
         :root {
@@ -782,6 +782,7 @@ const REPO_NAME = "CustomNode";
         }
         
         // 测试连接
+        function testUpdate() {{
             const output = document.getElementById('updateOutput');
             const time = new Date().toLocaleTimeString('zh-CN', {hour12: false});
             const date = new Date().toLocaleDateString('zh-CN');

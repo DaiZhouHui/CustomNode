@@ -208,46 +208,8 @@
       "has_node": true,
       "has_yaml": true,
       "is_pair": true
-    },
-    {
-      "display_name": "OptimalNode",
-      "file_type": "node",
-      "node_name": "OptimalNode",
-      "yaml_name": "OptimalNode.yaml",
-      "node_pages": "https://DaiZhouHui.github.io/CustomNode/OptimalNode",
-      "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode",
-      "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/OptimalNode.yaml",
-      "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode.yaml",
-      "update_time": "2026-01-25 23:49:19+08:00",
-      "update_date": "2026-01-25",
-      "full_time": "2026-01-25 23:49:19",
-      "update_time_only": "23:49:19",
-      "node_size": 217160,
-      "yaml_size": 347915,
-      "has_node": true,
-      "has_yaml": true,
-      "is_pair": true
-    },
-    {
-      "display_name": "10-20",
-      "file_type": "yaml",
-      "node_name": null,
-      "yaml_name": "10-20.yaml",
-      "node_pages": null,
-      "node_raw": null,
-      "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/10-20.yaml",
-      "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/10-20.yaml",
-      "update_time": "2026-01-22 22:41:32+08:00",
-      "update_date": "2026-01-22",
-      "full_time": "2026-01-22 22:41:32",
-      "update_time_only": "22:41:32",
-      "node_size": 0,
-      "yaml_size": 129719,
-      "has_node": false,
-      "has_yaml": true,
-      "is_pair": false
     }
   ],
-  "generated_at": "2026-06-17T17:05:00.519233+00:00",
+  "generated_at": "2026-06-17T18:36:48.114515+00:00",
   "repo": "DaiZhouHui/CustomNode"
 }
