@@ -1,0 +1,1841 @@
+proxies:
+  - name: "Tokyo01-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo02-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo03-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo04-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo05-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo06-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo07-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo08-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo09-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo10-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo11-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo12-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo13-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo14-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo15-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo16-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo17-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo18-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo19-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo20-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo21-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo22-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo23-443-日本-45.32.54.244"
+    type: vless
+    server: 45.32.54.244
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo24-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo25-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo26-443-日本-142.248.136.202"
+    type: vless
+    server: 142.248.136.202
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo27-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo28-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo29-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo30-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo31-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo32-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo33-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo34-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo35-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo36-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo37-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo38-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo39-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo40-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo41-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo42-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo43-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo44-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo45-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo46-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo47-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo48-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo49-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo50-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo51-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo52-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo53-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo54-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo55-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo56-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo57-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo58-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo59-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo60-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo61-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo62-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo63-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo64-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo65-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo66-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo67-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo68-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo69-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo70-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo71-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo72-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo73-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo74-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo75-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo76-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo77-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo78-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo79-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo80-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo81-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo82-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo83-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo84-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo85-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo86-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo87-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo88-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo89-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo90-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo91-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo92-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo93-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo94-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo95-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo96-443-日本-54.238.67.66"
+    type: vless
+    server: 54.238.67.66
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo97-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo98-443-日本-57.180.160.60"
+    type: vless
+    server: 57.180.160.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo99-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Tokyo100-443-日本-52.68.134.190"
+    type: vless
+    server: 52.68.134.190
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "Tokyo01-443-日本-52.68.134.190"
+      - "Tokyo02-443-日本-52.68.134.190"
+      - "Tokyo03-443-日本-57.180.160.60"
+      - "Tokyo04-443-日本-54.238.67.66"
+      - "Tokyo05-443-日本-57.180.160.60"
+      - "Tokyo06-443-日本-57.180.160.60"
+      - "Tokyo07-443-日本-52.68.134.190"
+      - "Tokyo08-443-日本-57.180.160.60"
+      - "Tokyo09-443-日本-54.238.67.66"
+      - "Tokyo10-443-日本-52.68.134.190"
+      - "Tokyo11-443-日本-57.180.160.60"
+      - "Tokyo12-443-日本-57.180.160.60"
+      - "Tokyo13-443-日本-54.238.67.66"
+      - "Tokyo14-443-日本-52.68.134.190"
+      - "Tokyo15-443-日本-57.180.160.60"
+      - "Tokyo16-443-日本-52.68.134.190"
+      - "Tokyo17-443-日本-54.238.67.66"
+      - "Tokyo18-443-日本-54.238.67.66"
+      - "Tokyo19-443-日本-54.238.67.66"
+      - "Tokyo20-443-日本-54.238.67.66"
+      - "Tokyo21-443-日本-54.238.67.66"
+      - "Tokyo22-443-日本-57.180.160.60"
+      - "Tokyo23-443-日本-45.32.54.244"
+      - "Tokyo24-443-日本-52.68.134.190"
+      - "Tokyo25-443-日本-52.68.134.190"
+      - "Tokyo26-443-日本-142.248.136.202"
+      - "Tokyo27-443-日本-52.68.134.190"
+      - "Tokyo28-443-日本-57.180.160.60"
+      - "Tokyo29-443-日本-54.238.67.66"
+      - "Tokyo30-443-日本-54.238.67.66"
+      - "Tokyo31-443-日本-57.180.160.60"
+      - "Tokyo32-443-日本-57.180.160.60"
+      - "Tokyo33-443-日本-52.68.134.190"
+      - "Tokyo34-443-日本-54.238.67.66"
+      - "Tokyo35-443-日本-57.180.160.60"
+      - "Tokyo36-443-日本-52.68.134.190"
+      - "Tokyo37-443-日本-52.68.134.190"
+      - "Tokyo38-443-日本-57.180.160.60"
+      - "Tokyo39-443-日本-52.68.134.190"
+      - "Tokyo40-443-日本-57.180.160.60"
+      - "Tokyo41-443-日本-57.180.160.60"
+      - "Tokyo42-443-日本-57.180.160.60"
+      - "Tokyo43-443-日本-52.68.134.190"
+      - "Tokyo44-443-日本-57.180.160.60"
+      - "Tokyo45-443-日本-52.68.134.190"
+      - "Tokyo46-443-日本-57.180.160.60"
+      - "Tokyo47-443-日本-57.180.160.60"
+      - "Tokyo48-443-日本-54.238.67.66"
+      - "Tokyo49-443-日本-54.238.67.66"
+      - "Tokyo50-443-日本-57.180.160.60"
+      - "Tokyo51-443-日本-54.238.67.66"
+      - "Tokyo52-443-日本-57.180.160.60"
+      - "Tokyo53-443-日本-52.68.134.190"
+      - "Tokyo54-443-日本-54.238.67.66"
+      - "Tokyo55-443-日本-52.68.134.190"
+      - "Tokyo56-443-日本-52.68.134.190"
+      - "Tokyo57-443-日本-52.68.134.190"
+      - "Tokyo58-443-日本-57.180.160.60"
+      - "Tokyo59-443-日本-52.68.134.190"
+      - "Tokyo60-443-日本-57.180.160.60"
+      - "Tokyo61-443-日本-54.238.67.66"
+      - "Tokyo62-443-日本-54.238.67.66"
+      - "Tokyo63-443-日本-52.68.134.190"
+      - "Tokyo64-443-日本-54.238.67.66"
+      - "Tokyo65-443-日本-52.68.134.190"
+      - "Tokyo66-443-日本-52.68.134.190"
+      - "Tokyo67-443-日本-54.238.67.66"
+      - "Tokyo68-443-日本-54.238.67.66"
+      - "Tokyo69-443-日本-57.180.160.60"
+      - "Tokyo70-443-日本-54.238.67.66"
+      - "Tokyo71-443-日本-54.238.67.66"
+      - "Tokyo72-443-日本-54.238.67.66"
+      - "Tokyo73-443-日本-54.238.67.66"
+      - "Tokyo74-443-日本-54.238.67.66"
+      - "Tokyo75-443-日本-52.68.134.190"
+      - "Tokyo76-443-日本-57.180.160.60"
+      - "Tokyo77-443-日本-54.238.67.66"
+      - "Tokyo78-443-日本-54.238.67.66"
+      - "Tokyo79-443-日本-52.68.134.190"
+      - "Tokyo80-443-日本-57.180.160.60"
+      - "Tokyo81-443-日本-54.238.67.66"
+      - "Tokyo82-443-日本-54.238.67.66"
+      - "Tokyo83-443-日本-54.238.67.66"
+      - "Tokyo84-443-日本-57.180.160.60"
+      - "Tokyo85-443-日本-52.68.134.190"
+      - "Tokyo86-443-日本-52.68.134.190"
+      - "Tokyo87-443-日本-52.68.134.190"
+      - "Tokyo88-443-日本-54.238.67.66"
+      - "Tokyo89-443-日本-54.238.67.66"
+      - "Tokyo90-443-日本-54.238.67.66"
+      - "Tokyo91-443-日本-54.238.67.66"
+      - "Tokyo92-443-日本-57.180.160.60"
+      - "Tokyo93-443-日本-52.68.134.190"
+      - "Tokyo94-443-日本-52.68.134.190"
+      - "Tokyo95-443-日本-57.180.160.60"
+      - "Tokyo96-443-日本-54.238.67.66"
+      - "Tokyo97-443-日本-57.180.160.60"
+      - "Tokyo98-443-日本-57.180.160.60"
+      - "Tokyo99-443-日本-52.68.134.190"
+      - "Tokyo100-443-日本-52.68.134.190"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "Tokyo01-443-日本-52.68.134.190"
+      - "Tokyo02-443-日本-52.68.134.190"
+      - "Tokyo03-443-日本-57.180.160.60"
+      - "Tokyo04-443-日本-54.238.67.66"
+      - "Tokyo05-443-日本-57.180.160.60"
+      - "Tokyo06-443-日本-57.180.160.60"
+      - "Tokyo07-443-日本-52.68.134.190"
+      - "Tokyo08-443-日本-57.180.160.60"
+      - "Tokyo09-443-日本-54.238.67.66"
+      - "Tokyo10-443-日本-52.68.134.190"
+      - "Tokyo11-443-日本-57.180.160.60"
+      - "Tokyo12-443-日本-57.180.160.60"
+      - "Tokyo13-443-日本-54.238.67.66"
+      - "Tokyo14-443-日本-52.68.134.190"
+      - "Tokyo15-443-日本-57.180.160.60"
+      - "Tokyo16-443-日本-52.68.134.190"
+      - "Tokyo17-443-日本-54.238.67.66"
+      - "Tokyo18-443-日本-54.238.67.66"
+      - "Tokyo19-443-日本-54.238.67.66"
+      - "Tokyo20-443-日本-54.238.67.66"
+      - "Tokyo21-443-日本-54.238.67.66"
+      - "Tokyo22-443-日本-57.180.160.60"
+      - "Tokyo23-443-日本-45.32.54.244"
+      - "Tokyo24-443-日本-52.68.134.190"
+      - "Tokyo25-443-日本-52.68.134.190"
+      - "Tokyo26-443-日本-142.248.136.202"
+      - "Tokyo27-443-日本-52.68.134.190"
+      - "Tokyo28-443-日本-57.180.160.60"
+      - "Tokyo29-443-日本-54.238.67.66"
+      - "Tokyo30-443-日本-54.238.67.66"
+      - "Tokyo31-443-日本-57.180.160.60"
+      - "Tokyo32-443-日本-57.180.160.60"
+      - "Tokyo33-443-日本-52.68.134.190"
+      - "Tokyo34-443-日本-54.238.67.66"
+      - "Tokyo35-443-日本-57.180.160.60"
+      - "Tokyo36-443-日本-52.68.134.190"
+      - "Tokyo37-443-日本-52.68.134.190"
+      - "Tokyo38-443-日本-57.180.160.60"
+      - "Tokyo39-443-日本-52.68.134.190"
+      - "Tokyo40-443-日本-57.180.160.60"
+      - "Tokyo41-443-日本-57.180.160.60"
+      - "Tokyo42-443-日本-57.180.160.60"
+      - "Tokyo43-443-日本-52.68.134.190"
+      - "Tokyo44-443-日本-57.180.160.60"
+      - "Tokyo45-443-日本-52.68.134.190"
+      - "Tokyo46-443-日本-57.180.160.60"
+      - "Tokyo47-443-日本-57.180.160.60"
+      - "Tokyo48-443-日本-54.238.67.66"
+      - "Tokyo49-443-日本-54.238.67.66"
+      - "Tokyo50-443-日本-57.180.160.60"
+      - "Tokyo51-443-日本-54.238.67.66"
+      - "Tokyo52-443-日本-57.180.160.60"
+      - "Tokyo53-443-日本-52.68.134.190"
+      - "Tokyo54-443-日本-54.238.67.66"
+      - "Tokyo55-443-日本-52.68.134.190"
+      - "Tokyo56-443-日本-52.68.134.190"
+      - "Tokyo57-443-日本-52.68.134.190"
+      - "Tokyo58-443-日本-57.180.160.60"
+      - "Tokyo59-443-日本-52.68.134.190"
+      - "Tokyo60-443-日本-57.180.160.60"
+      - "Tokyo61-443-日本-54.238.67.66"
+      - "Tokyo62-443-日本-54.238.67.66"
+      - "Tokyo63-443-日本-52.68.134.190"
+      - "Tokyo64-443-日本-54.238.67.66"
+      - "Tokyo65-443-日本-52.68.134.190"
+      - "Tokyo66-443-日本-52.68.134.190"
+      - "Tokyo67-443-日本-54.238.67.66"
+      - "Tokyo68-443-日本-54.238.67.66"
+      - "Tokyo69-443-日本-57.180.160.60"
+      - "Tokyo70-443-日本-54.238.67.66"
+      - "Tokyo71-443-日本-54.238.67.66"
+      - "Tokyo72-443-日本-54.238.67.66"
+      - "Tokyo73-443-日本-54.238.67.66"
+      - "Tokyo74-443-日本-54.238.67.66"
+      - "Tokyo75-443-日本-52.68.134.190"
+      - "Tokyo76-443-日本-57.180.160.60"
+      - "Tokyo77-443-日本-54.238.67.66"
+      - "Tokyo78-443-日本-54.238.67.66"
+      - "Tokyo79-443-日本-52.68.134.190"
+      - "Tokyo80-443-日本-57.180.160.60"
+      - "Tokyo81-443-日本-54.238.67.66"
+      - "Tokyo82-443-日本-54.238.67.66"
+      - "Tokyo83-443-日本-54.238.67.66"
+      - "Tokyo84-443-日本-57.180.160.60"
+      - "Tokyo85-443-日本-52.68.134.190"
+      - "Tokyo86-443-日本-52.68.134.190"
+      - "Tokyo87-443-日本-52.68.134.190"
+      - "Tokyo88-443-日本-54.238.67.66"
+      - "Tokyo89-443-日本-54.238.67.66"
+      - "Tokyo90-443-日本-54.238.67.66"
+      - "Tokyo91-443-日本-54.238.67.66"
+      - "Tokyo92-443-日本-57.180.160.60"
+      - "Tokyo93-443-日本-52.68.134.190"
+      - "Tokyo94-443-日本-52.68.134.190"
+      - "Tokyo95-443-日本-57.180.160.60"
+      - "Tokyo96-443-日本-54.238.67.66"
+      - "Tokyo97-443-日本-57.180.160.60"
+      - "Tokyo98-443-日本-57.180.160.60"
+      - "Tokyo99-443-日本-52.68.134.190"
+      - "Tokyo100-443-日本-52.68.134.190"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "Tokyo01-443-日本-52.68.134.190"
+      - "Tokyo02-443-日本-52.68.134.190"
+      - "Tokyo03-443-日本-57.180.160.60"
+      - "Tokyo04-443-日本-54.238.67.66"
+      - "Tokyo05-443-日本-57.180.160.60"
+      - "Tokyo06-443-日本-57.180.160.60"
+      - "Tokyo07-443-日本-52.68.134.190"
+      - "Tokyo08-443-日本-57.180.160.60"
+      - "Tokyo09-443-日本-54.238.67.66"
+      - "Tokyo10-443-日本-52.68.134.190"
+      - "Tokyo11-443-日本-57.180.160.60"
+      - "Tokyo12-443-日本-57.180.160.60"
+      - "Tokyo13-443-日本-54.238.67.66"
+      - "Tokyo14-443-日本-52.68.134.190"
+      - "Tokyo15-443-日本-57.180.160.60"
+      - "Tokyo16-443-日本-52.68.134.190"
+      - "Tokyo17-443-日本-54.238.67.66"
+      - "Tokyo18-443-日本-54.238.67.66"
+      - "Tokyo19-443-日本-54.238.67.66"
+      - "Tokyo20-443-日本-54.238.67.66"
+      - "Tokyo21-443-日本-54.238.67.66"
+      - "Tokyo22-443-日本-57.180.160.60"
+      - "Tokyo23-443-日本-45.32.54.244"
+      - "Tokyo24-443-日本-52.68.134.190"
+      - "Tokyo25-443-日本-52.68.134.190"
+      - "Tokyo26-443-日本-142.248.136.202"
+      - "Tokyo27-443-日本-52.68.134.190"
+      - "Tokyo28-443-日本-57.180.160.60"
+      - "Tokyo29-443-日本-54.238.67.66"
+      - "Tokyo30-443-日本-54.238.67.66"
+      - "Tokyo31-443-日本-57.180.160.60"
+      - "Tokyo32-443-日本-57.180.160.60"
+      - "Tokyo33-443-日本-52.68.134.190"
+      - "Tokyo34-443-日本-54.238.67.66"
+      - "Tokyo35-443-日本-57.180.160.60"
+      - "Tokyo36-443-日本-52.68.134.190"
+      - "Tokyo37-443-日本-52.68.134.190"
+      - "Tokyo38-443-日本-57.180.160.60"
+      - "Tokyo39-443-日本-52.68.134.190"
+      - "Tokyo40-443-日本-57.180.160.60"
+      - "Tokyo41-443-日本-57.180.160.60"
+      - "Tokyo42-443-日本-57.180.160.60"
+      - "Tokyo43-443-日本-52.68.134.190"
+      - "Tokyo44-443-日本-57.180.160.60"
+      - "Tokyo45-443-日本-52.68.134.190"
+      - "Tokyo46-443-日本-57.180.160.60"
+      - "Tokyo47-443-日本-57.180.160.60"
+      - "Tokyo48-443-日本-54.238.67.66"
+      - "Tokyo49-443-日本-54.238.67.66"
+      - "Tokyo50-443-日本-57.180.160.60"
+      - "Tokyo51-443-日本-54.238.67.66"
+      - "Tokyo52-443-日本-57.180.160.60"
+      - "Tokyo53-443-日本-52.68.134.190"
+      - "Tokyo54-443-日本-54.238.67.66"
+      - "Tokyo55-443-日本-52.68.134.190"
+      - "Tokyo56-443-日本-52.68.134.190"
+      - "Tokyo57-443-日本-52.68.134.190"
+      - "Tokyo58-443-日本-57.180.160.60"
+      - "Tokyo59-443-日本-52.68.134.190"
+      - "Tokyo60-443-日本-57.180.160.60"
+      - "Tokyo61-443-日本-54.238.67.66"
+      - "Tokyo62-443-日本-54.238.67.66"
+      - "Tokyo63-443-日本-52.68.134.190"
+      - "Tokyo64-443-日本-54.238.67.66"
+      - "Tokyo65-443-日本-52.68.134.190"
+      - "Tokyo66-443-日本-52.68.134.190"
+      - "Tokyo67-443-日本-54.238.67.66"
+      - "Tokyo68-443-日本-54.238.67.66"
+      - "Tokyo69-443-日本-57.180.160.60"
+      - "Tokyo70-443-日本-54.238.67.66"
+      - "Tokyo71-443-日本-54.238.67.66"
+      - "Tokyo72-443-日本-54.238.67.66"
+      - "Tokyo73-443-日本-54.238.67.66"
+      - "Tokyo74-443-日本-54.238.67.66"
+      - "Tokyo75-443-日本-52.68.134.190"
+      - "Tokyo76-443-日本-57.180.160.60"
+      - "Tokyo77-443-日本-54.238.67.66"
+      - "Tokyo78-443-日本-54.238.67.66"
+      - "Tokyo79-443-日本-52.68.134.190"
+      - "Tokyo80-443-日本-57.180.160.60"
+      - "Tokyo81-443-日本-54.238.67.66"
+      - "Tokyo82-443-日本-54.238.67.66"
+      - "Tokyo83-443-日本-54.238.67.66"
+      - "Tokyo84-443-日本-57.180.160.60"
+      - "Tokyo85-443-日本-52.68.134.190"
+      - "Tokyo86-443-日本-52.68.134.190"
+      - "Tokyo87-443-日本-52.68.134.190"
+      - "Tokyo88-443-日本-54.238.67.66"
+      - "Tokyo89-443-日本-54.238.67.66"
+      - "Tokyo90-443-日本-54.238.67.66"
+      - "Tokyo91-443-日本-54.238.67.66"
+      - "Tokyo92-443-日本-57.180.160.60"
+      - "Tokyo93-443-日本-52.68.134.190"
+      - "Tokyo94-443-日本-52.68.134.190"
+      - "Tokyo95-443-日本-57.180.160.60"
+      - "Tokyo96-443-日本-54.238.67.66"
+      - "Tokyo97-443-日本-57.180.160.60"
+      - "Tokyo98-443-日本-57.180.160.60"
+      - "Tokyo99-443-日本-52.68.134.190"
+      - "Tokyo100-443-日本-52.68.134.190"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
