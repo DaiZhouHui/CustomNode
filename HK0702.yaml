@@ -1,0 +1,1841 @@
+proxies:
+  - name: "香港01-443-103.234.53.102"
+    type: vless
+    server: 103.234.53.102
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港02-443-27.50.49.7"
+    type: vless
+    server: 27.50.49.7
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港03-443-123.202.137.40"
+    type: vless
+    server: 123.202.137.40
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港04-443-45.192.224.23"
+    type: vless
+    server: 45.192.224.23
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港05-443-13.226.65.60"
+    type: vless
+    server: 13.226.65.60
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港06-443-150.109.79.153"
+    type: vless
+    server: 150.109.79.153
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港07-443-61.15.60.234"
+    type: vless
+    server: 61.15.60.234
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港08-443-45.192.224.23"
+    type: vless
+    server: 45.192.224.23
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港09-443-222.167.246.170"
+    type: vless
+    server: 222.167.246.170
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港10-443-82.139.216.145"
+    type: vless
+    server: 82.139.216.145
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港11-443-38.207.189.243"
+    type: vless
+    server: 38.207.189.243
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港12-443-13.33.183.59"
+    type: vless
+    server: 13.33.183.59
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港13-443-13.35.190.48"
+    type: vless
+    server: 13.35.190.48
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港14-443-82.139.216.115"
+    type: vless
+    server: 82.139.216.115
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港15-443-175.29.23.83"
+    type: vless
+    server: 175.29.23.83
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港16-443-13.33.183.102"
+    type: vless
+    server: 13.33.183.102
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港17-443-58.177.188.246"
+    type: vless
+    server: 58.177.188.246
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港18-443-8.223.1.118"
+    type: vless
+    server: 8.223.1.118
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港19-443-82.139.216.90"
+    type: vless
+    server: 82.139.216.90
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港20-443-45.93.29.45"
+    type: vless
+    server: 45.93.29.45
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港21-443-43.242.33.79"
+    type: vless
+    server: 43.242.33.79
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港22-443-82.139.216.35"
+    type: vless
+    server: 82.139.216.35
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港23-443-3.175.214.53"
+    type: vless
+    server: 3.175.214.53
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港24-443-82.139.216.75"
+    type: vless
+    server: 82.139.216.75
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港25-443-219.76.155.70"
+    type: vless
+    server: 219.76.155.70
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港26-443-82.139.216.170"
+    type: vless
+    server: 82.139.216.170
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港27-443-175.29.23.34"
+    type: vless
+    server: 175.29.23.34
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港28-443-42.200.220.178"
+    type: vless
+    server: 42.200.220.178
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港29-443-82.139.216.186"
+    type: vless
+    server: 82.139.216.186
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港30-443-27.50.48.49"
+    type: vless
+    server: 27.50.48.49
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港31-443-222.167.252.11"
+    type: vless
+    server: 222.167.252.11
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港32-443-101.33.118.72"
+    type: vless
+    server: 101.33.118.72
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港33-443-47.243.84.184"
+    type: vless
+    server: 47.243.84.184
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港34-443-103.102.32.50"
+    type: vless
+    server: 103.102.32.50
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港35-443-47.76.218.163"
+    type: vless
+    server: 47.76.218.163
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港36-443-8.212.6.181"
+    type: vless
+    server: 8.212.6.181
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港37-443-163.5.175.84"
+    type: vless
+    server: 163.5.175.84
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港38-443-149.88.65.139"
+    type: vless
+    server: 149.88.65.139
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港39-443-154.218.15.1"
+    type: vless
+    server: 154.218.15.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港40-443-54.230.70.43"
+    type: vless
+    server: 54.230.70.43
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港41-443-82.139.216.45"
+    type: vless
+    server: 82.139.216.45
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "香港42-443-154.218.15.1"
+    type: vless
+    server: 154.218.15.1
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan01-443-27.36.125.13"
+    type: vless
+    server: 27.36.125.13
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan02-443-27.36.125.13"
+    type: vless
+    server: 27.36.125.13
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan03-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan04-443-27.36.125.26"
+    type: vless
+    server: 27.36.125.26
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan05-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan06-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan07-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan08-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan09-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan10-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan11-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan12-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan13-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan14-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan15-443-27.36.125.29"
+    type: vless
+    server: 27.36.125.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan16-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan17-443-27.36.125.6"
+    type: vless
+    server: 27.36.125.6
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan18-443-27.36.125.27"
+    type: vless
+    server: 27.36.125.27
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan19-443-27.36.125.22"
+    type: vless
+    server: 27.36.125.22
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Foshan20-443-27.36.125.10"
+    type: vless
+    server: 27.36.125.10
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Fuzhou01-443-112.49.49.134"
+    type: vless
+    server: 112.49.49.134
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Fuzhou02-443-112.49.49.146"
+    type: vless
+    server: 112.49.49.146
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Beijing01-443-36.153.95.157"
+    type: vless
+    server: 36.153.95.157
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Beijing02-443-120.53.228.68"
+    type: vless
+    server: 120.53.228.68
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Beijing03-443-101.126.148.16"
+    type: vless
+    server: 101.126.148.16
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Shanghai01-443-43.240.192.239"
+    type: vless
+    server: 43.240.192.239
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taoyuan01-443-220.141.210.39"
+    type: vless
+    server: 220.141.210.39
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Hsinchu02-443-202.126.65.91"
+    type: vless
+    server: 202.126.65.91
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei03-443-60.199.165.205"
+    type: vless
+    server: 60.199.165.205
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taoyuan04-443-103.227.227.144"
+    type: vless
+    server: 103.227.227.144
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei05-443-220.133.202.226"
+    type: vless
+    server: 220.133.202.226
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei06-443-202.148.221.216"
+    type: vless
+    server: 202.148.221.216
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei07-443-211.75.42.27"
+    type: vless
+    server: 211.75.42.27
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Banqiao08-443-60.250.125.21"
+    type: vless
+    server: 60.250.125.21
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Danzhou01-443-240e:90d..fffe"
+    type: vless
+    server: 240e:90d:1101:203:3d75:b791:bc8f:fffe
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Zunyi01-443-119.0.67.76"
+    type: vless
+    server: 119.0.67.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji01-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji02-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji03-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji04-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji05-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji06-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji07-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji08-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji09-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji10-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji11-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji12-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji13-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji14-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji15-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji16-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji17-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji18-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji19-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji20-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Baoji21-443-124.225.84.76"
+    type: vless
+    server: 124.225.84.76
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Changsha01-443-113.240.66.67"
+    type: vless
+    server: 113.240.66.67
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "香港01-443-103.234.53.102"
+      - "香港02-443-27.50.49.7"
+      - "香港03-443-123.202.137.40"
+      - "香港04-443-45.192.224.23"
+      - "香港05-443-13.226.65.60"
+      - "香港06-443-150.109.79.153"
+      - "香港07-443-61.15.60.234"
+      - "香港08-443-45.192.224.23"
+      - "香港09-443-222.167.246.170"
+      - "香港10-443-82.139.216.145"
+      - "香港11-443-38.207.189.243"
+      - "香港12-443-13.33.183.59"
+      - "香港13-443-13.35.190.48"
+      - "香港14-443-82.139.216.115"
+      - "香港15-443-175.29.23.83"
+      - "香港16-443-13.33.183.102"
+      - "香港17-443-58.177.188.246"
+      - "香港18-443-8.223.1.118"
+      - "香港19-443-82.139.216.90"
+      - "香港20-443-45.93.29.45"
+      - "香港21-443-43.242.33.79"
+      - "香港22-443-82.139.216.35"
+      - "香港23-443-3.175.214.53"
+      - "香港24-443-82.139.216.75"
+      - "香港25-443-219.76.155.70"
+      - "香港26-443-82.139.216.170"
+      - "香港27-443-175.29.23.34"
+      - "香港28-443-42.200.220.178"
+      - "香港29-443-82.139.216.186"
+      - "香港30-443-27.50.48.49"
+      - "香港31-443-222.167.252.11"
+      - "香港32-443-101.33.118.72"
+      - "香港33-443-47.243.84.184"
+      - "香港34-443-103.102.32.50"
+      - "香港35-443-47.76.218.163"
+      - "香港36-443-8.212.6.181"
+      - "香港37-443-163.5.175.84"
+      - "香港38-443-149.88.65.139"
+      - "香港39-443-154.218.15.1"
+      - "香港40-443-54.230.70.43"
+      - "香港41-443-82.139.216.45"
+      - "香港42-443-154.218.15.1"
+      - "Foshan01-443-27.36.125.13"
+      - "Foshan02-443-27.36.125.13"
+      - "Foshan03-443-27.36.125.6"
+      - "Foshan04-443-27.36.125.26"
+      - "Foshan05-443-27.36.125.6"
+      - "Foshan06-443-27.36.125.6"
+      - "Foshan07-443-27.36.125.6"
+      - "Foshan08-443-27.36.125.6"
+      - "Foshan09-443-27.36.125.6"
+      - "Foshan10-443-27.36.125.6"
+      - "Foshan11-443-27.36.125.6"
+      - "Foshan12-443-27.36.125.6"
+      - "Foshan13-443-27.36.125.6"
+      - "Foshan14-443-27.36.125.6"
+      - "Foshan15-443-27.36.125.29"
+      - "Foshan16-443-27.36.125.6"
+      - "Foshan17-443-27.36.125.6"
+      - "Foshan18-443-27.36.125.27"
+      - "Foshan19-443-27.36.125.22"
+      - "Foshan20-443-27.36.125.10"
+      - "Fuzhou01-443-112.49.49.134"
+      - "Fuzhou02-443-112.49.49.146"
+      - "Beijing01-443-36.153.95.157"
+      - "Beijing02-443-120.53.228.68"
+      - "Beijing03-443-101.126.148.16"
+      - "Shanghai01-443-43.240.192.239"
+      - "Taoyuan01-443-220.141.210.39"
+      - "Hsinchu02-443-202.126.65.91"
+      - "Taipei03-443-60.199.165.205"
+      - "Taoyuan04-443-103.227.227.144"
+      - "Taipei05-443-220.133.202.226"
+      - "Taipei06-443-202.148.221.216"
+      - "Taipei07-443-211.75.42.27"
+      - "Banqiao08-443-60.250.125.21"
+      - "Danzhou01-443-240e:90d..fffe"
+      - "Zunyi01-443-119.0.67.76"
+      - "Baoji01-443-124.225.84.76"
+      - "Baoji02-443-124.225.84.76"
+      - "Baoji03-443-124.225.84.76"
+      - "Baoji04-443-124.225.84.76"
+      - "Baoji05-443-124.225.84.76"
+      - "Baoji06-443-124.225.84.76"
+      - "Baoji07-443-124.225.84.76"
+      - "Baoji08-443-124.225.84.76"
+      - "Baoji09-443-124.225.84.76"
+      - "Baoji10-443-124.225.84.76"
+      - "Baoji11-443-124.225.84.76"
+      - "Baoji12-443-124.225.84.76"
+      - "Baoji13-443-124.225.84.76"
+      - "Baoji14-443-124.225.84.76"
+      - "Baoji15-443-124.225.84.76"
+      - "Baoji16-443-124.225.84.76"
+      - "Baoji17-443-124.225.84.76"
+      - "Baoji18-443-124.225.84.76"
+      - "Baoji19-443-124.225.84.76"
+      - "Baoji20-443-124.225.84.76"
+      - "Baoji21-443-124.225.84.76"
+      - "Changsha01-443-113.240.66.67"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "香港01-443-103.234.53.102"
+      - "香港02-443-27.50.49.7"
+      - "香港03-443-123.202.137.40"
+      - "香港04-443-45.192.224.23"
+      - "香港05-443-13.226.65.60"
+      - "香港06-443-150.109.79.153"
+      - "香港07-443-61.15.60.234"
+      - "香港08-443-45.192.224.23"
+      - "香港09-443-222.167.246.170"
+      - "香港10-443-82.139.216.145"
+      - "香港11-443-38.207.189.243"
+      - "香港12-443-13.33.183.59"
+      - "香港13-443-13.35.190.48"
+      - "香港14-443-82.139.216.115"
+      - "香港15-443-175.29.23.83"
+      - "香港16-443-13.33.183.102"
+      - "香港17-443-58.177.188.246"
+      - "香港18-443-8.223.1.118"
+      - "香港19-443-82.139.216.90"
+      - "香港20-443-45.93.29.45"
+      - "香港21-443-43.242.33.79"
+      - "香港22-443-82.139.216.35"
+      - "香港23-443-3.175.214.53"
+      - "香港24-443-82.139.216.75"
+      - "香港25-443-219.76.155.70"
+      - "香港26-443-82.139.216.170"
+      - "香港27-443-175.29.23.34"
+      - "香港28-443-42.200.220.178"
+      - "香港29-443-82.139.216.186"
+      - "香港30-443-27.50.48.49"
+      - "香港31-443-222.167.252.11"
+      - "香港32-443-101.33.118.72"
+      - "香港33-443-47.243.84.184"
+      - "香港34-443-103.102.32.50"
+      - "香港35-443-47.76.218.163"
+      - "香港36-443-8.212.6.181"
+      - "香港37-443-163.5.175.84"
+      - "香港38-443-149.88.65.139"
+      - "香港39-443-154.218.15.1"
+      - "香港40-443-54.230.70.43"
+      - "香港41-443-82.139.216.45"
+      - "香港42-443-154.218.15.1"
+      - "Foshan01-443-27.36.125.13"
+      - "Foshan02-443-27.36.125.13"
+      - "Foshan03-443-27.36.125.6"
+      - "Foshan04-443-27.36.125.26"
+      - "Foshan05-443-27.36.125.6"
+      - "Foshan06-443-27.36.125.6"
+      - "Foshan07-443-27.36.125.6"
+      - "Foshan08-443-27.36.125.6"
+      - "Foshan09-443-27.36.125.6"
+      - "Foshan10-443-27.36.125.6"
+      - "Foshan11-443-27.36.125.6"
+      - "Foshan12-443-27.36.125.6"
+      - "Foshan13-443-27.36.125.6"
+      - "Foshan14-443-27.36.125.6"
+      - "Foshan15-443-27.36.125.29"
+      - "Foshan16-443-27.36.125.6"
+      - "Foshan17-443-27.36.125.6"
+      - "Foshan18-443-27.36.125.27"
+      - "Foshan19-443-27.36.125.22"
+      - "Foshan20-443-27.36.125.10"
+      - "Fuzhou01-443-112.49.49.134"
+      - "Fuzhou02-443-112.49.49.146"
+      - "Beijing01-443-36.153.95.157"
+      - "Beijing02-443-120.53.228.68"
+      - "Beijing03-443-101.126.148.16"
+      - "Shanghai01-443-43.240.192.239"
+      - "Taoyuan01-443-220.141.210.39"
+      - "Hsinchu02-443-202.126.65.91"
+      - "Taipei03-443-60.199.165.205"
+      - "Taoyuan04-443-103.227.227.144"
+      - "Taipei05-443-220.133.202.226"
+      - "Taipei06-443-202.148.221.216"
+      - "Taipei07-443-211.75.42.27"
+      - "Banqiao08-443-60.250.125.21"
+      - "Danzhou01-443-240e:90d..fffe"
+      - "Zunyi01-443-119.0.67.76"
+      - "Baoji01-443-124.225.84.76"
+      - "Baoji02-443-124.225.84.76"
+      - "Baoji03-443-124.225.84.76"
+      - "Baoji04-443-124.225.84.76"
+      - "Baoji05-443-124.225.84.76"
+      - "Baoji06-443-124.225.84.76"
+      - "Baoji07-443-124.225.84.76"
+      - "Baoji08-443-124.225.84.76"
+      - "Baoji09-443-124.225.84.76"
+      - "Baoji10-443-124.225.84.76"
+      - "Baoji11-443-124.225.84.76"
+      - "Baoji12-443-124.225.84.76"
+      - "Baoji13-443-124.225.84.76"
+      - "Baoji14-443-124.225.84.76"
+      - "Baoji15-443-124.225.84.76"
+      - "Baoji16-443-124.225.84.76"
+      - "Baoji17-443-124.225.84.76"
+      - "Baoji18-443-124.225.84.76"
+      - "Baoji19-443-124.225.84.76"
+      - "Baoji20-443-124.225.84.76"
+      - "Baoji21-443-124.225.84.76"
+      - "Changsha01-443-113.240.66.67"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "香港01-443-103.234.53.102"
+      - "香港02-443-27.50.49.7"
+      - "香港03-443-123.202.137.40"
+      - "香港04-443-45.192.224.23"
+      - "香港05-443-13.226.65.60"
+      - "香港06-443-150.109.79.153"
+      - "香港07-443-61.15.60.234"
+      - "香港08-443-45.192.224.23"
+      - "香港09-443-222.167.246.170"
+      - "香港10-443-82.139.216.145"
+      - "香港11-443-38.207.189.243"
+      - "香港12-443-13.33.183.59"
+      - "香港13-443-13.35.190.48"
+      - "香港14-443-82.139.216.115"
+      - "香港15-443-175.29.23.83"
+      - "香港16-443-13.33.183.102"
+      - "香港17-443-58.177.188.246"
+      - "香港18-443-8.223.1.118"
+      - "香港19-443-82.139.216.90"
+      - "香港20-443-45.93.29.45"
+      - "香港21-443-43.242.33.79"
+      - "香港22-443-82.139.216.35"
+      - "香港23-443-3.175.214.53"
+      - "香港24-443-82.139.216.75"
+      - "香港25-443-219.76.155.70"
+      - "香港26-443-82.139.216.170"
+      - "香港27-443-175.29.23.34"
+      - "香港28-443-42.200.220.178"
+      - "香港29-443-82.139.216.186"
+      - "香港30-443-27.50.48.49"
+      - "香港31-443-222.167.252.11"
+      - "香港32-443-101.33.118.72"
+      - "香港33-443-47.243.84.184"
+      - "香港34-443-103.102.32.50"
+      - "香港35-443-47.76.218.163"
+      - "香港36-443-8.212.6.181"
+      - "香港37-443-163.5.175.84"
+      - "香港38-443-149.88.65.139"
+      - "香港39-443-154.218.15.1"
+      - "香港40-443-54.230.70.43"
+      - "香港41-443-82.139.216.45"
+      - "香港42-443-154.218.15.1"
+      - "Foshan01-443-27.36.125.13"
+      - "Foshan02-443-27.36.125.13"
+      - "Foshan03-443-27.36.125.6"
+      - "Foshan04-443-27.36.125.26"
+      - "Foshan05-443-27.36.125.6"
+      - "Foshan06-443-27.36.125.6"
+      - "Foshan07-443-27.36.125.6"
+      - "Foshan08-443-27.36.125.6"
+      - "Foshan09-443-27.36.125.6"
+      - "Foshan10-443-27.36.125.6"
+      - "Foshan11-443-27.36.125.6"
+      - "Foshan12-443-27.36.125.6"
+      - "Foshan13-443-27.36.125.6"
+      - "Foshan14-443-27.36.125.6"
+      - "Foshan15-443-27.36.125.29"
+      - "Foshan16-443-27.36.125.6"
+      - "Foshan17-443-27.36.125.6"
+      - "Foshan18-443-27.36.125.27"
+      - "Foshan19-443-27.36.125.22"
+      - "Foshan20-443-27.36.125.10"
+      - "Fuzhou01-443-112.49.49.134"
+      - "Fuzhou02-443-112.49.49.146"
+      - "Beijing01-443-36.153.95.157"
+      - "Beijing02-443-120.53.228.68"
+      - "Beijing03-443-101.126.148.16"
+      - "Shanghai01-443-43.240.192.239"
+      - "Taoyuan01-443-220.141.210.39"
+      - "Hsinchu02-443-202.126.65.91"
+      - "Taipei03-443-60.199.165.205"
+      - "Taoyuan04-443-103.227.227.144"
+      - "Taipei05-443-220.133.202.226"
+      - "Taipei06-443-202.148.221.216"
+      - "Taipei07-443-211.75.42.27"
+      - "Banqiao08-443-60.250.125.21"
+      - "Danzhou01-443-240e:90d..fffe"
+      - "Zunyi01-443-119.0.67.76"
+      - "Baoji01-443-124.225.84.76"
+      - "Baoji02-443-124.225.84.76"
+      - "Baoji03-443-124.225.84.76"
+      - "Baoji04-443-124.225.84.76"
+      - "Baoji05-443-124.225.84.76"
+      - "Baoji06-443-124.225.84.76"
+      - "Baoji07-443-124.225.84.76"
+      - "Baoji08-443-124.225.84.76"
+      - "Baoji09-443-124.225.84.76"
+      - "Baoji10-443-124.225.84.76"
+      - "Baoji11-443-124.225.84.76"
+      - "Baoji12-443-124.225.84.76"
+      - "Baoji13-443-124.225.84.76"
+      - "Baoji14-443-124.225.84.76"
+      - "Baoji15-443-124.225.84.76"
+      - "Baoji16-443-124.225.84.76"
+      - "Baoji17-443-124.225.84.76"
+      - "Baoji18-443-124.225.84.76"
+      - "Baoji19-443-124.225.84.76"
+      - "Baoji20-443-124.225.84.76"
+      - "Baoji21-443-124.225.84.76"
+      - "Changsha01-443-113.240.66.67"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
