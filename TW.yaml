@@ -1,0 +1,437 @@
+proxies:
+  - name: "Taipei77-443-104.199.253.40"
+    type: vless
+    server: 104.199.253.40
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei66-443-103.159.88.58"
+    type: vless
+    server: 103.159.88.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei134-443-34.80.213.58"
+    type: vless
+    server: 34.80.213.58
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei155-443-114.43.159.118"
+    type: vless
+    server: 114.43.159.118
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei284-443-104.155.206.9"
+    type: vless
+    server: 104.155.206.9
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei1019-443-103.51.141.26"
+    type: vless
+    server: 103.51.141.26
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei222-443-1.161.63.36"
+    type: vless
+    server: 1.161.63.36
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei271-443-1.161.52.37"
+    type: vless
+    server: 1.161.52.37
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei526-443-34.80.199.41"
+    type: vless
+    server: 34.80.199.41
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei1117-443-60.248.91.150"
+    type: vless
+    server: 60.248.91.150
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei403-443-61.216.113.194"
+    type: vless
+    server: 61.216.113.194
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taichung610-443-60.249.21.29"
+    type: vless
+    server: 60.249.21.29
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei186-443-27.147.13.82"
+    type: vless
+    server: 27.147.13.82
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Banqiao248-443-114.32.124.191"
+    type: vless
+    server: 114.32.124.191
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei240-443-208.68.182.75"
+    type: vless
+    server: 208.68.182.75
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei233-443-43.212.25.216"
+    type: vless
+    server: 43.212.25.216
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei1361-443-43.213.230.249"
+    type: vless
+    server: 43.213.230.249
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei35-443-203.69.23.30"
+    type: vless
+    server: 203.69.23.30
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei153-443-114.37.193.8"
+    type: vless
+    server: 114.37.193.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei194-443-114.37.193.8"
+    type: vless
+    server: 114.37.193.8
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei187-443-125.229.205.26"
+    type: vless
+    server: 125.229.205.26
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+  - name: "Taipei889-443-64.49.28.173"
+    type: vless
+    server: 64.49.28.173
+    port: 443
+    uuid: 471a8e64-7b21-4703-b1d1-45a221098459
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "knny.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "knny.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "Taipei77-443-104.199.253.40"
+      - "Taipei66-443-103.159.88.58"
+      - "Taipei134-443-34.80.213.58"
+      - "Taipei155-443-114.43.159.118"
+      - "Taipei284-443-104.155.206.9"
+      - "Taipei1019-443-103.51.141.26"
+      - "Taipei222-443-1.161.63.36"
+      - "Taipei271-443-1.161.52.37"
+      - "Taipei526-443-34.80.199.41"
+      - "Taipei1117-443-60.248.91.150"
+      - "Taipei403-443-61.216.113.194"
+      - "Taichung610-443-60.249.21.29"
+      - "Taipei186-443-27.147.13.82"
+      - "Banqiao248-443-114.32.124.191"
+      - "Taipei240-443-208.68.182.75"
+      - "Taipei233-443-43.212.25.216"
+      - "Taipei1361-443-43.213.230.249"
+      - "Taipei35-443-203.69.23.30"
+      - "Taipei153-443-114.37.193.8"
+      - "Taipei194-443-114.37.193.8"
+      - "Taipei187-443-125.229.205.26"
+      - "Taipei889-443-64.49.28.173"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "Taipei77-443-104.199.253.40"
+      - "Taipei66-443-103.159.88.58"
+      - "Taipei134-443-34.80.213.58"
+      - "Taipei155-443-114.43.159.118"
+      - "Taipei284-443-104.155.206.9"
+      - "Taipei1019-443-103.51.141.26"
+      - "Taipei222-443-1.161.63.36"
+      - "Taipei271-443-1.161.52.37"
+      - "Taipei526-443-34.80.199.41"
+      - "Taipei1117-443-60.248.91.150"
+      - "Taipei403-443-61.216.113.194"
+      - "Taichung610-443-60.249.21.29"
+      - "Taipei186-443-27.147.13.82"
+      - "Banqiao248-443-114.32.124.191"
+      - "Taipei240-443-208.68.182.75"
+      - "Taipei233-443-43.212.25.216"
+      - "Taipei1361-443-43.213.230.249"
+      - "Taipei35-443-203.69.23.30"
+      - "Taipei153-443-114.37.193.8"
+      - "Taipei194-443-114.37.193.8"
+      - "Taipei187-443-125.229.205.26"
+      - "Taipei889-443-64.49.28.173"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "Taipei77-443-104.199.253.40"
+      - "Taipei66-443-103.159.88.58"
+      - "Taipei134-443-34.80.213.58"
+      - "Taipei155-443-114.43.159.118"
+      - "Taipei284-443-104.155.206.9"
+      - "Taipei1019-443-103.51.141.26"
+      - "Taipei222-443-1.161.63.36"
+      - "Taipei271-443-1.161.52.37"
+      - "Taipei526-443-34.80.199.41"
+      - "Taipei1117-443-60.248.91.150"
+      - "Taipei403-443-61.216.113.194"
+      - "Taichung610-443-60.249.21.29"
+      - "Taipei186-443-27.147.13.82"
+      - "Banqiao248-443-114.32.124.191"
+      - "Taipei240-443-208.68.182.75"
+      - "Taipei233-443-43.212.25.216"
+      - "Taipei1361-443-43.213.230.249"
+      - "Taipei35-443-203.69.23.30"
+      - "Taipei153-443-114.37.193.8"
+      - "Taipei194-443-114.37.193.8"
+      - "Taipei187-443-125.229.205.26"
+      - "Taipei889-443-64.49.28.173"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
