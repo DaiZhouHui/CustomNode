@@ -1,12 +1,12 @@
 {
     "vless_config": {
-        "uuid": "471a8e64-7b21-4703-b1d1-45a221098459",
-        "domain": "knny.dpdns.org",
+        "uuid": "c7202207-6167-4647-964a-792d973c4f04",
+        "domain": "knnn.dpdns.org",
         "port": 443,
         "path": "/?ed=2048",
         "encryption": "none",
         "security": "tls",
-        "sni": "knny.dpdns.org",
+        "sni": "knnn.dpdns.org",
         "fingerprint": "chrome",
         "network": "ws"
     },
