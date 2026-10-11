@@ -1320,11 +1320,49 @@ body {
                 <i class="fas fa-calendar-day"></i>
                 2026-10-11
                 <span style="font-size: 10px; margin-left: 10px; color: #7c8ba8;">
-                    (3 个节点模组)
+                    (4 个节点模组)
                 </span>
             </td>
         </tr>
         
+    <tr>
+        <td>
+            <input type="checkbox" class="row-checkbox" data-display-name="YXNode" onchange="updateBatchDeleteState()">
+        </td>
+        <td>
+            <div class="node-name">
+                <i class="fas fa-layer-group"></i>
+                YXNode
+            </div>
+        </td>
+        <td class="node-time" title="2026-10-11 09:03:12">2026-10-11</td>
+        <td><span class="status-badge status-paired">已配对</span></td>
+        <td>
+            <div class="link-buttons">
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YXNode', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
+                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
+            </div>
+        </td>
+        <td>
+            <div class="link-buttons">
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YXNode.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
+                <button class='link-btn btn-pages' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
+            </div>
+        </td>
+        <td>
+            <div class="action-cell">
+                <button class="btn-show-action" onclick="toggleActionButtons(this)" title="显示/隐藏操作">
+                    <i class="fas fa-eye"></i>
+                    操作
+                </button>
+                <button class="btn-delete" onclick="openDeleteModal('YXNode')" title="删除此节点模组">
+                    <i class="fas fa-trash-alt"></i>
+                    删除
+                </button>
+            </div>
+        </td>
+    </tr>
+    
     <tr>
         <td>
             <input type="checkbox" class="row-checkbox" data-display-name="欧洲" onchange="updateBatchDeleteState()">
@@ -1439,54 +1477,6 @@ body {
         </td>
     </tr>
     
-        <tr class="date-divider">
-            <td colspan="7">
-                <i class="fas fa-calendar-day"></i>
-                2026-10-10
-                <span style="font-size: 10px; margin-left: 10px; color: #7c8ba8;">
-                    (1 个节点模组)
-                </span>
-            </td>
-        </tr>
-        
-    <tr>
-        <td>
-            <input type="checkbox" class="row-checkbox" data-display-name="YXNode" onchange="updateBatchDeleteState()">
-        </td>
-        <td>
-            <div class="node-name">
-                <i class="fas fa-layer-group"></i>
-                YXNode
-            </div>
-        </td>
-        <td class="node-time" title="2026-10-10 23:49:48">2026-10-10</td>
-        <td><span class="status-badge status-paired">已配对</span></td>
-        <td>
-            <div class="link-buttons">
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YXNode', this)" title='复制订阅链接-P'><i class='fas fa-globe'></i> 订阅链接-P</button>
-                <button class='link-btn btn-raw' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode', this)" title='复制订阅链接-R'><i class='fas fa-code'></i> 订阅链接-R</button>
-            </div>
-        </td>
-        <td>
-            <div class="link-buttons">
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://DaiZhouHui.github.io/CustomNode/YXNode.yaml', this)" title='复制yaml订阅-P'><i class='fas fa-globe'></i> yaml订阅-P</button>
-                <button class='link-btn btn-pages' onclick="copyToClipboard('https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode.yaml', this)" title='复制yaml订阅-R'><i class='fas fa-code'></i> yaml订阅-R</button>
-            </div>
-        </td>
-        <td>
-            <div class="action-cell">
-                <button class="btn-show-action" onclick="toggleActionButtons(this)" title="显示/隐藏操作">
-                    <i class="fas fa-eye"></i>
-                    操作
-                </button>
-                <button class="btn-delete" onclick="openDeleteModal('YXNode')" title="删除此节点模组">
-                    <i class="fas fa-trash-alt"></i>
-                    删除
-                </button>
-            </div>
-        </td>
-    </tr>
-    
                             </tbody>
                 </table>
                 
@@ -1498,7 +1488,7 @@ body {
         <div class="footer-info">
             <div class="footer-left">
                 <span>共 4 个节点模组</span>
-                <span>最后更新: 2026-10-11 04:35:38 (UTC+8)</span>
+                <span>最后更新: 2026-10-11 09:44:12 (UTC+8)</span>
             </div>
             <div class="footer-right">
                 <a href="https://github.com/DaiZhouHui/CustomNode" target="_blank" class="footer-link">
@@ -1563,7 +1553,7 @@ body {
 
     <script>
         // 文件数据
-        const allFiles = [{"display_name": "\u6b27\u6d32", "file_type": "node", "node_name": "\u6b27\u6d32", "yaml_name": "\u6b27\u6d32.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/\u6b27\u6d32", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/\u6b27\u6d32", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/\u6b27\u6d32.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/\u6b27\u6d32.yaml", "update_time": "2026-10-11 04:35:11+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 04:35:11", "update_time_only": "04:35:11", "node_size": 101152, "yaml_size": 165557, "has_node": true, "has_yaml": true, "is_pair": true}, {"display_name": "YX", "file_type": "node", "node_name": "YX", "yaml_name": "YX.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/YX", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YX", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/YX.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YX.yaml", "update_time": "2026-10-11 04:29:36+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 04:29:36", "update_time_only": "04:29:36", "node_size": 64312, "yaml_size": 99989, "has_node": true, "has_yaml": true, "is_pair": true}, {"display_name": "OptimalNode", "file_type": "node", "node_name": "OptimalNode", "yaml_name": "OptimalNode.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/OptimalNode", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/OptimalNode.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode.yaml", "update_time": "2026-10-11 04:25:33+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 04:25:33", "update_time_only": "04:25:33", "node_size": 33888, "yaml_size": 54677, "has_node": true, "has_yaml": true, "is_pair": true}, {"display_name": "YXNode", "file_type": "node", "node_name": "YXNode", "yaml_name": "YXNode.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/YXNode", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/YXNode.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode.yaml", "update_time": "2026-10-10 23:49:48+08:00", "update_date": "2026-10-10", "full_time": "2026-10-10 23:49:48", "update_time_only": "23:49:48", "node_size": 7921, "yaml_size": 16347, "has_node": true, "has_yaml": true, "is_pair": true}];
+        const allFiles = [{"display_name": "YXNode", "file_type": "node", "node_name": "YXNode", "yaml_name": "YXNode.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/YXNode", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/YXNode.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YXNode.yaml", "update_time": "2026-10-11 09:03:12+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 09:03:12", "update_time_only": "09:03:12", "node_size": 8548, "yaml_size": 17448, "has_node": true, "has_yaml": true, "is_pair": true}, {"display_name": "\u6b27\u6d32", "file_type": "node", "node_name": "\u6b27\u6d32", "yaml_name": "\u6b27\u6d32.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/\u6b27\u6d32", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/\u6b27\u6d32", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/\u6b27\u6d32.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/\u6b27\u6d32.yaml", "update_time": "2026-10-11 04:35:11+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 04:35:11", "update_time_only": "04:35:11", "node_size": 101152, "yaml_size": 165557, "has_node": true, "has_yaml": true, "is_pair": true}, {"display_name": "YX", "file_type": "node", "node_name": "YX", "yaml_name": "YX.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/YX", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YX", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/YX.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/YX.yaml", "update_time": "2026-10-11 04:29:36+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 04:29:36", "update_time_only": "04:29:36", "node_size": 64312, "yaml_size": 99989, "has_node": true, "has_yaml": true, "is_pair": true}, {"display_name": "OptimalNode", "file_type": "node", "node_name": "OptimalNode", "yaml_name": "OptimalNode.yaml", "node_pages": "https://DaiZhouHui.github.io/CustomNode/OptimalNode", "node_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode", "yaml_pages": "https://DaiZhouHui.github.io/CustomNode/OptimalNode.yaml", "yaml_raw": "https://raw.githubusercontent.com/DaiZhouHui/CustomNode/main/OptimalNode.yaml", "update_time": "2026-10-11 04:25:33+08:00", "update_date": "2026-10-11", "full_time": "2026-10-11 04:25:33", "update_time_only": "04:25:33", "node_size": 33888, "yaml_size": 54677, "has_node": true, "has_yaml": true, "is_pair": true}];
         
         // 删除相关变量
         let currentDeleteItems = [];
