@@ -1,7 +1,7 @@
 {
     "vless_config": {
-        "uuid": "c7202207-6167-4647-964a-792d973c4f04",
-        "domain": "knnn.dpdns.org",
+        "uuid": "99ea2764-f1df-4aa8-b01d-0adb42cc2f77",
+        "domain": "node.kyma.dpdns.org",
         "port": 443,
         "path": "/?ed=2048",
         "encryption": "none",
