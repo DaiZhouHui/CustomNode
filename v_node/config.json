@@ -6,7 +6,7 @@
         "path": "/?ed=2048",
         "encryption": "none",
         "security": "tls",
-        "sni": "knnn.dpdns.org",
+        "sni": "node.kyma.dpdns.org",
         "fingerprint": "chrome",
         "network": "ws"
     },
