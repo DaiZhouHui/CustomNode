@@ -1,0 +1,1337 @@
+proxies:
+  - name: "吉隆坡27-443-马来西亚-56.69.209.164"
+    type: vless
+    server: 56.69.209.164
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡25-443-马来西亚-56.68.92.77"
+    type: vless
+    server: 56.68.92.77
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡26-443-马来西亚-56.69.210.70"
+    type: vless
+    server: 56.69.210.70
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡78-443-马来西亚-85.211.247.222"
+    type: vless
+    server: 85.211.247.222
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达177-443-印度尼西亚-16.79.55.124"
+    type: vless
+    server: 16.79.55.124
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡55-443-马来西亚-202.61.72.83"
+    type: vless
+    server: 202.61.72.83
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达91-443-印度尼西亚-23.27.98.114"
+    type: vless
+    server: 23.27.98.114
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达107-443-印度尼西亚-154.205.159.78"
+    type: vless
+    server: 154.205.159.78
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "胡志明市22-443-越南-38.54.14.89"
+    type: vless
+    server: 38.54.14.89
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "苏卡布米01-443-印度尼西亚-103.193.179.158"
+    type: vless
+    server: 103.193.179.158
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "八打灵01-443-马来西亚-202.187.6.85"
+    type: vless
+    server: 202.187.6.85
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "-02-443-越南-185.17.1.208"
+    type: vless
+    server: 185.17.1.208
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡05-443-马来西亚-151.158.1.213"
+    type: vless
+    server: 151.158.1.213
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达60-443-印度尼西亚-45.198.0.230"
+    type: vless
+    server: 45.198.0.230
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "巴淡07-443-印度尼西亚-168.110.200.146"
+    type: vless
+    server: 168.110.200.146
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "-05-443-越南-185.17.1.15"
+    type: vless
+    server: 185.17.1.15
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "巴淡04-443-印度尼西亚-168.110.211.201"
+    type: vless
+    server: 168.110.211.201
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达134-443-印度尼西亚-45.198.0.3"
+    type: vless
+    server: 45.198.0.3
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达195-443-印度尼西亚-43.229.254.71"
+    type: vless
+    server: 43.229.254.71
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "胡志明市15-443-越南-103.229.31.44"
+    type: vless
+    server: 103.229.31.44
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "白金02-443-越南-103.199.18.84"
+    type: vless
+    server: 103.199.18.84
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜02-443-印度尼西亚-193.5.64.7"
+    type: vless
+    server: 193.5.64.7
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜09-443-印度尼西亚-193.5.64.244"
+    type: vless
+    server: 193.5.64.244
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜01-443-印度尼西亚-193.5.64.97"
+    type: vless
+    server: 193.5.64.97
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜06-443-印度尼西亚-193.5.64.239"
+    type: vless
+    server: 193.5.64.239
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜03-443-印度尼西亚-193.5.64.2"
+    type: vless
+    server: 193.5.64.2
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜05-443-印度尼西亚-193.5.64.108"
+    type: vless
+    server: 193.5.64.108
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "河内58-443-越南-103.137.184.172"
+    type: vless
+    server: 103.137.184.172
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达174-443-印度尼西亚-76.13.193.38"
+    type: vless
+    server: 76.13.193.38
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "班达楠榜07-443-印度尼西亚-193.5.64.46"
+    type: vless
+    server: 193.5.64.46
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷153-443-泰国-103.114.201.154"
+    type: vless
+    server: 103.114.201.154
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷146-443-泰国-92.63.180.158"
+    type: vless
+    server: 92.63.180.158
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "河内75-443-越南-165.101.114.172"
+    type: vless
+    server: 165.101.114.172
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷167-443-泰国-119.59.124.95"
+    type: vless
+    server: 119.59.124.95
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达69-443-印度尼西亚-45.198.0.207"
+    type: vless
+    server: 45.198.0.207
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达94-443-印度尼西亚-45.198.0.236"
+    type: vless
+    server: 45.198.0.236
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "河内04-443-越南-123.30.208.136"
+    type: vless
+    server: 123.30.208.136
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "河内42-443-越南-103.6.234.246"
+    type: vless
+    server: 103.6.234.246
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷30-443-泰国-103.114.203.189"
+    type: vless
+    server: 103.114.203.189
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷152-443-泰国-103.114.203.189"
+    type: vless
+    server: 103.114.203.189
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷29-443-泰国-103.114.203.189"
+    type: vless
+    server: 103.114.203.189
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷81-443-泰国-199.21.172.89"
+    type: vless
+    server: 199.21.172.89
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷171-443-泰国-103.107.53.42"
+    type: vless
+    server: 103.107.53.42
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "巴淡02-443-印度尼西亚-168.110.213.88"
+    type: vless
+    server: 168.110.213.88
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷37-443-泰国-103.224.84.7"
+    type: vless
+    server: 103.224.84.7
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷79-443-泰国-199.21.172.154"
+    type: vless
+    server: 199.21.172.154
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "胡志明市19-443-越南-103.161.179.36"
+    type: vless
+    server: 103.161.179.36
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷132-443-泰国-103.114.203.189"
+    type: vless
+    server: 103.114.203.189
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷06-443-泰国-43.229.148.249"
+    type: vless
+    server: 43.229.148.249
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达46-443-印度尼西亚-43.229.254.71"
+    type: vless
+    server: 43.229.254.71
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "胡志明市53-443-越南-103.161.179.171"
+    type: vless
+    server: 103.161.179.171
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷24-443-泰国-103.230.123.223"
+    type: vless
+    server: 103.230.123.223
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "卡纳尧01-443-泰国-103.169.67.51"
+    type: vless
+    server: 103.169.67.51
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达43-443-印度尼西亚-43.229.254.182"
+    type: vless
+    server: 43.229.254.182
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷125-443-泰国-103.114.203.3"
+    type: vless
+    server: 103.114.203.3
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "日惹08-443-印度尼西亚-103.153.131.67"
+    type: vless
+    server: 103.153.131.67
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "呵叻01-443-泰国-101.108.49.121"
+    type: vless
+    server: 101.108.49.121
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "胡志明市46-443-越南-103.161.178.215"
+    type: vless
+    server: 103.161.178.215
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达145-443-印度尼西亚-172.232.236.252"
+    type: vless
+    server: 172.232.236.252
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡15-443-马来西亚-166.88.57.206"
+    type: vless
+    server: 166.88.57.206
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达65-443-印度尼西亚-149.129.218.213"
+    type: vless
+    server: 149.129.218.213
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "达拉姆01-443-印度尼西亚-103.150.192.28"
+    type: vless
+    server: 103.150.192.28
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达93-443-印度尼西亚-116.212.73.46"
+    type: vless
+    server: 116.212.73.46
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "吉隆坡33-443-马来西亚-45.195.69.108"
+    type: vless
+    server: 45.195.69.108
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷82-443-泰国-43.173.251.195"
+    type: vless
+    server: 43.173.251.195
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达127-443-印度尼西亚-202.155.95.132"
+    type: vless
+    server: 202.155.95.132
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达12-443-印度尼西亚-172.232.240.6"
+    type: vless
+    server: 172.232.240.6
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷168-443-泰国-27.254.216.110"
+    type: vless
+    server: 27.254.216.110
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "胡志明市50-443-越南-103.150.240.195"
+    type: vless
+    server: 103.150.240.195
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "曼谷145-443-泰国-27.254.83.11"
+    type: vless
+    server: 27.254.83.11
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达135-443-印度尼西亚-147.139.206.174"
+    type: vless
+    server: 147.139.206.174
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+  - name: "雅加达125-443-印度尼西亚-147.139.201.89"
+    type: vless
+    server: 147.139.201.89
+    port: 443
+    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "node.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "node.kyma.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "吉隆坡27-443-马来西亚-56.69.209.164"
+      - "吉隆坡25-443-马来西亚-56.68.92.77"
+      - "吉隆坡26-443-马来西亚-56.69.210.70"
+      - "吉隆坡78-443-马来西亚-85.211.247.222"
+      - "雅加达177-443-印度尼西亚-16.79.55.124"
+      - "吉隆坡55-443-马来西亚-202.61.72.83"
+      - "雅加达91-443-印度尼西亚-23.27.98.114"
+      - "雅加达107-443-印度尼西亚-154.205.159.78"
+      - "胡志明市22-443-越南-38.54.14.89"
+      - "苏卡布米01-443-印度尼西亚-103.193.179.158"
+      - "八打灵01-443-马来西亚-202.187.6.85"
+      - "-02-443-越南-185.17.1.208"
+      - "吉隆坡05-443-马来西亚-151.158.1.213"
+      - "雅加达60-443-印度尼西亚-45.198.0.230"
+      - "巴淡07-443-印度尼西亚-168.110.200.146"
+      - "-05-443-越南-185.17.1.15"
+      - "巴淡04-443-印度尼西亚-168.110.211.201"
+      - "雅加达134-443-印度尼西亚-45.198.0.3"
+      - "雅加达195-443-印度尼西亚-43.229.254.71"
+      - "胡志明市15-443-越南-103.229.31.44"
+      - "白金02-443-越南-103.199.18.84"
+      - "班达楠榜02-443-印度尼西亚-193.5.64.7"
+      - "班达楠榜09-443-印度尼西亚-193.5.64.244"
+      - "班达楠榜01-443-印度尼西亚-193.5.64.97"
+      - "班达楠榜06-443-印度尼西亚-193.5.64.239"
+      - "班达楠榜03-443-印度尼西亚-193.5.64.2"
+      - "班达楠榜05-443-印度尼西亚-193.5.64.108"
+      - "河内58-443-越南-103.137.184.172"
+      - "雅加达174-443-印度尼西亚-76.13.193.38"
+      - "班达楠榜07-443-印度尼西亚-193.5.64.46"
+      - "曼谷153-443-泰国-103.114.201.154"
+      - "曼谷146-443-泰国-92.63.180.158"
+      - "河内75-443-越南-165.101.114.172"
+      - "曼谷167-443-泰国-119.59.124.95"
+      - "雅加达69-443-印度尼西亚-45.198.0.207"
+      - "雅加达94-443-印度尼西亚-45.198.0.236"
+      - "河内04-443-越南-123.30.208.136"
+      - "河内42-443-越南-103.6.234.246"
+      - "曼谷30-443-泰国-103.114.203.189"
+      - "曼谷152-443-泰国-103.114.203.189"
+      - "曼谷29-443-泰国-103.114.203.189"
+      - "曼谷81-443-泰国-199.21.172.89"
+      - "曼谷171-443-泰国-103.107.53.42"
+      - "巴淡02-443-印度尼西亚-168.110.213.88"
+      - "曼谷37-443-泰国-103.224.84.7"
+      - "曼谷79-443-泰国-199.21.172.154"
+      - "胡志明市19-443-越南-103.161.179.36"
+      - "曼谷132-443-泰国-103.114.203.189"
+      - "曼谷06-443-泰国-43.229.148.249"
+      - "雅加达46-443-印度尼西亚-43.229.254.71"
+      - "胡志明市53-443-越南-103.161.179.171"
+      - "曼谷24-443-泰国-103.230.123.223"
+      - "卡纳尧01-443-泰国-103.169.67.51"
+      - "雅加达43-443-印度尼西亚-43.229.254.182"
+      - "曼谷125-443-泰国-103.114.203.3"
+      - "日惹08-443-印度尼西亚-103.153.131.67"
+      - "呵叻01-443-泰国-101.108.49.121"
+      - "胡志明市46-443-越南-103.161.178.215"
+      - "雅加达145-443-印度尼西亚-172.232.236.252"
+      - "吉隆坡15-443-马来西亚-166.88.57.206"
+      - "雅加达65-443-印度尼西亚-149.129.218.213"
+      - "达拉姆01-443-印度尼西亚-103.150.192.28"
+      - "雅加达93-443-印度尼西亚-116.212.73.46"
+      - "吉隆坡33-443-马来西亚-45.195.69.108"
+      - "曼谷82-443-泰国-43.173.251.195"
+      - "雅加达127-443-印度尼西亚-202.155.95.132"
+      - "雅加达12-443-印度尼西亚-172.232.240.6"
+      - "曼谷168-443-泰国-27.254.216.110"
+      - "胡志明市50-443-越南-103.150.240.195"
+      - "曼谷145-443-泰国-27.254.83.11"
+      - "雅加达135-443-印度尼西亚-147.139.206.174"
+      - "雅加达125-443-印度尼西亚-147.139.201.89"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "吉隆坡27-443-马来西亚-56.69.209.164"
+      - "吉隆坡25-443-马来西亚-56.68.92.77"
+      - "吉隆坡26-443-马来西亚-56.69.210.70"
+      - "吉隆坡78-443-马来西亚-85.211.247.222"
+      - "雅加达177-443-印度尼西亚-16.79.55.124"
+      - "吉隆坡55-443-马来西亚-202.61.72.83"
+      - "雅加达91-443-印度尼西亚-23.27.98.114"
+      - "雅加达107-443-印度尼西亚-154.205.159.78"
+      - "胡志明市22-443-越南-38.54.14.89"
+      - "苏卡布米01-443-印度尼西亚-103.193.179.158"
+      - "八打灵01-443-马来西亚-202.187.6.85"
+      - "-02-443-越南-185.17.1.208"
+      - "吉隆坡05-443-马来西亚-151.158.1.213"
+      - "雅加达60-443-印度尼西亚-45.198.0.230"
+      - "巴淡07-443-印度尼西亚-168.110.200.146"
+      - "-05-443-越南-185.17.1.15"
+      - "巴淡04-443-印度尼西亚-168.110.211.201"
+      - "雅加达134-443-印度尼西亚-45.198.0.3"
+      - "雅加达195-443-印度尼西亚-43.229.254.71"
+      - "胡志明市15-443-越南-103.229.31.44"
+      - "白金02-443-越南-103.199.18.84"
+      - "班达楠榜02-443-印度尼西亚-193.5.64.7"
+      - "班达楠榜09-443-印度尼西亚-193.5.64.244"
+      - "班达楠榜01-443-印度尼西亚-193.5.64.97"
+      - "班达楠榜06-443-印度尼西亚-193.5.64.239"
+      - "班达楠榜03-443-印度尼西亚-193.5.64.2"
+      - "班达楠榜05-443-印度尼西亚-193.5.64.108"
+      - "河内58-443-越南-103.137.184.172"
+      - "雅加达174-443-印度尼西亚-76.13.193.38"
+      - "班达楠榜07-443-印度尼西亚-193.5.64.46"
+      - "曼谷153-443-泰国-103.114.201.154"
+      - "曼谷146-443-泰国-92.63.180.158"
+      - "河内75-443-越南-165.101.114.172"
+      - "曼谷167-443-泰国-119.59.124.95"
+      - "雅加达69-443-印度尼西亚-45.198.0.207"
+      - "雅加达94-443-印度尼西亚-45.198.0.236"
+      - "河内04-443-越南-123.30.208.136"
+      - "河内42-443-越南-103.6.234.246"
+      - "曼谷30-443-泰国-103.114.203.189"
+      - "曼谷152-443-泰国-103.114.203.189"
+      - "曼谷29-443-泰国-103.114.203.189"
+      - "曼谷81-443-泰国-199.21.172.89"
+      - "曼谷171-443-泰国-103.107.53.42"
+      - "巴淡02-443-印度尼西亚-168.110.213.88"
+      - "曼谷37-443-泰国-103.224.84.7"
+      - "曼谷79-443-泰国-199.21.172.154"
+      - "胡志明市19-443-越南-103.161.179.36"
+      - "曼谷132-443-泰国-103.114.203.189"
+      - "曼谷06-443-泰国-43.229.148.249"
+      - "雅加达46-443-印度尼西亚-43.229.254.71"
+      - "胡志明市53-443-越南-103.161.179.171"
+      - "曼谷24-443-泰国-103.230.123.223"
+      - "卡纳尧01-443-泰国-103.169.67.51"
+      - "雅加达43-443-印度尼西亚-43.229.254.182"
+      - "曼谷125-443-泰国-103.114.203.3"
+      - "日惹08-443-印度尼西亚-103.153.131.67"
+      - "呵叻01-443-泰国-101.108.49.121"
+      - "胡志明市46-443-越南-103.161.178.215"
+      - "雅加达145-443-印度尼西亚-172.232.236.252"
+      - "吉隆坡15-443-马来西亚-166.88.57.206"
+      - "雅加达65-443-印度尼西亚-149.129.218.213"
+      - "达拉姆01-443-印度尼西亚-103.150.192.28"
+      - "雅加达93-443-印度尼西亚-116.212.73.46"
+      - "吉隆坡33-443-马来西亚-45.195.69.108"
+      - "曼谷82-443-泰国-43.173.251.195"
+      - "雅加达127-443-印度尼西亚-202.155.95.132"
+      - "雅加达12-443-印度尼西亚-172.232.240.6"
+      - "曼谷168-443-泰国-27.254.216.110"
+      - "胡志明市50-443-越南-103.150.240.195"
+      - "曼谷145-443-泰国-27.254.83.11"
+      - "雅加达135-443-印度尼西亚-147.139.206.174"
+      - "雅加达125-443-印度尼西亚-147.139.201.89"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "吉隆坡27-443-马来西亚-56.69.209.164"
+      - "吉隆坡25-443-马来西亚-56.68.92.77"
+      - "吉隆坡26-443-马来西亚-56.69.210.70"
+      - "吉隆坡78-443-马来西亚-85.211.247.222"
+      - "雅加达177-443-印度尼西亚-16.79.55.124"
+      - "吉隆坡55-443-马来西亚-202.61.72.83"
+      - "雅加达91-443-印度尼西亚-23.27.98.114"
+      - "雅加达107-443-印度尼西亚-154.205.159.78"
+      - "胡志明市22-443-越南-38.54.14.89"
+      - "苏卡布米01-443-印度尼西亚-103.193.179.158"
+      - "八打灵01-443-马来西亚-202.187.6.85"
+      - "-02-443-越南-185.17.1.208"
+      - "吉隆坡05-443-马来西亚-151.158.1.213"
+      - "雅加达60-443-印度尼西亚-45.198.0.230"
+      - "巴淡07-443-印度尼西亚-168.110.200.146"
+      - "-05-443-越南-185.17.1.15"
+      - "巴淡04-443-印度尼西亚-168.110.211.201"
+      - "雅加达134-443-印度尼西亚-45.198.0.3"
+      - "雅加达195-443-印度尼西亚-43.229.254.71"
+      - "胡志明市15-443-越南-103.229.31.44"
+      - "白金02-443-越南-103.199.18.84"
+      - "班达楠榜02-443-印度尼西亚-193.5.64.7"
+      - "班达楠榜09-443-印度尼西亚-193.5.64.244"
+      - "班达楠榜01-443-印度尼西亚-193.5.64.97"
+      - "班达楠榜06-443-印度尼西亚-193.5.64.239"
+      - "班达楠榜03-443-印度尼西亚-193.5.64.2"
+      - "班达楠榜05-443-印度尼西亚-193.5.64.108"
+      - "河内58-443-越南-103.137.184.172"
+      - "雅加达174-443-印度尼西亚-76.13.193.38"
+      - "班达楠榜07-443-印度尼西亚-193.5.64.46"
+      - "曼谷153-443-泰国-103.114.201.154"
+      - "曼谷146-443-泰国-92.63.180.158"
+      - "河内75-443-越南-165.101.114.172"
+      - "曼谷167-443-泰国-119.59.124.95"
+      - "雅加达69-443-印度尼西亚-45.198.0.207"
+      - "雅加达94-443-印度尼西亚-45.198.0.236"
+      - "河内04-443-越南-123.30.208.136"
+      - "河内42-443-越南-103.6.234.246"
+      - "曼谷30-443-泰国-103.114.203.189"
+      - "曼谷152-443-泰国-103.114.203.189"
+      - "曼谷29-443-泰国-103.114.203.189"
+      - "曼谷81-443-泰国-199.21.172.89"
+      - "曼谷171-443-泰国-103.107.53.42"
+      - "巴淡02-443-印度尼西亚-168.110.213.88"
+      - "曼谷37-443-泰国-103.224.84.7"
+      - "曼谷79-443-泰国-199.21.172.154"
+      - "胡志明市19-443-越南-103.161.179.36"
+      - "曼谷132-443-泰国-103.114.203.189"
+      - "曼谷06-443-泰国-43.229.148.249"
+      - "雅加达46-443-印度尼西亚-43.229.254.71"
+      - "胡志明市53-443-越南-103.161.179.171"
+      - "曼谷24-443-泰国-103.230.123.223"
+      - "卡纳尧01-443-泰国-103.169.67.51"
+      - "雅加达43-443-印度尼西亚-43.229.254.182"
+      - "曼谷125-443-泰国-103.114.203.3"
+      - "日惹08-443-印度尼西亚-103.153.131.67"
+      - "呵叻01-443-泰国-101.108.49.121"
+      - "胡志明市46-443-越南-103.161.178.215"
+      - "雅加达145-443-印度尼西亚-172.232.236.252"
+      - "吉隆坡15-443-马来西亚-166.88.57.206"
+      - "雅加达65-443-印度尼西亚-149.129.218.213"
+      - "达拉姆01-443-印度尼西亚-103.150.192.28"
+      - "雅加达93-443-印度尼西亚-116.212.73.46"
+      - "吉隆坡33-443-马来西亚-45.195.69.108"
+      - "曼谷82-443-泰国-43.173.251.195"
+      - "雅加达127-443-印度尼西亚-202.155.95.132"
+      - "雅加达12-443-印度尼西亚-172.232.240.6"
+      - "曼谷168-443-泰国-27.254.216.110"
+      - "胡志明市50-443-越南-103.150.240.195"
+      - "曼谷145-443-泰国-27.254.83.11"
+      - "雅加达135-443-印度尼西亚-147.139.206.174"
+      - "雅加达125-443-印度尼西亚-147.139.201.89"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
