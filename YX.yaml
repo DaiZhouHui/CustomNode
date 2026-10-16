@@ -3,7 +3,7 @@ proxies:
     type: vless
     server: 156.231.113.81
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -18,7 +18,7 @@ proxies:
     type: vless
     server: 52.68.35.165
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -33,7 +33,7 @@ proxies:
     type: vless
     server: 144.48.4.222
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -48,7 +48,7 @@ proxies:
     type: vless
     server: 38.207.130.207
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -63,7 +63,7 @@ proxies:
     type: vless
     server: 154.83.93.23
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -78,7 +78,7 @@ proxies:
     type: vless
     server: 210.140.169.62
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -93,7 +93,7 @@ proxies:
     type: vless
     server: 65.49.237.102
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -108,7 +108,7 @@ proxies:
     type: vless
     server: 212.135.212.147
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -123,7 +123,7 @@ proxies:
     type: vless
     server: 8.216.43.57
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -138,7 +138,7 @@ proxies:
     type: vless
     server: 103.232.213.160
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -153,7 +153,7 @@ proxies:
     type: vless
     server: 185.220.238.223
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -168,7 +168,7 @@ proxies:
     type: vless
     server: 154.36.154.29
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -183,7 +183,7 @@ proxies:
     type: vless
     server: 54.238.23.43
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -198,7 +198,7 @@ proxies:
     type: vless
     server: 54.65.140.102
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -213,7 +213,7 @@ proxies:
     type: vless
     server: 34.97.18.203
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -228,7 +228,7 @@ proxies:
     type: vless
     server: 206.190.237.141
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -243,7 +243,7 @@ proxies:
     type: vless
     server: 206.190.236.177
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -258,7 +258,7 @@ proxies:
     type: vless
     server: 166.88.2.76
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -273,7 +273,7 @@ proxies:
     type: vless
     server: 154.19.187.190
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -288,7 +288,7 @@ proxies:
     type: vless
     server: da.mfa.gov.ua
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -303,7 +303,7 @@ proxies:
     type: vless
     server: cf.godns.cc
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -318,7 +318,7 @@ proxies:
     type: vless
     server: cf.nyanya.moe
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -333,7 +333,7 @@ proxies:
     type: vless
     server: cmcc.cc.cd
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -348,7 +348,7 @@ proxies:
     type: vless
     server: www.sofi.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -363,7 +363,7 @@ proxies:
     type: vless
     server: test.509666.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -378,7 +378,7 @@ proxies:
     type: vless
     server: 8.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -393,7 +393,7 @@ proxies:
     type: vless
     server: www.sage.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -408,7 +408,7 @@ proxies:
     type: vless
     server: cmcc.vvvv.ee
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -423,7 +423,7 @@ proxies:
     type: vless
     server: dongbanghong.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -438,7 +438,7 @@ proxies:
     type: vless
     server: yg5.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -453,7 +453,7 @@ proxies:
     type: vless
     server: yg1.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -468,7 +468,7 @@ proxies:
     type: vless
     server: adnjv.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -483,7 +483,7 @@ proxies:
     type: vless
     server: cfyx.qdqqd.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -498,7 +498,7 @@ proxies:
     type: vless
     server: f.lma.de5.net
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -513,7 +513,7 @@ proxies:
     type: vless
     server: www.mc.js.cool
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -528,7 +528,7 @@ proxies:
     type: vless
     server: 01-cctv.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -543,7 +543,7 @@ proxies:
     type: vless
     server: coke.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -558,7 +558,7 @@ proxies:
     type: vless
     server: auto.dolby.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -573,7 +573,7 @@ proxies:
     type: vless
     server: www.vastnovel.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -588,7 +588,7 @@ proxies:
     type: vless
     server: kniu.cc
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -603,7 +603,7 @@ proxies:
     type: vless
     server: www.nexusmods.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -618,7 +618,7 @@ proxies:
     type: vless
     server: fw8je9.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -633,7 +633,7 @@ proxies:
     type: vless
     server: 123.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -648,7 +648,7 @@ proxies:
     type: vless
     server: cdn.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -663,7 +663,7 @@ proxies:
     type: vless
     server: cdns.doon.eu.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -678,7 +678,7 @@ proxies:
     type: vless
     server: cloudflare-ip.mofashi.ltd
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -693,7 +693,7 @@ proxies:
     type: vless
     server: cdn.2158.cc
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -708,7 +708,7 @@ proxies:
     type: vless
     server: edgeone.gh-proxy.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -723,7 +723,7 @@ proxies:
     type: vless
     server: api.gzcrtw.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -738,7 +738,7 @@ proxies:
     type: vless
     server: 01-qq.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -753,7 +753,7 @@ proxies:
     type: vless
     server: cfgo.timelate.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -768,7 +768,7 @@ proxies:
     type: vless
     server: cdn.091224.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -783,7 +783,7 @@ proxies:
     type: vless
     server: www.cdzxdz.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -798,7 +798,7 @@ proxies:
     type: vless
     server: 6.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -813,7 +813,7 @@ proxies:
     type: vless
     server: 1.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -828,7 +828,7 @@ proxies:
     type: vless
     server: cloudflare.rainyfall.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -843,7 +843,7 @@ proxies:
     type: vless
     server: cf.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -858,7 +858,7 @@ proxies:
     type: vless
     server: sanwang.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -873,7 +873,7 @@ proxies:
     type: vless
     server: dnew.cc
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -888,7 +888,7 @@ proxies:
     type: vless
     server: bbs.alipansou.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -903,7 +903,7 @@ proxies:
     type: vless
     server: freeyx.cloudflare88.eu.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -918,7 +918,7 @@ proxies:
     type: vless
     server: cfvip.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -933,7 +933,7 @@ proxies:
     type: vless
     server: prompt.gzcrtw.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -948,7 +948,7 @@ proxies:
     type: vless
     server: www.mlkj888.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -963,7 +963,7 @@ proxies:
     type: vless
     server: www.xiaoshuofen.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -978,7 +978,7 @@ proxies:
     type: vless
     server: baka.fun
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -993,7 +993,7 @@ proxies:
     type: vless
     server: yg11.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1008,7 +1008,7 @@ proxies:
     type: vless
     server: yg7.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1023,7 +1023,7 @@ proxies:
     type: vless
     server: hfqek.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1038,7 +1038,7 @@ proxies:
     type: vless
     server: sg.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1053,7 +1053,7 @@ proxies:
     type: vless
     server: gh-proxy.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1068,7 +1068,7 @@ proxies:
     type: vless
     server: cu.877774.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1083,7 +1083,7 @@ proxies:
     type: vless
     server: hk.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1098,7 +1098,7 @@ proxies:
     type: vless
     server: store.ubi.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1113,7 +1113,7 @@ proxies:
     type: vless
     server: yg9.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1128,7 +1128,7 @@ proxies:
     type: vless
     server: 11.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1143,7 +1143,7 @@ proxies:
     type: vless
     server: 10.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1158,7 +1158,7 @@ proxies:
     type: vless
     server: 5.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1173,7 +1173,7 @@ proxies:
     type: vless
     server: qocu.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1188,7 +1188,7 @@ proxies:
     type: vless
     server: keji.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1203,7 +1203,7 @@ proxies:
     type: vless
     server: www.fastsoso.cn
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1218,7 +1218,7 @@ proxies:
     type: vless
     server: cloudflare.182682.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1233,7 +1233,7 @@ proxies:
     type: vless
     server: zeas.top
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1248,7 +1248,7 @@ proxies:
     type: vless
     server: cf-ip-node.vov.moe
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1263,7 +1263,7 @@ proxies:
     type: vless
     server: www.akasantech.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1278,7 +1278,7 @@ proxies:
     type: vless
     server: eii.at
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1293,7 +1293,7 @@ proxies:
     type: vless
     server: www.galgamex.net
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1308,7 +1308,7 @@ proxies:
     type: vless
     server: nexusmods.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1323,7 +1323,7 @@ proxies:
     type: vless
     server: cdn.262832.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1338,7 +1338,7 @@ proxies:
     type: vless
     server: www.swowd.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1353,7 +1353,7 @@ proxies:
     type: vless
     server: staticdelivery.nexusmods.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1368,7 +1368,7 @@ proxies:
     type: vless
     server: markmonitor.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1383,7 +1383,7 @@ proxies:
     type: vless
     server: jp.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1398,7 +1398,7 @@ proxies:
     type: vless
     server: 9.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1413,7 +1413,7 @@ proxies:
     type: vless
     server: cf.92555.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1428,7 +1428,7 @@ proxies:
     type: vless
     server: youxuan.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1443,7 +1443,7 @@ proxies:
     type: vless
     server: cloudflare.idc.rocks
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1458,7 +1458,7 @@ proxies:
     type: vless
     server: snipaste5.speedip.eu.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1473,7 +1473,7 @@ proxies:
     type: vless
     server: cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1488,7 +1488,7 @@ proxies:
     type: vless
     server: cf-cname.xingpingcn.top
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1503,7 +1503,7 @@ proxies:
     type: vless
     server: eteaf.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1518,7 +1518,7 @@ proxies:
     type: vless
     server: yxip.xxxxxxxx.tk
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1533,7 +1533,7 @@ proxies:
     type: vless
     server: www.giannidelprete.it
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1548,7 +1548,7 @@ proxies:
     type: vless
     server: cnllm.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1563,7 +1563,7 @@ proxies:
     type: vless
     server: cf.xycf.asia
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1578,7 +1578,7 @@ proxies:
     type: vless
     server: cf.cooteep.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1593,7 +1593,7 @@ proxies:
     type: vless
     server: ct.721660.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1608,7 +1608,7 @@ proxies:
     type: vless
     server: baota.us.kg
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1623,7 +1623,7 @@ proxies:
     type: vless
     server: ctsg.cfyx.aliyun.20237737.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1638,7 +1638,7 @@ proxies:
     type: vless
     server: ctlmt.info
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1653,7 +1653,7 @@ proxies:
     type: vless
     server: 4.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1668,7 +1668,7 @@ proxies:
     type: vless
     server: imooo.de
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1683,7 +1683,7 @@ proxies:
     type: vless
     server: www.4429.com.cn
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1698,7 +1698,7 @@ proxies:
     type: vless
     server: cf.727672.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1713,7 +1713,7 @@ proxies:
     type: vless
     server: d.lma.de5.net
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1728,7 +1728,7 @@ proxies:
     type: vless
     server: blog.646474.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1743,7 +1743,7 @@ proxies:
     type: vless
     server: serviceshub.samsclub.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1758,7 +1758,7 @@ proxies:
     type: vless
     server: www.adbcardpay.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1773,7 +1773,7 @@ proxies:
     type: vless
     server: cfyx.dnspod.20237737.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1788,7 +1788,7 @@ proxies:
     type: vless
     server: tajikistan.mfa.gov.ua
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1803,7 +1803,7 @@ proxies:
     type: vless
     server: 1757760858.tencentapp.cn
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1818,7 +1818,7 @@ proxies:
     type: vless
     server: vip.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1833,7 +1833,7 @@ proxies:
     type: vless
     server: b3.cfyx.20237737.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1848,7 +1848,7 @@ proxies:
     type: vless
     server: cf.tencentapp.cn
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1863,7 +1863,7 @@ proxies:
     type: vless
     server: fn.130519.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1878,7 +1878,7 @@ proxies:
     type: vless
     server: mfa.gov.ua
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1893,7 +1893,7 @@ proxies:
     type: vless
     server: mming.ggff.net
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1908,7 +1908,7 @@ proxies:
     type: vless
     server: yg2.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1923,7 +1923,7 @@ proxies:
     type: vless
     server: china.mfa.gov.ua
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1938,7 +1938,7 @@ proxies:
     type: vless
     server: dianomi.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1953,7 +1953,7 @@ proxies:
     type: vless
     server: doro.lol
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1968,7 +1968,7 @@ proxies:
     type: vless
     server: 1749991941.bilibiliapp.cn
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1983,7 +1983,7 @@ proxies:
     type: vless
     server: cf.mubaiovo.top
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -1998,7 +1998,7 @@ proxies:
     type: vless
     server: yg3.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2013,7 +2013,7 @@ proxies:
     type: vless
     server: cf.duun.eu.cc
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2028,7 +2028,7 @@ proxies:
     type: vless
     server: idc.urkeji.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2043,7 +2043,7 @@ proxies:
     type: vless
     server: pubs.acs.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2058,7 +2058,7 @@ proxies:
     type: vless
     server: c.lma.de5.net
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2073,7 +2073,7 @@ proxies:
     type: vless
     server: 336688.chinwa.eu.cc
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2088,7 +2088,7 @@ proxies:
     type: vless
     server: yg6.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2103,7 +2103,7 @@ proxies:
     type: vless
     server: fk.hshwk.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2118,7 +2118,7 @@ proxies:
     type: vless
     server: www.5h.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2133,7 +2133,7 @@ proxies:
     type: vless
     server: seo.07yue.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2148,7 +2148,7 @@ proxies:
     type: vless
     server: www.shopify.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2163,7 +2163,7 @@ proxies:
     type: vless
     server: www.5199dy.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2178,7 +2178,7 @@ proxies:
     type: vless
     server: www.ntu.edu.sg
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2193,7 +2193,7 @@ proxies:
     type: vless
     server: so.360832.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2208,7 +2208,7 @@ proxies:
     type: vless
     server: yg4.ygkkk.dpdns.org
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2223,7 +2223,7 @@ proxies:
     type: vless
     server: jobsdb.com
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2238,7 +2238,7 @@ proxies:
     type: vless
     server: animal.nuaa.tech
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2253,7 +2253,7 @@ proxies:
     type: vless
     server: p.etime.vip
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2268,7 +2268,7 @@ proxies:
     type: vless
     server: cf.130519.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2283,7 +2283,7 @@ proxies:
     type: vless
     server: www.xflash.vip
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2298,7 +2298,7 @@ proxies:
     type: vless
     server: cfyx.aliyun.20237737.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2313,7 +2313,7 @@ proxies:
     type: vless
     server: play.mc.js.cool
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2328,7 +2328,7 @@ proxies:
     type: vless
     server: 3.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2343,7 +2343,7 @@ proxies:
     type: vless
     server: uac.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2358,7 +2358,7 @@ proxies:
     type: vless
     server: cf1s.cf.3666888.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2373,7 +2373,7 @@ proxies:
     type: vless
     server: cfip-ct.stoeaves.us.ci
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2388,7 +2388,7 @@ proxies:
     type: vless
     server: cfip-avg.stoeaves.us.ci
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2403,7 +2403,7 @@ proxies:
     type: vless
     server: cfsaas.080112.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2418,7 +2418,7 @@ proxies:
     type: vless
     server: cdn.204910.best
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2433,7 +2433,7 @@ proxies:
     type: vless
     server: cf.553314.xyz
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2448,7 +2448,7 @@ proxies:
     type: vless
     server: saas.sin.fan
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2463,7 +2463,7 @@ proxies:
     type: vless
     server: 198.20.133.223
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2478,7 +2478,7 @@ proxies:
     type: vless
     server: 45.136.12.21
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2493,7 +2493,7 @@ proxies:
     type: vless
     server: 45.192.201.197
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2508,7 +2508,7 @@ proxies:
     type: vless
     server: 34.92.48.137
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2523,7 +2523,7 @@ proxies:
     type: vless
     server: 107.150.119.17
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2538,7 +2538,7 @@ proxies:
     type: vless
     server: 149.104.2.187
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2553,7 +2553,7 @@ proxies:
     type: vless
     server: 45.192.201.159
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2568,7 +2568,7 @@ proxies:
     type: vless
     server: 8.210.29.22
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2583,7 +2583,7 @@ proxies:
     type: vless
     server: 122.10.114.43
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2598,7 +2598,7 @@ proxies:
     type: vless
     server: 45.115.124.87
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2613,7 +2613,7 @@ proxies:
     type: vless
     server: 149.104.25.194
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2628,7 +2628,7 @@ proxies:
     type: vless
     server: 103.24.93.91
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2643,7 +2643,7 @@ proxies:
     type: vless
     server: 45.136.14.153
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2658,7 +2658,7 @@ proxies:
     type: vless
     server: 43.247.132.74
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2673,7 +2673,7 @@ proxies:
     type: vless
     server: 108.162.198.84
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2688,7 +2688,7 @@ proxies:
     type: vless
     server: 172.64.52.189
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2703,7 +2703,7 @@ proxies:
     type: vless
     server: 108.162.198.201
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2718,7 +2718,7 @@ proxies:
     type: vless
     server: 172.64.145.202
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2733,7 +2733,7 @@ proxies:
     type: vless
     server: 172.64.157.39
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2748,7 +2748,7 @@ proxies:
     type: vless
     server: 162.159.35.245
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2763,7 +2763,7 @@ proxies:
     type: vless
     server: 172.64.144.222
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2778,7 +2778,7 @@ proxies:
     type: vless
     server: 172.64.145.42
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2793,7 +2793,7 @@ proxies:
     type: vless
     server: 172.64.144.177
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2808,7 +2808,7 @@ proxies:
     type: vless
     server: 104.18.40.163
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2823,7 +2823,7 @@ proxies:
     type: vless
     server: 172.64.158.29
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2838,7 +2838,7 @@ proxies:
     type: vless
     server: 172.64.155.250
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2853,7 +2853,7 @@ proxies:
     type: vless
     server: 172.64.147.110
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2868,7 +2868,7 @@ proxies:
     type: vless
     server: 172.64.147.88
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2883,7 +2883,7 @@ proxies:
     type: vless
     server: 104.18.44.151
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2898,7 +2898,7 @@ proxies:
     type: vless
     server: 104.18.46.111
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2913,7 +2913,7 @@ proxies:
     type: vless
     server: 104.18.45.68
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2928,7 +2928,7 @@ proxies:
     type: vless
     server: 172.64.157.2
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2943,7 +2943,7 @@ proxies:
     type: vless
     server: 172.64.159.151
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2958,7 +2958,7 @@ proxies:
     type: vless
     server: 108.162.198.127
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2973,7 +2973,7 @@ proxies:
     type: vless
     server: 104.18.33.198
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -2988,7 +2988,7 @@ proxies:
     type: vless
     server: 104.18.40.189
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3003,7 +3003,7 @@ proxies:
     type: vless
     server: 172.64.159.7
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3018,7 +3018,7 @@ proxies:
     type: vless
     server: 104.18.33.225
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3033,7 +3033,7 @@ proxies:
     type: vless
     server: 104.18.37.133
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3048,7 +3048,7 @@ proxies:
     type: vless
     server: 104.18.43.246
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3063,7 +3063,7 @@ proxies:
     type: vless
     server: 172.64.159.67
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3078,7 +3078,7 @@ proxies:
     type: vless
     server: 104.18.39.150
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3093,7 +3093,7 @@ proxies:
     type: vless
     server: 104.18.37.7
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3108,7 +3108,7 @@ proxies:
     type: vless
     server: 172.64.156.112
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3123,7 +3123,7 @@ proxies:
     type: vless
     server: 172.64.144.170
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3138,7 +3138,7 @@ proxies:
     type: vless
     server: 104.18.45.223
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3153,7 +3153,7 @@ proxies:
     type: vless
     server: 172.64.154.204
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3168,7 +3168,7 @@ proxies:
     type: vless
     server: 172.64.147.127
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
@@ -3183,7 +3183,7 @@ proxies:
     type: vless
     server: 65.49.236.30
     port: 443
-    uuid: 99ea2764-f1df-4aa8-b01d-0adb42cc2f77
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
     network: ws
     tls: true
     skip-cert-verify: true
