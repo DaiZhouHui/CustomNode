@@ -1,0 +1,1157 @@
+proxies:
+  - name: "旧金山182-8443-美国-216.24.57.18"
+    type: vless
+    server: 216.24.57.18
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山45-8443-美国-216.24.57.16"
+    type: vless
+    server: 216.24.57.16
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山97-2083-美国-216.24.57.1"
+    type: vless
+    server: 216.24.57.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山52-2083-美国-216.24.57.1"
+    type: vless
+    server: 216.24.57.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山50-8443-美国-208.103.161.16"
+    type: vless
+    server: 208.103.161.16
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "Oakland14-8443-美国-199.34.228.79"
+    type: vless
+    server: 199.34.228.79
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "Oakland08-8443-美国-199.34.228.66"
+    type: vless
+    server: 199.34.228.66
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "Oakland15-8443-美国-199.34.228.56"
+    type: vless
+    server: 199.34.228.56
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "Oakland11-8443-美国-199.34.228.48"
+    type: vless
+    server: 199.34.228.48
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "Oakland20-8443-美国-199.34.228.48"
+    type: vless
+    server: 199.34.228.48
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "Oakland26-8443-美国-199.34.228.191"
+    type: vless
+    server: 199.34.228.191
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山10-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山45-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山24-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山149-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山11-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山122-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山19-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山07-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山46-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山25-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山37-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山35-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山32-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山125-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山27-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山02-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山73-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山103-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山36-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山59-8443-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山49-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "旧金山106-2083-美国-198.202.211.1"
+    type: vless
+    server: 198.202.211.1
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀176-2083-美国-141.193.213.11"
+    type: vless
+    server: 141.193.213.11
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀24-2083-美国-141.193.213.11"
+    type: vless
+    server: 141.193.213.11
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀140-2083-美国-141.193.213.11"
+    type: vless
+    server: 141.193.213.11
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀108-2083-美国-141.193.213.11"
+    type: vless
+    server: 141.193.213.11
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀27-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀293-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀507-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀296-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀68-8443-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀660-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀185-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀270-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀115-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀597-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀220-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀543-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀516-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀131-8443-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀254-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀492-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀334-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀214-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀219-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀617-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀325-2083-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 2083
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "奥斯汀125-8443-美国-141.193.213.10"
+    type: vless
+    server: 141.193.213.10
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "拉斯维加斯99-8443-美国-14.102.228.245"
+    type: vless
+    server: 14.102.228.245
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "拉斯维加斯14-8443-美国-14.102.228.184"
+    type: vless
+    server: 14.102.228.184
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "拉斯维加斯69-8443-美国-14.102.228.171"
+    type: vless
+    server: 14.102.228.171
+    port: 8443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "旧金山182-8443-美国-216.24.57.18"
+      - "旧金山45-8443-美国-216.24.57.16"
+      - "旧金山97-2083-美国-216.24.57.1"
+      - "旧金山52-2083-美国-216.24.57.1"
+      - "旧金山50-8443-美国-208.103.161.16"
+      - "Oakland14-8443-美国-199.34.228.79"
+      - "Oakland08-8443-美国-199.34.228.66"
+      - "Oakland15-8443-美国-199.34.228.56"
+      - "Oakland11-8443-美国-199.34.228.48"
+      - "Oakland20-8443-美国-199.34.228.48"
+      - "Oakland26-8443-美国-199.34.228.191"
+      - "旧金山10-2083-美国-198.202.211.1"
+      - "旧金山45-2083-美国-198.202.211.1"
+      - "旧金山24-2083-美国-198.202.211.1"
+      - "旧金山149-2083-美国-198.202.211.1"
+      - "旧金山11-2083-美国-198.202.211.1"
+      - "旧金山122-2083-美国-198.202.211.1"
+      - "旧金山19-2083-美国-198.202.211.1"
+      - "旧金山07-2083-美国-198.202.211.1"
+      - "旧金山46-2083-美国-198.202.211.1"
+      - "旧金山25-2083-美国-198.202.211.1"
+      - "旧金山37-2083-美国-198.202.211.1"
+      - "旧金山35-2083-美国-198.202.211.1"
+      - "旧金山32-2083-美国-198.202.211.1"
+      - "旧金山125-2083-美国-198.202.211.1"
+      - "旧金山27-2083-美国-198.202.211.1"
+      - "旧金山02-2083-美国-198.202.211.1"
+      - "旧金山73-2083-美国-198.202.211.1"
+      - "旧金山103-2083-美国-198.202.211.1"
+      - "旧金山36-2083-美国-198.202.211.1"
+      - "旧金山59-8443-美国-198.202.211.1"
+      - "旧金山49-2083-美国-198.202.211.1"
+      - "旧金山106-2083-美国-198.202.211.1"
+      - "奥斯汀176-2083-美国-141.193.213.11"
+      - "奥斯汀24-2083-美国-141.193.213.11"
+      - "奥斯汀140-2083-美国-141.193.213.11"
+      - "奥斯汀108-2083-美国-141.193.213.11"
+      - "奥斯汀27-2083-美国-141.193.213.10"
+      - "奥斯汀293-2083-美国-141.193.213.10"
+      - "奥斯汀507-2083-美国-141.193.213.10"
+      - "奥斯汀296-2083-美国-141.193.213.10"
+      - "奥斯汀68-8443-美国-141.193.213.10"
+      - "奥斯汀660-2083-美国-141.193.213.10"
+      - "奥斯汀185-2083-美国-141.193.213.10"
+      - "奥斯汀270-2083-美国-141.193.213.10"
+      - "奥斯汀115-2083-美国-141.193.213.10"
+      - "奥斯汀597-2083-美国-141.193.213.10"
+      - "奥斯汀220-2083-美国-141.193.213.10"
+      - "奥斯汀543-2083-美国-141.193.213.10"
+      - "奥斯汀516-2083-美国-141.193.213.10"
+      - "奥斯汀131-8443-美国-141.193.213.10"
+      - "奥斯汀254-2083-美国-141.193.213.10"
+      - "奥斯汀492-2083-美国-141.193.213.10"
+      - "奥斯汀334-2083-美国-141.193.213.10"
+      - "奥斯汀214-2083-美国-141.193.213.10"
+      - "奥斯汀219-2083-美国-141.193.213.10"
+      - "奥斯汀617-2083-美国-141.193.213.10"
+      - "奥斯汀325-2083-美国-141.193.213.10"
+      - "奥斯汀125-8443-美国-141.193.213.10"
+      - "拉斯维加斯99-8443-美国-14.102.228.245"
+      - "拉斯维加斯14-8443-美国-14.102.228.184"
+      - "拉斯维加斯69-8443-美国-14.102.228.171"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "旧金山182-8443-美国-216.24.57.18"
+      - "旧金山45-8443-美国-216.24.57.16"
+      - "旧金山97-2083-美国-216.24.57.1"
+      - "旧金山52-2083-美国-216.24.57.1"
+      - "旧金山50-8443-美国-208.103.161.16"
+      - "Oakland14-8443-美国-199.34.228.79"
+      - "Oakland08-8443-美国-199.34.228.66"
+      - "Oakland15-8443-美国-199.34.228.56"
+      - "Oakland11-8443-美国-199.34.228.48"
+      - "Oakland20-8443-美国-199.34.228.48"
+      - "Oakland26-8443-美国-199.34.228.191"
+      - "旧金山10-2083-美国-198.202.211.1"
+      - "旧金山45-2083-美国-198.202.211.1"
+      - "旧金山24-2083-美国-198.202.211.1"
+      - "旧金山149-2083-美国-198.202.211.1"
+      - "旧金山11-2083-美国-198.202.211.1"
+      - "旧金山122-2083-美国-198.202.211.1"
+      - "旧金山19-2083-美国-198.202.211.1"
+      - "旧金山07-2083-美国-198.202.211.1"
+      - "旧金山46-2083-美国-198.202.211.1"
+      - "旧金山25-2083-美国-198.202.211.1"
+      - "旧金山37-2083-美国-198.202.211.1"
+      - "旧金山35-2083-美国-198.202.211.1"
+      - "旧金山32-2083-美国-198.202.211.1"
+      - "旧金山125-2083-美国-198.202.211.1"
+      - "旧金山27-2083-美国-198.202.211.1"
+      - "旧金山02-2083-美国-198.202.211.1"
+      - "旧金山73-2083-美国-198.202.211.1"
+      - "旧金山103-2083-美国-198.202.211.1"
+      - "旧金山36-2083-美国-198.202.211.1"
+      - "旧金山59-8443-美国-198.202.211.1"
+      - "旧金山49-2083-美国-198.202.211.1"
+      - "旧金山106-2083-美国-198.202.211.1"
+      - "奥斯汀176-2083-美国-141.193.213.11"
+      - "奥斯汀24-2083-美国-141.193.213.11"
+      - "奥斯汀140-2083-美国-141.193.213.11"
+      - "奥斯汀108-2083-美国-141.193.213.11"
+      - "奥斯汀27-2083-美国-141.193.213.10"
+      - "奥斯汀293-2083-美国-141.193.213.10"
+      - "奥斯汀507-2083-美国-141.193.213.10"
+      - "奥斯汀296-2083-美国-141.193.213.10"
+      - "奥斯汀68-8443-美国-141.193.213.10"
+      - "奥斯汀660-2083-美国-141.193.213.10"
+      - "奥斯汀185-2083-美国-141.193.213.10"
+      - "奥斯汀270-2083-美国-141.193.213.10"
+      - "奥斯汀115-2083-美国-141.193.213.10"
+      - "奥斯汀597-2083-美国-141.193.213.10"
+      - "奥斯汀220-2083-美国-141.193.213.10"
+      - "奥斯汀543-2083-美国-141.193.213.10"
+      - "奥斯汀516-2083-美国-141.193.213.10"
+      - "奥斯汀131-8443-美国-141.193.213.10"
+      - "奥斯汀254-2083-美国-141.193.213.10"
+      - "奥斯汀492-2083-美国-141.193.213.10"
+      - "奥斯汀334-2083-美国-141.193.213.10"
+      - "奥斯汀214-2083-美国-141.193.213.10"
+      - "奥斯汀219-2083-美国-141.193.213.10"
+      - "奥斯汀617-2083-美国-141.193.213.10"
+      - "奥斯汀325-2083-美国-141.193.213.10"
+      - "奥斯汀125-8443-美国-141.193.213.10"
+      - "拉斯维加斯99-8443-美国-14.102.228.245"
+      - "拉斯维加斯14-8443-美国-14.102.228.184"
+      - "拉斯维加斯69-8443-美国-14.102.228.171"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "旧金山182-8443-美国-216.24.57.18"
+      - "旧金山45-8443-美国-216.24.57.16"
+      - "旧金山97-2083-美国-216.24.57.1"
+      - "旧金山52-2083-美国-216.24.57.1"
+      - "旧金山50-8443-美国-208.103.161.16"
+      - "Oakland14-8443-美国-199.34.228.79"
+      - "Oakland08-8443-美国-199.34.228.66"
+      - "Oakland15-8443-美国-199.34.228.56"
+      - "Oakland11-8443-美国-199.34.228.48"
+      - "Oakland20-8443-美国-199.34.228.48"
+      - "Oakland26-8443-美国-199.34.228.191"
+      - "旧金山10-2083-美国-198.202.211.1"
+      - "旧金山45-2083-美国-198.202.211.1"
+      - "旧金山24-2083-美国-198.202.211.1"
+      - "旧金山149-2083-美国-198.202.211.1"
+      - "旧金山11-2083-美国-198.202.211.1"
+      - "旧金山122-2083-美国-198.202.211.1"
+      - "旧金山19-2083-美国-198.202.211.1"
+      - "旧金山07-2083-美国-198.202.211.1"
+      - "旧金山46-2083-美国-198.202.211.1"
+      - "旧金山25-2083-美国-198.202.211.1"
+      - "旧金山37-2083-美国-198.202.211.1"
+      - "旧金山35-2083-美国-198.202.211.1"
+      - "旧金山32-2083-美国-198.202.211.1"
+      - "旧金山125-2083-美国-198.202.211.1"
+      - "旧金山27-2083-美国-198.202.211.1"
+      - "旧金山02-2083-美国-198.202.211.1"
+      - "旧金山73-2083-美国-198.202.211.1"
+      - "旧金山103-2083-美国-198.202.211.1"
+      - "旧金山36-2083-美国-198.202.211.1"
+      - "旧金山59-8443-美国-198.202.211.1"
+      - "旧金山49-2083-美国-198.202.211.1"
+      - "旧金山106-2083-美国-198.202.211.1"
+      - "奥斯汀176-2083-美国-141.193.213.11"
+      - "奥斯汀24-2083-美国-141.193.213.11"
+      - "奥斯汀140-2083-美国-141.193.213.11"
+      - "奥斯汀108-2083-美国-141.193.213.11"
+      - "奥斯汀27-2083-美国-141.193.213.10"
+      - "奥斯汀293-2083-美国-141.193.213.10"
+      - "奥斯汀507-2083-美国-141.193.213.10"
+      - "奥斯汀296-2083-美国-141.193.213.10"
+      - "奥斯汀68-8443-美国-141.193.213.10"
+      - "奥斯汀660-2083-美国-141.193.213.10"
+      - "奥斯汀185-2083-美国-141.193.213.10"
+      - "奥斯汀270-2083-美国-141.193.213.10"
+      - "奥斯汀115-2083-美国-141.193.213.10"
+      - "奥斯汀597-2083-美国-141.193.213.10"
+      - "奥斯汀220-2083-美国-141.193.213.10"
+      - "奥斯汀543-2083-美国-141.193.213.10"
+      - "奥斯汀516-2083-美国-141.193.213.10"
+      - "奥斯汀131-8443-美国-141.193.213.10"
+      - "奥斯汀254-2083-美国-141.193.213.10"
+      - "奥斯汀492-2083-美国-141.193.213.10"
+      - "奥斯汀334-2083-美国-141.193.213.10"
+      - "奥斯汀214-2083-美国-141.193.213.10"
+      - "奥斯汀219-2083-美国-141.193.213.10"
+      - "奥斯汀617-2083-美国-141.193.213.10"
+      - "奥斯汀325-2083-美国-141.193.213.10"
+      - "奥斯汀125-8443-美国-141.193.213.10"
+      - "拉斯维加斯99-8443-美国-14.102.228.245"
+      - "拉斯维加斯14-8443-美国-14.102.228.184"
+      - "拉斯维加斯69-8443-美国-14.102.228.171"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
