@@ -8,11 +8,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡25-443-马来西亚-56.68.92.77"
     type: vless
@@ -23,11 +23,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡26-443-马来西亚-56.69.210.70"
     type: vless
@@ -38,11 +38,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡78-443-马来西亚-85.211.247.222"
     type: vless
@@ -53,11 +53,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达177-443-印度尼西亚-16.79.55.124"
     type: vless
@@ -68,11 +68,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡55-443-马来西亚-202.61.72.83"
     type: vless
@@ -83,11 +83,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达91-443-印度尼西亚-23.27.98.114"
     type: vless
@@ -98,11 +98,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达107-443-印度尼西亚-154.205.159.78"
     type: vless
@@ -113,11 +113,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "胡志明市22-443-越南-38.54.14.89"
     type: vless
@@ -128,11 +128,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "苏卡布米01-443-印度尼西亚-103.193.179.158"
     type: vless
@@ -143,11 +143,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "八打灵01-443-马来西亚-202.187.6.85"
     type: vless
@@ -158,11 +158,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "-02-443-越南-185.17.1.208"
     type: vless
@@ -173,11 +173,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡05-443-马来西亚-151.158.1.213"
     type: vless
@@ -188,11 +188,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达60-443-印度尼西亚-45.198.0.230"
     type: vless
@@ -203,11 +203,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "巴淡07-443-印度尼西亚-168.110.200.146"
     type: vless
@@ -218,11 +218,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "-05-443-越南-185.17.1.15"
     type: vless
@@ -233,11 +233,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "巴淡04-443-印度尼西亚-168.110.211.201"
     type: vless
@@ -248,11 +248,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达134-443-印度尼西亚-45.198.0.3"
     type: vless
@@ -263,11 +263,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达195-443-印度尼西亚-43.229.254.71"
     type: vless
@@ -278,11 +278,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "胡志明市15-443-越南-103.229.31.44"
     type: vless
@@ -293,11 +293,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "白金02-443-越南-103.199.18.84"
     type: vless
@@ -308,11 +308,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜02-443-印度尼西亚-193.5.64.7"
     type: vless
@@ -323,11 +323,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜09-443-印度尼西亚-193.5.64.244"
     type: vless
@@ -338,11 +338,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜01-443-印度尼西亚-193.5.64.97"
     type: vless
@@ -353,11 +353,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜06-443-印度尼西亚-193.5.64.239"
     type: vless
@@ -368,11 +368,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜03-443-印度尼西亚-193.5.64.2"
     type: vless
@@ -383,11 +383,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜05-443-印度尼西亚-193.5.64.108"
     type: vless
@@ -398,11 +398,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "河内58-443-越南-103.137.184.172"
     type: vless
@@ -413,11 +413,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达174-443-印度尼西亚-76.13.193.38"
     type: vless
@@ -428,11 +428,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "班达楠榜07-443-印度尼西亚-193.5.64.46"
     type: vless
@@ -443,11 +443,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷153-443-泰国-103.114.201.154"
     type: vless
@@ -458,11 +458,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷146-443-泰国-92.63.180.158"
     type: vless
@@ -473,11 +473,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "河内75-443-越南-165.101.114.172"
     type: vless
@@ -488,11 +488,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷167-443-泰国-119.59.124.95"
     type: vless
@@ -503,11 +503,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达69-443-印度尼西亚-45.198.0.207"
     type: vless
@@ -518,11 +518,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达94-443-印度尼西亚-45.198.0.236"
     type: vless
@@ -533,11 +533,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "河内04-443-越南-123.30.208.136"
     type: vless
@@ -548,11 +548,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "河内42-443-越南-103.6.234.246"
     type: vless
@@ -563,11 +563,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷30-443-泰国-103.114.203.189"
     type: vless
@@ -578,11 +578,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷81-443-泰国-199.21.172.89"
     type: vless
@@ -593,11 +593,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷171-443-泰国-103.107.53.42"
     type: vless
@@ -608,11 +608,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "巴淡02-443-印度尼西亚-168.110.213.88"
     type: vless
@@ -623,11 +623,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷37-443-泰国-103.224.84.7"
     type: vless
@@ -638,11 +638,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷79-443-泰国-199.21.172.154"
     type: vless
@@ -653,11 +653,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "胡志明市19-443-越南-103.161.179.36"
     type: vless
@@ -668,11 +668,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷06-443-泰国-43.229.148.249"
     type: vless
@@ -683,11 +683,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "胡志明市53-443-越南-103.161.179.171"
     type: vless
@@ -698,11 +698,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷24-443-泰国-103.230.123.223"
     type: vless
@@ -713,11 +713,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "卡纳尧01-443-泰国-103.169.67.51"
     type: vless
@@ -728,11 +728,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达43-443-印度尼西亚-43.229.254.182"
     type: vless
@@ -743,11 +743,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷125-443-泰国-103.114.203.3"
     type: vless
@@ -758,11 +758,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "日惹08-443-印度尼西亚-103.153.131.67"
     type: vless
@@ -773,11 +773,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "呵叻01-443-泰国-101.108.49.121"
     type: vless
@@ -788,11 +788,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "胡志明市46-443-越南-103.161.178.215"
     type: vless
@@ -803,11 +803,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达145-443-印度尼西亚-172.232.236.252"
     type: vless
@@ -818,11 +818,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡15-443-马来西亚-166.88.57.206"
     type: vless
@@ -833,11 +833,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达65-443-印度尼西亚-149.129.218.213"
     type: vless
@@ -848,11 +848,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "达拉姆01-443-印度尼西亚-103.150.192.28"
     type: vless
@@ -863,11 +863,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达93-443-印度尼西亚-116.212.73.46"
     type: vless
@@ -878,11 +878,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "吉隆坡33-443-马来西亚-45.195.69.108"
     type: vless
@@ -893,11 +893,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷82-443-泰国-43.173.251.195"
     type: vless
@@ -908,11 +908,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达127-443-印度尼西亚-202.155.95.132"
     type: vless
@@ -923,11 +923,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达12-443-印度尼西亚-172.232.240.6"
     type: vless
@@ -938,11 +938,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷168-443-泰国-27.254.216.110"
     type: vless
@@ -953,11 +953,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "胡志明市50-443-越南-103.150.240.195"
     type: vless
@@ -968,11 +968,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "曼谷145-443-泰国-27.254.83.11"
     type: vless
@@ -983,11 +983,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达135-443-印度尼西亚-147.139.206.174"
     type: vless
@@ -998,11 +998,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "雅加达125-443-印度尼西亚-147.139.201.89"
     type: vless
@@ -1013,11 +1013,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
       path: "/?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
 proxy-groups:
   - name: "🚀 节点选择"
