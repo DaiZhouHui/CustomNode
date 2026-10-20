@@ -12,567 +12,537 @@ proxies:
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-02-ping.ctrl.li'
+  - name: '综合优选-02-cf.godns.cc'
     type: vless
-    server: ping.ctrl.li
+    server: cf.godns.cc
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-03-cf-ip-site.vov.moe'
+  - name: '综合优选-03-ys2046.cv'
     type: vless
-    server: cf-ip-site.vov.moe
+    server: ys2046.cv
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-04-cf.1o.ee'
-    type: vless
-    server: cf.1o.ee
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-05-yg8.ygkkk.dpdns.org'
-    type: vless
-    server: yg8.ygkkk.dpdns.org
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-06-www.galgamex.net'
-    type: vless
-    server: www.galgamex.net
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-07-blog.646474.xyz'
-    type: vless
-    server: blog.646474.xyz
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-08-c.lma.de5.net'
-    type: vless
-    server: c.lma.de5.net
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-09-www.oopt.eu.cc'
+  - name: '综合优选-04-www.oopt.eu.cc'
     type: vless
     server: www.oopt.eu.cc
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-10-cf-cname.xingpingcn.top'
+  - name: '综合优选-05-www.aneko.ink'
     type: vless
-    server: cf-cname.xingpingcn.top
+    server: www.aneko.ink
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-11-chinwa.cf.090227.xyz'
+  - name: '综合优选-06-ctsg.cfyx.aliyun.20237737.xyz'
     type: vless
-    server: chinwa.cf.090227.xyz
+    server: ctsg.cfyx.aliyun.20237737.xyz
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-12-cdn.aneko.ink'
+  - name: '综合优选-07-cdn.aneko.ink'
     type: vless
     server: cdn.aneko.ink
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-13-cfyx.aliyun.20237737.xyz'
+  - name: '综合优选-08-cfyx.aliyun.20237737.xyz'
     type: vless
     server: cfyx.aliyun.20237737.xyz
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-14-3.cf.3666888.xyz'
-    type: vless
-    server: 3.cf.3666888.xyz
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-15-cf-ip-node.vov.moe'
-    type: vless
-    server: cf-ip-node.vov.moe
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-16-cf.vvhan.com'
-    type: vless
-    server: cf.vvhan.com
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-17-cf.xreak.top'
-    type: vless
-    server: cf.xreak.top
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-18-ex.warspite.dpdns.org'
-    type: vless
-    server: ex.warspite.dpdns.org
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '综合优选-19-111.cf.cname.vvhan.com'
+  - name: '综合优选-09-111.cf.cname.vvhan.com'
     type: vless
     server: 111.cf.cname.vvhan.com
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '综合优选-20-8.cf.3666888.xyz'
+  - name: '综合优选-10-ping.ctrl.li'
     type: vless
-    server: 8.cf.3666888.xyz
+    server: ping.ctrl.li
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '电信优选-01-104.18.46.111'
+  - name: '综合优选-11-cdn.2158.cc'
     type: vless
-    server: 104.18.46.111
+    server: cdn.2158.cc
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '电信优选-02-172.64.158.29'
+  - name: '综合优选-12-www.galgamex.net'
     type: vless
-    server: 172.64.158.29
+    server: www.galgamex.net
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '电信优选-03-104.18.44.151'
+  - name: '综合优选-13-cdn.ddeed.de'
     type: vless
-    server: 104.18.44.151
+    server: cdn.ddeed.de
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '电信优选-04-104.18.33.225'
+  - name: '综合优选-14-ip.skk.moe'
     type: vless
-    server: 104.18.33.225
+    server: ip.skk.moe
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '电信优选-05-172.64.147.110'
+  - name: '综合优选-15-yx.cf.090227.xyz'
+    type: vless
+    server: yx.cf.090227.xyz
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '综合优选-16-cfyx.qdqqd.com'
+    type: vless
+    server: cfyx.qdqqd.com
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '综合优选-17-cf-ip-site.vov.moe'
+    type: vless
+    server: cf-ip-site.vov.moe
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '综合优选-18-cf.1o.ee'
+    type: vless
+    server: cf.1o.ee
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '综合优选-19-stores.staples.com'
+    type: vless
+    server: stores.staples.com
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '综合优选-20-blog.646474.xyz'
+    type: vless
+    server: blog.646474.xyz
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '电信优选-01-172.64.147.110'
     type: vless
     server: 172.64.147.110
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '联通优选-01-104.18.236.125'
+  - name: '电信优选-02-172.64.42.1'
     type: vless
-    server: 104.18.236.125
+    server: 172.64.42.1
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '联通优选-02-162.159.129.74'
+  - name: '电信优选-03-104.18.46.111'
     type: vless
-    server: 162.159.129.74
+    server: 104.18.46.111
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '联通优选-03-104.17.154.108'
+  - name: '电信优选-04-104.18.35.200'
     type: vless
-    server: 104.17.154.108
+    server: 104.18.35.200
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '联通优选-05-104.18.40.189'
+  - name: '电信优选-05-172.64.159.79'
     type: vless
-    server: 104.18.40.189
+    server: 172.64.159.79
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '移动优选-01-104.17.116.21'
+  - name: '联通优选-01-104.17.155.92'
     type: vless
-    server: 104.17.116.21
+    server: 104.17.155.92
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '移动优选-02-104.17.117.253'
+  - name: '联通优选-02-104.17.146.69'
     type: vless
-    server: 104.17.117.253
+    server: 104.17.146.69
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '移动优选-03-104.19.44.149'
-    type: vless
-    server: 104.19.44.149
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '移动优选-04-104.19.147.98'
-    type: vless
-    server: 104.19.147.98
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '移动优选-05-104.17.186.123'
-    type: vless
-    server: 104.17.186.123
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '全网优选-01-104.18.40.152'
-    type: vless
-    server: 104.18.40.152
-    port: 443
-    uuid: 99999999-9999-8999-9999-99abcdefabcd
-    cipher: none
-    tls: true
-    servername: node.kyma.dpdns.org
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: node.kyma.dpdns.org
-    udp: true
-
-  - name: '全网优选-02-172.64.156.99'
+  - name: '联通优选-03-172.64.156.99'
     type: vless
     server: 172.64.156.99
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '全网优选-03-104.18.40.77'
+  - name: '联通优选-04-108.162.198.89'
+    type: vless
+    server: 108.162.198.89
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '联通优选-05-104.16.155.182'
+    type: vless
+    server: 104.16.155.182
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '移动优选-01-104.19.44.149'
+    type: vless
+    server: 104.19.44.149
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '移动优选-03-104.18.33.225'
+    type: vless
+    server: 104.18.33.225
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '移动优选-04-104.17.186.123'
+    type: vless
+    server: 104.17.186.123
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '移动优选-05-104.19.36.132'
+    type: vless
+    server: 104.19.36.132
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    cipher: none
+    tls: true
+    servername: s.kyma.dpdns.org
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: s.kyma.dpdns.org
+    udp: true
+
+  - name: '全网优选-02-104.18.40.77'
     type: vless
     server: 104.18.40.77
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
-  - name: '全网优选-05-162.159.60.59'
+  - name: '全网优选-03-104.18.40.152'
     type: vless
-    server: 162.159.60.59
+    server: 104.18.40.152
     port: 443
     uuid: 99999999-9999-8999-9999-99abcdefabcd
     cipher: none
     tls: true
-    servername: node.kyma.dpdns.org
+    servername: s.kyma.dpdns.org
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: node.kyma.dpdns.org
+        Host: s.kyma.dpdns.org
     udp: true
 
 
@@ -585,43 +555,41 @@ proxy-groups:
     lazy: true
     proxies:
       - '综合优选-01-cf.blogluo.eu.org'
-      - '综合优选-02-ping.ctrl.li'
-      - '综合优选-03-cf-ip-site.vov.moe'
-      - '综合优选-04-cf.1o.ee'
-      - '综合优选-05-yg8.ygkkk.dpdns.org'
-      - '综合优选-06-www.galgamex.net'
-      - '综合优选-07-blog.646474.xyz'
-      - '综合优选-08-c.lma.de5.net'
-      - '综合优选-09-www.oopt.eu.cc'
-      - '综合优选-10-cf-cname.xingpingcn.top'
-      - '综合优选-11-chinwa.cf.090227.xyz'
-      - '综合优选-12-cdn.aneko.ink'
-      - '综合优选-13-cfyx.aliyun.20237737.xyz'
-      - '综合优选-14-3.cf.3666888.xyz'
-      - '综合优选-15-cf-ip-node.vov.moe'
-      - '综合优选-16-cf.vvhan.com'
-      - '综合优选-17-cf.xreak.top'
-      - '综合优选-18-ex.warspite.dpdns.org'
-      - '综合优选-19-111.cf.cname.vvhan.com'
-      - '综合优选-20-8.cf.3666888.xyz'
-      - '电信优选-01-104.18.46.111'
-      - '电信优选-02-172.64.158.29'
-      - '电信优选-03-104.18.44.151'
-      - '电信优选-04-104.18.33.225'
-      - '电信优选-05-172.64.147.110'
-      - '联通优选-01-104.18.236.125'
-      - '联通优选-02-162.159.129.74'
-      - '联通优选-03-104.17.154.108'
-      - '联通优选-05-104.18.40.189'
-      - '移动优选-01-104.17.116.21'
-      - '移动优选-02-104.17.117.253'
-      - '移动优选-03-104.19.44.149'
-      - '移动优选-04-104.19.147.98'
-      - '移动优选-05-104.17.186.123'
-      - '全网优选-01-104.18.40.152'
-      - '全网优选-02-172.64.156.99'
-      - '全网优选-03-104.18.40.77'
-      - '全网优选-05-162.159.60.59'
+      - '综合优选-02-cf.godns.cc'
+      - '综合优选-03-ys2046.cv'
+      - '综合优选-04-www.oopt.eu.cc'
+      - '综合优选-05-www.aneko.ink'
+      - '综合优选-06-ctsg.cfyx.aliyun.20237737.xyz'
+      - '综合优选-07-cdn.aneko.ink'
+      - '综合优选-08-cfyx.aliyun.20237737.xyz'
+      - '综合优选-09-111.cf.cname.vvhan.com'
+      - '综合优选-10-ping.ctrl.li'
+      - '综合优选-11-cdn.2158.cc'
+      - '综合优选-12-www.galgamex.net'
+      - '综合优选-13-cdn.ddeed.de'
+      - '综合优选-14-ip.skk.moe'
+      - '综合优选-15-yx.cf.090227.xyz'
+      - '综合优选-16-cfyx.qdqqd.com'
+      - '综合优选-17-cf-ip-site.vov.moe'
+      - '综合优选-18-cf.1o.ee'
+      - '综合优选-19-stores.staples.com'
+      - '综合优选-20-blog.646474.xyz'
+      - '电信优选-01-172.64.147.110'
+      - '电信优选-02-172.64.42.1'
+      - '电信优选-03-104.18.46.111'
+      - '电信优选-04-104.18.35.200'
+      - '电信优选-05-172.64.159.79'
+      - '联通优选-01-104.17.155.92'
+      - '联通优选-02-104.17.146.69'
+      - '联通优选-03-172.64.156.99'
+      - '联通优选-04-108.162.198.89'
+      - '联通优选-05-104.16.155.182'
+      - '移动优选-01-104.19.44.149'
+      - '移动优选-03-104.18.33.225'
+      - '移动优选-04-104.17.186.123'
+      - '移动优选-05-104.19.36.132'
+      - '全网优选-02-104.18.40.77'
+      - '全网优选-03-104.18.40.152'
 
   - name: 📡 手动选择
     type: select
@@ -633,59 +601,57 @@ proxy-groups:
     type: select
     proxies:
       - '综合优选-01-cf.blogluo.eu.org'
-      - '综合优选-02-ping.ctrl.li'
-      - '综合优选-03-cf-ip-site.vov.moe'
-      - '综合优选-04-cf.1o.ee'
-      - '综合优选-05-yg8.ygkkk.dpdns.org'
-      - '综合优选-06-www.galgamex.net'
-      - '综合优选-07-blog.646474.xyz'
-      - '综合优选-08-c.lma.de5.net'
-      - '综合优选-09-www.oopt.eu.cc'
-      - '综合优选-10-cf-cname.xingpingcn.top'
-      - '综合优选-11-chinwa.cf.090227.xyz'
-      - '综合优选-12-cdn.aneko.ink'
-      - '综合优选-13-cfyx.aliyun.20237737.xyz'
-      - '综合优选-14-3.cf.3666888.xyz'
-      - '综合优选-15-cf-ip-node.vov.moe'
-      - '综合优选-16-cf.vvhan.com'
-      - '综合优选-17-cf.xreak.top'
-      - '综合优选-18-ex.warspite.dpdns.org'
-      - '综合优选-19-111.cf.cname.vvhan.com'
-      - '综合优选-20-8.cf.3666888.xyz'
+      - '综合优选-02-cf.godns.cc'
+      - '综合优选-03-ys2046.cv'
+      - '综合优选-04-www.oopt.eu.cc'
+      - '综合优选-05-www.aneko.ink'
+      - '综合优选-06-ctsg.cfyx.aliyun.20237737.xyz'
+      - '综合优选-07-cdn.aneko.ink'
+      - '综合优选-08-cfyx.aliyun.20237737.xyz'
+      - '综合优选-09-111.cf.cname.vvhan.com'
+      - '综合优选-10-ping.ctrl.li'
+      - '综合优选-11-cdn.2158.cc'
+      - '综合优选-12-www.galgamex.net'
+      - '综合优选-13-cdn.ddeed.de'
+      - '综合优选-14-ip.skk.moe'
+      - '综合优选-15-yx.cf.090227.xyz'
+      - '综合优选-16-cfyx.qdqqd.com'
+      - '综合优选-17-cf-ip-site.vov.moe'
+      - '综合优选-18-cf.1o.ee'
+      - '综合优选-19-stores.staples.com'
+      - '综合优选-20-blog.646474.xyz'
 
   - name: 电信优选
     type: select
     proxies:
-      - '电信优选-01-104.18.46.111'
-      - '电信优选-02-172.64.158.29'
-      - '电信优选-03-104.18.44.151'
-      - '电信优选-04-104.18.33.225'
-      - '电信优选-05-172.64.147.110'
+      - '电信优选-01-172.64.147.110'
+      - '电信优选-02-172.64.42.1'
+      - '电信优选-03-104.18.46.111'
+      - '电信优选-04-104.18.35.200'
+      - '电信优选-05-172.64.159.79'
 
   - name: 联通优选
     type: select
     proxies:
-      - '联通优选-01-104.18.236.125'
-      - '联通优选-02-162.159.129.74'
-      - '联通优选-03-104.17.154.108'
-      - '联通优选-05-104.18.40.189'
+      - '联通优选-01-104.17.155.92'
+      - '联通优选-02-104.17.146.69'
+      - '联通优选-03-172.64.156.99'
+      - '联通优选-04-108.162.198.89'
+      - '联通优选-05-104.16.155.182'
 
   - name: 移动优选
     type: select
     proxies:
-      - '移动优选-01-104.17.116.21'
-      - '移动优选-02-104.17.117.253'
-      - '移动优选-03-104.19.44.149'
-      - '移动优选-04-104.19.147.98'
-      - '移动优选-05-104.17.186.123'
+      - '移动优选-01-104.19.44.149'
+      - '移动优选-03-104.18.33.225'
+      - '移动优选-04-104.17.186.123'
+      - '移动优选-05-104.19.36.132'
 
   - name: 全网优选
     type: select
     proxies:
-      - '全网优选-01-104.18.40.152'
-      - '全网优选-02-172.64.156.99'
-      - '全网优选-03-104.18.40.77'
-      - '全网优选-05-162.159.60.59'
+      - '全网优选-02-104.18.40.77'
+      - '全网优选-03-104.18.40.152'
 
   - name: 🌍 国外网站
     type: select
