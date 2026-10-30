@@ -8,11 +8,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩233-443-瑞典-213.21.254.182"
     type: vless
@@ -23,11 +23,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹53-443-荷兰-176.119.141.154"
     type: vless
@@ -38,11 +38,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩285-443-瑞典-109.120.156.132"
     type: vless
@@ -53,11 +53,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩264-443-瑞典-213.21.251.165"
     type: vless
@@ -68,11 +68,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩296-443-瑞典-213.176.116.153"
     type: vless
@@ -83,11 +83,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩125-443-瑞典-213.176.118.7"
     type: vless
@@ -98,11 +98,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩288-443-瑞典-109.120.135.7"
     type: vless
@@ -113,11 +113,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩176-443-瑞典-159.194.197.162"
     type: vless
@@ -128,11 +128,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩282-443-瑞典-109.120.135.18"
     type: vless
@@ -143,11 +143,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩400-443-瑞典-89.22.227.64"
     type: vless
@@ -158,11 +158,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩174-443-瑞典-138.124.25.98"
     type: vless
@@ -173,11 +173,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩243-443-瑞典-138.124.35.154"
     type: vless
@@ -188,11 +188,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹175-443-荷兰-185.239.227.131"
     type: vless
@@ -203,11 +203,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩95-443-瑞典-77.221.141.10"
     type: vless
@@ -218,11 +218,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "奥伯阿斯巴赫02-443-德国-13.140.17.121"
     type: vless
@@ -233,11 +233,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩16-443-瑞典-213.165.35.39"
     type: vless
@@ -248,11 +248,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹67-443-荷兰-77.233.212.252"
     type: vless
@@ -263,11 +263,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩310-443-瑞典-213.165.32.178"
     type: vless
@@ -278,11 +278,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹79-443-荷兰-95.85.26.96"
     type: vless
@@ -293,11 +293,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "-04-443-瑞典-185.103.101.208"
     type: vless
@@ -308,11 +308,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩10-443-瑞典-213.165.33.238"
     type: vless
@@ -323,11 +323,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩131-443-瑞典-193.23.200.241"
     type: vless
@@ -338,11 +338,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "哈格维克04-443-瑞典-77.232.143.61"
     type: vless
@@ -353,11 +353,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福98-443-德国-144.31.126.32"
     type: vless
@@ -368,11 +368,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹172-443-荷兰-194.87.130.52"
     type: vless
@@ -383,11 +383,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩374-443-瑞典-213.176.118.16"
     type: vless
@@ -398,11 +398,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹282-443-荷兰-153.56.178.196"
     type: vless
@@ -413,11 +413,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹93-443-荷兰-199.217.99.226"
     type: vless
@@ -428,11 +428,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩49-443-瑞典-138.124.127.58"
     type: vless
@@ -443,11 +443,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "伊森堡01-443-德国-194.77.71.203"
     type: vless
@@ -458,11 +458,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩123-443-瑞典-213.165.33.192"
     type: vless
@@ -473,11 +473,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹196-443-荷兰-198.13.159.105"
     type: vless
@@ -488,11 +488,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹161-443-荷兰-159.223.236.154"
     type: vless
@@ -503,11 +503,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹75-443-荷兰-188.226.186.226"
     type: vless
@@ -518,11 +518,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "梅珀尔05-443-荷兰-195.246.110.206"
     type: vless
@@ -533,11 +533,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "纳卡01-443-瑞典-153.92.127.26"
     type: vless
@@ -548,11 +548,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "温斯霍滕01-443-荷兰-195.133.79.30"
     type: vless
@@ -563,11 +563,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹119-443-荷兰-188.166.60.219"
     type: vless
@@ -578,11 +578,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹120-443-荷兰-72.56.96.85"
     type: vless
@@ -593,11 +593,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹334-443-荷兰-153.56.178.195"
     type: vless
@@ -608,11 +608,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩245-443-瑞典-45.153.187.164"
     type: vless
@@ -623,11 +623,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹220-443-荷兰-5.35.46.168"
     type: vless
@@ -638,11 +638,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹60-443-荷兰-95.85.11.110"
     type: vless
@@ -653,11 +653,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹86-443-荷兰-95.85.20.191"
     type: vless
@@ -668,11 +668,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福18-443-德国-147.45.199.136"
     type: vless
@@ -683,11 +683,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹244-443-荷兰-72.56.80.109"
     type: vless
@@ -698,11 +698,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹257-443-荷兰-147.45.224.33"
     type: vless
@@ -713,11 +713,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹355-443-荷兰-45.123.42.130"
     type: vless
@@ -728,11 +728,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹376-443-荷兰-89.19.217.85"
     type: vless
@@ -743,11 +743,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹103-443-荷兰-77.105.138.217"
     type: vless
@@ -758,11 +758,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹150-443-荷兰-185.117.73.201"
     type: vless
@@ -773,11 +773,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹192-443-荷兰-172.235.175.131"
     type: vless
@@ -788,11 +788,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹43-443-荷兰-162.252.199.198"
     type: vless
@@ -803,11 +803,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹100-443-荷兰-72.56.71.216"
     type: vless
@@ -818,11 +818,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹122-443-荷兰-89.124.96.245"
     type: vless
@@ -833,11 +833,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹142-443-荷兰-37.139.16.85"
     type: vless
@@ -848,11 +848,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹234-443-荷兰-213.247.46.212"
     type: vless
@@ -863,11 +863,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹261-443-荷兰-153.80.246.79"
     type: vless
@@ -878,11 +878,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩221-443-瑞典-89.106.7.60"
     type: vless
@@ -893,11 +893,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩112-443-瑞典-77.221.142.53"
     type: vless
@@ -908,11 +908,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹387-443-荷兰-37.139.21.144"
     type: vless
@@ -923,11 +923,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩113-443-瑞典-213.113.53.149"
     type: vless
@@ -938,11 +938,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩232-443-瑞典-185.130.46.107"
     type: vless
@@ -953,11 +953,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩315-443-瑞典-89.106.7.59"
     type: vless
@@ -968,11 +968,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福35-443-德国-178.128.198.28"
     type: vless
@@ -983,11 +983,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩155-443-瑞典-185.58.115.116"
     type: vless
@@ -998,11 +998,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿尔德雷01-443-瑞典-194.104.94.214"
     type: vless
@@ -1013,11 +1013,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福156-443-德国-94.159.103.71"
     type: vless
@@ -1028,11 +1028,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩380-443-瑞典-193.181.218.17"
     type: vless
@@ -1043,11 +1043,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩67-443-瑞典-89.106.7.131"
     type: vless
@@ -1058,11 +1058,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹366-443-荷兰-174.138.8.155"
     type: vless
@@ -1073,11 +1073,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯科讷01-443-瑞典-85.155.190.167"
     type: vless
@@ -1088,11 +1088,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹232-443-荷兰-80.74.31.211"
     type: vless
@@ -1103,11 +1103,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹312-443-荷兰-89.124.88.85"
     type: vless
@@ -1118,11 +1118,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹354-443-荷兰-167.172.37.164"
     type: vless
@@ -1133,11 +1133,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹54-443-荷兰-146.185.165.104"
     type: vless
@@ -1148,11 +1148,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹279-443-荷兰-188.166.113.130"
     type: vless
@@ -1163,11 +1163,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹83-443-荷兰-95.81.102.54"
     type: vless
@@ -1178,11 +1178,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩142-443-瑞典-109.120.156.251"
     type: vless
@@ -1193,11 +1193,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹409-443-荷兰-82.38.71.240"
     type: vless
@@ -1208,11 +1208,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福128-443-德国-144.31.186.202"
     type: vless
@@ -1223,11 +1223,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福72-443-德国-161.35.29.96"
     type: vless
@@ -1238,11 +1238,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩100-443-瑞典-148.253.211.51"
     type: vless
@@ -1253,11 +1253,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩12-443-瑞典-77.91.86.25"
     type: vless
@@ -1268,11 +1268,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福21-443-德国-95.181.174.47"
     type: vless
@@ -1283,11 +1283,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹178-443-荷兰-188.226.190.80"
     type: vless
@@ -1298,11 +1298,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩331-443-瑞典-89.106.7.51"
     type: vless
@@ -1313,11 +1313,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹294-443-荷兰-82.196.7.192"
     type: vless
@@ -1328,11 +1328,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹327-443-荷兰-78.40.196.154"
     type: vless
@@ -1343,11 +1343,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福132-443-德国-77.239.97.48"
     type: vless
@@ -1358,11 +1358,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "马尔默03-443-瑞典-45.142.140.132"
     type: vless
@@ -1373,11 +1373,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福154-443-德国-159.89.28.70"
     type: vless
@@ -1388,11 +1388,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹377-443-荷兰-5.129.213.182"
     type: vless
@@ -1403,11 +1403,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹25-443-荷兰-146.103.102.102"
     type: vless
@@ -1418,11 +1418,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "卢森堡16-443-卢森堡-188.42.54.88"
     type: vless
@@ -1433,11 +1433,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹118-443-荷兰-89.124.64.176"
     type: vless
@@ -1448,11 +1448,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹30-443-荷兰-194.58.223.165"
     type: vless
@@ -1463,11 +1463,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福159-443-德国-68.183.213.79"
     type: vless
@@ -1478,11 +1478,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福79-443-德国-178.17.50.168"
     type: vless
@@ -1493,11 +1493,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹90-443-荷兰-153.56.178.58"
     type: vless
@@ -1508,11 +1508,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹94-443-荷兰-95.85.47.161"
     type: vless
@@ -1523,11 +1523,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹392-443-荷兰-37.139.2.248"
     type: vless
@@ -1538,11 +1538,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福32-443-德国-172.86.70.23"
     type: vless
@@ -1553,11 +1553,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹204-443-荷兰-146.185.170.10"
     type: vless
@@ -1568,11 +1568,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹347-443-荷兰-153.56.135.188"
     type: vless
@@ -1583,11 +1583,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩156-443-瑞典-193.180.215.69"
     type: vless
@@ -1598,11 +1598,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹09-443-荷兰-45.123.42.131"
     type: vless
@@ -1613,11 +1613,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹113-443-荷兰-144.31.26.242"
     type: vless
@@ -1628,11 +1628,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹240-443-荷兰-146.19.248.210"
     type: vless
@@ -1643,11 +1643,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹338-443-荷兰-37.139.3.120"
     type: vless
@@ -1658,11 +1658,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹374-443-荷兰-206.189.9.97"
     type: vless
@@ -1673,11 +1673,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹320-443-荷兰-37.139.2.218"
     type: vless
@@ -1688,11 +1688,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "卢森堡20-443-卢森堡-104.244.76.55"
     type: vless
@@ -1703,11 +1703,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩222-443-瑞典-45.82.13.186"
     type: vless
@@ -1718,11 +1718,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹152-443-荷兰-85.192.40.42"
     type: vless
@@ -1733,11 +1733,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹310-443-荷兰-23.254.225.251"
     type: vless
@@ -1748,11 +1748,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹346-443-荷兰-37.139.11.97"
     type: vless
@@ -1763,11 +1763,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹399-443-荷兰-62.238.36.44"
     type: vless
@@ -1778,11 +1778,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹164-443-荷兰-95.179.180.189"
     type: vless
@@ -1793,11 +1793,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹230-443-荷兰-23.168.72.227"
     type: vless
@@ -1808,11 +1808,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹226-443-荷兰-5.253.189.215"
     type: vless
@@ -1823,11 +1823,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹253-443-荷兰-170.168.27.29"
     type: vless
@@ -1838,11 +1838,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹95-443-荷兰-95.85.21.194"
     type: vless
@@ -1853,11 +1853,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福171-443-德国-167.172.163.157"
     type: vless
@@ -1868,11 +1868,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹11-443-荷兰-188.226.155.159"
     type: vless
@@ -1883,11 +1883,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹16-443-荷兰-188.166.117.16"
     type: vless
@@ -1898,11 +1898,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹264-443-荷兰-5.101.104.65"
     type: vless
@@ -1913,11 +1913,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福126-443-德国-161.35.66.173"
     type: vless
@@ -1928,11 +1928,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福124-443-德国-134.122.93.75"
     type: vless
@@ -1943,11 +1943,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯潘加20-443-瑞典-203.12.31.133"
     type: vless
@@ -1958,11 +1958,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹69-443-荷兰-146.185.170.67"
     type: vless
@@ -1973,11 +1973,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩274-443-瑞典-95.111.208.40"
     type: vless
@@ -1988,11 +1988,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹290-443-荷兰-144.124.228.220"
     type: vless
@@ -2003,11 +2003,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹306-443-荷兰-188.241.196.180"
     type: vless
@@ -2018,11 +2018,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹42-443-荷兰-188.166.17.204"
     type: vless
@@ -2033,11 +2033,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩225-443-瑞典-193.180.209.28"
     type: vless
@@ -2048,11 +2048,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹121-443-荷兰-212.34.149.23"
     type: vless
@@ -2063,11 +2063,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿森02-443-荷兰-45.149.234.112"
     type: vless
@@ -2078,11 +2078,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹404-443-荷兰-5.22.210.5"
     type: vless
@@ -2093,11 +2093,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹41-443-荷兰-192.81.223.48"
     type: vless
@@ -2108,11 +2108,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "卢森堡21-443-卢森堡-45.136.117.194"
     type: vless
@@ -2123,11 +2123,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹397-443-荷兰-45.133.117.147"
     type: vless
@@ -2138,11 +2138,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩406-443-瑞典-94.242.59.208"
     type: vless
@@ -2153,11 +2153,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹268-443-荷兰-185.94.165.172"
     type: vless
@@ -2168,11 +2168,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹412-443-荷兰-95.85.25.127"
     type: vless
@@ -2183,11 +2183,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福166-443-德国-130.61.254.55"
     type: vless
@@ -2198,11 +2198,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍夫多普02-443-荷兰-145.63.135.117"
     type: vless
@@ -2213,11 +2213,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福123-443-德国-193.135.137.159"
     type: vless
@@ -2228,11 +2228,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "纽伦堡06-443-德国-128.140.73.159"
     type: vless
@@ -2243,11 +2243,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩246-443-瑞典-193.181.213.180"
     type: vless
@@ -2258,11 +2258,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩78-443-瑞典-193.180.209.85"
     type: vless
@@ -2273,11 +2273,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯潘加07-443-瑞典-70.34.194.51"
     type: vless
@@ -2288,11 +2288,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "韦克舍01-443-瑞典-171.25.158.112"
     type: vless
@@ -2303,11 +2303,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "鹿特丹02-443-荷兰-81.85.76.11"
     type: vless
@@ -2318,11 +2318,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法尔肯施泰因04-443-德国-116.202.25.67"
     type: vless
@@ -2333,11 +2333,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿尔克马尔01-443-荷兰-5.255.109.47"
     type: vless
@@ -2348,11 +2348,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿尔克马尔02-443-荷兰-5.255.104.230"
     type: vless
@@ -2363,11 +2363,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩263-443-瑞典-46.246.90.78"
     type: vless
@@ -2378,11 +2378,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩329-443-瑞典-188.126.77.149"
     type: vless
@@ -2393,11 +2393,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩390-443-瑞典-45.82.13.147"
     type: vless
@@ -2408,11 +2408,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩17-443-瑞典-62.182.198.45"
     type: vless
@@ -2423,11 +2423,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿尔克马尔03-443-荷兰-5.255.120.26"
     type: vless
@@ -2438,11 +2438,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "迪特基兴01-443-德国-57.129.71.102"
     type: vless
@@ -2453,11 +2453,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "杜塞尔多夫02-443-德国-45.131.153.12"
     type: vless
@@ -2468,11 +2468,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "埃斯滕费尔德03-443-德国-45.90.98.166"
     type: vless
@@ -2483,11 +2483,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "贡岑豪森03-443-德国-178.105.49.103"
     type: vless
@@ -2498,11 +2498,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿尔克马尔04-443-荷兰-5.2.75.247"
     type: vless
@@ -2513,11 +2513,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "梅珀尔01-443-荷兰-89.42.142.72"
     type: vless
@@ -2528,11 +2528,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "萨尔布吕肯01-443-德国-135.125.228.64"
     type: vless
@@ -2543,11 +2543,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩396-443-瑞典-46.246.92.242"
     type: vless
@@ -2558,11 +2558,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯潘加08-443-瑞典-70.34.214.205"
     type: vless
@@ -2573,11 +2573,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "德肯普夫龙01-443-德国-45.13.227.188"
     type: vless
@@ -2588,11 +2588,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "马尔默04-443-瑞典-80.78.31.41"
     type: vless
@@ -2603,11 +2603,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩148-443-瑞典-37.203.209.50"
     type: vless
@@ -2618,11 +2618,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹216-443-荷兰-95.164.92.236"
     type: vless
@@ -2633,11 +2633,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯潘加18-443-瑞典-70.34.209.109"
     type: vless
@@ -2648,11 +2648,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯德哥尔摩32-443-瑞典-193.180.213.33"
     type: vless
@@ -2663,11 +2663,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "纳尔德韦克04-443-荷兰-85.136.112.89"
     type: vless
@@ -2678,11 +2678,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福66-443-德国-209.250.239.228"
     type: vless
@@ -2693,11 +2693,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "埃斯滕费尔德01-443-德国-45.90.98.9"
     type: vless
@@ -2708,11 +2708,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "赫尔辛堡03-443-瑞典-155.4.244.232"
     type: vless
@@ -2723,11 +2723,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "卡尔斯鲁厄02-443-德国-5.45.100.123"
     type: vless
@@ -2738,11 +2738,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "纳尔德韦克05-443-荷兰-175.110.122.44"
     type: vless
@@ -2753,11 +2753,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯潘加11-443-瑞典-70.34.211.108"
     type: vless
@@ -2768,11 +2768,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "孔特恩01-443-卢森堡-31.184.244.212"
     type: vless
@@ -2783,11 +2783,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹280-443-荷兰-204.168.211.37"
     type: vless
@@ -2798,11 +2798,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "哈勒姆01-443-荷兰-136.0.141.222"
     type: vless
@@ -2813,11 +2813,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹247-443-荷兰-51.158.252.55"
     type: vless
@@ -2828,11 +2828,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹350-443-荷兰-84.32.101.212"
     type: vless
@@ -2843,11 +2843,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "埃施博恩01-443-德国-89.44.198.180"
     type: vless
@@ -2858,11 +2858,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹407-443-荷兰-185.81.115.80"
     type: vless
@@ -2873,11 +2873,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "凯泽斯劳滕01-443-德国-131.246.53.124"
     type: vless
@@ -2888,11 +2888,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹114-443-荷兰-158.101.216.230"
     type: vless
@@ -2903,11 +2903,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "斯潘加09-443-瑞典-70.34.216.147"
     type: vless
@@ -2918,11 +2918,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福25-443-德国-194.169.54.92"
     type: vless
@@ -2933,11 +2933,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹21-443-荷兰-188.42.88.12"
     type: vless
@@ -2948,11 +2948,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福147-443-德国-172.236.213.35"
     type: vless
@@ -2963,11 +2963,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "埃斯滕费尔德02-443-德国-45.90.98.144"
     type: vless
@@ -2978,11 +2978,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹36-443-荷兰-188.42.88.8"
     type: vless
@@ -2993,11 +2993,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福70-443-德国-37.221.93.186"
     type: vless
@@ -3008,11 +3008,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆08-443-荷兰-193.22.229.40"
     type: vless
@@ -3023,11 +3023,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "鹿特丹07-443-荷兰-193.227.99.241"
     type: vless
@@ -3038,11 +3038,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹33-443-荷兰-188.42.145.245"
     type: vless
@@ -3053,11 +3053,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹174-443-荷兰-188.42.88.106"
     type: vless
@@ -3068,11 +3068,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹228-443-荷兰-185.207.196.69"
     type: vless
@@ -3083,11 +3083,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福04-443-德国-194.156.26.250"
     type: vless
@@ -3098,11 +3098,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹104-443-荷兰-185.207.197.76"
     type: vless
@@ -3113,11 +3113,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹202-443-荷兰-154.194.0.27"
     type: vless
@@ -3128,11 +3128,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹332-443-荷兰-185.207.197.3"
     type: vless
@@ -3143,11 +3143,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹286-443-荷兰-154.194.0.205"
     type: vless
@@ -3158,11 +3158,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹82-443-荷兰-188.42.88.61"
     type: vless
@@ -3173,11 +3173,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "纳尔德韦克03-443-荷兰-181.214.1.88"
     type: vless
@@ -3188,11 +3188,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹154-443-荷兰-185.207.197.70"
     type: vless
@@ -3203,11 +3203,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹322-443-荷兰-185.207.196.94"
     type: vless
@@ -3218,11 +3218,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹383-443-荷兰-154.194.0.182"
     type: vless
@@ -3233,11 +3233,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩03-443-荷兰-45.149.12.233"
     type: vless
@@ -3248,11 +3248,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹105-443-荷兰-185.207.197.7"
     type: vless
@@ -3263,11 +3263,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹176-443-荷兰-188.42.88.30"
     type: vless
@@ -3278,11 +3278,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹198-443-荷兰-185.207.196.1"
     type: vless
@@ -3293,11 +3293,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹276-443-荷兰-185.207.198.87"
     type: vless
@@ -3308,11 +3308,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹285-443-荷兰-185.207.197.80"
     type: vless
@@ -3323,11 +3323,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹293-443-荷兰-154.194.0.217"
     type: vless
@@ -3338,11 +3338,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹361-443-荷兰-154.194.0.255"
     type: vless
@@ -3353,11 +3353,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福15-443-德国-194.156.26.235"
     type: vless
@@ -3368,11 +3368,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福31-443-德国-194.156.26.204"
     type: vless
@@ -3383,11 +3383,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "鹿特丹01-443-荷兰-193.227.99.161"
     type: vless
@@ -3398,11 +3398,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹117-443-荷兰-185.207.196.245"
     type: vless
@@ -3413,11 +3413,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹155-443-荷兰-188.42.89.123"
     type: vless
@@ -3428,11 +3428,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹269-443-荷兰-185.207.196.3"
     type: vless
@@ -3443,11 +3443,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹305-443-荷兰-154.194.0.210"
     type: vless
@@ -3458,11 +3458,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹379-443-荷兰-188.42.89.165"
     type: vless
@@ -3473,11 +3473,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福145-443-德国-193.9.49.14"
     type: vless
@@ -3488,11 +3488,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福46-443-德国-156.243.246.90"
     type: vless
@@ -3503,11 +3503,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆02-443-荷兰-193.22.229.10"
     type: vless
@@ -3518,11 +3518,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "纳尔德韦克02-443-荷兰-181.214.1.6"
     type: vless
@@ -3533,11 +3533,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩05-443-荷兰-45.149.12.49"
     type: vless
@@ -3548,11 +3548,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩08-443-荷兰-45.149.12.136"
     type: vless
@@ -3563,11 +3563,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹160-443-荷兰-188.42.89.232"
     type: vless
@@ -3578,11 +3578,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹324-443-荷兰-154.194.0.254"
     type: vless
@@ -3593,11 +3593,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹342-443-荷兰-188.42.145.43"
     type: vless
@@ -3608,11 +3608,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹367-443-荷兰-154.194.0.175"
     type: vless
@@ -3623,11 +3623,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹378-443-荷兰-188.42.88.84"
     type: vless
@@ -3638,11 +3638,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹381-443-荷兰-188.42.88.13"
     type: vless
@@ -3653,11 +3653,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "-07-443-德国-154.197.65.243"
     type: vless
@@ -3668,11 +3668,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹169-443-荷兰-188.42.89.214"
     type: vless
@@ -3683,11 +3683,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹259-443-荷兰-188.42.88.105"
     type: vless
@@ -3698,11 +3698,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹405-443-荷兰-188.42.88.6"
     type: vless
@@ -3713,11 +3713,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹65-443-荷兰-185.207.197.78"
     type: vless
@@ -3728,11 +3728,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹81-443-荷兰-188.42.88.95"
     type: vless
@@ -3743,11 +3743,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆06-443-荷兰-193.22.229.74"
     type: vless
@@ -3758,11 +3758,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "鹿特丹03-443-荷兰-193.227.99.224"
     type: vless
@@ -3773,11 +3773,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹203-443-荷兰-154.194.0.77"
     type: vless
@@ -3788,11 +3788,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹217-443-荷兰-188.42.145.85"
     type: vless
@@ -3803,11 +3803,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹267-443-荷兰-188.42.89.171"
     type: vless
@@ -3818,11 +3818,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹317-443-荷兰-154.194.0.9"
     type: vless
@@ -3833,11 +3833,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福140-443-德国-193.9.49.26"
     type: vless
@@ -3848,11 +3848,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福58-443-德国-194.156.26.220"
     type: vless
@@ -3863,11 +3863,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹08-443-荷兰-188.42.88.99"
     type: vless
@@ -3878,11 +3878,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹333-443-荷兰-154.194.0.174"
     type: vless
@@ -3893,11 +3893,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹344-443-荷兰-188.42.89.247"
     type: vless
@@ -3908,11 +3908,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹408-443-荷兰-154.194.0.213"
     type: vless
@@ -3923,11 +3923,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹55-443-荷兰-185.207.196.206"
     type: vless
@@ -3938,11 +3938,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹62-443-荷兰-188.42.145.244"
     type: vless
@@ -3953,11 +3953,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹76-443-荷兰-188.42.145.173"
     type: vless
@@ -3968,11 +3968,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆05-443-荷兰-193.22.229.71"
     type: vless
@@ -3983,11 +3983,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹227-443-荷兰-154.194.0.83"
     type: vless
@@ -3998,11 +3998,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹24-443-荷兰-188.42.145.246"
     type: vless
@@ -4013,11 +4013,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹329-443-荷兰-154.194.0.230"
     type: vless
@@ -4028,11 +4028,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹330-443-荷兰-185.207.196.92"
     type: vless
@@ -4043,11 +4043,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹362-443-荷兰-154.194.0.253"
     type: vless
@@ -4058,11 +4058,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福119-443-德国-156.243.246.66"
     type: vless
@@ -4073,11 +4073,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩07-443-荷兰-45.149.12.210"
     type: vless
@@ -4088,11 +4088,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩09-443-荷兰-45.149.12.105"
     type: vless
@@ -4103,11 +4103,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹112-443-荷兰-188.42.89.248"
     type: vless
@@ -4118,11 +4118,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹116-443-荷兰-188.42.88.17"
     type: vless
@@ -4133,11 +4133,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹124-443-荷兰-185.207.196.68"
     type: vless
@@ -4148,11 +4148,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹151-443-荷兰-188.42.88.9"
     type: vless
@@ -4163,11 +4163,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹158-443-荷兰-188.42.89.208"
     type: vless
@@ -4178,11 +4178,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹262-443-荷兰-185.207.197.41"
     type: vless
@@ -4193,11 +4193,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹271-443-荷兰-188.42.89.180"
     type: vless
@@ -4208,11 +4208,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹275-443-荷兰-185.207.196.91"
     type: vless
@@ -4223,11 +4223,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹369-443-荷兰-154.194.0.233"
     type: vless
@@ -4238,11 +4238,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹63-443-荷兰-188.42.89.124"
     type: vless
@@ -4253,11 +4253,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹66-443-荷兰-188.42.88.48"
     type: vless
@@ -4268,11 +4268,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福180-443-德国-155.212.240.220"
     type: vless
@@ -4283,11 +4283,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "鹿特丹04-443-荷兰-193.227.99.170"
     type: vless
@@ -4298,11 +4298,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹01-443-荷兰-188.42.145.222"
     type: vless
@@ -4313,11 +4313,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹107-443-荷兰-188.42.89.185"
     type: vless
@@ -4328,11 +4328,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹125-443-荷兰-154.194.0.136"
     type: vless
@@ -4343,11 +4343,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹351-443-荷兰-154.194.0.234"
     type: vless
@@ -4358,11 +4358,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹91-443-荷兰-188.42.89.182"
     type: vless
@@ -4373,11 +4373,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹96-443-荷兰-185.207.196.60"
     type: vless
@@ -4388,11 +4388,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹97-443-荷兰-185.207.199.43"
     type: vless
@@ -4403,11 +4403,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福06-443-德国-193.9.49.19"
     type: vless
@@ -4418,11 +4418,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩02-443-荷兰-45.149.12.106"
     type: vless
@@ -4433,11 +4433,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹07-443-荷兰-185.207.198.204"
     type: vless
@@ -4448,11 +4448,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹193-443-荷兰-188.42.89.176"
     type: vless
@@ -4463,11 +4463,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹272-443-荷兰-154.194.0.2"
     type: vless
@@ -4478,11 +4478,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹406-443-荷兰-188.42.89.138"
     type: vless
@@ -4493,11 +4493,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹98-443-荷兰-185.207.196.80"
     type: vless
@@ -4508,11 +4508,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆07-443-荷兰-193.22.229.145"
     type: vless
@@ -4523,11 +4523,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹10-443-荷兰-188.42.89.162"
     type: vless
@@ -4538,11 +4538,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹133-443-荷兰-188.42.89.160"
     type: vless
@@ -4553,11 +4553,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹190-443-荷兰-185.207.197.21"
     type: vless
@@ -4568,11 +4568,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹191-443-荷兰-188.42.89.179"
     type: vless
@@ -4583,11 +4583,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹194-443-荷兰-188.42.89.150"
     type: vless
@@ -4598,11 +4598,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹248-443-荷兰-185.207.196.50"
     type: vless
@@ -4613,11 +4613,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹254-443-荷兰-154.194.0.63"
     type: vless
@@ -4628,11 +4628,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹255-443-荷兰-185.207.196.163"
     type: vless
@@ -4643,11 +4643,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹380-443-荷兰-188.42.89.193"
     type: vless
@@ -4658,11 +4658,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹56-443-荷兰-188.42.88.26"
     type: vless
@@ -4673,11 +4673,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹92-443-荷兰-185.207.197.66"
     type: vless
@@ -4688,11 +4688,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆03-443-荷兰-193.22.229.153"
     type: vless
@@ -4703,11 +4703,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩01-443-荷兰-45.149.12.19"
     type: vless
@@ -4718,11 +4718,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹78-443-荷兰-188.42.88.51"
     type: vless
@@ -4733,11 +4733,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福30-443-德国-194.156.26.189"
     type: vless
@@ -4748,11 +4748,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹04-443-荷兰-188.42.88.92"
     type: vless
@@ -4763,11 +4763,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹162-443-荷兰-154.194.0.111"
     type: vless
@@ -4778,11 +4778,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹283-443-荷兰-185.207.196.252"
     type: vless
@@ -4793,11 +4793,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹296-443-荷兰-188.42.145.232"
     type: vless
@@ -4808,11 +4808,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福129-443-德国-193.9.49.25"
     type: vless
@@ -4823,11 +4823,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆01-443-荷兰-193.22.229.133"
     type: vless
@@ -4838,11 +4838,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩06-443-荷兰-45.149.12.95"
     type: vless
@@ -4853,11 +4853,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "鹿特丹06-443-荷兰-193.227.99.188"
     type: vless
@@ -4868,11 +4868,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹335-443-荷兰-154.194.0.215"
     type: vless
@@ -4883,11 +4883,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "法兰克福19-443-德国-194.156.26.207"
     type: vless
@@ -4898,11 +4898,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹23-443-荷兰-188.42.145.197"
     type: vless
@@ -4913,11 +4913,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹340-443-荷兰-188.42.89.155"
     type: vless
@@ -4928,11 +4928,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹364-443-荷兰-185.207.197.63"
     type: vless
@@ -4943,11 +4943,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹03-443-荷兰-188.42.145.249"
     type: vless
@@ -4958,11 +4958,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹181-443-荷兰-185.207.197.75"
     type: vless
@@ -4973,11 +4973,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹201-443-荷兰-154.194.0.19"
     type: vless
@@ -4988,11 +4988,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹239-443-荷兰-185.207.199.73"
     type: vless
@@ -5003,11 +5003,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹345-443-荷兰-188.42.89.156"
     type: vless
@@ -5018,11 +5018,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹391-443-荷兰-188.42.145.240"
     type: vless
@@ -5033,11 +5033,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "霍勒姆04-443-荷兰-193.22.229.146"
     type: vless
@@ -5048,11 +5048,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩04-443-荷兰-45.149.12.57"
     type: vless
@@ -5063,11 +5063,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "尼沃海恩10-443-荷兰-45.149.12.50"
     type: vless
@@ -5078,11 +5078,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹123-443-荷兰-154.194.0.16"
     type: vless
@@ -5093,11 +5093,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹129-443-荷兰-154.194.0.26"
     type: vless
@@ -5108,11 +5108,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹400-443-荷兰-188.164.248.69"
     type: vless
@@ -5123,11 +5123,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
   - name: "阿姆斯特丹32-443-荷兰-188.164.248.66"
     type: vless
@@ -5138,11 +5138,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    sni: "node.kyma.dpdns.org"
+    sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
-        Host: "node.kyma.dpdns.org"
+        Host: "s.kyma.dpdns.org"
 
 proxy-groups:
   - name: "🚀 节点选择"
