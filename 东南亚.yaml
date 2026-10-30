@@ -10,7 +10,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -25,7 +25,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -40,7 +40,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -55,7 +55,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -70,7 +70,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -85,7 +85,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -100,7 +100,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -115,7 +115,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -130,7 +130,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -145,7 +145,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -160,7 +160,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -175,7 +175,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -190,7 +190,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -205,7 +205,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -220,7 +220,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -235,7 +235,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -250,7 +250,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -265,7 +265,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -280,7 +280,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -295,7 +295,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -310,7 +310,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -325,7 +325,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -340,7 +340,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -355,7 +355,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -370,7 +370,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -385,7 +385,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -400,7 +400,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -415,7 +415,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -430,7 +430,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -445,7 +445,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -460,7 +460,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -475,7 +475,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -490,7 +490,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -505,7 +505,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -520,7 +520,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -535,7 +535,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -550,7 +550,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -565,7 +565,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -580,7 +580,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -595,7 +595,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -610,7 +610,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -625,7 +625,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -640,7 +640,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -655,7 +655,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -670,7 +670,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -685,7 +685,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -700,7 +700,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -715,7 +715,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -730,7 +730,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -745,7 +745,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -760,7 +760,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -775,7 +775,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -790,7 +790,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -805,7 +805,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -820,7 +820,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -835,7 +835,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -850,7 +850,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -865,7 +865,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -880,7 +880,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -895,7 +895,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -910,7 +910,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -925,7 +925,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -940,7 +940,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -955,7 +955,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -970,7 +970,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -985,7 +985,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -1000,7 +1000,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
@@ -1015,7 +1015,7 @@ proxies:
     udp: true
     sni: "s.kyma.dpdns.org"
     ws-opts:
-      path: "/?ed=2048"
+      path: "/knny96214?ed=2048"
       headers:
         Host: "s.kyma.dpdns.org"
 
