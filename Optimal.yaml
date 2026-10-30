@@ -1,0 +1,1949 @@
+proxies:
+  - name: "香港916-443-103.27.78.58"
+    type: vless
+    server: 103.27.78.58
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1332-443-43.155.82.88"
+    type: vless
+    server: 43.155.82.88
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1880-443-43.161.228.254"
+    type: vless
+    server: 43.161.228.254
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1092-443-43.154.165.40"
+    type: vless
+    server: 43.154.165.40
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港357-443-43.159.4.43"
+    type: vless
+    server: 43.159.4.43
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港20-443-45.115.124.87"
+    type: vless
+    server: 45.115.124.87
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2104-443-165.154.21.142"
+    type: vless
+    server: 165.154.21.142
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港737-443-43.175.131.30"
+    type: vless
+    server: 43.175.131.30
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港444-443-107.150.119.17"
+    type: vless
+    server: 107.150.119.17
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1352-443-45.194.21.227"
+    type: vless
+    server: 45.194.21.227
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港257-443-38.207.178.173"
+    type: vless
+    server: 38.207.178.173
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1810-443-38.190.245.204"
+    type: vless
+    server: 38.190.245.204
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2919-443-45.136.14.240"
+    type: vless
+    server: 45.136.14.240
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2938-443-43.161.226.252"
+    type: vless
+    server: 43.161.226.252
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港161-443-45.136.14.153"
+    type: vless
+    server: 45.136.14.153
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2889-443-68.64.183.37"
+    type: vless
+    server: 68.64.183.37
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港252-443-38.207.176.165"
+    type: vless
+    server: 38.207.176.165
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港254-443-38.207.179.77"
+    type: vless
+    server: 38.207.179.77
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港780-443-149.104.31.208"
+    type: vless
+    server: 149.104.31.208
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1893-443-68.64.182.205"
+    type: vless
+    server: 68.64.182.205
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京359-443-日本-45.89.235.8"
+    type: vless
+    server: 45.89.235.8
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港917-443-43.161.246.243"
+    type: vless
+    server: 43.161.246.243
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港538-443-38.55.199.29"
+    type: vless
+    server: 38.55.199.29
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "低速东京398-443-日本-124.156.218.72"
+    type: vless
+    server: 124.156.218.72
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1744-443-165.154.41.113"
+    type: vless
+    server: 165.154.41.113
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "台北293-443-34.81.73.111"
+    type: vless
+    server: 34.81.73.111
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "台北84-443-34.80.213.58"
+    type: vless
+    server: 34.80.213.58
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京198-443-日本-154.36.154.29"
+    type: vless
+    server: 154.36.154.29
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "台北202-443-104.199.253.40"
+    type: vless
+    server: 104.199.253.40
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡189-443-166.108.202.154"
+    type: vless
+    server: 166.108.202.154
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "700高速东京148-443-日本-65.49.236.30"
+    type: vless
+    server: 65.49.236.30
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1149-443-193.200.130.20"
+    type: vless
+    server: 193.200.130.20
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "大阪36-443-日本-206.190.237.141"
+    type: vless
+    server: 206.190.237.141
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2983-443-43.175.131.207"
+    type: vless
+    server: 43.175.131.207
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "70M香港181-443-45.192.199.119"
+    type: vless
+    server: 45.192.199.119
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京256-443-日本-212.135.211.242"
+    type: vless
+    server: 212.135.211.242
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2799-443-43.168.16.67"
+    type: vless
+    server: 43.168.16.67
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京222-443-日本-151.241.128.178"
+    type: vless
+    server: 151.241.128.178
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "首尔228-443-韩国-23.27.1.241"
+    type: vless
+    server: 23.27.1.241
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "大阪52-443-日本-166.88.95.174"
+    type: vless
+    server: 166.88.95.174
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港176-443-103.205.240.91"
+    type: vless
+    server: 103.205.240.91
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡33-443-83.229.120.52"
+    type: vless
+    server: 83.229.120.52
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京221-443-日本-45.192.243.25"
+    type: vless
+    server: 45.192.243.25
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "低速东京39-443-日本-212.135.212.180"
+    type: vless
+    server: 212.135.212.180
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "大阪25-443-日本-166.88.95.69"
+    type: vless
+    server: 166.88.95.69
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京419-443-日本-45.143.131.150"
+    type: vless
+    server: 45.143.131.150
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京393-443-日本-45.129.9.222"
+    type: vless
+    server: 45.129.9.222
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "首尔39-443-韩国-114.204.40.185"
+    type: vless
+    server: 114.204.40.185
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1304-443-68.64.182.79"
+    type: vless
+    server: 68.64.182.79
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京440-443-日本-45.153.246.5"
+    type: vless
+    server: 45.153.246.5
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港46-443-45.192.201.197"
+    type: vless
+    server: 45.192.201.197
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "大阪38-443-日本-34.97.18.203"
+    type: vless
+    server: 34.97.18.203
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港49-443-83.229.127.211"
+    type: vless
+    server: 83.229.127.211
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京40-443-日本-212.135.211.96"
+    type: vless
+    server: 212.135.211.96
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2314-443-152.32.172.70"
+    type: vless
+    server: 152.32.172.70
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡428-443-195.172.138.129"
+    type: vless
+    server: 195.172.138.129
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡306-443-195.172.138.225"
+    type: vless
+    server: 195.172.138.225
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京102-443-日本-103.238.129.138"
+    type: vless
+    server: 103.238.129.138
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京117-443-日本-92.113.124.143"
+    type: vless
+    server: 92.113.124.143
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "春川55-443-韩国-144.24.71.172"
+    type: vless
+    server: 144.24.71.172
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "春川29-443-韩国-168.107.62.215"
+    type: vless
+    server: 168.107.62.215
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "首尔327-443-韩国-43.155.156.117"
+    type: vless
+    server: 43.155.156.117
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "首尔402-443-韩国-43.155.215.79"
+    type: vless
+    server: 43.155.215.79
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港610-443-45.152.65.100"
+    type: vless
+    server: 45.152.65.100
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港209-443-154.36.174.221"
+    type: vless
+    server: 154.36.174.221
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "首尔274-443-韩国-119.28.150.233"
+    type: vless
+    server: 119.28.150.233
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京58-443-日本-178.239.117.198"
+    type: vless
+    server: 178.239.117.198
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡116-443-43.252.21.49"
+    type: vless
+    server: 43.252.21.49
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1434-443-149.104.26.89"
+    type: vless
+    server: 149.104.26.89
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港547-443-219.78.164.118"
+    type: vless
+    server: 219.78.164.118
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "极速香港463-443-39.109.111.230"
+    type: vless
+    server: 39.109.111.230
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2925-443-34.92.1.142"
+    type: vless
+    server: 34.92.1.142
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港354-443-149.104.25.124"
+    type: vless
+    server: 149.104.25.124
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2022-443-45.144.136.178"
+    type: vless
+    server: 45.144.136.178
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1514-443-68.64.178.52"
+    type: vless
+    server: 68.64.178.52
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1184-443-45.144.137.77"
+    type: vless
+    server: 45.144.137.77
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "台北170-443-35.234.35.95"
+    type: vless
+    server: 35.234.35.95
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "大阪37-443-日本-166.88.99.232"
+    type: vless
+    server: 166.88.99.232
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "大阪51-443-日本-166.88.99.56"
+    type: vless
+    server: 166.88.99.56
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京413-443-日本-45.143.234.108"
+    type: vless
+    server: 45.143.234.108
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "台北67-443-103.51.141.26"
+    type: vless
+    server: 103.51.141.26
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2080-443-149.104.6.130"
+    type: vless
+    server: 149.104.6.130
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京201-443-日本-43.207.122.183"
+    type: vless
+    server: 43.207.122.183
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港658-443-8.217.119.13"
+    type: vless
+    server: 8.217.119.13
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港561-443-8.218.100.2"
+    type: vless
+    server: 8.218.100.2
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2865-443-58.152.13.216"
+    type: vless
+    server: 58.152.13.216
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡385-443-83.229.123.135"
+    type: vless
+    server: 83.229.123.135
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港2512-443-45.152.67.18"
+    type: vless
+    server: 45.152.67.18
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1305-443-103.103.245.105"
+    type: vless
+    server: 103.103.245.105
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港1297-443-8.210.22.115"
+    type: vless
+    server: 8.210.22.115
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港189-443-1.36.43.207"
+    type: vless
+    server: 1.36.43.207
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港254-443-218.102.64.147"
+    type: vless
+    server: 218.102.64.147
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京260-443-日本-167.179.82.88"
+    type: vless
+    server: 167.179.82.88
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京368-443-日本-54.178.93.206"
+    type: vless
+    server: 54.178.93.206
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京118-443-日本-54.64.190.109"
+    type: vless
+    server: 54.64.190.109
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "新加坡396-443-4.193.222.166"
+    type: vless
+    server: 4.193.222.166
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京284-443-日本-13.113.144.183"
+    type: vless
+    server: 13.113.144.183
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京297-443-日本-13.112.240.216"
+    type: vless
+    server: 13.112.240.216
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "龙仁01-443-韩国-27.102.132.186"
+    type: vless
+    server: 27.102.132.186
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "京都01-443-日本-154.19.187.190"
+    type: vless
+    server: 154.19.187.190
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京390-443-日本-45.128.210.34"
+    type: vless
+    server: 45.128.210.34
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京394-443-日本-47.79.35.185"
+    type: vless
+    server: 47.79.35.185
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京28-443-日本-47.79.147.53"
+    type: vless
+    server: 47.79.147.53
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "春川10-443-韩国-152.67.203.125"
+    type: vless
+    server: 152.67.203.125
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "东京108-443-日本-20.89.41.87"
+    type: vless
+    server: 20.89.41.87
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+  - name: "香港550-443-43.247.132.24"
+    type: vless
+    server: 43.247.132.24
+    port: 443
+    uuid: 99999999-9999-8999-9999-99abcdefabcd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    sni: "s.kyma.dpdns.org"
+    ws-opts:
+      path: "/knny96214?ed=2048"
+      headers:
+        Host: "s.kyma.dpdns.org"
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "香港916-443-103.27.78.58"
+      - "香港1332-443-43.155.82.88"
+      - "香港1880-443-43.161.228.254"
+      - "香港1092-443-43.154.165.40"
+      - "香港357-443-43.159.4.43"
+      - "香港20-443-45.115.124.87"
+      - "香港2104-443-165.154.21.142"
+      - "香港737-443-43.175.131.30"
+      - "香港444-443-107.150.119.17"
+      - "香港1352-443-45.194.21.227"
+      - "香港257-443-38.207.178.173"
+      - "香港1810-443-38.190.245.204"
+      - "香港2919-443-45.136.14.240"
+      - "香港2938-443-43.161.226.252"
+      - "香港161-443-45.136.14.153"
+      - "香港2889-443-68.64.183.37"
+      - "香港252-443-38.207.176.165"
+      - "香港254-443-38.207.179.77"
+      - "香港780-443-149.104.31.208"
+      - "香港1893-443-68.64.182.205"
+      - "东京359-443-日本-45.89.235.8"
+      - "香港917-443-43.161.246.243"
+      - "香港538-443-38.55.199.29"
+      - "低速东京398-443-日本-124.156.218.72"
+      - "香港1744-443-165.154.41.113"
+      - "台北293-443-34.81.73.111"
+      - "台北84-443-34.80.213.58"
+      - "东京198-443-日本-154.36.154.29"
+      - "台北202-443-104.199.253.40"
+      - "新加坡189-443-166.108.202.154"
+      - "700高速东京148-443-日本-65.49.236.30"
+      - "香港1149-443-193.200.130.20"
+      - "大阪36-443-日本-206.190.237.141"
+      - "香港2983-443-43.175.131.207"
+      - "70M香港181-443-45.192.199.119"
+      - "东京256-443-日本-212.135.211.242"
+      - "香港2799-443-43.168.16.67"
+      - "东京222-443-日本-151.241.128.178"
+      - "首尔228-443-韩国-23.27.1.241"
+      - "大阪52-443-日本-166.88.95.174"
+      - "香港176-443-103.205.240.91"
+      - "新加坡33-443-83.229.120.52"
+      - "东京221-443-日本-45.192.243.25"
+      - "低速东京39-443-日本-212.135.212.180"
+      - "大阪25-443-日本-166.88.95.69"
+      - "东京419-443-日本-45.143.131.150"
+      - "东京393-443-日本-45.129.9.222"
+      - "首尔39-443-韩国-114.204.40.185"
+      - "香港1304-443-68.64.182.79"
+      - "东京440-443-日本-45.153.246.5"
+      - "香港46-443-45.192.201.197"
+      - "大阪38-443-日本-34.97.18.203"
+      - "香港49-443-83.229.127.211"
+      - "东京40-443-日本-212.135.211.96"
+      - "香港2314-443-152.32.172.70"
+      - "新加坡428-443-195.172.138.129"
+      - "新加坡306-443-195.172.138.225"
+      - "东京102-443-日本-103.238.129.138"
+      - "东京117-443-日本-92.113.124.143"
+      - "春川55-443-韩国-144.24.71.172"
+      - "春川29-443-韩国-168.107.62.215"
+      - "首尔327-443-韩国-43.155.156.117"
+      - "首尔402-443-韩国-43.155.215.79"
+      - "香港610-443-45.152.65.100"
+      - "香港209-443-154.36.174.221"
+      - "首尔274-443-韩国-119.28.150.233"
+      - "东京58-443-日本-178.239.117.198"
+      - "新加坡116-443-43.252.21.49"
+      - "香港1434-443-149.104.26.89"
+      - "香港547-443-219.78.164.118"
+      - "极速香港463-443-39.109.111.230"
+      - "香港2925-443-34.92.1.142"
+      - "香港354-443-149.104.25.124"
+      - "香港2022-443-45.144.136.178"
+      - "香港1514-443-68.64.178.52"
+      - "香港1184-443-45.144.137.77"
+      - "台北170-443-35.234.35.95"
+      - "大阪37-443-日本-166.88.99.232"
+      - "大阪51-443-日本-166.88.99.56"
+      - "东京413-443-日本-45.143.234.108"
+      - "台北67-443-103.51.141.26"
+      - "香港2080-443-149.104.6.130"
+      - "东京201-443-日本-43.207.122.183"
+      - "香港658-443-8.217.119.13"
+      - "香港561-443-8.218.100.2"
+      - "香港2865-443-58.152.13.216"
+      - "新加坡385-443-83.229.123.135"
+      - "香港2512-443-45.152.67.18"
+      - "香港1305-443-103.103.245.105"
+      - "香港1297-443-8.210.22.115"
+      - "香港189-443-1.36.43.207"
+      - "香港254-443-218.102.64.147"
+      - "东京260-443-日本-167.179.82.88"
+      - "东京368-443-日本-54.178.93.206"
+      - "东京118-443-日本-54.64.190.109"
+      - "新加坡396-443-4.193.222.166"
+      - "东京284-443-日本-13.113.144.183"
+      - "东京297-443-日本-13.112.240.216"
+      - "龙仁01-443-韩国-27.102.132.186"
+      - "京都01-443-日本-154.19.187.190"
+      - "东京390-443-日本-45.128.210.34"
+      - "东京394-443-日本-47.79.35.185"
+      - "东京28-443-日本-47.79.147.53"
+      - "春川10-443-韩国-152.67.203.125"
+      - "东京108-443-日本-20.89.41.87"
+      - "香港550-443-43.247.132.24"
+
+  - name: "♻️ 自动选择"
+    type: url-test
+    proxies:
+      - "香港916-443-103.27.78.58"
+      - "香港1332-443-43.155.82.88"
+      - "香港1880-443-43.161.228.254"
+      - "香港1092-443-43.154.165.40"
+      - "香港357-443-43.159.4.43"
+      - "香港20-443-45.115.124.87"
+      - "香港2104-443-165.154.21.142"
+      - "香港737-443-43.175.131.30"
+      - "香港444-443-107.150.119.17"
+      - "香港1352-443-45.194.21.227"
+      - "香港257-443-38.207.178.173"
+      - "香港1810-443-38.190.245.204"
+      - "香港2919-443-45.136.14.240"
+      - "香港2938-443-43.161.226.252"
+      - "香港161-443-45.136.14.153"
+      - "香港2889-443-68.64.183.37"
+      - "香港252-443-38.207.176.165"
+      - "香港254-443-38.207.179.77"
+      - "香港780-443-149.104.31.208"
+      - "香港1893-443-68.64.182.205"
+      - "东京359-443-日本-45.89.235.8"
+      - "香港917-443-43.161.246.243"
+      - "香港538-443-38.55.199.29"
+      - "低速东京398-443-日本-124.156.218.72"
+      - "香港1744-443-165.154.41.113"
+      - "台北293-443-34.81.73.111"
+      - "台北84-443-34.80.213.58"
+      - "东京198-443-日本-154.36.154.29"
+      - "台北202-443-104.199.253.40"
+      - "新加坡189-443-166.108.202.154"
+      - "700高速东京148-443-日本-65.49.236.30"
+      - "香港1149-443-193.200.130.20"
+      - "大阪36-443-日本-206.190.237.141"
+      - "香港2983-443-43.175.131.207"
+      - "70M香港181-443-45.192.199.119"
+      - "东京256-443-日本-212.135.211.242"
+      - "香港2799-443-43.168.16.67"
+      - "东京222-443-日本-151.241.128.178"
+      - "首尔228-443-韩国-23.27.1.241"
+      - "大阪52-443-日本-166.88.95.174"
+      - "香港176-443-103.205.240.91"
+      - "新加坡33-443-83.229.120.52"
+      - "东京221-443-日本-45.192.243.25"
+      - "低速东京39-443-日本-212.135.212.180"
+      - "大阪25-443-日本-166.88.95.69"
+      - "东京419-443-日本-45.143.131.150"
+      - "东京393-443-日本-45.129.9.222"
+      - "首尔39-443-韩国-114.204.40.185"
+      - "香港1304-443-68.64.182.79"
+      - "东京440-443-日本-45.153.246.5"
+      - "香港46-443-45.192.201.197"
+      - "大阪38-443-日本-34.97.18.203"
+      - "香港49-443-83.229.127.211"
+      - "东京40-443-日本-212.135.211.96"
+      - "香港2314-443-152.32.172.70"
+      - "新加坡428-443-195.172.138.129"
+      - "新加坡306-443-195.172.138.225"
+      - "东京102-443-日本-103.238.129.138"
+      - "东京117-443-日本-92.113.124.143"
+      - "春川55-443-韩国-144.24.71.172"
+      - "春川29-443-韩国-168.107.62.215"
+      - "首尔327-443-韩国-43.155.156.117"
+      - "首尔402-443-韩国-43.155.215.79"
+      - "香港610-443-45.152.65.100"
+      - "香港209-443-154.36.174.221"
+      - "首尔274-443-韩国-119.28.150.233"
+      - "东京58-443-日本-178.239.117.198"
+      - "新加坡116-443-43.252.21.49"
+      - "香港1434-443-149.104.26.89"
+      - "香港547-443-219.78.164.118"
+      - "极速香港463-443-39.109.111.230"
+      - "香港2925-443-34.92.1.142"
+      - "香港354-443-149.104.25.124"
+      - "香港2022-443-45.144.136.178"
+      - "香港1514-443-68.64.178.52"
+      - "香港1184-443-45.144.137.77"
+      - "台北170-443-35.234.35.95"
+      - "大阪37-443-日本-166.88.99.232"
+      - "大阪51-443-日本-166.88.99.56"
+      - "东京413-443-日本-45.143.234.108"
+      - "台北67-443-103.51.141.26"
+      - "香港2080-443-149.104.6.130"
+      - "东京201-443-日本-43.207.122.183"
+      - "香港658-443-8.217.119.13"
+      - "香港561-443-8.218.100.2"
+      - "香港2865-443-58.152.13.216"
+      - "新加坡385-443-83.229.123.135"
+      - "香港2512-443-45.152.67.18"
+      - "香港1305-443-103.103.245.105"
+      - "香港1297-443-8.210.22.115"
+      - "香港189-443-1.36.43.207"
+      - "香港254-443-218.102.64.147"
+      - "东京260-443-日本-167.179.82.88"
+      - "东京368-443-日本-54.178.93.206"
+      - "东京118-443-日本-54.64.190.109"
+      - "新加坡396-443-4.193.222.166"
+      - "东京284-443-日本-13.113.144.183"
+      - "东京297-443-日本-13.112.240.216"
+      - "龙仁01-443-韩国-27.102.132.186"
+      - "京都01-443-日本-154.19.187.190"
+      - "东京390-443-日本-45.128.210.34"
+      - "东京394-443-日本-47.79.35.185"
+      - "东京28-443-日本-47.79.147.53"
+      - "春川10-443-韩国-152.67.203.125"
+      - "东京108-443-日本-20.89.41.87"
+      - "香港550-443-43.247.132.24"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+  - name: "🔥 故障转移"
+    type: fallback
+    proxies:
+      - "香港916-443-103.27.78.58"
+      - "香港1332-443-43.155.82.88"
+      - "香港1880-443-43.161.228.254"
+      - "香港1092-443-43.154.165.40"
+      - "香港357-443-43.159.4.43"
+      - "香港20-443-45.115.124.87"
+      - "香港2104-443-165.154.21.142"
+      - "香港737-443-43.175.131.30"
+      - "香港444-443-107.150.119.17"
+      - "香港1352-443-45.194.21.227"
+      - "香港257-443-38.207.178.173"
+      - "香港1810-443-38.190.245.204"
+      - "香港2919-443-45.136.14.240"
+      - "香港2938-443-43.161.226.252"
+      - "香港161-443-45.136.14.153"
+      - "香港2889-443-68.64.183.37"
+      - "香港252-443-38.207.176.165"
+      - "香港254-443-38.207.179.77"
+      - "香港780-443-149.104.31.208"
+      - "香港1893-443-68.64.182.205"
+      - "东京359-443-日本-45.89.235.8"
+      - "香港917-443-43.161.246.243"
+      - "香港538-443-38.55.199.29"
+      - "低速东京398-443-日本-124.156.218.72"
+      - "香港1744-443-165.154.41.113"
+      - "台北293-443-34.81.73.111"
+      - "台北84-443-34.80.213.58"
+      - "东京198-443-日本-154.36.154.29"
+      - "台北202-443-104.199.253.40"
+      - "新加坡189-443-166.108.202.154"
+      - "700高速东京148-443-日本-65.49.236.30"
+      - "香港1149-443-193.200.130.20"
+      - "大阪36-443-日本-206.190.237.141"
+      - "香港2983-443-43.175.131.207"
+      - "70M香港181-443-45.192.199.119"
+      - "东京256-443-日本-212.135.211.242"
+      - "香港2799-443-43.168.16.67"
+      - "东京222-443-日本-151.241.128.178"
+      - "首尔228-443-韩国-23.27.1.241"
+      - "大阪52-443-日本-166.88.95.174"
+      - "香港176-443-103.205.240.91"
+      - "新加坡33-443-83.229.120.52"
+      - "东京221-443-日本-45.192.243.25"
+      - "低速东京39-443-日本-212.135.212.180"
+      - "大阪25-443-日本-166.88.95.69"
+      - "东京419-443-日本-45.143.131.150"
+      - "东京393-443-日本-45.129.9.222"
+      - "首尔39-443-韩国-114.204.40.185"
+      - "香港1304-443-68.64.182.79"
+      - "东京440-443-日本-45.153.246.5"
+      - "香港46-443-45.192.201.197"
+      - "大阪38-443-日本-34.97.18.203"
+      - "香港49-443-83.229.127.211"
+      - "东京40-443-日本-212.135.211.96"
+      - "香港2314-443-152.32.172.70"
+      - "新加坡428-443-195.172.138.129"
+      - "新加坡306-443-195.172.138.225"
+      - "东京102-443-日本-103.238.129.138"
+      - "东京117-443-日本-92.113.124.143"
+      - "春川55-443-韩国-144.24.71.172"
+      - "春川29-443-韩国-168.107.62.215"
+      - "首尔327-443-韩国-43.155.156.117"
+      - "首尔402-443-韩国-43.155.215.79"
+      - "香港610-443-45.152.65.100"
+      - "香港209-443-154.36.174.221"
+      - "首尔274-443-韩国-119.28.150.233"
+      - "东京58-443-日本-178.239.117.198"
+      - "新加坡116-443-43.252.21.49"
+      - "香港1434-443-149.104.26.89"
+      - "香港547-443-219.78.164.118"
+      - "极速香港463-443-39.109.111.230"
+      - "香港2925-443-34.92.1.142"
+      - "香港354-443-149.104.25.124"
+      - "香港2022-443-45.144.136.178"
+      - "香港1514-443-68.64.178.52"
+      - "香港1184-443-45.144.137.77"
+      - "台北170-443-35.234.35.95"
+      - "大阪37-443-日本-166.88.99.232"
+      - "大阪51-443-日本-166.88.99.56"
+      - "东京413-443-日本-45.143.234.108"
+      - "台北67-443-103.51.141.26"
+      - "香港2080-443-149.104.6.130"
+      - "东京201-443-日本-43.207.122.183"
+      - "香港658-443-8.217.119.13"
+      - "香港561-443-8.218.100.2"
+      - "香港2865-443-58.152.13.216"
+      - "新加坡385-443-83.229.123.135"
+      - "香港2512-443-45.152.67.18"
+      - "香港1305-443-103.103.245.105"
+      - "香港1297-443-8.210.22.115"
+      - "香港189-443-1.36.43.207"
+      - "香港254-443-218.102.64.147"
+      - "东京260-443-日本-167.179.82.88"
+      - "东京368-443-日本-54.178.93.206"
+      - "东京118-443-日本-54.64.190.109"
+      - "新加坡396-443-4.193.222.166"
+      - "东京284-443-日本-13.113.144.183"
+      - "东京297-443-日本-13.112.240.216"
+      - "龙仁01-443-韩国-27.102.132.186"
+      - "京都01-443-日本-154.19.187.190"
+      - "东京390-443-日本-45.128.210.34"
+      - "东京394-443-日本-47.79.35.185"
+      - "东京28-443-日本-47.79.147.53"
+      - "春川10-443-韩国-152.67.203.125"
+      - "东京108-443-日本-20.89.41.87"
+      - "香港550-443-43.247.132.24"
+    url: "https://www.cloudflare.com/cdn-cgi/trace"
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,instagram.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,spotify.com,♻️ 自动选择
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
